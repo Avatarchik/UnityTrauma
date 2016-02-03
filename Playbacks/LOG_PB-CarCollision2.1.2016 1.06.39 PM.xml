@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<interactlog>
+  <VitalsBehavior text="ADD:Pharmacy" time="0001" />
+  <VitalsBehavior text="ADD:Stable" time="0001" />
+  <VitalsBehavior text="REMOVE:Pharmacy" time="0001" />
+  <InteractStatusItem text="WARN:PLAYER:HEARTRATE:LOW" time="0001" />
+  <InteractStatusItem text="EFFECT:PATIENT:PELVICBLEEDING" time="0003" />
+  <VitalsBehavior text="ADD:Pharmacy" time="0003" />
+  <VitalsBehavior text="ADD:PelvicBleeding" time="0003" />
+  <InteractStatusItem text="EFFECT:PATIENT:HYPOXICTACHYCARDIA" time="0004" />
+  <VitalsBehavior text="ADD:Pharmacy" time="0004" />
+  <VitalsBehavior text="ADD:HypoxicTachycardia" time="0004" />
+  <InteractStatusItem text="EFFECT:PATIENT:PELVICBLEEDING" time="0005" />
+  <InteractStatusItem text="PATIENT:STRAPS:OFF" time="0008" />
+  <ButtonClick gui="FilterCommandGUI" button="cmd0" time="0035" />
+  <InteractLogItem text="null" value="INTUBATE:PATIENT" args="" scripted="False" time="0035" />
+  <InteractStatusItem text="INTUBATE:PATIENT" time="0035" />
+  <InteractLogItem text="ScribeNurse" value="RECORD:RESULT" args="INTUBATE:PATIENT " scripted="True" time="0035" />
+  <InteractStatusItem text="RECORD:RESULT" time="0035" />
+  <InteractStatusItem text="RECORD:RESULT:COMPLETE" time="0040" />
+  <InteractStatusItem text="TASK:TABLE:PUTBEDSIDE" time="0046" />
+  <InteractStatusItem text="WARN:PLAYER:HEARTRATE:STABLE" time="0051" />
+  <DialogButtonItem dialog="traumaDecisionPanel" button="ok" time="0052" />
+  <ButtonClick gui="DecisionPanel" button="ok" time="0052" />
+  <InteractLogItem text="PrimaryNurse" value="ORDER:RSIMEDS" args="" scripted="True" time="0052" />
+  <InteractStatusItem text="ORDER:RSIMEDS" time="0052" />
+</interactlog>

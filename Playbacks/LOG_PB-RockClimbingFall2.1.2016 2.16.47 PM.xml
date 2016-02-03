@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<interactlog>
+  <VitalsBehavior text="ADD:Pharmacy" time="0001" />
+  <VitalsBehavior text="ADD:Dying" time="0001" />
+  <VitalsBehavior text="REMOVE:Pharmacy" time="0001" />
+  <InteractStatusItem text="EFFECT:PATIENT:BADAIRWAY" time="0003" />
+  <VitalsBehavior text="ADD:Pharmacy" time="0003" />
+  <VitalsBehavior text="ADD:BadAirway" time="0003" />
+  <InteractStatusItem text="EFFECT:PATIENT:HYPOXICTACHYCARDIA" time="0003" />
+  <VitalsBehavior text="ADD:Pharmacy" time="0003" />
+  <VitalsBehavior text="ADD:HypoxicTachycardia" time="0003" />
+  <InteractStatusItem text="PATIENT:STRAPS:OFF" time="0007" />
+  <ButtonClick gui="FilterCommandGUI" button="cmd0" time="0011" />
+  <InteractStatusItem text="VENT:BVM" time="0014" />
+  <VitalsBehavior text="ADD:Pharmacy" time="0014" />
+  <VitalsBehavior text="ADD:BVM" time="0014" />
+  <ButtonClick gui="FilterCommandGUI" button="cmd0" time="0024" />
+  <InteractLogItem text="null" value="ORDER:BLOOD:1IV" args="" scripted="False" time="0024" />
+  <InteractStatusItem text="ORDER:BLOOD:1IV" time="0024" />
+  <InteractLogItem text="ScribeNurse" value="RECORD:RESULT" args="ORDER:BLOOD:1IV " scripted="True" time="0024" />
+  <InteractStatusItem text="RECORD:RESULT" time="0024" />
+  <InteractLogItem text="PrimaryNurse" value="ORDER:BLOOD:SCRIPT" args="units=1 delivery=&quot;IV&quot; product=&quot;bloodbag&quot; affect=&quot;Patient.%BloodbagsIV&quot; counter=&quot;Patient.%UnitsBlood&quot; " scripted="True" time="0024" />
+  <InteractStatusItem text="ORDER:BLOOD:SCRIPT" time="0024" />
+  <InteractStatusItem text="ORDER:BLOOD:1IV:COMPLETE" time="0024" />
+</interactlog>

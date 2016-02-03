@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfPlaybackItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PlaybackItem>
+    <Type>interact</Type>
+    <InteractName>INTUBATE:PATIENT</InteractName>
+    <Character>null</Character>
+    <Args />
+    <RealTime>35</RealTime>
+    <Delay>0</Delay>
+    <Executed>false</Executed>
+  </PlaybackItem>
+  <PlaybackItem>
+    <Type>button</Type>
+    <Dialog>traumaDecisionPanel</Dialog>
+    <Button>ok</Button>
+    <RealTime>52</RealTime>
+    <Delay>17</Delay>
+    <Executed>false</Executed>
+  </PlaybackItem>
+</ArrayOfPlaybackItem>

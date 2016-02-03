@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<META HTTP-EQUIV="Set-Cookie" CONTENT="NUSA_Guids=3783e463-9d16-4f52-a66b-ee3a161f97f3/20684b4e-0b0f-469d-a6f9-e36ce047ca24;expires=Friday, 31-Dec-12 23:59:59 GMT; path=/">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>SiTEL Trauma Module</title>
+		
+		<script type="text/javascript" src="UnityObject.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="https://speechanywhere.nuancehdp.com/1.2/css/Nuance.SpeechAnywhere.css" />
+        <script type="text/javascript" src="https://speechanywhere.nuancehdp.com/1.2/scripts/Nuance.SpeechAnywhere.js"></script> 
+             
+        <script type="text/javascript" language="javascript" name="SCORMWrapper" src="LMS.js"></script>
+	
+		<script type="text/javascript">
+		
+        var params = { disableContextMenu: true };
+
+		// unity code to handle unity object
+		if (typeof unityObject != "undefined") {
+			unityObject.embedUnity("unityPlayer", "WebPlayer.unity3d", 800, 600, params);
+		}	
+		function GetUnity() 
+		{
+			if (typeof unityObject != "undefined") {
+				return unityObject.getObjectById("unityPlayer");
+			}
+			return null;
+		}
+		
+		// clear input field
+		function ClearInputField()
+	    {
+            var element2=document.getElementsByName("inputbox2");
+            element2[0].value = "";
+	    }
+		
+		// check key press and send
+		function InputKeyPress(e)
+		{	
+            // look for window.event in case event isn't passed in
+            if (window.event) { e = window.event; }
+            if (e.keyCode == 13)
+            {		    
+    		    // get input 2 text
+                var element2=document.getElementsByName("inputbox2");
+    		    
+		        // send to game
+	            var unity = unityObject.getObjectById("unityPlayer");
+	            unity.SendMessage("Brain", "SpeechToText",element2[0].value);
+	            
+	            // clear value
+	            element2[0].value = "";
+            }
+		}
+
+        // my min/max routine to change sizes        
+        var Uw="800px";
+        var Uh="600px";
+		function ChangeSize()
+		{           
+		    if ( Uw == "800px" )
+		    {
+		        if ( document.body != null )
+		        {
+		            document.getElementById("SizeButton").value = "Minimize";
+		            
+		            // grabbed this off the web to get max size
+                    var body = document.body;
+		            var html = document.documentElement;		            
+	                maxw = Math.max( body.scrollWidth, body.offsetWidth, html.clientWidth, html.scrollWidth, html.offsetWidth );
+		            maxh = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+
+                    // calculate same proportion		            
+		            Uw = maxw - 200;
+		            Uh = Math.round(Uw * 600.0/800.0);
+		            
+		            // never mind, just do the max - 200 for margins
+		            Uw = maxw - 200;
+		            Uh = maxh - 200;
+		            
+		            // check case where height is too big
+		            if ( Uh > maxh - 200 )
+		            {
+                        Uh = maxh - 200;
+		                Uw = Math.round(Uh * 800.0/600.0);
+		            }
+		            
+		            // now check to make sure it never goes below the min
+		            if ( Uw < 800 ) Uw = 800;
+		            if ( Uh < 600 ) Uh = 600;
+		            
+		            // append "px" to the end
+		            Uw = String(Uw) + "px";
+		            Uh = String(Uh) + "px";
+		         } 
+		         else
+		            alert("can't get body");
+		    }
+		    else
+		    {
+                document.getElementById("SizeButton").value = "Maximize";
+		        Uw = "800px";
+		        Uh = "600px";
+		    }
+
+            // chandge unity size
+            GetUnity().style.width = Uw;		        
+            GetUnity().style.height = Uh;		        
+            
+            // change content container width (to auto center)
+            var content = document.getElementById("content");
+            if ( content.style != null )
+                content.style.width = Uw;
+        }			
+
+        // callbacks from NUANCE
+        function NUSA_configure() 
+        {
+            NUSA_userId = "robhafey";
+            NUSA_enableAll = "false";
+            NUSA_applicationName = "SiTEL";
+            NUSA_recordButtonBackgroundColor = "black";        
+            //NUSA_container = "1";    
+        }
+        function NUSA_onProcessingFinished()            
+        {
+            var element2=document.getElementsByName("inputbox2");
+            SendSpeechMessage(element2[0].value);          
+            setTimeout("ClearInputField()",2000);
+        }
+        function NUSA_onError(errorString)
+        {
+            //alert("NUSA error" + errorString);
+        }
+        
+        // unity bridge
+        function SendSpeechMessage(message)
+        {
+	        var unity = unityObject.getObjectById("unityPlayer");
+	        unity.SendMessage("Brain", "SpeechToText", message);
+        }
+
+		-->
+		</script>
+		<style type="text/css">
+		<!--
+		body {
+			font-family: Helvetica, Verdana, Arial, sans-serif;
+			background-color: black;
+			color: white;
+			text-align: center;
+		}
+		a:link, a:visited {
+			color: #bfbfbf;
+		}
+		a:active, a:hover {
+			color: #bfbfbf;
+		}
+		p.header {
+			font-size: small;
+		}
+		p.header span {
+			font-weight: bold;
+		}
+		p.footer {
+			font-size: x-small;
+		}
+		div.content {
+			margin: auto;
+			width: 800px;
+		}
+		div.missing {
+			margin: auto;
+			position: relative;
+			top: 50%;
+			width: 193px;
+		}
+		div.missing a {
+			height: 63px;
+			position: relative;
+			top: -31px;
+		}
+		div.missing img {
+			border-width: 0px;
+		}
+		div#unityPlayer {
+			cursor: default;
+			height: 450px;
+			width: 600px;
+		}
+		-->
+		</style>
+	</head>
+	<body bgcolor="#FFFFFF" onUnload="finishLMS()">
+	    <p>
+        <INPUT TYPE="text" NAME="inputbox2" VALUE="" size="100" onkeypress="InputKeyPress(event);">
+        </p>
+		<p class="header"><span>SiTEL EFM Module  <input type="button" id="SizeButton" value="Maximize" onclick="ChangeSize()" />
+        </p>
+		<div class="content" id="content">
+			<div id="unityPlayer">
+				<div class="missing">
+					<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
+						<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
+					</a>
+				</div>
+			</div>
+		</div>
+		<p class="footer">&laquo; created with <a href="http://unity3d.com/unity/" title="Go to unity3d.com">Unity</a> &raquo;</p>
+	</body>
+</html>
