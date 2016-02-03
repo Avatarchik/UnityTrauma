@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PatientStatus xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Airway>
+    <Status>Intubated</Status>
+    <Options>
+      <string>NotIntubated</string>
+      <string>Intubated</string>
+    </Options>
+  </Airway>
+
+  <Breathing>
+    <Status></Status>
+    <Options>
+      <string></string>
+    </Options>
+  </Breathing>
+
+  <Circulation>
+    <Status></Status>
+    <Options>
+      <string></string>
+    </Options>
+  </Circulation>
+  
+  <Neurological>
+    <EyeResponse>
+      <Status></Status>
+      <Options>
+        <string></string>
+      </Options>
+    </EyeResponse>
+
+    <VerbalResponse>
+      <Status></Status>
+      <Options>
+        <string></string>
+      </Options>
+    </VerbalResponse>
+
+    <MotorResponse>
+      <Status></Status>
+      <Options>
+        <string></string>
+      </Options>
+    </MotorResponse>
+    
+    <Total>
+      <Status></Status>
+      <Options>
+        <string></string>
+      </Options>
+    </Total>   
+  </Neurological>
+
+  <Behaviour>
+    <Combative>false</Combative>;
+    <Unconscious>false</Unconscious>;
+    <Paralyzed>false</Paralyzed>;
+    <Coherent>false</Coherent>;
+    <Drunk>false</Drunk>;
+    <Seizure>false</Seizure>;
+    <Drugged>false</Drugged>;
+  </Behaviour>
+
+  <BodyParts>    
+    <Pupils>
+      <Status></Status>
+      <Options>
+        <string></string>
+      </Options>
+    </Pupils>
+
+    <Chest>
+      <Status></Status>
+      <Options>
+        <string></string>
+      </Options>
+    </Chest>
+
+    <Abdomen>
+      <Status></Status>
+      <Options>
+        <string></string>
+      </Options>
+    </Abdomen>
+
+    <Pelvis>
+      <Status></Status>
+      <Options>
+        <string></string>
+      </Options>
+    </Pelvis>
+
+    <Arm>
+      <Status></Status>
+      <Options>
+        <string></string>
+      </Options>
+    </Arm>
+
+    <Leg>
+      <Status></Status>
+      <Options>
+        <string></string>
+      </Options>
+    </Leg>
+
+    <Hand>
+      <Status></Status>
+      <Options>
+        <string></string>
+      </Options>
+    </Hand>
+
+    <Feet>
+      <Status></Status>
+      <Options>
+        <string></string>
+      </Options>
+    </Feet>
+
+    <Head>
+      <Status></Status>
+      <Options>
+        <string></string>
+      </Options>
+    </Head>
+  </BodyParts>
+
+  <Treatment>
+    <XRay>
+      <Status></Status>
+      <Options>
+        <string></string>
+      </Options>
+    </XRay>
+
+    <FAST>
+      <Status></Status>
+      <Options>
+        <string></string>
+      </Options>
+    </FAST>
+  </Treatment>
+
+  <PatientAttachments>
+    <IV>false</IV>
+    <BPCuff>false</BPCuff>
+    <PulseOx>false</PulseOx>
+    <PelvicBiner>false</PelvicBiner>
+    <IDBracelet>false</IDBracelet>
+    <XRayPlate>false</XRayPlate>
+    <Clothed>false</Clothed>
+  </PatientAttachments>
+
+  <PatientFluidResuscitation>
+    <BloodInfused>0.0</BloodInfused>
+    <BloodInfusedRate>0.0</BloodInfusedRate>
+    <CrystalloidInfused>0.0</CrystalloidInfused>
+    <CrystalloidInfusedRate>0.0</CrystalloidInfusedRate>
+    <BloodLossRate>0.0</BloodLossRate>
+  </PatientFluidResuscitation>
+
+  <Skin>
+    <Temperature>
+      <Status></Status>
+      <Options>
+        <string></string>
+      </Options>
+    </Temperature>
+
+    <Moisture>
+      <Status></Status>
+      <Options>
+        <string></string>
+      </Options>
+    </Moisture>
+
+    <Color>
+      <Status></Status>
+      <Options>
+        <string></string>
+      </Options>
+    </Color>
+  </Skin>
+
+</PatientStatus>

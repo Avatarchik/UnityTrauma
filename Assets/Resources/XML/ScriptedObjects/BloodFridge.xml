@@ -1,0 +1,3199 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<ScriptedObjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <unityObjectName>BloodFridgeScriptedObject</unityObjectName>
+  <moveToParentOnDrop>true</moveToParentOnDrop>
+  <dropTargetName>fab_bloodFridge</dropTargetName>
+  <scripts>
+    <InteractionScriptInfo>
+      <unityObjectName>BLOOD:DISPENSE:SCRIPT</unityObjectName>
+      <triggerStrings />
+      <triggerOnStatus>false</triggerOnStatus>
+      <startingArgs>backorder=0</startingArgs>
+      <scriptLines>
+        <ScriptedActionInfo>
+          <unityObjectName>?IFdelivery=PR</unityObjectName>
+          <comment />
+          <objectName />
+          <type>ifThenElse</type>
+          <role />
+          <stringParam>#delivery="PR"</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?IFshouldSpawnPlasma</unityObjectName>
+          <comment />
+          <objectName />
+          <type>ifThenElse</type>
+          <role />
+          <stringParam>#counter="Patient.%UnitsPlasma" | #counter="Patient.%UnitsPlatelets"</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>spawnFFPBagPressure</unityObjectName>
+          <comment />
+          <objectName>BagSpawnPoint</objectName>
+          <type>spawn</type>
+          <role />
+          <stringParam>Templates/BagFFPPressure</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2>spawnedbag$fab_bloodFridge.bagindex</stringParam2>
+          <stringParam3>BagSpawnPoint</stringParam3>
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?ELSEnewScriptLine-noop</unityObjectName>
+          <comment />
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>beginElse</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>spawnBloodBagPressure</unityObjectName>
+          <comment />
+          <objectName>BagSpawnPoint</objectName>
+          <type>spawn</type>
+          <role />
+          <stringParam>Templates/BagBloodPressure</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2>spawnedbag$fab_bloodFridge.bagindex</stringParam2>
+          <stringParam3>BagSpawnPoint</stringParam3>
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?ENDnewScriptLine-noop</unityObjectName>
+          <comment />
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>endIfThenElse</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>newScriptLine-noop</unityObjectName>
+          <comment />
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?ELSEnewScriptLine-noop</unityObjectName>
+          <comment />
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>beginElse</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?IFshouldSpawnPlasma</unityObjectName>
+          <comment />
+          <objectName />
+          <type>ifThenElse</type>
+          <role />
+          <stringParam>#counter="Patient.%UnitsPlasma" | #counter="Patient.%UnitsPlatelets"</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>spawnFFPbag</unityObjectName>
+          <comment />
+          <objectName>BagSpawnPoint</objectName>
+          <type>spawn</type>
+          <role />
+          <stringParam>Templates/BagFFP</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName>pathIVBagDouble</moveToName>
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2>spawnedbag$fab_bloodFridge.bagindex</stringParam2>
+          <stringParam3>BagSpawnPoint</stringParam3>
+          <stringParam4>TASK:BLOOD:DISPENSE:COMPLETE</stringParam4>
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?ELSEnewScriptLine-noop</unityObjectName>
+          <comment />
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>beginElse</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>spawnBloodbag</unityObjectName>
+          <comment />
+          <objectName>BagSpawnPoint</objectName>
+          <type>spawn</type>
+          <role />
+          <stringParam>Templates/BagBlood</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName>pathIVBagDouble</moveToName>
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2>spawnedbag$fab_bloodFridge.bagindex</stringParam2>
+          <stringParam3>BagSpawnPoint</stringParam3>
+          <stringParam4>TASK:BLOOD:DISPENSE:COMPLETE</stringParam4>
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?ENDnewScriptLine-noop</unityObjectName>
+          <comment />
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>endIfThenElse</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>newScriptLine-noop</unityObjectName>
+          <comment />
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?ENDnewScriptLine-noop</unityObjectName>
+          <comment />
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>endIfThenElse</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>User-pathBloodPickup-ivHold1--</unityObjectName>
+          <comment />
+          <objectName />
+          <type>characterTask</type>
+          <role />
+          <stringParam>ivHold1</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName>pathBloodPickup</moveToName>
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes>fab_bloodFridge.bloodbags-=1 fab_bloodFridge.bagindex+=1 PrimaryNurse.attach1=#spawnedname</postAttributes>
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4>TASK:BLOOD:DISPENSE:COMPLETE</stringParam4>
+          <attachmentOverride>spawnedbag$fab_bloodFridge.bagindex</attachmentOverride>
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?IFUser-Test#units&gt;=2</unityObjectName>
+          <comment />
+          <objectName />
+          <type>ifThenElse</type>
+          <role />
+          <stringParam>#units&gt;=2</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName>pathBloodFridge</moveToName>
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4>TASK:BLOOD:DISPENSE:COMPLETE</stringParam4>
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?IFdelivery=PR</unityObjectName>
+          <comment />
+          <objectName />
+          <type>ifThenElse</type>
+          <role />
+          <stringParam>#delivery="PR"</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?IFshouldSpawnPlasma</unityObjectName>
+          <comment />
+          <objectName />
+          <type>ifThenElse</type>
+          <role />
+          <stringParam>#counter="Patient.%UnitsPlasma" | #counter="Patient.%UnitsPlatelets"</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>spawn2ndBagFFPPressure</unityObjectName>
+          <comment />
+          <objectName />
+          <type>spawn</type>
+          <role />
+          <stringParam>Templates/BagFFPPressure</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?ELSEnewScriptLine-noop</unityObjectName>
+          <comment />
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>beginElse</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>spawn2ndBagBloodPressure</unityObjectName>
+          <comment />
+          <objectName />
+          <type>spawn</type>
+          <role />
+          <stringParam>Templates/BagBloodPressure</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?ENDnewScriptLine-noop</unityObjectName>
+          <comment />
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>endIfThenElse</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?ELSEnewScriptLine-noop</unityObjectName>
+          <comment />
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>beginElse</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?IFshouldSpawnPlasma</unityObjectName>
+          <comment />
+          <objectName />
+          <type>ifThenElse</type>
+          <role />
+          <stringParam>#counter="Patient.%UnitsPlasma" | #counter="Patient.%UnitsPlatelets"</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>spawn2ndFFPbag</unityObjectName>
+          <comment />
+          <objectName>BagSpawnPoint</objectName>
+          <type>spawn</type>
+          <role />
+          <stringParam>Templates/BagFFP</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName>pathIVBagDouble</moveToName>
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2>spawnedbag$fab_bloodFridge.bagindex</stringParam2>
+          <stringParam3>BagSpawnPoint</stringParam3>
+          <stringParam4>TASK:BLOOD:DISPENSE:COMPLETE</stringParam4>
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?ELSEnewScriptLine-noop</unityObjectName>
+          <comment />
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>beginElse</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>spawn2ndBloodbag</unityObjectName>
+          <comment />
+          <objectName>BagSpawnPoint</objectName>
+          <type>spawn</type>
+          <role />
+          <stringParam>Templates/BagBlood</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName>pathIVBagDouble</moveToName>
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2>spawnedbag$fab_bloodFridge.bagindex</stringParam2>
+          <stringParam3>BagSpawnPoint</stringParam3>
+          <stringParam4>TASK:BLOOD:DISPENSE:COMPLETE</stringParam4>
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?ENDnewScriptLine-noop</unityObjectName>
+          <comment />
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>endIfThenElse</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?ENDnewScriptLine-noop</unityObjectName>
+          <comment />
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>endIfThenElse</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>attach2ndBloodbag</unityObjectName>
+          <comment />
+          <objectName />
+          <type>attach</type>
+          <role />
+          <stringParam>Templates/BagBlood</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName>pathIVBagDouble</moveToName>
+          <offset>
+            <x>0.02</x>
+            <y>0.02</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes>fab_bloodFridge.bloodbags-=1 fab_bloodFridge.bagindex+=1</postAttributes>
+          <stringParam2>SpawnedBag$fab_bloodFridge.bagindex</stringParam2>
+          <stringParam3>BagSpawnPoint</stringParam3>
+          <stringParam4>TASK:BLOOD:DISPENSE:COMPLETE</stringParam4>
+          <attachmentOverride>spawnedbag$fab_bloodFridge.bagindex attach1</attachmentOverride>
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?ENDSpawn2ndNoop</unityObjectName>
+          <comment />
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName>pathIVBagSingle</moveToName>
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>endIfThenElse</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4>TASK:BLOOD:DISPENSE:COMPLETE</stringParam4>
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>newScriptLine-noop</unityObjectName>
+          <comment />
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+      </scriptLines>
+      <owningRole />
+      <roles />
+      <roleKeyString />
+      <autoExecuteInterval>-1</autoExecuteInterval>
+      <autoExecuteProbability>0</autoExecuteProbability>
+      <AddToMenu>false</AddToMenu>
+      <menuOrder>0</menuOrder>
+      <interactionSet>
+        <Name />
+        <Maps />
+        <ScriptsEnter />
+        <ScriptsExit />
+        <ScriptsAbort />
+        <ValidInteractors />
+      </interactionSet>
+      <commandVariation>
+        <Cmd />
+        <CmdString />
+        <Variations />
+      </commandVariation>
+      <callbackConfirmVoice>false</callbackConfirmVoice>
+      <item>TASK:BLOOD:DISPENSE</item>
+      <prettyname>Obtain some of Blood</prettyname>
+      <response />
+      <response_title />
+      <note />
+      <tooltip />
+      <sound />
+      <task />
+      <log>false</log>
+      <readyState>unknown</readyState>
+      <startPriority>4</startPriority>
+      <cancellable>false</cancellable>
+      <skillVector />
+      <extraCost>0</extraCost>
+      <prereq />
+      <category />
+      <param />
+      <debug>false</debug>
+    </InteractionScriptInfo>
+    <InteractionScriptInfo>
+      <unityObjectName>SALINE:DISPENSE:SCRIPT</unityObjectName>
+      <triggerStrings />
+      <triggerOnStatus>false</triggerOnStatus>
+      <startingArgs>backorder=0</startingArgs>
+      <scriptLines>
+        <ScriptedActionInfo>
+          <unityObjectName>spawnSalinebag</unityObjectName>
+          <comment />
+          <objectName>ivBagMount_bottom_right</objectName>
+          <type>spawn</type>
+          <role />
+          <stringParam>Templates/BagSaline</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName>pathIVBagDouble</moveToName>
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2>spawnedbag$fab_bloodFridge.bagindex</stringParam2>
+          <stringParam3>ivBagMount_bottom_right</stringParam3>
+          <stringParam4>TASK:BLOOD:DISPENSE:COMPLETE</stringParam4>
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>User-pathSalinePickup-ivHold1--</unityObjectName>
+          <comment />
+          <objectName />
+          <type>characterTask</type>
+          <role />
+          <stringParam>stand</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName>pathWarmingUnit</moveToName>
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes>PrimaryNurse.attach1=#spawnedname</preAttributes>
+          <postAttributes>fab_bloodFridge.salinebags-=1 fab_bloodFridge.bagindex+=1 </postAttributes>
+          <stringParam2 />
+          <stringParam3>stand_ivWarmerPickup1</stringParam3>
+          <stringParam4>TASK:BLOOD:DISPENSE:COMPLETE</stringParam4>
+          <attachmentOverride>#spawnedname</attachmentOverride>
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?IFUser-Test#units&gt;=2</unityObjectName>
+          <comment />
+          <objectName />
+          <type>ifThenElse</type>
+          <role />
+          <stringParam>#units&gt;=2</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName>pathBloodFridge</moveToName>
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4>TASK:BLOOD:DISPENSE:COMPLETE</stringParam4>
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>spawn2ndSalinebag</unityObjectName>
+          <comment />
+          <objectName>SalineSpawnPoint</objectName>
+          <type>spawn</type>
+          <role />
+          <stringParam>Templates/BagSaline</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName>pathIVBagDouble</moveToName>
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2>spawnedbag$fab_bloodFridge.bagindex</stringParam2>
+          <stringParam3>SalineSpawnPoint</stringParam3>
+          <stringParam4>TASK:BLOOD:DISPENSE:COMPLETE</stringParam4>
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>attach2ndSalinebag</unityObjectName>
+          <comment />
+          <objectName />
+          <type>attach</type>
+          <role />
+          <stringParam>Templates/BagBlood</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName>pathIVBagDouble</moveToName>
+          <offset>
+            <x>0.02</x>
+            <y>0.02</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes>fab_bloodFridge.salinebags-=1 fab_bloodFridge.bagindex+=1</postAttributes>
+          <stringParam2>SpawnedBag$fab_bloodFridge.bagindex</stringParam2>
+          <stringParam3>BagSpawnPoint</stringParam3>
+          <stringParam4>TASK:BLOOD:DISPENSE:COMPLETE</stringParam4>
+          <attachmentOverride>spawnedbag$fab_bloodFridge.bagindex attach1</attachmentOverride>
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?ENDSpawn2ndNoop</unityObjectName>
+          <comment />
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName>pathIVBagSingle</moveToName>
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>endIfThenElse</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4>TASK:BLOOD:DISPENSE:COMPLETE</stringParam4>
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+      </scriptLines>
+      <owningRole />
+      <roles />
+      <roleKeyString />
+      <autoExecuteInterval>-1</autoExecuteInterval>
+      <autoExecuteProbability>0</autoExecuteProbability>
+      <AddToMenu>false</AddToMenu>
+      <menuOrder>1</menuOrder>
+      <interactionSet>
+        <Name />
+        <Maps />
+        <ScriptsEnter />
+        <ScriptsExit />
+        <ScriptsAbort />
+        <ValidInteractors />
+      </interactionSet>
+      <commandVariation>
+        <Cmd />
+        <CmdString />
+        <Variations />
+      </commandVariation>
+      <callbackConfirmVoice>false</callbackConfirmVoice>
+      <item>TASK:BLOOD:DISPENSE</item>
+      <prettyname>Obtain some of Blood</prettyname>
+      <response />
+      <response_title />
+      <note />
+      <tooltip />
+      <sound />
+      <task />
+      <log>false</log>
+      <readyState>unknown</readyState>
+      <startPriority>4</startPriority>
+      <cancellable>false</cancellable>
+      <skillVector />
+      <extraCost>0</extraCost>
+      <prereq />
+      <category />
+      <param />
+      <debug>false</debug>
+    </InteractionScriptInfo>
+    <InteractionScriptInfo>
+      <unityObjectName>FLUID:QUEUE</unityObjectName>
+      <triggerStrings>
+        <string>FLUID:QUEUE</string>
+      </triggerStrings>
+      <triggerOnStatus>false</triggerOnStatus>
+      <startingArgs>site="ivleft" bagname="unknown"</startingArgs>
+      <scriptLines>
+        <ScriptedActionInfo>
+          <unityObjectName>decrement dq count</unityObjectName>
+          <comment>stop the queue processing</comment>
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes>Patient.dq-=1</preAttributes>
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?IFnewScriptLine-noop</unityObjectName>
+          <comment />
+          <objectName />
+          <type>ifThenElse</type>
+          <role />
+          <stringParam>Patient.ivleft="available"</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>newScriptLine-noop</unityObjectName>
+          <comment>choose left and flag the site as queued</comment>
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes>#site="ivleft"</preAttributes>
+          <postAttributes>Patient.ivleft="queued"</postAttributes>
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?ELSEnewScriptLine-noop</unityObjectName>
+          <comment />
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>beginElse</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?IFnewScriptLine-noop</unityObjectName>
+          <comment>do the right first if it's open and left wasn't</comment>
+          <objectName />
+          <type>ifThenElse</type>
+          <role />
+          <stringParam>Patient.ivright="available"</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>newScriptLine-noop</unityObjectName>
+          <comment>choose right and flag the site as queued</comment>
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes>#site="ivright"</preAttributes>
+          <postAttributes>Patient.ivright="queued"</postAttributes>
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?ENDnewScriptLine-noop</unityObjectName>
+          <comment />
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>endIfThenElse</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?ENDnewScriptLine-noop</unityObjectName>
+          <comment>the fallthrough is going to use ivleft as the site</comment>
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>endIfThenElse</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>sendFLUID:BAG:CHANGE</unityObjectName>
+          <comment />
+          <objectName>PrimaryNurse</objectName>
+          <type>putMessage</type>
+          <role />
+          <stringParam>#product="bloodbag"</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes>#bagname=fab_bloodFridge.lastemptybagname #emptyproduct=fab_bloodFridge.lastemptyproduct #emptydelivery=fab_bloodFridge.lastemptybagwas</preAttributes>
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+          <gameMsgFormInfo>
+            <msgType>interactMsg</msgType>
+            <gameObjectName>PrimaryNurse</gameObjectName>
+            <log>true</log>
+            <interactName />
+            <command>none</command>
+            <x>0</x>
+            <y>0</y>
+            <w>0</w>
+            <h>0</h>
+            <text />
+            <title />
+            <time>0</time>
+            <modal>false</modal>
+            <xmlName />
+            <className />
+            <dialogName />
+            <anchor>centered</anchor>
+            <arguments />
+            <numArguments>0</numArguments>
+            <waitForDialogClosed>false</waitForDialogClosed>
+            <waitForDialogName />
+            <timeout>0</timeout>
+            <editbox>false</editbox>
+            <editboxlabel />
+            <editboxprompt />
+            <sendMap>true</sendMap>
+            <baseXML />
+            <hasCancel>false</hasCancel>
+            <commandString />
+            <Params />
+            <ScreenName />
+          </gameMsgFormInfo>
+          <map>
+            <item>FLUID:BAG:CHANGE</item>
+            <response />
+            <response_title />
+            <tooltip />
+            <note />
+            <sound />
+            <task />
+            <time>0</time>
+            <log>false</log>
+            <max>0</max>
+            <readyState>readyToRun</readyState>
+            <startPriority>4</startPriority>
+            <prereq />
+            <scriptName />
+            <objectName />
+            <confirm>false</confirm>
+            <category />
+            <Enabled>true</Enabled>
+            <param>
+              <string>site=#site</string>
+              <string>product=#product</string>
+              <string>delivery=#delivery</string>
+              <string>units=1</string>
+              <string>bagname=#bagname</string>
+              <string>affect=#affect</string>
+              <string>emptyproduct=#emptyproduct</string>
+              <string>emptydelivery=#emptydelivery</string>
+              <string>counter=#counter</string>
+            </param>
+          </map>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?IFnewScriptLine-noop</unityObjectName>
+          <comment />
+          <objectName />
+          <type>ifThenElse</type>
+          <role />
+          <stringParam>#product="bloodbag"</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>newScriptLine-noop</unityObjectName>
+          <comment>decrement fab_bloodFridge.bloodbackordered</comment>
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes>fab_bloodFridge.bloodbackordered-=1</preAttributes>
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?ELSEnewScriptLine-noop</unityObjectName>
+          <comment>decrement fab_bloodFridge.salinebackordered</comment>
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>beginElse</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes>fab_bloodFridge.salinebackordered-=1</preAttributes>
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?ENDnewScriptLine-noop</unityObjectName>
+          <comment />
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>endIfThenElse</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+      </scriptLines>
+      <owningRole />
+      <roles />
+      <roleKeyString>
+        <string>Patient.dq&gt;=1</string>
+      </roleKeyString>
+      <autoExecuteInterval>-1</autoExecuteInterval>
+      <autoExecuteProbability>0</autoExecuteProbability>
+      <AddToMenu>false</AddToMenu>
+      <menuOrder>2</menuOrder>
+      <interactionSet>
+        <Name />
+        <Maps />
+        <ScriptsEnter />
+        <ScriptsExit />
+        <ScriptsAbort />
+        <ValidInteractors />
+      </interactionSet>
+      <commandVariation>
+        <Cmd />
+        <CmdString />
+        <Variations />
+      </commandVariation>
+      <callbackConfirmVoice>false</callbackConfirmVoice>
+      <item>TASK:BLOOD:DISPENSE</item>
+      <prettyname>Obtain some of Blood</prettyname>
+      <response />
+      <response_title />
+      <note />
+      <tooltip />
+      <sound />
+      <task />
+      <log>false</log>
+      <readyState>unknown</readyState>
+      <startPriority>4</startPriority>
+      <cancellable>false</cancellable>
+      <skillVector />
+      <extraCost>0</extraCost>
+      <prereq />
+      <category />
+      <param />
+      <debug>false</debug>
+    </InteractionScriptInfo>
+    <InteractionScriptInfo>
+      <unityObjectName>FLUID:FINISHED</unityObjectName>
+      <triggerStrings>
+        <string>FLUID:FINISHED</string>
+      </triggerStrings>
+      <triggerOnStatus>true</triggerOnStatus>
+      <startingArgs />
+      <scriptLines>
+        <ScriptedActionInfo>
+          <unityObjectName>?IFleftSide</unityObjectName>
+          <comment />
+          <objectName />
+          <type>ifThenElse</type>
+          <role />
+          <stringParam>#site="ivleft"</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes>Patient.ivavailable+=1 Patient.dq+=1</preAttributes>
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>setLeftAvailable</unityObjectName>
+          <comment />
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes>Patient.ivleft="available"</preAttributes>
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?ELSEsetRightAvailable</unityObjectName>
+          <comment />
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>beginElse</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes>Patient.ivright="available"</preAttributes>
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?ENDnewScriptLine-noop</unityObjectName>
+          <comment />
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>endIfThenElse</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>save emptyBag bagname</unityObjectName>
+          <comment>save #bagname as fab_bloodFridge.lastemptybagname</comment>
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes>fab_bloodFridge.lastemptybagname=#bagname</preAttributes>
+          <postAttributes>fab_bloodFridge.lastemptyproduct=#product</postAttributes>
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>save emptyBag delivery</unityObjectName>
+          <comment>save #delivery as fab_bloodFridge.lastemptybagwas</comment>
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes>fab_bloodFridge.lastemptybagwas=#delivery</preAttributes>
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>newScriptLine-noop</unityObjectName>
+          <comment>//if nothing is queued, just send message to take down this bag.</comment>
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?IFnewScriptLine-noop</unityObjectName>
+          <comment />
+          <objectName />
+          <type>ifThenElse</type>
+          <role />
+          <stringParam>fab_bloodFridge.bloodbackordered=0 &amp; fab_bloodFridge.salinebackordered=0</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>sendFLUID:BAG:CHANGE</unityObjectName>
+          <comment />
+          <objectName>PrimaryNurse</objectName>
+          <type>putMessage</type>
+          <role />
+          <stringParam>#product="bloodbag"</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes>#bagname=fab_bloodFridge.lastemptybagname</preAttributes>
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+          <gameMsgFormInfo>
+            <msgType>interactMsg</msgType>
+            <gameObjectName>PrimaryNurse</gameObjectName>
+            <log>false</log>
+            <interactName />
+            <command>none</command>
+            <x>0</x>
+            <y>0</y>
+            <w>0</w>
+            <h>0</h>
+            <text />
+            <title />
+            <time>0</time>
+            <modal>false</modal>
+            <xmlName />
+            <className />
+            <dialogName />
+            <anchor>centered</anchor>
+            <arguments />
+            <numArguments>0</numArguments>
+            <waitForDialogClosed>false</waitForDialogClosed>
+            <waitForDialogName />
+            <timeout>0</timeout>
+            <editbox>false</editbox>
+            <editboxlabel />
+            <editboxprompt />
+            <sendMap>true</sendMap>
+            <baseXML />
+            <hasCancel>false</hasCancel>
+            <commandString />
+            <Params />
+            <ScreenName />
+          </gameMsgFormInfo>
+          <map>
+            <item>FLUID:BAG:CHANGE</item>
+            <response />
+            <response_title />
+            <tooltip />
+            <note />
+            <sound />
+            <task />
+            <time>0</time>
+            <log>false</log>
+            <max>0</max>
+            <readyState>readyToRun</readyState>
+            <startPriority>4</startPriority>
+            <prereq />
+            <scriptName />
+            <objectName />
+            <confirm>false</confirm>
+            <category />
+            <Enabled>true</Enabled>
+            <param>
+              <string>site=#site</string>
+              <string>product=#product</string>
+              <string>delivery=#delivery</string>
+              <string>units=0</string>
+              <string>bagname=#bagname</string>
+              <string>affect=#affect</string>
+              <string>emptyproduct=#product</string>
+              <string>emptydelivery=#delivery</string>
+              <string>counter=#counter</string>
+            </param>
+          </map>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?ENDnewScriptLine-noop</unityObjectName>
+          <comment />
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>endIfThenElse</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+      </scriptLines>
+      <owningRole />
+      <roles />
+      <roleKeyString />
+      <autoExecuteInterval>-1</autoExecuteInterval>
+      <autoExecuteProbability>0</autoExecuteProbability>
+      <AddToMenu>false</AddToMenu>
+      <menuOrder>3</menuOrder>
+      <interactionSet>
+        <Name />
+        <Maps />
+        <ScriptsEnter />
+        <ScriptsExit />
+        <ScriptsAbort />
+        <ValidInteractors />
+      </interactionSet>
+      <commandVariation>
+        <Cmd />
+        <CmdString />
+        <Variations />
+      </commandVariation>
+      <callbackConfirmVoice>false</callbackConfirmVoice>
+      <item>TASK:BLOOD:DISPENSE</item>
+      <prettyname>Obtain some of Blood</prettyname>
+      <response />
+      <response_title />
+      <note />
+      <tooltip />
+      <sound />
+      <task />
+      <log>false</log>
+      <readyState>unknown</readyState>
+      <startPriority>4</startPriority>
+      <cancellable>false</cancellable>
+      <skillVector />
+      <extraCost>0</extraCost>
+      <prereq />
+      <category />
+      <param />
+      <debug>false</debug>
+    </InteractionScriptInfo>
+  </scripts>
+  <startupScriptName />
+  <register>true</register>
+  <prettyname>BloodFridge</prettyname>
+  <XMLName>ScriptedObjects/BloodFridge.xml</XMLName>
+  <XMLDirectory>Assets/Resources/XML/</XMLDirectory>
+  <assetBundleInfo>
+    <bundleName />
+    <stage>0</stage>
+    <assetName />
+  </assetBundleInfo>
+  <voiceList>
+    <Name />
+    <VoiceMaps />
+  </voiceList>
+  <voiceLists />
+  <vitalsBehaviors />
+  <scanRecords />
+</ScriptedObjectInfo>

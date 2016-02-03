@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--- this is used for the splenic injury case T05 -->
+<PatientInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>Erica Roberts</name>
+  <dob>04/3/1995</dob>
+  <bloodtype>Type O Positive</bloodtype>
+  <allergies>None</allergies>
+  <contact>Patrice Roberts, Mother</contact>
+  <initialVitalState>Normal</initialVitalState>
+  <initialVitalsBehavior>Stable</initialVitalsBehavior>
+  <chestXRAY>xray.chest.normal</chestXRAY>
+  <pelvicXRAY>xray.pelvic.severefracture</pelvicXRAY>	
+  <fast>
+    <!-- perihepatic, perisplenic, pelvis, pericardium, chest -->
+	<string>http://unity.sitelms.org/video/fast.perihepatic.ruq.normal.ogv</string>
+	<string>http://unity.sitelms.org/video/fast.perisplenic.luq.positive.ogv</string>
+	<string>http://unity.sitelms.org/video/fast.pelvic.male.positive.ogv</string>
+	<string>http://unity.sitelms.org/video/fast.chest.normal.ogv</string>
+	<string>http://unity.sitelms.org/video/fast.chest.normal.ogv</string>
+  </fast>	
+  <fastThumbnail>
+    <!-- perihepatic, perisplenic, pelvis, pericardium, chest -->
+	<string>fast.perihepatic.ruq.normal</string>
+	<string>fast.perisplenic.luq.positive</string>
+	<string>fast.pelvic.female.positive</string>
+	<string>fast.chest.normal</string>
+	<string>fast.chest.normal</string>
+  </fastThumbnail>
+  <CT>
+    <!-- brain, cspine, chest, abdomen, tlspine, angiogram -->
+	<string>http://unity.sitelms.org/video/brainCTFalse.ogv</string>
+	<string>http://unity.sitelms.org/video/cspineCTFalse.ogv</string>
+	<string>http://unity.sitelms.org/video/chestCTFalse.ogv</string>
+	<string>http://unity.sitelms.org/video/abdomenCTFalse.ogv</string>
+	<string>http://unity.sitelms.org/video/tlspineCTFalse.ogv</string>
+	<string>http://unity.sitelms.org/video/angiogramCTFalse.ogv</string>
+  </CT>	
+  <CTThumbnail>
+    <!-- brain, cspine, chest, abdomen, tlspine -->
+	<string>brainCTFalse</string>
+	<string>cspineCTFalse</string>
+	<string>chestCTFalse</string>
+	<string>abdomenCTFalse</string>
+	<string>tlspineCTFalse</string>
+  </CTThumbnail>
+  <scanRecords>
+    <string>XML/Patient/Records/XRayChestFemaleNormal</string>
+	<string>XML/Patient/Records/XRayAbdomenNormal</string>
+	<string>XML/Patient/Records/XRayPelvisSevereFracture</string>
+	<string>XML/Patient/Records/XRayCSpineNormal</string>
+	<string>XML/Patient/Records/XRaySkullNormal</string>
+	<string>XML/Patient/Records/XRayArmRightNormal</string>
+	<string>XML/Patient/Records/XRayElbowRightNormal</string>
+	<string>XML/Patient/Records/XRayForearmRightNormal</string>
+	<string>XML/Patient/Records/XRayHandRightNormal</string>
+	<string>XML/Patient/Records/XRayArmLeftNormal</string>
+	<string>XML/Patient/Records/XRayElbowLeftNormal</string>
+	<string>XML/Patient/Records/XRayForearmLeftNormal</string>
+	<string>XML/Patient/Records/XRayHandLeftNormal</string>
+	<string>XML/Patient/Records/XRayThighRightNormal</string>
+	<string>XML/Patient/Records/XRayLegRightNormal</string>
+	<string>XML/Patient/Records/XRayThighLeftNormal</string>
+	<string>XML/Patient/Records/XRayLegLeftNormal</string>
+	<string>XML/Patient/Records/FASTPerihepaticFalse</string>
+	<string>XML/Patient/Records/FASTPerisplenicTrue</string>
+	<string>XML/Patient/Records/FASTPelvisTrue</string>
+	<string>XML/Patient/Records/FASTPericardiumFalse</string>
+	<string>XML/Patient/Records/FASTChestFalse</string>
+	<string>XML/Patient/Records/CTScanBrainNormal</string>
+	<string>XML/Patient/Records/CTScanCSpineNormal</string>
+	<string>XML/Patient/Records/CTScanChestNormal</string>
+	<string>XML/Patient/Records/CTScanAbdomenNormal</string>
+	<string>XML/Patient/Records/CTScanTLSpineNormal</string>
+	<string>XML/Patient/Records/CTScanAngiogramNormal</string>
+  </scanRecords>	
+  <decisions>
+    <string>XML/Decisions/terminate</string>
+	<string>XML/Decisions/monitorheartrate</string>
+	<string>XML/Decisions/monitorsao2</string>
+	<string>XML/Decisions/warnbplow</string>
+	<string>XML/Decisions/warno2low</string>
+  </decisions>
+  <startingTime>3:14</startingTime>
+  <gcsEyes>2</gcsEyes>
+  <gcsVerbal>2</gcsVerbal>
+  <gcsMotor>4</gcsMotor>
+  <gcsTotal>8</gcsTotal>
+</PatientInfo>

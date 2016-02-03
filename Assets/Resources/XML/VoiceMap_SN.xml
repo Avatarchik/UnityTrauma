@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VoiceList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Name>ScribeNurse</Name>
+	<VoiceMaps>
+	    <VoiceMap>
+	      <Tag>VOICE:BUSY</Tag>
+	      <Audio>Audio/SN_Busy</Audio>
+	      <Text>I'm sorry, but I'm a little busy right now.</Text>
+	    </VoiceMap>
+	    <VoiceMap>
+	      <Tag>VOICE:WRONG:PERSON</Tag>
+	      <Audio>Audio/SN_WrongPerson</Audio>
+	      <Text>I'm sorry, but I don't know how to do that.</Text>
+	    </VoiceMap>
+	    <VoiceMap>
+	      <Tag>VOICE:EXCEEDED:MAX:INTERACTION</Tag>
+	      <Text>I have already done that!</Text>
+	    </VoiceMap>
+	    <VoiceMap>
+	      <Tag>VOICE:MISSING:PREREQ</Tag>
+	      <Text>Can't do that right now, did you forget something?</Text>
+	    </VoiceMap>
+      <VoiceMap>
+        <Tag>VOICE:CALL:XRAY</Tag>
+		    <Audio>Audio/SN_xrayTechOnWay</Audio>
+        <Text>The xray tech is on their way.</Text>
+        <LookAt>lookCamera</LookAt>
+      </VoiceMap>
+      <VoiceMap>
+        <Tag>VOICE:CALL:XRAY:10MIN</Tag>
+		<Audio>Audio/SN_noXrayTenMinutes</Audio>
+        <Text>The xray is not available for 10 minutes.</Text>
+        <LookAt>lookCamera</LookAt>
+      </VoiceMap>
+      <VoiceMap>
+        <Tag>VOICE:CALL:ANESTH:REPORT</Tag>
+        <Audio>Audio/SN_noTimeConsult</Audio>
+        <Text>We need to do something now! There isn't enough time for a consult.</Text>
+        <LookAt>lookCamera</LookAt>
+      </VoiceMap>
+	  <VoiceMap>
+	  <Tag>VOICE:CALL:IR:REPORT</Tag>
+      <Audio>Audio/SN_noTimeConsult</Audio>
+      <Text>We need to do something now! There isn't enough time for a consult.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+        <VoiceMap>
+        <Tag>VOICE:DELAY:FORTYFIVE</Tag>
+		<Audio>Audio/SN_noIRFortyFiveMinutes</Audio>
+        <Text>There will be a 45 minute delay. Do you still want to schedule the procedure?</Text>
+        <LookAt>lookCamera</LookAt>
+      </VoiceMap>
+    <VoiceMap>
+	  <Tag>VOICE:IR:ASK:PROCEDURE</Tag>
+      <Audio>Audio/SN_askIRProcedure</Audio>
+      <Text>Interventional Radiology want to know what procedure is needed.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+      <VoiceMap>
+        <Tag>VOICE:CALL:OR:REPORT</Tag>
+		<Audio>Audio/SN_orReadyIn5</Audio>
+        <Text>The OR will be ready in five minutes.</Text>
+        <LookAt>lookCamera</LookAt>
+      </VoiceMap>
+    <VoiceMap>
+	  <Tag>VOICE:OR:ASK:PROCEDURE</Tag>
+      <Audio>Audio/SN_askORProcedure</Audio>
+      <Text>The OR wants to know what procedure is needed.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+ <VoiceMap>
+	  <Tag>VOICE:OR:WARN:FIVEMINUTES</Tag>
+      <Audio>Audio/SN_fiveMinuteWarning</Audio>
+      <Text>We have five minutes before they can take us Doctor. If there's anything else you want to do, we should do it now.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+	  <Tag>VOICE:OR:READY:NOW</Tag>
+      <Audio>Audio/SN_orReadyNow</Audio>
+      <Text>The OR is ready for you now. Are you ready to go?</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+      <VoiceMap>
+        <Tag>VOICE:CALL:ORTHO:REPORT</Tag>
+        <Audio>Audio/SN_noTimeConsult</Audio>
+        <Text>We need to do something now! There isn't enough time for a consult.</Text>
+        <LookAt>lookCamera</LookAt>
+      </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:ORTHO:ASK:INJURY</Tag>
+      <Audio>Audio/SN_askInjury</Audio>
+      <Text>Orthopedics wants to know what type of injury you have.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:CONSULT:DELAY</Tag>
+      <Audio>Audio/SN_consultDelay</Audio>
+      <Text>It’s going to take over an hour to get a consult. Do you still want to schedule it?</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+      <VoiceMap>
+        <Tag>VOICE:CALL:TRANSFER:REPORT</Tag>
+        <Audio>Audio/SN_transfer</Audio>
+        <Text>This hospital is equipped to handle this patient, Doctor. Are you?</Text>
+        <LookAt>lookCamera</LookAt>
+      </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:SCAN:AREA:REQUEST</Tag>
+      <Audio>Audio/SN_whatAreaScan</Audio>
+      <Text>What area would you like to scan, Doctor?</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:SCAN:CT:READY</Tag>
+      <Audio>Audio/SN_theyCanTakeUs</Audio>
+      <Text>They can take us now. Should we go?</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>TASK:PELVICREPORT:ECHO</Tag>
+      <Audio>Audio/SN_pelvisUnstable</Audio>
+      <Text>The patient's pelvis is unstable.</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>SAY:VITALS:OVER</Tag>
+      <Audio>Audio/SN_vitalsOver</Audio>
+      <Text>/</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>SAY:VITALS:PERCENT</Tag>
+      <Audio>Audio/SN_vitalsPercent</Audio>
+      <Text> percent</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:VITALS:ALL</Tag>
+      <Audio>audio=SAY:VITALS:BP variable=patient.BP_SYS audio=SAY:VITALS:OVER variable=patient.BP_DIA gap=0.2 audio=SAY:VITALS:HR variable=patient.HR gap=0.2 audio=SAY:VITALS:RESP variable=patient.RR gap=0.2 audio=SAY:VITALS:SAO2 variable=patient.SP audio=SAY:VITALS:PERCENT gap=0.0</Audio>
+      <LookAt>lookCamera</LookAt>
+	  <Dynamic>true</Dynamic>		
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:VITALS:SAO2</Tag>
+      <Audio>audio=SAY:VITALS:SAO2 variable=patient.SP audio=SAY:VITALS:PERCENT</Audio>
+      <Text>Saturated Oxygen is at %patient.SP percent.</Text>
+      <LookAt>lookCamera</LookAt>
+      <Dynamic>true</Dynamic>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>SAY:VITALS:SAO2</Tag>
+      <Audio>Audio/SN_vitalsSAO2</Audio>
+      <Text>Saturated Oxygen is at </Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:VITALS:BP</Tag>
+      <Audio>audio=SAY:VITALS:BP variable=patient.BP_SYS audio=SAY:VITALS:OVER variable=patient.BP_DIA</Audio>
+      <Text>Blood pressure is %patient.BP_SYS over %patient.BP_DIA</Text>
+      <LookAt>lookCamera</LookAt>
+      <Dynamic>true</Dynamic>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>SAY:VITALS:BP</Tag>
+      <Audio>Audio/SN_vitalsBP</Audio>
+      <Text>Blood pressure is </Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:VITALS:HR</Tag>
+      <Audio>audio=SAY:VITALS:HR variable=patient.HR</Audio>
+      <Text>Heart rate is %patient.HR</Text>
+      <LookAt>lookCamera</LookAt>
+      <Dynamic>true</Dynamic>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>SAY:VITALS:HR</Tag>
+      <Audio>Audio/SN_vitalsHR</Audio>
+      <Text>Heart rate is </Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:VITALS:RESP</Tag>
+      <Audio>audio=SAY:VITALS:RESP variable=patient.RESP</Audio>
+      <Text>Respiratory rate is %patient.RESP</Text>
+      <LookAt>lookCamera</LookAt>
+      <Dynamic>true</Dynamic>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>SAY:VITALS:RESP</Tag>
+      <Audio>Audio/SN_vitalsRR</Audio>
+      <Text>Respiratory rate is </Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>	
+    <!-- Numbers -->
+    <VoiceMap>
+      <Tag>VOICE:NUM100:1</Tag>
+      <Audio>Audio/SN_num100</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:1</Tag>
+      <Audio>Audio/SN_num10</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:2</Tag>
+      <Audio>Audio/SN_num20</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:3</Tag>
+      <Audio>Audio/SN_num30</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:4</Tag>
+      <Audio>Audio/SN_num40</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:5</Tag>
+      <Audio>Audio/SN_num50</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:6</Tag>
+      <Audio>Audio/SN_num60</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:7</Tag>
+      <Audio>Audio/SN_num70</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:8</Tag>
+      <Audio>Audio/SN_num80</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:9</Tag>
+      <Audio>Audio/SN_num90</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:1</Tag>
+      <Audio>Audio/SN_num11</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:2</Tag>
+      <Audio>Audio/SN_num12</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:3</Tag>
+      <Audio>Audio/SN_num13</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:4</Tag>
+      <Audio>Audio/SN_num14</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:5</Tag>
+      <Audio>Audio/SN_num15</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:6</Tag>
+      <Audio>Audio/SN_num16</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:7</Tag>
+      <Audio>Audio/SN_num17</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:8</Tag>
+      <Audio>Audio/SN_num18</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:9</Tag>
+      <Audio>Audio/SN_num19</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:0</Tag>
+      <Audio>Audio/SN_num00</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:1</Tag>
+      <Audio>Audio/SN_num01</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:2</Tag>
+      <Audio>Audio/SN_num02</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:3</Tag>
+      <Audio>Audio/SN_num03</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:4</Tag>
+      <Audio>Audio/SN_num04</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:5</Tag>
+      <Audio>Audio/SN_num05</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:6</Tag>
+      <Audio>Audio/SN_num06</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:7</Tag>
+      <Audio>Audio/SN_num07</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:8</Tag>
+      <Audio>Audio/SN_num08</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:9</Tag>
+      <Audio>Audio/SN_num09</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:0</Tag>
+      <Audio>Audio/SN_numPoint0</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:1</Tag>
+      <Audio>Audio/SN_numPoint1</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:2</Tag>
+      <Audio>Audio/SN_numPoint2</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:3</Tag>
+      <Audio>Audio/SN_numPoint3</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:4</Tag>
+      <Audio>Audio/SN_numPoint4</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:5</Tag>
+      <Audio>Audio/SN_numPoint5</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:6</Tag>
+      <Audio>Audio/SN_numPoint6</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:7</Tag>
+      <Audio>Audio/SN_numPoint7</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:8</Tag>
+      <Audio>Audio/SN_numPoint8</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:9</Tag>
+      <Audio>Audio/SN_numPoint9</Audio>
+    </VoiceMap>
+	<!-- Generic Response System -->
+	 <VoiceMap>
+      <Tag>VOICE:ACKNOWLEDGE:1</Tag>
+      <Audio>Audio/SN_acknowledge01</Audio>
+      <Text>Yes, doctor, right away.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:ACKNOWLEDGE:2</Tag>
+      <Audio>Audio/SN_acknowledge02</Audio>
+      <Text>I'm on it.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:ACKNOWLEDGE:3</Tag>
+      <Audio>Audio/SN_acknowledge03</Audio>
+      <Text>Sure thing, Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:ACKNOWLEDGE:4</Tag>
+      <Audio>Audio/SN_acknowledge04</Audio>
+      <Text>Of course.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:ACKNOWLEDGE:5</Tag>
+      <Audio>Audio/SN_acknowledge05</Audio>
+      <Text>Okay.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:QUEUED:1</Tag>
+      <Audio>Audio/SN_queued01</Audio>
+      <Text>Yes, just a minute, doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:QUEUED:2</Tag>
+      <Audio>Audio/SN_queued02</Audio>
+      <Text>Okay, one moment, please.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:QUEUED:3</Tag>
+      <Audio>Audio/SN_queued03</Audio>
+      <Text>As soon as I'm finished, I'll do that.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:QUEUED:4</Tag>
+      <Audio>Audio/SN_queued04</Audio>
+      <Text>I'll do that next.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:QUEUED:5</Tag>
+      <Audio>Audio/SN_queued05</Audio>
+      <Text>Right after this, doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:DELAYED:1</Tag>
+      <Audio>Audio/SN_delayed01</Audio>
+      <Text>It'll take me a few minutes, but I'll get to it.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:DELAYED:2</Tag>
+      <Audio>Audio/SN_delayed02</Audio>
+      <Text>Let me finish these few tasks and I'll do it.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:DELAYED:3</Tag>
+      <Audio>Audio/SN_delayed03</Audio>
+      <Text>Give me a few minutes to finish up here.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:HANDOFF:1</Tag>
+      <Audio>Audio/SN_handOff01</Audio>
+      <Text>Can you do that? I'm too busy at the moment.</Text>
+	  <LookAt>ignore</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:HANDOFF:2</Tag>
+      <Audio>Audio/SN_handOff02</Audio>
+      <Text>Do you mind helping the doctor with that?</Text>
+	  <LookAt>ignore</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:HANDOFF:4</Tag>
+      <Audio>Audio/SN_handOff04</Audio>
+      <Text>Can you help me out?</Text>
+	  <LookAt>ignore</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:HANDOFF:5</Tag>
+      <Audio>Audio/SN_handOff05</Audio>
+      <Text>Help out the doctor while I finish this.</Text>
+	  <LookAt>ignore</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BAD:COMMAND:1</Tag>
+      <Audio>Audio/SN_badCommand01</Audio>
+      <Text>I'm sorry doctor, but I don't understand what you want me to do.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BAD:COMMAND:2</Tag>
+      <Audio>Audio/SN_badCommand02</Audio>
+      <Text>Can you say that again for me?</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BAD:COMMAND:3</Tag>
+      <Audio>Audio/SN_badCommand03</Audio>
+      <Text>What was that?</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BAD:COMMAND:4</Tag>
+      <Audio>Audio/SN_badCommand04</Audio>
+      <Text>I don't understand.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BAD:COMMAND:5</Tag>
+      <Audio>Audio/SN_badCommand05</Audio>
+      <Text>I don't understand what you're asking me.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:MISMATCH:1</Tag>
+      <Audio>Audio/SN_mismatch04</Audio>
+      <Text>I'm sorry doctor, but that's not in my scope of practice.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+  </VoiceMaps>
+</VoiceList>

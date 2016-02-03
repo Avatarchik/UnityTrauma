@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DecisionMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>MonitorSAO2</Name>
+  <StartState>Normal</StartState>
+  <Interval>1</Interval>
+  <DecisionStates>
+    <DecisionState>
+      <Name>Normal</Name>
+      <Transitions>
+        <DecisionStateTransition>
+          <DecisionCondition>
+            <Name>CheckForAbnormal</Name>
+            <Tests>
+              <string>var:Patient.SP condition:less constant:93</string>
+            </Tests>
+          </DecisionCondition>
+          <DecisionAction>
+            <Name>Action1</Name>
+            <Actions>
+              <string>status:"EFFECT:PATIENT:HYPOXICTACHYCARDIA"</string>
+            </Actions>
+          </DecisionAction>
+          <SuccessState>Tachycardic</SuccessState>
+        </DecisionStateTransition>
+      </Transitions>
+    </DecisionState>
+    <DecisionState>
+      <Name>Tachycardic</Name>
+      <Transitions>
+        <DecisionStateTransition>
+          <DecisionCondition>
+            <Name>CheckForCritical</Name>
+            <Tests>
+              <string>var:Patient.SP condition:less constant:85</string>
+            </Tests>
+          </DecisionCondition>
+          <DecisionAction>
+            <Name>Action1</Name>
+            <Actions>
+              <string>status:"EFFECT:PATIENT:HYPOXICBRADYCARDIA"</string>
+              <string>status:"EFFECT:PATIENT:STOPHYPOXICTACHYCARDIA"</string>
+            </Actions>
+          </DecisionAction>
+          <SuccessState>Bradycardic</SuccessState>
+        </DecisionStateTransition>
+        <DecisionStateTransition>
+          <DecisionCondition>
+            <Name>CheckForNormal</Name>
+            <Tests>
+              <string>var:Patient.SP condition:greater constant:93</string>
+            </Tests>
+          </DecisionCondition>
+          <DecisionAction>
+            <Name>Action1</Name>
+            <Actions>
+			  <string>status:"EFFECT:PATIENT:STOPHYPOXICTACHYCARDIA"</string>
+            </Actions>
+          </DecisionAction>
+          <SuccessState>Normal</SuccessState>
+        </DecisionStateTransition>
+      </Transitions>
+    </DecisionState>
+    <DecisionState>
+      <Name>Bradycardic</Name>
+      <Transitions>
+        <DecisionStateTransition>
+          <DecisionCondition>
+            <Name>CheckForRecovery</Name>
+            <Tests>
+              <string>var:Patient.SP condition:greater constant:85</string>
+            </Tests>
+          </DecisionCondition>
+          <DecisionAction>
+            <Name>Action1</Name>
+            <Actions>
+              <string>status:"EFFECT:PATIENT:STOPHYPOXICBRADYCARDIA"</string>
+              <string>status:"EFFECT:PATIENT:HYPOXICTACHYCARDIA"</string>
+            </Actions>
+          </DecisionAction>
+          <SuccessState>Tachycardic</SuccessState>
+        </DecisionStateTransition>
+      </Transitions>
+    </DecisionState>
+  </DecisionStates>
+  <Finished>false</Finished>
+  <CheckTime>0</CheckTime>
+</DecisionMap>

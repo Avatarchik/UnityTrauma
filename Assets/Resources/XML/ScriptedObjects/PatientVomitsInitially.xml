@@ -1,0 +1,1465 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<ScriptedObjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <unityObjectName>PatientVomitsInitially</unityObjectName>
+  <moveToParentOnDrop>false</moveToParentOnDrop>
+  <dropTargetName />
+  <scripts>
+    <InteractionScriptInfo>
+      <unityObjectName>RiskOfVomiting</unityObjectName>
+      <triggerStrings>
+        <string>RiskOfVomiting</string>
+      </triggerStrings>
+      <triggerOnStatus>false</triggerOnStatus>
+      <startingArgs />
+      <scriptLines>
+        <ScriptedActionInfo>
+          <unityObjectName>WaitForAWhile</unityObjectName>
+          <comment />
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam>Patient.intubationordered=True | Patient.RSIMeds=True | PrimaryNurse.medsordered=True</stringParam>
+          <fadeLength>90</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?IFTestForRSIMeds</unityObjectName>
+          <comment />
+          <objectName />
+          <type>ifThenElse</type>
+          <role />
+          <stringParam>Patient.intubationordered=True | Patient.RSIMeds=True | Patient.intubating=True | PrimaryNurse.medsordered=True</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>quickInfoVomitingAvoided</unityObjectName>
+          <comment />
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+          <gameMsgFormInfo>
+            <msgType>quickInfoDialogMsg</msgType>
+            <gameObjectName />
+            <log>false</log>
+            <interactName />
+            <command>open</command>
+            <x>0</x>
+            <y>0</y>
+            <w>0</w>
+            <h>0</h>
+            <text>Risk of Vomiting avoided</text>
+            <title>Nice Job</title>
+            <time>5</time>
+            <modal>false</modal>
+            <xmlName />
+            <className />
+            <dialogName />
+            <anchor>centered</anchor>
+            <arguments />
+            <numArguments>0</numArguments>
+            <waitForDialogClosed>false</waitForDialogClosed>
+            <waitForDialogName />
+            <timeout>0</timeout>
+            <editbox>false</editbox>
+            <editboxlabel />
+            <editboxprompt />
+            <sendMap>true</sendMap>
+            <baseXML />
+            <hasCancel>false</hasCancel>
+            <commandString />
+            <Params />
+            <ScreenName />
+          </gameMsgFormInfo>
+          <map>
+            <item />
+            <response />
+            <response_title />
+            <tooltip />
+            <note />
+            <sound />
+            <task />
+            <time>0</time>
+            <log>false</log>
+            <max>0</max>
+            <readyState>readyToRun</readyState>
+            <startPriority>4</startPriority>
+            <prereq />
+            <scriptName />
+            <objectName />
+            <confirm>false</confirm>
+            <category />
+            <Enabled>true</Enabled>
+            <param />
+          </map>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?ELSEquickInfoVomitingStarted</unityObjectName>
+          <comment />
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>beginElse</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+          <gameMsgFormInfo>
+            <msgType>quickInfoDialogMsg</msgType>
+            <gameObjectName />
+            <log>false</log>
+            <interactName />
+            <command>open</command>
+            <x>0</x>
+            <y>0</y>
+            <w>0</w>
+            <h>0</h>
+            <text>The Patient has begun vomiting, airway is no longer clear.</text>
+            <title>Complication.</title>
+            <time>5</time>
+            <modal>false</modal>
+            <xmlName />
+            <className />
+            <dialogName />
+            <anchor>centered</anchor>
+            <arguments />
+            <numArguments>0</numArguments>
+            <waitForDialogClosed>false</waitForDialogClosed>
+            <waitForDialogName />
+            <timeout>0</timeout>
+            <editbox>false</editbox>
+            <editboxlabel />
+            <editboxprompt />
+            <sendMap>true</sendMap>
+            <baseXML />
+            <hasCancel>false</hasCancel>
+            <commandString />
+            <Params />
+            <ScreenName />
+          </gameMsgFormInfo>
+          <map>
+            <item />
+            <response />
+            <response_title />
+            <tooltip />
+            <note />
+            <sound />
+            <task />
+            <time>0</time>
+            <log>false</log>
+            <max>0</max>
+            <readyState>readyToRun</readyState>
+            <startPriority>4</startPriority>
+            <prereq />
+            <scriptName />
+            <objectName />
+            <confirm>false</confirm>
+            <category />
+            <Enabled>true</Enabled>
+            <param />
+          </map>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>OpenTheConcussionCanOfWorms</unityObjectName>
+          <comment />
+          <objectName />
+          <type>putMessage</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+          <gameMsgFormInfo>
+            <msgType>interactStatusMsg</msgType>
+            <gameObjectName />
+            <log>false</log>
+            <interactName>COW:VOMIT:CONCUSSION</interactName>
+            <command>none</command>
+            <x>0</x>
+            <y>0</y>
+            <w>0</w>
+            <h>0</h>
+            <text />
+            <title />
+            <time>0</time>
+            <modal>false</modal>
+            <xmlName />
+            <className />
+            <dialogName />
+            <anchor>centered</anchor>
+            <arguments />
+            <numArguments>0</numArguments>
+            <waitForDialogClosed>false</waitForDialogClosed>
+            <waitForDialogName />
+            <timeout>0</timeout>
+            <editbox>false</editbox>
+            <editboxlabel />
+            <editboxprompt />
+            <sendMap>false</sendMap>
+            <baseXML />
+            <hasCancel>false</hasCancel>
+            <commandString />
+            <Params />
+            <ScreenName />
+          </gameMsgFormInfo>
+          <map>
+            <item />
+            <response />
+            <response_title />
+            <tooltip />
+            <note />
+            <sound />
+            <task />
+            <time>0</time>
+            <log>false</log>
+            <max>0</max>
+            <readyState>readyToRun</readyState>
+            <startPriority>4</startPriority>
+            <prereq />
+            <scriptName />
+            <objectName />
+            <confirm>false</confirm>
+            <category />
+            <Enabled>true</Enabled>
+            <param />
+          </map>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>newScriptLine-noop</unityObjectName>
+          <comment />
+          <objectName />
+          <type>executeScript</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2>PerformVomiting</stringParam2>
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?ENDendOfScriptnoop</unityObjectName>
+          <comment />
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>endIfThenElse</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>abort-moved-to-monitor-confirmation</unityObjectName>
+          <comment />
+          <objectName />
+          <type>goToLine</type>
+          <role />
+          <stringParam>abort</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>WaitForIntubation</unityObjectName>
+          <comment>now we wait for intubation to be performed and start the countdown for confirmation</comment>
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam>Patient.%Intubated=True</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>WaitConfirmationOrTimeout</unityObjectName>
+          <comment />
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam>Patient.confirmintubation</stringParam>
+          <fadeLength>60</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?IFTestIfConfirmed</unityObjectName>
+          <comment />
+          <objectName />
+          <type>ifThenElse</type>
+          <role />
+          <stringParam>!Patient.confirmintubation</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>StartChokingEffect</unityObjectName>
+          <comment />
+          <objectName>Pharmacy</objectName>
+          <type>putMessage</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes>Patient.%SP=90</preAttributes>
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+          <gameMsgFormInfo>
+            <msgType>interactStatusMsg</msgType>
+            <gameObjectName />
+            <log>false</log>
+            <interactName>EFFECT:PATIENT:CHOKING</interactName>
+            <command>none</command>
+            <x>0</x>
+            <y>0</y>
+            <w>0</w>
+            <h>0</h>
+            <text />
+            <title />
+            <time>0</time>
+            <modal>false</modal>
+            <xmlName />
+            <className />
+            <dialogName />
+            <anchor>centered</anchor>
+            <arguments />
+            <numArguments>0</numArguments>
+            <waitForDialogClosed>false</waitForDialogClosed>
+            <waitForDialogName />
+            <timeout>0</timeout>
+            <editbox>false</editbox>
+            <editboxlabel />
+            <editboxprompt />
+            <sendMap>false</sendMap>
+            <baseXML />
+            <hasCancel>false</hasCancel>
+            <commandString />
+            <Params />
+            <ScreenName />
+          </gameMsgFormInfo>
+          <map>
+            <item />
+            <response />
+            <response_title />
+            <tooltip />
+            <note />
+            <sound />
+            <task />
+            <time>0</time>
+            <log>false</log>
+            <max>0</max>
+            <readyState>readyToRun</readyState>
+            <startPriority>4</startPriority>
+            <prereq />
+            <scriptName />
+            <objectName />
+            <confirm>false</confirm>
+            <category />
+            <Enabled>true</Enabled>
+            <param />
+          </map>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>newScriptLine-noop</unityObjectName>
+          <comment />
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>1</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes>Patient.%Intubated=False</preAttributes>
+          <postAttributes>Patient.vomiting=True</postAttributes>
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?ENDStartChokingEffect</unityObjectName>
+          <comment />
+          <objectName>Pharmacy</objectName>
+          <type>putMessage</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>endIfThenElse</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+          <gameMsgFormInfo>
+            <msgType>interactStatusMsg</msgType>
+            <gameObjectName />
+            <log>false</log>
+            <interactName>EFFECT:PATIENT:CHOKING</interactName>
+            <command>none</command>
+            <x>0</x>
+            <y>0</y>
+            <w>0</w>
+            <h>0</h>
+            <text />
+            <title />
+            <time>0</time>
+            <modal>false</modal>
+            <xmlName />
+            <className />
+            <dialogName />
+            <anchor>centered</anchor>
+            <arguments />
+            <numArguments>0</numArguments>
+            <waitForDialogClosed>false</waitForDialogClosed>
+            <waitForDialogName />
+            <timeout>0</timeout>
+            <editbox>false</editbox>
+            <editboxlabel />
+            <editboxprompt />
+            <sendMap>false</sendMap>
+            <baseXML />
+            <hasCancel>false</hasCancel>
+            <commandString />
+            <Params />
+            <ScreenName />
+          </gameMsgFormInfo>
+          <map>
+            <item />
+            <response />
+            <response_title />
+            <tooltip />
+            <note />
+            <sound />
+            <task />
+            <time>0</time>
+            <log>false</log>
+            <max>0</max>
+            <readyState>readyToRun</readyState>
+            <startPriority>4</startPriority>
+            <prereq />
+            <scriptName />
+            <objectName />
+            <confirm>false</confirm>
+            <category />
+            <Enabled>true</Enabled>
+            <param />
+          </map>
+        </ScriptedActionInfo>
+      </scriptLines>
+      <owningRole />
+      <roles />
+      <roleKeyString />
+      <autoExecuteInterval>-1</autoExecuteInterval>
+      <autoExecuteProbability>0</autoExecuteProbability>
+      <AddToMenu>false</AddToMenu>
+      <menuOrder>0</menuOrder>
+      <interactionSet>
+        <Name />
+        <Maps />
+        <ScriptsEnter />
+        <ScriptsExit />
+        <ScriptsAbort />
+      </interactionSet>
+      <commandVariation>
+        <Cmd />
+        <CmdString />
+        <Variations />
+      </commandVariation>
+      <callbackConfirmVoice>false</callbackConfirmVoice>
+      <item>RiskOfVomiting</item>
+      <prettyname>Text for the Menu</prettyname>
+      <response>You clicked me</response>
+      <response_title>RESPONSE TITLE</response_title>
+      <note />
+      <tooltip>Click Me</tooltip>
+      <sound>AUDIO:SOUND</sound>
+      <task>OBJECT:MENUCLICK</task>
+      <log>true</log>
+      <readyState>unknown</readyState>
+      <startPriority>4</startPriority>
+      <cancellable>false</cancellable>
+      <skillVector />
+      <extraCost>0</extraCost>
+      <prereq />
+      <category />
+      <param />
+      <debug>false</debug>
+    </InteractionScriptInfo>
+    <InteractionScriptInfo>
+      <unityObjectName>PerformVomiting</unityObjectName>
+      <triggerStrings>
+        <string>PerformVomiting</string>
+      </triggerStrings>
+      <triggerOnStatus>false</triggerOnStatus>
+      <startingArgs />
+      <scriptLines>
+        <ScriptedActionInfo>
+          <unityObjectName>?IFPatientIsNotAvailable</unityObjectName>
+          <comment />
+          <objectName />
+          <type>ifThenElse</type>
+          <role />
+          <stringParam>Patient.%IdleTime&lt;1 | Patient.onside=True</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>newScriptLine-noop</unityObjectName>
+          <comment />
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0.5</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>newScriptLine-noop</unityObjectName>
+          <comment />
+          <objectName />
+          <type>goToLine</type>
+          <role />
+          <stringParam>0</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>?ENDnewScriptLine-noop</unityObjectName>
+          <comment />
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>endIfThenElse</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>Patient-vomit-AUDIO:PATIENT:VOMIT</unityObjectName>
+          <comment />
+          <objectName>Patient</objectName>
+          <type>characterTask</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3>vomit</stringParam3>
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag>AUDIO:PATIENT:VOMIT</voiceTag>
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>StartVomitingEffects</unityObjectName>
+          <comment>start the vitals effect</comment>
+          <objectName />
+          <type>putMessage</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes>Patient.vomiting=true</postAttributes>
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+          <gameMsgFormInfo>
+            <msgType>interactStatusMsg</msgType>
+            <gameObjectName />
+            <log>false</log>
+            <interactName>EFFECT:PATIENT:VOMITING</interactName>
+            <command>none</command>
+            <x>0</x>
+            <y>0</y>
+            <w>0</w>
+            <h>0</h>
+            <text />
+            <title />
+            <time>0</time>
+            <modal>false</modal>
+            <xmlName />
+            <className />
+            <dialogName />
+            <anchor>centered</anchor>
+            <arguments />
+            <numArguments>0</numArguments>
+            <waitForDialogClosed>false</waitForDialogClosed>
+            <waitForDialogName />
+            <timeout>0</timeout>
+            <editbox>false</editbox>
+            <editboxlabel />
+            <editboxprompt />
+            <sendMap>false</sendMap>
+            <baseXML />
+            <hasCancel>false</hasCancel>
+            <commandString />
+            <Params />
+            <ScreenName />
+          </gameMsgFormInfo>
+          <map>
+            <item />
+            <response />
+            <response_title />
+            <tooltip />
+            <note />
+            <sound />
+            <task />
+            <time>0</time>
+            <log>false</log>
+            <max>0</max>
+            <readyState>readyToRun</readyState>
+            <startPriority>4</startPriority>
+            <prereq />
+            <scriptName />
+            <objectName />
+            <confirm>false</confirm>
+            <category />
+            <Enabled>true</Enabled>
+            <param />
+          </map>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>AnnounceVomited</unityObjectName>
+          <comment />
+          <objectName>AirwayMD</objectName>
+          <type>putMessage</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+          <gameMsgFormInfo>
+            <msgType>interactMsg</msgType>
+            <gameObjectName>AirwayMD</gameObjectName>
+            <log>true</log>
+            <interactName />
+            <command>none</command>
+            <x>0</x>
+            <y>0</y>
+            <w>0</w>
+            <h>0</h>
+            <text />
+            <title />
+            <time>0</time>
+            <modal>false</modal>
+            <xmlName />
+            <className />
+            <dialogName />
+            <anchor>centered</anchor>
+            <arguments />
+            <numArguments>0</numArguments>
+            <waitForDialogClosed>false</waitForDialogClosed>
+            <waitForDialogName />
+            <timeout>0</timeout>
+            <editbox>false</editbox>
+            <editboxlabel />
+            <editboxprompt />
+            <sendMap>true</sendMap>
+            <baseXML />
+            <hasCancel>false</hasCancel>
+            <commandString />
+            <Params />
+            <ScreenName />
+          </gameMsgFormInfo>
+          <map>
+            <item>WARN:PLAYER:VOMIT</item>
+            <response />
+            <response_title />
+            <tooltip />
+            <note />
+            <sound />
+            <task />
+            <time>0</time>
+            <log>false</log>
+            <max>0</max>
+            <readyState>readyToRun</readyState>
+            <startPriority>4</startPriority>
+            <prereq />
+            <scriptName />
+            <objectName />
+            <confirm>false</confirm>
+            <category />
+            <Enabled>true</Enabled>
+            <param />
+          </map>
+        </ScriptedActionInfo>
+      </scriptLines>
+      <owningRole />
+      <roles />
+      <roleKeyString />
+      <autoExecuteInterval>-1</autoExecuteInterval>
+      <autoExecuteProbability>0</autoExecuteProbability>
+      <AddToMenu>false</AddToMenu>
+      <menuOrder>0</menuOrder>
+      <interactionSet>
+        <Name />
+        <Maps />
+        <ScriptsEnter />
+        <ScriptsExit />
+        <ScriptsAbort />
+      </interactionSet>
+      <commandVariation>
+        <Cmd />
+        <CmdString />
+        <Variations />
+      </commandVariation>
+      <callbackConfirmVoice>false</callbackConfirmVoice>
+      <item>PerformVomiting</item>
+      <prettyname>Text for the Menu</prettyname>
+      <response>You clicked me</response>
+      <response_title>RESPONSE TITLE</response_title>
+      <note />
+      <tooltip>Click Me</tooltip>
+      <sound>AUDIO:SOUND</sound>
+      <task>OBJECT:MENUCLICK</task>
+      <log>true</log>
+      <readyState>unknown</readyState>
+      <startPriority>4</startPriority>
+      <cancellable>false</cancellable>
+      <skillVector />
+      <extraCost>0</extraCost>
+      <prereq />
+      <category />
+      <param />
+      <debug>false</debug>
+    </InteractionScriptInfo>
+  </scripts>
+  <startupScriptName>RiskOfVomiting</startupScriptName>
+  <register>true</register>
+  <prettyname />
+  <XMLName>ScriptedObjects/PatientVomitsInitially.xml</XMLName>
+  <XMLDirectory>Assets/Resources/XML/</XMLDirectory>
+  <assetBundleInfo>
+    <bundleName />
+    <stage>0</stage>
+    <assetName />
+  </assetBundleInfo>
+  <voiceList>
+    <Name />
+    <VoiceMaps />
+  </voiceList>
+  <voiceLists />
+  <vitalsBehaviors />
+  <scanRecords />
+</ScriptedObjectInfo>

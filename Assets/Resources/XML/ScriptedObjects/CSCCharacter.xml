@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<ScriptedObjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <unityObjectName>WanderingHerdScripts</unityObjectName>
+  <moveToParentOnDrop>true</moveToParentOnDrop>
+  <dropTargetName>PrimaryNurse,NPC1,NPC2,NPC3,NPCA1,NPCA2,NPCA3,NPCR1,NPCR2,NPCR3</dropTargetName>
+  <scripts>
+    <InteractionScriptInfo>
+      <unityObjectName>MOVE:RANDOM</unityObjectName>
+      <triggerStrings>
+        <string>MOVE:RANDOM</string>
+      </triggerStrings>
+      <triggerOnStatus>false</triggerOnStatus>
+      <startingArgs />
+      <scriptLines>
+        <ScriptedActionInfo>
+          <unityObjectName>scriptee-random-stand--examinePeripheral</unityObjectName>
+          <comment />
+          <objectName />
+          <type>characterTask</type>
+          <role />
+          <stringParam>stand</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName>random</moveToName>
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3>examinePeripheral</stringParam3>
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>playAudioVOICE:MOTOR:ARMS:REPORT</unityObjectName>
+          <comment />
+          <objectName />
+          <type>playAudio</type>
+          <role />
+          <stringParam>VOICE:MOTOR:ARMS:REPORT</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>false</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+          <gameMsgFormInfo>
+            <msgType>interactMsg</msgType>
+            <gameObjectName />
+            <log>false</log>
+            <interactName />
+            <command>none</command>
+            <x>0</x>
+            <y>0</y>
+            <w>0</w>
+            <h>0</h>
+            <text />
+            <title />
+            <time>0</time>
+            <modal>false</modal>
+            <xmlName />
+            <className />
+            <arguments />
+            <numArguments>0</numArguments>
+            <timeout>0</timeout>
+            <editbox>false</editbox>
+            <editboxlabel />
+            <editboxprompt />
+            <baseXML />
+            <hasCancel>false</hasCancel>
+            <commandString />
+            <Params />
+          </gameMsgFormInfo>
+          <map>
+            <item>TASK:SKINTEMP:REPORT</item>
+            <response>PATIENT:SKINTEMP:MSG</response>
+            <response_title>PATIENT:SKINTEMP:TITLE</response_title>
+            <tooltip>PATIENT:SKINTEMP:TT</tooltip>
+            <note />
+            <sound />
+            <task>TASK:SKINTEMP:REPORT</task>
+            <time>0</time>
+            <log>true</log>
+            <max>0</max>
+            <readyState>readyToRun</readyState>
+            <startPriority>4</startPriority>
+            <prereq />
+            <scriptName />
+            <objectName />
+            <confirm>false</confirm>
+            <category />
+            <Enabled>true</Enabled>
+            <param />
+          </map>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>scriptee--stand-lookCamera-</unityObjectName>
+          <comment />
+          <objectName />
+          <type>characterTask</type>
+          <role />
+          <stringParam>stand</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2>lookCamera</stringParam2>
+          <stringParam3 />
+          <stringParam4>TASK:SKINTEMP:REPORT:COMPLETE</stringParam4>
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+      </scriptLines>
+      <roles />
+      <roleKeyString />
+      <autoExecuteInterval>5</autoExecuteInterval>
+      <autoExecuteProbability>0.33</autoExecuteProbability>
+      <AddToMenu>false</AddToMenu>
+      <item>MOVE:RANDOM</item>
+      <prettyname />
+      <response />
+      <response_title />
+      <note />
+      <tooltip>Click Me</tooltip>
+      <sound>AUDIO:SOUND</sound>
+      <task />
+      <log>true</log>
+      <readyState>unknown</readyState>
+      <startPriority>4</startPriority>
+      <skillVector />
+      <extraCost>0</extraCost>
+      <prereq />
+      <category>
+        <string />
+      </category>
+      <param />
+      <debug>false</debug>
+    </InteractionScriptInfo>
+    <InteractionScriptInfo>
+      <unityObjectName>MOVE:RANDOM2</unityObjectName>
+      <triggerStrings>
+        <string>MOVE:RANDOM2</string>
+      </triggerStrings>
+      <triggerOnStatus>false</triggerOnStatus>
+      <startingArgs />
+      <scriptLines>
+        <ScriptedActionInfo>
+          <unityObjectName>scripteee-random-stand--magicHands</unityObjectName>
+          <comment />
+          <objectName />
+          <type>characterTask</type>
+          <role />
+          <stringParam>stand</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName>random</moveToName>
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3>magicHands</stringParam3>
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>playAudioVOICE:MOTOR:ARMS:REPORT</unityObjectName>
+          <comment />
+          <objectName />
+          <type>playAudio</type>
+          <role />
+          <stringParam>VOICE:MOTOR:ARMS:REPORT</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>false</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+          <gameMsgFormInfo>
+            <msgType>interactMsg</msgType>
+            <gameObjectName />
+            <log>false</log>
+            <interactName />
+            <command>none</command>
+            <x>0</x>
+            <y>0</y>
+            <w>0</w>
+            <h>0</h>
+            <text />
+            <title />
+            <time>0</time>
+            <modal>false</modal>
+            <xmlName />
+            <className />
+            <arguments />
+            <numArguments>0</numArguments>
+            <timeout>0</timeout>
+            <editbox>false</editbox>
+            <editboxlabel />
+            <editboxprompt />
+            <baseXML />
+            <hasCancel>false</hasCancel>
+            <commandString />
+            <Params />
+          </gameMsgFormInfo>
+          <map>
+            <item>TASK:SKINTEMP:REPORT</item>
+            <response>PATIENT:SKINTEMP:MSG</response>
+            <response_title>PATIENT:SKINTEMP:TITLE</response_title>
+            <tooltip>PATIENT:SKINTEMP:TT</tooltip>
+            <note />
+            <sound />
+            <task>TASK:SKINTEMP:REPORT</task>
+            <time>0</time>
+            <log>true</log>
+            <max>0</max>
+            <readyState>readyToRun</readyState>
+            <startPriority>4</startPriority>
+            <prereq />
+            <scriptName />
+            <objectName />
+            <confirm>false</confirm>
+            <category />
+            <Enabled>true</Enabled>
+            <param />
+          </map>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>scriptee--stand-lookCamera-</unityObjectName>
+          <comment />
+          <objectName />
+          <type>characterTask</type>
+          <role />
+          <stringParam>stand</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2>lookCamera</stringParam2>
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+      </scriptLines>
+      <roles />
+      <roleKeyString />
+      <autoExecuteInterval>5</autoExecuteInterval>
+      <autoExecuteProbability>0.66</autoExecuteProbability>
+      <AddToMenu>false</AddToMenu>
+      <item>MOVE:RANDOM2</item>
+      <prettyname />
+      <response />
+      <response_title />
+      <note />
+      <tooltip>Click Me</tooltip>
+      <sound>AUDIO:SOUND</sound>
+      <task />
+      <log>true</log>
+      <readyState>unknown</readyState>
+      <startPriority>4</startPriority>
+      <skillVector />
+      <extraCost>0</extraCost>
+      <prereq />
+      <category>
+        <string />
+      </category>
+      <param />
+      <debug>false</debug>
+    </InteractionScriptInfo>
+  </scripts>
+  <startupScriptName />
+  <register>true</register>
+  <prettyname>wander</prettyname>
+  <XMLName>ScriptedObjects/CSCCharacter.xml</XMLName>
+  <XMLDirectory>Assets/Resources/XML/</XMLDirectory>
+</ScriptedObjectInfo>

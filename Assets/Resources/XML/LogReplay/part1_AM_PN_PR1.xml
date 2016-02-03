@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LogRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DateTime>12/3/2012 4:44:44 PM</DateTime>
+  <Items>
+    <string>	&lt;ParamLogItem text="QuickInfoMsg" value="NLU Initialized : 0.02025664 seconds" time="0001"/&gt;</string>
+    <string>	&lt;InteractLogItem text="AirwayMD" value="PREP:INTUBATION" time="0025"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PREP:INTUBATION" time="0025"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:GRUNT" time="0031"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="WARN:PLAYER" time="0031"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="WARN:PLAYER:COMPLETE" time="0037"/&gt;</string>
+    <string>	&lt;InteractLogItem text="PrimaryNurse" value="ORDER:RSIMEDS" time="0037"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="ORDER:RSIMEDS" time="0037"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:RSIMEDS:GODRAW:COMPLETE" time="0046"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:AIRWAYCART:GET:COMPLETE" time="0049"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:TABLE:GETHOME:COMPLETE" time="0053"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:RSIMEDS:INJECT:COMPLETE" time="0054"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:TABLE:PUTBEDSIDE:COMPLETE" time="0058"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:RSIMEDS:TRASH:COMPLETE" time="0062"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PREP:INTUBATION:COMPLETE" time="0064"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PREP:INTUBATION:COMPLETE" time="0064"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="ORDER:RSIMEDS:COMPLETE" time="0065"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="ORDER:RSIMEDS:COMPLETE" time="0065"/&gt;</string>
+    <string>	&lt;InteractLogItem text="AirwayMD" value="INTUBATE:PATIENT" time="0066"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="INTUBATE:PATIENT" time="0066"/&gt;</string>
+    <string>	&lt;InteractLogItem text="fab_xrayViewer" value="XRAY:VIEWER:ON" time="0127"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="XRAY:VIEWER:ON" time="0127"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="XRAY:VIEWER:ON:COMPLETE" time="0127"/&gt;</string>
+    <string>	&lt;InteractLogItem text="fab_xrayViewer" value="XRAY:VIEWER:OFF" time="0130"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="XRAY:VIEWER:OFF" time="0130"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="XRAY:VIEWER:OFF:COMPLETE" time="0130"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:INTUBATE:PATIENT:COMPLETE" time="0137"/&gt;</string>
+    <string>	&lt;InteractLogItem text="RespiratoryTech" value="DO:BVM" time="0137"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="DO:BVM" time="0137"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:TABLE:GETBEDSIDE:COMPLETE" time="0141"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:TABLE:PUTHOME:COMPLETE" time="0145"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="INTUBATE:PATIENT:COMPLETE" time="0149"/&gt;</string>
+    <string>	&lt;InteractLogItem text="AirwayMD" value="CONNECT:VENT" time="0158"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="CONNECT:VENT" time="0158"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:VENT:GETHOME:COMPLETE" time="0161"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:VENT:CONNECT:COMPLETE" time="0162"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="DO:BVM:COMPLETE" time="0162"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:VENT:PUTBEDSIDE:COMPLETE" time="0167"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="CONNECT:VENT:COMPLETE" time="0189"/&gt;</string>
+    <string>	&lt;InteractLogItem text="AirwayMD" value="CHECK:ETCO2" time="0230"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="CHECK:ETCO2" time="0230"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="CHECK:ETCO2:COMPLETE" time="0230"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="CHECK:ETCO2:COMPLETE" time="0231"/&gt;</string>
+    <string>	&lt;InteractLogItem text="AirwayMD" value="PALPATE:TRACHEA" time="0242"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PALPATE:TRACHEA" time="0242"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:TRACHEA:LEFT:COMPLETE" time="0256"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:PALPATETRACHEA:REPORT:COMPLETE" time="0261"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PALPATE:TRACHEA:COMPLETE" time="0264"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PALPATE:TRACHEA:COMPLETE" time="0264"/&gt;</string>
+    <string>	&lt;InteractLogItem text="PrimaryNurse" value="VITALS:SAO2" time="0286"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:SAO2" time="0286"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:SAO2:COMPLETE" time="0293"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:SAO2:COMPLETE" time="0293"/&gt;</string>
+    <string>	&lt;InteractLogItem text="PrimaryNurse" value="VITALS:RESP" time="0297"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:RESP" time="0297"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:RESP:COMPLETE" time="0303"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:RESP:COMPLETE" time="0303"/&gt;</string>
+    <string>	&lt;InteractLogItem text="PrimaryNurse" value="VITALS:SAO2" time="0324"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:SAO2" time="0324"/&gt;</string>
+    <string>	&lt;InteractLogItem text="PrimaryNurse" value="PLACE:PULSEOX" time="0328"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PLACE:PULSEOX" time="0328"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:SAO2:COMPLETE" time="0333"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:SAO2:COMPLETE" time="0333"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:PULSEOX:GET:COMPLETE" time="0337"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:PULSEOX:USE:COMPLETE" time="0348"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PLACE:PULSEOX:COMPLETE" time="0357"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PLACE:PULSEOX:COMPLETE" time="0357"/&gt;</string>
+    <string>	&lt;InteractLogItem text="PrimaryNurse" value="VITALS:BP" time="0370"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:BP" time="0370"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:BP:COMPLETE" time="0371"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:BP:COMPLETE" time="0371"/&gt;</string>
+    <string>	&lt;InteractLogItem text="PrimaryNurse" value="VITALS:HR" time="0378"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:HR" time="0378"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:HR:COMPLETE" time="0384"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:HR:COMPLETE" time="0384"/&gt;</string>
+    <string>	&lt;InteractLogItem text="PrimaryNurse" value="PATIENT:MANUALBP" time="0389"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:MANUALBP" time="0389"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:BPCUFF:USE:COMPLETE" time="0395"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:BPCUFFLEFT:ON" time="0401"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:BPDEVICELEFT:ON" time="0404"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:BPDEVICELEFT:OFF" time="0412"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:BPCUFFLEFT:OFF" time="0416"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:BPCUFF:RESULTS:COMPLETE" time="0424"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:MANUALBP:COMPLETE" time="0426"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:MANUALBP:COMPLETE" time="0426"/&gt;</string>
+    <string>	&lt;InteractLogItem text="PrimaryNurse" value="PULSE:RADIAL" time="0433"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PULSE:RADIAL" time="0433"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:RADIALPULSE:GET:COMPLETE" time="0443"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:RADIALPULSE:REPORT:COMPLETE" time="0444"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PULSE:RADIAL:COMPLETE" time="0445"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PULSE:RADIAL:COMPLETE" time="0445"/&gt;</string>
+    <string>	&lt;InteractLogItem text="PrimaryNurse" value="PULSE:CAROTID" time="0449"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PULSE:CAROTID" time="0449"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:CAROTIDPULSE:GET:COMPLETE" time="0449"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:CAROTIDPULSE:REPORT:COMPLETE" time="0460"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PULSE:CAROTID:COMPLETE" time="0462"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PULSE:CAROTID:COMPLETE" time="0462"/&gt;</string>
+    <string>	&lt;InteractLogItem text="PrimaryNurse" value="VITALS:ALL" time="0467"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:ALL" time="0467"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:ALL:COMPLETE" time="0483"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:ALL:COMPLETE" time="0483"/&gt;</string>
+    <string>	&lt;InteractLogItem text="PrimaryNurse" value="IVPORT:RIGHT" time="0484"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="IVPORT:RIGHT" time="0484"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:IVPORT:RIGHT:COMPLETE" time="0496"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:IVPORT:REPORT:COMPLETE" time="0498"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="IVPORT:RIGHT:COMPLETE" time="0499"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="IVPORT:RIGHT:COMPLETE" time="0499"/&gt;</string>
+    <string>	&lt;InteractLogItem text="PrimaryNurse" value="IV:CHECK" time="0508"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="IV:CHECK" time="0508"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="IV:CHECK:COMPLETE" time="0509"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="IV:CHECK:COMPLETE" time="0509"/&gt;</string>
+    <string>	&lt;InteractLogItem text="PrimaryNurse" value="PLACE:EKG" time="0528"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PLACE:EKG" time="0528"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:EKG:GET:COMPLETE" time="0532"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:EKG:USE:COMPLETE" time="0542"/&gt;</string>
+    <string>	&lt;InteractLogItem text="fab_cartMonitorVitals01" value="ShowVitalsGrapher" time="0542"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="ShowVitalsGrapher" time="0542"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:EKG:REPORT:COMPLETE" time="0543"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PLACE:EKG:COMPLETE" time="0545"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PLACE:EKG:COMPLETE" time="0545"/&gt;</string>
+    <string>	&lt;InteractLogItem text="PrimaryNurse" value="PATIENT:SKINTEMP" time="0581"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:SKINTEMP" time="0581"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:SKINTEMP:GET:COMPLETE" time="0591"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:SKINTEMP:REPORT:COMPLETE" time="0592"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:SKINTEMP:COMPLETE" time="0594"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:SKINTEMP:COMPLETE" time="0594"/&gt;</string>
+    <string>	&lt;ParamLogItem text="QuickInfoMsg" value="Scenario has been terminated.  Patient has not been stabalized.  Going to assessment screen." time="0600"/&gt;</string>
+    <string>	&lt;InteractLogItem text="PrimaryNurse" value="PATIENT:SKINTEMP" time="0621"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:SKINTEMP" time="0621"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:SKINTEMP:GET:COMPLETE" time="0630"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:SKINTEMP:REPORT:COMPLETE" time="0631"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:SKINTEMP:COMPLETE" time="0633"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:SKINTEMP:COMPLETE" time="0633"/&gt;</string>
+    <string>	&lt;InteractLogItem text="PrimaryNurse" value="VITALS:ALL" time="0642"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:ALL" time="0642"/&gt;</string>
+    <string>	&lt;InteractLogItem text="PrimaryNurse" value="LAB:DRAW" time="0652"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="LAB:DRAW" time="0652"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:ALL:COMPLETE" time="0668"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:ALL:COMPLETE" time="0668"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:LABDRAW:GET:COMPLETE" time="0673"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:LABDRAW:DRAW:COMPLETE" time="0680"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:LABDRAW:DELIVER:COMPLETE" time="0692"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="LAB:DRAW:COMPLETE" time="0703"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="LAB:DRAW:COMPLETE" time="0703"/&gt;</string>
+    <string>	&lt;InteractLogItem text="PrimaryNurse" value="PATIENT:GCS" time="0711"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:GCS" time="0711"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:GCS:CHECK:COMPLETE" time="0712"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:GCS:CHECK:COMPLETE" time="0717"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:GCS:ASKNAME:COMPLETE" time="0726"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:GCS:COMPLETE" time="0731"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:GCS:COMPLETE" time="0731"/&gt;</string>
+    <string>	&lt;InteractLogItem text="PrimaryNurse" value="PATIENT:BRACELET" time="0741"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:BRACELET" time="0741"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:BRACELET:GET:COMPLETE" time="0759"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:BRACELET:USE:COMPLETE" time="0760"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:BRACELET:COMPLETE" time="0782"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:BRACELET:COMPLETE" time="0782"/&gt;</string>
+    <string>	&lt;InteractLogItem text="PrimaryNurse" value="MED:SUCC" time="0805"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="MED:SUCC" time="0805"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:RSIMEDS:GODRAW:COMPLETE" time="0810"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:RSIMEDS:INJECT:COMPLETE" time="0818"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:RSIMEDS:TRASH:COMPLETE" time="0823"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="MED:SUCC:COMPLETE" time="0826"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="MED:SUCC:COMPLETE" time="0826"/&gt;</string>
+    <string>	&lt;InteractLogItem text="PrimaryNurse" value="MED:ETOMID" time="0826"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="MED:ETOMID" time="0826"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:RSIMEDS:GODRAW:COMPLETE" time="0832"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:RSIMEDS:INJECT:COMPLETE" time="0840"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:RSIMEDS:TRASH:COMPLETE" time="0845"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="MED:ETOMID:COMPLETE" time="0847"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="MED:ETOMID:COMPLETE" time="0847"/&gt;</string>
+    <string>	&lt;InteractLogItem text="PrimaryNurse" value="MED:VERSED" time="0851"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="MED:VERSED" time="0851"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:RSIMEDS:GODRAW:COMPLETE" time="0857"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="ShowVitalsGrapher" time="0859"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:RSIMEDS:INJECT:COMPLETE" time="0865"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:RSIMEDS:TRASH:COMPLETE" time="0870"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="MED:VERSED:COMPLETE" time="0873"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="MED:VERSED:COMPLETE" time="0873"/&gt;</string>
+    <string>	&lt;InteractLogItem text="PrimaryNurse" value="CALL:OR" time="0889"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="CALL:OR" time="0889"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:PHONE:GET:COMPLETE" time="0906"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:PHONE:REPORT:COMPLETE" time="0906"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="CALL:OR:COMPLETE" time="0910"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="CALL:OR:COMPLETE" time="0910"/&gt;</string>
+    <string>	&lt;InteractLogItem text="ProcedureResident" value="EXAM:CHEST" time="0945"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="EXAM:CHEST" time="0945"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:EXAM:CHEST:COMPLETE" time="0966"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:CHESTEXAM:REPORT:COMPLETE" time="0970"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="EXAM:CHEST:COMPLETE" time="0970"/&gt;</string>
+    <string>	&lt;InteractLogItem text="ProcedureResident" value="AUSCULTATE:HEART" time="0974"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="AUSCULTATE:HEART" time="0974"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:STETHOSCOPE:GET:COMPLETE" time="0988"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:AUSCULTATE:HEART:COMPLETE" time="1002"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:AUSCULTATE:REPORT:COMPLETE" time="1004"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="AUSCULTATE:HEART:COMPLETE" time="1004"/&gt;</string>
+    <string>	&lt;InteractLogItem text="ProcedureResident" value="EXAMINE:CHESTRISE" time="1008"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="EXAMINE:CHESTRISE" time="1008"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:CHESTRISE:RIGHT:COMPLETE" time="1008"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:CHESTRISE:REPORT:COMPLETE" time="1012"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="EXAMINE:CHESTRISE:COMPLETE" time="1013"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="EXAMINE:CHESTRISE:COMPLETE" time="1013"/&gt;</string>
+    <string>	&lt;InteractLogItem text="ProcedureResident" value="EXAM:BLEEDING" time="1016"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="EXAM:BLEEDING" time="1016"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:EXAM:BLEEDING:COMPLETE" time="1024"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="EXAM:ABDOMEN:COMPLETE" time="1028"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="EXAM:BLEEDING:COMPLETE" time="1028"/&gt;</string>
+    <string>	&lt;InteractLogItem text="ProcedureResident" value="EXAM:ABDOMEN" time="1052"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="EXAM:ABDOMEN" time="1052"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:EXAM:ABDOMEN:COMPLETE" time="1061"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="EXAM:ABDOMEN:COMPLETE" time="1066"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="EXAM:ABDOMEN:COMPLETE" time="1066"/&gt;</string>
+    <string>	&lt;InteractLogItem text="ProcedureResident" value="EXAM:PELVIC" time="1081"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="EXAM:PELVIC" time="1081"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:PELVICEXAM:GET:COMPLETE" time="1089"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:PELVICEXAM:REPORT:COMPLETE" time="1092"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:PELVICREPORT:ECHO:COMPLETE" time="1092"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="EXAM:PELVIC:COMPLETE" time="1092"/&gt;</string>
+    <string>	&lt;InteractLogItem text="ProcedureResident" value="FAST:EXAM" time="1097"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="FAST:EXAM" time="1097"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:FAST:GET:COMPLETE" time="1101"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:FAST:USE:COMPLETE" time="1120"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:FAST:RETURN:COMPLETE" time="1125"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="FAST:EXAM:COMPLETE" time="1128"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="FAST:EXAM:COMPLETE" time="1128"/&gt;</string>
+  </Items>
+</LogRecord>

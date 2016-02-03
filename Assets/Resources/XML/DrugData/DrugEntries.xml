@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfDrugEntry xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DrugEntry>
+    <name>Etomidate</name>
+    <dosage>20</dosage>
+    <doseType>MGs</doseType>
+    <delivery>IVBolus</delivery>
+    <time>1</time>
+    <interval>Dose</interval>
+    <behavior>Etomidate</behavior>
+  </DrugEntry>
+  <DrugEntry>
+    <name>Succinylcholine</name>
+    <dosage>100</dosage>
+    <doseType>MGs</doseType>
+    <delivery>IVBolus</delivery>
+    <time>1</time>
+    <interval>Dose</interval>
+    <behavior>Succinylcholine</behavior>    
+  </DrugEntry>
+</ArrayOfDrugEntry>

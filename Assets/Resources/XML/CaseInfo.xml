@@ -1,0 +1,1171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCaseInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CaseInfo>
+    <name>Drunk Pedestrian</name>
+    <descriptionShort>Friday, 11:14pm</descriptionShort>
+    <description>A drunken pedestrian is hit by a car.  Patient is awake and talking, but under the influence of alcohol, bruised and in subdued pain.</description>
+    <owner>guest</owner>
+    <template>0</template>
+    <thumbnail>thumbnail03</thumbnail>
+    <datetime>2015-04-09 11:29:59</datetime>
+    <CaseOptionData>
+      <owner>guest</owner>
+      <name />
+      <gender>male</gender>
+      <bloodtype>n/a</bloodtype>
+      <caseDescription>A drunken pedestrian is hit by a car.  Patient is awake and talking, but under the influence of alcohol, bruised and in subdued pain.</caseDescription>
+      <description>Friday, 11:14pm</description>
+      <casename>Drunk Pedestrian</casename>
+      <loadedCase>Drunk Pedestrian</loadedCase>
+      <shortName>T3</shortName>
+      <baseConfig>
+        <Name>Trauma_BasePrefab</Name>
+        <Prefab>Trauma_BasePrefab</Prefab>
+        <Enabled>true</Enabled>
+        <PrefabWhenDisabled />
+        <shortDescription />
+        <longDescription />
+      </baseConfig>
+      <options>
+        <CaseConfigOption>
+          <Name>BadAirway</Name>
+          <Prefab>BadAirway</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient has bad airway at start</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>PatientVomitsInitially</Name>
+          <Prefab>PatientVomitsInitially</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient vomits quickly if not intubated</shortDescription>
+          <longDescription />
+          <param>
+            <string>DelayBeforeVomiting=90</string>
+          </param>
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>Bradycardia</Name>
+          <Prefab>Bradycardia</Prefab>
+          <Enabled>true</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient becomes Bradycardic unless SAO2 is verified after ventilation</shortDescription>
+          <longDescription />
+          <param>
+            <string>DelayBeforeCrash=120</string>
+          </param>
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>CuffError</Name>
+          <Prefab>CuffError</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>AutoBP reads Cuff Error if not manually verified</shortDescription>
+          <longDescription />
+          <param>
+            <string>DelayBeforeError=60</string>
+          </param>
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>CombativePatient</Name>
+          <Prefab>CombativePatient</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient becomes combative if not sedated</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>FASTDelayed</Name>
+          <Prefab>FASTDelayed</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled>FASTAvailable</PrefabWhenDisabled>
+          <shortDescription>The FAST Ultrasound is in use and delayed for 10 minutes.</shortDescription>
+          <longDescription />
+          <param>
+            <string>FASTDelay.delay=600</string>
+          </param>
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>VentilatorError</Name>
+          <Prefab>VentilatorError</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Ventilator is incorrectly set at 40% when connected</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>PelvicBleeding</Name>
+          <Prefab>PelvicBleeding</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient has Pelvic Fracture and internal bleeding</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>CardiacArrest</Name>
+          <Prefab>CardiacArrest</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient enters Cardiac Arrest and can be Defibrillated</shortDescription>
+          <longDescription />
+          <param>
+            <string>Equipment=Zoll</string>
+          </param>
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>ExternalBleeding</Name>
+          <Prefab>ExternalBleeding</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient is bleeding externally</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>ConnectMonitor</Name>
+          <Prefab>ConnectMonitor</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Primary Nurse connects Vitals Monitor</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>VerbalWarnings</Name>
+          <Prefab>VerbalWarnings</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Have Nurse warn the player when Vitals are critical</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>MissingXrayTech</Name>
+          <Prefab>MissingXrayTech</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Delay availability of Xrays by 10 minutes</shortDescription>
+          <longDescription />
+          <param>
+            <string>XrayTech.delay=600</string>
+          </param>
+        </CaseConfigOption>
+      </options>
+      <start>
+        <HR>121</HR>
+        <BPSYS>-1</BPSYS>
+        <BPDIA>-1</BPDIA>
+        <SP>90</SP>
+        <TEMP>98</TEMP>
+        <RESP>22</RESP>
+      </start>
+      <end>
+        <HR>30</HR>
+        <BPSYS>40</BPSYS>
+        <BPDIA>30</BPDIA>
+        <SP>30</SP>
+        <TEMP>-1</TEMP>
+        <RESP>-1</RESP>
+      </end>
+      <injury>
+        <Name>Tension Pneumo</Name>
+        <Prefab>TensionPneumoPrimaryPrefab</Prefab>
+        <SecondaryOptions>
+          <CaseConfigOption>
+            <Name>Pelvic Fracture</Name>
+            <Prefab>PelvicFracturePrefab</Prefab>
+            <Enabled>false</Enabled>
+            <PrefabWhenDisabled />
+            <shortDescription />
+            <longDescription />
+          </CaseConfigOption>
+        </SecondaryOptions>
+      </injury>
+      <timeOfDeath>10</timeOfDeath>
+      <caseThumbnail>thumbnail03</caseThumbnail>
+      <missionStartXml>trauma03MissionStart</missionStartXml>
+      <changed>false</changed>
+      <template>false</template>
+      <users>
+        <string>tariq</string>
+        <string>rob</string>
+        <string>phil</string>
+        <string>hilda</string>
+        <string>guest</string>
+        <string>craig</string>
+        <string>admin</string>
+        <string>craig.stevenson@email.sitel.org</string>
+      </users>
+    </CaseOptionData>
+  </CaseInfo>
+  <CaseInfo>
+    <name>Car Collision</name>
+    <descriptionShort>Saturday, 3:14am</descriptionShort>
+    <description>A 32 year old female driver was involved in a multi-vehicle car collision traveling at 65 mph that resulted in a vehicle roll over. EMTs have the patient boarded and collared and are a few minutes out.</description>
+    <owner>guest</owner>
+    <template>0</template>
+    <thumbnail>thumbnail05</thumbnail>
+    <datetime>2015-04-09 11:30:20</datetime>
+    <CaseOptionData>
+      <owner>guest</owner>
+      <name />
+      <age />
+      <gender>male</gender>
+      <bloodtype>n/a</bloodtype>
+      <caseDescription>A 32 year old female driver was involved in a multi-vehicle car collision traveling at 65 mph that resulted in a vehicle roll over. EMTs have the patient boarded and collared and are a few minutes out.</caseDescription>
+      <description>Saturday, 3:14am</description>
+      <casename>Car Collision</casename>
+      <loadedCase>Car Collision</loadedCase>
+      <shortName>T5</shortName>
+      <baseConfig>
+        <Name>Trauma_BasePrefab</Name>
+        <Prefab>Trauma_BasePrefab</Prefab>
+        <Enabled>true</Enabled>
+        <PrefabWhenDisabled />
+        <shortDescription />
+        <longDescription />
+        <param />
+      </baseConfig>
+      <options>
+        <CaseConfigOption>
+          <Name>BadAirway</Name>
+          <Prefab>BadAirway</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient has bad airway at start</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>PatientVomitsInitially</Name>
+          <Prefab>PatientVomitsInitially</Prefab>
+          <Enabled>true</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient vomits quickly if not intubated</shortDescription>
+          <longDescription />
+          <param>
+            <string>DelayBeforeVomiting=90</string>
+          </param>
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>Bradycardia</Name>
+          <Prefab>Bradycardia</Prefab>
+          <Enabled>true</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient becomes Bradycardic unless SAO2 is verified after ventilation</shortDescription>
+          <longDescription />
+          <param>
+            <string>DelayBeforeCrash=120</string>
+          </param>
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>CuffError</Name>
+          <Prefab>CuffError</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>AutoBP reads Cuff Error if not manually verified</shortDescription>
+          <longDescription />
+          <param>
+            <string>DelayBeforeError=60</string>
+          </param>
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>CombativePatient</Name>
+          <Prefab>CombativePatient</Prefab>
+          <Enabled>true</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient becomes combative if not sedated</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>FASTDelayed</Name>
+          <Prefab>FASTDelayed</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled>FASTAvailable</PrefabWhenDisabled>
+          <shortDescription>The FAST Ultrasound is in use and delayed for 10 minutes.</shortDescription>
+          <longDescription />
+          <param>
+            <string>FASTDelay.delay=600</string>
+          </param>
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>VentilatorError</Name>
+          <Prefab>VentilatorError</Prefab>
+          <Enabled>true</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Ventilator is incorrectly set at 40% when connected</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>PelvicBleeding</Name>
+          <Prefab>PelvicBleeding</Prefab>
+          <Enabled>true</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient has Pelvic Fracture and internal bleeding</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>CardiacArrest</Name>
+          <Prefab>CardiacArrest</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient enters Cardiac Arrest and can be Defibrillated</shortDescription>
+          <longDescription />
+          <param>
+            <string>Equipment=Zoll</string>
+          </param>
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>ExternalBleeding</Name>
+          <Prefab>ExternalBleeding</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient is bleeding externally</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>ConnectMonitor</Name>
+          <Prefab>ConnectMonitor</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Primary Nurse connects Vitals Monitor</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>VerbalWarnings</Name>
+          <Prefab>VerbalWarnings</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Have Nurse warn the player when Vitals are critical</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>MissingXrayTech</Name>
+          <Prefab>MissingXrayTech</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Delay availability of Xrays by 10 minutes</shortDescription>
+          <longDescription />
+          <param>
+            <string>XrayTech.delay=600</string>
+          </param>
+        </CaseConfigOption>
+      </options>
+      <team />
+      <start>
+        <HR>-1</HR>
+        <BPSYS>-1</BPSYS>
+        <BPDIA>-1</BPDIA>
+        <SP>-1</SP>
+        <TEMP>-1</TEMP>
+        <RESP>-1</RESP>
+      </start>
+      <end>
+        <HR>-1</HR>
+        <BPSYS>-1</BPSYS>
+        <BPDIA>-1</BPDIA>
+        <SP>-1</SP>
+        <TEMP>-1</TEMP>
+        <RESP>-1</RESP>
+      </end>
+      <injury>
+        <Name>Splenic Injury</Name>
+        <Prefab>SplenicInjuryPrimaryPrefab</Prefab>
+        <SecondaryOptions>
+          <CaseConfigOption>
+            <Name>Pelvic Fracture</Name>
+            <Prefab>PelvicFracturePrefab</Prefab>
+            <Enabled>true</Enabled>
+            <PrefabWhenDisabled />
+            <shortDescription />
+            <longDescription />
+          </CaseConfigOption>
+          <CaseConfigOption>
+            <Name>Head Contusion</Name>
+            <Prefab>HeadContusionPrefab</Prefab>
+            <Enabled>true</Enabled>
+            <PrefabWhenDisabled />
+            <shortDescription />
+            <longDescription />
+          </CaseConfigOption>
+        </SecondaryOptions>
+      </injury>
+      <timeOfDeath>10</timeOfDeath>
+      <caseThumbnail>thumbnail05</caseThumbnail>
+      <missionStartXml>trauma05MissionStart</missionStartXml>
+      <changed>false</changed>
+      <template>false</template>
+      <users>
+        <string>tariq</string>
+        <string>rob</string>
+        <string>phil</string>
+        <string>johanny@medstar.net</string>
+        <string>hilda</string>
+        <string>hildaKafilda</string>
+        <string>T-Bird</string>
+        <string>guest</string>
+        <string>craig</string>
+        <string>admin</string>
+        <string>craig.stevenson@email.sitel.org</string>
+      </users>
+    </CaseOptionData>
+  </CaseInfo>
+  <CaseInfo>
+    <name>Rock Climbing Fall</name>
+    <descriptionShort>Friday, 5:12pm</descriptionShort>
+    <description>A 26 year old female had a fall while rock climbing.  She was unconscious on the scene and during transport. She is otherwise healthy, takes no meds and has no allergies according to her climbing partner.</description>
+    <owner>guest</owner>
+    <template>0</template>
+    <thumbnail>thumbnail04</thumbnail>
+    <datetime>2015-04-30 08:56:23</datetime>
+    <CaseOptionData>
+      <owner>guest</owner>
+      <name />
+      <gender>male</gender>
+      <bloodtype>n/a</bloodtype>
+      <caseDescription>A 26 year old female had a fall while rock climbing.  She was unconscious on the scene and during transport. She is otherwise healthy, takes no meds and has no allergies according to her climbing partner.</caseDescription>
+      <description>Friday, 5:12pm</description>
+      <casename>Rock Climbing Fall</casename>
+      <loadedCase>Rock Climbing Fall</loadedCase>
+      <shortName>T4</shortName>
+      <baseConfig>
+        <Name>Trauma_BasePrefab</Name>
+        <Prefab>Trauma_BasePrefab</Prefab>
+        <Enabled>true</Enabled>
+        <PrefabWhenDisabled />
+        <shortDescription />
+        <longDescription />
+      </baseConfig>
+      <options>
+        <CaseConfigOption>
+          <Name>PatientVomitsInitially</Name>
+          <Prefab>PatientVomitsInitially</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient vomits quickly if not intubated</shortDescription>
+          <longDescription />
+          <param>
+            <string>DelayBeforeVomiting=90</string>
+          </param>
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>Bradycardia</Name>
+          <Prefab>Bradycardia</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient becomes Bradycardic unless SAO2 is verified after ventilation</shortDescription>
+          <longDescription />
+          <param>
+            <string>DelayBeforeCrash=120</string>
+          </param>
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>CuffError</Name>
+          <Prefab>CuffError</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>AutoBP reads Cuff Error if not manually verified</shortDescription>
+          <longDescription />
+          <param>
+            <string>DelayBeforeError=60</string>
+          </param>
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>CombativePatient</Name>
+          <Prefab>CombativePatient</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient becomes combative if not sedated</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>FASTDelayed</Name>
+          <Prefab>FASTDelayed</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled>FASTAvailable</PrefabWhenDisabled>
+          <shortDescription>The FAST Ultrasound is in use and delayed for 10 minutes.</shortDescription>
+          <longDescription />
+          <param>
+            <string>FASTDelay.delay=600</string>
+          </param>
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>VentilatorError</Name>
+          <Prefab>VentilatorError</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Ventilator is incorrectly set at 40% when connected</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>PelvicBleeding</Name>
+          <Prefab>PelvicBleeding</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient has Pelvic Fracture and internal bleeding</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>CardiacArrest</Name>
+          <Prefab>CardiacArrest</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient enters Cardiac Arrest and can be Defibrillated</shortDescription>
+          <longDescription />
+          <param>
+            <string>Equipment=Zoll</string>
+          </param>
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>ExternalBleeding</Name>
+          <Prefab>ExternalBleeding</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient is bleeding externally</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>ConnectMonitor</Name>
+          <Prefab>ConnectMonitor</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Primary Nurse connects Vitals Monitor</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>VerbalWarnings</Name>
+          <Prefab>VerbalWarnings</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Have Nurse warn the player when Vitals are critical</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>MissingXrayTech</Name>
+          <Prefab>MissingXrayTech</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Delay availability of Xrays by 10 minutes</shortDescription>
+          <longDescription />
+          <param>
+            <string>XrayTech.delay=600</string>
+          </param>
+        </CaseConfigOption>
+      </options>
+      <start>
+        <HR>125</HR>
+        <BPSYS>130</BPSYS>
+        <BPDIA>88</BPDIA>
+        <SP>93</SP>
+        <TEMP>-1</TEMP>
+        <RESP>20</RESP>
+      </start>
+      <end>
+        <HR>150</HR>
+        <BPSYS>60</BPSYS>
+        <BPDIA>40</BPDIA>
+        <SP>80</SP>
+        <TEMP>-1</TEMP>
+        <RESP>44</RESP>
+      </end>
+      <injury>
+        <Name>Trauma Case 4</Name>
+        <Prefab>Trauma04PrimaryPrefab</Prefab>
+        <SecondaryOptions />
+      </injury>
+      <timeOfDeath>10</timeOfDeath>
+      <caseThumbnail>thumbnail04</caseThumbnail>
+      <missionStartXml>trauma04MissionStart</missionStartXml>
+      <changed>false</changed>
+      <template>false</template>
+      <users>
+        <string>tariq</string>
+        <string>rob</string>
+        <string>phil</string>
+        <string>guest</string>
+        <string>craig</string>
+        <string>admin</string>
+        <string>craig.stevenson@email.sitel.org</string>
+      </users>
+    </CaseOptionData>
+  </CaseInfo>
+  <CaseInfo>
+    <name>Thrown From Horse</name>
+    <descriptionShort>Friday, 3:56p</descriptionShort>
+    <description>A 33 year old male was thrown from a horse. He is alert and responding to questioning. His injuries are unknown.</description>
+    <owner>guest</owner>
+    <template>0</template>
+    <thumbnail>thumbnail02</thumbnail>
+    <datetime>2015-04-09 11:29:50</datetime>
+    <CaseOptionData>
+      <owner>guest</owner>
+      <name />
+      <gender>male</gender>
+      <bloodtype>n/a</bloodtype>
+      <caseDescription>A 33 year old male was thrown from a horse. He is alert and responding to questioning. His injuries are unknown.</caseDescription>
+      <description>Friday, 3:56p</description>
+      <casename>Thrown From Horse</casename>
+      <loadedCase>Thrown From Horse</loadedCase>
+      <shortName>T2</shortName>
+      <baseConfig>
+        <Name>Trauma_BasePrefab</Name>
+        <Prefab>Trauma_BasePrefab</Prefab>
+        <Enabled>true</Enabled>
+        <PrefabWhenDisabled />
+        <shortDescription />
+        <longDescription />
+      </baseConfig>
+      <options>
+        <CaseConfigOption>
+          <Name>BadAirway</Name>
+          <Prefab>BadAirway</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient has bad airway at start</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>PatientVomitsInitially</Name>
+          <Prefab>PatientVomitsInitially</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient vomits quickly if not intubated</shortDescription>
+          <longDescription />
+          <param>
+            <string>DelayBeforeVomiting=90</string>
+          </param>
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>Bradycardia</Name>
+          <Prefab>Bradycardia</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient becomes Bradycardic unless SAO2 is verified after ventilation</shortDescription>
+          <longDescription />
+          <param>
+            <string>DelayBeforeCrash=120</string>
+          </param>
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>CuffError</Name>
+          <Prefab>CuffError</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>AutoBP reads Cuff Error if not manually verified</shortDescription>
+          <longDescription />
+          <param>
+            <string>DelayBeforeError=60</string>
+          </param>
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>CombativePatient</Name>
+          <Prefab>CombativePatient</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient becomes combative if not sedated</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>FASTDelayed</Name>
+          <Prefab>FASTDelayed</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled>FASTAvailable</PrefabWhenDisabled>
+          <shortDescription>The FAST Ultrasound is in use and delayed for 10 minutes.</shortDescription>
+          <longDescription />
+          <param>
+            <string>FASTDelay.delay=600</string>
+          </param>
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>VentilatorError</Name>
+          <Prefab>VentilatorError</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Ventilator is incorrectly set at 40% when connected</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>PelvicBleeding</Name>
+          <Prefab>PelvicBleeding</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient has Pelvic Fracture and internal bleeding</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>CardiacArrest</Name>
+          <Prefab>CardiacArrest</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient enters Cardiac Arrest and can be Defibrillated</shortDescription>
+          <longDescription />
+          <param>
+            <string>Equipment=Zoll</string>
+          </param>
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>ExternalBleeding</Name>
+          <Prefab>ExternalBleeding</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient is bleeding externally</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>ConnectMonitor</Name>
+          <Prefab>ConnectMonitor</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Primary Nurse connects Vitals Monitor</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>VerbalWarnings</Name>
+          <Prefab>VerbalWarnings</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Have Nurse warn the player when Vitals are critical</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>MissingXrayTech</Name>
+          <Prefab>MissingXrayTech</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Delay availability of Xrays by 10 minutes</shortDescription>
+          <longDescription />
+          <param>
+            <string>XrayTech.delay=600</string>
+          </param>
+        </CaseConfigOption>
+      </options>
+      <start>
+        <HR>128</HR>
+        <BPSYS>150</BPSYS>
+        <BPDIA>95</BPDIA>
+        <SP>89</SP>
+        <TEMP>-1</TEMP>
+        <RESP>-1</RESP>
+      </start>
+      <end>
+        <HR>128</HR>
+        <BPSYS>135</BPSYS>
+        <BPDIA>95</BPDIA>
+        <SP>89</SP>
+        <TEMP>-1</TEMP>
+        <RESP>-1</RESP>
+      </end>
+      <injury>
+        <Name>Trauma Case 2</Name>
+        <Prefab>Trauma02PrimaryPrefab</Prefab>
+        <SecondaryOptions />
+      </injury>
+      <SecondaryOptions>
+		  <CaseConfigOption>
+		    <Name>Tension Pneumo</Name>
+		    <Prefab>TensionPneumoSecondaryPrefab</Prefab>
+		    <Enabled>false</Enabled>
+		    <PrefabWhenDisabled />
+		    <shortDescription />
+		    <longDescription />
+		  </CaseConfigOption>
+      </SecondaryOptions>
+      <timeOfDeath>10</timeOfDeath>
+      <caseThumbnail>thumbnail02</caseThumbnail>
+      <missionStartXml>trauma02MissionStart</missionStartXml>
+      <changed>false</changed>
+      <template>false</template>
+      <users>
+        <string>tariq</string>
+        <string>rob</string>
+        <string>phil</string>
+        <string>hilda</string>
+        <string>guest</string>
+        <string>craig</string>
+        <string>admin</string>
+        <string>craig.stevenson@email.sitel.org</string>
+      </users>
+    </CaseOptionData>
+  </CaseInfo>
+  <CaseInfo>
+    <name>Tutorial</name>
+    <descriptionShort>Friday, 09:22a</descriptionShort>
+    <description>On your first day as Trauma Lead, you'll meet your team and have a chance to get familiar with the Trauma bay and the resources available to you.</description>
+    <owner>rob</owner>
+    <template>0</template>
+    <thumbnail>thumbnail00</thumbnail>
+    <datetime>2015-04-09 11:29:54</datetime>
+    <CaseOptionData>
+      <owner>rob</owner>
+      <name />
+      <gender>male</gender>
+      <bloodtype>n/a</bloodtype>
+      <caseDescription>tutorial scene</caseDescription>
+      <description>Trauma Training Tutorial</description>
+      <casename>Tutorial</casename>
+      <loadedCase>Tutorial</loadedCase>
+      <baseConfig>
+        <Name>Trauma_BasePrefab</Name>
+        <Prefab>Trauma_BasePrefab</Prefab>
+        <Enabled>true</Enabled>
+        <PrefabWhenDisabled />
+        <shortDescription />
+        <longDescription />
+      </baseConfig>
+      <options>
+        <CaseConfigOption>
+          <Name>BadAirway</Name>
+          <Prefab>BadAirway</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient has bad airway at start</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>PatientVomitsInitially</Name>
+          <Prefab>PatientVomitsInitially</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient vomits quickly if not intubated</shortDescription>
+          <longDescription />
+          <param>
+            <string>DelayBeforeVomiting=90</string>
+          </param>
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>Bradycardia</Name>
+          <Prefab>Bradycardia</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient becomes Bradycardic unless SAO2 is verified after ventilation</shortDescription>
+          <longDescription />
+          <param>
+            <string>DelayBeforeCrash=120</string>
+          </param>
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>CuffError</Name>
+          <Prefab>CuffError</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>AutoBP reads Cuff Error if not manually verified</shortDescription>
+          <longDescription />
+          <param>
+            <string>DelayBeforeError=60</string>
+          </param>
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>CombativePatient</Name>
+          <Prefab>CombativePatient</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient becomes combative if not sedated</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>FASTDelayed</Name>
+          <Prefab>FASTDelayed</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled>FASTAvailable</PrefabWhenDisabled>
+          <shortDescription>The FAST Ultrasound is in use and delayed for 10 minutes.</shortDescription>
+          <longDescription />
+          <param>
+            <string>FASTDelay.delay=600</string>
+          </param>
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>VentilatorError</Name>
+          <Prefab>VentilatorError</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Ventilator is incorrectly set at 40% when connected</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>PelvicBleeding</Name>
+          <Prefab>PelvicBleeding</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient has Pelvic Fracture and internal bleeding</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>CardiacArrest</Name>
+          <Prefab>CardiacArrest</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient enters Cardiac Arrest and can be Defibrillated</shortDescription>
+          <longDescription />
+          <param>
+            <string>Equipment=Zoll</string>
+          </param>
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>ExternalBleeding</Name>
+          <Prefab>ExternalBleeding</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient is bleeding externally</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>ConnectMonitor</Name>
+          <Prefab>ConnectMonitor</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Primary Nurse connects Vitals Monitor</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>VerbalWarnings</Name>
+          <Prefab>VerbalWarnings</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Have Nurse warn the player when Vitals are critical</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>MissingXrayTech</Name>
+          <Prefab>MissingXrayTech</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Delay availability of Xrays by 10 minutes</shortDescription>
+          <longDescription />
+          <param>
+            <string>XrayTech.delay=600</string>
+          </param>
+        </CaseConfigOption>
+      </options>
+      <start>
+        <HR>-1</HR>
+        <BPSYS>-1</BPSYS>
+        <BPDIA>-1</BPDIA>
+        <SP>-1</SP>
+        <TEMP>-1</TEMP>
+        <RESP>-1</RESP>
+      </start>
+      <end>
+        <HR>-1</HR>
+        <BPSYS>-1</BPSYS>
+        <BPDIA>-1</BPDIA>
+        <SP>-1</SP>
+        <TEMP>-1</TEMP>
+        <RESP>-1</RESP>
+      </end>
+      <injury>
+        <Name>Tutorial</Name>
+        <Prefab>TutorialPrimaryPrefab</Prefab>
+        <SecondaryOptions />
+      </injury>
+      <timeOfDeath>10</timeOfDeath>
+      <caseThumbnail>thumbnail01</caseThumbnail>
+      <missionStartXml>trauma01MissionStart</missionStartXml>
+      <changed>false</changed>
+      <template>false</template>
+      <users>
+        <string>tariq</string>
+        <string>rob</string>
+        <string>phil</string>
+        <string>johanny@medstar.net</string>
+        <string>hilda</string>
+        <string>hildaKafilda</string>
+        <string>T-Bird</string>
+        <string>guest</string>
+        <string>craig</string>
+        <string>imsh</string>
+        <string>admin</string>
+        <string>craig.stevenson@email.sitel.org</string>
+      </users>
+    </CaseOptionData>
+  </CaseInfo>
+  <CaseInfo>
+    <name>Domestic Dispute</name>
+    <descriptionShort>Friday, 1:12p</descriptionShort>
+    <description>A 37 year old male was involved in a domestic dispute with his girlfriend. He is responding verbally, answers questions, obeys commands, but may be under the influence of alcohol.</description>
+    <owner>admin</owner>
+    <template>0</template>
+    <thumbnail>thumbnail01</thumbnail>
+    <datetime>2015-04-27 10:59:52</datetime>
+    <CaseOptionData>
+      <owner>admin</owner>
+      <name />
+      <gender>male</gender>
+      <bloodtype>n/a</bloodtype>
+      <caseDescription>A 37 year old male was involved in a domestic dispute with his girlfriend. He is responding verbally, answers questions, obeys commands, but may be under the influence of alcohol.</caseDescription>
+      <description>Friday, 1:12p</description>
+      <shortName>T1</shortName>
+      <casename>Domestic Dispute</casename>
+      <loadedCase>Domestic Dispute</loadedCase>
+      <baseConfig>
+        <Name>Trauma_BasePrefab</Name>
+        <Prefab>Trauma_BasePrefab</Prefab>
+        <Enabled>true</Enabled>
+        <PrefabWhenDisabled />
+        <shortDescription />
+        <longDescription />
+      </baseConfig>
+      <options>
+        <CaseConfigOption>
+          <Name>BadAirway</Name>
+          <Prefab>BadAirway</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient has bad airway at start</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>PatientVomitsInitially</Name>
+          <Prefab>PatientVomitsInitially</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient vomits quickly if not intubated</shortDescription>
+          <longDescription />
+          <param>
+            <string>DelayBeforeVomiting=90</string>
+          </param>
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>Bradycardia</Name>
+          <Prefab>Bradycardia</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient becomes Bradycardic unless SAO2 is verified after ventilation</shortDescription>
+          <longDescription />
+          <param>
+            <string>DelayBeforeCrash=120</string>
+          </param>
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>CuffError</Name>
+          <Prefab>CuffError</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>AutoBP reads Cuff Error if not manually verified</shortDescription>
+          <longDescription />
+          <param>
+            <string>DelayBeforeError=60</string>
+          </param>
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>CombativePatient</Name>
+          <Prefab>CombativePatient</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient becomes combative if not sedated</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>FASTDelayed</Name>
+          <Prefab>FASTDelayed</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled>FASTAvailable</PrefabWhenDisabled>
+          <shortDescription>The FAST Ultrasound is in use and delayed for 10 minutes.</shortDescription>
+          <longDescription />
+          <param>
+            <string>FASTDelay.delay=600</string>
+          </param>
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>VentilatorError</Name>
+          <Prefab>VentilatorError</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Ventilator is incorrectly set at 40% when connected</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>PelvicBleeding</Name>
+          <Prefab>PelvicBleeding</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient has Pelvic Fracture and internal bleeding</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>CardiacArrest</Name>
+          <Prefab>CardiacArrest</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient enters Cardiac Arrest and can be Defibrillated</shortDescription>
+          <longDescription />
+          <param>
+            <string>Equipment=Zoll</string>
+          </param>
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>ExternalBleeding</Name>
+          <Prefab>ExternalBleeding</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Patient is bleeding externally</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>ConnectMonitor</Name>
+          <Prefab>ConnectMonitor</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Primary Nurse connects Vitals Monitor</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>VerbalWarnings</Name>
+          <Prefab>VerbalWarnings</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Have Nurse warn the player when Vitals are critical</shortDescription>
+          <longDescription />
+        </CaseConfigOption>
+        <CaseConfigOption>
+          <Name>MissingXrayTech</Name>
+          <Prefab>MissingXrayTech</Prefab>
+          <Enabled>false</Enabled>
+          <PrefabWhenDisabled />
+          <shortDescription>Delay availability of Xrays by 10 minutes</shortDescription>
+          <longDescription />
+          <param>
+            <string>XrayTech.delay=600</string>
+          </param>
+        </CaseConfigOption>
+      </options>
+      <start>
+        <HR>125</HR>
+        <BPSYS>105</BPSYS>
+        <BPDIA>70</BPDIA>
+        <SP>95</SP>
+        <TEMP>-1</TEMP>
+        <RESP>20</RESP>
+      </start>
+      <end>
+        <HR>66</HR>
+        <BPSYS>60</BPSYS>
+        <BPDIA>50</BPDIA>
+        <SP>65</SP>
+        <TEMP>-1</TEMP>
+        <RESP>10</RESP>
+      </end>
+      <injury>
+        <Name>Tutorial Practice Case</Name>
+        <Prefab>TutorialCasePrimaryPrefab</Prefab>
+        <SecondaryOptions />
+      </injury>
+      <timeOfDeath>30</timeOfDeath>
+      <caseThumbnail>thumbnail01</caseThumbnail>
+      <missionStartXml></missionStartXml>
+      <changed>false</changed>
+      <template>false</template>
+      <users>
+        <string>tariq</string>
+        <string>rob</string>
+        <string>phil</string>
+        <string>johanny@medstar.net</string>
+        <string>hilda</string>
+        <string>hildaKafilda</string>
+        <string>T-Bird</string>
+        <string>guest</string>
+        <string>craig</string>
+        <string>imsh</string>
+        <string>admin</string>
+        <string>craig.stevenson@email.sitel.org</string>
+      </users>
+    </CaseOptionData>
+  </CaseInfo>
+</ArrayOfCaseInfo>

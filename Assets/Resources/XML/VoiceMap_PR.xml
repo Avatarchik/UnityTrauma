@@ -1,0 +1,992 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VoiceList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Name>ProcedureResident</Name>
+	<VoiceMaps>
+	    <VoiceMap>
+	      <Tag>VOICE:BUSY</Tag>
+	      <Audio>Audio/PR_busy</Audio>
+	      <Text>I am busy at the momemt</Text>
+	    </VoiceMap>
+	    <VoiceMap>
+	      <Tag>VOICE:WRONG:PERSON</Tag>
+	      <!--<Audio>Audio/AM_WrongPerson</Audio>-->
+	      <Text>I don't know how to do that</Text>
+	    </VoiceMap>
+	    <VoiceMap>
+	      <Tag>VOICE:EXCEEDED:MAX:INTERACTION</Tag>
+	      <Text>I have already done that!</Text>
+	    </VoiceMap>
+	    <VoiceMap>
+	      <Tag>VOICE:MISSING:PREREQ</Tag>
+	      <Text>Can't do that right now, did you forget something?</Text>
+	    </VoiceMap>    
+	<VoiceMap>
+		<Tag>VOICE:INTUBATE:02</Tag>
+		<Audio>Audio/02_intubate_stabilize</Audio>
+	  	<Text>I have the c-spine.</Text>
+	  </VoiceMap>
+	  <VoiceMap>
+      <Tag>VOICE:INTUBATE:IMMOBILIZE</Tag>
+      <Audio>Audio/PR_immobilizeCspine</Audio>
+      <Text>I will immobilize the c-spine.</Text>
+	  <LookAt>ignore</LookAt>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>VOICE:PELVIC:ROCK</Tag>
+      <Audio>Audio/PR_letMeKnowPainPelvis</Audio>
+      <Text>Let me know if you feel any pain as I am pushing on your pelvis.</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PELVICEXAM:REPORT</Tag>
+      <Audio>Audio/PR_pelvisStable</Audio>
+      <Text>Her pelvis is stable.</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PELVICEXAM:UNSTABLE:REPORT</Tag>
+      <Audio>Audio/PR_pelvisUnstable</Audio>
+      <Text>Her pelvis is unstable.</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:BLADDER:REPORT</Tag>
+      <Audio>Audio/PR_palpateBladder</Audio>
+      <Text>Bladder area is normal. No external signs of trauma.</Text>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:ULTRASOUND:GET</Tag>
+      <Audio>Audio/PR_gettingUltrasound</Audio>
+      <Text>Getting the Ultrasound, doc.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:WRAP:GET</Tag>
+      <Audio>Audio/PR_assistPelvicWrap</Audio>
+      <Text>Primary Nurse can you assist me with the pelvic wrap.</Text>
+      <LookAt>lookPN</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:WRAP:REPORT</Tag>
+      <Audio>Audio/PR_pelvicWrap</Audio>
+      <Text>The pelvic wrap has been placed, Doctor.</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:BREATHE:RESULTS</Tag>
+      <Audio>Audio/PR_breatheResults</Audio>
+      <Text>Breath sounds are good bilaterly. Chest wall motion is equal bilaterally.</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PALPATETRACHEA:REPORT</Tag>
+      <Audio>Audio/PR_tracheaMidline</Audio>
+      <Text>The trachea is midline. No obvious abnormalities.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:ABDOMENEXAM:REPORT</Tag>
+      <Audio>Audio/PR_abdomenNormal</Audio>
+      <Text>Abdomen is normal. No external signs of trauma.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:AUSCULTATEHEART:REPORT</Tag>
+      <Audio>Audio/PR_heartSoundsNormal</Audio>
+      <Text>Heart sounds are normal.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:THIGHSEXAM:REPORT</Tag>
+      <Audio>Audio/PR_thighsNormal</Audio>
+      <Text>Thighs appear normal and feel soft, doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>    
+    <VoiceMap>
+      <Tag>VOICE:CHESTEXAM:REPORT</Tag>
+      <Audio>Audio/PR_goodChestExam</Audio>
+      <Text>No abnormalities found on the chest.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:EXAMBLEEDING:REPORT</Tag>
+      <Audio>Audio/PR_noExternalBleed</Audio>
+      <Text>No signs of external bleeding.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:BREATHE:REPORT</Tag>
+      <Audio>Audio/PR_breathSoundsGood</Audio>
+      <Text>Breath sounds are good bilaterly.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:CHESTRISE:REPORT</Tag>
+      <Audio>Audio/PR_chestWallEqual</Audio>
+      <Text>Chest wall motion is equal bilaterally.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PERCUSSION:REPORT</Tag>
+      <Audio>Audio/PR_percussionNormal</Audio>
+      <Text>Percussion is normal, Doctor.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:CHECK:BOWEL</Tag>
+      <Audio>Audio/PR_checkBowelSounds</Audio>
+      <Text>I'm going to check his bowel sounds.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:CHECK:BOWEL:REPORT</Tag>
+      <Audio>Audio/PR_bowelSoundsNormal</Audio>
+      <Text>The patient's bowel sounds are normal, doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PULSERADIAL:NONE</Tag>
+      <Audio>Audio/PR_pulseRadialNone</Audio>
+      <Text>I don't feel a radial pulse, Doctor.</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PULSERADIAL:PALPABLE</Tag>
+      <Audio>Audio/PR_pulseRadialPalpable</Audio>
+      <Text>The radial pulse is palpable.</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PULSERADIAL:PRESENT</Tag>
+      <Audio>Audio/PR_pulseRadialPresent</Audio>
+      <Text>The radial pulse is present and thready.</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PULSECAROTID:NONE</Tag>
+      <Audio>Audio/PR_pulseCarotidNone</Audio>
+      <Text>I don't feel a carotid pulse, Doctor.</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PULSECAROTID:PALPABLE</Tag>
+      <Audio>Audio/PR_pulseCarotidPalpable</Audio>
+      <Text>The carotid pulse is palpable.</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PULSECAROTID:PRESENT</Tag>
+      <Audio>Audio/PR_pulseCarotidPresent</Audio>
+      <Text>The carotid pulse is present and thready.</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PULSEFEMORAL:NONE</Tag>
+      <Audio>Audio/PR_pulseFemoralNone</Audio>
+      <Text>I don't feel a femoral pulse, Doctor.</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PULSEFEMORAL:PALPABLE</Tag>
+      <Audio>Audio/PR_pulseFemoralPalpable</Audio>
+      <Text>The femoral pulse is palpable.</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PULSEFEMORAL:PRESENT</Tag>
+      <Audio>Audio/PR_pulseFemoralPresent</Audio>
+      <Text>The femoral pulse is present and thready.</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PULSEPEDAL:NONE</Tag>
+      <Audio>Audio/PR_PulsePedalNone</Audio>
+      <Text>I don't feel a pedal pulse, Doctor.</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PULSEPEDAL:PALPABLE</Tag>
+      <Audio>Audio/PR_pulsePedalPalpable</Audio>
+      <Text>The pedal pulse is palpable.</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PULSEPEDAL:PRESENT</Tag>
+      <Audio>Audio/PR_pulsePedalPresent</Audio>
+      <Text>The pedal pulse is present and thready.</Text>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>VOICE:PATIENT:UNCONSCIOUS</Tag>
+      <Audio>Audio/PR_patientUnconscious</Audio>
+      <Text>The patient is unconscious, Doctor.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PATIENT:UNRESPONSIVE</Tag>
+      <Audio>Audio/PR_noResponsePatient</Audio>
+      <Text>No response from the patient, doctor, Doctor.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+     <VoiceMap>
+      <Tag>VOICE:PATIENT:NO:RESPONSE</Tag>
+      <Audio>Audio/PR_imNotGettingAnything</Audio>
+      <Text>I'm not getting anything.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PATIENT:INTUBATED</Tag>
+      <Audio>Audio/PR_patientIntubated</Audio>
+      <Text>The patient is intubated, doctor.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PATIENT:SEDATED</Tag>
+      <Audio>Audio/PR_patientSedated</Audio>
+      <Text>The patient is sedated, doctor.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>VOICE:GCS:OPEN:EYES</Tag>
+      <Audio>Audio/PR_canYouOpenEyes</Audio>
+      <Text>Can you open your eyes for me ?</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:GCS:STERNAL:RUB</Tag>
+      <Audio>Audio/PR_trySternalRub</Audio>
+      <Text>I'll try a sternal rub.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:GCS:OPEN:EYES2</Tag>
+      <Audio>Audio/PR_gcsOpenEyes2</Audio>
+      <Text>Come on now, I need you to open your eyes for me.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+        <VoiceMap>
+      <Tag>VOICE:GCS:EYES:STIMULUS</Tag>
+      <Audio>Audio/PR_gcsApplySternal</Audio>
+      <Text>I’m going to try a sternal rub to get a response.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:GCS:OPEN:EYES3</Tag>
+      <Audio>Audio/PR_gcsOpenEyes3</Audio>
+      <Text>You need to open your eyes for me.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:GCS:NOT:ALERT</Tag>
+      <Audio>Audio/PR_gcsNoAlert</Audio>
+      <Text>The patient doesn’t seem alert.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>VOICE:GCS:STERNAL:RUB</Tag>
+      <Audio>Audio/PR_trySternalRub</Audio>
+      <Text>I'll try a sternal rub.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>VOICE:GCS:STERNAL:RUB:RESULT</Tag>
+      <Audio>Audio/PR_noMovement</Audio>
+      <Text>No movement, doctor.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>VOICE:PATIENT:GCS:EYES:RESULT</Tag>
+      <Audio>Audio/PR_spontaneousEyeMovement</Audio>
+      <Text>The patient appears to have spontaneous eye movement.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PATIENT:GCS:EYES:RESULT1</Tag>
+      <Audio>Audio/PR_gcsEyesResult1</Audio>
+      <Text>No eye movement doctor.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PATIENT:GCS:EYES:RESULT2</Tag>
+      <Audio>Audio/PR_gcsEyesResult1</Audio>
+      <Text>The patient is responding to painful stimuli, but having trouble keeping their eyes open.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PATIENT:GCS:EYES:RESULT3</Tag>
+      <Audio>Audio/PR_gcsEyesResult1</Audio>
+      <Text>The patient is responding to verbal commands.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PATIENT:GCS:EYES:RESULT4</Tag>
+      <Audio>Audio/PR_gcsEyesResult1</Audio>
+      <Text>The patient’s eyes are open and blinking spontaneously.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:GCS:CHECK</Tag>
+      <Audio>Audio/PR_gcsCheck</Audio>
+      <Text>Ms. can you tell me your name? Do you know what day it is?</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>VOICE:PATIENT:GCS:VERBAL:FEMALE</Tag>
+      <Audio>Audio/PR_maamKnowWhereAre</Audio>
+      <Text>Maam, do you know where you are?</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>VOICE:PATIENT:GCS:VERBAL:MALE</Tag>
+      <Audio>Audio/PR_sirKnowWhereAre</Audio>
+      <Text>Sir, do you know where you are?</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>VOICE:PATIENT:GCS:VERBAL:RESULT</Tag>
+      <Audio>Audio/PR_patientRespondingVerbal</Audio>
+      <Text>The patient is responding well to verbal questioning.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PATIENT:GCS:VERBAL:RESULT1</Tag>
+      <Audio>Audio/PR_gcsVerbalResult1</Audio>
+      <Text>I’m not getting any verbal response from the patient, Doctor.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PATIENT:GCS:VERBAL:RESULT2</Tag>
+      <Audio>Audio/PR_gcsVerbalResult2</Audio>
+      <Text>The patient is having trouble forming words, Doctor.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PATIENT:GCS:VERBAL:RESULT3</Tag>
+      <Audio>Audio/PR_gcsVerbalResult3</Audio>
+      <Text>The patient is responding but they aren’t making any sense, Doctor.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PATIENT:GCS:VERBAL:RESULT4</Tag>
+      <Audio>Audio/PR_gcsVerbalResult4</Audio>
+      <Text>The patient is responding but seems confused, Doctor.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PATIENT:GCS:VERBAL:RESULT5</Tag>
+      <Audio>Audio/PR_gcsVerbalResult5</Audio>
+      <Text>The patient is alert and oriented, Doctor.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PATIENT:GCS:MOTOR:PRESSURE</Tag>
+      <Audio>Audio/PR_gcsMotorApplyPressure</Audio>
+      <Text>I’m going to apply some pressure on the patient’s nail bed to see if I get a response.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>VOICE:PATIENT:GCS:MOTOR:ARMS</Tag>
+      <Audio>Audio/PR_wiggleFingersForMe</Audio>
+      <Text>Can you wiggle your fingers for me?</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>VOICE:PATIENT:GCS:MOTOR:LEGS</Tag>
+      <Audio>Audio/PR_wiggleToesForMe</Audio>
+      <Text>Can you wiggle your toes for me?</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>VOICE:PATIENT:GCS:MOTOR:RESULT</Tag>
+      <Audio>Audio/PR_motorFunctionNormal</Audio>
+      <Text>Good. The patient's motor function is normal.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PATIENT:GCS:MOTOR:RESULT1</Tag>
+      <Audio>Audio/PR_gcsMotorResult1</Audio>
+      <Text>The patient is unresponsive.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PATIENT:GCS:MOTOR:RESULT2</Tag>
+      <Audio>Audio/PR_gcsMotorResult2</Audio>
+      <Text>The patient’s hands are turned outward and their feet are extended, Doctor.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PATIENT:GCS:MOTOR:RESULT3</Tag>
+      <Audio>Audio/PR_gcsMotorResult3</Audio>
+      <Text>The patient’s arms are pulling inward towards their chest and their feet are extended, Doctor.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PATIENT:GCS:MOTOR:RESULT4</Tag>
+      <Audio>Audio/PR_gcsMotorResult4</Audio>
+      <Text>The patient is responding but isn't able to stop me from applying pressure.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PATIENT:GCS:MOTOR:RESULT5</Tag>
+      <Audio>Audio/PR_gcsMotorResult5</Audio>
+      <Text>The patient responds physically if I use painful stimuli.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PATIENT:GCS:MOTOR:RESULT6</Tag>
+      <Audio>Audio/PR_gcsMotorResult6</Audio>
+      <Text>The patient’s motor function is normal.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:GCS:REPORT</Tag>
+      <Audio>audio=SAY:GCS:INTRO variable=Patient.GCS_EYES gap=0.2 audio=SAY:GCS:EYE variable=Patient.GCS_VERBAL gap=0.2 audio=SAY:GCS:VERBAL variable=Patient.GCS_MOTOR gap=0.2 audio=SAY:GCS:MOTOR gap=0.2 audio=SAY:GCS:TOTAL gap=0.2  variable=Patient.GCS_TOTAL audio=VOICE:DOCTOR gap=0.0</Audio>
+      <LookAt>lookCamera</LookAt>
+	  <Dynamic>true</Dynamic>		
+    </VoiceMap>	
+    <VoiceMap>
+      <Tag>SAY:GCS:INTRO</Tag>
+      <Audio>Audio/PR_gcsReceivedA</Audio>
+      <Text>The patient's received a </Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>	
+	<VoiceMap>
+      <Tag>SAY:GCS:EYE</Tag>
+      <Audio>Audio/PR_gcsForEyeMovementA</Audio>
+      <Text>for eye movement, a </Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>SAY:GCS:VERBAL</Tag>
+      <Audio>Audio/PR_gcsForVerbalAnd</Audio>
+      <Text>for verbal and </Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>SAY:GCS:MOTOR</Tag>
+      <Audio>Audio/PR_gcsForMotorFunction</Audio>
+      <Text>for motor function </Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>	
+    <VoiceMap>
+      <Tag>SAY:GCS:TOTAL</Tag>
+      <Audio>Audio/PR_gcsTotalling</Audio>
+      <Text>totalling </Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>	
+    <VoiceMap>
+      <Tag>VOICE:DOCTOR</Tag>
+      <Audio>Audio/PR_doctor</Audio>
+      <Text>Doctor</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:MOTOR:ARMS:REPORT</Tag>
+      <Audio>Audio/PR_motorFunctionNormal</Audio>
+      <Text>Good. The patient's motor function is normal.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:MOTOR:LEGS:REPORT</Tag>
+      <Audio>Audio/PR_motorFunctionNormal</Audio>
+      <Text>Good. The patient's motor function is normal.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:MOTOR:FOOT:RIGHT</Tag>
+      <Audio>Audio/PR_checkMotorFootRight</Audio>
+      <Text>Can you rotate your ankle for me?</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:MOTOR:FOOT:RIGHT:REPORT</Tag>
+      <Audio>Audio/PR_motorFootRightResult</Audio>
+      <Text>The patient's right foot moves well.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:MOTOR:FOOT:LEFT:REPORT</Tag>
+      <Audio>Audio/PR_motorFootLeftResult</Audio>
+      <Text>The patient's left foot moves well.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+        <Tag>VOICE:REQUEST:INFO</Tag>
+		<Audio>Audio/PR_okDoctorWhatLookingFor</Audio>
+        <Text>Ok, doctor, what are you looking for ?</Text>
+        <LookAt>lookCamera</LookAt>
+      </VoiceMap>
+          <VoiceMap>
+        <Tag>VOICE:REQUEST:SPECIFIC</Tag>
+		<Audio>Audio/PR_beSpecific</Audio>
+        <Text>Can you be more specific ?</Text>
+        <LookAt>lookCamera</LookAt>
+      </VoiceMap>
+      <VoiceMap>
+        <Tag>VOICE:CHECK:ABI:REPORT</Tag>
+		<Audio>Audio/PR_abiResultT1</Audio>
+        <Text>The patient's ABI is 1.1, doctor.</Text>
+        <LookAt>lookCamera</LookAt>
+      </VoiceMap>
+      <VoiceMap>
+        <Tag>VOICE:CALL:ANESTH:REPORT</Tag>
+		<Audio>Audio/PR_orReady</Audio>
+        <Text>The OR will be ready in five minutes.</Text>
+      </VoiceMap>
+      <VoiceMap>
+        <Tag>VOICE:CALL:OR:REPORT</Tag>
+		<Audio>Audio/PR_orReady</Audio>
+        <Text>The OR will be ready in five minutes.</Text>
+      </VoiceMap>
+      <VoiceMap>
+        <Tag>VOICE:CALL:ORTHO:REPORT</Tag>
+		<Audio>Audio/PR_orReady</Audio>
+        <Text>The OR will be ready in five minutes.</Text>
+      </VoiceMap>
+      <VoiceMap>
+        <Tag>VOICE:CALL:TRANSFER:REPORT</Tag>
+		<Audio>Audio/PR_orReady</Audio>
+        <Text>The OR will be ready in five minutes.</Text>
+      </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:CAPREFILL:REPORT</Tag>
+      <Audio>Audio/PR_capRefill_normal</Audio>
+      <Text>The patient's refill response is normal.</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:REMOVECLOTHES:REPORT</Tag>
+      <Audio>Audio/PR_removeClothes</Audio>
+      <Text>Primary Nurse, please assist me in removing the patient's clothes.</Text>
+      <LookAt>lookPN</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:SKINTONE:REPORT</Tag>
+      <Audio>Audio/PR_skinToneNormal</Audio>
+      <Text>The patient's skin appears normal.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:SKINTEMP:REPORT</Tag>
+      <Audio>Audio/PR_skinTempWarmDry</Audio>
+      <Text>The patient's skin is warm and dry.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>VOICE:PERFORM:CHESTTUBE:LEFT</Tag>
+      <Audio>Audio/PR_chestTubeLeft</Audio>
+      <Text>Placing chest tube on the left.</Text>
+      <LookAt></LookAt>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>VOICE:PERFORM:CHESTTUBE:RIGHT</Tag>
+      <Audio>Audio/PR_chestTubeRight</Audio>
+      <Text>Placing chest tube on the right.</Text>
+      <LookAt></LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:CHESTTUBE:PLACED</Tag>
+      <Audio>Audio/PR_chestTubePlaced</Audio>
+      <Text>The chest tube has been placed, doctor.</Text>
+      <LookAt></LookAt>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>VOICE:NEEDLEDECOMP:ASKLOCATION</Tag>
+      <Audio>Audio/PR_needleDecompLocation</Audio>
+      <Text>Where should I put the needle</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>VOICE:PERFORM:THORACOSTOMY:NEEDLE:LEFT</Tag>
+      <Audio>Audio/PR_performDecompressLeft</Audio>
+      <Text>Performing needle decompression on the left.</Text>
+      <LookAt></LookAt>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>VOICE:NOT:RESPONDING</Tag>
+      <Audio>Audio/PR_gcsReport</Audio>
+      <Text>I'm getting no response.</Text>
+      <LookAt></LookAt>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>VOICE:PERFORM:THORACOSTOMY:NEEDLE:RIGHT</Tag>
+      <Audio>Audio/PR_performDecompressRight</Audio>
+      <Text>Performing needle decompression on the right.</Text>
+      <LookAt></LookAt>
+    </VoiceMap>
+	<VoiceMap>
+        <Tag>VOICE:LOGROLL:START</Tag>
+        <Audio>Audio/PR_logrollStart</Audio>
+        <Text>Everyone gather around the patient. We need to roll them on their side.</Text>
+        <LookAt></LookAt>
+    </VoiceMap>
+    <VoiceMap>
+        <Tag>VOICE:NO:WOUNDS</Tag>
+        <Audio>Audio/PR_dontSeeWounds</Audio>
+        <Text>I don't see any wounds.</Text>
+        <LookAt></LookAt>
+    </VoiceMap>    
+    <VoiceMap>
+        <Tag>VOICE:PLACE:ACEWRAP</Tag>
+        <Audio>Audio/PR_aceWrap</Audio>
+        <Text>The ACEWrap has been placed, doctor.</Text>
+        <LookAt></LookAt>
+    </VoiceMap>
+    <VoiceMap>
+        <Tag>VOICE:PLACE:PRESSURE:DRESSING</Tag>
+        <Audio>Audio/PR_pressureDressing</Audio>
+        <Text>The pressure dressing has been placed, doctor.</Text>
+        <LookAt></LookAt>
+    </VoiceMap>
+    <VoiceMap>
+        <Tag>VOICE:PLACE:TOURNIQUET</Tag>
+        <Audio>Audio/PR_tourniquet</Audio>
+        <Text>The tourniquet has been placed, doctor.</Text>
+        <LookAt></LookAt>
+    </VoiceMap>
+    <VoiceMap>
+        <Tag>VOICE:ENDCASE:ADMIT</Tag>
+        <Audio>Audio/PR_caseEndAdmit</Audio>
+        <Text>Alright everyone, let’s get the patient ready for transport. Scribe Nurse, get his admittance paperwork started. Let’s take the patient to their room.</Text>
+        <LookAt></LookAt>
+    </VoiceMap>
+    <VoiceMap>
+        <Tag>VOICE:ENDCASE:DISCHARGE</Tag>
+        <Audio>Audio/PR_caseEndDischarge</Audio>
+        <Text>AAlright everyone, let’s get the patient ready to go home. Scribe Nurse, get his discharge paperwork started. Let’s get this room ready for our next patient.</Text>
+        <LookAt></LookAt>
+    </VoiceMap>
+    <VoiceMap>
+        <Tag>VOICE:ENDCASE:DEATH</Tag>
+        <Audio>Audio/PR_caseEndDeath</Audio>
+        <Text>Ok everyone. This is over. Call the time of death. Doc, why don’t you stick around for a debrief.</Text>
+        <LookAt></LookAt>
+    </VoiceMap>
+    <VoiceMap>
+        <Tag>VOICE:ENDCASE:OR</Tag>
+        <Audio>Audio/PR_caseEndOR</Audio>
+        <Text>Alright everyone, let’s get the patient ready for transport. Scribe Nurse, call the OR back and let them know we’re on our way.</Text>
+        <LookAt></LookAt>
+    </VoiceMap>
+    <VoiceMap>
+        <Tag>VOICE:ENDCASE:IR</Tag>
+        <Audio>Audio/PR_caseEndIR</Audio>
+        <Text>Alright  everyone, let’s get the patient ready for transport. Scribe Nurse, call IR back and let them know we’re on our way.</Text>
+        <LookAt></LookAt>
+    </VoiceMap>
+    <VoiceMap>
+        <Tag>VOICE:ENDCASE:ICU</Tag>
+        <Audio>Audio/PR_caseEndICU</Audio>
+        <Text>Ok, we’ve done what we can for the patient. Scribe Nurse, call the ICU and let them know we’re bringing up a new patient.</Text>
+        <LookAt></LookAt>
+    </VoiceMap>
+    <!-- Numbers -->
+    <VoiceMap>
+      <Tag>VOICE:NUM100:1</Tag>
+      <Audio>Audio/PR_num100</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:1</Tag>
+      <Audio>Audio/PR_num10</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:2</Tag>
+      <Audio>Audio/PR_num20</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:3</Tag>
+      <Audio>Audio/PR_num30</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:4</Tag>
+      <Audio>Audio/PR_num40</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:5</Tag>
+      <Audio>Audio/PR_num50</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:6</Tag>
+      <Audio>Audio/PR_num60</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:7</Tag>
+      <Audio>Audio/PR_num70</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:8</Tag>
+      <Audio>Audio/PR_num80</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:9</Tag>
+      <Audio>Audio/PR_num90</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:1</Tag>
+      <Audio>Audio/PR_num11</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:2</Tag>
+      <Audio>Audio/PR_num12</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:3</Tag>
+      <Audio>Audio/PR_num13</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:4</Tag>
+      <Audio>Audio/PR_num14</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:5</Tag>
+      <Audio>Audio/PR_num15</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:6</Tag>
+      <Audio>Audio/PR_num16</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:7</Tag>
+      <Audio>Audio/PR_num17</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:8</Tag>
+      <Audio>Audio/PR_num18</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:9</Tag>
+      <Audio>Audio/PR_num19</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:0</Tag>
+      <Audio>Audio/PR_num00</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:1</Tag>
+      <Audio>Audio/PR_num01</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:2</Tag>
+      <Audio>Audio/PR_num02</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:3</Tag>
+      <Audio>Audio/PR_num03</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:4</Tag>
+      <Audio>Audio/PR_num04</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:5</Tag>
+      <Audio>Audio/PR_num05</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:6</Tag>
+      <Audio>Audio/PR_num06</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:7</Tag>
+      <Audio>Audio/PR_num07</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:8</Tag>
+      <Audio>Audio/PR_num08</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:9</Tag>
+      <Audio>Audio/PR_num09</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:0</Tag>
+      <Audio>Audio/PR_numPoint0</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:1</Tag>
+      <Audio>Audio/PR_numPoint1</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:2</Tag>
+      <Audio>Audio/PR_numPoint2</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:3</Tag>
+      <Audio>Audio/PR_numPoint3</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:4</Tag>
+      <Audio>Audio/PR_numPoint4</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:5</Tag>
+      <Audio>Audio/PR_numPoint5</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:6</Tag>
+      <Audio>Audio/PR_numPoint6</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:7</Tag>
+      <Audio>Audio/PR_numPoint7</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:8</Tag>
+      <Audio>Audio/PR_numPoint8</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:9</Tag>
+      <Audio>Audio/PR_numPoint9</Audio>
+    </VoiceMap>	
+	<!-- Generic Response System -->
+	<VoiceMap>
+      <Tag>VOICE:ALREADY:WORKING</Tag>
+      <Audio>Audio/PR_wereAlreadyWorkingOnThat</Audio>
+      <Text>We’re already working on that.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:CANT:DO:THAT</Tag>
+      <Audio>Audio/PR_weCantDoThat</Audio>
+      <Text>We can't do that right now.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:ACKNOWLEDGE:1</Tag>
+      <Audio>Audio/PR_acknowledge01</Audio>
+      <Text>Yes, doctor, right away.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:ACKNOWLEDGE:2</Tag>
+      <Audio>Audio/PR_acknowledge02</Audio>
+      <Text>I'm on it.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:ACKNOWLEDGE:3</Tag>
+      <Audio>Audio/PR_acknowledge03</Audio>
+      <Text>Sure thing, Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:ACKNOWLEDGE:4</Tag>
+      <Audio>Audio/PR_acknowledge04</Audio>
+      <Text>Of course.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:ACKNOWLEDGE:5</Tag>
+      <Audio>Audio/PR_acknowledge05</Audio>
+      <Text>Okay.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:QUEUED:1</Tag>
+      <Audio>Audio/PR_queued01</Audio>
+      <Text>Yes, just a minute, doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:QUEUED:2</Tag>
+      <Audio>Audio/PR_queued02</Audio>
+      <Text>Okay, one moment, please.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:QUEUED:3</Tag>
+      <Audio>Audio/PR_queued03</Audio>
+      <Text>As soon as I'm finished, I'll do that.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:QUEUED:4</Tag>
+      <Audio>Audio/PR_queued04</Audio>
+      <Text>I'll do that next.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:QUEUED:5</Tag>
+      <Audio>Audio/PR_queued05</Audio>
+      <Text>Right after this, doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:DELAYED:1</Tag>
+      <Audio>Audio/PR_delayed01</Audio>
+      <Text>It'll take me a few minutes, but I'll get to it.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:DELAYED:2</Tag>
+      <Audio>Audio/PR_delayed02</Audio>
+      <Text>Let me finish these few tasks and I'll do it.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:DELAYED:3</Tag>
+      <Audio>Audio/PR_delayed03</Audio>
+      <Text>Give me a few minutes to finish up here.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:HANDOFF:1</Tag>
+      <Audio>Audio/PR_handOff01</Audio>
+      <Text>Can you do that? I'm too busy at the moment.</Text>
+	  <LookAt>ignore</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:HANDOFF:2</Tag>
+      <Audio>Audio/PR_handOff02</Audio>
+      <Text>Do you mind helping the doctor with that?</Text>
+	  <LookAt>ignore</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:HANDOFF:4</Tag>
+      <Audio>Audio/PR_handOff04</Audio>
+      <Text>Can you help me out?</Text>
+	  <LookAt>ignore</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:HANDOFF:5</Tag>
+      <Audio>Audio/PR_handOff05</Audio>
+      <Text>Help out the doctor while I finish this.</Text>
+	  <LookAt>ignore</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BAD:COMMAND:1</Tag>
+      <Audio>Audio/PR_badCommand01</Audio>
+      <Text>I'm sorry doctor, but I don't understand what you want me to do.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BAD:COMMAND:2</Tag>
+      <Audio>Audio/PR_badCommand02</Audio>
+      <Text>Can you say that again for me?</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BAD:COMMAND:3</Tag>
+      <Audio>Audio/PR_badCommand03</Audio>
+      <Text>What was that?</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BAD:COMMAND:4</Tag>
+      <Audio>Audio/PR_badCommand04</Audio>
+      <Text>I don't understand.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BAD:COMMAND:5</Tag>
+      <Audio>Audio/PR_badCommand05</Audio>
+      <Text>I don't understand what you're asking me.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:MISMATCH:1</Tag>
+      <Audio>Audio/PR_mismatch04</Audio>
+      <Text>I'm sorry doctor, but that's not in my scope of practice.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:SPEECH:TOO:QUIET</Tag>
+      <Audio>Audio/PR_tooSoft</Audio>
+      <Text>Could you speak up a bit? I couldn't hear you.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:SPEECH:TOO:LOUD</Tag>
+      <Audio>Audio/PR_tooLoud</Audio>
+      <Text>That was a bit loud. Can you speak softer?</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:SPEECH:TOO:FAST</Tag>
+      <Audio>Audio/PR_speakSlower</Audio>
+      <Text>Can you speak more slowly for me?</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	</VoiceMaps>
+</VoiceList>

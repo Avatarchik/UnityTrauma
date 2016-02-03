@@ -1,0 +1,1658 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<ScriptedObjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <unityObjectName>PlayerScripts</unityObjectName>
+  <moveToParentOnDrop>true</moveToParentOnDrop>
+  <dropTargetName>Player</dropTargetName>
+  <scripts>
+    <InteractionScriptInfo>
+      <unityObjectName>PLAYER:ASKNAME</unityObjectName>
+      <triggerStrings>
+        <string>PLAYER:ASKNAME</string>
+      </triggerStrings>
+      <triggerOnStatus>false</triggerOnStatus>
+      <startingArgs />
+      <scriptLines>
+        <ScriptedActionInfo>
+          <unityObjectName>SendDispatcherPLAYER:ASKNAME</unityObjectName>
+          <comment />
+          <objectName>Dispatcher</objectName>
+          <type>putMessage</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>false</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4>EXAM:BLEEDING:COMPLETE</stringParam4>
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+          <gameMsgFormInfo>
+            <msgType>interactMsg</msgType>
+            <gameObjectName>Dispatcher</gameObjectName>
+            <log>false</log>
+            <interactName />
+            <command>none</command>
+            <x>0</x>
+            <y>0</y>
+            <w>0</w>
+            <h>0</h>
+            <text />
+            <title />
+            <time>0</time>
+            <modal>false</modal>
+            <xmlName />
+            <className />
+            <dialogName />
+            <anchor>centered</anchor>
+            <arguments />
+            <numArguments>0</numArguments>
+            <waitForDialogClosed>false</waitForDialogClosed>
+            <waitForDialogName />
+            <timeout>0</timeout>
+            <editbox>false</editbox>
+            <editboxlabel />
+            <editboxprompt />
+            <sendMap>true</sendMap>
+            <baseXML />
+            <hasCancel>false</hasCancel>
+            <commandString />
+            <Params />
+            <ScreenName />
+          </gameMsgFormInfo>
+          <map>
+            <item>PLAYER:ASKNAME</item>
+            <response />
+            <response_title />
+            <tooltip />
+            <note />
+            <sound />
+            <task />
+            <time>0</time>
+            <log>false</log>
+            <max>0</max>
+            <readyState>readyToRun</readyState>
+            <startPriority>4</startPriority>
+            <prereq />
+            <scriptName />
+            <objectName />
+            <confirm>false</confirm>
+            <category />
+            <Enabled>true</Enabled>
+            <param />
+          </map>
+        </ScriptedActionInfo>
+      </scriptLines>
+      <owningRole />
+      <roles />
+      <roleKeyString />
+      <autoExecuteInterval>-1</autoExecuteInterval>
+      <autoExecuteProbability>0</autoExecuteProbability>
+      <AddToMenu>true</AddToMenu>
+      <menuOrder>11</menuOrder>
+      <interactionSet>
+        <Name />
+        <Maps />
+        <ScriptsEnter />
+        <ScriptsExit />
+        <ScriptsAbort />
+      </interactionSet>
+      <commandVariation>
+        <Cmd>PLAYER:ASKNAME</Cmd>
+        <CmdString>Ask the patient their name</CmdString>
+        <Variations>
+          <string>name</string>
+          <string>your name</string>
+          <string>who are you</string>
+          <string>como te llamas</string>
+          <string>speak</string>
+          <string>able to speak</string>
+        </Variations>
+      </commandVariation>
+      <callbackConfirmVoice>false</callbackConfirmVoice>
+      <item>PLAYER:ASKNAME</item>
+      <prettyname>Ask The Patient Their Name</prettyname>
+      <response>Script for PLAYER:ASKNAME is running</response>
+      <response_title>PLAYER:ASKNAME</response_title>
+      <note />
+      <tooltip>Click Me</tooltip>
+      <sound>AUDIO:SOUND</sound>
+      <task />
+      <log>true</log>
+      <readyState>unknown</readyState>
+      <startPriority>4</startPriority>
+      <cancellable>false</cancellable>
+      <skillVector />
+      <extraCost>99999</extraCost>
+      <prereq />
+      <category>
+        <string>Diagnostics/Airway</string>
+      </category>
+      <param />
+      <debug>false</debug>
+    </InteractionScriptInfo>
+    <InteractionScriptInfo>
+      <unityObjectName>USER:COMMAND:ABORT</unityObjectName>
+      <triggerStrings>
+        <string>USER:COMMAND:ABORT</string>
+      </triggerStrings>
+      <triggerOnStatus>false</triggerOnStatus>
+      <startingArgs />
+      <scriptLines>
+        <ScriptedActionInfo>
+          <unityObjectName>newScriptLine-noop</unityObjectName>
+          <comment>this script never actually runs, the dispatcher reacts to the tag USER:COMMAND:ABORT</comment>
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+      </scriptLines>
+      <owningRole />
+      <roles />
+      <roleKeyString />
+      <autoExecuteInterval>-1</autoExecuteInterval>
+      <autoExecuteProbability>0</autoExecuteProbability>
+      <AddToMenu>true</AddToMenu>
+      <menuOrder>0</menuOrder>
+      <interactionSet>
+        <Name />
+        <Maps />
+        <ScriptsEnter />
+        <ScriptsExit />
+        <ScriptsAbort />
+      </interactionSet>
+      <commandVariation>
+        <Cmd>USER:COMMAND:ABORT</Cmd>
+        <CmdString>stop everything</CmdString>
+        <Variations>
+          <string>stop everything</string>
+        </Variations>
+      </commandVariation>
+      <callbackConfirmVoice>false</callbackConfirmVoice>
+      <item>USER:COMMAND:ABORT</item>
+      <prettyname />
+      <response />
+      <response_title />
+      <note />
+      <tooltip>Click Me</tooltip>
+      <sound>AUDIO:SOUND</sound>
+      <task>OBJECT:MENUCLICK</task>
+      <log>true</log>
+      <readyState>unknown</readyState>
+      <startPriority>4</startPriority>
+      <cancellable>false</cancellable>
+      <skillVector />
+      <extraCost>0</extraCost>
+      <prereq />
+      <category />
+      <param />
+      <debug>false</debug>
+    </InteractionScriptInfo>
+    <InteractionScriptInfo>
+      <unityObjectName>PLAYER:ASKCAUSE</unityObjectName>
+      <triggerStrings>
+        <string>PLAYER:ASKCAUSE</string>
+      </triggerStrings>
+      <triggerOnStatus>false</triggerOnStatus>
+      <startingArgs />
+      <scriptLines>
+        <ScriptedActionInfo>
+          <unityObjectName>SendDispatcherPLAYER:ASKCAUSE</unityObjectName>
+          <comment />
+          <objectName>Dispatcher</objectName>
+          <type>putMessage</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>false</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4>EXAM:BLEEDING:COMPLETE</stringParam4>
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+          <gameMsgFormInfo>
+            <msgType>interactMsg</msgType>
+            <gameObjectName>Dispatcher</gameObjectName>
+            <log>false</log>
+            <interactName />
+            <command>none</command>
+            <x>0</x>
+            <y>0</y>
+            <w>0</w>
+            <h>0</h>
+            <text />
+            <title />
+            <time>0</time>
+            <modal>false</modal>
+            <xmlName />
+            <className />
+            <dialogName />
+            <anchor>centered</anchor>
+            <arguments />
+            <numArguments>0</numArguments>
+            <waitForDialogClosed>false</waitForDialogClosed>
+            <waitForDialogName />
+            <timeout>0</timeout>
+            <editbox>false</editbox>
+            <editboxlabel />
+            <editboxprompt />
+            <sendMap>true</sendMap>
+            <baseXML />
+            <hasCancel>false</hasCancel>
+            <commandString />
+            <Params />
+            <ScreenName />
+          </gameMsgFormInfo>
+          <map>
+            <item>PLAYER:ASKCAUSE</item>
+            <response />
+            <response_title />
+            <tooltip />
+            <note />
+            <sound />
+            <task />
+            <time>0</time>
+            <log>false</log>
+            <max>0</max>
+            <readyState>readyToRun</readyState>
+            <startPriority>4</startPriority>
+            <prereq />
+            <scriptName />
+            <objectName />
+            <confirm>false</confirm>
+            <category />
+            <Enabled>true</Enabled>
+            <param />
+          </map>
+        </ScriptedActionInfo>
+      </scriptLines>
+      <owningRole />
+      <roles />
+      <roleKeyString />
+      <autoExecuteInterval>-1</autoExecuteInterval>
+      <autoExecuteProbability>0</autoExecuteProbability>
+      <AddToMenu>true</AddToMenu>
+      <menuOrder>3</menuOrder>
+      <interactionSet>
+        <Name />
+        <Maps />
+        <ScriptsEnter />
+        <ScriptsExit />
+        <ScriptsAbort />
+      </interactionSet>
+      <commandVariation>
+        <Cmd>PLAYER:ASKCAUSE</Cmd>
+        <CmdString>Ask the patient about the cause of their injuries</CmdString>
+        <Variations>
+          <string>cause injury</string>
+          <string>what happened</string>
+          <string>how did this happen</string>
+          <string>injury</string>
+          <string>injuries</string>
+        </Variations>
+      </commandVariation>
+      <callbackConfirmVoice>false</callbackConfirmVoice>
+      <item>PLAYER:ASKCAUSE</item>
+      <prettyname>Ask The Patient What Happened.</prettyname>
+      <response>Script for PLAYER:ASKCAUSE is running</response>
+      <response_title>PLAYER:ASKCAUSE</response_title>
+      <note />
+      <tooltip>Click Me</tooltip>
+      <sound>AUDIO:SOUND</sound>
+      <task />
+      <log>true</log>
+      <readyState>unknown</readyState>
+      <startPriority>4</startPriority>
+      <cancellable>false</cancellable>
+      <skillVector />
+      <extraCost>99999</extraCost>
+      <prereq />
+      <category>
+        <string>Diagnostics/Airway</string>
+      </category>
+      <param />
+      <debug>false</debug>
+    </InteractionScriptInfo>
+    <InteractionScriptInfo>
+      <unityObjectName>PLAYER:ASKPAIN</unityObjectName>
+      <triggerStrings>
+        <string>PLAYER:ASKPAIN</string>
+      </triggerStrings>
+      <triggerOnStatus>false</triggerOnStatus>
+      <startingArgs />
+      <scriptLines>
+        <ScriptedActionInfo>
+          <unityObjectName>SendDispatcherPLAYER:ASKPAIN</unityObjectName>
+          <comment />
+          <objectName>Dispatcher</objectName>
+          <type>putMessage</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>false</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4>EXAM:BLEEDING:COMPLETE</stringParam4>
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+          <gameMsgFormInfo>
+            <msgType>interactMsg</msgType>
+            <gameObjectName>Dispatcher</gameObjectName>
+            <log>false</log>
+            <interactName />
+            <command>none</command>
+            <x>0</x>
+            <y>0</y>
+            <w>0</w>
+            <h>0</h>
+            <text />
+            <title />
+            <time>0</time>
+            <modal>false</modal>
+            <xmlName />
+            <className />
+            <dialogName />
+            <anchor>centered</anchor>
+            <arguments />
+            <numArguments>0</numArguments>
+            <waitForDialogClosed>false</waitForDialogClosed>
+            <waitForDialogName />
+            <timeout>0</timeout>
+            <editbox>false</editbox>
+            <editboxlabel />
+            <editboxprompt />
+            <sendMap>true</sendMap>
+            <baseXML />
+            <hasCancel>false</hasCancel>
+            <commandString />
+            <Params />
+            <ScreenName />
+          </gameMsgFormInfo>
+          <map>
+            <item>PLAYER:ASKPAIN</item>
+            <response />
+            <response_title />
+            <tooltip />
+            <note />
+            <sound />
+            <task />
+            <time>0</time>
+            <log>false</log>
+            <max>0</max>
+            <readyState>readyToRun</readyState>
+            <startPriority>4</startPriority>
+            <prereq />
+            <scriptName />
+            <objectName />
+            <confirm>false</confirm>
+            <category />
+            <Enabled>true</Enabled>
+            <param />
+          </map>
+        </ScriptedActionInfo>
+      </scriptLines>
+      <owningRole />
+      <roles />
+      <roleKeyString />
+      <autoExecuteInterval>-1</autoExecuteInterval>
+      <autoExecuteProbability>0</autoExecuteProbability>
+      <AddToMenu>true</AddToMenu>
+      <menuOrder>2</menuOrder>
+      <interactionSet>
+        <Name />
+        <Maps />
+        <ScriptsEnter />
+        <ScriptsExit />
+        <ScriptsAbort />
+      </interactionSet>
+      <commandVariation>
+        <Cmd>PLAYER:ASKPAIN</Cmd>
+        <CmdString>Ask the patient about pain</CmdString>
+        <Variations>
+          <string>pain</string>
+          <string>feeling</string>
+          <string>feel</string>
+          <string>hurt</string>
+          <string>are you in any pain</string>
+        </Variations>
+      </commandVariation>
+      <callbackConfirmVoice>false</callbackConfirmVoice>
+      <item>PLAYER:ASKPAIN</item>
+      <prettyname>Ask The Patient About Pain</prettyname>
+      <response>Script for PLAYER:ASKPAIN is running</response>
+      <response_title>PLAYER:ASKPAIN</response_title>
+      <note />
+      <tooltip>Click Me</tooltip>
+      <sound>AUDIO:SOUND</sound>
+      <task />
+      <log>true</log>
+      <readyState>unknown</readyState>
+      <startPriority>4</startPriority>
+      <cancellable>false</cancellable>
+      <skillVector />
+      <extraCost>99999</extraCost>
+      <prereq />
+      <category>
+        <string>Diagnostics/Airway</string>
+      </category>
+      <param />
+      <debug>false</debug>
+    </InteractionScriptInfo>
+    <InteractionScriptInfo>
+      <unityObjectName>PLAYER:SET:AIRFLOW</unityObjectName>
+      <triggerStrings>
+        <string>PLAYER:SET:AIRFLOW</string>
+      </triggerStrings>
+      <triggerOnStatus>false</triggerOnStatus>
+      <startingArgs />
+      <scriptLines>
+        <ScriptedActionInfo>
+          <unityObjectName>startVentilatoreffect</unityObjectName>
+          <comment />
+          <objectName />
+          <type>putMessage</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes>Patient.Ventilator100</preAttributes>
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+          <gameMsgFormInfo>
+            <msgType>interactStatusMsg</msgType>
+            <gameObjectName />
+            <log>false</log>
+            <interactName>VENT:VENTILATOR</interactName>
+            <command>none</command>
+            <x>0</x>
+            <y>0</y>
+            <w>0</w>
+            <h>0</h>
+            <text />
+            <title />
+            <time>0</time>
+            <modal>false</modal>
+            <xmlName />
+            <className />
+            <dialogName />
+            <anchor>centered</anchor>
+            <arguments />
+            <numArguments>0</numArguments>
+            <waitForDialogClosed>false</waitForDialogClosed>
+            <waitForDialogName />
+            <timeout>0</timeout>
+            <editbox>false</editbox>
+            <editboxlabel />
+            <editboxprompt />
+            <sendMap>false</sendMap>
+            <baseXML />
+            <hasCancel>false</hasCancel>
+            <commandString />
+            <Params />
+            <ScreenName />
+          </gameMsgFormInfo>
+          <map>
+            <item>VENT:VENTILATOR</item>
+            <response />
+            <response_title />
+            <tooltip />
+            <note />
+            <sound />
+            <task />
+            <time>0</time>
+            <log>false</log>
+            <max>0</max>
+            <readyState>readyToRun</readyState>
+            <startPriority>4</startPriority>
+            <prereq />
+            <scriptName />
+            <objectName />
+            <confirm>false</confirm>
+            <category />
+            <Enabled>true</Enabled>
+            <param />
+          </map>
+        </ScriptedActionInfo>
+      </scriptLines>
+      <owningRole />
+      <roles />
+      <roleKeyString>
+        <string>False</string>
+      </roleKeyString>
+      <autoExecuteInterval>-1</autoExecuteInterval>
+      <autoExecuteProbability>0</autoExecuteProbability>
+      <AddToMenu>false</AddToMenu>
+      <menuOrder>14</menuOrder>
+      <interactionSet>
+        <Name />
+        <Maps />
+        <ScriptsEnter />
+        <ScriptsExit />
+        <ScriptsAbort />
+      </interactionSet>
+      <commandVariation>
+        <Cmd>PLAYER:SET:AIRFLOW</Cmd>
+        <CmdString>Adjust ventilator to 100% oxygen</CmdString>
+        <Variations>
+          <string>one hundred</string>
+          <string>100%</string>
+          <string>vent</string>
+          <string>ventilate</string>
+          <string>ventilate with 100% oxygen</string>
+          <string>vent setting</string>
+          <string>setting</string>
+          <string>set ventilator to 100% oxygen</string>
+          <string>use 100% oxygen</string>
+          <string>adjust vent setting</string>
+          <string>set airflow</string>
+          <string>airflow</string>
+          <string>fio2</string>
+        </Variations>
+      </commandVariation>
+      <callbackConfirmVoice>false</callbackConfirmVoice>
+      <item>PLAYER:SET:AIRFLOW</item>
+      <prettyname>Airway Doctor, the ventilator should be set at 100%</prettyname>
+      <response>Script for PLAYER:SET:AIRLFOW is running</response>
+      <response_title>PLAYER:SET:AIRFLOW</response_title>
+      <note />
+      <tooltip>Click Me</tooltip>
+      <sound>AUDIO:SOUND</sound>
+      <task>OBJECT:MENUCLICK</task>
+      <log>true</log>
+      <readyState>unknown</readyState>
+      <startPriority>4</startPriority>
+      <cancellable>false</cancellable>
+      <skillVector />
+      <extraCost>0</extraCost>
+      <prereq />
+      <category />
+      <param />
+      <debug>false</debug>
+    </InteractionScriptInfo>
+    <InteractionScriptInfo>
+      <unityObjectName>PLAYER:SEDATE:PATIENT</unityObjectName>
+      <triggerStrings>
+        <string>PLAYER:SEDATE:PATIENT</string>
+      </triggerStrings>
+      <triggerOnStatus>false</triggerOnStatus>
+      <startingArgs />
+      <scriptLines>
+        <ScriptedActionInfo>
+          <unityObjectName>sendSedateMessage</unityObjectName>
+          <comment />
+          <objectName />
+          <type>putMessage</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+          <gameMsgFormInfo>
+            <msgType>interactMsg</msgType>
+            <gameObjectName>Dispatcher</gameObjectName>
+            <log>true</log>
+            <interactName />
+            <command>none</command>
+            <x>0</x>
+            <y>0</y>
+            <w>0</w>
+            <h>0</h>
+            <text />
+            <title />
+            <time>0</time>
+            <modal>false</modal>
+            <xmlName />
+            <className />
+            <dialogName />
+            <anchor>centered</anchor>
+            <arguments />
+            <numArguments>0</numArguments>
+            <waitForDialogClosed>false</waitForDialogClosed>
+            <waitForDialogName />
+            <timeout>0</timeout>
+            <editbox>false</editbox>
+            <editboxlabel />
+            <editboxprompt />
+            <sendMap>true</sendMap>
+            <baseXML />
+            <hasCancel>false</hasCancel>
+            <commandString />
+            <Params />
+            <ScreenName />
+          </gameMsgFormInfo>
+          <map>
+            <item>MED:PROPOFOL</item>
+            <response />
+            <response_title />
+            <tooltip />
+            <note />
+            <sound />
+            <task />
+            <time>0</time>
+            <log>false</log>
+            <max>0</max>
+            <readyState>readyToRun</readyState>
+            <startPriority>4</startPriority>
+            <prereq />
+            <scriptName />
+            <objectName />
+            <confirm>false</confirm>
+            <category />
+            <Enabled>true</Enabled>
+            <param />
+          </map>
+        </ScriptedActionInfo>
+      </scriptLines>
+      <owningRole />
+      <roles />
+      <roleKeyString />
+      <autoExecuteInterval>-1</autoExecuteInterval>
+      <autoExecuteProbability>0</autoExecuteProbability>
+      <AddToMenu>true</AddToMenu>
+      <menuOrder>13</menuOrder>
+      <interactionSet>
+        <Name />
+        <Maps />
+        <ScriptsEnter />
+        <ScriptsExit />
+        <ScriptsAbort />
+      </interactionSet>
+      <commandVariation>
+        <Cmd>PLAYER:SEDATE:PATIENT</Cmd>
+        <CmdString>Sedate the patient</CmdString>
+        <Variations>
+          <string>sedate</string>
+          <string>sedative</string>
+          <string>sedatives</string>
+        </Variations>
+      </commandVariation>
+      <callbackConfirmVoice>false</callbackConfirmVoice>
+      <item>PLAYER:SEDATE:PATIENT</item>
+      <prettyname>Sedate the Patient</prettyname>
+      <response>Script for PLAYER:SEDATE:PATIENT is running</response>
+      <response_title>PLAYER:SEDATE:PATIENT</response_title>
+      <note />
+      <tooltip>Click Me</tooltip>
+      <sound>AUDIO:SOUND</sound>
+      <task>OBJECT:MENUCLICK</task>
+      <log>true</log>
+      <readyState>unknown</readyState>
+      <startPriority>4</startPriority>
+      <cancellable>false</cancellable>
+      <skillVector />
+      <extraCost>0</extraCost>
+      <prereq />
+      <category />
+      <param />
+      <debug>false</debug>
+    </InteractionScriptInfo>
+    <InteractionScriptInfo>
+      <unityObjectName>PLAYER:YES</unityObjectName>
+      <triggerStrings>
+        <string>PLAYER:YES</string>
+      </triggerStrings>
+      <triggerOnStatus>false</triggerOnStatus>
+      <startingArgs />
+      <scriptLines />
+      <owningRole />
+      <roles />
+      <roleKeyString />
+      <autoExecuteInterval>-1</autoExecuteInterval>
+      <autoExecuteProbability>0</autoExecuteProbability>
+      <AddToMenu>true</AddToMenu>
+      <menuOrder>0</menuOrder>
+      <interactionSet>
+        <Name />
+        <Maps />
+        <ScriptsEnter />
+        <ScriptsExit />
+        <ScriptsAbort />
+      </interactionSet>
+      <commandVariation>
+        <Cmd>PLAYER:YES</Cmd>
+        <CmdString>Yes</CmdString>
+        <Variations>
+          <string>Yes</string>
+          <string>Ok</string>
+          <string>Okay</string>
+        </Variations>
+      </commandVariation>
+      <callbackConfirmVoice>false</callbackConfirmVoice>
+      <item>PLAYER:YES</item>
+      <prettyname>Say Yes</prettyname>
+      <response>Script for PLAYER:YES is running</response>
+      <response_title>PLAYER:YES</response_title>
+      <note />
+      <tooltip>Click Me</tooltip>
+      <sound>AUDIO:SOUND</sound>
+      <task>OBJECT:MENUCLICK</task>
+      <log>true</log>
+      <readyState>unknown</readyState>
+      <startPriority>4</startPriority>
+      <cancellable>false</cancellable>
+      <skillVector />
+      <extraCost>0</extraCost>
+      <prereq />
+      <category />
+      <param />
+      <debug>false</debug>
+    </InteractionScriptInfo>
+    <InteractionScriptInfo>
+      <unityObjectName>PLAYER:NO</unityObjectName>
+      <triggerStrings>
+        <string>PLAYER:NO</string>
+      </triggerStrings>
+      <triggerOnStatus>false</triggerOnStatus>
+      <startingArgs />
+      <scriptLines />
+      <owningRole />
+      <roles />
+      <roleKeyString />
+      <autoExecuteInterval>-1</autoExecuteInterval>
+      <autoExecuteProbability>0</autoExecuteProbability>
+      <AddToMenu>true</AddToMenu>
+      <menuOrder>0</menuOrder>
+      <interactionSet>
+        <Name />
+        <Maps />
+        <ScriptsEnter />
+        <ScriptsExit />
+        <ScriptsAbort />
+      </interactionSet>
+      <commandVariation>
+        <Cmd>PLAYER:NO</Cmd>
+        <CmdString>No</CmdString>
+        <Variations>
+          <string>No</string>
+          <string>Nope</string>
+        </Variations>
+      </commandVariation>
+      <callbackConfirmVoice>false</callbackConfirmVoice>
+      <item>PLAYER:NO</item>
+      <prettyname>Say No</prettyname>
+      <response>Script for PLAYER:NO is running</response>
+      <response_title>PLAYER:NO</response_title>
+      <note />
+      <tooltip>Click Me</tooltip>
+      <sound>AUDIO:SOUND</sound>
+      <task>OBJECT:MENUCLICK</task>
+      <log>true</log>
+      <readyState>unknown</readyState>
+      <startPriority>4</startPriority>
+      <cancellable>false</cancellable>
+      <skillVector />
+      <extraCost>0</extraCost>
+      <prereq />
+      <category />
+      <param />
+      <debug>false</debug>
+    </InteractionScriptInfo>
+    <InteractionScriptInfo>
+      <unityObjectName>PLAYER:CLOSEDIALOG</unityObjectName>
+      <triggerStrings>
+        <string>PLAYER:CLOSEDIALOG</string>
+      </triggerStrings>
+      <triggerOnStatus>false</triggerOnStatus>
+      <startingArgs />
+      <scriptLines />
+      <owningRole />
+      <roles />
+      <roleKeyString />
+      <autoExecuteInterval>-1</autoExecuteInterval>
+      <autoExecuteProbability>0</autoExecuteProbability>
+      <AddToMenu>true</AddToMenu>
+      <menuOrder>0</menuOrder>
+      <interactionSet>
+        <Name />
+        <Maps />
+        <ScriptsEnter />
+        <ScriptsExit />
+        <ScriptsAbort />
+      </interactionSet>
+      <commandVariation>
+        <Cmd>PLAYER:CLOSEDIALOG</Cmd>
+        <CmdString>Close</CmdString>
+        <Variations>
+          <string>Close</string>
+          <string>Done</string>
+          <string>Exit</string>
+        </Variations>
+      </commandVariation>
+      <callbackConfirmVoice>false</callbackConfirmVoice>
+      <item>PLAYER:CLOSEDIALOG</item>
+      <prettyname>Text for the Menu</prettyname>
+      <response>Script for PLAYER:CLOSEDIALOG is running</response>
+      <response_title>PLAYER:CLOSEDIALOG</response_title>
+      <note />
+      <tooltip>Click Me</tooltip>
+      <sound>AUDIO:SOUND</sound>
+      <task>OBJECT:MENUCLICK</task>
+      <log>true</log>
+      <readyState>unknown</readyState>
+      <startPriority>4</startPriority>
+      <cancellable>false</cancellable>
+      <skillVector />
+      <extraCost>0</extraCost>
+      <prereq />
+      <category />
+      <param />
+      <debug>false</debug>
+    </InteractionScriptInfo>
+    <InteractionScriptInfo>
+      <unityObjectName>PLAYER:PATIENT:ADMIT</unityObjectName>
+      <triggerStrings>
+        <string>PLAYER:PATIENT:ADMIT</string>
+      </triggerStrings>
+      <triggerOnStatus>false</triggerOnStatus>
+      <startingArgs />
+      <scriptLines>
+        <ScriptedActionInfo>
+          <unityObjectName>VOICE:ENDCASE:ADMIT</unityObjectName>
+          <comment />
+          <objectName>ProcedureResident</objectName>
+          <type>playAudio</type>
+          <role />
+          <stringParam>VOICE:ENDCASE:ADMIT</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>EndScenario</unityObjectName>
+          <comment />
+          <objectName>EndOfGameScripts</objectName>
+          <type>executeScript</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName>pathAirwayCart</moveToName>
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>false</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2>END:SCENARIO</stringParam2>
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+          <gameMsgFormInfo>
+            <msgType>dialogMsg</msgType>
+            <gameObjectName />
+            <log>false</log>
+            <interactName />
+            <command>none</command>
+            <x>0</x>
+            <y>0</y>
+            <w>0</w>
+            <h>0</h>
+            <text />
+            <title />
+            <time>0</time>
+            <modal>false</modal>
+            <xmlName>traumaPlanOfCare</xmlName>
+            <className>PlanOfCare</className>
+            <dialogName />
+            <anchor>centered</anchor>
+            <arguments />
+            <numArguments>0</numArguments>
+            <waitForDialogClosed>false</waitForDialogClosed>
+            <waitForDialogName />
+            <timeout>0</timeout>
+            <editbox>false</editbox>
+            <editboxlabel />
+            <editboxprompt />
+            <sendMap>true</sendMap>
+            <baseXML />
+            <hasCancel>false</hasCancel>
+            <commandString />
+            <Params />
+            <ScreenName />
+          </gameMsgFormInfo>
+          <map>
+            <item />
+            <response />
+            <response_title />
+            <tooltip />
+            <note />
+            <sound />
+            <task />
+            <time>0</time>
+            <log>false</log>
+            <max>0</max>
+            <readyState>readyToRun</readyState>
+            <startPriority>4</startPriority>
+            <prereq />
+            <scriptName />
+            <objectName />
+            <confirm>false</confirm>
+            <category />
+            <Enabled>true</Enabled>
+            <param />
+          </map>
+        </ScriptedActionInfo>
+      </scriptLines>
+      <owningRole />
+      <roles />
+      <roleKeyString />
+      <autoExecuteInterval>-1</autoExecuteInterval>
+      <autoExecuteProbability>0</autoExecuteProbability>
+      <AddToMenu>true</AddToMenu>
+      <menuOrder>17</menuOrder>
+      <interactionSet>
+        <Name />
+        <Maps />
+        <ScriptsEnter />
+        <ScriptsExit />
+        <ScriptsAbort />
+      </interactionSet>
+      <commandVariation>
+        <Cmd>PLAYER:PATIENT:ADMIT</Cmd>
+        <CmdString>Admit this patient for observation</CmdString>
+        <Variations>
+          <string>admit</string>
+          <string>room</string>
+          <string>bed</string>
+          <string>observation</string>
+        </Variations>
+      </commandVariation>
+      <callbackConfirmVoice>false</callbackConfirmVoice>
+      <item>PLAYER:PATIENT:ADMIT</item>
+      <prettyname>Admit this patient for observation</prettyname>
+      <response>Script for PLAYER:PATIENT:ADMIT is running</response>
+      <response_title>PLAYER:PATIENT:ADMIT</response_title>
+      <note />
+      <tooltip>Click Me</tooltip>
+      <sound>AUDIO:SOUND</sound>
+      <task />
+      <log>true</log>
+      <readyState>unknown</readyState>
+      <startPriority>4</startPriority>
+      <cancellable>false</cancellable>
+      <skillVector />
+      <extraCost>0</extraCost>
+      <prereq />
+      <category />
+      <param />
+      <debug>false</debug>
+    </InteractionScriptInfo>
+    <InteractionScriptInfo>
+      <unityObjectName>PLAYER:PATIENT:ADMIT:ICU</unityObjectName>
+      <triggerStrings>
+        <string>PLAYER:PATIENT:ADMIT:ICU</string>
+      </triggerStrings>
+      <triggerOnStatus>false</triggerOnStatus>
+      <startingArgs />
+      <scriptLines>
+        <ScriptedActionInfo>
+          <unityObjectName>newScriptLine-noop</unityObjectName>
+          <comment />
+          <objectName>ProcedureResident</objectName>
+          <type>playAudio</type>
+          <role />
+          <stringParam>VOICE:ENDCASE:ICU</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>EndScenario</unityObjectName>
+          <comment />
+          <objectName>EndOfGameScripts</objectName>
+          <type>executeScript</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName>pathAirwayCart</moveToName>
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>false</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2>END:SCENARIO</stringParam2>
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+          <gameMsgFormInfo>
+            <msgType>dialogMsg</msgType>
+            <gameObjectName />
+            <log>false</log>
+            <interactName />
+            <command>none</command>
+            <x>0</x>
+            <y>0</y>
+            <w>0</w>
+            <h>0</h>
+            <text />
+            <title />
+            <time>0</time>
+            <modal>false</modal>
+            <xmlName>traumaPlanOfCare</xmlName>
+            <className>PlanOfCare</className>
+            <dialogName />
+            <anchor>centered</anchor>
+            <arguments />
+            <numArguments>0</numArguments>
+            <waitForDialogClosed>false</waitForDialogClosed>
+            <waitForDialogName />
+            <timeout>0</timeout>
+            <editbox>false</editbox>
+            <editboxlabel />
+            <editboxprompt />
+            <sendMap>true</sendMap>
+            <baseXML />
+            <hasCancel>false</hasCancel>
+            <commandString />
+            <Params />
+            <ScreenName />
+          </gameMsgFormInfo>
+          <map>
+            <item />
+            <response />
+            <response_title />
+            <tooltip />
+            <note />
+            <sound />
+            <task />
+            <time>0</time>
+            <log>false</log>
+            <max>0</max>
+            <readyState>readyToRun</readyState>
+            <startPriority>4</startPriority>
+            <prereq />
+            <scriptName />
+            <objectName />
+            <confirm>false</confirm>
+            <category />
+            <Enabled>true</Enabled>
+            <param />
+          </map>
+        </ScriptedActionInfo>
+      </scriptLines>
+      <owningRole />
+      <roles />
+      <roleKeyString />
+      <autoExecuteInterval>-1</autoExecuteInterval>
+      <autoExecuteProbability>0</autoExecuteProbability>
+      <AddToMenu>true</AddToMenu>
+      <menuOrder>17</menuOrder>
+      <interactionSet>
+        <Name />
+        <Maps />
+        <ScriptsEnter />
+        <ScriptsExit />
+        <ScriptsAbort />
+      </interactionSet>
+      <commandVariation>
+        <Cmd>PLAYER:PATIENT:ADMIT:ICU</Cmd>
+        <CmdString>Admit this patient to the ICU</CmdString>
+        <Variations>
+          <string>icu</string>
+          <string>ICU</string>
+          <string>admit</string>
+          <string>room</string>
+          <string>bed</string>
+          <string>intensive</string>
+          <string>care</string>
+          <string>unit</string>
+        </Variations>
+      </commandVariation>
+      <callbackConfirmVoice>false</callbackConfirmVoice>
+      <item>PLAYER:PATIENT:ADMIT:ICU</item>
+      <prettyname>We need to admit this patient to the ICU</prettyname>
+      <response>Script for PLAYER:PATIENT:ADMIT:ICU is running</response>
+      <response_title>PLAYER:PATIENT:ADMIT:ICU</response_title>
+      <note />
+      <tooltip>Click Me</tooltip>
+      <sound>AUDIO:SOUND</sound>
+      <task />
+      <log>true</log>
+      <readyState>unknown</readyState>
+      <startPriority>4</startPriority>
+      <cancellable>false</cancellable>
+      <skillVector />
+      <extraCost>0</extraCost>
+      <prereq />
+      <category />
+      <param />
+      <debug>false</debug>
+    </InteractionScriptInfo>
+    <InteractionScriptInfo>
+      <unityObjectName>PLAYER:PATIENT:DISCHARGE</unityObjectName>
+      <triggerStrings>
+        <string>PLAYER:PATIENT:DISCHARGE</string>
+      </triggerStrings>
+      <triggerOnStatus>false</triggerOnStatus>
+      <startingArgs />
+      <scriptLines>
+        <ScriptedActionInfo>
+          <unityObjectName>newScriptLine-noop</unityObjectName>
+          <comment />
+          <objectName>ProcedureResident</objectName>
+          <type>playAudio</type>
+          <role />
+          <stringParam>VOICE:ENDCASE:DISCHARGE</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>EndScenario</unityObjectName>
+          <comment />
+          <objectName>EndOfGameScripts</objectName>
+          <type>executeScript</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName>pathAirwayCart</moveToName>
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>false</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2>END:SCENARIO</stringParam2>
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+          <gameMsgFormInfo>
+            <msgType>dialogMsg</msgType>
+            <gameObjectName />
+            <log>false</log>
+            <interactName />
+            <command>none</command>
+            <x>0</x>
+            <y>0</y>
+            <w>0</w>
+            <h>0</h>
+            <text />
+            <title />
+            <time>0</time>
+            <modal>false</modal>
+            <xmlName>traumaPlanOfCare</xmlName>
+            <className>PlanOfCare</className>
+            <dialogName />
+            <anchor>centered</anchor>
+            <arguments />
+            <numArguments>0</numArguments>
+            <waitForDialogClosed>false</waitForDialogClosed>
+            <waitForDialogName />
+            <timeout>0</timeout>
+            <editbox>false</editbox>
+            <editboxlabel />
+            <editboxprompt />
+            <sendMap>true</sendMap>
+            <baseXML />
+            <hasCancel>false</hasCancel>
+            <commandString />
+            <Params />
+            <ScreenName />
+          </gameMsgFormInfo>
+          <map>
+            <item />
+            <response />
+            <response_title />
+            <tooltip />
+            <note />
+            <sound />
+            <task />
+            <time>0</time>
+            <log>false</log>
+            <max>0</max>
+            <readyState>readyToRun</readyState>
+            <startPriority>4</startPriority>
+            <prereq />
+            <scriptName />
+            <objectName />
+            <confirm>false</confirm>
+            <category />
+            <Enabled>true</Enabled>
+            <param />
+          </map>
+        </ScriptedActionInfo>
+      </scriptLines>
+      <owningRole />
+      <roles />
+      <roleKeyString />
+      <autoExecuteInterval>-1</autoExecuteInterval>
+      <autoExecuteProbability>0</autoExecuteProbability>
+      <AddToMenu>true</AddToMenu>
+      <menuOrder>17</menuOrder>
+      <interactionSet>
+        <Name />
+        <Maps />
+        <ScriptsEnter />
+        <ScriptsExit />
+        <ScriptsAbort />
+      </interactionSet>
+      <commandVariation>
+        <Cmd>PLAYER:PATIENT:DISCHARGE</Cmd>
+        <CmdString>Discharge this patient.</CmdString>
+        <Variations>
+          <string>discharge</string>
+          <string>home</string>
+          <string>Discharge this patient.</string>
+        </Variations>
+      </commandVariation>
+      <callbackConfirmVoice>false</callbackConfirmVoice>
+      <item>PLAYER:PATIENT:DISCHARGE</item>
+      <prettyname>Discharge this patient.</prettyname>
+      <response>Script for PLAYER:PATIENT:DISCHARGE is running</response>
+      <response_title>PLAYER:PATIENT:DISCHARGE</response_title>
+      <note />
+      <tooltip>Click Me</tooltip>
+      <sound>AUDIO:SOUND</sound>
+      <task />
+      <log>true</log>
+      <readyState>unknown</readyState>
+      <startPriority>4</startPriority>
+      <cancellable>false</cancellable>
+      <skillVector />
+      <extraCost>0</extraCost>
+      <prereq />
+      <category />
+      <param />
+      <debug>false</debug>
+    </InteractionScriptInfo>
+  </scripts>
+  <startupScriptName />
+  <register>true</register>
+  <prettyname>Player</prettyname>
+  <XMLName>ScriptedObjects/PlayerScripts.xml</XMLName>
+  <XMLDirectory>Assets/Resources/XML/</XMLDirectory>
+  <assetBundleInfo>
+    <bundleName />
+    <stage>0</stage>
+    <assetName />
+  </assetBundleInfo>
+  <voiceList>
+    <Name />
+    <VoiceMaps />
+  </voiceList>
+  <voiceLists />
+  <vitalsBehaviors />
+  <scanRecords />
+</ScriptedObjectInfo>

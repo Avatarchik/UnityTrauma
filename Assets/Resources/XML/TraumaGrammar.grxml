@@ -1,0 +1,2262 @@
+<grammar version="1.0" xml:lang="en-US" root="rootRule" tag-format="semantics/1.0" xmlns="http://www.w3.org/2001/06/grammar">
+  
+  <!-- Define a hierarchical command CFG, and a supporting dictation gramar for fall throughs -->
+  <!-- Can add the general dictation grammar programatically, inside the plugin .dll init method -->
+  
+  <!-- The general idea here is a hierarchical grammar that represents the inputs we know how to process,
+  and a simplified, uniform semantic representation of what was said for command recognition.  
+  The rule's build up hierarchically, with optional and required elements, but at the lower levels, the TAG
+  elements add simplified semantic representation, so that 'administer, hang, give, order' all end up as 'administer'
+  and 'blood, type o negative, unit, etc.' all end up as blood.  so for a large variety of inputs, the same semantic 
+  result of 'administer one unit blood IV' will be returned, along with the actual words heard. --> 
+  
+  <rule id="rootRule">
+    <one-of>
+      <item weight="2" ><ruleref uri="#multiteamcommand"/><tag>out = rules.multiteamcommand;</tag></item>
+  	  <item ><ruleref uri="#teamcommand"/><tag>out = rules.teamcommand;</tag></item>
+     <item weight="2" ><ruleref uri="#multiplayercommand"/><tag>out = rules.multiplayercommand;</tag></item>
+  	 <item ><ruleref uri="#playercommand"/><tag>out = rules.playercommand;</tag></item>
+  	 <item ><ruleref uri="#scanevaluation"/><tag>out = rules.scanevaluation;</tag></item>
+  	 <item ><ruleref uri="#gamecontrol"/><tag>out = rules.gamecontrol;</tag></item>
+     <item ><ruleref uri="#multifragmentdebug"/><tag>out = rules.multifragmentdebug;</tag></item> <!-- say 'debug' then words -->
+  	</one-of>
+  </rule>
+  
+  <!-- ====================================  COMMANDS ======================================================================  -->
+  
+  <rule id="multiplayercommand">
+    <tag>out.partial="";</tag>
+    <item repeat="2-"><ruleref uri="#playercommand"/><tag>out.partial = out.partial+"+"+rules.playercommand;</tag></item>
+    <tag>out=out.partial;</tag>
+  </rule>
+  
+  <rule id="playercommand">
+    <tag>out.character="";</tag>
+    <item repeat="0-1"><ruleref uri="#character"/><tag> out.character = ":"+rules.character;</tag></item>
+    <one-of>
+      <item> yes <item repeat="0-1"><ruleref uri="#commandending"/></item><tag> out.command="USER:COMMAND:YES";</tag></item>
+      <item> no <item repeat="0-1"><ruleref uri="#commandending"/></item><tag> out.command="USER:COMMAND:NO";</tag></item>
+      <item> close <tag> out.command="USER:COMMAND:CLOSE";</tag></item>
+      <item> dismiss <tag> out.command="USER:COMMAND:CLOSE";</tag></item>
+      <item> stop <tag>out.command="USER:COMMAND:STOP";</tag> </item><!-- might be a conflict with other stop commands -->
+      <item>
+        <one-of>
+          <item> everyone stop what you are doing </item>
+          <item> stop everything </item>
+          <item> abort </item>
+        </one-of>
+        <tag> out.command="USER:COMMAND:ABORT";</tag>
+      </item>
+      <item>
+        <one-of>
+          <item> what is everyone doing </item>
+          <item> what are we doing </item>
+          <item> what are you doing </item>
+          <item> what are we waiting for </item>
+          <item> what are you waiting for </item>
+          <item> why is nothing happening </item>
+          <item> recent orders </item>
+        <item> show recent orders</item>
+          <item> what is happening </item>
+          <item> what's happening</item>
+          <item> what is going on </item>
+          <item> what's going on </item>
+          <item> are we stuck </item>
+          <item> are we hung </item>
+        </one-of>
+        <tag> out.command="USER:COMMAND:QUERY";</tag>
+      </item>
+      <item> confirm <tag> out.command="USER:COMMAND:CONFIRM";</tag></item>
+      <item><ruleref uri="#questionpatient"/><tag>out.command=rules.questionpatient;</tag></item>
+      <item><ruleref uri="#amplequery"/><tag>out.command=rules.amplequery;</tag></item>
+      <item><ruleref uri="#multiselect"/><tag>out.command=rules.multiselect;</tag></item>
+      <item><ruleref uri="#selectoption"/><tag>out.command=rules.selectoption;</tag></item>
+    </one-of>
+    <tag>out = out.command+out.character;</tag>
+  </rule>
+  
+  <rule id="commandending">
+    <one-of>
+      <item> please </item>
+      <item> thank you </item>
+      <item> i do </item>
+      <item> i don't </item>
+      <item> fine </item>
+      <item> there is </item>
+      <item> there isn't </item>
+      <item> i don't see any </item>
+    </one-of>
+  </rule>
+  
+  <rule id="questionpatient">
+     <item repeat="0-1"><ruleref special="GARBAGE"/></item>
+    <item repeat="0-1"> what </item>
+    <item repeat="0-1">can you </item>
+    <ruleref uri="#query"/>
+    <item repeat="0-1"><ruleref special="GARBAGE"/></item>
+    <ruleref uri="#patientinfo"/>
+    <item repeat="0-1"><ruleref special="GARBAGE"/></item>
+  </rule>
+  
+  <rule id="scanevaluation">
+  	<ruleref special="VOID"/> <!-- disallowed until we have some -->
+  </rule>
+  
+  <rule id="selectoption">
+    <one-of>
+      <item>select chest <tag>out="USER:SELECT:CHEST";</tag></item><!-- on <DecisionPanel>traumaDecisionPanel -->
+      <item>select pelvis <tag>out="USER:SELECT:PELVIS";</tag></item>
+      <item>select extremeties <tag>out="USER:SELECT:EXTREMITIES";</tag></item>
+      <item>select abdomen <tag>out="USER:SELECT:ABDOMEN";</tag></item>
+      <item>select brain <tag>out="USER:SELECT:BRAIN";</tag></item>
+      <item>select C spine <tag>out="USER:SELECT:CSPINE";</tag></item>
+      <item>select T L spine <tag>out="USER:SELECT:TLSPINE";</tag></item>
+      <item>select angiogram <tag>out="USER:SELECT:ANGIOGRAM";</tag></item>
+      <item>select angioembolism <item repeat="0-1"> for bleeding </item><tag>out="USER:SELECT:ANGIOEMBOLISM";</tag></item>
+      <item>select balloon occlusion <tag>out="USER:SELECT:BALLOONOCCLUSION";</tag></item>
+      <item>select stent graft <tag>out="USER:SELECT:STENTGRAFT";</tag></item>
+      <item>select laparotomy <tag>out="USER:SELECT:LAPAROTOMY";</tag></item>
+      <item>select retroperiteneal packing <tag>out="USER:SELECT:RETROPERITENEALPACKING";</tag></item>
+      <item>left<tag>out="USER:SELECT:LEFT"</tag></item>
+      <item>left side<tag>out="USER:SELECT:LEFT"</tag></item>
+      <item>right<tag>out="USER:SELECT:RIGHT"</tag></item>
+      <item>right side<tag>out="USER:SELECT:RIGHT"</tag></item>
+      <item>select fracture <tag>out="USER:SELECT:FRACTURE";</tag></item>
+      <item>select blood <tag>out="USER:SELECT:BLOOD";</tag></item>
+      <item>select placement <tag>out="USER:SELECT:PLACEMENT";</tag></item>
+       <item>select everything <tag>out="USER:SELECT:ALL";</tag></item>
+      <item>select cancel <tag>out="USER:SELECT:CANCEL";</tag></item>
+      <item>select exit <tag>out="USER:SELECT:EXITBUTTON";</tag></item>
+      <item> submit <tag> out = "USER:SELECT:CHATENTER";</tag></item>
+      <item>select amputation <tag>out="USER:SELECT:AMPUTATION";</tag></item>
+      <item>select craniotomy <tag>out="USER:SELECT:CRANIOTOMY";</tag></item>
+      <item>select exploration of wound <tag>out="USER:SELECT:EXPLORATIONOFWOUND";</tag></item>
+      <item>select fasciotomy <tag>out="USER:SELECT:FASCIOTOMY";</tag></item>
+      <item>select fracture fixation <tag>out="USER:SELECT:FRACTUREFIXATION";</tag></item>
+      <item>select neck exploration <tag>out="USER:SELECT:NECKEXPLORATION";</tag></item>
+      <item>select thoracotomy <tag>out="USER:SELECT:THORACOTOMY";</tag></item>
+      <item>select angioplasty <tag>out="USER:SELECT:ANGIOPLASTY";</tag></item>
+    </one-of>
+  </rule>
+
+  <rule id="multiselect">
+    <one-of>
+    	<item> i want </item>
+    	<item> i need </item>
+    	<item> we need </item>
+    	<item> give me </item>
+    	<item> tell them <item repeat="0-1"> we need </item><item repeat="0-1"> we want </item></item>
+    	<item> order </item>
+    </one-of>
+    <tag>out.partial="";</tag>
+    <item repeat="1-"><ruleref uri="#selectionchoice"/><tag>out.partial = out.partial+"+"+rules.selectionchoice;</tag></item>
+    <tag>out=out.partial+"+USER:SELECT:CHATENTER";</tag>
+  </rule>
+  
+  <rule id="selectionchoice">
+    <one-of>
+      <item> chest <tag>out="USER:SELECT:CHEST";</tag></item><!-- on <DecisionPanel>traumaDecisionPanel -->
+      <item> pelvis <tag>out="USER:SELECT:PELVIS";</tag></item>
+      <item> extremeties <tag>out="USER:SELECT:EXTREMITIES";</tag></item>
+      <item> abdomen <tag>out="USER:SELECT:ABDOMEN";</tag></item>
+      <item> brain <tag>out="USER:SELECT:BRAIN";</tag></item>
+      <item> C spine <tag>out="USER:SELECT:CSPINE";</tag></item>
+      <item> T L spine <tag>out="USER:SELECT:TLSPINE";</tag></item>
+      <item> angiogram <tag>out="USER:SELECT:ANGIOGRAM";</tag></item>
+      <item> angioembolism <item repeat="0-1"> for bleeding </item><tag>out="USER:SELECT:ANGIOEMBOLISM";</tag></item>
+      <item> balloon occlusion <tag>out="USER:SELECT:BALLOONOCCLUSION";</tag></item>
+      <item> stent graft <tag>out="USER:SELECT:STENTGRAFT";</tag></item>
+      <item> laparotomy <tag>out="USER:SELECT:LAPAROTOMY";</tag></item>
+      <item> retroperiteneal packing <tag>out="USER:SELECT:RETROPERITENEALPACKING";</tag></item>
+      <item> amputation <tag>out="USER:SELECT:AMPUTATION";</tag></item>
+      <item> craniotomy <tag>out="USER:SELECT:CRANIOTOMY";</tag></item>
+      <item> exploration of wound <tag>out="USER:SELECT:EXPLORATIONOFWOUND";</tag></item>
+      <item> fasciotomy <tag>out="USER:SELECT:FASCIOTOMY";</tag></item>
+      <item> fracture fixation <tag>out="USER:SELECT:FRACTUREFIXATION";</tag></item>
+      <item> neck exploration <tag>out="USER:SELECT:NECKEXPLORATION";</tag></item>
+      <item> thoracotomy <tag>out="USER:SELECT:THORACOTOMY";</tag></item>
+      <item> angioplasty <tag>out="USER:SELECT:ANGIOPLASTY";</tag></item>
+      <item> fracture <tag>out="USER:SELECT:FRACTURE";</tag></item>
+      <item> blood <tag>out="USER:SELECT:BLOOD";</tag></item>
+      <item> placement <tag>out="USER:SELECT:PLACEMENT";</tag></item>
+      <item> everything <tag>out="USER:SELECT:ALL";</tag></item>
+    </one-of>
+    <item repeat="0-1"> and </item>
+  </rule>
+  
+  <rule id="gamecontrol">
+  	<ruleref special="VOID"/> <!-- disallowed until we have some -->
+  </rule>
+  
+  <rule id="multiteamcommand">
+    <tag>out.partial="";</tag>
+    <item repeat="2-"><ruleref uri="#teamcommand"/><tag>out.partial = out.partial+"+"+rules.teamcommand;</tag></item>
+    <tag>out=out.partial;</tag>
+  </rule>
+  
+  <rule id="teamcommand"> <!-- this would be all the different types of commands to the team -->
+    <one-of>
+      <item><ruleref uri="#medscommand"/></item>
+      <item><ruleref uri="#fluidscommand"/></item>
+      <item><ruleref uri="#querycondition"/></item>
+      <item><ruleref uri="#consultcommand"/></item>
+      <item><ruleref uri="#equipmentcommand"/></item> 
+      <item><ruleref uri="#procedurecommand"/></item>
+      <item><ruleref uri="#stopprocedurecommand"/></item>
+      <item><ruleref uri="#assesscommand"/></item>
+      <item><ruleref uri="#secondarysurvey"/></item>
+      <item><ruleref uri="#admit"/></item>
+      <item><ruleref uri="#viewercommand"/></item>
+  	</one-of>
+  </rule>
+  
+   <rule id="medscommand">
+    <example>Give 20 milligrams fentanyl</example>   <!-- = ORDER:BLOOD:1IV -->
+     <one-of>
+       <item>
+         <item repeat="0-1"><ruleref uri="#character"/></item>
+         <item repeat="0-1"><ruleref uri="#politestart"/></item>
+         <ruleref uri="#administer"/>
+         <item repeat="0-1"><ruleref uri="#tothepatient"/></item>
+         <item repeat="0-1"><ruleref uri="#quantity"/></item>
+         <item repeat="0-1"><ruleref uri="#unit"/></item>
+         <ruleref uri="#medication"/>
+         <item repeat="0-1"><ruleref uri="#bolus"/></item>
+         <item repeat="0-1"><ruleref uri="#tothepatient"/></item>
+         <item repeat="0-1"><ruleref uri="#politeend"/></item>
+         <tag> out.bolus=rules.bolus==undefined?"":rules.bolus;</tag>
+         <tag>out= rules.medication + out.bolus;</tag>
+       </item>
+       <item>
+         <item repeat="0-1"><ruleref uri="#character"/></item>
+         <item repeat="0-1"><ruleref uri="#politestart"/></item>
+         <ruleref uri="#medication"/>
+         <ruleref uri="#tothepatient"/>
+         <item repeat="0-1"><ruleref uri="#politeend"/></item>
+         <tag>out= rules.medication;</tag>
+       </item>
+     </one-of>
+   </rule>
+      
+  <rule id="fluidscommand">
+      <!-- sequence of all expected parts of the order - if different sequences are expected, use one-of and different sequences -->
+  <example>Give blood</example>   <!-- = ORDER:BLOOD:1IV -->
+  <example>Hang a liter</example> <!-- = ORDER:SALINE:1IV -->
+  <example>Hang a unit</example>  <!-- = ORDER:BLOOD:1IV -->
+  <example>Infuse the patient with 3 liters of hypertonic saline solution</example> <!-- = ORDER:HYPERTONIC:3RI -->
+  <example>Primary nurse, please administer 2 units of type O negative blood by pressure bag stat</example>
+  <example>I need two liters of ringers lactate in pressure bags now!</example>   <!-- = ORDER:RINGERS:2PR -->
+  <example>give me saline under pressure</example>   <!-- = ORDER:SALINE:1PR -->
+  <example>give them two units under pressure</example>   <!-- = ORDER:BLOOD:2PR -->
+    <example>somebody get them some blood please</example>
+    
+	  <item repeat="0-1"><ruleref uri="#character"/> </item>
+	  <item repeat="0-1"><ruleref uri="#politestart"/></item>
+	  <ruleref uri="#administer"/>
+<!--    <ruleref uri="#fluid"/>
+	  <ruleref uri="#tothepatient"/> use another complete phrase one-of for this syntax -->
+	  <item repeat="0-1"><ruleref uri="#quantity"/></item>
+    <one-of>
+      <item><ruleref uri="#unit"/></item>
+      <item><ruleref uri="#fluid"/></item>
+      <item><ruleref uri="#unit"/><ruleref uri="#fluid"/></item>
+      <item><ruleref uri="#fluid"/><ruleref uri="#quantity"/><ruleref uri="#unit"/></item>
+    </one-of>
+	  <item repeat="0-1"><ruleref uri="#tothepatient"/></item>
+	  <item repeat="0-1"><ruleref uri="#fluiddeliverymethod"/></item>
+	  <item repeat="0-1"><ruleref uri="#tothepatient"/></item>
+	  <item repeat="0-1"><ruleref uri="#politeend"/></item>
+	  <!-- add some defaults if any required items were implied -->
+	  <tag>out.defaultunit=rules.fluid=="blood"?"unit":"liter";</tag>
+	  <tag>out.unit=(rules.unit==""|rules.unit==undefined)?out.defaultunit:rules.unit;</tag>
+	  <tag>out.defaultfluid=out.unit=="unit"||out.unit=="units"?"BLOOD":"SALINE";</tag>
+	  <tag>out.fluid=rules.fluid==""||rules.fluid==undefined?out.defaultfluid:rules.fluid;</tag>
+	  <tag>out.quantity=(rules.quantity==""||rules.quantity==undefined)?"1":rules.quantity;</tag>
+	  <tag>out.method=rules.fluiddeliverymethod!=undefined?rules.fluiddeliverymethod:rules.administer;</tag>
+	  <!--<tag>out="ORDER:FLUIDS "+out.quantity+out.unit+rules.fluid+out.method;</tag> -->
+	  <tag>out="ORDER:"+out.fluid+":"+out.quantity+out.method;</tag>
+  </rule>
+  
+  <rule id="querycondition">
+    <item repeat="0-1"><ruleref uri="#character"/> </item>
+	  <item repeat="0-1"><ruleref uri="#politestart"/></item>
+    <item repeat="0-1"><ruleref uri="#query"/></item>
+    <item repeat="0-1"><ruleref uri="#ofthepatient"/></item> <!-- what is her ... -->
+    <item repeat="0-1"><ruleref uri="#tothepatient"/></item>
+    <one-of>
+      <item> <ruleref uri="#vital"/><tag>out=rules.vital;</tag> </item>
+      <item> <ruleref uri="#patientcondition"/><tag>out=rules.patientcondition;</tag> </item> <!-- pulse, temp, cap refill-->
+    </one-of>
+    <item repeat="0-1"> reading </item>
+    <item repeat="0-1"> read </item>
+    <item repeat="0-1"> rate </item>
+    <item repeat="0-1"> time </item>
+    <item repeat="0-1"> level </item>
+    <item repeat="0-1"> feel </item> <!-- what's her radial feel like ?-->
+    <item repeat="0-1"> like </item> <!-- what's her radial like ?-->
+    <item repeat="0-1"> say </item> <!-- what does the end tidal say ?-->
+	  <item repeat="0-1"><ruleref uri="#politeend"/></item>
+  </rule>
+  
+  <rule id="consultcommand">
+    <example>Call for an X-ray</example>   <!-- = ORDER:BLOOD:1IV -->
+
+         <item repeat="0-1"><ruleref uri="#character"/> </item>
+         <item repeat="0-1"><ruleref uri="#politestart"/> </item>
+         <ruleref uri="#callorconsult"/> <!-- was #administer -->
+         <ruleref uri="#consultation"/>
+         <item repeat="0-1"><ruleref uri="#politeend"/>  </item>
+         <tag>out= rules.consultation;</tag>
+   </rule>
+ 
+    <rule id="equipmentcommand">
+      <example>Place the pulse ox</example>  
+      <example>Put the patient on the monitors</example>  
+      <example>Put the monitors on the patient</example>
+      <example>Cover the patient</example>   
+      <example>Intercranial Pressure</example>  
+      <example>Chest tube</example>
+      <one-of>
+        <item>
+         <item repeat="0-1"><ruleref uri="#character"/> </item>
+         <item repeat="0-1"><ruleref uri="#politestart"/> </item>
+         <ruleref uri="#place"/>
+         <item repeat="0-1"><ruleref special="GARBAGE"/></item> <!-- Garbage matching is dangerous and results in lower confidence -->
+         <ruleref uri="#equipment"/>
+        <item repeat="0-1">
+          <one-of>
+            <item> on </item>
+            <item> to </item>
+          </one-of>
+          <ruleref uri="#tothepatient"/>
+         </item>
+         <item repeat="0-1"><ruleref special="GARBAGE"/></item>
+         <item repeat="0-1"><ruleref uri="#politeend"/>  </item>
+        </item>
+      </one-of>
+      <tag>out= rules.equipment;</tag>
+   </rule>
+  
+   <rule id="procedurecommand">
+      <example>suction</example>  
+      <example>intubation</example>
+     <one-of>
+       <item>
+         <item repeat="0-1"><ruleref uri="#character"/> </item>
+         <item repeat="0-1"><ruleref uri="#politestart"/> </item>
+         <item repeat="0-1"><ruleref special="GARBAGE"/></item>
+         <ruleref uri="#perform"/>
+         <item repeat="0-1"><ruleref special="GARBAGE"/></item>
+         <ruleref uri="#procedure"/>
+         <item repeat="0-1"><ruleref special="GARBAGE"/></item>
+         <item repeat="0-1"><ruleref uri="#politeend"/>  </item>
+         <tag>out= rules.procedure;</tag>
+       </item>
+       <item>
+         <item repeat="0-1"><ruleref uri="#character"/> </item> <!-- just the procedure name, like irrigate the patient's wounds -->
+         <item repeat="0-1"><ruleref uri="#politestart"/> </item>
+         <item repeat="0-1"><ruleref special="GARBAGE"/></item>
+         <ruleref uri="#procedure"/>
+         <item repeat="0-1"><ruleref uri="#tothepatient"/></item>
+         <item repeat="0-1"><ruleref special="GARBAGE"/></item>
+         <item repeat="0-1"><ruleref uri="#politeend"/>  </item>
+         <tag>out= rules.procedure;</tag>
+       </item>
+     </one-of>
+   </rule>
+  
+   <rule id="stopprocedurecommand">
+      <example>stop CPR</example>  
+      <example>that's enough B V M for now </example>
+     <one-of>
+       <item>
+         <item repeat="0-1"><ruleref uri="#character"/> </item>
+         <item repeat="0-1"><ruleref uri="#politestart"/> </item>
+         <item repeat="0-1"><ruleref special="GARBAGE"/></item>
+         <ruleref uri="#stopperforming"/>
+         <item repeat="0-1"><ruleref special="GARBAGE"/></item>
+         <ruleref uri="#stopprocedure"/>
+         <item repeat="0-1"><ruleref special="GARBAGE"/></item>
+         <item repeat="0-1"><ruleref uri="#politeend"/>  </item>
+         <tag>out= rules.stopprocedure;</tag>
+       </item>
+     </one-of>
+   </rule>
+  
+     <rule id="assesscommand">
+         <item repeat="0-1"><ruleref uri="#character"/> </item>
+         <item repeat="0-1"><ruleref uri="#politestart"/> </item>
+         <item repeat="0-1"><ruleref uri="#assess"/></item>
+         <item repeat="0-1"><ruleref uri="#ofthepatient"/> </item>
+         <ruleref uri="#subsection"/>
+         <item repeat="0-1"><ruleref uri="#politeend"/>  </item>
+         <tag>out= rules.subsection;</tag>
+   </rule>
+   
+   <rule id="viewercommand">
+    <example>View Adjunct Images</example>   <!-- = CHECK:VIEWER -->
+    <item repeat="0-1"><ruleref uri="#character"/> </item>
+    <item repeat="0-1"><ruleref uri="#politestart"/> </item>
+	<item> 
+		<one-of>
+			<item> view </item>
+			<item> review </item>
+			<item> check </item>
+		</one-of>
+		<one-of>
+			<item> adjunct images </item>
+			<item> x rays </item>
+			<item> images </item>
+			<item> scans </item>
+			<item> CT </item>
+			<item> MRI </item>
+		</one-of>
+		<tag>out= "CHECK:VIEWER";</tag>
+	</item>
+    <item repeat="0-1"><ruleref uri="#politeend"/>  </item>
+   </rule>
+  
+  <!-- =================================   VERBS =============================================     -->
+     
+  <rule id="administer"> <!-- used for fluids and meds -->
+   <tag>out="IV";</tag>
+   <one-of>
+      <item> administer </item>
+      <item> give <item repeat="0-1">me</item></item> 
+      <item> give <item repeat="0-1"><ruleref uri="#tothepatient"/></item></item>
+      <item> get <item repeat="0-1">me</item></item>
+      <item> get <item repeat="0-1"><ruleref uri="#tothepatient"/></item></item>
+      <item> order </item>
+      <item> use </item>
+      <item> start </item>
+      <item> prepare </item>
+      <item> i want </item>
+      <item> transfuse </item>
+      <item> <item repeat="0-1">i</item> need </item>
+      <item> hang <tag>out="IV";</tag></item>
+      <item> infuse <tag>out="RI";</tag></item>
+      <item> level one <tag>out="RI";</tag></item>
+      <item> put <ruleref uri="#tothepatient"/> on </item>
+      <item> get <ruleref uri="#tothepatient"/> on </item>
+      <item> call 
+        <item repeat="0-1"><ruleref uri="#department"/></item>
+        <item repeat="0-1"> for </item>
+        <item repeat="0-1"> the </item>
+     </item>
+     <item> medicate for </item> <!-- stray cat, as in medicate for intubation -->
+    </one-of>
+  </rule>
+  
+  <rule id="callorconsult">
+    <one-of>
+      <item>
+        call
+        <!--
+        <item repeat="0-1">
+          <ruleref uri="#department"/>
+        </item>
+        -->
+        <item repeat="0-1"> for </item>
+        <item repeat="0-1"> the </item>
+      </item>
+      <item>
+        consult
+        <item repeat="0-1"> with </item> 
+      </item>
+      <item> i 
+        <one-of>
+          <item>need</item>
+          <item>want</item>
+        </one-of>
+      </item>
+      <item>       
+        <one-of>
+          <item>get</item>
+          <item>give</item>
+        </one-of>
+        <item repeat="0-1">me</item>
+       </item>
+      <item> order </item>
+    </one-of>
+  </rule>
+         
+   <rule id="perform"> <!-- normally coupled with #procedure -->
+    <one-of>
+      <item> perform </item>
+      <item> provide </item>
+      <item> start </item>
+      <item> we need </item>
+      <item> i need </item>
+      <item> do a </item>
+      <item> draw </item>
+      <item> give <ruleref uri="#tothepatient"/></item>
+      <item> try </item>
+      <item> test </item>
+      <item> apply </item>
+    </one-of>
+  </rule>
+  
+     <rule id="stopperforming"> <!-- normally coupled with #stopprocedure -->
+    <one-of>
+      <item> stop </item>
+      <item> discontinue </item>
+      <item> terminate </item>
+      <item> hold </item>
+      <item> remove </item> <!-- oxygen cannula, etc -->
+      <item> we're done with </item>
+      <item> that's enough </item>
+    </one-of>
+  </rule>
+  
+  <rule id="place"> <!-- used with equipment -->
+    <one-of>
+      <item> place </item>
+      <item> put <item repeat="0-1"> in </item><item repeat="0-1"> on </item> </item>
+      <item> attach </item>
+      <item> apply </item>
+      <item> connect </item>
+      <item> insert </item>
+      <item> set </item>
+      <item> adjust </item>
+      <item> correct </item>
+      <item> put <ruleref uri="#tothepatient"/> on </item>
+      <item> get <ruleref uri="#tothepatient"/> on </item>
+      <!-- these next 4 copied from 'administer' -->
+      <item> give <item repeat="0-1">me</item></item> 
+      <item> give <item repeat="0-1"><ruleref uri="#tothepatient"/></item></item>
+      <item> get <item repeat="0-1">me</item></item>
+      <item> get <item repeat="0-1"><ruleref uri="#tothepatient"/></item></item>
+    </one-of>
+  </rule>
+  
+  <rule id="query"> <!-- used with patient conditions and vitals and patient info -->
+   <one-of>
+      <item> what is </item>
+      <item> what are </item>
+      <item> what's </item>
+      <item> how does </item>
+      <item> how do </item>
+      <item> read <item repeat="0-1">me</item></item>
+      <item> tell me </item>
+      <item> give me <item repeat="0-1"> a </item></item>
+      <item> read me </item>
+      <item> check </item>
+      <item> cheg </item>
+      <item> take </item>
+      <item> get </item>
+      <item> i need <item repeat="0-1">a</item></item>
+      <item> are you </item>
+      <item> do you </item>
+      <item> do you know </item>
+      <item> does </item>
+      <item> what does </item>
+      <item> where does </item>
+      <item> can you remember </item>
+      <item> do you remember </item>
+      <item><ruleref uri="#examine"/></item>
+    </one-of>
+    <item repeat="0-1"> a </item>
+  </rule>
+  
+<rule id="amplequery">
+  <one-of>
+    <item>
+      <one-of>
+        <item>
+          <one-of>
+            <item>do you
+              <one-of>
+                <item repeat="0-1"> know if you have </item>
+                <item repeat="0-1"> know about </item>
+                <item repeat="0-1"> know of </item>
+                <item repeat="0-1"> have </item>
+              </one-of>
+            </item>
+            <item> are you aware of </item>
+            <item> are there </item>
+          </one-of>
+          any <item repeat="0-1"> known </item> allergies 
+          <item repeat="0-1"> that </item>
+          <item repeat="0-1"> you have </item>
+          <item repeat="0-1"> you may have </item>
+          <item repeat="0-1"> you might have </item>
+          <item repeat="0-1"> you are aware of </item>
+          <item repeat="0-1"> you're aware of </item>
+          <item repeat="0-1"> you know of </item>
+          <item repeat="0-1"> you know about </item>
+        </item>
+        <item>
+          <one-of>
+            <item>do you know if you are </item>
+            <item> are you </item>
+          </one-of>
+          allergic to
+          <one-of>
+            <item> anything </item>
+            <item> any medications </item>
+            <item> any drugs </item>
+          </one-of>
+        </item>
+        <item> 
+          is there 
+          <one-of>
+            <item> anything </item>
+            <item> any medications </item>
+            <item> something </item>
+          </one-of>
+          you 
+          <item repeat="0-1"> know you </item>
+          <one-of>
+            <item> are </item>
+            <item> may be </item>
+            <item> might be </item>
+          </one-of>
+          allergic to
+        </item>
+      </one-of>
+      <tag>out="PATIENT:AMPLE:A";</tag>
+    </item>
+    <item>
+      <one-of>
+        <item>
+          are you
+          <item repeat="0-1"> currently </item>
+          <one-of>
+            <item> on </item>
+            <item> taking </item>
+          </one-of>
+        </item>
+        <item>
+          do you
+          <item repeat="0-1"> currently </item>
+          take
+        </item>
+        <item> are there </item>
+      </one-of>
+      any medications
+      <item repeat="0-1"> 
+        you are 
+        <item repeat="0-1"> currently </item>
+        <one-of>
+          <item> taking </item>
+          <item> on </item>
+        </one-of> 
+      </item>
+      <tag>out="PATIENT:AMPLE:M";</tag>
+    </item>
+    <item>
+      have you 
+      <item repeat="0-1"> ever </item>
+      <item repeat="0-1"> had  <item repeat="0-1"> any </item> surgeries or </item>
+      been admitted  
+      <item repeat="0-1"> to the hospital </item>
+      <item repeat="0-1"> before </item>
+      <tag>out="PATIENT:AMPLE:P";</tag>
+    </item>
+    <item>
+      <one-of>
+        <item>When</item>
+        <item>What</item>
+      </one-of>
+        <one-of>
+          <item> is the last time you</item>
+          <item> was the last time you</item>
+          <item> did you last </item>
+        </one-of> 
+        <one-of>
+          <item> ate </item>
+          <item> eat </item>
+          <item>
+            <one-of>
+              <item> had </item>
+              <item> have </item>
+            </one-of>
+            <one-of>
+              <item> food </item>
+              <item> a meal </item>
+              <item> something to eat </item>
+              <item> anything to eat </item>
+            </one-of>
+           </item>
+        </one-of>
+      <tag>out="PATIENT:AMPLE:L";</tag>
+    </item>
+    <item> Do you remember what happened <tag>out="PLAYER:ASKCAUSE";</tag> <!-- Trauma interprest this as AMPLE:E if other AMPLE questions have been asked --> </item>
+    <item> What can you tell me about what happened <tag>out="PLAYER:ASKCAUSE";</tag> <!-- Trauma interprest this as AMPLE:E if other AMPLE questions have been asked --> </item>
+  <item> What can you remember about what happened <tag>out="PLAYER:ASKCAUSE";</tag> <!-- Trauma interprest this as AMPLE:E if other AMPLE questions have been asked --> </item>
+  </one-of>
+</rule>
+  
+  <rule id="examine"> <!-- subgroup of query -->
+   <one-of>
+      <item> examine </item>
+      <item>  examine <item repeat="0-1"><ruleref uri="#tothepatient"/></item> for </item>
+      <item weight="2"> auscultate </item>
+      <item weight="2"> oscaltate </item>
+      <item> look at </item>
+      <item> feel </item>
+      <item> palpate </item>
+      <item> check </item>
+      <item> check <item repeat="0-1"><ruleref uri="#tothepatient"/></item> for </item>
+      <item> see </item>
+      <item> listen to <item repeat="0-1"><ruleref uri="#tothepatient"/></item></item> <!-- this was 'me' ?? -->
+       <item> try </item>
+      <item> test </item>
+    </one-of>
+  </rule>
+  
+  <rule id="assess">
+    <one-of>
+      <item>assess</item>
+      <!--  <item>check</item> we want to require them to say ASSESS -->
+    </one-of>
+  </rule>
+  
+   <rule id="admit">
+    <item repeat="0-1"><ruleref uri="#character"/></item>
+    <item repeat="0-1"><ruleref uri="#politestart"/></item>
+    <one-of>
+      <item> admit <tag>out = "PLAYER:PATIENT:ADMIT";</tag></item>
+      <item> discharge <tag>out = "PLAYER:PATIENT:DISCHARGE";</tag></item>
+    </one-of>
+    <item repeat="0-1"><ruleref uri="#tothepatient"/><item repeat="0-1"> for observation </item></item>
+    <item repeat="0-1"><item repeat="0-1"> to </item><item repeat="0-1"> the </item> I C U <tag>out = out+":ICU";</tag></item>
+  </rule>
+  
+  <!-- ================================= secondary survey =====================================    -->
+  <rule id="secondarysurvey">
+    <item repeat="0-1"><ruleref uri="#character"/> </item>
+    <item repeat="0-1"><ruleref uri="#politestart"/> </item> 
+    <!-- could handle 'examine <~patient> for <limb> <deformities> using a one-of here -->
+    <ruleref uri="#examine"/>
+    <item repeat="0-1"> <ruleref uri="#ofthepatient"/> </item>
+      <one-of> <!-- with or without subcommand -->
+        <item> <!-- areas with subcommand "for bleeding etc. " -->
+          <one-of>
+            <item> abdomen <tag> out="PLAYER:EXAM:ABDOMEN";</tag> </item>
+            <item>
+              <one-of>
+                <item> head </item>
+                <item> face </item>
+                <item> ears </item>
+                <item> nose </item>
+              </one-of> <tag>out = "PLAYER:EXAM:HEAD";</tag>
+            </item>
+            <item> neck <tag>out = "PLAYER:EXAM:NECK";</tag> </item>
+            <item> back <tag>out = "PLAYER:EXAM:BACK";</tag> </item>
+            <item> chest <tag>out = "PLAYER:EXAM:CHEST";</tag> </item>
+            <item> pelvis <tag>out = "PLAYER:EXAM:PELVIC";</tag> </item>
+            <item> genitals <tag>out = "PLAYER:EXAM:PELVIC";</tag> </item>
+            <item> limbs <tag>out = "PLAYER:EXAM:EXTREM";</tag> </item>
+            <item>
+              <one-of>
+               <item>extremities</item>
+                <item> arms </item>
+                <item>legs</item>
+                <item> arm </item>
+                <item>leg</item>
+                <item> hands </item>
+                <item>feet</item>
+                <item> hand </item>
+                <item>foot</item>
+              </one-of>
+              <tag>out = "PLAYER:EXAM:EXTREM";</tag> 
+            </item> 
+          </one-of>
+        <!-- append the sub command if spoken, we could be more complete about which sub commands are valid for the area -->
+        <item repeat="0-1"><ruleref uri="#examinefor"/><tag> out = out + rules.examinefor;</tag></item>
+        <tag>out= out=="PLAYER:EXAM:EXTREM"?"PLAYER:EXAM:EXTREMITIES":out;</tag><!-- full extremity exam uses PLAYER:EXAM:EXTREMITIES -->
+      </item><!-- end areas that get sub command appended -->
+      <item><!-- areas without an 'examine for' subcommand -->
+        <one-of>
+          <item>
+            <one-of>
+              <item> mouth </item>
+              <item> teeth </item>
+              <item> tongue </item>
+            </one-of> <item repeat="0-1"><ruleref uri="#examinefor"/></item> <!-- use this up here so we don't add :DEFORMITY etc-->
+            <tag>out = "PLAYER:EXAM:HEAD:MOUTH";</tag>
+          </item>
+          <item> vision <tag>out = "PLAYER:EXAM:HEAD:VISION";</tag> </item>
+          <item> genitals <tag>out = "PLAYER:EXAM:PELVIC";</tag> </item>         
+          <item> meatus <tag>out = "PLAYER:EXAM:PELVIC:MEATUS";</tag> </item>
+          <item> perineum <tag>out = "PLAYER:EXAM:PELVIC:PERINEUM";</tag> </item>
+          <item> rectum <tag>out = "PLAYER:EXAM:PELVIC:RECTAL";</tag> </item>
+          <item> vagina <tag>out = "PLAYER:EXAM:PELVIC:VAGINAL";</tag> </item>
+        </one-of>
+        <item repeat="0-1"><ruleref uri="#examinefor"/></item> <!-- don't append any subcommand result to these -->
+      </item><!-- end areas that dont get a sub command appended-->
+    </one-of>
+    <item repeat="0-1"><ruleref uri="#politeend"/> </item> 
+  </rule>
+  
+  <rule id="examinefor">
+    for
+    <one-of>
+      <item> distention <tag> out=":DISTENTION";</tag></item>
+      <item>
+        <one-of>
+          <item><ruleref uri="#wound"/></item>
+          <item> bruising </item>
+          <item> bruises </item>
+          <item> bleeding </item>
+        </one-of> <tag> out=":WOUND";</tag>
+      </item>
+      <item> tenderness <tag> out=":TENDER";</tag></item>
+      <item>
+        <one-of>
+          <item> rebound </item>
+          <item> gaurding </item>
+          <item> gaurding reflex </item>
+        </one-of> <tag> out=":REBOUND";</tag>
+      </item>
+      <item> deformity <tag> out=":DEFORM";</tag></item>
+      <item> stepoff <tag> out=":STEPOFF";</tag></item>
+      <item> pain <tag> out=":PAIN";</tag></item>
+      <item> pulse <tag> out=":PULSE";</tag></item>
+      <item> sensation <tag> out=":SENSATION";</tag></item>
+      <item> strength <tag> out=":STRENGTH";</tag></item>
+      <item> stability <tag> out=":STABLE";</tag></item>
+      <item>
+        <one-of>
+          <item> fluid </item>
+          <item> blood </item>
+        </one-of> <tag> out=":FLUID";</tag>
+      </item>      
+    </one-of>
+  </rule>
+  
+    <!-- ===============================  OBJECTS =============================================    -->
+  
+  <rule id="fluid">
+   <one-of>
+   	  <item weight="2"> blood                 <tag>out="BLOOD";</tag> </item>
+      <item weight="1"> bluh                  <tag>out="BLOOD";</tag> </item>
+      <item weight="1"> type o negative blood <tag>out="BLOOD";</tag> </item>
+      <item weight="1"> o negative            <tag>out="BLOOD";</tag> </item>
+      <item weight="1"> saline                <tag>out="SALINE";</tag> </item>
+      <item weight="1"> normal saline         <tag>out="SALINE";</tag> </item>
+      <item weight="1"> hypertonic            <tag>out="HYPERTONIC";</tag> </item>
+      <item weight="1"> hypertonic saline     <tag>out="HYPERTONIC";</tag> </item>
+      <item weight="1"> crystal               <tag>out="CRYSTAL";</tag> </item>
+      <item weight="1"> crystalloid           <tag>out="CRYSTAL";</tag> </item>
+      <item weight="1"> ringers          	  <tag>out="RINGERS";</tag> </item>
+      <item weight="1"> ringers lactate    	  <tag>out="RINGERS";</tag> </item>
+      <item weight="1"> lactated          	  <tag>out="RINGERS";</tag> </item>
+      <item weight="1"> p r b c          	  <tag>out="PRBC";</tag> </item>
+      <item weight="1"> packed red blood cells <tag>out="PRBC";</tag> </item>
+      <item weight="1"> packed red blood <tag>out="PRBC";</tag> </item>
+      <item weight="1"> platelets         	  <tag>out="PLATELETS";</tag> </item>
+      <item weight="1"> f f p             	  <tag>out="FFP";</tag> </item>
+      <item weight="1"> fresh frozen plasma  <tag>out="FFP";</tag> </item>
+      <item weight="1"> plasma          	    <tag>out="FFP";</tag> </item>
+    </one-of>
+    <item repeat="0-1">solution</item>
+  </rule>
+  
+  <rule id="fluiddeliverymethod">
+   <one-of>
+    	<item repeat="0-1">by</item> <!-- zero or one of these is allowed -->
+    	<item repeat="0-1">via</item>
+    	<item repeat="0-1">with</item>
+    	<item repeat="0-1">using</item>
+      <item repeat="0-1">in</item>
+   </one-of>
+   <one-of>
+      <item> i v          <tag>out="IV";</tag> </item>
+      <item> pressure bag <tag>out="PR";</tag> </item>
+      <item>under pressure<tag>out="PR";</tag> </item>
+      <item> p r          <tag>out="PR";</tag> </item>
+      <item> r i          <tag>out="RI";</tag> </item>
+      <item> infusion     <tag>out="RI";</tag> </item>
+      <item> infuser      <tag>out="RI";</tag> </item>
+      <item> level one    <tag>out="RI";</tag> </item>
+      <item> infusion pump<tag>out="RI";</tag> </item>
+      <item><tag>out="IV";</tag></item> <!-- we could specify default method on this empty item -->
+    </one-of>
+  </rule>
+  
+  <rule id="medication"> <!-- labs are in here too, if they work well -->
+    <item repeat="0-1"> of</item>
+    <item repeat="1-3">
+      <one-of>
+        <item><ruleref uri="#ketamine"/><tag>out=out+"+"+rules.ketamine;</tag></item>
+        <item><ruleref uri="#fentanyl"/><tag>out=out+"+"+rules.fentanyl;</tag></item>
+        <item><ruleref uri="#propofol"/><tag>out=out+"+"+rules.propofol;</tag></item>
+        <item><ruleref uri="#local"/><tag>out=out+"+"+rules.local;</tag></item>
+        <item><ruleref uri="#morphine"/><tag>out=out+"+"+rules.morphine;</tag></item>
+        <item><ruleref uri="#rsimeds"/><tag>out=out+"+"+rules.rsimeds;</tag></item>
+        <item><ruleref uri="#mannitol"/><tag>out=out+"+"+rules.mannitol;</tag></item>
+        <item><ruleref uri="#txa"/><tag>out=out+"+"+rules.txa;</tag></item>
+        <!--allow 'meds and fluid' - need a fluids command without a verb 
+        <item><ruleref uri="#fluidscommand"/><tag>out=out+"+"+rules.fluidscommand;</tag></item>  -->
+        <item><ruleref uri="#labs"/></item>
+      </one-of>
+      <item repeat="0-1"> and </item>
+    </item>
+  </rule>
+
+  <rule id="vital">
+   <one-of>
+     <item> vitals <tag> out ="VITALS:ALL";</tag> </item>
+     <item>
+       <one-of>
+         <item> b p </item>
+         <item> blood pressure</item>
+         <item> pressure </item>
+         <item> systolic </item>
+         <item> diastolic </item>
+       </one-of> <tag> out ="VITALS:BP";</tag>
+     </item>
+     <item>
+       <one-of>
+         <item> h r </item>
+         <item> hard rate</item>
+         <item> heartrate</item>
+         <item> heart rate </item>
+         <item> pulserate </item>
+         <item> pulse rate </item>
+         <item> pulse heart rate </item>
+       </one-of> <tag> out ="VITALS:HR";</tag>
+     </item>
+     <item>
+       <one-of>
+         <item> respirations </item>
+         <item> respiration rate </item>
+         <item> breathing rate </item>
+       </one-of> <tag> out ="VITALS:RESP";</tag>
+     </item>
+        <item>
+       <one-of>
+         <item> saturated oxygen </item>
+         <item> oxygen saturashun </item>
+         <item> sat </item>
+         <item> sats </item>
+         <item> satting </item>
+         <item> o 2 </item>
+         <item> o 2 level </item>
+         <item> oxygenation </item>
+         <item> oxygen level </item>
+         <item> o2 sats </item>
+       </one-of> <tag> out ="VITALS:SAO2";</tag>
+     </item>
+        <item>
+       <one-of>
+         <item> manual b p </item>
+         <item> manual blood pressure</item>
+         <item> manual pressure </item>
+       </one-of> <tag> out ="PATIENT:MANUALBP";</tag>
+     </item>
+    </one-of>
+  </rule>
+  
+  <rule id="patientcondition">
+   <one-of>
+     <item>
+       <one-of>
+         <item> carotid pulse </item>
+         <item> carotid </item>
+         <item> carotids </item>
+         <item> artery </item>
+       </one-of> <tag> out ="PULSE:CAROTID";</tag>
+     </item>
+     <item>
+       <one-of>
+         <item> radial pulse </item>
+         
+         <item> radial </item>
+         <item> radials </item>
+         <item> radial artery </item>
+       </one-of> <tag> out ="PULSE:RADIAL";</tag>
+     </item>
+     <item> pulse <tag> out ="PULSE:RADIAL+VITALS:HR";</tag></item> <!-- default this to radial pulse and heartrate-->
+     <item>
+       <one-of>
+         <item> femoral pulse </item>
+         <item> femoral </item>
+         <item> femorals </item>
+         <item> femoral artery </item>
+       </one-of> <tag> out ="PULSE:FEMORAL";</tag>
+     </item>
+          <item>
+       <one-of>
+         <item> peedal pulse </item>
+         <item> peedal </item>
+         <item> pedal pulse </item>
+       </one-of> <tag> out ="PULSE:PEDAL";</tag>
+     </item>
+     <item>
+       <one-of>
+         <item> extremities pulse </item>
+         <item> pulse at the extremities </item>
+       </one-of> <tag> out ="PLAYER:EXAM:EXTREM:PULSE";</tag>
+     </item>
+     <item>
+       <one-of>
+         <item> skin temp </item>
+         <item> skin temperature </item>
+         <item> skin feel </item>
+         <item> temperature </item>
+         <item> skin </item>
+       </one-of> <tag> out ="PATIENT:SKINTEMP";</tag>
+     </item>
+     <item>
+       <one-of>
+         <item> skin tone </item>
+       </one-of> <tag> out ="PATIENT:SKINTONE";</tag>
+     </item>
+     <item>
+       <one-of>
+         <item> capillary refill response </item>
+         <item> capillary refill </item>
+         <item> cap refill </item>
+         <item> refill response </item>
+       </one-of> <tag> out ="PATIENT:CAPREFILL";</tag>
+     </item>
+      <item>
+       <one-of>
+         <item> color change block </item>
+         <item> C O 2 detector </item>
+         <item> end tidal C O 2</item>
+         <item> end tidal C O 2 detector</item>
+         <item> end tidal </item>
+         <item> e t c o 2 </item>
+         <item> carbon dioxide </item>
+       <item>  c o 2 </item>
+       </one-of> <tag> out ="CHECK:ETCO2";</tag>
+     </item>
+        <item>
+       <one-of>
+         <item> reaction time </item>
+         <item> reactions </item>
+       </one-of> <tag> out ="CHECK:REACTION";</tag>
+     </item>
+     <item>
+       <one-of>
+         <item><item repeat="0-1"> arterial </item><item repeat="0-1"> blood </item> gas <item repeat="0-1"> tension </item> </item>
+       </one-of> 
+       <tag> out ="CHECK:BLOODGAS";</tag>
+     </item>
+        <item>
+       <one-of>
+         <item> reflexes </item>
+         <item> reflex </item>
+         <item> deep tendon reflexes </item>
+       </one-of> <tag> out ="CHECK:REFLEXES";</tag>
+     </item>
+     <item>
+       <one-of>
+         <item> arm range of motion </item>
+         <item> range of motion <ruleref special="GARBAGE"/> arm </item>
+         <item> moving their arm </item>
+         <item> arm mobility </item>
+         <item> mobility <ruleref special="GARBAGE"/> arm </item>
+       </one-of> <tag> out ="CHECK:MOTOR:ARMS";</tag>
+     </item>
+     <item>
+       <one-of>
+         <item> leg range of motion </item>
+         <item> range of motion <ruleref special="GARBAGE"/> leg </item>
+         <item> moving their leg </item>
+         <item> leg mobility </item>
+         <item> mobility <ruleref special="GARBAGE"/> leg </item>
+       </one-of> <tag> out ="CHECK:MOTOR:LEGS";</tag>
+     </item>
+     <item>
+       <one-of>
+         <item> breath sounds </item>
+         <item> breathing </item>
+         <item> lungs </item>
+         <item> lung sounds </item>
+         <!-- <item> chest </item>  only if coupled with 'listen' ? -->
+       </one-of>
+       <tag> out ="CHECK:BREATHE";</tag>
+     </item>
+     <item>
+       <item repeat="0-1"> chest </item>
+       <item repeat="0-1"> lung </item>
+       <one-of>
+         <item> precussion </item>
+         <item> resonance </item>
+       </one-of> 
+       <tag> out ="CHECK:PERCUSSION";</tag>
+     </item>
+     <item>
+       <one-of>
+         <item> heart sounds </item>
+         <item> heart </item>
+       </one-of> <tag> out ="AUSCULTATE:HEART";</tag>
+     </item>
+     <item>
+       <one-of>
+         <item> chest rise </item>
+         <item> chest rise and fall </item>
+         <item> chest movement </item>
+       </one-of> <tag> out ="EXAMINE:CHESTRISE";</tag>
+     </item>
+          <item>
+       <one-of>
+         <item> bowel sounds </item>
+         <item weight="0.1"> bow els </item>
+       </one-of>
+       <tag> out ="PLAYER:EXAM:ABDOMEN:BOWEL";</tag>
+     </item>
+     <item>
+       <one-of>
+         <item> ankle brachial index </item>
+         <item> brachial index </item>
+         <item> pulse with ultrasound </item>
+         <item> blood flow near the injury </item>
+         <item> abi </item>
+         <item> doppler </item>
+         <item> do a doppler </item>
+       </one-of> 
+       <tag> out ="CHECK:ABI";</tag>
+     </item>     
+     
+     
+     <item>
+       <item repeat="0-1"> for </item>
+       <one-of>
+         <item> bleeding </item>
+         <item> bleating </item>
+         <item> external bleeding </item>
+         <item> external bleating </item>
+       </one-of> <tag> out ="EXAM:BLEEDING";</tag>
+     </item>
+     <item> trachea <tag>out="PALPATE:TRACHEA";</tag></item>
+     <item> bladder <tag>out="PALPATE:BLADDER";</tag></item>
+     <item> thighs <item repeat="0-1"><ruleref uri="#examinefor"/></item><tag>out = "EXAMINE:THIGHS";</tag> </item>
+     <!-- these are part of the secondary survey now
+     <item> head <tag>out = "PLAYER:EXAM:HEAD";</tag> </item>
+     <item> neck <tag>out = "PLAYER:EXAM:NECK";</tag> </item>
+     <item> back <tag>out = "PLAYER:EXAM:BACK";</tag> </item>
+     <item> chest <tag>out = "PLAYER:EXAM:CHEST";</tag> </item>
+     <item> abdomen <tag>out = "PLAYER:EXAM:ABDOMEN";</tag> </item>
+     <item> pelvis <tag>out = "PLAYER:EXAM:PELVIC";</tag> </item> -->
+     
+     <item> extremities <tag>out = "PLAYER:EXAM:EXTREMITIES";</tag> </item>
+     <item>
+       <one-of>
+         <item>
+           <item repeat="0-1"> our </item>
+           <one-of>
+             <item> i v </item>
+             <item> line </item>
+           </one-of> 
+           <one-of>
+             <item> access </item>
+             <item> count </item>
+           </one-of>
+         </item>
+         <item><item repeat="0-1"> how many </item> lines </item> <!-- this won't fly -->
+       </one-of>
+       <tag> out = "IV:CHECK";</tag>
+     </item>
+    </one-of>
+  </rule>
+  
+  <rule id="consultation">
+    <item repeat="0-1"> an </item>
+    <item repeat="0-1"> a </item>
+    <item repeat="0-1"> the </item>
+    <one-of>
+      <item>
+        anaesthesia <item repeat="0-1"><ruleref special="GARBAGE"/></item>
+        <tag>out="CALL:ANESTH";</tag>
+      </item>
+      <item>
+        <one-of>
+          <item> operating room </item>
+          <item> O R </item>
+          <item> surgery </item>
+        </one-of>
+        <tag>out="CALL:OR";</tag> <!-- set the tag for a general call here -->
+        <item repeat="0-1"><ruleref uri="#prepfor"/> </item>
+        <item repeat="0-1"><ruleref special="GARBAGE"/> </item>
+        <!-- add the optional ability to specify a particular procedure verbally -->
+        <item repeat="0-1">
+          <one-of>
+            <item> laparotomy <tag> out="CALL:OR:LAPAROTOMY";</tag></item>
+           <item> retroperiteneal packing <tag> out="CALL:OR:RETROPERITENEAL";</tag></item>
+           <item> angioembolization <tag> out="CALL:OR:ANGIO";</tag></item>
+           <item> external fixation <tag> out="CALL:OR:EXTERNALFIX";</tag></item>
+          </one-of>
+        </item>
+        
+      </item>   
+      <item>
+        <one-of>
+          <item> interventional radiology </item>
+          <item> I R </item>
+          <item> radiology </item>
+        </one-of>
+        <tag>out="CALL:IR";</tag>
+        <item repeat="0-1"><ruleref uri="#prepfor"/> </item>
+        <item repeat="0-1"><ruleref special="GARBAGE"/> </item>
+         <!-- add the optional ability to specify a particular procedure verbally -->
+        <item repeat="0-1">
+          <one-of>
+           <item> pelvic bleed <tag> out="PLAYER:IR:BLEED";</tag></item>
+           <item> angioembolism <tag> out="PLAYER:IR:ANGIO";</tag></item>
+          </one-of>
+        </item>       
+      </item>
+      <item>
+        <one-of>
+          <item>
+            <tag>out.scanarea=":PHONE";</tag>
+            <item repeat="0-1"> <ruleref uri="#scanarea"/><tag>out.scanarea=rules.scanarea;</tag></item>
+            X ray 
+            <item repeat="0-1"> of the </item>
+            <item repeat="0-1"> <ruleref uri="#scanarea"/><tag>out.scanarea=rules.scanarea;</tag></item>
+          </item>
+        </one-of>
+        <item repeat="0-1"><ruleref special="GARBAGE"/> </item>
+        <tag>out="CALL:XRAY"+out.scanarea;</tag>
+      </item> 
+      <item>
+        <one-of>
+          <item> C T </item>
+          <item> computed tomography </item>
+          <item> C T scan</item>
+          <item> cat scan </item>
+          <item> cat </item>
+        </one-of>
+        <item repeat="0-1"><ruleref special="GARBAGE"/> </item>
+        <tag>out="CALL:CT:PHONE";</tag>
+      </item>
+      <item>
+        <one-of>
+          <item> orthopedics </item>
+          <item> ortho </item>
+        </one-of>
+        <item repeat="0-1"> consult </item>
+        <item repeat="0-1"><ruleref special="GARBAGE"/> </item>
+        <tag>out="CALL:ORTHO";</tag>
+      </item>
+      <item>
+        <one-of>
+          <item> transfer </item>
+        </one-of>
+        <item repeat="0-1"><ruleref special="GARBAGE"/> </item>
+        <tag>out="CALL:TRANSFER";</tag>
+      </item>
+      <item>
+        <one-of>
+          <item> admissions </item>
+          <item> admit </item>
+        </one-of>
+        <item repeat="0-1"><ruleref special="GARBAGE"/> </item>
+        <tag>out="CALL:ADMIT";</tag>
+      </item>
+      <item>
+        <one-of>
+          <item> neuro </item>
+          <item> neurosurgeon </item>
+          <item> neurosurgery </item>
+        </one-of>
+        <item repeat="0-1"> consult </item>
+        <item repeat="0-1"><ruleref special="GARBAGE"/> </item>
+        <tag>out="CALL:NEURO";</tag>
+      </item>
+    </one-of>
+    <item repeat="0-1">
+      for 
+      <one-of>
+        <item>a con salt</item>
+        <item>a consult</item>
+        <item>a consultation</item>
+        <item>an opinion</item>
+      </one-of>
+    </item>
+  </rule>
+  
+  <rule id="scanarea">
+    <one-of>
+      <item> chest <tag>out = ":CHEST";</tag> </item>
+      <item>
+        <one-of>
+          <item> pelvic </item>
+          <item> pelvis </item>
+        </one-of>
+        <tag>out = ":PELVIC";</tag> 
+      </item>
+      <item>
+        <item repeat="0-1">
+          <one-of>
+            <item>left</item> 
+            <item>right</item>
+          </one-of>
+        </item>
+        <one-of>
+          <item>arm</item>
+          <item>forearm</item>
+          <item>elbow</item>
+          <item>wrist</item>
+          <item>hand</item>
+          <item>leg </item>
+          <item>knee</item>
+          <item>thigh</item>
+          <item>calf</item>
+          <item>ankle</item>
+          <item>hip</item>
+          <item>foot</item>
+          <item> extremities</item>
+        </one-of>
+        <tag>out = ":EXTREMITIES";</tag>
+      </item>
+    </one-of>
+  </rule> 
+  
+  <rule id="prepfor">
+    <item repeat="0-1"> and tell them</item>
+    <item repeat="0-1"> to prep </item>
+    <item repeat="0-1"> to expect </item>
+    <item repeat="0-1"> to schedule </item>
+    <item repeat="0-1"> for</item>
+    <item repeat="0-1"> a </item>
+    <item repeat="0-1"> we have</item>
+    <item repeat="0-1"> we need </item>
+  </rule>
+  
+  <rule id="equipment">
+    <one-of>
+      <item> monitors <tag>out="PLACE:MONITORS";</tag> </item> 
+      <item> vitals monitors <tag>out="PLACE:MONITORS";</tag> </item> 
+      <item> vitals monitor <tag>out="PLACE:MONITORS";</tag> </item> 
+      <item>
+        <one-of>
+          <item> pulse oximeter </item> 
+          <item> pulse ox </item>
+          <item> oximeter </item>
+          <item> saturation monitor </item>
+          <item> sats </item> <!-- might be too general here -->
+        </one-of> 
+        <tag>out="PLACE:PULSEOX";</tag> <!-- this doesnt yet handle 'monitor oxygen' -->
+      </item> 
+      <item> collar <tag>out="PLACE:COLLAR";</tag> </item> 
+      <item>
+        <one-of>
+          <item> ventilator</item>
+          <item> ventilation </item>
+          <item> respirator </item>
+          <item> respiration </item>
+        </one-of>
+        <tag>out="CONNECT:VENT";</tag> 
+      </item>
+      <item> pelvic wrap <tag>out="PELVIC:WRAP";</tag> </item>
+      <item> pelvic binder <tag>out="PELVIC:BINDER";</tag> </item>
+      <item> <!-- this version handles 'set,adjust,correct' the airflow -->
+        <!-- note that 'set the ventilator' maps to 'connect vent' unless you specify airflow or percentage -->
+          <one-of>
+            <item> respirator </item>
+            <item> ventilator </item>
+            <item> vent </item>
+            <item></item>
+          </one-of>
+          <one-of>
+            <item> respirator </item> <!-- allow set ventilator to 100 without airflow keyword-->
+            <item> ventilator </item>
+            <item> vent </item>
+            <item> airflow </item>
+            <item> flow </item>
+            <item> flow rate </item>
+          </one-of>
+        <item repeat="0-1"> should be <item repeat="0-1"> set </item> </item>
+        <item repeat="0-1"> <item repeat="0-1"> to </item> 100 percent </item>
+        <tag>out = "VENT:SET:AIRFLOW";</tag>
+      </item>
+      <item>         
+        <one-of>
+         <item>e k g leads </item>
+         <item> e k g </item>
+        </one-of> 
+        <tag>out="PLACE:EKG";</tag> 
+      </item> 
+      <item>
+        <one-of>
+          <item> bracelet </item>
+          <item> i d bracelet </item>
+          <item> i d </item>
+        </one-of> 
+        <tag>out="PLACE:BRACELET";</tag> 
+      </item> 
+      <item><item repeat="0-1"> a </item>
+      <item repeat="0-1"> nasal </item>
+      <item repeat="0-1"> an </item>
+      <item repeat="0-1"> oxygen </item>
+      cannula <tag>out="PLACE:OXYGEN:CANNULA";</tag> </item> 
+      <item>
+        <one-of>
+         <item> auto b p </item>
+        </one-of> 
+        <tag>out="PLACE:AUTOBP";</tag>
+      </item> 
+      <item> foley <item repeat="0-1"> catheter </item><tag>out="FOLEY:INSERT";</tag></item> 
+      <item> oxygen mask <tag>out="PLACE:OXYGEN:MASK";</tag> </item> 
+      <item>
+        <item repeat="0-1">
+          <one-of>
+            <item> a second </item>
+            <item> another </item>
+            <item> a </item>
+            <item> an </item>
+          </one-of>
+        </item>
+        <one-of>
+          <item> line </item>
+          <item> i v </item>
+          <item> large bore i v </item>
+          <item> large bore </item>
+        </one-of> 
+        <item repeat="0-1"><ruleref special="GARBAGE"/> right arm </item>
+        <tag>out="IVPORT:RIGHT";</tag> <!-- since all our cases start with the left line already in place -->
+      </item>
+      <item>
+        <one-of>
+          <item> chest tube <tag>out = "PERFORM:CHESTTUBE";</tag></item>
+        </one-of>
+        <item repeat="0-1"><ruleref uri="#whichside"/><tag> out= out +rules.whichside;</tag></item>
+      </item>
+      <item>
+        <one-of>
+          <item> i c p </item>
+          <item> i c p monitor </item>
+          <item> intercranial pressure monitor </item>
+          <item> pressure monitor </item>
+        </one-of> 
+        <tag>out="PLAYER:PLACE:ICPMONITOR";</tag> <!-- TODO Revise Inconsistent tag -->
+      </item>
+      <item>
+         <one-of>
+           <item> external ventricular drain </item>
+           <item> e v d </item>
+           <item> ventric </item>
+           <item> ventric drain </item>
+           <item> ventricular drain </item>
+           <item> external ventricular </item>
+         </one-of>
+         <tag> out="PERFORM:EVD";</tag> <!-- handled in both perform and place -->
+      </item>
+      <item>
+         <one-of>
+           <item> nasogastric tube  </item>
+           <item> ng tube </item>
+           <item> n g t </item>
+         </one-of>
+         <tag> out="PLACE:NGT";</tag>
+      </item>
+      <item>
+         <one-of>
+           <item> oral airway </item>
+           <item> o p a </item>
+           <item> g p a </item>
+           <item> oropharyngeal <item repeat="0-1"> airway </item> </item>
+           <item> gueddal <item repeat="0-1"> pattern </item> <item repeat="0-1"> airway </item> </item>
+         </one-of>
+         <tag> out="PLACE:ORALAIRWAY";</tag>
+      </item>
+      <item>
+         <one-of>
+           <item> an ace wrap </item>
+           <item> an ace bandage </item>
+         </one-of>
+         <tag> out="PLACE:ACEWRAP";</tag>
+      </item>
+      <item>
+         <one-of>
+           <item> tourniquette </item>
+         </one-of>
+         <tag> out="PLACE:TOURNIQUETTE";</tag>
+      </item>
+      <item>
+         <one-of>
+           <item> pressure dressing </item>
+           <item> dressing </item>
+           <item> pressure to the wound</item>
+         </one-of>
+         <tag> out="PLACE:DRESSING";</tag>
+      </item>
+     </one-of>  
+    </rule>
+ 
+   <rule id="procedure"> <!-- TODO break these into commands that require a verb and those than can occur without one -->
+     <!-- i.e. "trach the patient" is very unlikely and is misheard for check the patient but "perform a trach" is likely -->
+     <item repeat="0-1"> a </item>
+     <item repeat="0-1"> uh </item>
+     <item repeat="0-1"> an </item>
+     <item repeat="0-1"> the </item>
+    <one-of>
+      <item>         
+        <one-of>
+         <item> G C S </item>
+         <item> Glasgow Coma Scale </item>
+        </one-of> 
+        <tag>out="PATIENT:GCS";</tag> 
+      </item> 
+      <item> suction <item repeat="0-1"><ruleref uri="#ofthepatient"/> airway </item><tag>out="SUCTION:PATIENT";</tag> </item> 
+      <item>         
+        <one-of>
+         <item> repair </item>
+         <item> treat </item>
+         <item> sew </item>
+         <item> suture <item repeat="0-1"> and staple </item></item>
+         <item> stitch </item>
+         <item> close </item>
+        </one-of>
+        <item repeat="0-1"> up </item>
+        <ruleref uri="#ofthepatient"/>
+        <item repeat="0-1"> up </item>
+        <item repeat="0-1"><ruleref uri="#wound"/></item>
+        <item repeat="0-1"> airway </item>
+        <tag>out="PERFORM:LACERATION:REPAIR";</tag> 
+      </item> 
+      <item><ruleref uri="#wound"/> repair <tag>out="PERFORM:REPAIR";</tag></item>
+      <item>         
+        <one-of>
+         <item> reduct </item>
+         <item> reduce </item>
+          <item> reduction </item>
+        </one-of>
+        <item repeat="0-1"><ruleref uri="#ofthepatient"/></item>
+        <item repeat="0-1"><ruleref uri="#wound"/></item>
+        <tag>out="PERFORM:REDUCTION";</tag> 
+      </item>
+      <item><ruleref uri="#wound"/> reduction <tag>out="PERFORM:REDUCTION";</tag></item>
+      <item>         
+        <one-of>
+         <item><item repeat="0-1"> box </item> splint </item>
+        </one-of>
+        <item repeat="0-1"><ruleref uri="#ofthepatient"/></item>
+        <item repeat="0-1"><ruleref uri="#wound"/> </item>
+        <item repeat="0-1"><ruleref uri="#scanarea"/> </item> <!-- to pick up arm, leg, etc.-->
+        <tag>out="PERFORM:SPLINT";</tag> 
+      </item>
+      <item>         
+        <one-of>
+          <item> irrigate </item>
+          <item> wash  <item repeat="0-1"> up </item><item repeat="0-1"> out </item> </item>
+          <item> clean <item repeat="0-1"> up </item><item repeat="0-1"> out </item> </item>
+          <item> disinfect </item>
+        </one-of>
+        <ruleref uri="#ofthepatient"/>
+        <item repeat="0-1"><ruleref uri="#wound"/> </item>
+        <tag>out="PERFORM:WOUND:IRRIGATION";</tag> 
+      </item>
+      <item> <ruleref uri="#wound"/> irrigation <tag>out="PERFORM:WOUND:IRRIGATION";</tag></item>
+      <item>         
+        <one-of>
+          <item><item repeat="0-1"> apply </item> <item repeat="0-1"> direct </item> pressure </item>
+        </one-of>
+        <ruleref uri="#ofthepatient"/>
+        <item repeat="0-1"><ruleref uri="#wound"/> </item>
+        <tag>out="APPLY:PRESSURE:START";</tag> 
+      </item>
+      <item>         
+        <one-of>
+         <item> intubation </item>
+         <item> intubate </item>
+         <item> prepare to intubate </item>
+         <item> prepare for intubation </item>
+        <item> get ready to intubate </item>
+         <item> get ready for intubation </item>
+        </one-of> 
+        <tag>out="INTUBATE:PATIENT";</tag></item>
+      <item> pelvic exam <tag>out = "PLAYER:EXAM:PELVIC";</tag> </item>
+      <item> genital exam <tag>out = "PLAYER:EXAM:PELVIC";</tag> </item>
+      <item> bony pelvic exam <tag>out = "PLAYER:EXAM:PELVIC:STABLE";</tag> </item>
+      <item> fast exam <tag>out = "FAST:EXAM:ABDOMEN";</tag> </item>
+      <item>         
+        <one-of>
+         <item> fast exam of the abdomen </item>
+         <item> abdomenal fast exam </item>
+         <item> abdomenal fast </item>
+        </one-of> 
+        <tag>out="FAST:EXAM:ABDOMEN";</tag> 
+      </item>
+      <item>         
+        <one-of>
+         <item> fast exam of the chest </item>
+         <item> e fast exam </item>
+         <item> e fast </item>
+        </one-of> 
+        <tag>out="FAST:EXAM:CHEST";</tag> 
+      </item>
+      <item>
+         <one-of>
+           <item> logroll </item>
+           <item> logroll <ruleref uri="#tothepatient"/></item>
+           <item>
+             <one-of>
+               <item> roll </item>
+               <item> put </item>
+               <item> get </item>
+               <item> logroll </item>
+             </one-of>
+             <ruleref uri="#tothepatient"/>
+             <one-of>
+               <item> to </item>
+               <item> on </item>
+               <item> onto </item>
+             </one-of>
+             <ruleref uri="#ofthepatient"/>
+             side 
+           </item>
+         </one-of>
+         <tag> out="PATIENT:LOGROLL";</tag>
+       </item>
+       <item>
+            <one-of>
+               <item> roll </item>
+               <item> put </item>
+               <item> get </item>
+               <item>return</item>
+               <item> logroll </item>
+             </one-of>
+             <ruleref uri="#tothepatient"/>
+             <one-of>
+               <item> to </item>
+               <item> on </item>
+               <item> onto </item>
+             </one-of>
+             <ruleref uri="#ofthepatient"/>
+             back 
+         <tag> out="PATIENT:LOGROLL:END";</tag>
+       </item>
+       <item>
+         <one-of>
+           <item> cover <ruleref uri="#tothepatient"/> </item>
+           <item> put a cover on <ruleref uri="#tothepatient"/> </item>
+           <item> put a blanket on <ruleref uri="#tothepatient"/> </item>
+           <item> put some blankets on <ruleref uri="#tothepatient"/> </item>
+           <item> put some covers on <ruleref uri="#tothepatient"/> </item>
+         </one-of>
+         <tag> out="PATIENT:COVER";</tag>
+      </item>
+       <item>
+         <one-of>
+           <item> uncover <ruleref uri="#tothepatient"/></item>
+           <item> remove the blankets </item>
+           <item> remove the covers </item>
+         </one-of>
+         <tag> out="PATIENT:UNCOVER:ALL";</tag>
+       </item>
+       <item> expose <ruleref uri="#tothepatient"/> <tag> out="PATIENT:EXPOSE";</tag></item> 
+       <item> remove <ruleref uri="#ofthepatient"/> clothes <tag> out="PATIENT:EXPOSE";</tag></item> 
+       <item> remove <ruleref uri="#ofthepatient"/> clothing <tag> out="PATIENT:EXPOSE";</tag></item> 
+       <item> examine <ruleref uri="#tothepatient"/> <tag> out="PATIENT:EXAMINE";</tag></item> 
+       <item> pelvic wrap <tag>out="PELVIC:WRAP";</tag> </item>
+       <item> pelvic binder <tag>out="PELVIC:BINDER";</tag> </item>
+       <item> rectal exam <tag>out="PLAYER:EXAM:PELVIC:RECTAL";</tag> </item>
+       <item> vaginal exam <tag>out="PLAYER:EXAM:PELVIC:VAGINAL";</tag> </item>
+       <item> neurological exam <tag>out="PLAYER:EXAM:NEURO";</tag> </item>
+       <item> neuro exam <tag>out="PLAYER:EXAM:NEURO";</tag> </item>
+      <item>
+        <one-of>
+          <item>
+            <item repeat="0-1"> trauma </item> labs
+          </item>
+          <item> blood work </item>
+        </one-of>
+        <tag> out="DRAW:LABS";</tag>
+      </item>
+      <item>
+         <one-of>
+           <item> cricthyrotomy </item>
+         <!--  <item> cric </item> too easy and critical -->
+           <item> surgical airway </item>
+         </one-of>
+         <tag> out="PERFORM:CRIC";</tag>
+      </item>
+      <item>
+         <one-of>
+           <item> external ventricular drain </item>
+           <item> e v d </item>
+           <item> ventric </item>
+           <item> ventric drain </item>
+           <item> ventricular drain </item>
+           <item> external ventricular </item>
+         </one-of>
+         <tag> out="PERFORM:EVD";</tag> <!-- handled in both perform and place -->
+      </item>
+      <item>
+        <one-of>
+          <item> needle thoracostomy <tag>out = "PERFORM:THORACOSTOMY:NEEDLE";</tag></item>
+          <item> needle decompression <tag>out = "PERFORM:THORACOSTOMY:NEEDLE";</tag></item>
+        </one-of>
+        <item repeat="0-1"><ruleref uri="#whichside"/><tag> out= out +rules.whichside;</tag></item>
+      </item>
+      <item>
+        <one-of>
+          <item> diagnostic peritoneal lavage </item>
+          <item> d p l </item>
+          <item> diagnostic lavage </item>
+          <item> lavage </item>
+          <item> diagnostic peritoneal aspiration </item>
+          <item> d p a </item>
+        </one-of>
+        <tag>out = "PERFORM:DPL";</tag>
+        <item repeat="0-1"><ruleref uri="#whichside"/><tag> out= out +rules.whichside;</tag></item>
+      </item>
+      <item> thoracotomy <item repeat="0-1"><ruleref uri="#tothepatient"/></item> <tag> out="PERFORM:THORACOTOMY";</tag></item> <!--TODO no interaction for this yet -->
+      <item> antolateral thoracotomy <item repeat="0-1"><ruleref uri="#tothepatient"/></item> <tag> out="PERFORM:THORACOTOMY:ANTERO";</tag></item> 
+      <item> median thoracotomy <item repeat="0-1"><ruleref uri="#tothepatient"/></item> <tag> out="PERFORM:THORACOTOMY:MEDIAN";</tag></item> 
+      <item> posterolateral thoracotomy <item repeat="0-1"><ruleref uri="#tothepatient"/></item> <tag> out="PERFORM:THORACOTOMY:POSTERO";</tag></item> 
+      <item>
+         <one-of>
+           <item> C P R </item>
+           <item> cardiopulmonary resuscitation </item>
+           <item> compressions </item>
+         </one-of>
+         <tag> out="PERFORM:CPR:EXTERNAL:START";</tag>
+      </item>
+      <item>
+         <one-of>
+           <item> open the chest </item> <!-- this is documented as a compound command, lets start with this -->
+           <item> crack the chest </item>
+           <item> mediansternotomy </item>
+           <item> cardiac massage </item>
+           <item> internal c p r </item>
+         </one-of>
+         <tag> out="PERFORM:CPR:INTERNAL:START";</tag>
+      </item>
+      <item> sternal rub <tag>out="PERFORM:STERNALRUB";</tag>
+      </item>
+      <item>
+         <one-of>
+           <item> b v m </item>
+           <item> bagging </item>
+           <item> ventilation </item> <!-- TODO conflict with the ventilator ? -->
+           <item> manual ventilation </item>
+           <item> bag valve mask </item>
+           <item> manually ventilating </item>
+           <item> venting </item>
+         </one-of>
+         <tag> out="VENT:BVM";</tag>
+      </item>
+      <item>
+         <one-of>
+           <item> chinlift <item repeat="0-1"> maneuver </item> </item>
+         </one-of>
+         <item repeat="0-1"> to open <ruleref uri="#ofthepatient"/> airway </item>
+         <tag> out="PERFORM:CHINLIFT";</tag>
+      </item>
+      <item>
+         <one-of>
+           <item> jawthrust <item repeat="0-1"> maneuver </item> </item>
+         </one-of>
+         <item repeat="0-1"> to open <ruleref uri="#ofthepatient"/> airway </item>
+         <tag> out="PERFORM:JAWTHRUST";</tag>
+      </item>
+      <item>
+         <one-of>
+           <item> tracheotomy </item>
+           <!-- <item weight ="0.1"> trach</item> too often misread -->
+         </one-of>
+         <tag> out="PERFORM:TRACHEOTOMY";</tag>
+      </item>
+      <item> secondary survey <tag>out="PLAYER:SECONDARY:SURVEY";</tag></item>
+      <item>  <!-- handle 'airflow should be set to ... with no 'set, adjust, etc verb -->
+        <one-of>
+          <item> respirator </item>
+          <item> ventilator </item>
+          <item> vent </item>
+          <item></item>
+        </one-of>
+        <!-- <item repeat="0-1">   making 'airflow' optional ? Crashes the grammar because then we have a completely null rule !-->
+          <one-of>
+            <item> respirator </item> <!-- allow ventialtor without the word airflow -->
+            <item> ventilator </item>
+            <item> vent </item>
+            <item> airflow </item>
+            <item> flow </item>
+            <item> flow rate </item>
+          </one-of>
+           <!-- </item> -->
+        <item repeat="0-1"> should be <item repeat="0-1"> set </item> </item>
+        <item repeat="0-1"> <item repeat="0-1"> to </item> 100 percent </item>
+        <tag>out = "VENT:SET:AIRFLOW";</tag>
+      </item>
+      <item> requested xray<tag>out="XRAY:PERFORM";</tag></item>
+      <item> elevate <ruleref uri="#ofthepatient"/> head <tag> out="PLAYER:PATIENT:ELEVATE:HEAD";</tag> </item>
+      <item> primary survey<tag>out="ASSESS:AIRWAY+ASSESS:BREATHING+ASSESS:CIRCULATION";</tag> </item>
+     </one-of>  
+  </rule>
+
+  <rule id="stopprocedure"> <!-- paired with the stopperforming verb -->
+    <one-of>
+       <item>
+         <one-of>
+           <item> C P R </item>
+           <item> cardiopulmonary resuscitation </item>
+           <item> compressions </item>
+         </one-of>
+         <tag> out="PERFORM:CPR:EXTERNAL:STOP";</tag>
+      </item>
+      <item>
+        <one-of>
+          <item> internal c p r  </item>
+          <item> cardiac massage </item>
+        </one-of>
+        <tag>out="PERFORM:CPR:INTERNAL:STOP";</tag>
+      </item>
+      <item>
+         <one-of>
+           <item> external ventricular drain </item>
+           <item> e v d </item>
+           <item> ventric </item>
+           <item> ventric drain </item>
+           <item> ventricular drain </item>
+           <item> external ventricular </item>
+         </one-of>
+         <tag> out="PERFORM:EVD:END";</tag>
+      </item>
+      <item>
+         <one-of>
+           <item> b v m </item>
+           <item> bagging </item>
+           <item> ventilation </item> <!-- TODO conflict with the ventilator ? -->
+           <item> bag valve mask </item>
+           <item> manually ventilating </item>
+           <item> venting </item>
+         </one-of>
+         <tag> out="VENT:STOPBVM";</tag>
+      </item>
+      <item> <!-- TODO this one is actually under PLACE not Perform, but remove is here -->
+        <item repeat="0-1"> nasal </item><item repeat="0-1"> oxygen </item> cannula <tag>out="REMOVE:OXYGEN:CANNULA";</tag> 
+      </item>
+      <item>
+         <one-of>
+           <item> chinlift <item repeat="0-1"> maneuver </item> </item>
+         </one-of>
+         <tag> out="PERFORM:CHINLIFT:END";</tag>
+      </item>
+            <item>
+         <one-of>
+           <item> jawthrust <item repeat="0-1"> maneuver </item> </item>
+         </one-of>
+         <tag> out="PERFORM:JAWTHRUST:END";</tag>
+      </item>
+          <item>         
+        <one-of>
+          <item><item repeat="0-1"> applying </item> <item repeat="0-1"> direct </item> pressure </item>
+        </one-of>
+        <tag>out="APPLY:PRESSURE:STOP";</tag> 
+      </item>
+    </one-of>
+  </rule>
+  
+       
+   <!-- Individual rules allows more flexibility in how to order a given medication -->
+  <rule id="ketamine">
+   <one-of>
+    <item> 20 milligrams of ketamine <tag>out="ORDER:KETAMINE";</tag> </item>
+    <item> <ruleref special="GARBAGE"/> ketamine <tag>out="ORDER:KETAMINE";</tag> </item>
+    <item> tranquilizer <tag>out="ORDER:KETAMINE";</tag> </item>
+     <item> something for pain <tag>out="ORDER:KETAMINE";</tag> </item>
+    <item> pain relief <tag>out="ORDER:KETAMINE";</tag> </item>
+   </one-of>
+  </rule>
+  
+  <rule id="fentanyl">
+   <one-of>
+    <item> 50 milligrams of fentanyl <tag>out="ORDER:FENTANYL";</tag> </item>
+    <item> <ruleref special="GARBAGE"/> fentanyl <tag>out="ORDER:FENTANYL";</tag> </item>
+   </one-of>
+  </rule>
+  
+  <rule id="propofol">
+   <item repeat="0-1"><ruleref special="GARBAGE"/></item>
+   <one-of>
+    <item> propofol <tag>out="MED:PROPOFOL";</tag> </item> <!-- legacy tag for propofol is MED: instead of ORDER: -->
+    <item> sedative <tag>out="MED:PROPOFOL";</tag> </item>
+    <item> sedate <tag>out="MED:PROPOFOL";</tag> </item>
+   </one-of>
+  <item repeat="0-1"><ruleref special="GARBAGE"/></item>
+  </rule>
+  
+  <rule id="local">
+   <item repeat="0-1"><ruleref special="GARBAGE"/></item>
+   <one-of>
+    <item> local anaesthetic <tag>out="ORDER:LOCAL:ANAESTHETIC";</tag> </item>
+   </one-of>
+  <item repeat="0-1"><ruleref special="GARBAGE"/></item>
+  </rule>
+  
+  <rule id="morphine">
+    <item repeat="0-1"><ruleref special="GARBAGE"/></item>
+    <item> morphine <tag>out="ORDER:MORPHINE";</tag> </item>
+    <item repeat="0-1"><ruleref special="GARBAGE"/></item>
+  </rule>
+  
+    <rule id="rsimeds">
+   <item repeat="0-1"><ruleref special="GARBAGE"/></item>
+   <one-of>
+     <item> etomidate <tag>out="ORDER:RSIMEDS";</tag> </item>
+     <item> succs and etomidate <tag>out="ORDER:RSIMEDS";</tag> </item>
+     <item> succinylcholine <tag>out="ORDER:RSIMEDS";</tag> </item>
+    <item> r s i meds <tag>out="ORDER:RSIMEDS";</tag> </item> 
+    <item> intubation meds <tag>out="ORDER:RSIMEDS";</tag> </item>
+ <!--   <item> medicate for intubation <tag>out="ORDER:RSIMEDS";</tag> </item> -->
+    <item> intubation <tag>out="ORDER:RSIMEDS";</tag> </item>
+   </one-of>
+  <item repeat="0-1"><ruleref special="GARBAGE"/></item>
+  </rule>
+  
+  <rule id="mannitol">
+    <item repeat="0-1"><ruleref special="GARBAGE"/></item>
+    <item> mannitol <tag>out="ORDER:MANNITOL";</tag> </item>
+    <item repeat="0-1"><ruleref special="GARBAGE"/></item>
+  </rule>
+  
+    <rule id="txa">
+   <item repeat="0-1"><ruleref special="GARBAGE"/></item>
+   <one-of>
+    <item> t x a <tag>out="ORDER:TXA";</tag> </item> 
+    <item> tranexamic acid <tag>out="ORDER:TXA";</tag> </item>
+    <item> blood clotting agent <tag>out="ORDER:TXA";</tag> </item>
+   </one-of>
+  <item repeat="0-1"><ruleref special="GARBAGE"/></item>
+  </rule>
+  
+    <rule id="labs">
+    <item repeat="0-1"><ruleref special="GARBAGE"/></item>
+    <one-of>
+      <item>
+        <one-of>
+          <item> P T I N R </item>
+          <item> prothomben
+            <one-of>
+              <item> I N R </item>
+              <item> international </item>
+              <item> normalized </item>
+            </one-of>
+            <item repeat="0-1"> <ruleref special="GARBAGE"/> </item>
+          </item>
+        </one-of>
+        <item repeat="0-1"> lab </item>
+        <tag>out="ORDER:LAB:PTINR";</tag>
+      </item>
+      <item>
+        <one-of>
+          <item> P T P P T </item>
+          <item> prothomben
+            <one-of>
+              <item> P P T </item>
+              <item> partial </item>
+              <item> time </item>
+            </one-of>
+            <item repeat="0-1"> <ruleref special="GARBAGE"/> </item>
+          </item>
+        </one-of>
+        <item repeat="0-1"> lab </item>
+        <tag>out="ORDER:LAB:PTPPT";</tag>
+      </item>
+      <item>
+        <one-of>
+          <item> platelets <item repeat="0-1"> lab </item> </item>
+          <item> platelet count </item>
+        </one-of>
+        <tag>out="ORDER:LAB:PLATELETS";</tag>
+      </item>
+    </one-of>
+    <item repeat="0-1"><ruleref special="GARBAGE"/></item>
+  </rule>
+  
+  <rule id="patientinfo">
+    <one-of>
+      <item> your name <tag> out="PLAYER:ASKNAME"</tag></item>
+      <item> what your name is <tag> out="PLAYER:ASKNAME"</tag></item>
+      <item> what happened <tag> out="PLAYER:ASKCAUSE"</tag></item> <!-- TODO this is also "PLAYER:AMPLE:E" -->
+      <item>
+        <one-of>
+          <item> in </item>
+          <item> feeling </item>
+          <item> feel </item>
+          <item> having </item>
+          <item> have </item>
+        </one-of>
+        <item repeat="0-1"> any </item> pain <tag> out="PLAYER:ASKPAIN"</tag></item>
+      <item> it hurt <item repeat="0-1"> much </item><tag> out="PLAYER:ASKPAIN"</tag></item>
+      <item> where you are <tag> out="PATIENT:GCS"</tag></item>
+      <item> what day it is <tag> out="PATIENT:GCS"</tag></item>
+    </one-of>  
+  </rule>
+      
+  <rule id="bolus">
+   <one-of>
+    	<item repeat="0-1">by</item> <!-- zero or one of these is allowed -->
+    	<item repeat="0-1">via</item>
+    	<item repeat="0-1">with</item>
+    	<item repeat="0-1">using</item>
+      <item repeat="0-1">in</item>
+   </one-of>
+   <one-of>
+      <item> i v bolus<tag>out=":BOLUS";</tag> </item>
+      <item> bolus    <tag>out=":BOLUS";</tag> </item>
+    </one-of>
+  </rule>
+  
+  <rule id="politestart">
+    <item repeat="0-1"> I think </item>
+    <item repeat="0-1"> okay </item>
+    <item repeat="0-1"> now </item>
+   <one-of>
+     <item> i have to </item>
+     <item> i need to </item>
+     <item> i want to </item>
+     <item> I'd like to </item>
+     <item> we need to </item>
+     <item> we want to </item>
+     <item> we're going to need to </item>
+     <item> we're going to want to </item>
+      <item> we have to </item>
+      <item> we should </item>
+      <item> we'll need to </item>
+      <item> we'd better </item>
+      <item> let's </item>
+  	 <item > please </item>
+     <item> and </item>
+     <item> then </item>
+     <item> next </item>
+     <item> now </item>
+     <item> and what about </item>
+     <item> also </item>
+  	</one-of>
+  </rule>
+  
+  <rule id="politeend">
+   <item repeat="0-1"> now </item> <!-- but it must be followed by something below...-->
+   <one-of>
+     <item> now </item> <!-- so it can be siad alone without please or thank you !-->
+     <item > please </item>
+  	 <item> thanks </item>
+  	 <item> thank you </item>
+  	 <item> stat </item>
+  	</one-of>
+   </rule>
+  
+  <rule id="character"> <!-- we dont yet use these out results, but this parses the words for better matching than 'garbage'-->
+   <one-of>
+     <item> somebody </item>
+     <item> someone </item>
+     <item> would you </item>
+      <item>
+        <one-of>
+          <item> primary nurse </item>
+          <item> nurse </item>
+          <item> p n </item>
+        </one-of> <tag>out="PN";</tag> 
+      </item>
+      <item>
+        <one-of>
+          <item> procedure resident </item>
+          <item> doctor </item> <!-- is this the right assumption ? -->
+          <item> p r </item>
+        </one-of> <tag>out="PR";</tag> 
+      </item>
+      <item>
+        <one-of>
+          <item> airway doctor </item>
+          <item> airway </item>
+          <item> a m </item>
+        </one-of> <tag>out="AM";</tag> 
+      </item>
+      <item>
+        <one-of>
+          <item> respiratory tech </item>
+          <item> r t </item>
+        </one-of> <tag>out="RT";</tag> 
+      </item>
+      <item>
+        <one-of>
+          <item> scribe nurse </item>
+          <item> s n </item>
+        </one-of> <tag>out="SN";</tag> 
+      </item>
+    </one-of>
+  </rule>
+  
+  <rule id="wound"> <!-- something you could clean, irrigate, stitch up -->
+    <item repeat="0-1">
+      <one-of>
+        <item>that</item>
+        <item>the</item>
+        <item>his</item>
+        <item>her</item>
+        <item>their</item>
+      </one-of>
+    </item>
+    <item repeat="0-1">
+      <one-of>
+        <item>scalp</item>
+        <item>leg</item>
+        <item>arm</item>
+        <item>calf</item>
+        <item>chest</item>
+      </one-of>
+    </item>
+    <one-of>
+      <item> wound </item>
+      <item> wounds </item>
+      <item> laceration </item>
+      <item> lacerations</item>
+      <item> injury </item>
+      <item> injuries </item>
+      <item> contusion </item>
+      <item> contusions</item>
+      <item> cut </item>
+      <item> cuts </item>
+    </one-of>
+  </rule>
+  
+  <rule id="tothepatient">
+ 	<item repeat="0-1">to</item> <!-- as in give blood to the patient -->
+  	<one-of>
+  		<item>the patient</item>
+      <item>this patient</item>
+  		<item>him</item>
+  		<item>her</item>
+  		<item>them</item>
+  	</one-of>
+  	<item repeat="0-1">with</item> <!-- as in infuse her with -->
+  </rule>
+  
+  <rule id="ofthepatient">
+  	<one-of>
+  		<item>the patient's</item>
+      <item>of the patient</item>
+  		<item>his</item>
+  		<item>her</item>
+  		<item>their</item>
+      <item>the</item> <!-- Check The ETCO2 -->
+      <item>he</item>
+      <item>she</item> <!-- what's she satting -->
+      <item>they</item>
+  	</one-of>
+  </rule>
+  
+  <rule id="whichside">
+    <one-of>
+      <item> on </item>
+      <item> in </item>
+      <item> of </item>
+      <item> into </item>
+      <item> onto </item>
+    </one-of>
+    <ruleref uri="#ofthepatient"/>
+    <one-of>
+      <item> left <tag>out=":LEFT";</tag></item>
+      <item> right <tag>out=":RIGHT";</tag></item>
+    </one-of>
+    <one-of>
+      <item> side </item>
+      <item> arm </item>
+      <item> leg </item>
+    </one-of>
+  </rule>
+  
+  <rule id="department"> <!-- where you might say to call -->
+    <one-of>
+      <item>Radiology</item> <!-- call radiology for a chest xray -->
+      <item> the radiologist</item>
+      <item> the tech </item>
+      <item> the x ray tech </item>
+    </one-of>
+  </rule>
+  
+  <rule id="subsection"> <!-- A B C's  -->
+    <one-of>
+      <item> airway <tag>out="ASSESS:AIRWAY";</tag></item> 
+      <item> breathing <tag>out="ASSESS:BREATHING";</tag></item>
+      <item> circulation <tag>out="ASSESS:CIRCULATION";</tag></item>
+      <item> g c s <tag> out="PATIENT:GCS"</tag></item>
+      <item> primary survey<tag>out="ASSESS:AIRWAY+ASSESS:BREATHING+ASSESS:CIRCULATION";</tag> </item>
+      <item> secondary survey <tag>out="SECONDARY:SURVEY";</tag></item> <!-- also to be paired with perform -->
+    </one-of>
+  </rule>
+    
+  <rule id="quantity">
+   <one-of>
+   	  <item> a     <tag>out="1";</tag></item>
+   	  <item> uh    <tag>out="1";</tag></item>
+      <item> one   <tag>out="1";</tag></item>
+      <item> <item repeat="0-1"> a </item> couple <item repeat="0-1"> of </item> <tag>out="2";</tag></item>
+      <item> to    <tag>out="2";</tag></item>
+      <item weight="2"> two   <tag>out="2";</tag></item>
+      <item> too   <tag>out="2";</tag></item>
+      <item> three <tag>out="3";</tag></item>
+      <item> four  <tag>out="4";</tag></item>
+      <item> five  <tag>out="5";</tag></item>
+      <item> six   <tag>out="6";</tag></item>
+      <item><item repeat="0-1"> a </item> half <item repeat="0-1"> a </item> dozen <tag>out="6";</tag></item>
+      <item> some  <tag>out="1";</tag></item>
+      <item> twenty  <tag>out="20";</tag></item> <!-- TODO we can actually do math with scripting-->
+  <!--    <item> thirty  <tag>out="30";</tag></item>
+      <item> fourty  <tag>out="40";</tag></item>
+      <item> fifty   <tag>out="50";</tag></item> -->
+    </one-of>
+  </rule>
+  
+  <rule id="unit">
+   <one-of> <!-- example of weight. 1 is default -->
+      <item weight="1"> unit   <tag>out="unit";</tag></item>
+      <item weight="1"> units  <tag>out="units";</tag></item>
+      <item weight="2"> liter  <tag>out="liter";</tag></item>
+      <item weight="1"> liters <tag>out="liters";</tag></item>
+      <item weight="1"> bag    <tag>out="unit";</tag></item> <!-- use some variable here depends on fluid -->
+      <item weight="1"> bags   <tag>out="units";</tag></item>
+      <item weight="1"> milligrams   <tag>out="mg";</tag></item>
+      <item weight="1"> c c's   <tag>out="cc";</tag></item>
+    </one-of>
+    <item repeat="0-1">of</item>
+  </rule>
+  
+  <!-- ===================================  DEBUGGING  RULES ==============================================================  -->
+  
+
+  <rule id="multifragmentdebug"> <!-- this would be all the different types of commands to the team -->
+     <!-- temporaryrule for debugging -->
+     <!-- <ruleref special="VOID"/>  -->
+    debug <!-- must start with the word debug to fire -->
+     <tag> out.partial = "FRAGMENTS=";</tag>
+     <item repeat="1-"><ruleref uri="#fragmentdebug"/><tag> out.partial = out.partial + rules.fragmentdebug;</tag> </item> 
+     <tag> out = out.partial;</tag>
+  </rule>
+
+
+  <rule id="fragmentdebug">
+    <!-- temporaryrule for debugging -->
+    <!-- <ruleref special="VOID"/>  -->
+    <item repeat="0-1"><ruleref special="GARBAGE"/></item>
+    <one-of>
+       <item><ruleref uri="#character"/><tag> out=" character";</tag> </item>
+       <item><ruleref uri="#politestart"/><tag> out=" politestart";</tag></item>
+       <item><ruleref uri="#administer"/><tag> out=" administer";</tag></item>
+       <item><ruleref uri="#perform"/><tag> out=" perform";</tag></item>
+       <item><ruleref uri="#query"/><tag> out=" query";</tag></item>
+       <item><ruleref uri="#examine"/><tag> out=" examine";</tag></item>
+       <item><ruleref uri="#place"/><tag> out=" place";</tag></item>
+       <item><ruleref uri="#assess"/><tag> out = " assess";</tag></item>
+       <item><ruleref uri="#medication"/><tag> out=" medication";</tag></item>
+       <item><ruleref uri="#fluid"/><tag> out=" fluid";</tag></item>
+       <item><ruleref uri="#vital"/><tag> out=" vital";</tag></item>
+       <item><ruleref uri="#patientcondition"/><tag> out=" patientcondition";</tag></item>
+       <item><ruleref uri="#equipment"/><tag> out=" equipment";</tag></item>
+       <item><ruleref uri="#consultation"/><tag> out=" consultation";</tag></item>
+       <item><ruleref uri="#procedure"/><tag> out=" procedure";</tag></item>
+       <item><ruleref uri="#bolus"/><tag> out=" bolus";</tag></item>
+       <item><ruleref uri="#unit"/><tag> out=" unit";</tag></item>
+       <item><ruleref uri="#quantity"/><tag> out=" quantity";</tag></item>
+       <item><ruleref uri="#subsection"/><tag> out = " subsection";</tag></item>
+       <item><ruleref uri="#department"/><tag> out=" department";</tag></item>
+       <item><ruleref uri="#tothepatient"/><tag> out=" tothepatient";</tag></item>
+       <item><ruleref uri="#politeend"/><tag> out=" politeend";</tag></item>
+    </one-of>
+    <item repeat="0-1"><ruleref special="GARBAGE"/><tag> out= out + " garbage";</tag></item>
+  </rule>
+  
+
+  
+</grammar>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssessmentList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Name>OBJECTIVE:PRIMARY</Name>
+        <Objective>Complete the Primary Survey</Objective>
+        <NoteSucess>Object Complete.</NoteSucess>
+        <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+        <SuccessPercentage>1.0</SuccessPercentage>
+        <AlwaysScore>true</AlwaysScore>
+        <Active>true</Active>
+        <Items>
+          <!--- Begin Airway Section -->
+          <AssessmentItem>
+            <InteractionName>PLAYER:ASKNAME</InteractionName>
+			<Note>Assess Patient's Responsiveness</Note>			
+            <Score>15</Score>
+            <ScoreMax>15</ScoreMax>
+            <Substitutes>PLAYER:ASKCAUSE, PLAYER:ASKPAIN, PATIENT:GCS</Substitutes>
+          </AssessmentItem>
+          
+          <!--- Begin Breathing Section -->
+          <AssessmentItem>
+            <InteractionName>CHECK:BREATHE</InteractionName>
+			<Note>Auscultate Breath Sounds</Note>			
+            <Score>15</Score>
+            <ScoreMax>15</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          
+          <AssessmentItem>
+            <InteractionName>PALPATE:TRACHEA</InteractionName>
+			<Note>Assess Tracheal Deviation</Note>			
+            <Score>5</Score>
+            <ScoreMax>5</ScoreMax>
+            <CriticalAction>false</CriticalAction>
+          </AssessmentItem>
+
+           <AssessmentItem>
+            <InteractionName>PLACE:PULSEOX</InteractionName>
+			<Note>Apply Pulse Oximeter</Note>			
+            <Score>8</Score>
+            <ScoreMax>8</ScoreMax>
+            <CriticalAction>false</CriticalAction>
+          </AssessmentItem>
+          
+          <!--- Begin Circulation Section -->
+            <AssessmentItem>
+            <InteractionName>PATIENT:SKINTEMP</InteractionName>
+			<Note>Assess Skin Perfusion</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <Substitutes>PATIENT:CAPREFILL</Substitutes>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          
+		  <AssessmentItem>
+            <InteractionName>EXAM:BLEEDING</InteractionName>
+			<Note>Examine Patient for Bleeding (Expose and Roll)</Note>			
+            <Score>20</Score>
+            <ScoreMax>20</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+
+           <AssessmentItem>
+            <InteractionName>PATIENT:MANUALBP</InteractionName>
+			<Note>Check the Patient's Blood Pressure</Note>			
+            <Score>20</Score>
+            <ScoreMax>20</ScoreMax>
+             <Substitutes>VITALS:BP</Substitutes>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+        </Items>
+</AssessmentList>			
+

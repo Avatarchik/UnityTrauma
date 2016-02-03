@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfInjuryInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <InjuryInfo>
+    <Name>Tutorial</Name>
+	<Prefab>TutorialPrimaryPrefab</Prefab>	
+  </InjuryInfo>
+    <InjuryInfo>
+    <Name>Tutorial Practice Case</Name>
+	<Prefab>TutorialCasePrimaryPrefab</Prefab>	
+  </InjuryInfo>
+  <InjuryInfo>
+    <Name>Trauma Case 2</Name>
+	<Prefab>Trauma02PrimaryPrefab</Prefab>	
+	<SecondaryOptions>
+	  <CaseConfigOption>
+	      <Name>Tension Pneumo</Name>
+		  <Enabled>false</Enabled>		  
+          <Prefab>TensionPneumoSecondaryPrefab</Prefab>	
+	  </CaseConfigOption>	
+    </SecondaryOptions>
+  </InjuryInfo>
+  <InjuryInfo>
+    <Name>Tension Pneumo</Name>
+	<Prefab>TensionPneumoPrimaryPrefab</Prefab>	
+    <SecondaryOptions>
+	  <CaseConfigOption>
+	      <Name>Pelvic Fracture</Name>
+		  <Enabled>true</Enabled>		  
+          <Prefab>PelvicFracturePrefab</Prefab>	
+	  </CaseConfigOption>	
+    </SecondaryOptions>
+  </InjuryInfo>
+  <InjuryInfo>
+    <Name>Trauma Case 4</Name>
+	<Prefab>Trauma04PrimaryPrefab</Prefab>	
+  </InjuryInfo>
+  <InjuryInfo>
+    <Name>Splenic Injury</Name>
+	<Prefab>SplenicInjuryPrimaryPrefab</Prefab>	
+    <SecondaryOptions>
+	  <CaseConfigOption>
+	      <Name>Pelvic Fracture</Name>
+		  <Enabled>true</Enabled>		  
+          <Prefab>PelvicFracturePrefab</Prefab>	
+	  </CaseConfigOption>	
+	  <CaseConfigOption>
+	      <Name>Head Contusion</Name>
+		  <Enabled>true</Enabled>
+		  <Prefab>HeadContusionPrefab</Prefab>
+	  </CaseConfigOption>	
+    </SecondaryOptions>
+  </InjuryInfo>
+  <InjuryInfo>
+    <Name>Broken Nose</Name>
+	<Prefab>BrokenNose</Prefab>	
+    <SecondaryOptions>
+	  <CaseConfigOption>
+	      <Name>Bloody Nose</Name>
+		  <Enabled>true</Enabled>		  
+          <Prefab>BloodyNose</Prefab>	
+	  </CaseConfigOption>	
+	  <CaseConfigOption>
+	      <Name>Black Eye</Name>
+		  <Enabled>true</Enabled>
+	  </CaseConfigOption>	
+	  <CaseConfigOption>
+	      <Name>Oozing Puss</Name>
+		  <Enabled>true</Enabled>
+	  </CaseConfigOption>	
+	  <CaseConfigOption>
+	      <Name>Gangrenous Lesions</Name>
+		  <Enabled>true</Enabled>
+	  </CaseConfigOption>	
+    </SecondaryOptions>
+  </InjuryInfo>
+  <InjuryInfo>
+    <Name>Broken Leg</Name>
+    <SecondaryOptions>
+	  <CaseConfigOption>
+	      <Name>Protruding Bone</Name>
+		  <Enabled>true</Enabled>
+	  </CaseConfigOption>	
+	  <CaseConfigOption>
+	      <Name>Screaming Patient</Name>
+		  <Enabled>true</Enabled>
+	  </CaseConfigOption>	
+    </SecondaryOptions>
+  </InjuryInfo>
+</ArrayOfInjuryInfo>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssessmentList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Name>OBJECTIVE:RESUSCITATION</Name>
+        <Objective>Proper Resuscitation</Objective>
+        <NoteSucess>Object Complete.</NoteSucess>
+        <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+        <SuccessPercentage>1.0</SuccessPercentage>
+        <AlwaysScore>true</AlwaysScore>
+        <ActivateOnComplete>
+          <!--<string>OBJECTIVE:TREATMENT</string>-->
+        </ActivateOnComplete>
+        <Active>true</Active>
+        <Items>
+       <!--- Need to account for a player who orders 2 single units of saline to make the equivalent of ordering 2 units at once -->
+            <AssessmentItem>
+            <InteractionName>ORDER:SALINE:1IV</InteractionName>
+			<Note>Administer Saline</Note>			
+            <Score>20</Score>
+            <ScoreMax>20</ScoreMax>
+            <CountRequired>2</CountRequired>
+             <Substitutes>ORDER:SALINE:2IV</Substitutes>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+            
+           <AssessmentItem>
+            <InteractionName>ORDER:SALINE:2IV</InteractionName>
+			<Note>Administer Saline</Note>			
+            <Score>20</Score>
+            <ScoreMax>20</ScoreMax>
+            <Substitutes>ORDER:SALINE:1IV</Substitutes>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>       
+        </Items>
+</AssessmentList>			
+

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssessmentList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Name>OBJECTIVE:TREATMENT</Name>
+        <Objective>Proper Treatment</Objective>
+        <NoteSucess>Object Complete.</NoteSucess>
+        <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+        <SuccessPercentage>1.0</SuccessPercentage>
+        <AlwaysScore>true</AlwaysScore>
+        <Active>true</Active>
+        <Items>
+           <AssessmentItem>
+            <InteractionName>INTUBATE:PATIENT</InteractionName>
+			<Note>Intubate the Patient</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <InOrder>false</InOrder>
+            <DeltaTime>10</DeltaTime>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          
+          <AssessmentItem>
+            <InteractionName>MED:PROPOFOL</InteractionName>
+			<Note>Sedate the Patient</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          
+          <AssessmentItem>
+            <InteractionName>CONNECT:VENT</InteractionName>
+			<Note>Connect the Ventilator</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          
+          <AssessmentItem>
+            <InteractionName>ORDER:MANNITOL</InteractionName>
+			<Note>Administer Osmotic Therapy</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <Substitutes>ORDER:HYPERTONIC:2IV</Substitutes>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+       
+          <AssessmentItem>
+            <InteractionName>CHECK:BLOODGAS</InteractionName>
+			<Note>Check Blood Gas Reading</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          
+          <AssessmentItem>
+            <InteractionName>ORDER:LAB:PTPTT</InteractionName>
+			<Note>Check Coags</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <Substitutes>ORDER:LAB:PTINR,ORDER:LAB:PLATELETS</Substitutes>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+
+        <AssessmentItem>
+            <InteractionName>CALL:NEURO</InteractionName>
+			<Note>Consult a Neurosurgeon</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+        
+        <AssessmentItem>
+            <InteractionName>PLAYER:PATIENT:ELEVATE:HEAD</InteractionName>
+			<Note>Elevate Head of Bed</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+         
+         <AssessmentItem>
+            <InteractionName>PLAYER:PLACE:ICPMONITOR</InteractionName>
+			<Note>Place Intracranial Pressure Monitor</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+        
+        <AssessmentItem>
+            <InteractionName>PLAYER:PATIENT:ADMIT:ICU</InteractionName>
+			<Note>Obtain an ICU Bed</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+        </Items>
+</AssessmentList>			
+

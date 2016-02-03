@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssessmentList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Name>OBJECTIVE:RESUSCITATION</Name>
+        <Objective>Proper Resuscitation</Objective>
+        <NoteSucess>Object Complete.</NoteSucess>
+        <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+        <SuccessPercentage>1.0</SuccessPercentage>
+        <AlwaysScore>true</AlwaysScore>
+        <ActivateOnComplete>
+          <!--<string>OBJECTIVE:TREATMENT</string>-->
+        </ActivateOnComplete>
+        <Active>true</Active>
+        <Items>
+       <!--- No traditional fluids needed because mannitol / hypertonic saline is considered a treatment for this case -->
+                 
+        </Items>
+</AssessmentList>			
+

@@ -1,0 +1,775 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: HOME-stand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100004
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400004}
+  - 114: {fileID: 11400004}
+  m_Layer: 0
+  m_Name: HOME-stand
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400006}
+  - 114: {fileID: 11400006}
+  m_Layer: 0
+  m_Name: CLIPBOARD:PUTDOWN
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100008
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400008}
+  - 114: {fileID: 11400008}
+  m_Layer: 0
+  m_Name: pickup_boardClipInteractive01-stand--clipboardPickup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400010}
+  - 114: {fileID: 11400010}
+  m_Layer: 0
+  m_Name: CLIPBOARD:PICKUP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400012}
+  - 114: {fileID: 11400014}
+  m_Layer: 0
+  m_Name: pickup_boardClipInteractive01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100014
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400014}
+  - 33: {fileID: 3300000}
+  - 23: {fileID: 2300000}
+  m_Layer: 0
+  m_Name: prop_boardClipInteractive01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100016
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400016}
+  - 114: {fileID: 11400012}
+  m_Layer: 0
+  m_Name: fab_boardClipInteractive
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100018
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400018}
+  - 114: {fileID: 11400016}
+  m_Layer: 0
+  m_Name: pickup_boardClipInteractive01-clipboardStand-clipboardPutdown-
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100026
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400026}
+  - 33: {fileID: 3300004}
+  - 23: {fileID: 2300004}
+  - 95: {fileID: 9500000}
+  m_Layer: 0
+  m_Name: prop_pen01
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400010}
+  m_RootOrder: 0
+--- !u!4 &400004
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400006}
+  m_RootOrder: 0
+--- !u!4 &400006
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: .999999762, y: .999999762, z: .999999881}
+  m_Children:
+  - {fileID: 400004}
+  - {fileID: 400018}
+  m_Father: {fileID: 400016}
+  m_RootOrder: 2
+--- !u!4 &400008
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400010}
+  m_RootOrder: 1
+--- !u!4 &400010
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100010}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: .999999762, y: .999999762, z: .999999881}
+  m_Children:
+  - {fileID: 400000}
+  - {fileID: 400008}
+  m_Father: {fileID: 400016}
+  m_RootOrder: 1
+--- !u!4 &400012
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100012}
+  m_LocalRotation: {x: 0, y: -1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400016}
+  m_RootOrder: 3
+--- !u!4 &400014
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100014}
+  m_LocalRotation: {x: .707106829, y: 0, z: 0, w: -.707106829}
+  m_LocalPosition: {x: .0299999993, y: .912500024, z: -.620000005}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400016}
+  m_RootOrder: 0
+--- !u!4 &400016
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100016}
+  m_LocalRotation: {x: 0, y: .707106829, z: 0, w: -.707106829}
+  m_LocalPosition: {x: .0512599945, y: 0, z: -4.40550518}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 400014}
+  - {fileID: 400010}
+  - {fileID: 400006}
+  - {fileID: 400012}
+  - {fileID: 400026}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &400018
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100018}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400006}
+  m_RootOrder: 1
+--- !u!4 &400026
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100026}
+  m_LocalRotation: {x: 0, y: -.0436193869, z: 0, w: .999048233}
+  m_LocalPosition: {x: -.209999993, y: .91900003, z: -.600000024}
+  m_LocalScale: {x: .00999999978, y: .00999999978, z: .00999999978}
+  m_Children: []
+  m_Father: {fileID: 400016}
+  m_RootOrder: 4
+--- !u!23 &2300000
+Renderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100014}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: 87cbea236ee97b64c8c4c7de3fef5d3b, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!23 &2300004
+Renderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100026}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 2100000, guid: a57595b43a9e0414bad56a11229e77a9, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 1
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &3300000
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100014}
+  m_Mesh: {fileID: 4300000, guid: db08bee5061e5444aa3f7a7648751632, type: 3}
+--- !u!33 &3300004
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100026}
+  m_Mesh: {fileID: 4300006, guid: 34dfc014cc9add8478ac875e1532920a, type: 3}
+--- !u!95 &9500000
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100026}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: f385a56c5823d3d4eb7c9fe94bd2bda7, type: 3}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 9
+  role: 
+  stringParam: clipboardStand
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: HOME
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 9
+  role: 
+  stringParam: stand
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: HOME
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee9a3fa18f688fc45967e679d9579e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerStrings:
+  - CLIPBOARD:PUTDOWN
+  triggerOnStatus: 0
+  startingArgs: 
+  scriptLines:
+  - {fileID: 11400016}
+  - {fileID: 11400004}
+  abortBranch: []
+  errorBranch: []
+  owningRole: 
+  roles: []
+  actorObjects: []
+  roleKeyString:
+  - hasclipboard=True
+  autoExecuteInterval: -1
+  autoExecuteTimer: 0
+  autoExecuteProbability: 0
+  interactionSet:
+    Name: 
+    Maps: []
+    ScriptsEnter: []
+    ScriptsExit: []
+    ScriptsAbort: []
+    ValidInteractors: []
+  commandVariation:
+    Cmd: 
+    CmdString: 
+    Variations: []
+  hasExecuted: 0
+  callbackConfirmVoice: 0
+  currentLine: 0
+  nextLineLabel: 
+  waitingForDebugger: 0
+  singleStepping: 0
+  caller: {fileID: 0}
+  myOI: {fileID: 0}
+  myObject: {fileID: 0}
+  AddToMenu: 1
+  menuOrder: 0
+  queueCount: 0
+  item: CLIPBOARD:PUTDOWN
+  prettyname: Put Clipboard Away
+  response: You clicked me
+  response_title: RESPONSE TITLE
+  note: 
+  tooltip: Click Me
+  sound: AUDIO:SOUND
+  task: OBJECT:MENUCLICK
+  log: 1
+  readyState: 0
+  startPriority: 4
+  cancellable: 0
+  skillVector: []
+  extraCost: 0
+  prereq: []
+  category: []
+  param: []
+  debug: 0
+--- !u!114 &11400008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 9
+  role: 
+  stringParam: stand
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: pickup_boardClipInteractive01
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: hasclipboard=True
+  postAttributes: 
+  stringParam2: 
+  stringParam3: clipboardPickUp
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11400010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee9a3fa18f688fc45967e679d9579e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerStrings:
+  - CLIPBOARD:PICKUP
+  triggerOnStatus: 0
+  startingArgs: 
+  scriptLines:
+  - {fileID: 11400008}
+  - {fileID: 11400000}
+  abortBranch: []
+  errorBranch: []
+  owningRole: 
+  roles: []
+  actorObjects: []
+  roleKeyString:
+  - '!hasclipboard=True & !Patient.tutorial=True'
+  autoExecuteInterval: -1
+  autoExecuteTimer: 0
+  autoExecuteProbability: 1
+  interactionSet:
+    Name: 
+    Maps: []
+    ScriptsEnter: []
+    ScriptsExit: []
+    ScriptsAbort: []
+    ValidInteractors: []
+  commandVariation:
+    Cmd: 
+    CmdString: 
+    Variations: []
+  hasExecuted: 0
+  callbackConfirmVoice: 0
+  currentLine: 0
+  nextLineLabel: 
+  waitingForDebugger: 0
+  singleStepping: 0
+  caller: {fileID: 0}
+  myOI: {fileID: 0}
+  myObject: {fileID: 0}
+  AddToMenu: 1
+  menuOrder: 0
+  queueCount: 0
+  item: CLIPBOARD:PICKUP
+  prettyname: Get Clipboard
+  response: You clicked me
+  response_title: RESPONSE TITLE
+  note: 
+  tooltip: Click Me
+  sound: AUDIO:SOUND
+  task: OBJECT:MENUCLICK
+  log: 1
+  readyState: 0
+  startPriority: 4
+  cancellable: 0
+  skillVector: []
+  extraCost: 0
+  prereq: []
+  category: []
+  param: []
+  debug: 0
+--- !u!114 &11400012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2780bf6f09f28e74a8a942d59a585f39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveToParentOnDrop: 1
+  dropTargetName: ScribeNurse
+  scripts:
+  - {fileID: 11400010}
+  - {fileID: 11400006}
+  startupScript: {fileID: 0}
+  register: 0
+  prettyname: 
+  XMLName: ScriptedObjects/fab_boardClipInteractive01.xml
+  XMLDirectory: Assets/Resources/XML/
+  assetBundleInfo:
+    bundleName: 
+    stage: 0
+    assetName: 
+  voiceList:
+    Name: 
+    VoiceMaps: []
+  voiceLists: []
+  vitalsBehaviors: []
+  scanRecords: []
+  executePriorityLock: -1
+  lastScriptExecuted: {fileID: 0}
+  lastScriptExecutedTime: 0
+--- !u!114 &11400014
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48b9aafe04e42354e8548137cedb876e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  debugMe: 0
+  isNav: 1
+  initiallyLocked: 0
+  lockRadius: .439999998
+  lockingObject: {fileID: 0}
+--- !u!114 &11400016
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 9
+  role: 
+  stringParam: clipboardStand
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: pickup_boardClipInteractive01
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: hasclipboard=False
+  stringParam2: 
+  stringParam3: clipboardPutDown
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100016}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

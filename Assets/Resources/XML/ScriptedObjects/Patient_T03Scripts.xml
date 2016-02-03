@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<ScriptedObjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <unityObjectName>Patient_T03Scripts</unityObjectName>
+  <moveToParentOnDrop>true</moveToParentOnDrop>
+  <dropTargetName>Patient</dropTargetName>
+  <scripts>
+    <InteractionScriptInfo>
+      <unityObjectName>FlagTensionPneumo</unityObjectName>
+      <triggerStrings>
+        <string>EFFECT:PATIENT:TENSIONPNEUMO:ONSET</string>
+      </triggerStrings>
+      <triggerOnStatus>true</triggerOnStatus>
+      <startingArgs />
+      <scriptLines>
+        <ScriptedActionInfo>
+          <unityObjectName>CatchEFFECT:TENSIONPNEUMO:ONSET</unityObjectName>
+          <comment>when the Onset behavior starts, set our attribute</comment>
+          <objectName />
+          <type>wait</type>
+          <role />
+          <stringParam />
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName />
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes>Patient.tensionpneumo=True</preAttributes>
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+      </scriptLines>
+      <roles />
+      <roleKeyString />
+      <autoExecuteInterval>-1</autoExecuteInterval>
+      <autoExecuteProbability>0</autoExecuteProbability>
+      <AddToMenu>true</AddToMenu>
+      <menuOrder>0</menuOrder>
+      <item>FlagTensionPneumo</item>
+      <prettyname>Text for the Menu</prettyname>
+      <response>You clicked me</response>
+      <response_title>RESPONSE TITLE</response_title>
+      <note />
+      <tooltip>Click Me</tooltip>
+      <sound>AUDIO:SOUND</sound>
+      <task>OBJECT:MENUCLICK</task>
+      <log>true</log>
+      <readyState>unknown</readyState>
+      <startPriority>4</startPriority>
+      <cancellable>false</cancellable>
+      <skillVector />
+      <extraCost>0</extraCost>
+      <prereq />
+      <category />
+      <param />
+      <debug>false</debug>
+    </InteractionScriptInfo>
+  </scripts>
+  <startupScriptName />
+  <register>false</register>
+  <prettyname>Patient</prettyname>
+  <XMLName>ScriptedObjects/Patient_T03Scripts.xml</XMLName>
+  <XMLDirectory>Assets/Resources/XML/</XMLDirectory>
+  <assetBundleInfo>
+    <bundleName />
+    <stage>0</stage>
+    <assetName />
+  </assetBundleInfo>
+  <voiceList>
+    <Name>Patient</Name>
+    <VoiceMaps>
+      <VoiceMap>
+        <Tag>VOICE:PATIENT:ANSWERNAME</Tag>
+        <Audio>Audio/missingAudio</Audio>
+        <Text>Drunken response</Text>
+        <LookAt />
+        <Dynamic>false</Dynamic>
+      </VoiceMap>
+      <VoiceMap>
+        <Tag>VOICE:PATIENT:ANSWERCAUSE</Tag>
+        <Audio>Audio/missingAudio</Audio>
+        <Text />
+        <LookAt />
+        <Dynamic>false</Dynamic>
+      </VoiceMap>
+      <VoiceMap>
+        <Tag>VOICE:PATIENT:ANSWERPAIN</Tag>
+        <Audio>Audio/missingAudio</Audio>
+        <Text />
+        <LookAt />
+        <Dynamic>false</Dynamic>
+      </VoiceMap>
+    </VoiceMaps>
+  </voiceList>
+  <vitalsBehaviors>
+    <VitalsBehavior>
+      <name>TensionPneumoInitial</name>
+      <timeOfEffect>180</timeOfEffect>
+      <duration>0</duration>
+      <percentage>0</percentage>
+      <stackable>false</stackable>
+      <CallbackParams />
+      <type>target</type>
+      <HR>-1</HR>
+      <BPSYS>-1</BPSYS>
+      <BPDIA>-1</BPDIA>
+      <SP>94</SP>
+      <TEMP>-1</TEMP>
+      <RESP>26</RESP>
+      <STOP_HR>-1</STOP_HR>
+      <STOP_BPSYS>-1</STOP_BPSYS>
+      <STOP_BPDIA>-1</STOP_BPDIA>
+      <STOP_SP>90</STOP_SP>
+      <STOP_TEMP>-1</STOP_TEMP>
+      <STOP_RESP>26</STOP_RESP>
+      <heartbeatMod>-1</heartbeatMod>
+      <heartbeatModStopAt>-1</heartbeatModStopAt>
+      <diastolicMod>-1</diastolicMod>
+      <diastolicModStopAt>-1</diastolicModStopAt>
+      <systolicMod>-1</systolicMod>
+      <systolicModStopAt>-1</systolicModStopAt>
+      <spo2Mod>-1</spo2Mod>
+      <spo2ModStopAt>-1</spo2ModStopAt>
+      <tempMod>-1</tempMod>
+      <tempModStopAt>-1</tempModStopAt>
+      <respirationMod>-1</respirationMod>
+      <respirationModStopAt>-1</respirationModStopAt>
+      <heartbeatType />
+      <triggered>EFFECT:PATIENT:TENSIONPNEUMO:INITIAL</triggered>
+      <createEffects>
+        <VBEffectLogic>
+          <behaviorName>TensionPneumoOnset</behaviorName>
+          <logic>
+            <type>ONREMOVE</type>
+            <stat>HEARTBEAT</stat>
+            <value>0</value>
+          </logic>
+          <endOnEffect>false</endOnEffect>
+        </VBEffectLogic>
+      </createEffects>
+      <removeEffects />
+      <OnCreateCallback />
+      <OnRemoveCallback />
+      <justAdded>false</justAdded>
+    </VitalsBehavior>
+    <VitalsBehavior>
+      <name>TensionPneumoOnset</name>
+      <timeOfEffect>360</timeOfEffect>
+      <duration>0</duration>
+      <percentage>0</percentage>
+      <stackable>false</stackable>
+      <CallbackParams />
+      <type>target</type>
+      <HR>-1</HR>
+      <BPSYS>0</BPSYS>
+      <BPDIA>0</BPDIA>
+      <SP>79</SP>
+      <TEMP>-1</TEMP>
+      <RESP>30</RESP>
+      <STOP_HR>0</STOP_HR>
+      <STOP_BPSYS>0</STOP_BPSYS>
+      <STOP_BPDIA>0</STOP_BPDIA>
+      <STOP_SP>0</STOP_SP>
+      <STOP_TEMP>0</STOP_TEMP>
+      <STOP_RESP>0</STOP_RESP>
+      <heartbeatMod>0</heartbeatMod>
+      <heartbeatModStopAt>0</heartbeatModStopAt>
+      <diastolicMod>0</diastolicMod>
+      <diastolicModStopAt>0</diastolicModStopAt>
+      <systolicMod>0</systolicMod>
+      <systolicModStopAt>0</systolicModStopAt>
+      <spo2Mod>0</spo2Mod>
+      <spo2ModStopAt>0</spo2ModStopAt>
+      <tempMod>0</tempMod>
+      <tempModStopAt>0</tempModStopAt>
+      <respirationMod>-1</respirationMod>
+      <respirationModStopAt>-1</respirationModStopAt>
+      <heartbeatType />
+      <triggered>EFFECT:PATIENT:TENSIONPNEUMO:ONSET</triggered>
+      <createEffects />
+      <removeEffects />
+      <OnCreateCallback />
+      <OnRemoveCallback />
+      <justAdded>false</justAdded>
+    </VitalsBehavior>
+    <VitalsBehavior>
+      <name>TensionPneumoEnd</name>
+      <timeOfEffect>1</timeOfEffect>
+      <duration>0</duration>
+      <percentage>0</percentage>
+      <stackable>false</stackable>
+      <CallbackParams />
+      <type>target</type>
+      <HR>-1</HR>
+      <BPSYS>120</BPSYS>
+      <BPDIA>80</BPDIA>
+      <SP>93</SP>
+      <TEMP>-1</TEMP>
+      <RESP>20</RESP>
+      <STOP_HR>-1</STOP_HR>
+      <STOP_BPSYS>-1</STOP_BPSYS>
+      <STOP_BPDIA>-1</STOP_BPDIA>
+      <STOP_SP>-1</STOP_SP>
+      <STOP_TEMP>-1</STOP_TEMP>
+      <STOP_RESP>-1</STOP_RESP>
+      <heartbeatMod>-1</heartbeatMod>
+      <heartbeatModStopAt>-1</heartbeatModStopAt>
+      <diastolicMod>-1</diastolicMod>
+      <diastolicModStopAt>-1</diastolicModStopAt>
+      <systolicMod>-1</systolicMod>
+      <systolicModStopAt>-1</systolicModStopAt>
+      <spo2Mod>-1</spo2Mod>
+      <spo2ModStopAt>-1</spo2ModStopAt>
+      <tempMod>-1</tempMod>
+      <tempModStopAt>-1</tempModStopAt>
+      <respirationMod>-1</respirationMod>
+      <respirationModStopAt>-1</respirationModStopAt>
+      <heartbeatType />
+      <triggered>EFFECT:PATIENT:TENSIONPNEUMO:END</triggered>
+      <createEffects />
+      <removeEffects>
+        <VBEffectLogic>
+          <behaviorName>TensionPneumoInitial</behaviorName>
+          <logic>
+            <type>IMMEDIATE</type>
+            <stat>HEARTBEAT</stat>
+            <value>0</value>
+          </logic>
+          <endOnEffect>false</endOnEffect>
+        </VBEffectLogic>
+        <VBEffectLogic>
+          <behaviorName>TensionPneumoOnset</behaviorName>
+          <logic>
+            <type>IMMEDIATE</type>
+            <stat>HEARTBEAT</stat>
+            <value>0</value>
+          </logic>
+          <endOnEffect>false</endOnEffect>
+        </VBEffectLogic>
+      </removeEffects>
+      <OnCreateCallback />
+      <OnRemoveCallback />
+      <justAdded>false</justAdded>
+    </VitalsBehavior>
+  </vitalsBehaviors>
+</ScriptedObjectInfo>

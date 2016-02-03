@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ObjectInteractionInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>PlayerTreatment</Name>
+  <DialogTitle>TREATMENT</DialogTitle>
+  <DialogItems>
+    <!--<string>PLAYER:BLEEDING:TRUE</string>
+    <string>PLAYER:BLEEDING:FALSE</string>
+    <string>PLAYER:EXAM:ABDOMEN:TRUE</string>
+    <string>PLAYER:EXAM:ABDOMEN:FALSE</string>
+    <string>PLAYER:EXAM:PELVIC:TRUE</string>
+    <string>PLAYER:EXAM:PELVIC:FALSE</string>-->
+    <string>PLAYER:XRAY:CHEST:TRUE</string>
+    <string>PLAYER:XRAY:CHEST:FALSE</string>
+    <!--<string>PLAYER:XRAY:PELVIC:TRUE</string>
+    <string>PLAYER:XRAY:PELVIC:FALSE</string>-->
+    <string>PLAYER:FAST:PERIHEPATIC:TRUE</string>
+    <string>PLAYER:FAST:PERIHEPATIC:FALSE</string>
+    <string>PLAYER:FAST:PERISPLENIC:TRUE</string>
+    <string>PLAYER:FAST:PERISPLENIC:FALSE</string>
+    <string>PLAYER:FAST:PELVIS:TRUE</string>
+    <string>PLAYER:FAST:PELVIS:FALSE</string>
+    <string>PLAYER:FAST:PERICARDIUM:TRUE</string>
+    <string>PLAYER:FAST:PERICARDIUM:FALSE</string>
+    <!--<string>PLAYER:DPL:TRUE</string>
+    <string>PLAYER:DPL:FALSE</string>-->
+  </DialogItems>
+</ObjectInteractionInfo>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfPatientState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PatientState>
+    <Name>Normal</Name>
+    <HR>65</HR>
+    <BP_SYS>120</BP_SYS>
+    <BP_DIA>80</BP_DIA>
+    <SP>96</SP>
+    <TEMP>98.6</TEMP>
+	<RESP>18.0</RESP>
+  </PatientState>
+  <PatientState>
+    <Name>Crashing</Name>
+    <HR>120</HR>
+    <BP_SYS>89</BP_SYS>
+    <BP_DIA>50</BP_DIA>
+    <SP>96</SP>
+    <TEMP>98.6</TEMP>
+	<RESP>18.0</RESP>
+  </PatientState>
+  <PatientState>
+    <Name>Dead</Name>
+    <HR>0</HR>
+    <BP_SYS>0</BP_SYS>
+    <BP_DIA>0</BP_DIA>
+    <SP>0</SP>
+    <TEMP>0</TEMP>
+	<RESP>0.0</RESP>
+  </PatientState>
+</ArrayOfPatientState>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ObjectInteractionInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Patient</Name>
+  <!-- Patient.xml represents interactions that can be performed from outer rail, non-site specific-->
+  <DialogTitle>Patient</DialogTitle>
+  <DialogItems>
+    <string>PLAYER:ASKNAME</string>
+    <!-- Move to Intubation tubing after complete -->
+    <string>CHECK:ETCO2</string>
+    <string>PATIENT:EXAMINE</string>
+    <string>PATIENT:EXPOSE</string>
+    <string>PATIENT:COVER</string>
+    <string>PATIENT:SKINTONE</string>
+    <string>PATIENT:SKINTEMP</string>
+    <string>EXAM:BLEEDING</string>
+    <string>PATIENT:LOGROLL</string>
+    <string>CHECK:REACTION</string>
+    <string>CHECK:REFLEXES</string>
+  </DialogItems>
+</ObjectInteractionInfo>

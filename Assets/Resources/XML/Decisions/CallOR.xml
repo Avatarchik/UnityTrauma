@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DecisionMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>CallOR</Name>
+  <StartState>State1</StartState>
+  <Interval>1</Interval>
+  <DecisionStates>
+    <DecisionState>
+      <Name>State1</Name>
+      <DecisionCondition>
+        <Name>CallOR</Name>
+        <Tests>
+          <string>interact:"CALL:OR:COMPLETE"</string>
+        </Tests>
+      </DecisionCondition>
+      <DecisionAction>
+        <Name>Action1</Name>
+        <Actions>
+          <string>changestate:Assessment</string>
+        </Actions>
+      </DecisionAction>
+    </DecisionState>
+  </DecisionStates>
+</DecisionMap>

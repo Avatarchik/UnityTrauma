@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssessmentList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Name>OBJECTIVE:BREATHING</Name>
+        <Objective>Assess Breathing</Objective>
+        <NoteSucess>Object Complete.</NoteSucess>
+        <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+        <SuccessPercentage>1.0</SuccessPercentage>
+        <AlwaysScore>true</AlwaysScore>
+        <ActivateOnComplete>
+          <!--<string>OBJECTIVE:CIRCULATION</string>-->
+        </ActivateOnComplete>
+        <Active>true</Active>
+        <Items>
+          <AssessmentItem>
+            <InteractionName>CHECK:BREATHE</InteractionName>
+			<Note>Check Breath Sounds</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>EXAMINE:CHESTRISE</InteractionName>
+			<Note>Examine Chest Rise</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>MED:PROPOFOL</InteractionName>
+			<Note>Administer Propofol</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>CONNECT:VENT</InteractionName>
+			<Note>Connect the Ventilator</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PALPATE:TRACHEA</InteractionName>
+			<Note>Palpate the Trachea</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>VENT:SET:AIRFLOW</InteractionName>
+			<Note>Set the Correct Airflow</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <!-- <AssessmentItem>
+            <InteractionName>EXAM:CHEST</InteractionName>
+			<Note>Examine the Chest</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>CALL:XRAY:CHEST</InteractionName>
+			<Note>Call for a Chest XRay</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLAYER:XRAY:ETT:TRUE</InteractionName>
+			<Note>Announce XRay ETT</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLAYER:XRAY:CHEST:FALSE</InteractionName>
+			<Note>Announce Bad Chest Results</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem> -->
+		</Items>
+</AssessmentList>			
+

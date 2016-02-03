@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DecisionMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Map1</Name>
+  <StartState>State1</StartState>
+  <Interval>1</Interval>
+  <DecisionStates>
+    <DecisionState>
+      <Name>State1</Name>
+      <SuccessState>State2</SuccessState>
+      <DecisionCondition>
+        <Name>ONSTART</Name>
+        <Tests>
+          <!--<string>interact:"PREP:INTUBATION"</string>-->
+        </Tests>
+      </DecisionCondition>
+      <DecisionAction>
+        <Name>Action1</Name>
+        <Actions>
+          <!--<string>interact:"PN:INIT"</string>-->
+          <!--<string>var:Patient.SEEK_RATE equals:30</string>
+          <string>var:Patient.VITAL_STATE equals:Crashing</string>
+          <string>dialog title:"OH NO!!" text:"You crashed the patient!  You better do something STAT!" timeout:5.0</string>-->
+        </Actions>
+      </DecisionAction>
+    </DecisionState>
+    <DecisionState>
+      <Name>State2</Name>
+      <SuccessState>State1</SuccessState>
+      <DecisionCondition>
+        <Name>RECOVER</Name>
+        <Tests>
+          <!--<string>interact:"TASK:INTUBATE:PATIENT"</string>-->
+        </Tests>
+      </DecisionCondition>
+      <DecisionAction>
+        <Name>Action1</Name>
+        <Actions>
+          <!--<string>interact:"IV:BLOOD"</string>-->
+          <!--<string>var:Patient.SEEK_RATE equals:10</string>
+          <string>var:Patient.VITAL_STATE equals:Normal</string>
+          <string>dialog title:"Good Job!!" text:"The patient is going to live (unless you do something else stupid)!!" timeout:5.0</string>-->
+        </Actions>
+      </DecisionAction>
+    </DecisionState>
+  </DecisionStates>
+</DecisionMap>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssessmentList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Name>OBJECTIVE:RESUSCITATION</Name>
+        <Objective>Proper Resuscitation</Objective>
+        <NoteSucess>Object Complete.</NoteSucess>
+        <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+        <SuccessPercentage>1.0</SuccessPercentage>
+        <AlwaysScore>true</AlwaysScore>
+        <ActivateOnComplete>
+          <!--<string>OBJECTIVE:TREATMENT</string>-->
+        </ActivateOnComplete>
+        <Active>true</Active>
+        <Items>
+		  <AssessmentItem>
+            <InteractionName>ORDER:BLOOD:2IV</InteractionName>
+			<Note>Administer 2 Units of Blood</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <Substitutes>ORDER:BLOOD:2PR, ORDER:BLOOD:2RI</Substitutes>
+            <EvaluateOnCount>1</EvaluateOnCount>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          <!--- Dr. Sava would like this to be dependent on the current vitals. As in, if they are tanking require a second round of blood. Not sure if we can do this -->
+          <AssessmentItem>
+            <InteractionName>ORDER:BLOOD:2IV</InteractionName>
+			<Note>Administer 2 Additional Units of Blood</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <Substitutes>ORDER:BLOOD:2PR, ORDER:BLOOD:2RI</Substitutes>
+            <EvaluateOnCount>2</EvaluateOnCount>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+        </Items>
+</AssessmentList>			
+

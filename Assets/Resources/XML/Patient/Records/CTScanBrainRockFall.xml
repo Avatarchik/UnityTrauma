@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<ScanRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>brain</Name>
+  <Type>CT</Type>
+  <Filename>CTImagesBrainRockFall.xml</Filename>
+  <Thumbnail>Scans/SavaScans/CT.Brain.Herniation/CT.Brain.Herniation.001</Thumbnail>
+  <Region>Brain</Region>
+  <assessmentCommands>
+	  <CommandVariation>
+		<Cmd>BRAIN:HEMORRHAGE:SUBARACHNOID:RIGHT</Cmd>
+		<CmdString>Right, Subarachnoid hemorrhage</CmdString>
+		<Variations>
+		  <string>Right, Subarachnoid hemorrhage</string>
+		  <string>Subarachnoid hemorrhage</string>
+		  <string>hemorrhage</string>
+		</Variations>
+	  </CommandVariation>
+	  <CommandVariation>
+		<Cmd>BRAIN:EDEMA:DIFFUSE</Cmd>
+		<CmdString>diffuse edema</CmdString>
+		<Variations>
+		  <string>diffuse edema</string>
+		  <string>edema</string>
+		</Variations>
+	  </CommandVariation>
+	  <CommandVariation>
+		<Cmd>BRAIN:VENTRICLES:COLLAPSED</Cmd>
+		<CmdString>collapsed ventricles</CmdString>
+		<Variations>
+		  <string>collapsed ventricles</string>
+		</Variations>
+	  </CommandVariation>
+	  <CommandVariation>
+		<Cmd>BRAIN:HERNIATION:IMPENDING</Cmd>
+		<CmdString>impending herniation</CmdString>
+		<Variations>
+		  <string>impending herniation</string>
+		</Variations>
+	  </CommandVariation>
+  </assessmentCommands>
+</ScanRecord>

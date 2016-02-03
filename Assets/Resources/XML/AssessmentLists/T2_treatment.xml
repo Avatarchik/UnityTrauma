@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssessmentList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Name>OBJECTIVE:TREATMENT</Name>
+        <Objective>Proper Treatment</Objective>
+        <NoteSucess>Object Complete.</NoteSucess>
+        <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+        <SuccessPercentage>1.0</SuccessPercentage>
+        <AlwaysScore>true</AlwaysScore>
+        <Active>true</Active>
+        <Items>
+        <AssessmentItem>
+            <InteractionName>ORDER:MORPHINE</InteractionName>
+			<Note>Administer Pain Management</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+            <Substitutes>ORDER:FENTANYL</Substitutes>
+          </AssessmentItem>
+        <AssessmentItem>
+            <InteractionName>CALL:ORTHO</InteractionName>
+			<Note>Consult an Orthopedic Surgeon</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+        <AssessmentItem>
+            <InteractionName>PERFORM:SPLINT</InteractionName>
+			<Note>Splint the Patient's Injury</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+         <AssessmentItem>
+            <InteractionName>PERFORM:LACERATION:REPAIR</InteractionName>
+			<Note>Suture the Patient's Laceration</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+        <AssessmentItem>
+            <InteractionName>PLAYER:PATIENT:ADMIT</InteractionName>
+			<Note>Admit the Patient for Observation</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+        </Items>
+</AssessmentList>			
+

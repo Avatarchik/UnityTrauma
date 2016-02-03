@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssessmentList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Name>OBJECTIVE:SECONDARY</Name>
+        <Objective>Perform any Secondary Survey Required Tasks</Objective>
+        <NoteSucess>Objective Complete.</NoteSucess>
+        <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+        <SuccessPercentage>1.0</SuccessPercentage>
+        <AlwaysScore>true</AlwaysScore>
+        <Active>true</Active>
+        <Items>
+ 		  <AssessmentItem>
+            <InteractionName>PULSE:CAROTID</InteractionName>
+			<Note>Check the Patient's Carotid Pulse</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+            <EvaluateOnCount>1</EvaluateOnCount>
+          </AssessmentItem>
+           <AssessmentItem>
+            <InteractionName>PULSE:RADIAL</InteractionName>
+			<Note>Check the Patient's Radial Pulse</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+            <EvaluateOnCount>1</EvaluateOnCount>
+          </AssessmentItem> 
+           <AssessmentItem>
+            <InteractionName>PULSE:FEMORAL</InteractionName>
+			<Note>Check the Patient's Carotid Pulse</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+            <EvaluateOnCount>1</EvaluateOnCount>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PULSE:PEDAL</InteractionName>
+			<Note>Check the Patient's Pedal Pulse</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+            <EvaluateOnCount>1</EvaluateOnCount>
+          </AssessmentItem>   
+          <!-- Begin AMPLE History -->
+          <AssessmentItem>
+            <InteractionName>PLAYER:AMPLE:A</InteractionName>
+			<Note>Ask about the Patient's Allergies</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLAYER:AMPLE:M</InteractionName>
+			<Note>Ask about the Patient's Medications</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLAYER:AMPLE:P</InteractionName>
+			<Note>Ask about the Patient's Previous Medical History</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLAYER:AMPLE:L</InteractionName>
+			<Note>Ask about the Patient's Last Meal</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLAYER:ASKCAUSE</InteractionName>
+			<Note>Ask about the Patient's Event of Injury</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <Substitutes>PLAYER:AMPLE:E</Substitutes>
+          </AssessmentItem>                                          
+          <!-- Begin Secondary Survey -->
+          <AssessmentItem>
+            <InteractionName>PLAYER:EXAM:HEAD</InteractionName>
+			<Note>Examine the Patient's Head</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+        <AssessmentItem>
+            <InteractionName>PLAYER:EXAM:NEURO</InteractionName>
+			<Note>Examine the Patient's Neurological Status</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <Substitutes>PATIENT:GCS</Substitutes>
+          </AssessmentItem>
+        <AssessmentItem>
+            <InteractionName>PLAYER:EXAM:NECK</InteractionName>
+			<Note>Examine the Patient's Neck</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLAYER:EXAM:CHEST</InteractionName>
+			<Note>Examine the Patient's Chest</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <Substitutes>EXAM:CHEST</Substitutes>
+          </AssessmentItem>
+            <AssessmentItem>
+            <InteractionName>PLAYER:EXAM:ABDOMEN</InteractionName>
+			<Note>Examine the Patient's Abdomen</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLAYER:EXAM:PELVIC</InteractionName>
+			<Note>Perform a Genital Exam</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+           <AssessmentItem>
+            <InteractionName>PLAYER:EXAM:PELVIC:STABLE</InteractionName>
+			<Note>Examine Boney Pelvis</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+        <AssessmentItem>
+            <InteractionName>PLAYER:EXAM:BACK</InteractionName>
+			<Note>Examine the Patient's Back</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+        <AssessmentItem>
+            <InteractionName>PLAYER:EXAM:EXTREMITIES</InteractionName>
+			<Note>Examine the Patient's Extremities</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+
+
+          
+        </Items>
+</AssessmentList>			
+

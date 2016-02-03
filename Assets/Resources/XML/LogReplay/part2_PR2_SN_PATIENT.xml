@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LogRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DateTime>12/3/2012 5:02:51 PM</DateTime>
+  <Items>
+    <string>	&lt;ParamLogItem text="QuickInfoMsg" value="NLU Initialized : 0.04536974 seconds" time="0001"/&gt;</string>
+    <string>	&lt;InteractLogItem text="ProcedureResident" value="PALPATE:BLADDER" time="0012"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PALPATE:BLADDER" time="0012"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:BLADDER:GET:COMPLETE" time="0021"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:BLADDER:REPORT:COMPLETE" time="0023"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PALPATE:BLADDER:COMPLETE" time="0023"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:GRUNT" time="0031"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="WARN:PLAYER" time="0031"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="WARN:PLAYER:COMPLETE" time="0037"/&gt;</string>
+    <string>	&lt;InteractLogItem text="ProcedureResident" value="PERFORM:DPL" time="0124"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PERFORM:DPL" time="0124"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PERFORM:DPL:COMPLETE" time="0124"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PERFORM:DPL:COMPLETE" time="0124"/&gt;</string>
+    <string>	&lt;InteractLogItem text="ProcedureResident" value="PELVIC:WRAP" time="0142"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PELVIC:WRAP" time="0142"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:PELVICWRAP:ON" time="0164"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:WRAP:GET:COMPLETE" time="0175"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:WRAP:REPORT:COMPLETE" time="0176"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:PR:GOHOME:COMPLETE" time="0178"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PELVIC:WRAP:COMPLETE" time="0179"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PELVIC:WRAP:COMPLETE" time="0179"/&gt;</string>
+    <string>	&lt;InteractLogItem text="ProcedureResident" value="CALL:OR" time="0190"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="CALL:OR" time="0190"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:PHONE:GET:COMPLETE" time="0206"/&gt;</string>
+    <string>	&lt;ParamLogItem text="QuickInfoMsg" value="I don't know how to do that" time="0206"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:PHONE:REPORT:COMPLETE" time="0206"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="CALL:OR:COMPLETE" time="0210"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="CALL:OR:COMPLETE" time="0210"/&gt;</string>
+    <string>	&lt;InteractLogItem text="ScribeNurse" value="VITALS:SAO2" time="0234"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:SAO2" time="0234"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:SAO2:COMPLETE" time="0235"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:SAO2:COMPLETE" time="0235"/&gt;</string>
+    <string>	&lt;InteractLogItem text="ScribeNurse" value="VITALS:RESP" time="0256"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:RESP" time="0256"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:RESP:COMPLETE" time="0257"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:RESP:COMPLETE" time="0257"/&gt;</string>
+    <string>	&lt;InteractLogItem text="ScribeNurse" value="VITALS:BP" time="0269"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:BP" time="0269"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:BP:COMPLETE" time="0271"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:BP:COMPLETE" time="0271"/&gt;</string>
+    <string>	&lt;InteractLogItem text="ScribeNurse" value="VITALS:HR" time="0309"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:HR" time="0309"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:HR:COMPLETE" time="0310"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:HR:COMPLETE" time="0310"/&gt;</string>
+    <string>	&lt;InteractLogItem text="ScribeNurse" value="VITALS:ALL" time="0327"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:ALL" time="0327"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:ALL:COMPLETE" time="0327"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="VITALS:ALL:COMPLETE" time="0327"/&gt;</string>
+    <string>	&lt;InteractLogItem text="ScribeNurse" value="CALL:XRAY:CHEST" time="0339"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="CALL:XRAY:CHEST" time="0339"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:PHONE:GET:COMPLETE" time="0355"/&gt;</string>
+    <string>	&lt;InteractLogItem text="XrayTech" value="XRAY:CHEST" time="0355"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="XRAY:CHEST" time="0355"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:PHONE:REPORT:COMPLETE" time="0355"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="CALL:ORTHO:COMPLETE" time="0359"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="CALL:XRAY:CHEST:COMPLETE" time="0359"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:XRAY:EXIT:COMPLETE" time="0360"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:XRAY:PLACE:COMPLETE" time="0376"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:XRAY:SHOOT:COMPLETEXXX" time="0388"/&gt;</string>
+    <string>	&lt;InteractLogItem text="fab_xrayViewer" value="XRAY:VIEWER:ON" time="0390"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="XRAY:VIEWER:ON" time="0390"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="XRAY:VIEWER:ON:COMPLETE" time="0390"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:XRAY:DETACH:COMPLETE" time="0399"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="XRAY:CHEST:COMPLETE" time="0405"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="XRAY:CHEST:COMPLETE" time="0414"/&gt;</string>
+    <string>	&lt;InteractLogItem text="ScribeNurse" value="CALL:XRAY:PELVIC" time="0436"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="CALL:XRAY:PELVIC" time="0436"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:PHONE:GET:COMPLETE" time="0453"/&gt;</string>
+    <string>	&lt;InteractLogItem text="XrayTech" value="XRAY:PELVIC" time="0453"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="XRAY:PELVIC" time="0453"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:PHONE:REPORT:COMPLETE" time="0453"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="CALL:ORTHO:COMPLETE" time="0457"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="CALL:XRAY:PELVIC:COMPLETE" time="0457"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:XRAY:EXIT:COMPLETE" time="0458"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:XRAY:PLACE:COMPLETE" time="0473"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:XRAY:SHOOT:COMPLETEXXX" time="0485"/&gt;</string>
+    <string>	&lt;InteractLogItem text="fab_xrayViewer" value="XRAY:VIEWER:ON" time="0487"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="XRAY:VIEWER:ON" time="0487"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="XRAY:VIEWER:ON:COMPLETE" time="0487"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:XRAY:DETACH:COMPLETE" time="0496"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="XRAY:CHEST:COMPLETE" time="0502"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="XRAY:PELVIC:COMPLETE" time="0507"/&gt;</string>
+    <string>	&lt;InteractLogItem text="Patient" value="PLAYER:ASKNAME" time="0542"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PLAYER:ASKNAME" time="0542"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PLAYER:ASKNAME:COMPLETE" time="0542"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PLAYER:ASKNAME:COMPLETE" time="0542"/&gt;</string>
+    <string>	&lt;InteractLogItem text="Patient" value="CHECK:ETCO2" time="0556"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="CHECK:ETCO2" time="0556"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="CHECK:ETCO2:COMPLETE" time="0557"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="CHECK:ETCO2:COMPLETE" time="0557"/&gt;</string>
+    <string>	&lt;InteractLogItem text="Patient" value="PATIENT:EXAMINE" time="0596"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:EXAMINE" time="0596"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:EXAMINE:COMPLETE" time="0596"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:EXAMINE:COMPLETE" time="0596"/&gt;</string>
+    <string>	&lt;ParamLogItem text="QuickInfoMsg" value="Scenario has been terminated.  Patient has not been stabalized.  Going to assessment screen." time="0600"/&gt;</string>
+    <string>	&lt;InteractLogItem text="Patient" value="PLAYER:ASKNAME" time="0604"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PLAYER:ASKNAME" time="0604"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PLAYER:ASKNAME:COMPLETE" time="0604"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PLAYER:ASKNAME:COMPLETE" time="0604"/&gt;</string>
+    <string>	&lt;InteractLogItem text="Patient" value="PATIENT:EXPOSE" time="0612"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:EXPOSE" time="0612"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:EXPOSE:COMPLETE" time="0612"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:EXPOSE:COMPLETE" time="0612"/&gt;</string>
+    <string>	&lt;InteractLogItem text="Patient" value="PATIENT:COVER" time="0621"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:COVER" time="0621"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:COVER:COMPLETE" time="0621"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:COVER:COMPLETE" time="0621"/&gt;</string>
+    <string>	&lt;InteractLogItem text="Patient" value="PATIENT:SKINTONE" time="0626"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:SKINTONE" time="0626"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:SKINTONE:COMPLETE" time="0626"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:SKINTONE:COMPLETE" time="0626"/&gt;</string>
+    <string>	&lt;InteractLogItem text="Patient" value="PATIENT:SKINTEMP" time="0654"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:SKINTEMP" time="0654"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:SKINTEMP:GET:COMPLETE" time="0662"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:SKINTEMP:REPORT:COMPLETE" time="0662"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:SKINTEMP:COMPLETE" time="0664"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:SKINTEMP:COMPLETE" time="0664"/&gt;</string>
+    <string>	&lt;InteractLogItem text="Patient" value="EXAM:BLEEDING" time="0711"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="EXAM:BLEEDING" time="0711"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="EXAM:BLEEDING:COMPLETE" time="0711"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="EXAM:BLEEDING:COMPLETE" time="0711"/&gt;</string>
+    <string>	&lt;InteractLogItem text="Patient" value="PATIENT:LOGROLL" time="0741"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:LOGROLL" time="0741"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:LOGROLL:COMPLETE" time="0741"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:LOGROLL:COMPLETE" time="0741"/&gt;</string>
+    <string>	&lt;InteractLogItem text="Patient" value="CHECK:REACTION" time="0764"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="CHECK:REACTION" time="0764"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="CHECK:REACTION:COMPLETE" time="0764"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="CHECK:REACTION:COMPLETE" time="0764"/&gt;</string>
+    <string>	&lt;InteractLogItem text="Patient" value="CHECK:REFLEXES" time="0791"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="CHECK:REFLEXES" time="0791"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="CHECK:REFLEXES:COMPLETE" time="0791"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="CHECK:REFLEXES:COMPLETE" time="0791"/&gt;</string>
+    <string>	&lt;InteractLogItem text="Patient" value="PATIENT:EXAMINE" time="0808"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:EXAMINE" time="0808"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:EXAMINE:COMPLETE" time="0808"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:EXAMINE:COMPLETE" time="0808"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="RAIL:SWITCH:INNER" time="0811"/&gt;</string>
+    <string>	&lt;InteractLogItem text="Patient" value="CHECK:ETCO2" time="0984"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="CHECK:ETCO2" time="0984"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="CHECK:ETCO2:COMPLETE" time="0985"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="CHECK:ETCO2:COMPLETE" time="0985"/&gt;</string>
+  </Items>
+</LogRecord>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssessmentList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Name>CANS-O-WORMS</Name>
+        <Objective>Exceptions</Objective>
+        <NoteSucess>Objective Successful.  No CANS-O-WORMS or all CANS-O-WORMS fixed successfully</NoteSucess>
+        <NoteFailure>Objective Failed.  Some cans of worms not completed</NoteFailure>
+        <SuccessPercentage>1.0</SuccessPercentage>
+        <AlwaysScore>true</AlwaysScore>
+        <Active>true</Active>
+        <Items>
+          <AssessmentItem>
+            <InteractionName>COW:VOMIT:NOMEDS</InteractionName>
+            <Score>0</Score>
+            <ScoreMax>0</ScoreMax>
+			<ActivateOnSuccess>
+				<string>COW:VOMIT:NOMEDS</string>
+			</ActivateOnSuccess>
+			<Ignore>true</Ignore>
+          </AssessmentItem>		  			
+          <AssessmentItem>
+            <InteractionName>COW:VOMIT:CONCUSSION</InteractionName>
+            <Score>0</Score>
+            <ScoreMax>0</ScoreMax>
+			<ActivateOnSuccess>
+				<string>COW:VOMIT:CONCUSSION</string>
+			</ActivateOnSuccess>
+			<Ignore>true</Ignore>
+          </AssessmentItem>		  			
+          <AssessmentItem>
+            <InteractionName>COW:VENT40</InteractionName>
+            <Score>0</Score>
+            <ScoreMax>0</ScoreMax>
+			<ActivateOnSuccess>
+				<string>COW:VENT40</string>
+			</ActivateOnSuccess>
+			<Ignore>true</Ignore>
+          </AssessmentItem>		  			
+          <AssessmentItem>
+            <InteractionName>COW:BRADYCARDIA</InteractionName>
+            <Score>0</Score>
+            <ScoreMax>0</ScoreMax>
+			<ActivateOnSuccess>
+				<string>COW:BRADYCARDIA</string>
+			</ActivateOnSuccess>
+			<Ignore>true</Ignore>
+          </AssessmentItem>		  			
+          <AssessmentItem>
+            <InteractionName>COW:COMBATIVE</InteractionName>
+            <Score>0</Score>
+            <ScoreMax>0</ScoreMax>
+			<ActivateOnSuccess>
+				<string>COW:COMBATIVE</string>
+			</ActivateOnSuccess>
+			<Ignore>true</Ignore>
+          </AssessmentItem>		  			
+          <AssessmentItem>
+            <InteractionName>COW:CUFFERROR</InteractionName>
+            <Score>0</Score>
+            <ScoreMax>0</ScoreMax>
+			<ActivateOnSuccess>
+				<string>COW:CUFFERROR</string>
+			</ActivateOnSuccess>
+			<Ignore>true</Ignore>
+          </AssessmentItem>		  			
+		</Items>
+        <Lists>
+          <AssessmentList>
+            <Name>COW:VOMIT:NOMEDS</Name>
+            <Parent>CANS-O-WORMS</Parent>
+            <Objective>Vomit recovery from no medication</Objective>
+            <NoteSucess>Object Complete.</NoteSucess>
+            <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+            <SuccessPercentage>1.0</SuccessPercentage>
+            <Active>false</Active>
+            <Items>
+              <AssessmentItem>
+                <InteractionName>SUCTION:PATIENT</InteractionName>
+				<Note>CanOWorms[Vomit] Suction Required</Note>				
+                <Score>10</Score>
+                <ScoreMax>10</ScoreMax>
+              </AssessmentItem>
+            </Items>
+          </AssessmentList>
+          <AssessmentList>
+            <Name>COW:VOMIT:CONCUSSION</Name>
+            <Parent>CANS-O-WORMS</Parent>
+            <Objective>Vomit recovery from concussion</Objective>
+            <NoteSucess>Object Complete.</NoteSucess>
+            <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+            <SuccessPercentage>1.0</SuccessPercentage>
+            <Active>false</Active>
+            <Items>
+              <AssessmentItem>
+                <InteractionName>SUCTION:PATIENT</InteractionName>
+				<Note>CanOWorms[Vomit] Suction Required</Note>				
+                <Score>10</Score>
+                <ScoreMax>10</ScoreMax>
+              </AssessmentItem>
+            </Items>
+          </AssessmentList>
+          <AssessmentList>
+            <Name>COW:VENT40</Name>
+            <Parent>CANS-O-WORMS</Parent>
+            <Objective>Set ventilator to 100%</Objective>
+            <NoteSucess>Object Complete.</NoteSucess>
+            <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+            <SuccessPercentage>1.0</SuccessPercentage>
+            <Active>false</Active>
+            <Items>
+              <AssessmentItem>
+                <InteractionName>VENT:SET:AIRFLOW</InteractionName>
+				<Note>CanOWorms[SetAirflow] Need to verify that vent is set to 100%</Note>				
+                <Score>10</Score>
+                <ScoreMax>10</ScoreMax>
+              </AssessmentItem>
+            </Items>
+          </AssessmentList>
+          <AssessmentList>
+            <Name>COW:BRADYCARDIA</Name>
+            <Parent>CANS-O-WORMS</Parent>
+            <Objective>Ask for a SAO2 reading</Objective>
+            <NoteSucess>Object Complete.</NoteSucess>
+            <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+            <SuccessPercentage>1.0</SuccessPercentage>
+            <Active>false</Active>
+            <Items>
+              <AssessmentItem>
+                <InteractionName>VITALS:SAO2</InteractionName>
+				<Note>CanOWorms[SAO2] Ask for a SAO2 reading.</Note>				
+                <Score>10</Score>
+                <ScoreMax>10</ScoreMax>
+              </AssessmentItem>
+            </Items>
+          </AssessmentList>
+          <AssessmentList>
+            <Name>COW:COMBATIVE</Name>
+            <Parent>CANS-O-WORMS</Parent>
+            <Objective>Sedate the patient when combatitive</Objective>
+            <NoteSucess>Object Complete.</NoteSucess>
+            <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+            <SuccessPercentage>1.0</SuccessPercentage>
+            <Active>false</Active>
+            <Items>
+              <AssessmentItem>
+                <InteractionName>MED:PROPOFOL</InteractionName>
+				<Note>CanOWorms[Propofol] Give sedative, patient is compative</Note>				
+                <Score>10</Score>
+                <ScoreMax>10</ScoreMax>
+              </AssessmentItem>
+            </Items>
+          </AssessmentList>
+          <AssessmentList>
+            <Name>COW:CUFFERROR</Name>
+            <Parent>CANS-O-WORMS</Parent>
+            <Objective>Vomit recovery from concussion</Objective>
+            <NoteSucess>Object Complete.</NoteSucess>
+            <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+            <SuccessPercentage>1.0</SuccessPercentage>
+            <Active>false</Active>
+            <Items>
+              <AssessmentItem>
+                <InteractionName>PATIENT:MANUALBP</InteractionName>
+				<Note>CanOWorms[ManualBP] Auto cuff has an error forcing need for a manual BP.</Note>				
+                <Score>10</Score>
+                <ScoreMax>10</ScoreMax>
+              </AssessmentItem>
+            </Items>
+          </AssessmentList>
+        </Lists>
+</AssessmentList>			
+

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<ScriptedObjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <unityObjectName>fab_boardClipInteractive</unityObjectName>
+  <moveToParentOnDrop>true</moveToParentOnDrop>
+  <dropTargetName>ScribeNurse</dropTargetName>
+  <scripts>
+    <InteractionScriptInfo>
+      <unityObjectName>CLIPBOARD:PICKUP</unityObjectName>
+      <triggerStrings>
+        <string>CLIPBOARD:PICKUP</string>
+      </triggerStrings>
+      <triggerOnStatus>false</triggerOnStatus>
+      <startingArgs />
+      <scriptLines>
+        <ScriptedActionInfo>
+          <unityObjectName>pickup_boardClipInteractive01-stand--clipboardPickup</unityObjectName>
+          <comment />
+          <objectName />
+          <type>characterTask</type>
+          <role />
+          <stringParam>stand</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName>pickup_boardClipInteractive01</moveToName>
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes>hasclipboard=True</preAttributes>
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3>clipboardPickUp</stringParam3>
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>HOME-stand</unityObjectName>
+          <comment />
+          <objectName />
+          <type>characterTask</type>
+          <role />
+          <stringParam>clipboardStand</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName>HOME</moveToName>
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+      </scriptLines>
+      <owningRole />
+      <roles />
+      <roleKeyString>
+        <string>!hasclipboard=True &amp; !Patient.tutorial=True</string>
+      </roleKeyString>
+      <autoExecuteInterval>-1</autoExecuteInterval>
+      <autoExecuteProbability>1</autoExecuteProbability>
+      <AddToMenu>true</AddToMenu>
+      <menuOrder>0</menuOrder>
+      <interactionSet>
+        <Name />
+        <Maps />
+        <ScriptsEnter />
+        <ScriptsExit />
+        <ScriptsAbort />
+      </interactionSet>
+      <commandVariation>
+        <Cmd />
+        <CmdString />
+        <Variations />
+      </commandVariation>
+      <callbackConfirmVoice>false</callbackConfirmVoice>
+      <item>CLIPBOARD:PICKUP</item>
+      <prettyname>Get Clipboard</prettyname>
+      <response>You clicked me</response>
+      <response_title>RESPONSE TITLE</response_title>
+      <note />
+      <tooltip>Click Me</tooltip>
+      <sound>AUDIO:SOUND</sound>
+      <task>OBJECT:MENUCLICK</task>
+      <log>true</log>
+      <readyState>unknown</readyState>
+      <startPriority>4</startPriority>
+      <cancellable>false</cancellable>
+      <skillVector />
+      <extraCost>0</extraCost>
+      <prereq />
+      <category />
+      <param />
+      <debug>false</debug>
+    </InteractionScriptInfo>
+    <InteractionScriptInfo>
+      <unityObjectName>CLIPBOARD:PUTDOWN</unityObjectName>
+      <triggerStrings>
+        <string>CLIPBOARD:PUTDOWN</string>
+      </triggerStrings>
+      <triggerOnStatus>false</triggerOnStatus>
+      <startingArgs />
+      <scriptLines>
+        <ScriptedActionInfo>
+          <unityObjectName>pickup_boardClipInteractive01-clipboardStand-clipboardPutdown-</unityObjectName>
+          <comment />
+          <objectName />
+          <type>characterTask</type>
+          <role />
+          <stringParam>clipboardStand</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName>pickup_boardClipInteractive01</moveToName>
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes>hasclipboard=False</postAttributes>
+          <stringParam2 />
+          <stringParam3>clipboardPutDown</stringParam3>
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+        <ScriptedActionInfo>
+          <unityObjectName>HOME-stand</unityObjectName>
+          <comment />
+          <objectName />
+          <type>characterTask</type>
+          <role />
+          <stringParam>stand</stringParam>
+          <fadeLength>0</fadeLength>
+          <desiredAlpha>0</desiredAlpha>
+          <desiredColor>
+            <r>0.5</r>
+            <g>0.5</g>
+            <b>0.5</b>
+            <a>1</a>
+          </desiredColor>
+          <moveToName>HOME</moveToName>
+          <offset>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </offset>
+          <orientation>
+            <x>0</x>
+            <y>0</y>
+            <z>0</z>
+          </orientation>
+          <ease>true</ease>
+          <negate>false</negate>
+          <loop>false</loop>
+          <waitForCompletion>true</waitForCompletion>
+          <executeOnlyOnce>false</executeOnlyOnce>
+          <sequenceEnd>false</sequenceEnd>
+          <block>none</block>
+          <dialogIfThen>false</dialogIfThen>
+          <breakpoint>false</breakpoint>
+          <preAttributes />
+          <postAttributes />
+          <stringParam2 />
+          <stringParam3 />
+          <stringParam4 />
+          <attachmentOverride />
+          <eventScript />
+          <voiceTag />
+          <heading>0</heading>
+          <speed>1</speed>
+        </ScriptedActionInfo>
+      </scriptLines>
+      <owningRole />
+      <roles />
+      <roleKeyString>
+        <string>hasclipboard=True</string>
+      </roleKeyString>
+      <autoExecuteInterval>-1</autoExecuteInterval>
+      <autoExecuteProbability>0</autoExecuteProbability>
+      <AddToMenu>true</AddToMenu>
+      <menuOrder>0</menuOrder>
+      <interactionSet>
+        <Name />
+        <Maps />
+        <ScriptsEnter />
+        <ScriptsExit />
+        <ScriptsAbort />
+      </interactionSet>
+      <commandVariation>
+        <Cmd />
+        <CmdString />
+        <Variations />
+      </commandVariation>
+      <callbackConfirmVoice>false</callbackConfirmVoice>
+      <item>CLIPBOARD:PUTDOWN</item>
+      <prettyname>Put Clipboard Away</prettyname>
+      <response>You clicked me</response>
+      <response_title>RESPONSE TITLE</response_title>
+      <note />
+      <tooltip>Click Me</tooltip>
+      <sound>AUDIO:SOUND</sound>
+      <task>OBJECT:MENUCLICK</task>
+      <log>true</log>
+      <readyState>unknown</readyState>
+      <startPriority>4</startPriority>
+      <cancellable>false</cancellable>
+      <skillVector />
+      <extraCost>0</extraCost>
+      <prereq />
+      <category />
+      <param />
+      <debug>false</debug>
+    </InteractionScriptInfo>
+  </scripts>
+  <startupScriptName />
+  <register>false</register>
+  <prettyname />
+  <XMLName>ScriptedObjects/fab_boardClipInteractive01.xml</XMLName>
+  <XMLDirectory>Assets/Resources/XML/</XMLDirectory>
+  <assetBundleInfo>
+    <bundleName />
+    <stage>0</stage>
+    <assetName />
+  </assetBundleInfo>
+  <voiceList>
+    <Name />
+    <VoiceMaps />
+  </voiceList>
+  <voiceLists />
+  <vitalsBehaviors />
+  <scanRecords />
+</ScriptedObjectInfo>

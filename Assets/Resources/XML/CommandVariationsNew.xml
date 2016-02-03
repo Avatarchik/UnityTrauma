@@ -1,0 +1,2583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCommandVariation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CommandVariation>
+    <Cmd>ASSESS:CIRCULATION</Cmd>
+    <CmdString>Procedure Resident, please assess circulation</CmdString>
+    <Variations>
+      <string>Procedure Resident, please assess circulation</string>
+      <string>Marcus, please assess circulation</string>
+      <string>check the pulse</string>
+      <string>feel the pulse</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>AUSCULTATE:HEART</Cmd>
+    <CmdString>Procedure Resident, please auscultate heart sounds.</CmdString>
+    <Variations>
+      <string>Procedure Resident, please auscultate heart sounds.</string>
+      <string>listen to heart sounds</string>
+      <string>listen to the heart</string>
+      <string>listen for muffled heart sounds</string>
+      <string>listen over the heart</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>CALL:ANESTH</Cmd>
+    <CmdString>Scribe Nurse, please call anesthesia. We need an Airway Doc.</CmdString>
+    <Variations>
+      <string>Scribe Nurse, please call anesthesia. We need an Airway Doc.</string>
+      <string>telephone anesthesia</string>
+      <string>call anesthesia for intubation</string>
+      <string>notify anesthesia</string>
+      <string>call anesthetist</string>
+      <string>get anesthesia</string>
+      <string>get anesthesia down here</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>CALL:IR</Cmd>
+    <CmdString>Scribe Nurse, please call Interventional Radiology and tell them we're on our way.</CmdString>
+    <Variations>
+      <string>Scribe Nurse, please call Interventional Radiology and tell them we're on our way.</string>
+      <string>Call IR</string>
+      <string>call interventional radiologist</string>
+      <string>going to IR</string>
+      <string>notify IR</string>
+      <string>call the IR front desk</string>
+      <string>tell IR we're coming down</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>CALL:OR</Cmd>
+    <CmdString>Scribe Nurse, please call the Operating Room and tell them we're on our way.</CmdString>
+    <Variations>
+      <string>Scribe Nurse, please call the Operating Room and tell them we're on our way.</string>
+      <string>call the OR</string>
+      <string>notify the OR</string>
+      <string>ask the OR for a room</string>
+      <string>call the OR front desk</string>
+      <string>tell OR we're coming down</string>
+      <string>tell OR we need an operating room</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>CALL:ORTHO</Cmd>
+    <CmdString>Scribe Nurse, please call orthopedics. We need a Ortho doctor.</CmdString>
+    <Variations>
+      <string>Scribe Nurse, please call orthopedics. We need a Ortho doctor.</string>
+      <string>call ortho</string>
+      <string>call orthopedics</string>
+      <string>tell ortho to come</string>
+      <string>PrimaryNurse, please call orthopedics and have then send a surgeon for a consult.</string>
+      <string>Primary Nurse, please call orthopedics and have then send a surgeon for a consult.</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>CALL:TRANSFER</Cmd>
+    <CmdString>Scribe Nurse, can you call for a transfer?</CmdString>
+    <Variations>
+      <string>Scribe Nurse, can you call for a transfer?</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>CALL:XRAY</Cmd>
+    <CmdString>Scribe Nurse, can you call an x-ray tech?</CmdString>
+    <Variations>
+      <string>Scribe Nurse, can you call an x-ray tech?</string>
+      <string>Scribe Nurse, can you call an xray tech?</string>
+      <string>call xray</string>
+      <string>call radiology tech</string>
+      <string>call radiology technician</string>
+      <string>call for an xray tech</string>
+      <string>call for a xray tech</string>
+      <string>call for an x-ray tech</string>
+      <string>call for a x-ray tech</string>
+      <string>call radiology</string>
+      <string>get a radiologist</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>CALL:XRAY:CHEST</Cmd>
+    <CmdString>Scribe Nurse, can you call an x-ray tech. We need a chest xray.</CmdString>
+    <Variations>
+      <string>Scribe Nurse, can you call an x-ray tech. We need a chest xray.</string>
+      <string>Scribe Nurse, can you call an xray tech. We need a chest xray.</string>
+      <string>We need a chest xray</string>
+      <string>Can I get a chest xray</string>
+      <string>Can I get a chest x-ray</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>CALL:XRAY:PELVIC</Cmd>
+    <CmdString>Scribe Nurse, can you call an xray tech. We need a pelvic xray.</CmdString>
+    <Variations>
+      <string>Scribe Nurse, can you call an xray tech. We need a pelvic xray.</string>
+      <string>Scribe Nurse, can you call an x-ray tech. We need a pelvic xray.</string>
+      <string>Scribe Nurse, can you call an xray tech. We need a pelvic xray.</string>
+      <string>We need a pelvic xray</string>
+      <string>Can I get a pelvic xray</string>
+      <string>Can I get a pelvic x-ray</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>CHECK:BREATHE</Cmd>
+    <CmdString>Procedure Resident, please auscultate breath sounds</CmdString>
+    <Variations>
+      <string>Procedure Resident, please auscultate breath sounds</string>
+      <string>listen to breath sounds</string>
+      <string>listen to the lungs</string>
+      <string>asses the breath sounds</string>
+      <string>asses the lungs</string>
+      <string>how are their breath sounds</string>
+      <string>check the breath sounds</string>
+      <string>check the lungs</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>CHECK:ETCO2</Cmd>
+    <CmdString>Airway Doctor, check the color change block</CmdString>
+    <Variations>
+      <string>Airway Doctor, check the color change block</string>
+      <string>check the end tidal</string>
+      <string>check the end tidal CO2</string>
+      <string>look for color change</string>
+      <string>what color is the end tidal co2</string>
+      <string>do you see color change on the block</string>
+      <string>what colors the block</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>CHECK:MOTOR:ARMS</Cmd>
+    <CmdString>Primary Nurse, check the patient's arm range of motion</CmdString>
+    <Variations>
+      <string>Primary Nurse, check the patient's arm range of motion</string>
+      <string>check the upper extremity range of motion</string>
+      <string>see if they have any trouble moving their arm</string>
+      <string>any trouble moving their arm</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>CHECK:MOTOR:LEGS</Cmd>
+    <CmdString>Primary Nurse, check the patient's leg range of motion</CmdString>
+    <Variations>
+      <string>Primary Nurse, check the patient's leg range of motion</string>
+      <string>check the lower extremity range of motion</string>
+      <string>see if they have any trouble moving their legs</string>
+      <string>any trouble moving their legs</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>CHECK:REACTION</Cmd>
+    <CmdString>Primary Nurse, check the patient's reaction time</CmdString>
+    <Variations>
+      <string>Primary Nurse, check the patient's reaction time</string>
+      <string>check reaction time</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>CHECK:REFLEXES</Cmd>
+    <CmdString>Primary Nurse, check the patient's reflexes</CmdString>
+    <Variations>
+      <string>Primary Nurse, check the patient's reflexes</string>
+      <string>check reflexes</string>
+      <string>what are the reflexes</string>
+      <string>how are their reflexes</string>
+      <string>what are the patient's reflexes</string>
+      <string>are reflexes normal</string>
+      <string>anything wrong with reflexes</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>CONNECT:VENT</Cmd>
+    <CmdString>Airway Doctor, please connect the ventilator</CmdString>
+    <Variations>
+      <string>Airway Doctor, please connect the ventilator</string>
+      <string>connect the vent</string>
+      <string>put the patient on the vent</string>
+      <string>put the patient on the ventilator</string>
+      <string>attach the vent</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>EXAM:ABDOMEN</Cmd>
+    <CmdString>Procedure Resident, please examine the abdomen</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the abdomen</string>
+      <string>examine the belly</string>
+      <string>check the belly </string>
+      <string>inspect the belly</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>EXAM:BLEEDING</Cmd>
+    <CmdString>Procedure Resident, please examine for external bleeding</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine for external bleeding</string>
+      <string>check for outward signs of bleeding</string>
+      <string>check for signs of bleeding</string>
+      <string>inspect for signs of bleeding</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>EXAM:CHEST</Cmd>
+    <CmdString>Procedure Resident, please examine the chest</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the chest</string>
+      <string>check the chest</string>
+      <string>inspect the chest</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>EXAM:PELVIC</Cmd>
+    <CmdString>Procedure Resident, perform a pelvic exam</CmdString>
+    <Variations>
+      <string>Procedure Resident, perform a pelvic exam</string>
+      <string>pelvic rock</string>
+      <string>inspect pelvic stability</string>
+      <string>pelvic exam</string>
+      <string>Procedure Resident, please examine the pelvis</string>
+      <string>check the pelvis</string>
+      <string>inspect the pelvis</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>EXAMINE:CHESTRISE</Cmd>
+    <CmdString>Procedure Resident, please examine chest rise and fall</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine chest rise and fall</string>
+      <string>check chest movement</string>
+      <string>inspect chest movement</string>
+      <string>look at chest rise and fall</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>FAST:EXAM</Cmd>
+    <CmdString>Procedure Resident, please do a fast exam</CmdString>
+    <Variations>
+      <string>Procedure Resident, please do a fast exam</string>
+      <string>get a fast exam</string>
+      <string>perform a fast exam</string>
+      <string>can I get an ultrasound</string>
+      <string>we need a fast exam</string>
+      <string>start the fast exam</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>FOLEY:INSERT</Cmd>
+    <CmdString />
+    <Variations>
+      <string>Insert a Foley Catheter.</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>INTUBATE:PATIENT</Cmd>
+    <CmdString>Airway Doctor, please perform intubation</CmdString>
+    <Variations>
+      <string>Airway Doctor, please perform intubation</string>
+      <string>please intubate</string>
+      <string>secure the airway</string>
+      <string>insert the breathing tube</string>
+      <string>intubate the patient</string>
+      <string>intubate him</string>
+      <string>intubate her</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>IV:CHECK</Cmd>
+    <CmdString>What is our IV access</CmdString>
+    <Variations>
+      <string>What is our IV access</string>
+      <string>what's our access</string>
+      <string>what lines do we have</string>
+      <string>what are our lines</string>
+      <string>how man IVs do we have</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>IVPORT:LEFT</Cmd>
+    <CmdString>Primary Nurse, please place a second large bore IV in the patient's left arm.</CmdString>
+    <Variations>
+      <string>Primary Nurse, please place a second large bore IV in the patient's left arm.</string>
+      <string>place a second line in the left arm</string>
+      <string>get another line in the left arm</string>
+      <string>put a line in the left arm</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>IVPORT:RIGHT</Cmd>
+    <CmdString>Primary Nurse, please place a second large bore IV in the patient's right arm.</CmdString>
+    <Variations>
+      <string>Primary Nurse, please place a second large bore IV in the patient's right arm.</string>
+      <string>place a second line in the right arm</string>
+      <string>get another line in the right arm</string>
+      <string>put a line in the right arm</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>LAB:DRAW</Cmd>
+    <CmdString>Primary Nurse, please draw trauma labs</CmdString>
+    <Variations>
+      <string>Primary Nurse, please draw trauma labs</string>
+      <string>get trauma labs</string>
+      <string>run trauma labs</string>
+      <string>send trauma labs</string>
+      <string>get labs</string>
+      <string>get some blood work</string>
+      <string>I need some labs drawn</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>MED:PROPOFOL</Cmd>
+    <CmdString>Primary Nurse, please administer propofol</CmdString>
+    <Variations>
+      <string>Primary Nurse, please administer propofol</string>
+      <string>give propofol</string>
+      <string>infuse propofol</string>
+      <string>hang propofol</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>ORDER:BLOOD:1IV</Cmd>
+    <CmdString>Primary Nurse, please administer one unit of blood</CmdString>
+    <Variations>
+      <string>Primary Nurse, please administer one unit of blood</string>
+      <string>hang a unit</string>
+      <string>give a unit</string>
+      <string>transfuse a unit</string>
+      <string>order one unit of blood</string>
+      <string>order blood</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>ORDER:BLOOD:1PR</Cmd>
+    <CmdString>Primary Nurse, please administer one unit of blood via pressure bag</CmdString>
+    <Variations>
+      <string>Primary Nurse, please administer one unit of blood via pressure bag</string>
+      <string>push a unit</string>
+      <string>give blood under pressure</string>
+      <string>put that on a pressure bag</string>
+      <string>order one unit of blood via pressure bag</string>
+      <string>one unit in a pressure bag</string>
+      <string>order blood</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>ORDER:BLOOD:1RI</Cmd>
+    <CmdString>Primary Nurse, please administer one unit of blood via infuser</CmdString>
+    <Variations>
+      <string>Primary Nurse, please administer one unit of blood via infuser</string>
+      <string>infuse a unit</string>
+      <string>via level 1</string>
+      <string>give using level 1</string>
+      <string>one unit in the infuser</string>
+      <string>order blood</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>ORDER:BLOOD:2IV</Cmd>
+    <CmdString>Primary Nurse, please administer two units of blood</CmdString>
+    <Variations>
+      <string>Primary Nurse, please administer two units of blood</string>
+      <string>hang two units of blood</string>
+      <string>give two units of blood</string>
+      <string>transfuse two units of blood</string>
+      <string>two units via IV</string>
+      <string>order two units of blood</string>
+      <string>order blood</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>ORDER:BLOOD:2PR</Cmd>
+    <CmdString>Primary Nurse, please administer two units of blood via pressure bag</CmdString>
+    <Variations>
+      <string>Primary Nurse, please administer two units of blood via pressure bag</string>
+      <string>push two units of blood</string>
+      <string>give 2 units of blood under pressure</string>
+      <string>put the 2 units on a pressure bag</string>
+      <string>two units in pressure bags</string>
+      <string>order two units of blood via pressure bag</string>
+      <string>order two units of blood</string>
+      <string>order blood</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>ORDER:BLOOD:2RI</Cmd>
+    <CmdString>Primary Nurse, please administer two units of blood via infuser</CmdString>
+    <Variations>
+      <string>Primary Nurse, please administer two units of blood via infuser</string>
+      <string>infuse two units of blood</string>
+      <string>give 2 units with level 1</string>
+      <string>put 2 units on the level 1</string>
+      <string>order two units for the infuser</string>
+      <string>order two units of blood</string>
+      <string>order blood</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>ORDER:RSIMEDS</Cmd>
+    <CmdString>Airway Doctor, let's prepare for RSI</CmdString>
+    <Variations>
+      <string>Airway Doctor, let's prepare for RSI</string>
+      <string>get ready for RSI</string>
+      <string>set up for RSI</string>
+      <string>draw up RSI drugs</string>
+      <string>get RSI drugs</string>
+      <string>order rsi meds</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>ORDER:SALINE:1IV</Cmd>
+    <CmdString>Primary Nurse, please administer one liter of normal saline</CmdString>
+    <Variations>
+      <string>Primary Nurse, please administer one liter of normal saline</string>
+      <string>hang a liter of normal saline</string>
+      <string>give a liter of normal saline</string>
+      <string>give a bag of normal saline</string>
+      <string>order one liter of saline</string>
+      <string>order saline</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>ORDER:SALINE:1PR</Cmd>
+    <CmdString>Primary Nurse, please administer one liter of saline via pressure bag</CmdString>
+    <Variations>
+      <string>Primary Nurse, please administer one liter of saline via pressure bag</string>
+      <string>push a liter of normal saline</string>
+      <string>put the normal saline on a pressure bag</string>
+      <string>order saline</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>ORDER:SALINE:1RI</Cmd>
+    <CmdString>Primary Nurse, please administer one liter of saline via infuser</CmdString>
+    <Variations>
+      <string>Primary Nurse, please administer one liter of saline via infuser</string>
+      <string>infuse a liter of normal saline</string>
+      <string>put a liter of Normal saline on the level 1</string>
+      <string>put a liter of NS on the level 1</string>
+      <string>order saline</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>ORDER:SALINE:2IV</Cmd>
+    <CmdString>Primary Nurse, please administer two liters of saline via IV</CmdString>
+    <Variations>
+      <string>Primary Nurse, please administer two liters of saline via IV</string>
+      <string>hang two liters of saline</string>
+      <string>give two units of saline</string>
+      <string>transfuse two liters of saline</string>
+      <string>order saline</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>ORDER:SALINE:2PR</Cmd>
+    <CmdString>Primary Nurse, please administer two liters of saline via pressure bag</CmdString>
+    <Variations>
+      <string>Primary Nurse, please administer two liters of saline via pressure bag</string>
+      <string>push two liters of saline</string>
+      <string>give the two liters under pressure</string>
+      <string>put 2 liters on a pressure bag</string>
+      <string>order saline</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>ORDER:SALINE:2RI</Cmd>
+    <CmdString>Primary Nurse, please administer two liters of saline via infuser</CmdString>
+    <Variations>
+      <string>Primary Nurse, please administer two liters of saline via infuser</string>
+      <string>infuse two liters of saline</string>
+      <string>put two liters on the level 1</string>
+      <string>give two bags of NS using level 1</string>
+      <string>order saline</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PALPATE:BLADDER</Cmd>
+    <CmdString>Procedure Resident, please palpate the bladder</CmdString>
+    <Variations>
+      <string>Procedure Resident, please palpate the bladder</string>
+      <string>check the bladder</string>
+      <string>feel the bladder</string>
+      <string>palpate the bladder</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PALPATE:TRACHEA</Cmd>
+    <CmdString>Procedure Resident, please palpate the trachea</CmdString>
+    <Variations>
+      <string>Procedure Resident, please palpate the trachea</string>
+      <string>check the trachea</string>
+      <string>feel the trachea</string>
+      <string>palpate the trachea</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PATIENT:CAPREFILL</Cmd>
+    <CmdString>Procedure Resident, check cap refill</CmdString>
+    <Variations>
+      <string>Procedure Resident, check cap refill</string>
+      <string>look for cap refill</string>
+      <string>examine cap refill</string>
+      <string>check for capillary refill</string>
+      <string>whats the patients cap refill</string>
+      <string>whats the patients capillary response</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PATIENT:COVER</Cmd>
+    <CmdString>Procedure Resident, please cover the patient</CmdString>
+    <Variations>
+      <string>Procedure Resident, please cover the patient</string>
+      <string>warm the patient</string>
+      <string>put a blanket on the patient</string>
+      <string>put a sheet on the patient</string>
+      <string>cover up the patient</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PATIENT:EXAMINE</Cmd>
+    <CmdString>Procedure Resident, please remove the blankets</CmdString>
+    <Variations>
+      <string>Procedure Resident, please remove the blankets</string>
+      <string>take off the blankets</string>
+      <string>pull back the blankets</string>
+      <string>uncover the patient</string>
+      <string>pull off the blankets</string>
+      <string>remove the blankets</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PATIENT:EXPOSE</Cmd>
+    <CmdString>Procedure Resident, please expose the patient</CmdString>
+    <Variations>
+      <string>Procedure Resident, please expose the patient</string>
+      <string>disrobe the patient</string>
+      <string>undress the patient</string>
+      <string>cut the clothes off</string>
+      <string>expose the patient</string>
+      <string>remove the patients clothes</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PATIENT:GCS</Cmd>
+    <CmdString>Primary Nurse, please perform a glascow coma scale.</CmdString>
+    <Variations>
+      <string>Primary Nurse, please perform a glascow coma scale.</string>
+      <string>check the GCS</string>
+      <string>what is the GCS</string>
+      <string>score the GCS</string>
+      <string>get a GCS</string>
+      <string>take a GCS</string>
+      <string>asses the GCS</string>
+      <string>whats her gcs</string>
+      <string>whats his gcs</string>
+      <string>what is the patients gcs</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PATIENT:LOGROLL</Cmd>
+    <CmdString>Primary Nurse, please logroll the patient</CmdString>
+    <Variations>
+      <string>Primary Nurse, please logroll the patient</string>
+      <string>turn the patient</string>
+      <string>roll off the backboard</string>
+      <string>lets roll the patient</string>
+      <string>on their back</string>
+      <string>on their side</string>
+      <string>Procedure Resident, please logroll the patient</string>
+      <string>roll the patient</string>
+      <string>help me roll the patient</string>
+      <string>logroll</string>
+      <string>move the patient</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PATIENT:MANUALBP</Cmd>
+    <CmdString>Primary Nurse, can I get a manual blood pressure</CmdString>
+    <Variations>
+      <string>Primary Nurse, can I get a manual blood pressure</string>
+      <string>take a manual blood pressure</string>
+      <string>run a manual blood pressure</string>
+      <string>what is the palp </string>
+      <string>check a palp pressure</string>
+      <string>get a manual bp</string>
+      <string>take a manual bp</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PATIENT:SKINTEMP</Cmd>
+    <CmdString>Primary Nurse, please check the skin temperature</CmdString>
+    <Variations>
+      <string>Primary Nurse, please check the skin temperature</string>
+      <string>what is the skin temperature</string>
+      <string>whats the skin temp</string>
+      <string>how does their skin feel</string>
+      <string>is their skin hot</string>
+      <string>is their skin cool</string>
+      <string>is their skin cold</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PATIENT:SKINTONE</Cmd>
+    <CmdString>Primary Nurse, please examine the patient's skin tone</CmdString>
+    <Variations>
+      <string>Primary Nurse, please examine the patient's skin tone</string>
+      <string>what's the patient's skin tone</string>
+      <string>how's the patient's skin tone</string>
+      <string>what's the skin turgor</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PELVIC:WRAP</Cmd>
+    <CmdString>Procedure Resident, please put on a pelvic wrap</CmdString>
+    <Variations>
+      <string>Procedure Resident, please put on a pelvic wrap</string>
+      <string>apply a pelvic wrap</string>
+      <string>wrap the pelvis</string>
+      <string>place a pelvic wrap</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PELVIC:BINDER</Cmd>
+    <CmdString>Procedure Resident, please put on a pelvic binder</CmdString>
+    <Variations>
+      <string>Procedure Resident, please put on a pelvic binder</string>
+      <string>apply a pelvic binder</string>
+      <string>bind the pelvis</string>
+      <string>place a pelvic binder</string>
+      <string>put tpod on</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PERFORM:CHINLIFT</Cmd>
+    <CmdString>Airway Doctor, use a chin lift maneuver to open the patient's airway</CmdString>
+    <Variations>
+      <string>Airway Doctor, use a chin lift maneuver to open the patient's airway</string>
+      <string>perform a chin lift</string>
+      <string>lift the chin</string>
+      <string>head tilt chin lift</string>
+      <string>chin lift</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PERFORM:CPR:EXTERNAL:START</Cmd>
+    <CmdString>Procedure Resident, start CPR</CmdString>
+    <Variations>
+      <string>Procedure Resident, start CPR</string>
+      <string>initiate CPR</string>
+      <string>begin CPR</string>
+      <string>start compressions</string>
+      <string>start cpr</string>
+      <string>cpr</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PERFORM:CPR:EXTERNAL:STOP</Cmd>
+    <CmdString>Procedure Resident, stop CPR</CmdString>
+    <Variations>
+      <string>Procedure Resident, stop CPR</string>
+      <string>stop compressions</string>
+      <string>Procedure Resident, stop CPR</string>
+      <string>terminate CPR</string>
+      <string>hold CPR</string>
+      <string>stop compressions</string>
+      <string>cpr</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PERFORM:CPR:INTERNAL:START</Cmd>
+    <CmdString>Procedure Resident, open the chest and start internal CPR</CmdString>
+    <Variations>
+      <string>Procedure Resident, open the chest and start internal CPR</string>
+      <string>crack the chest and start internal CPR</string>
+      <string>perform a mediansternotomy and start internal CPR</string>
+      <string>open the chest and perform cardiac massage</string>
+      <string>crack the chest and start cardiac massage</string>
+      <string>cpr</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PERFORM:CPR:INTERNAL:STOP</Cmd>
+    <CmdString>Procedure Resident, you can stop internal CPR</CmdString>
+    <Variations>
+      <string>Procedure Resident, you can stop internal CPR</string>
+      <string>stop cardiac massage</string>
+      <string>stop CPR</string>
+      <string>cpr</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PERFORM:CRIC</Cmd>
+    <CmdString>Airway Doctor, please perform a cricothyrotomy to open the patient's airway</CmdString>
+    <Variations>
+      <string>Airway Doctor, please perform a cricothyrotomy to open the patient's airway</string>
+      <string>cric the patient</string>
+      <string>perform a surgical airway</string>
+      <string>cric the airway</string>
+      <string>cric</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PERFORM:DPL:LEFT</Cmd>
+    <CmdString>Procedure Resident, please perform a DPL in the patient's left side</CmdString>
+    <Variations>
+      <string>Procedure Resident, please perform a DPL in the patient's left side</string>
+      <string>DPL the left side</string>
+      <string>dpl</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PERFORM:DPL:RIGHT</Cmd>
+    <CmdString>Procedure Resident, please perform a DPL in the patient's right side</CmdString>
+    <Variations>
+      <string>Procedure Resident, please perform a DPL in the patient's right side</string>
+      <string>DPL the right side</string>
+      <string>dpl</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PERFORM:EVD</Cmd>
+    <CmdString>Procedure Resident, please place an external ventricular drain</CmdString>
+    <Variations>
+      <string>Procedure Resident, please place an external ventricular drain</string>
+      <string>insert an external ventricular drain</string>
+      <string>put in a ventric</string>
+      <string>put in EVD</string>
+      <string>evd</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PERFORM:JAWTHRUST</Cmd>
+    <CmdString>Airway Doctor, please perform a jaw thrust maneuver to open the patient's airway</CmdString>
+    <Variations>
+      <string>Airway Doctor, please perform a jaw thrust maneuver to open the patient's airway</string>
+      <string>thrust the jaw</string>
+      <string>jaw thrust open the airway</string>
+      <string>jaw thrust</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PERFORM:LACERATION:REPAIR</Cmd>
+    <CmdString>Procedure Resident, please sew up the patient's laceration</CmdString>
+    <Variations>
+      <string>Procedure Resident, please sew up the patient's laceration</string>
+      <string>suture the lac</string>
+      <string>suture the laceration</string>
+      <string>close the lac</string>
+      <string>close the laceration</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PERFORM:REDUCTION</Cmd>
+    <CmdString>Procedure Resident, please reduct the patient's injury</CmdString>
+    <Variations>
+      <string>Procedure Resident, please reduct the patient's injury</string>
+      <string>reduce the injury</string>
+      <string>perform reduction</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PERFORM:SPLINT</Cmd>
+    <CmdString>Procedure Resident, please splint the patient's injury</CmdString>
+    <Variations>
+      <string>Procedure Resident, please splint the patient's injury</string>
+      <string>stabilize the injury</string>
+      <string>put on a splint</string>
+      <string>splint the injury</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PERFORM:THORACOSTOMY:NEEDLE</Cmd>
+    <CmdString>Airway Doctor, please perform a needle thoracostomy</CmdString>
+    <Variations>
+      <string>Airway Doctor, please perform a needle thoracostomy</string>
+      <string>insert a needle into the chest</string>
+      <string>needle the chest</string>
+      <string>decompress the chest</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PERFORM:THORACOSTOMY:TUBE</Cmd>
+    <CmdString>Airway Doctor, please perform a tube thoracostomy</CmdString>
+    <Variations>
+      <string>Airway Doctor, please perform a tube thoracostomy</string>
+      <string>place a chest tube</string>
+      <string>put in a chest tube</string>
+      <string>insert a chest tube</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PERFORM:THORACOTOMY:ANTERO</Cmd>
+    <CmdString>Airway Doctor, please perform an antolateral thoracotomy</CmdString>
+    <Variations>
+      <string>Airway Doctor, please perform an antolateral thoracotomy</string>
+      <string>open the anterolateral chest</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PERFORM:THORACOTOMY:MEDIAN</Cmd>
+    <CmdString>Airway Doctor, please perform a median thoracotomy</CmdString>
+    <Variations>
+      <string>Airway Doctor, please perform a median thoracotomy</string>
+      <string>open the sternum</string>
+      <string>crack the chest</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PERFORM:THORACOTOMY:POSTERO</Cmd>
+    <CmdString>Airway Doctor, please perform a posterolateral thoracotomy</CmdString>
+    <Variations>
+      <string>Airway Doctor, please perform a posterolateral thoracotomy</string>
+      <string>open the posterolateral chest</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PERFORM:TRACHEOTOMY</Cmd>
+    <CmdString>Airway Doctor, please perform a tracheotomy</CmdString>
+    <Variations>
+      <string>Airway Doctor, please perform a tracheotomy</string>
+      <string>trach the patient</string>
+      <string>get a definitive airway</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PERFORM:WOUND:IRRIGATION</Cmd>
+    <CmdString>Procedure Resident, irrigate the patient's wound</CmdString>
+    <Variations>
+      <string>Procedure Resident, irrigate the patient's wound</string>
+      <string>washout the patient's wound</string>
+      <string>clean the patient's wound</string>
+      <string>wash the patient's wound</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLACE:AUTOBP</Cmd>
+    <CmdString>Primary Nurse, apply blood pressure cuff</CmdString>
+    <Variations>
+      <string>Primary Nurse, apply blood pressure cuff</string>
+      <string>attach the pressure cuff</string>
+      <string>attach the BP cuff</string>
+      <string>apply the BP cuff</string>
+      <string>put cuff on</string>
+      <string>automatic cuff</string>
+      <string>automatic bp</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLACE:EKG</Cmd>
+    <CmdString>Primary Nurse, attach EKG leads</CmdString>
+    <Variations>
+      <string>Primary Nurse, attach EKG leads</string>
+      <string>attach the leads</string>
+      <string>get an EKG</string>
+      <string>connect the EKG</string>
+      <string>connect the leads</string>
+      <string>put on the moniter</string>
+      <string>ekg</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLACE:NGT</Cmd>
+    <CmdString>Airway Doctor, please perform NGT intubation</CmdString>
+    <Variations>
+      <string>Airway Doctor, please perform NGT intubation</string>
+      <string>place an NGT</string>
+      <string>throw in an NGT</string>
+      <string>insert an NGT</string>
+      <string>ngt</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLACE:ORALAIRWAY</Cmd>
+    <CmdString>Airway Doctor, please place the oral airway</CmdString>
+    <Variations>
+      <string>Airway Doctor, please place the oral airway</string>
+      <string>place an OPA</string>
+      <string>place a GPA</string>
+      <string>place an oropharyngeal airway</string>
+      <string>place a Gueddal pattern airway</string>
+      <string>oral airway</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLACE:PULSEOX</Cmd>
+    <CmdString>Primary Nurse, please attach the pulse ox monitor</CmdString>
+    <Variations>
+      <string>Primary Nurse, please attach the pulse ox monitor</string>
+      <string>attach the pulse ox</string>
+      <string>monitor sats</string>
+      <string>monitor oxygen saturation</string>
+      <string>put on pulse ox</string>
+      <string>pulse ox</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:ASKNAME</Cmd>
+    <CmdString>Can you tell me your name?</CmdString>
+    <Variations>
+      <string>Can you tell me your name?</string>
+      <string>what's your name</string>
+      <string>who are you</string>
+      <string>como te llamas</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:BADAIR</Cmd>
+    <CmdString>She has a bad airway</CmdString>
+    <Variations>
+      <string>She has a bad airway</string>
+      <string>the airway is not secure</string>
+      <string>the airway is malpositioned</string>
+      <string>the tube is malpositioned</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:BLEEDING:FALSE</Cmd>
+    <CmdString>There is no external bleeding</CmdString>
+    <Variations>
+      <string>There is no external bleeding</string>
+      <string>there are no signs of external bleeding</string>
+      <string>no bleeding</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:BROADCAST:SHOCK</Cmd>
+    <CmdString>The patient is in shock</CmdString>
+    <Variations>
+      <string>The patient is in shock</string>
+      <string>the patient is shocky</string>
+      <string>the patient is unstable</string>
+      <string>the patient needs to be resuscitated</string>
+      <string>patient is hypotensive</string>
+      <string>shock</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:FAST:PELVIS:TRUE</Cmd>
+    <CmdString>Blood in the bladder</CmdString>
+    <Variations>
+      <string>Blood in the bladder</string>
+      <string>there has been blood found in the bladder</string>
+      <string>there is blood inside the bladder</string>
+      <string>bladder</string>
+      <string>pelvis</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:FAST:PELVIS:FALSE</Cmd>
+    <CmdString>No blood in the bladder</CmdString>
+    <Variations>
+      <string>No blood in the bladder</string>
+      <string>there has been no blood found in the bladder</string>
+      <string>there is no blood inside the bladder</string>
+      <string>bladder</string>
+      <string>pelvis</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:FAST:PERICARDIUM:FALSE</Cmd>
+    <CmdString>There is no blood in the pericardium</CmdString>
+    <Variations>
+      <string>There is no blood in the pericardium</string>
+      <string>there has been no blood found in the pericardium</string>
+      <string>there is no blood around the heart</string>
+      <string>there is no blood in the heart</string>
+      <string>pericardium</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:FAST:PERICARDIUM:TRUE</Cmd>
+    <CmdString>There is blood in the pericardium</CmdString>
+    <Variations>
+      <string>There is blood in the pericardium</string>
+      <string>blood has been found in the pericardium</string>
+      <string>there is blood around the heart</string>
+      <string>there is blood in the heart</string>
+      <string>pericardium</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:FAST:PERIHEPATIC:FALSE</Cmd>
+    <CmdString>There is no blood in the perihepatic space</CmdString>
+    <Variations>
+      <string>There is no blood in the perihepatic space</string>
+      <string>there has been no blood found in the perihepatic space</string>
+      <string>there is no blood around the liver</string>
+      <string>perihepatic</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:FAST:PERIHEPATIC:TRUE</Cmd>
+    <CmdString>There is blood in the perihepatic space</CmdString>
+    <Variations>
+      <string>There is blood in the perihepatic space</string>
+      <string>there has been blood found in the perihepatic space</string>
+      <string>there is blood around the liver</string>
+      <string>perihepatic</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:FAST:PERISPLENIC:TRUE</Cmd>
+    <CmdString>Blood has been found in the perisplenic space</CmdString>
+    <Variations>
+      <string>Blood has been found in the perisplenic space</string>
+      <string>there is blood in the perisplenic space</string>
+      <string>there is blood around the spleen</string>
+      <string>perisplenic</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:FAST:PERISPLENIC:FALSE</Cmd>
+    <CmdString>No blood found in the perisplenic space</CmdString>
+    <Variations>
+      <string>No blood found in the perisplenic space</string>
+      <string>there is no blood in the perisplenic space</string>
+      <string>there is no blood around the spleen</string>
+      <string>perisplenic</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:FOG:TRUE</Cmd>
+    <CmdString>We have fogging in the tube</CmdString>
+    <Variations>
+      <string>We have fogging in the tube</string>
+      <string>there is fogging in the tube</string>
+      <string>the tube is fogging</string>
+      <string>there is moisture in the tube</string>
+      <string>there is humidity in the tube</string>
+      <string>I see fogging in the tube</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:INTUBATE:VERIFY</Cmd>
+    <CmdString>Airway Doctor, did you see it go through the cords?</CmdString>
+    <Variations>
+      <string>Airway Doctor, did you see it go through the cords?</string>
+      <string>did you visualize it going through the cords</string>
+      <string>did you see it pass through the cords</string>
+      <string>intubation</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:IR:BLEED</Cmd>
+    <CmdString>Tell IR we have a pelvic bleed</CmdString>
+    <Variations>
+      <string>Tell IR we have a pelvic bleed</string>
+      <string>We have a pelvic bleed</string>
+      <string>there is pelvic bleeding</string>
+      <string>the pelvis is bleeding</string>
+      <string>pelvic bleed</string>
+      <string>there is bleeding in the pelvis</string>
+      <string>tell IR we have a bleed in the pelvis</string>
+      <string>we need to go to IR</string>
+      <string>blood in the pelvis</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:IR:ANGIO</Cmd>
+    <CmdString>Scribe Nurse, call IR for an angioembolism</CmdString>
+    <Variations>
+      <string>Scribe Nurse, call IR for an angioembolism</string>
+      <string>book an angioembolism</string>
+      <string>schedule for angioembolism</string>
+      <string>inform IR of angioembolism</string>
+      <string>angioembolism</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:OR:EXTERNALFIX</Cmd>
+    <CmdString>Scribe Nurse, call OR for an external fixation</CmdString>
+    <Variations>
+      <string>Scribe Nurse, call OR for an external fixation</string>
+      <string>book an external fixation</string>
+      <string>schedule for external fixation</string>
+      <string>inform OR of external fixation</string>
+      <string>external fixation</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:OR:LAPAROTOMY</Cmd>
+    <CmdString>Scribe Nurse, call OR for a laparotomy</CmdString>
+    <Variations>
+      <string>Scribe Nurse, call OR for a laparotomy</string>
+      <string>book a laparatomy</string>
+      <string>schedule for laparotomy</string>
+      <string>inform OR of laparotomy</string>
+      <string>we are going to do an exlap</string>
+      <string>laparotomy</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:OR:RETROPERITENEAL</Cmd>
+    <CmdString>Scribe Nurse, call OR for a retroperiteneal packing</CmdString>
+    <Variations>
+      <string>Scribe Nurse, call OR for a retroperiteneal packing</string>
+      <string>request for retroperitoneal packing</string>
+      <string>get retroperitoneal packing</string>
+      <string>find retroperitoneal packing</string>
+      <string>ask for retroperitoneal packing</string>
+      <string>retroperiteneal</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:PATIENT:NEEDOR</Cmd>
+    <CmdString>We need to get this patient to the OR</CmdString>
+    <Variations>
+      <string>We need to get this patient to the OR</string>
+      <string>we need to get downstairs</string>
+      <string>we need to operate</string>
+      <string>need OR</string>
+      <string>OR</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:RISE:TRUE</Cmd>
+    <CmdString>I can see the patient's respirations</CmdString>
+    <Variations>
+      <string>I can see the patient's respirations</string>
+      <string>I can see chest rise and fall</string>
+      <string>I can see breathing activity</string>
+      <string>chest rise</string>
+      <string>chest rise and fall</string>
+      <string>chest fall</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:SEDATE:PATIENT</Cmd>
+    <CmdString>Primary Nurse, please administer propofol</CmdString>
+    <Variations>
+      <string>Primary Nurse, please administer propofol</string>
+      <string>give propofol</string>
+      <string>push propofol</string>
+      <string>infuse propofol</string>
+      <string>sedate patient</string>
+      <string>propofol</string>
+      <string>sedate</string>
+      <string>Primary Nurse, please sedate the patient</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:SET:AIRFLOW</Cmd>
+    <CmdString>Airway Doctor, the ventilator should be set at 100%</CmdString>
+    <Variations>
+      <string>Airway Doctor, the ventilator should be set at 100%</string>
+      <string>set ventilator to 100% oxygen</string>
+      <string>use 100% oxygen</string>
+      <string>ventilate with 100% oxygen</string>
+      <string>vent setting</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:TRACHEA:NORMAL</Cmd>
+    <CmdString>The trachea feels normal</CmdString>
+    <Variations>
+      <string>The trachea feels normal</string>
+      <string>there is no tracheal deviation</string>
+      <string>trachea</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:TRACHEA:LEFT</Cmd>
+    <CmdString>The trachea has left deviation</CmdString>
+    <Variations>
+      <string>The trachea has left deviation</string>
+      <string>left tracheal deviation</string>
+      <string>trachea</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:TRACHEA:RIGHT</Cmd>
+    <CmdString>The trachea has right deviation</CmdString>
+    <Variations>
+      <string>The trachea has right deviation</string>
+      <string>right tracheal deviation</string>
+      <string>trachea</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:XRAY:CHEST:FALSE</Cmd>
+    <CmdString>There is no blood in the chest</CmdString>
+    <Variations>
+      <string>There is no blood in the chest</string>
+      <string>no bleeding in the chest</string>
+      <string>no blood on the xray</string>
+      <string>no blood in the chest</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:XRAY:CHEST:TRUE</Cmd>
+    <CmdString>There is blood in the chest</CmdString>
+    <Variations>
+      <string>There is blood in the chest</string>
+      <string>bleeding in the chest</string>
+      <string>I see blood on the xray</string>
+      <string>blood in the chest</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:XRAY:ETT:TRUE</Cmd>
+    <CmdString>The ETT is in good position</CmdString>
+    <Variations>
+      <string>The ETT is in good position</string>
+      <string>ETT is well-positioned</string>
+      <string>ETT is set</string>
+      <string>ET tube is in place</string>
+      <string>ETT placement is correct</string>
+      <string>ETT placement is good</string>
+      <string>ET tube is good</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:XRAY:ETT:FALSE</Cmd>
+    <CmdString>The ETT is in a bad position</CmdString>
+    <Variations>
+      <string>The ETT is in a bad position</string>
+      <string>The ETT is misplaced</string>
+      <string>ETT is misaligned</string>
+      <string>ETT is placed wrong</string>
+      <string>ET tube is in the wrong place</string>
+      <string>ET tube placement is wrong</string>
+      <string>ET tube placement is off</string>
+      <string>ETT placement is incorrect</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:XRAY:PELVIC:TRUE</Cmd>
+    <CmdString>There is blood in the pelvic xray</CmdString>
+    <Variations>
+      <string>There is blood in the pelvic xray</string>
+      <string>blood in the pelvis on xray</string>
+      <string>bleeding in the pelvis on xray</string>
+      <string>blood on the pelvic xray</string>
+      <string>blood pelvic xray</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:XRAY:PELVIC:FALSE</Cmd>
+    <CmdString>There is no blood in the pelvic xray</CmdString>
+    <Variations>
+      <string>There is no blood in the pelvic xray</string>
+      <string>no blood in the pelvis on xray</string>
+      <string>no bleeding in the pelvis on xray</string>
+      <string>no blood on the pelvic xray</string>
+      <string>no blood pelvic xray</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PR:PATIENT:GCS</Cmd>
+    <CmdString>Procedure Resident, please perform a glascow coma scale.</CmdString>
+    <Variations>
+      <string>Procedure Resident, please perform a glascow coma scale.</string>
+      <string>get a GCS</string>
+      <string>what is the GCS</string>
+      <string>take a GCS</string>
+      <string>asses the GCS</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PR:PATIENT:LOGROLL</Cmd>
+    <CmdString>Procedure Resident, please logroll the patient</CmdString>
+    <Variations>
+      <string>Procedure Resident, please logroll the patient</string>
+      <string>roll the patient</string>
+      <string>turn the patient</string>
+      <string>help me roll the patient</string>
+      <string>logroll</string>
+      <string>move the patient</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PR:PATIENT:SKINTEMP</Cmd>
+    <CmdString>Procedure Resident, please check the skin temperature</CmdString>
+    <Variations>
+      <string>Procedure Resident, please check the skin temperature</string>
+      <string>check the temperature</string>
+      <string>get a temperature</string>
+      <string>skin temp</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PR:PULSE:CAROTID</Cmd>
+    <CmdString>Procedure Resident, please check the patient's carotid pulse</CmdString>
+    <Variations>
+      <string>Procedure Resident, please check the patient's carotid pulse</string>
+      <string>check the carotids</string>
+      <string>check the carotid artery</string>
+      <string>carotid pulse</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PR:PULSE:FEMORAL</Cmd>
+    <CmdString>Procedure Resident, please check the patient's femoral pulse</CmdString>
+    <Variations>
+      <string>Procedure Resident, please check the patient's femoral pulse</string>
+      <string>check femorals</string>
+      <string>check the femoral artery</string>
+      <string>femoral pulse</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PR:PULSE:RADIAL</Cmd>
+    <CmdString>Procedure Resident, please check the patient's radial pulse</CmdString>
+    <Variations>
+      <string>Procedure Resident, please check the patient's radial pulse</string>
+      <string>check radials</string>
+      <string>check the radial artery</string>
+      <string>radial pulse</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PREP:INTUBATION</Cmd>
+    <CmdString>Airway Doctor, let's prepare for intubation</CmdString>
+    <Variations>
+      <string>Airway Doctor, let's prepare for intubation</string>
+      <string>prepare to tube the patient</string>
+      <string>prepare to secure the airway</string>
+      <string>prepare to provide a definitive airway</string>
+      <string>prep intubation</string>
+      <string>intubation</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PULSE:CAROTID</Cmd>
+    <CmdString>Primary Nurse, check the carotid pulse</CmdString>
+    <Variations>
+      <string>Primary Nurse, check the carotid pulse</string>
+      <string>check the carotids</string>
+      <string>check the carotid artery</string>
+      <string>carotid pulse</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PULSE:FEMORAL</Cmd>
+    <CmdString>Primary Nurse, check the femoral pulse</CmdString>
+    <Variations>
+      <string>Primary Nurse, check the femoral pulse</string>
+      <string>check femorals</string>
+      <string>check the femoral artery</string>
+      <string>femoral pulse</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PULSE:RADIAL</Cmd>
+    <CmdString>Primary Nurse, check the radial pulse</CmdString>
+    <Variations>
+      <string>Primary Nurse, check the radial pulse</string>
+      <string>check radials</string>
+      <string>check the radial artery</string>
+      <string>radial pulse</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>SUCTION:PATIENT</Cmd>
+    <CmdString>Respiratory Tech, please provide suction</CmdString>
+    <Variations>
+      <string>Respiratory Tech, please provide suction</string>
+      <string>please suction</string>
+      <string>clear the secretions</string>
+      <string>suction patient</string>
+      <string>provide suction</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>VENT:BVM</Cmd>
+    <CmdString>Respiratory Tech, please provide ventilation via BVM</CmdString>
+    <Variations>
+      <string>Respiratory Tech, please provide ventilation via BVM</string>
+      <string>please bag the patient</string>
+      <string>please manually ventilate the patient</string>
+      <string>bag valve mask</string>
+      <string>ventilation</string>
+      <string>bvm</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>VENT:STOPBVM</Cmd>
+    <CmdString>Respiratory Tech, please stop ventilation via BVM</CmdString>
+    <Variations>
+      <string>Respiratory Tech, please stop ventilation via BVM</string>
+      <string>please stop bagging the patient</string>
+      <string>please stop manually ventilating the patient</string>
+      <string>bag valve mask</string>
+      <string>ventilation</string>
+      <string>bvm</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>VITALS:BP</Cmd>
+    <CmdString>Primary Nurse, can i get a blood pressure</CmdString>
+    <Variations>
+      <string>Primary Nurse, can i get a blood pressure</string>
+      <string>what's the pressure</string>
+      <string>take a pressure</string>
+      <string>cycle the pressure</string>
+      <string>take a blood pressure</string>
+      <string>cycle the blood pressure</string>
+      <string>blood pressure</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>VITALS:HR</Cmd>
+    <CmdString>Primary Nurse, what is the patient's heart rate</CmdString>
+    <Variations>
+      <string>Primary Nurse, what is the patient's heart rate</string>
+      <string>what's the pulse rate</string>
+      <string>what's the pulse</string>
+      <string>heart rate</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>VITALS:RESP</Cmd>
+    <CmdString>Primary Nurse, what is the patient's respiratory rate</CmdString>
+    <Variations>
+      <string>Primary Nurse, what is the patient's respiratory rate</string>
+      <string>how fast is the patient breathing</string>
+      <string>what's the respiratory rate</string>
+      <string>what are the respirations</string>
+      <string>respiratory rate</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>VITALS:SAO2</Cmd>
+    <CmdString>What is the patient's saturated oxygen level</CmdString>
+    <Variations>
+      <string>What is the patient's saturated oxygen level</string>
+      <string>what are the sats</string>
+      <string>what's the patient satting</string>
+      <string>what's the patient satting</string>
+      <string>what's the oxygenation</string>
+      <string>whats the o2 sats</string>
+      <string>o2 level</string>
+      <string>o2 sats</string>
+      <string>oxygen level</string>
+      <string>oxygen sats</string>
+      <string />
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:AMPLE:E</Cmd>
+    <CmdString>Can you tell me what happened?</CmdString>
+    <Variations>
+      <string>Can you tell me what happened</string>
+      <string>events</string>
+      <string>what happened</string>
+      <string>ample</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:NEURO</Cmd>
+    <CmdString>Procedure Resident, please perform a neurological exam</CmdString>
+    <Variations>
+      <string>Procedure Resident, please perform a neurological exam</string>
+      <string>perform neuro exam</string>
+      <string>neuro exam</string>
+      <string>neuro</string>
+      <string>secondary survey neuro</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:PELVIC:MEATUS</Cmd>
+    <CmdString>Procedure Resident, please examine the meatus</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the meatus</string>
+      <string>meatus</string>
+      <string>pelvic exam</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:BACK:TENDER</Cmd>
+    <CmdString>Procedure Resident, please examine the back for tenderness</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the back for tenderness</string>
+      <string>tenderness</string>
+      <string>examine back</string>
+      <string>back</string>
+      <string>tender</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:ABDOMEN:TENDER</Cmd>
+    <CmdString>Procedure Resident, please examine the abdomen for tenderness</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the abdomen for tenderness</string>
+      <string>tenderness</string>
+      <string>abdomen</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:CHEST:WOUND</Cmd>
+    <CmdString>Procedure Resident, please examine the chest for wounds</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the chest for wounds</string>
+      <string>wounds</string>
+      <string>chest</string>
+      <string>examine chest</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:EXTREM:WOUND</Cmd>
+    <CmdString>Procedure Resident, please examine the extremities for wounds</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the extremities for wounds</string>
+      <string>extremities</string>
+      <string>wounds</string>
+      <string>limb</string>
+      <string>examine limb for wounds</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:ABDOMEN</Cmd>
+    <CmdString>Procedure Resident, please examine the abdomen</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the abdomen</string>
+      <string>abdomen</string>
+      <string>examine abdomen</string>
+      <string>secondary survey abdomen</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:BACK:WOUND</Cmd>
+    <CmdString>Procedure Resident, please examine the back for wounds</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the back for wounds</string>
+      <string>wounds</string>
+      <string>back</string>
+      <string>examine back</string>
+      <string>examine back for wounds</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:ABDOMEN:REBOUND</Cmd>
+    <CmdString>Procedure Resident, please examine the abdomen for rebound</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the abdomen for rebound</string>
+      <string>rebound</string>
+      <string>guarding rebound</string>
+      <string>examine abdomen</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:EXTREM:PAIN</Cmd>
+    <CmdString>Procedure Resident, please examine the extremities for pain</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the extremities for pain</string>
+      <string>extremities</string>
+      <string>extremities pain</string>
+      <string>examine pain</string>
+      <string>examine extremities</string>
+      <string>examine limb for pain</string>
+      <string>examine limb</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:CHEST</Cmd>
+    <CmdString>Procedure Resident, please examine the patients chest</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the patients chest</string>
+      <string>examine chest</string>
+      <string>secondary survey chest</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:BACK:DEFORM</Cmd>
+    <CmdString>Procedure Resident, please examine the back for deformities</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the back for deformities</string>
+      <string>examine back for deformity</string>
+      <string>examine back</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:NECK</Cmd>
+    <CmdString>Procedure Resident, please examine the patients neck</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the patients neck</string>
+      <string>secondary survey neck</string>
+      <string>examine neck</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:BACK</Cmd>
+    <CmdString>Procedure Resident, please examine the patients back</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the patients back</string>
+      <string>secondary survey back</string>
+      <string>examine back</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:HEAD:MOUTH</Cmd>
+    <CmdString>Procedure Resident, please examine the mouth</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the mouth</string>
+      <string>Does the mouth and teeth close normally</string>
+      <string>examine mouth</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:ABDOMEN:WOUND</Cmd>
+    <CmdString>Procedure Resident, please examine the abdomen for wounds</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the abdomen for wounds</string>
+      <string>examine abdomen</string>
+      <string>abdomen wounds</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:EXTREM:PULSE</Cmd>
+    <CmdString>Procedure Resident, please examine the extremities for pulse</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the extremities for pulse</string>
+      <string>examine extremities</string>
+      <string>examine pulse</string>
+      <string>examine limbs</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:AMPLE:M</Cmd>
+    <CmdString />
+    <Variations>
+      <string>Are you currently on any medications</string>
+      <string>what meds are you taking</string>
+      <string>are you on any meds</string>
+      <string>any perscriptions</string>
+      <string>ample</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:CHEST:TENDER</Cmd>
+    <CmdString>Procedure Resident, please examine the chest for tenderness</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the chest for tenderness</string>
+      <string>chest tenderness</string>
+      <string>examine chest for tenderness</string>
+      <string>is the chest tender</string>
+      <string>does the chest feel tender</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:HEAD:FLUID</Cmd>
+    <CmdString>Procedure Resident, please examine the head for fluid</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the head for fluid</string>
+      <string>Is there blood or fluid in the ears or nose</string>
+      <string>examine head for fluid</string>
+      <string>any fluid around the head</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:PELVIC:PERINEUM</Cmd>
+    <CmdString>Procedure Resident, please examine the perineum</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the perineum</string>
+      <string>examine perineum</string>
+      <string>perineum</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:NECK:PAIN</Cmd>
+    <CmdString>Procedure Resident, please examine the neck for pain</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the neck for pain</string>
+      <string>examine neck</string>
+      <string>examine for neck pain</string>
+      <string>neck pain</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:HEAD:TENDER</Cmd>
+    <CmdString>Procedure Resident, please examine the face for tenderness</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the face for tenderness</string>
+      <string>Is the face tender</string>
+      <string>examine face tender</string>
+      <string>face tenderness</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:EXTREM:STRENGTH</Cmd>
+    <CmdString>Procedure Resident, please examine the extremities for strength</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the extremities for strength</string>
+      <string>examine extremities</string>
+      <string>examine strength</string>
+      <string>examine limb strength</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:AMPLE:L</Cmd>
+    <CmdString>When was the last time you had food</CmdString>
+    <Variations>
+      <string>When was the last time you had food</string>
+      <string>when was your last meal</string>
+      <string>how long has it been since you've eaten</string>
+      <string>last meal</string>
+      <string>food</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:ASKCAUSE</Cmd>
+    <CmdString>Can you tell me what happened</CmdString>
+    <Variations>
+      <string>Can you tell me what happened</string>
+      <string>what happened</string>
+      <string>how did this happen</string>
+      <string>what caused your injury</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:ABDOMEN:DISTENTION</Cmd>
+    <CmdString>Procedure Resident, please examine the abdomen for distention</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the abdomen for distention</string>
+      <string>examine abdomen for distention</string>
+      <string>distention</string>
+      <string>examine abdomen</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:NECK:TENDER</Cmd>
+    <CmdString>Procedure Resident, please examine the neck for tenderness</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the neck for tenderness</string>
+      <string>examine neck for tenderness</string>
+      <string>Is the patients neck tender</string>
+      <string>examine neck</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:HEAD</Cmd>
+    <CmdString>Procedure Resident, please examine the patient's head</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the patients head</string>
+      <string>secondary survey head</string>
+      <string>examine head</string>
+      <string>check head</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:NECK:WOUND</Cmd>
+    <CmdString>Procedure Resident, please examine the neck for wounds</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the neck for wounds</string>
+      <string>examine neck</string>
+      <string>examine neck for wounds</string>
+      <string>neck wounds</string>
+      <string>check for wounds</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:HEAD:VISION</Cmd>
+    <CmdString>Procedure Resident, please examine patient's vision</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine patients vision</string>
+      <string>Is vision intact</string>
+      <string>examine vision</string>
+      <string>check vision</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:AMPLE:P</Cmd>
+    <CmdString>Have you ever had any surgeries or been admitted to the hospital</CmdString>
+    <Variations>
+      <string>Have you ever had any surgeries or been admitted to the hospital</string>
+      <string>Had surgery</string>
+      <string>Have you been admitted to the hospital before</string>
+      <string>hospital</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:HEAD:WOUND</Cmd>
+    <CmdString>Procedure Resident, please examine the head for wounds</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the head for wounds</string>
+      <string>Are there any wounds, cuts or lacerations on the head</string>
+      <string>examine head for wounds</string>
+      <string>any wounds</string>
+      <string>any lacerations</string>
+      <string>any cuts</string>
+      <string>check for wounds</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:EXTREM:DEFORM</Cmd>
+    <CmdString>Procedure Resident, please examine the extremities for deformities</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the extremities for deformities</string>
+      <string>examine extremities</string>
+      <string>examine limbs</string>
+      <string>examine extremities for deformities</string>
+      <string>examine limbs for deformities</string>
+      <string>check for deformities</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:BACK:STEPOFF</Cmd>
+    <CmdString>Procedure Resident, please examine the back for step off</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the back for step off</string>
+      <string>examine back</string>
+      <string>check for stepoff</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:AMPLE:A</Cmd>
+    <CmdString>Do you have any allergies that you're aware of?</CmdString>
+    <Variations>
+      <string>Do you have any allergies that you're aware of</string>
+      <string>any allergies</string>
+      <string>are you allergic to anything</string>
+      <string>ample</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:ASKPAIN</Cmd>
+    <CmdString>Are you in any pain?</CmdString>
+    <Variations>
+      <string>are you in any pain</string>
+      <string>how are you feeling</string>
+      <string>how do you feel</string>
+      <string>does anything hurt</string>
+      <string>where does it hurt</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:NECK:DEFORM</Cmd>
+    <CmdString>Procedure Resident, please examine the neck for deformities</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the neck for deformities</string>
+      <string>examine neck</string>
+      <string>check neck for deformities</string>
+      <string>neck deformities</string>
+      <string>check neck</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:SECONDARY:SURVEY</Cmd>
+    <CmdString>I'd like to start the secondary survey.</CmdString>
+    <Variations>
+      <string>I'd like to start the secondary survey</string>
+      <string>secondary survey</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:CHEST:DEFORM</Cmd>
+    <CmdString>Procedure Resident, please examine the chest for deformities</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the chest for deformities</string>
+      <string>examine chest for deformities</string>
+      <string>check chest for deformities</string>
+      <string>examine chest</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:EXTREM:TENDER</Cmd>
+    <CmdString>Procedure Resident, please examine the extremeites for tenderness</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the extremities for tenderness</string>
+      <string>examine extremities for tenderness</string>
+      <string>examine limbs for tenderness</string>
+      <string>check extremities for tenderness</string>
+      <string>check limbs for tenderness</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:PELVIC:STABLE</Cmd>
+    <CmdString>Procedure Resident, please examine the pelvis for stability</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the pelvis for stability</string>
+      <string>examine the pelvis for stability</string>
+      <string>examine stability</string>
+      <string>check pelvis stability</string>
+      <string>check stability</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:PELVIC:RECTAL</Cmd>
+    <CmdString>Procedure Resident, please examine the rectum</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the rectum</string>
+      <string>examine the rectum</string>
+      <string>check the rectum</string>
+      <string>rectum</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:PELVIC</Cmd>
+    <CmdString>Procedure Resident, please examine the patient's pelvis</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the patient's pelvis</string>
+      <string>secondary survey pelvis</string>
+      <string>examine pelvis</string>
+      <string>check pelvis</string>
+      <string>do pelvic exam</string>
+      <string>Procedure Resident, please examine the patients pelvis</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLACE:OXYGEN:CANNULA</Cmd>
+    <CmdString>Place an Oxygen Cannula</CmdString>
+    <Variations>
+      <string>Place an Oxygen Cannula</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>REMOVE:OXYGEN:CANNULA</Cmd>
+    <CmdString>Remove the Oxygen Cannula</CmdString>
+    <Variations>
+      <string>Remove the Oxygen Cannula</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PATIENT:BRACELET</Cmd>
+    <CmdString>Place an ID Bracelet on the patient.</CmdString>
+    <Variations>
+      <string>Place an ID Bracelet on the patient.</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PATIENT:AUTOBP</Cmd>
+    <CmdString>What is the blood pressure reading?</CmdString>
+    <Variations>
+      <string>What is the blood pressure reading?</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PERFORM:CHESTTUBE:RIGHT</Cmd>
+    <CmdString>Procedure Resident, place a chest tube on the patient's right side.</CmdString>
+    <Variations>
+      <string>Procedure Resident, place a chest tube on the patient's right side.</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PERFORM:CHESTTUBE:LEFT</Cmd>
+    <CmdString>Procedure Resident, place a chest tube on the patient's left side.</CmdString>
+    <Variations>
+      <string>Procedure Resident, place a chest tube on the patient's left side.</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>FAST:EXAM:CHEST</Cmd>
+    <CmdString>Procedure Resident, perform a FAST exam of the patient's chest</CmdString>
+    <Variations>
+      <string>Procedure Resident, perform a FAST exam of the patient's chest</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>FAST:EXAM:ABDOMEN</Cmd>
+    <CmdString>Procedure Resident, perform a FAST exam of the patient's abdomen</CmdString>
+    <Variations>
+      <string>Procedure Resident, perform a FAST exam of the patient's abdomen</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLACE:MONITORS</Cmd>
+    <CmdString>Put the patient on the monitors</CmdString>
+    <Variations>
+      <string>Put the patient on the monitors</string>
+      <string>all monitors</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>ORDER:KETAMINE</Cmd>
+    <CmdString>Primary Nurse, administer 20mg of ketamine</CmdString>
+    <Variations>
+      <string>Primary Nurse, administer 20mg of ketamine</string>
+      <string>I need 20mg of ketamine</string>
+      <string>give 20mg of ketamine</string>
+      <string>order ketamine</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>ORDER:MORPHINE</Cmd>
+    <CmdString>Primary Nurse, administer (dosage) of morphine, a small amount at a time</CmdString>
+    <Variations>
+      <string>Primary Nurse, administer (dosage) of morphine, a small amount at a time</string>
+      <string>I need (dosage) of morphine, a small amount at a time</string>
+      <string>give (dosage) of morphine, a small amount at a time</string>
+      <string>order morphine</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>ORDER:LOCAL:ANAESTHETIC</Cmd>
+    <CmdString>Primary Nurse, administer 15mls of local anaesthetic</CmdString>
+    <Variations>
+      <string>Primary Nurse, administer 15mls of local anaesthetic</string>
+      <string>I need 15mls of local anaesthetic</string>
+      <string>give 15mls of local anaesthetic</string>
+      <string>order local anaesthetic</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>CHECK:PERCUSSION</Cmd>
+    <CmdString>Procedure Resident, please check chest percussion</CmdString>
+    <Variations>
+      <string>Procedure Resident, please check chest percussion</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>CHECK:BOWEL</Cmd>
+    <CmdString>Procedure Resident, please check the bowel sounds</CmdString>
+    <Variations>
+      <string>Procedure Resident, please check the bowel sounds</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PERFORM:THORACOSTOMY:NEEDLE:LEFT</Cmd>
+    <CmdString>Procedure Resident, perform a needle thoracostomy on the patient's left side.</CmdString>
+    <Variations>
+      <string>Procedure Resident, perform a needle thoracostomy on the patient's left side.</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PERFORM:DPL</Cmd>
+    <CmdString>Procedure Resident, please perform a DPL.</CmdString>
+    <Variations>
+      <string>Procedure Resident, please perform a DPL.</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>VENT:SET:AIRFLOW</Cmd>
+    <CmdString>Airway Doctor, set the vent at 100%</CmdString>
+    <Variations>
+      <string>Airway Doctor, set the vent at 100%</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:EXTREMITIES</Cmd>
+    <CmdString>Procedure Resident, please examine the patients extremities.</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the patients extremities.</string>
+      <string>secondary survey extremities</string>
+      <string>examine extremities</string>
+      <string>check extremities</string>
+      <string>do extremities exam</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>EXAMINE:THIGHS</Cmd>
+    <CmdString>Procedure Resident, please examine the patients thighs</CmdString>
+    <Variations>
+      <string>Procedure Resident, please examine the patients thighs</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:PNUEMO:LEFT</Cmd>
+    <CmdString>We have tension pneumothorax on the left side.</CmdString>
+    <Variations>
+      <string>We have tension pneumothorax on the left side.</string>
+      <string>We have tension pneumothorax on the left side</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:PNEUMO:UNSPECIFIED</Cmd>
+    <CmdString>We have tension pneumothorax.</CmdString>
+    <Variations>
+      <string>We have tension pneumothorax.</string>
+      <string>We have tension pneumothorax</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:PELVIC:FALSE</Cmd>
+    <CmdString>The pelvis is unstable.</CmdString>
+    <Variations>
+      <string>The pelvis is unstable.</string>
+      <string>The pelvis is unstable</string>
+      <string>There is movement in the pelvis</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:PELVIC:TRUE</Cmd>
+    <CmdString>The pelvis is stable</CmdString>
+    <Variations>
+      <string>The pelvis is stable</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:DONE</Cmd>
+    <CmdString>Done with the secondary survey</CmdString>
+    <Variations>
+      <string>Done with the secondary survey</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:XRAY:PELVIC:FRACTURE:TRUE</Cmd>
+    <CmdString>There is a severe pelvic farcture.</CmdString>
+    <Variations>
+      <string>There is a severe pelvic farcture.</string>
+      <string>There is a pelvic fracture</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:XRAY:PELVIC:FRACTURE:FALSE</Cmd>
+    <CmdString>No pelvic fracture is indicated</CmdString>
+    <Variations>
+      <string>No pelvic fracture is indicated</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:GOODAIR</Cmd>
+    <CmdString>We have a good airway</CmdString>
+    <Variations>
+      <string>We have a good airway</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>XRAY:PELVIC</Cmd>
+    <CmdString>Please take a pelvic xray.</CmdString>
+    <Variations>
+      <string>Please take a pelvic xray.</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>XRAY:CHEST</Cmd>
+    <CmdString>Please take a chest xray.</CmdString>
+    <Variations>
+      <string>Please take a chest xray.</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>ORDER:FENTANYL</Cmd>
+    <CmdString>Primary Nurse, administer 50 mg of fentanyl</CmdString>
+    <Variations>
+      <string>Primary Nurse, administer 50 mg of fentanyl</string>
+      <string>I need 50 mg of fentanyl</string>
+      <string>order fentanyl</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:EXAM:BACK:ROLLBACK</Cmd>
+    <CmdString />
+    <Variations>
+      <string>Roll the patient onto his back.</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:YES</Cmd>
+    <CmdString>Yes</CmdString>
+    <Variations>
+      <string>Yes</string>
+      <string>Ok</string>
+      <string>Okay</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:NO</Cmd>
+    <CmdString>No</CmdString>
+    <Variations>
+      <string>No</string>
+      <string>Nope</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:CLOSE</Cmd>
+    <CmdString>Close</CmdString>
+    <Variations>
+      <string>Close</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:NORMAL</Cmd>
+    <CmdString>Nothing Abnormal.</CmdString>
+    <Variations>
+      <string>Looks Normal</string>
+      <string>Nothing Abnormal</string>
+      <string>No abnormalities</string>
+      <string>No problems</string>
+      <string>Nothing here</string>
+      <string>Nothing to see here</string>
+      <string>Nothing abnormal</string>
+      <string>Looks normal</string>
+      <string>Looks okay</string>
+      <string>Looks good</string>
+      <string>no problems</string>
+      <string>nothing here</string>
+      <string>nothing to see here</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:BLOOD:POSITIVE</Cmd>
+    <CmdString>I see blood.</CmdString>
+    <Variations>
+      <string>Blood</string>
+      <string>I see blood</string>
+      <string>There is blood</string>
+      <string>Internal bleeding</string>
+      <string>see blood</string>
+      <string>internal bleeding</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:FRACTURE:POSITIVE</Cmd>
+    <CmdString>I see a fracture.</CmdString>
+    <Variations>
+      <string>Fracture</string>
+      <string>I see a fracture</string>
+      <string>There is a fracture</string>
+      <string>see a fracture</string>
+      <string>fracture</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:PLACEMENT:INCORRECT</Cmd>
+    <CmdString>Placement is incorrect.</CmdString>
+    <Variations>
+      <string>Bad placement</string>
+      <string>Incorrect Placement</string>
+      <string>Placement is incorrect</string>
+      <string>Placement is bad</string>
+      <string>Placement looks bad</string>
+      <string>Placement looks incorrect</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:XRAY:FRACTURE:HUMERUS:LEFT</Cmd>
+    <CmdString>There is a left midshaft humerus fracture</CmdString>
+    <Variations>
+      <string>There is a left midshaft humerus fracture</string>
+      <string>humerus fracture</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:XRAY:FRACTURE:HUMERUS:RIGHT</Cmd>
+    <CmdString>There is a right midshaft humerus fracture</CmdString>
+    <Variations>
+      <string>There is a right midshaft humerus fracture</string>
+      <string>humerus fracture</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:XRAY:FRACTURE:RAMUS:LEFT</Cmd>
+    <CmdString>There is a fracture of the pubic ramus, left side</CmdString>
+    <Variations>
+      <string>There is a fracture of the pubic ramus, left side</string>
+      <string>pubic ramus</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:XRAY:FRACTURE:RAMUS:RIGHT</Cmd>
+    <CmdString>There is a fracture of the pubic ramus, right side</CmdString>
+    <Variations>
+      <string>There is a fracture of the pubic ramus, right side</string>
+      <string>pubic ramus</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>ORDER:CRYSTAL:1IV</Cmd>
+    <CmdString>Primary Nurse, please administer one liter of crystalloid</CmdString>
+    <Variations>
+      <string>Primary Nurse, please administer one liter of crystalloid</string>
+      <string>hang a liter of crystalloid</string>
+      <string>give a liter of crystalloid</string>
+      <string>give a bag of crystalloid</string>
+      <string>order one liter of crystalloid</string>
+      <string>order crystalloid</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:PULM:CONTUSION:RIGHT</Cmd>
+    <CmdString>We have a pulmonary contusion on the right side</CmdString>
+    <Variations>
+      <string>We have a pulmonary contusion on the right side</string>
+      <string>pulmonary contusion</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PREP:INTUBATION</Cmd>
+    <CmdString>Prepare this patient for intubation</CmdString>
+    <Variations />
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>CALL:CT:UNSPECIFIED</Cmd>
+    <CmdString>Scribe Nurse, please call for a CT scan.</CmdString>
+    <Variations>
+      <string>Scribe Nurse, please call for a CT scan.</string>
+      <string>I need a CT scan.</string>
+      <string>Call for a CT scan.</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>ORDER:RINGERS:2IV</Cmd>
+    <CmdString>Primary Nurse, please administer two liters of ringers lactated via IV</CmdString>
+    <Variations>
+      <string>Primary Nurse, please administer two liters of ringers lactated via IV</string>
+      <string>hang two liters of ringers lactated</string>
+      <string>give two units of ringers lactated</string>
+      <string>transfuse two liters of ringers lactated</string>
+      <string>order ringers RL LR LRS</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>ORDER:RINGERS:1IV</Cmd>
+    <CmdString>Primary Nurse, please administer one liter of Ringer's lactate</CmdString>
+    <Variations>
+      <string>Primary Nurse, please administer one liter of ringers lactated</string>
+      <string>hang a liter of ringers lactated</string>
+      <string>give a liter of ringers lactated</string>
+      <string>give a bag of ringers lactated</string>
+      <string>order one liter of ringers</string>
+      <string>order ringers RL LR LRS</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>ORDER:CRYSTAL:2RI</Cmd>
+    <CmdString>Primary Nurse, please administer two liters of crystalloid via infuser</CmdString>
+    <Variations>
+      <string>Primary Nurse, please administer two liters of crystalloid via infuser</string>
+      <string>infuse two liters of crystalloid</string>
+      <string>put two liters on the level 1</string>
+      <string>give two bags of crystalloid using level 1</string>
+      <string>order crystalloid</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:FOG:FALSE</Cmd>
+    <CmdString>There is no fogging in the tube</CmdString>
+    <Variations>
+      <string>We don't have fogging in the tube</string>
+      <string>no fog in the tube</string>
+      <string>the tube is not fogging</string>
+      <string>no moisture in the tube</string>
+      <string>no humidity in the tube</string>
+      <string>I don't see fog in the tube</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>ORDER:CRYSTAL:2PR</Cmd>
+    <CmdString>Primary Nurse, please administer two liters of crystalloid via pressure bag</CmdString>
+    <Variations>
+      <string>Primary Nurse, please administer two liters of crystalloid via pressure bag</string>
+      <string>push two liters of crystalloid</string>
+      <string>give the two liters under pressure</string>
+      <string>put 2 liters on a pressure bag</string>
+      <string>order crystalloid</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>CT:BRAIN</Cmd>
+    <CmdString>I need a CT scan of the Brain.</CmdString>
+    <Variations>
+      <string>I need a CT scan of the Brain.</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PATIENT:UNCOVER:ALL</Cmd>
+    <CmdString>Remove the blankets from the patient</CmdString>
+    <Variations>
+      <string>Expose the patient again</string>
+      <string>Remove the sheets</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PERFORM:STERNALRUB</Cmd>
+    <CmdString>Procedure Resident, please perform a sternal rub.</CmdString>
+    <Variations>
+      <string>Procedure Resident, please perform a sternal rub.</string>
+      <string>perform sternal rub</string>
+      <string>sternal rub</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:PNUEMO:RIGHT</Cmd>
+    <CmdString>We have tension pneumothorax on the right side</CmdString>
+    <Variations>
+      <string>We have tension pneumothorax on the right side</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>CT:TLSPINE</Cmd>
+    <CmdString>I need a CT scan of the TLSpine.</CmdString>
+    <Variations>
+      <string>I need a CT scan of the TLSpine.</string>
+      <string>I need a C T scan of the T L Spine.</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PATIENT:COVER:TOP</Cmd>
+    <CmdString>Procedure Resident, please cover the patient's upper half</CmdString>
+    <Variations>
+      <string>Procedure Resident, please cover the patient's upper half</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:RISE:FALSE</Cmd>
+    <CmdString>I can not see the patient's respirations</CmdString>
+    <Variations>
+      <string>I can not see the patient's respirations</string>
+      <string>I can not see chest rise and fall</string>
+      <string>I can not see breathing activity</string>
+      <string>no chest rise</string>
+      <string>no chest rise and fall</string>
+      <string>no chest fall</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PERFORM:THORACOSTOMY:NEEDLE</Cmd>
+    <CmdString>Airway Doctor, please perform a needle thoracostomy</CmdString>
+    <Variations>
+      <string>Airway Doctor, please perform a needle thoracostomy</string>
+      <string>insert a needle into the chest</string>
+      <string>needle the chest</string>
+      <string>decompress the chest</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:XRAY:FRACTURE:RIB68</Cmd>
+    <CmdString>There is a fracture in rib 6-8</CmdString>
+    <Variations>
+      <string>There is a fracture in rib 6-8</string>
+      <string>Rib 6-8 is fractured</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>ORDER:RINGERS:1PR</Cmd>
+    <CmdString>Primary Nurse, please administer one liter of saline via pressure bag</CmdString>
+    <Variations>
+      <string>Primary Nurse, please administer one liter of saline via pressure bag</string>
+      <string>push a liter of ringers lactated</string>
+      <string>put the ringers lactated on a pressure bag</string>
+      <string>order ringers RL LR LRS</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>ORDER:CRYSTAL:1PR</Cmd>
+    <CmdString>Primary Nurse, please administer one liter of crystalloid via pressure bag</CmdString>
+    <Variations>
+      <string>Primary Nurse, please administer one liter of crystalloid via pressure bag</string>
+      <string>push a liter of crystalloid</string>
+      <string>put the crystalloid on a pressure bag</string>
+      <string>order crystalloid</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PATIENT:COVER:BOTTOM</Cmd>
+    <CmdString>Procedure Resident, please cover the patient's lower half</CmdString>
+    <Variations>
+      <string>Procedure Resident, please cover the patient's lower half</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>ORDER:CRYSTAL:2IV</Cmd>
+    <CmdString>Primary Nurse, please administer two liters of crystalloid via IV</CmdString>
+    <Variations>
+      <string>Primary Nurse, please administer two liters of crystalloid via IV</string>
+      <string>hang two liters of crystalloid</string>
+      <string>give two units of crystalloid</string>
+      <string>transfuse two liters of crystalloid</string>
+      <string>order crystalloid</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>CALL:XRAY:ARM:RIGHT</Cmd>
+    <CmdString>Scribe Nurse, can you call an xray tech. We need a right arm xray.</CmdString>
+    <Variations>
+      <string>Scribe Nurse, can you call an xray tech. We need a right arm xray.</string>
+      <string>Scribe Nurse, can you call an x-ray tech. We need a right arm xray.</string>
+      <string>Scribe Nurse, can you call an xray tech. We need a right arm xray.</string>
+      <string>We need a right arm xray</string>
+      <string>Can I get a right arm xray</string>
+      <string>Can I get a right arm x-ray</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:CLOSEDIALOG</Cmd>
+    <CmdString>Close</CmdString>
+    <Variations>
+      <string>Close</string>
+      <string>Done</string>
+      <string>Exit</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>XRAY:ARM:RIGHT</Cmd>
+    <CmdString>Please take a right arm xray.</CmdString>
+    <Variations>
+      <string>Please take a right arm xray.</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:XRAY:FRACTURE:RIB66</Cmd>
+    <CmdString>There is a fracture in rib 6-6</CmdString>
+    <Variations>
+      <string>There is a fracture in rib 6-6</string>
+      <string>Rib 6-6 is fractured</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>ORDER:RINGERS:1RI</Cmd>
+    <CmdString>Primary Nurse, please administer one liter of ringers lactated via infuser</CmdString>
+    <Variations>
+      <string>Primary Nurse, please administer one liter of ringers lactated via infuser</string>
+      <string>infuse a liter of ringers lactated</string>
+      <string>put a liter of ringers lactated on the level 1</string>
+      <string>put a liter of LRS on the level 1</string>
+      <string>order ringers RL LR LRS</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>ORDER:RINGERS:2PR</Cmd>
+    <CmdString>Primary Nurse, please administer two liters of ringers lactated via pressure bag</CmdString>
+    <Variations>
+      <string>Primary Nurse, please administer two liters of ringers lactated via pressure bag</string>
+      <string>push two liters of ringers lactated</string>
+      <string>order ringers RL LR LRS</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>ORDER:CRYSTAL:1RI</Cmd>
+    <CmdString>Primary Nurse, please administer one liter of crystalloid via infuser</CmdString>
+    <Variations>
+      <string>Primary Nurse, please administer one liter of crystalloid via infuser</string>
+      <string>infuse a liter of crystalloid</string>
+      <string>put a liter of crystalloid on the level 1</string>
+      <string>order crystalloid</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>ORDER:RINGERS:2RI</Cmd>
+    <CmdString>Primary Nurse, please administer two liters of ringers lactated via infuser</CmdString>
+    <Variations>
+      <string>Primary Nurse, please administer two liters of ringers lactated via infuser</string>
+      <string>infuse two liters of ringers lactated</string>
+      <string>give two bags of LRS using level 1</string>
+      <string>order ringers RL LR LRS</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PATIENT:LOGROLL:END</Cmd>
+    <CmdString>Roll the patient onto their back.</CmdString>
+    <Variations>
+      <string>Roll the patient onto their back.</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>CT:ABDOMEN</Cmd>
+    <CmdString>I need a CT scan of the Abdomen.</CmdString>
+    <Variations>
+      <string>I need a CT scan of the Abdomen.</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>CT:CHEST</Cmd>
+    <CmdString>I need a CT scan of the Chest.</CmdString>
+    <Variations>
+      <string>I need a CT scan of the Chest.</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>CT:CSPINE</Cmd>
+    <CmdString>I need a CT scan of the CSpine.</CmdString>
+    <Variations>
+      <string>I need a CT scan of the CSpine.</string>
+      <string>I need a C T scan of the C Spine.</string>
+    </Variations>
+  </CommandVariation>
+  <CommandVariation>
+    <Cmd>PLAYER:PULM:CONTUSION:LEFT</Cmd>
+    <CmdString>We have a pulmonary contusion on the left side</CmdString>
+    <Variations>
+      <string>We have a pulmonary contusion on the left side</string>
+      <string>pulmonary contusion</string>
+    </Variations>
+  </CommandVariation>
+</ArrayOfCommandVariation>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfMed xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Med>
+    <Name>OXYTOCIN</Name>
+    <OrderTime>0</OrderTime>
+    <DeliveryMethods>
+      <MedDelivery>
+        <Type>IV</Type>
+        <DosageLo>10</DosageLo>
+        <DosageHi>600</DosageHi>
+        <DosageInc>10</DosageInc>
+      </MedDelivery>
+    </DeliveryMethods>
+    <Effects>
+      <MedEffect>
+        <Type>StateChange</Type>
+        <Name>Normal</Name>
+        <Time>10</Time>
+      </MedEffect>
+    </Effects>
+    <InteractionMap>
+      <item>IV:OXYTOCIN</item>
+      <response></response>
+      <tooltip></tooltip>
+      <note>Oxytocin is the most widely used medical therapy to augment/induce labor.</note>
+      <sound></sound>
+    </InteractionMap>
+  </Med>
+  <Med>
+    <Name>MORPHINE</Name>
+    <OrderTime>0</OrderTime>
+    <DeliveryMethods>
+      <MedDelivery>
+        <Type>IV</Type>
+        <DosageLo>100</DosageLo>
+        <DosageHi>200</DosageHi>
+        <DosageInc>10</DosageInc>
+      </MedDelivery>
+      <MedDelivery>
+        <Type>PILL</Type>
+        <DosageLo>100</DosageLo>
+        <DosageHi>600</DosageHi>
+        <DosageInc>100</DosageInc>
+      </MedDelivery>
+    </DeliveryMethods>
+    <Effects>
+      <MedEffect>
+        <Type>StateChange</Type>
+        <Name>Crashing</Name>
+        <Time>10</Time>
+      </MedEffect>
+    </Effects>
+    <InteractionMap>
+      <item>IV:MORPHINE</item>
+      <response></response>
+      <tooltip></tooltip>
+      <note>A powerful narcotic used to elevate pain.</note>
+      <sound></sound>
+    </InteractionMap>
+  </Med>
+</ArrayOfMed>

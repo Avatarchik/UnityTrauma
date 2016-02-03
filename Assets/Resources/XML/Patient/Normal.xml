@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PatientRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Info>
+    <name>Erica Roberts</name>
+    <dob>04/3/1995</dob>
+    <bloodtype>Type O Positive</bloodtype>
+    <allergies>None</allergies>
+    <contact>Patrice Roberts, Mother</contact>
+  </Info>
+  <State>
+    <name>Normal</name>
+    <state>CRAZY</state>
+  </State>
+  <Vitals>
+    <HR>96</HR>
+    <BP_SYS>180</BP_SYS>
+    <BP_DIA>110</BP_DIA>
+    <SP>98</SP>
+    <TEMP>98.6</TEMP>
+	<RESP>18.0</RESP>
+  </Vitals>
+</PatientRecord>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ObjectInteractionInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DialogTitle>EQUIPMENT</DialogTitle>
+  <DialogItems>
+    <string>FOLEY:INSERT</string>
+    <string>PLACE:PULSEOX</string>
+    <string>PLACE:COLLAR</string>
+    <string>PATIENT:BRACELET</string>
+    <string>PATIENT:GCS</string>
+    <string>PLACE:EKG</string>
+    <string>PATIENT:SKINTEMP</string>
+    <!--<string>PATIENT:PLACEIV</string> Replaced by add iv port left and right in iv mgmt-->
+  </DialogItems>
+</ObjectInteractionInfo>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssessmentList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Name>OBJECTIVE:TREATMENT</Name>
+        <Objective>Proper Treatment</Objective>
+        <NoteSucess>Object Complete.</NoteSucess>
+        <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+        <SuccessPercentage>1.0</SuccessPercentage>
+        <AlwaysScore>true</AlwaysScore>
+        <Active>true</Active>
+        <Items>
+          <AssessmentItem>
+            <InteractionName>EXAM:ABDOMEN</InteractionName>
+			<Note>Examine the Patient's Abdomen</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>FAST:EXAM</InteractionName>
+			<Note>Perform FAST Exam</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLAYER:FAST:PERICARDIUM:FALSE</InteractionName>
+			<Note>Announce No Blood in the Pericardium</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLAYER:FAST:PERIHEPATIC:FALSE</InteractionName>
+			<Note>Announce No Blood in the Perihepatic</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLAYER:FAST:PERISPLENIC:TRUE</InteractionName>
+			<Note>Announce Blood in the Perispenic</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLAYER:FAST:PELVIS:TRUE</InteractionName>
+			<Note>Announce Blood in the Pelvis</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLAYER:PATIENT:NEEDOR</InteractionName>
+			<Note>Order Patient to the OR</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>CALL:IR</InteractionName>
+			<Note>Order Patient to the IR for Bleeding</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>EXAM:PELVIC</InteractionName>
+			<Note>Examine Pelvis</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PELVIC:WRAP</InteractionName>
+			<Note>Perform Pelvic Wrap</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>SCHEDULE:OR:LAPAROTOMY</InteractionName>
+			<Note>Order Patient Laparotomy</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+        </Items>
+</AssessmentList>			
+

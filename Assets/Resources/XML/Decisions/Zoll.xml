@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DecisionMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Map2</Name>
+  <StartState>State1</StartState>
+  <Interval>.1</Interval>
+  <DecisionStates>
+    <DecisionState>
+	   <Name>State1</Name>
+	   <Transitions>
+        <DecisionStateTransition>
+		  <SuccessState>State2</SuccessState>
+		  <DecisionCondition>
+			<Name>TURN ON TO DEFIB MODE</Name>
+			<Tests>
+			  <string>var:Zoll.On condition:equal constant:false</string>
+			</Tests>
+		  </DecisionCondition>
+		  <DecisionAction>
+			<Name>Action1</Name>
+			<Actions>
+			  <string>dialog title:"Action Required!" text:"Please put the Zoll in DEFIB mode!" timeout:5.0</string>
+			  <string>state:state2</string>
+			</Actions>
+		  </DecisionAction>
+        </DecisionStateTransition>
+      </Transitions>
+    </DecisionState>
+    <DecisionState>
+      <Name>State2</Name>
+	   <Transitions>
+        <DecisionStateTransition>
+		  <SuccessState>State3</SuccessState>
+		  <DecisionCondition>
+			<Name>DEFIB MODE</Name>
+			<Tests>
+			  <string>var:Zoll.Mode condition:equal constant:KNOB:DEFIB</string>
+			</Tests>
+		  </DecisionCondition>
+		  <DecisionAction>
+			<Name>Action2</Name>
+			<Actions>
+			  <string>dialog title:"Good Job!" text:"Zoll is on.  Please change energy level to 30J" timeout:5.0</string>
+			</Actions>
+		  </DecisionAction>
+        </DecisionStateTransition>
+      </Transitions>
+    </DecisionState>
+    <DecisionState>
+      <Name>State3</Name>
+	   <Transitions>
+        <DecisionStateTransition>
+      <SuccessState>State4</SuccessState>
+      <DecisionCondition>
+        <Name>TEST HR</Name>
+        <Tests>
+          <string>var:Zoll.Energy condition:equal constant:30</string>
+        </Tests>
+      </DecisionCondition>
+      <DecisionAction>
+        <Name>Action3</Name>
+        <Actions>
+          <string>dialog title:"Good Job!" text:"Zoll is is set to 30J.  Press the CHARGE button to energize the Zoll." timeout:5.0</string>
+        </Actions>
+      </DecisionAction>
+        </DecisionStateTransition>
+      </Transitions>
+    </DecisionState>
+    <DecisionState>
+      <Name>State4</Name>
+	   <Transitions>
+        <DecisionStateTransition>
+      <SuccessState>State5</SuccessState>
+      <DecisionCondition>
+        <Name>TEST HR</Name>
+        <Tests>
+          <string>var:Zoll.Charged condition:equal constant:true</string>
+        </Tests>
+      </DecisionCondition>
+      <DecisionAction>
+        <Name>Action5</Name>
+        <Actions>
+          <string>dialog title:"Good Job!" text:"Zoll is charged, please press the shock button when ready!" timeout:5.0</string>
+        </Actions>
+      </DecisionAction>
+        </DecisionStateTransition>
+      </Transitions>
+    </DecisionState>
+    <DecisionState>
+      <Name>State5</Name>
+	   <Transitions>
+        <DecisionStateTransition>
+      <DecisionCondition>
+        <Name>TEST HR</Name>
+        <Tests>
+          <string>var:Zoll.Shocked condition:equal constant:true</string>
+        </Tests>
+      </DecisionCondition>
+      <DecisionAction>
+        <Name>Action5</Name>
+        <Actions>
+          <string>dialog title:"Good Job!" text:"You shocked the patient" timeout:5.0</string>
+        </Actions>
+      </DecisionAction>
+        </DecisionStateTransition>
+      </Transitions>
+    </DecisionState>
+  </DecisionStates>
+</DecisionMap>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssessmentList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Name>OBJECTIVE:AIRWAY</Name>
+        <Objective>Make sure the airway is clear</Objective>
+        <NoteSucess>Object Complete.</NoteSucess>
+        <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+        <SuccessPercentage>1.0</SuccessPercentage>
+        <AlwaysScore>true</AlwaysScore>
+        <Active>true</Active>
+        <ActivateOnComplete>
+          <!--<string>OBJECTIVE:BREATHING</string>-->
+          <!--<string>OBJECTIVE:TREATMENT</string>-->
+        </ActivateOnComplete>
+        <Items>
+          <AssessmentItem>
+            <InteractionName>PLAYER:VOMIT</InteractionName>
+			<Note>Patient Has Vomited</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <InOrder>false</InOrder>
+            <DeltaTime>10</DeltaTime>
+            <ActivateOnSuccess>
+            	<string>COW:VOMIT</string>
+            </ActivateOnSuccess>
+            <Ignore>true</Ignore>
+          </AssessmentItem>
+        </Items>
+        <Lists>
+			<AssessmentList>
+		        <Name>COW:VOMIT</Name>
+		        <Objective>Make sure the airway is clear</Objective>
+		        <NoteSucess>Object Complete.</NoteSucess>
+		        <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+		        <SuccessPercentage>1.0</SuccessPercentage>
+		        <Active>false</Active>
+		        <Items>
+		          <AssessmentItem>
+		            <InteractionName>DO:SUCTION</InteractionName>
+					<Note>Suction the Patient</Note>			
+		            <Score>10</Score>
+		            <ScoreMax>10</ScoreMax>
+		            <InOrder>false</InOrder>
+		            <DeltaTime>10</DeltaTime>
+		            <CriticalAction>true</CriticalAction>
+		          </AssessmentItem>
+		         </Items>
+			</AssessmentList>
+        </Lists>
+</AssessmentList>			
+

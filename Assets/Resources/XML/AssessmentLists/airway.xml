@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssessmentList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Name>OBJECTIVE:AIRWAY</Name>
+        <Objective>Make sure the airway is clear</Objective>
+        <NoteSucess>Object Complete.</NoteSucess>
+        <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+        <SuccessPercentage>1.0</SuccessPercentage>
+        <AlwaysScore>true</AlwaysScore>
+        <Active>true</Active>
+        <ActivateOnComplete>
+          <!--<string>OBJECTIVE:BREATHING</string>-->
+          <!--<string>OBJECTIVE:TREATMENT</string>-->
+        </ActivateOnComplete>
+        <Items>
+          <AssessmentItem>
+            <InteractionName>PLAYER:ASKNAME</InteractionName>
+			<Note>Assess Patient's Cognitive Ability</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <InOrder>false</InOrder>
+            <DeltaTime>10</DeltaTime>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PATIENT:GCS</InteractionName>
+			<Note>Get Patient's Glascow Coma Scale</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <InOrder>false</InOrder>
+            <DeltaTime>10</DeltaTime>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLAYER:BADAIR</InteractionName>
+			<Note>Announce Bad Airway</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <InOrder>false</InOrder>
+            <DeltaTime>10</DeltaTime>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PREP:INTUBATION</InteractionName>
+			<Note>Prepare for Intubation</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <InOrder>false</InOrder>
+            <DeltaTime>10</DeltaTime>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>INTUBATE:PATIENT</InteractionName>
+			<Note>Intubate the Patient</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <InOrder>false</InOrder>
+            <DeltaTime>10</DeltaTime>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLAYER:FOG:TRUE</InteractionName>
+			<Note>Announce Fogging in the Tube</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <InOrder>false</InOrder>
+            <DeltaTime>10</DeltaTime>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>CHECK:ETCO2</InteractionName>
+			<Note>Check ETCO2</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <InOrder>false</InOrder>
+            <DeltaTime>10</DeltaTime>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLAYER:INTUBATE:VERIFY</InteractionName>
+			<Note>Verify Correct Intubation</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <InOrder>false</InOrder>
+            <DeltaTime>10</DeltaTime>
+          </AssessmentItem>
+        </Items>
+</AssessmentList>			
+

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssessmentList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Name>OBJECTIVE:CIRCULATION</Name>
+        <NoteSucess>Object Complete.</NoteSucess>
+        <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+        <SuccessPercentage>1.0</SuccessPercentage>
+        <AlwaysScore>true</AlwaysScore>
+        <ActivateOnComplete>
+          <!--<string>OBJECTIVE:RESUSCITATION</string>-->
+        </ActivateOnComplete>
+        <Active>true</Active>
+        <Items>
+		    <AssessmentItem>
+            <InteractionName>PLACE:MONITORS</InteractionName>
+			<Note>Put the Patient on the Monitors</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+		  <AssessmentItem>
+            <InteractionName>ORDER:BLOOD:2IV</InteractionName>
+			<Note>Administer 2 IV Bags of Blood</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+		  <AssessmentItem>
+            <InteractionName>EXAM:BLEEDING</InteractionName>
+			<Note>Examine Patient for Bleeding</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+		  <AssessmentItem>
+            <InteractionName>PATIENT:COVER</InteractionName>
+			<Note>Cover the Patient</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+		  <AssessmentItem>
+            <InteractionName>PATIENT:SKINTEMP</InteractionName>
+			<Note>Meansure Patien't Skin Temperature</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+		  <AssessmentItem>
+            <InteractionName>PATIENT:CAPREFILL</InteractionName>
+			<Note>Assess the Patient's Capillary Refill</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+		  <AssessmentItem>
+            <InteractionName>PULSE:CAROTID</InteractionName>
+			<Note>Check the Carotid Pulse</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+		  <AssessmentItem>
+            <InteractionName>PULSE:RADIAL</InteractionName>
+			<Note>Check the Radial Pulse</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+        </Items>
+</AssessmentList>			
+

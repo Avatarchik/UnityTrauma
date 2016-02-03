@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PatientInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>Roberto Rodriguez</name>
+  <dob>04/3/1995</dob>
+  <bloodtype>Type O Positive</bloodtype>
+  <allergies>None</allergies>
+  <contact>Patrice Roberts, Mother</contact>
+  <initialVitalState>Normal</initialVitalState>
+  <initialVitalsBehavior>Stable</initialVitalsBehavior>
+  <chestXRAY>xray.chest.fracture6-6</chestXRAY>
+  <pelvicXRAY>xray.pelvic.clear</pelvicXRAY>	
+  <fast>
+    <!-- perihepatic, perisplenic, pelvis, pericardium, chest -->
+	<string>http://unity.sitelms.org/video/perihepaticFalse.ogv</string>
+	<string>http://unity.sitelms.org/video/perisplenicFalse.ogv</string>
+	<string>http://unity.sitelms.org/video/pelvisFalse.ogv</string>
+	<string>http://unity.sitelms.org/video/pericardiumFalse.ogv</string>
+	<string>http://unity.sitelms.org/video/tamponadeFalse.ogv</string>
+  </fast>	
+  <fastThumbnail>
+    <!-- perihepatic, perisplenic, pelvis, pericardium, chest -->
+	<string>perihepaticFalse</string>
+	<string>perisplenicFalse</string>
+	<string>pelvisFalse</string>
+	<string>pericardiumFalse</string>
+	<string>tamponadeFalse</string>
+  </fastThumbnail>
+  <CT>
+    <!-- brain, cspine, chest, abdomen, tlspine -->
+	<string>http://unity.sitelms.org/video/brainCTFalse.ogv</string>
+	<string>http://unity.sitelms.org/video/cspineCTFalse.ogv</string>
+	<string>http://unity.sitelms.org/video/chestCTFalse.ogv</string>
+	<string>http://unity.sitelms.org/video/abdomenCTFalse.ogv</string>
+	<string>http://unity.sitelms.org/video/tlspineCTFalse.ogv</string>
+	<string>http://unity.sitelms.org/video/angiogramCTFalse.ogv</string>
+  </CT>	
+  <CTThumbnail>
+    <!-- brain, cspine, chest, abdomen, tlspine -->
+	<string>brainCTFalse</string>
+	<string>cspineCTFalse</string>
+	<string>chestCTFalse</string>
+	<string>abdomenCTFalse</string>
+	<string>tlspineCTFalse</string>
+  </CTThumbnail>
+  <scanRecords>
+    <string>XML/Patient/Records/XRayChestFracture6-6</string>
+	<string>XML/Patient/Records/XRayPelvisFractureRamusRight</string>
+    <string>XML/Patient/Records/XRayArmRightHumerusFractureMidshaft</string>
+	<string>XML/Patient/Records/XRayAbdomenNormal</string>
+	<string>XML/Patient/Records/XRayCSpineNormal</string>
+	<string>XML/Patient/Records/XRaySkullNormal</string>
+	<string>XML/Patient/Records/XRayElbowRightNormal</string>
+	<string>XML/Patient/Records/XRayForearmRightNormal</string>
+	<string>XML/Patient/Records/XRayHandRightNormal</string>
+	<string>XML/Patient/Records/XRayArmLeftNormal</string>
+	<string>XML/Patient/Records/XRayElbowLeftNormal</string>
+	<string>XML/Patient/Records/XRayForearmLeftNormal</string>
+	<string>XML/Patient/Records/XRayHandLeftNormal</string>
+	<string>XML/Patient/Records/XRayThighRightNormal</string>
+	<string>XML/Patient/Records/XRayLegRightNormal</string>
+	<string>XML/Patient/Records/XRayThighLeftNormal</string>
+	<string>XML/Patient/Records/XRayLegLeftNormal</string>
+	<string>XML/Patient/Records/FASTPerihepaticFalse</string>
+	<string>XML/Patient/Records/FASTPerisplenicFalse</string>
+	<string>XML/Patient/Records/FASTPelvisFalse</string>
+	<string>XML/Patient/Records/FASTPericardiumFalse</string>
+	<string>XML/Patient/Records/FASTChestFalse</string>
+	<string>XML/Patient/Records/CTScanBrainNormal</string>
+	<string>XML/Patient/Records/CTScanCSpineNormal</string>
+	<string>XML/Patient/Records/CTScanChestNormal</string>
+	<string>XML/Patient/Records/CTScanAbdomenNormal</string>
+	<string>XML/Patient/Records/CTScanTLSpineNormal</string>
+	<string>XML/Patient/Records/CTScanAngiogramNormal</string>
+  </scanRecords>
+  <decisions>
+    <string>XML/Decisions/terminate</string>
+	<string>XML/Decisions/monitorheartrate</string>
+	<string>XML/Decisions/monitorsao2</string>
+	<string>XML/Decisions/warnbplow</string>
+	<string>XML/Decisions/warno2low</string>
+  </decisions>
+   <startingTime>15:56</startingTime>
+   <gcsEyes>4</gcsEyes>
+  <gcsVerbal>5</gcsVerbal>
+  <gcsMotor>6</gcsMotor>
+  <gcsTotal>15</gcsTotal>
+</PatientInfo>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<ScriptedObjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <unityObjectName>PelvicFractureScripts</unityObjectName>
+  <moveToParentOnDrop>true</moveToParentOnDrop>
+  <dropTargetName />
+  <scripts />
+  <startupScriptName />
+  <register>false</register>
+  <prettyname>Procedure Resident</prettyname>
+  <XMLName>ScriptedObjects/PelvicFractureScripts.xml</XMLName>
+  <XMLDirectory>Assets/Resources/XML/</XMLDirectory>
+  <assetBundleInfo>
+    <bundleName />
+    <stage>0</stage>
+    <assetName />
+  </assetBundleInfo>
+  <voiceList>
+    <Name>ProcedureResident</Name>
+    <VoiceMaps />
+  </voiceList>
+  <voiceLists>
+    <VoiceList>
+      <Name>ProcedureResident</Name>
+      <VoiceMaps>
+        <VoiceMap>
+          <Tag>VOICE:EXAM:PELVIC:STABLE:RESULT</Tag>
+          <Audio>Audio/PR_pelvisUnstableT5</Audio>
+          <Text>Her pelvis is unstable</Text>
+          <LookAt>lookCamera</LookAt>
+          <Dynamic>false</Dynamic>
+        </VoiceMap>
+      </VoiceMaps>
+    </VoiceList>
+  </voiceLists>
+  <vitalsBehaviors />
+  <scanRecords>
+    <ScanRecord>
+      <Name>pelvis</Name>
+      <Type>XRay</Type>
+      <Filename>SavaScans/xray.pelvis.female.severeFracture</Filename>
+      <Thumbnail>SavaScans/xray.pelvis.female.severeFracture</Thumbnail>
+      <TimeTaken />
+      <Region>Pelvis</Region>
+      <Assessment />
+      <assessmentCommands />
+    </ScanRecord>
+  </scanRecords>
+</ScriptedObjectInfo>

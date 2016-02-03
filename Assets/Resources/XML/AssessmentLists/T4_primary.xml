@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssessmentList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Name>OBJECTIVE:PRIMARY</Name>
+        <Objective>Complete the Primary Survey</Objective>
+        <NoteSucess>Object Complete.</NoteSucess>
+        <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+        <SuccessPercentage>1.0</SuccessPercentage>
+        <AlwaysScore>true</AlwaysScore>
+        <Active>true</Active>
+        <Items>
+          <!--- Begin Airway Section -->
+          <AssessmentItem>
+            <InteractionName>PLAYER:ASKNAME</InteractionName>
+			<Note>Assess Patient's Responsiveness</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <Substitutes>PLAYER:ASKCAUSE, PLAYER:ASKPAIN, PATIENT:GCS</Substitutes>
+          </AssessmentItem>
+          
+          <AssessmentItem>
+            <InteractionName>CHECK:ETCO2</InteractionName>
+			<Note>Check ETCO2</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <InOrder>false</InOrder>
+            <DeltaTime>10</DeltaTime>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          
+          <!--- Begin Breathing Section -->
+          <AssessmentItem>
+            <InteractionName>PALPATE:TRACHEA</InteractionName>
+			<Note>Palpate the Trachea</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          
+          <AssessmentItem>
+            <InteractionName>CHECK:BREATHE</InteractionName>
+			<Note>Check Breath Sounds</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          
+          <AssessmentItem>
+            <InteractionName>EXAMINE:CHESTRISE</InteractionName>
+			<Note>Examine Chest Rise</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+
+          <!--- Begin Circulation Section -->
+
+		  <AssessmentItem>
+            <InteractionName>EXAM:BLEEDING</InteractionName>
+			<Note>Examine Patient for Bleeding</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          
+          <AssessmentItem>
+            <InteractionName>PATIENT:MANUALBP</InteractionName>
+			<Note>Take a Manual Blood Pressure</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+
+          </Items>
+</AssessmentList>			
+

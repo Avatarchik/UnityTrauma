@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScenarioAssessment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <Name>Scenario 1</Name>
+    <Objective>Learn your ABCs</Objective>
+    <NoteSuccess>Objective Complete</NoteSuccess>
+    <NoteFailure>Objective Failed. Please review assessment report.</NoteFailure>
+    <SuccessPercentage>0.75</SuccessPercentage>
+    <AssessmentLists>
+      <AssessmentList>
+        <Name>CANS-O-WORMS</Name>
+        <Objective>Exceptions</Objective>
+        <NoteSucess>Objective Successful.  No CANS-O-WORMS or all CANS-O-WORMS fixed successfully</NoteSucess>
+        <NoteFailure>Objective Failed.  Some cans of worms not completed</NoteFailure>
+        <SuccessPercentage>1.0</SuccessPercentage>
+        <AlwaysScore>true</AlwaysScore>
+        <Active>true</Active>
+        <Items>
+          <AssessmentItem>
+            <InteractionName>COW:VOMIT:NOMEDS</InteractionName>
+            <Score>0</Score>
+            <ScoreMax>0</ScoreMax>
+			<ActivateOnSuccess>
+				<string>COW:VOMIT:NOMEDS</string>
+			</ActivateOnSuccess>
+			<Ignore>true</Ignore>
+          </AssessmentItem>		  			
+          <AssessmentItem>
+            <InteractionName>COW:VOMIT:CONCUSSION</InteractionName>
+            <Score>0</Score>
+            <ScoreMax>0</ScoreMax>
+			<ActivateOnSuccess>
+				<string>COW:VOMIT:CONCUSSION</string>
+			</ActivateOnSuccess>
+			<Ignore>true</Ignore>
+          </AssessmentItem>		  			
+          <AssessmentItem>
+            <InteractionName>COW:VENT40</InteractionName>
+            <Score>0</Score>
+            <ScoreMax>0</ScoreMax>
+			<ActivateOnSuccess>
+				<string>COW:VENT40</string>
+			</ActivateOnSuccess>
+			<Ignore>true</Ignore>
+          </AssessmentItem>		  			
+          <AssessmentItem>
+            <InteractionName>COW:BRADYCARDIA</InteractionName>
+            <Score>0</Score>
+            <ScoreMax>0</ScoreMax>
+			<ActivateOnSuccess>
+				<string>COW:BRADYCARDIA</string>
+			</ActivateOnSuccess>
+			<Ignore>true</Ignore>
+          </AssessmentItem>		  			
+          <AssessmentItem>
+            <InteractionName>COW:COMBATIVE</InteractionName>
+            <Score>0</Score>
+            <ScoreMax>0</ScoreMax>
+			<ActivateOnSuccess>
+				<string>COW:COMBATIVE</string>
+			</ActivateOnSuccess>
+			<Ignore>true</Ignore>
+          </AssessmentItem>		  			
+          <AssessmentItem>
+            <InteractionName>COW:CUFFERROR</InteractionName>
+            <Score>0</Score>
+            <ScoreMax>0</ScoreMax>
+			<ActivateOnSuccess>
+				<string>COW:CUFFERROR</string>
+			</ActivateOnSuccess>
+			<Ignore>true</Ignore>
+          </AssessmentItem>		  			
+		</Items>
+        <Lists>
+          <AssessmentList>
+            <Name>COW:VOMIT:NOMEDS</Name>
+            <Parent>CANS-O-WORMS</Parent>
+            <Objective>Vomit recovery from no medication</Objective>
+            <NoteSucess>Object Complete.</NoteSucess>
+            <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+            <SuccessPercentage>1.0</SuccessPercentage>
+            <Active>false</Active>
+            <Items>
+              <AssessmentItem>
+                <InteractionName>SUCTION:PATIENT</InteractionName>
+				<Note>CanOWorms[Vomit] Suction Required</Note>				
+                <Score>10</Score>
+                <ScoreMax>10</ScoreMax>
+              </AssessmentItem>
+            </Items>
+          </AssessmentList>
+          <AssessmentList>
+            <Name>COW:VOMIT:CONCUSSION</Name>
+            <Parent>CANS-O-WORMS</Parent>
+            <Objective>Vomit recovery from concussion</Objective>
+            <NoteSucess>Object Complete.</NoteSucess>
+            <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+            <SuccessPercentage>1.0</SuccessPercentage>
+            <Active>false</Active>
+            <Items>
+              <AssessmentItem>
+                <InteractionName>SUCTION:PATIENT</InteractionName>
+				<Note>CanOWorms[Vomit] Suction Required</Note>				
+                <Score>10</Score>
+                <ScoreMax>10</ScoreMax>
+              </AssessmentItem>
+            </Items>
+          </AssessmentList>
+          <AssessmentList>
+            <Name>COW:VENT40</Name>
+            <Parent>CANS-O-WORMS</Parent>
+            <Objective>Set ventilator to 100%</Objective>
+            <NoteSucess>Object Complete.</NoteSucess>
+            <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+            <SuccessPercentage>1.0</SuccessPercentage>
+            <Active>false</Active>
+            <Items>
+              <AssessmentItem>
+                <InteractionName>VENT:SET:AIRFLOW</InteractionName>
+				<Note>CanOWorms[SetAirflow] Need to verify that vent is set to 100%</Note>				
+                <Score>10</Score>
+                <ScoreMax>10</ScoreMax>
+              </AssessmentItem>
+            </Items>
+          </AssessmentList>
+          <AssessmentList>
+            <Name>COW:BRADYCARDIA</Name>
+            <Parent>CANS-O-WORMS</Parent>
+            <Objective>Ask for a SAO2 reading</Objective>
+            <NoteSucess>Object Complete.</NoteSucess>
+            <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+            <SuccessPercentage>1.0</SuccessPercentage>
+            <Active>false</Active>
+            <Items>
+              <AssessmentItem>
+                <InteractionName>VITALS:SAO2</InteractionName>
+				<Note>CanOWorms[SAO2] Ask for a SAO2 reading.</Note>				
+                <Score>10</Score>
+                <ScoreMax>10</ScoreMax>
+              </AssessmentItem>
+            </Items>
+          </AssessmentList>
+          <AssessmentList>
+            <Name>COW:COMBATIVE</Name>
+            <Parent>CANS-O-WORMS</Parent>
+            <Objective>Sedate the patient when combatitive</Objective>
+            <NoteSucess>Object Complete.</NoteSucess>
+            <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+            <SuccessPercentage>1.0</SuccessPercentage>
+            <Active>false</Active>
+            <Items>
+              <AssessmentItem>
+                <InteractionName>MED:PROPOFOL</InteractionName>
+				<Note>CanOWorms[Propofol] Give sedative, patient is compative</Note>				
+                <Score>10</Score>
+                <ScoreMax>10</ScoreMax>
+              </AssessmentItem>
+            </Items>
+          </AssessmentList>
+          <AssessmentList>
+            <Name>COW:CUFFERROR</Name>
+            <Parent>CANS-O-WORMS</Parent>
+            <Objective>Vomit recovery from concussion</Objective>
+            <NoteSucess>Object Complete.</NoteSucess>
+            <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+            <SuccessPercentage>1.0</SuccessPercentage>
+            <Active>false</Active>
+            <Items>
+              <AssessmentItem>
+                <InteractionName>PATIENT:MANUALBP</InteractionName>
+				<Note>CanOWorms[ManualBP] Auto cuff has an error forcing need for a manual BP.</Note>				
+                <Score>10</Score>
+                <ScoreMax>10</ScoreMax>
+              </AssessmentItem>
+            </Items>
+          </AssessmentList>
+        </Lists>
+	  </AssessmentList>			
+      <AssessmentList>
+        <Name>OBJECTIVE:AIRWAY</Name>
+        <Objective>Make sure the airway is clear</Objective>
+        <NoteSucess>Object Complete.</NoteSucess>
+        <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+        <SuccessPercentage>1.0</SuccessPercentage>
+        <AlwaysScore>true</AlwaysScore>
+        <Active>true</Active>
+        <ActivateOnComplete>
+          <!--<string>OBJECTIVE:BREATHING</string>-->
+          <!--<string>OBJECTIVE:TREATMENT</string>-->
+        </ActivateOnComplete>
+        <Items>
+          <AssessmentItem>
+            <InteractionName>PLAYER:ASKNAME</InteractionName>
+			<Note>Assess Patient's Cognitive Ability</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <InOrder>false</InOrder>
+            <DeltaTime>10</DeltaTime>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLAYER:GCS</InteractionName>
+			<Note>Get Patient's Glascow Coma Scale</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <InOrder>false</InOrder>
+            <DeltaTime>10</DeltaTime>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLAYER:BADAIR</InteractionName>
+			<Note>Announce Bad Airway</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <InOrder>false</InOrder>
+            <DeltaTime>10</DeltaTime>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PREP:INTUBATION</InteractionName>
+			<Note>Prepare for Intubation</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <InOrder>false</InOrder>
+            <DeltaTime>10</DeltaTime>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>INTUBATE:PATIENT</InteractionName>
+			<Note>Intubate the Patient</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <InOrder>false</InOrder>
+            <DeltaTime>10</DeltaTime>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLAYER:FOG:TRUE</InteractionName>
+			<Note>Announce Fogging in the Tube</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <InOrder>false</InOrder>
+            <DeltaTime>10</DeltaTime>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>CHECK:ETCO2</InteractionName>
+			<Note>Check ETCO2</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <InOrder>false</InOrder>
+            <DeltaTime>10</DeltaTime>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLAYER:INTUBATE:VERIFY</InteractionName>
+			<Note>Verify Correct Intubation</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <InOrder>false</InOrder>
+            <DeltaTime>10</DeltaTime>
+          </AssessmentItem>
+        </Items>
+      </AssessmentList>
+      <AssessmentList>
+        <Name>OBJECTIVE:BREATHING</Name>
+        <Objective>Assess Breathing</Objective>
+        <NoteSucess>Object Complete.</NoteSucess>
+        <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+        <SuccessPercentage>1.0</SuccessPercentage>
+        <AlwaysScore>true</AlwaysScore>
+        <ActivateOnComplete>
+          <!--<string>OBJECTIVE:CIRCULATION</string>-->
+        </ActivateOnComplete>
+        <Active>true</Active>
+        <Items>
+          <AssessmentItem>
+            <InteractionName>CHECK:BREATHE</InteractionName>
+			<Note>Check Breath Sounds</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>EXAMINE:CHESTRISE</InteractionName>
+			<Note>Examine Chest Rise</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLAYER:SEDATE:PATIENT</InteractionName>
+			<Note>Sedate the Patient</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>MED:PROPOFOL</InteractionName>
+			<Note>Administer Propofol</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>CONNECT:VENT</InteractionName>
+			<Note>Connect the Ventilator</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLAYER:SET:AIRFLOW</InteractionName>
+			<Note>Set the Correct Airflow</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLACE:PULSEOX</InteractionName>
+			<Note>Place the Pulse Ox</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>VITALS:SAO2</InteractionName>
+			<Note>Chcek Saturated Oxygen</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PALPATE:TRACHEA</InteractionName>
+			<Note>Palpate the Trachea</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>EXAM:CHEST</InteractionName>
+			<Note>Examine the Chest</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>CALL:XRAY:CHEST</InteractionName>
+			<Note>Call for a Chest XRay</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLAYER:XRAY:ETT:TRUE</InteractionName>
+			<Note>Announce XRay ETT</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLAYER:XRAY:CHEST:FALSE</InteractionName>
+			<Note>Announce Bad Chest Results</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+		</Items>
+      </AssessmentList>
+      <AssessmentList>
+        <Name>OBJECTIVE:CIRCULATION</Name>
+        <NoteSucess>Object Complete.</NoteSucess>
+        <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+        <SuccessPercentage>1.0</SuccessPercentage>
+        <AlwaysScore>true</AlwaysScore>
+        <ActivateOnComplete>
+          <!--<string>OBJECTIVE:RESUSCITATION</string>-->
+        </ActivateOnComplete>
+        <Active>true</Active>
+        <Items>
+		  <AssessmentItem>
+            <InteractionName>EXAM:BLEEDING</InteractionName>
+			<Note>Examine Patient for Bleeding</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+		  <AssessmentItem>
+            <InteractionName>PATIENT:COVER</InteractionName>
+			<Note>Cover the Patient</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+		  <AssessmentItem>
+            <InteractionName>PLACE:EKG</InteractionName>
+			<Note>Place EKG</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+		  <AssessmentItem>
+            <InteractionName>PLACE:AUTOBP</InteractionName>
+			<Note>Place Auto BP</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+		  <AssessmentItem>
+            <InteractionName>PATIENT:MANUALBP</InteractionName>
+			<Note>Take Manual BP</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+		  <AssessmentItem>
+            <InteractionName>PATIENT:SKINTEMP</InteractionName>
+			<Note>Meansure Patien't Skin Temperature</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+		  <AssessmentItem>
+            <InteractionName>PATIENT:CAPREFILL</InteractionName>
+			<Note>Cap Refill??</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+		  <AssessmentItem>
+            <InteractionName>PULSE:CAROTID</InteractionName>
+			<Note>Check the Carotid Pulse</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+		  <AssessmentItem>
+            <InteractionName>PULSE:RADIAM</InteractionName>
+			<Note>Pulse Radiam??</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+		  <AssessmentItem>
+            <InteractionName>BROADCAST:SHOCK</InteractionName>
+			<Note>Announce Shock</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+        </Items>
+      </AssessmentList>
+      <AssessmentList>
+        <Name>OBJECTIVE:RESUSCITATION</Name>
+        <Objective>Proper Resuscitation</Objective>
+        <NoteSucess>Object Complete.</NoteSucess>
+        <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+        <SuccessPercentage>1.0</SuccessPercentage>
+        <AlwaysScore>true</AlwaysScore>
+        <ActivateOnComplete>
+          <!--<string>OBJECTIVE:TREATMENT</string>-->
+        </ActivateOnComplete>
+        <Active>true</Active>
+        <Items>
+          <AssessmentItem>
+            <InteractionName>ORDER:SALINE:2IV</InteractionName>
+			<Note>Order Two Bags of Saline</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>ORDER:BLOOD:2IV</InteractionName>
+			<Note>Order Two Bags of Blood</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>ORDER:BLOOD:2PR</InteractionName>
+			<Note>Order Two Pressure Bags of Blood</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>ORDER:BLOOD:2RI</InteractionName>
+			<Note>Order Two Bags via Rapid Infuser</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+        </Items>
+      </AssessmentList>
+      <AssessmentList>
+        <Name>OBJECTIVE:TREATMENT</Name>
+        <Objective>Proper Treatment</Objective>
+        <NoteSucess>Object Complete.</NoteSucess>
+        <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+        <SuccessPercentage>1.0</SuccessPercentage>
+        <AlwaysScore>true</AlwaysScore>
+        <Active>true</Active>
+        <Items>
+          <AssessmentItem>
+            <InteractionName>EXAM:ABDOMEN</InteractionName>
+			<Note>Examine the Patient's Abdomen</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>FAST:EXAM</InteractionName>
+			<Note>Perform FAST Exam</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLAYER:FAST:PERICARDIUM:FALSE</InteractionName>
+			<Note>Announce No Blood in the Pericardium</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLAYER:FAST:PERIHEPATIC:FALSE</InteractionName>
+			<Note>Announce No Blood in the Perihepatic</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLAYER:FAST:PERISPLENIC:TRUE</InteractionName>
+			<Note>Announce Blood in the Perispenic</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLAYER:FAST:PELVIS:TRUE</InteractionName>
+			<Note>Announce Blood in the Pelvis</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLAYER:PATIENT:NEEDOR</InteractionName>
+			<Note>Order Patient to the OR</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLAYER:IR:BLEED</InteractionName>
+			<Note>Order Patient to the IR for Bleeding</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>EXAM:PELVIC</InteractionName>
+			<Note>Examine Pelvis</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PELVIC:WRAP</InteractionName>
+			<Note>Perform Pelvic Wrap</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLAYER:OR:LAPAROTOMY</InteractionName>
+			<Note>Order Patient Laparotomy</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+        </Items>
+      </AssessmentList>
+    </AssessmentLists>
+</ScenarioAssessment>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ObjectInteractionInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>ProcedureResident</Name>
+  <DialogTitle>PROCEDURE RESIDENT</DialogTitle>
+  <DialogItems>
+    <!--<string>XML:PrimaryNurse/TestNurseVitals</string>-->
+    <string>XML:ProcedureResident/ProcedureResidentMovement</string>
+    <string>XML:ProcedureResident/ProcedureResidentActions</string>
+    <string>XML:ProcedureResident/PlaceCall</string>
+  </DialogItems>
+	<VoiceList>XML/VoiceMap_PR</VoiceList>
+</ObjectInteractionInfo>

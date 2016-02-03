@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ObjectInteractionInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>PrimaryNurse</Name>
+  <DialogTitle>PRIMARY NURSE</DialogTitle>
+  <DialogItems>
+    <string>XML:PrimaryNurse/TestNurseVitals</string>
+    <string>XML:PrimaryNurse/TestNurseMovement</string>
+    <string>XML:PrimaryNurse/TestNurseActions</string>
+  </DialogItems>
+  <VoiceList>XML/VoiceMap_PN</VoiceList>
+</ObjectInteractionInfo>

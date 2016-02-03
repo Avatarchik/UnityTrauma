@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssessmentList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Name>OBJECTIVE:ADJUNCTS</Name>
+        <Objective>Request the Proper Adjunct Procedures</Objective>
+        <NoteSucess>Object Complete.</NoteSucess>
+        <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+        <SuccessPercentage>1.0</SuccessPercentage>
+        <AlwaysScore>true</AlwaysScore>
+        <ActivateOnComplete>
+          <!--<string>OBJECTIVE:TREATMENT</string>-->
+        </ActivateOnComplete>
+        <Active>true</Active>
+        <Items>
+          <AssessmentItem>
+            <InteractionName>PLACE:MONITORS</InteractionName>
+			<Note>Put the Patient on the Monitors</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          
+          <AssessmentItem>
+            <InteractionName>PATIENT:COVER</InteractionName>
+			<Note>Cover the Patient</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          
+          <AssessmentItem>
+            <InteractionName>XRAY:SHOWDIALOG:CHEST</InteractionName>
+			<Note>Review Chest X-ray</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          
+          <AssessmentItem>
+            <InteractionName>XRAY:SHOWDIALOG:PELVIC</InteractionName>
+			<Note>Review Pelvic Xray</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          
+         <AssessmentItem>
+            <InteractionName>SCHEDULE:CT:ABDOMEN</InteractionName>
+			<Note>Review Abdominal CT</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          
+        <AssessmentItem>
+            <InteractionName>SCHEDULE:CT:CHEST</InteractionName>
+			<Note>Review Chest CT</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          
+          <AssessmentItem>
+            <InteractionName>SCHEDULE:CT:BRAIN</InteractionName>
+			<Note>Review Brain CT</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          
+           <AssessmentItem>
+            <InteractionName>SCHEDULE:CT:CSPINE</InteractionName>
+			<Note>Review CSpine CT</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          
+          <AssessmentItem>
+            <InteractionName>SCHEDULE:CT:TLSPINE</InteractionName>
+			<Note>Review TLSpine CT</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+        </Items>
+</AssessmentList>			
+

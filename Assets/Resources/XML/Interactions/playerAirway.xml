@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ObjectInteractionInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>PlayerAirway</Name>
+  <DialogTitle>AIRWAY</DialogTitle>
+  <DialogItems>
+    <!--<string>MED:ADMINISTER</string>-->
+    <string>PLAYER:CLEARAIR</string>
+    <string>TASK:PLAYER:BADAIR</string>
+    <!--<string>PLAYER:BADAIR</string>-->
+    <string>PLAYER:FOG:TRUE</string>
+    <string>PLAYER:FOG:FALSE</string>
+    <string>PLAYER:RISE:TRUE</string>
+    <string>PLAYER:RISE:FALSE</string>
+    <string>PLAYER:ETCO2:TRUE</string>
+    <string>PLAYER:ETCO2:FALSE</string>
+  </DialogItems>
+</ObjectInteractionInfo>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DecisionMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>Map2</Name>
+  <StartState>State1</StartState>
+  <Interval>1</Interval>
+  <DecisionStates>
+    <DecisionState>
+      <Name>State1</Name>
+      <Transitions>
+        <DecisionStateTransition>
+          <DecisionCondition>
+            <Name>WARN HR HIGH</Name>
+            <Tests>
+              <string>var:Patient.HR condition:greater constant:149</string>
+            </Tests>
+          </DecisionCondition>
+          <DecisionAction>
+            <Name>Action1</Name>
+            <Actions>
+              <string>status:"WARN:PLAYER"</string>
+            </Actions>
+          </DecisionAction>
+          <SuccessState>State2</SuccessState>
+        </DecisionStateTransition>
+        <DecisionStateTransition>
+          <DecisionCondition>
+            <Name>WARN HR LOW</Name>
+            <Tests>
+              <string>var:Patient.HR condition:less constant:40</string>
+            </Tests>
+          </DecisionCondition>
+          <DecisionAction>
+            <Name>Action1</Name>
+            <Actions>
+              <string>status:"WARN:PLAYER"</string>
+            </Actions>
+          </DecisionAction>
+          <SuccessState>State2</SuccessState>
+        </DecisionStateTransition>
+        <DecisionStateTransition>
+          <DecisionCondition>
+            <Name>WARN BP LOW</Name>
+            <Tests>
+              <string>var:Patient.BP_SYS condition:less constant:60</string>
+            </Tests>
+          </DecisionCondition>
+          <DecisionAction>
+            <Name>Action1</Name>
+            <Actions>
+              <string>status:"WARN:PLAYER"</string>
+            </Actions>
+          </DecisionAction>
+          <SuccessState>State2</SuccessState>
+        </DecisionStateTransition>
+        <DecisionStateTransition>
+          <DecisionCondition>
+            <Name>WARN RR HIGH</Name>
+            <Tests>
+              <string>var:Patient.RR condition:greater constant:40</string>
+            </Tests>
+          </DecisionCondition>
+          <DecisionAction>
+            <Name>Action1</Name>
+            <Actions>
+              <string>status:"WARN:PLAYER"</string>
+            </Actions>
+          </DecisionAction>
+          <SuccessState>State2</SuccessState>
+        </DecisionStateTransition>
+      </Transitions>
+    </DecisionState>
+    <DecisionState>
+      <Name>State2</Name>
+      <Transitions>
+        <DecisionStateTransition>
+          <DecisionCondition>
+            <Name>TEST HIGH HR</Name>
+            <Tests>
+              <string>var:Patient.HR condition:greater constant:169</string>
+            </Tests>
+          </DecisionCondition>
+          <DecisionAction>
+            <Name>Action1</Name>
+            <Actions>
+              <string>dialog title:"Scenario Failed" text:"Scenario has been terminated by high heart rate.  Patient has not been stabilized.  Going to assessment screen." timeout:5.0</string>
+              <string>changestate:EndScenario delay:10.0</string>
+            </Actions>
+          </DecisionAction>
+        </DecisionStateTransition>
+        <DecisionStateTransition>
+          <DecisionCondition>
+            <Name>TEST LOW HR</Name>
+            <Tests>
+              <string>var:Patient.HR condition:less constant:30</string>
+            </Tests>
+          </DecisionCondition>
+          <DecisionAction>
+            <Name>Action1</Name>
+            <Actions>
+              <string>dialog title:"Scenario Failed" text:"Scenario has been terminated by low heart rate.  Patient has not been stabilized.  Going to assessment screen." timeout:5.0</string>
+              <string>changestate:EndScenario delay:10.0</string>
+            </Actions>
+          </DecisionAction>
+        </DecisionStateTransition>
+        <DecisionStateTransition>
+          <DecisionCondition>
+            <Name>TEST LOW BP_SYS</Name>
+            <Tests>
+              <string>var:Patient.BP_SYS condition:less constant:40</string>
+            </Tests>
+          </DecisionCondition>
+          <DecisionAction>
+            <Name>Action1</Name>
+            <Actions>
+              <string>dialog title:"Scenario Failed" text:"Scenario has been terminated by low BP.  Patient has not been stabilized.  Going to assessment screen." timeout:5.0</string>
+              <string>changestate:EndScenario delay:10.0</string>
+            </Actions>
+          </DecisionAction>
+        </DecisionStateTransition>
+        <DecisionStateTransition>
+          <DecisionCondition>
+            <Name>TEST HIGH RR</Name>
+            <Tests>
+              <string>var:Patient.RR condition:greater constant:44</string>
+            </Tests>
+          </DecisionCondition>
+          <DecisionAction>
+            <Name>Action1</Name>
+            <Actions>
+              <string>dialog title:"Scenario Failed" text:"Scenario has been terminated by high respiration rate.  Patient has not been stabilized.  Going to assessment screen." timeout:5.0</string>
+              <string>changestate:EndScenario delay:10.0</string>
+            </Actions>
+          </DecisionAction>
+        </DecisionStateTransition>
+        <DecisionStateTransition>
+          <DecisionCondition>
+            <Name>TEST LOW SAO2</Name>
+            <Tests>
+              <string>var:Patient.SAO2 condition:less constant:50</string>
+            </Tests>
+          </DecisionCondition>
+          <DecisionAction>
+            <Name>Action1</Name>
+            <Actions>
+              <string>dialog title:"Scenario Failed" text:"Scenario has been terminated by low SAO2.  Patient has not been stabilized.  Going to assessment screen." timeout:5.0</string>
+              <string>changestate:EndScenario delay:10.0</string>
+            </Actions>
+          </DecisionAction>
+        </DecisionStateTransition>
+      </Transitions>
+    </DecisionState>
+  </DecisionStates>
+  <Finished>false</Finished>
+  <CheckTime>0</CheckTime>
+</DecisionMap>

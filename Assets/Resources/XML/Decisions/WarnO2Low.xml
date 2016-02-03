@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DecisionMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>WarnO2Low</Name>
+  <StartState>Watching</StartState>
+  <Interval>1</Interval>
+  <DecisionStates>
+    <DecisionState>
+      <Name>Watching</Name>
+      <Transitions>
+        <DecisionStateTransition>
+          <DecisionCondition>
+            <Name>DONTWARNIFDEAD</Name>
+            <Tests>
+              <string>var:Patient.SP condition:less constant:10</string>
+            </Tests>
+          </DecisionCondition>
+          <SuccessState>Recovering</SuccessState>
+        </DecisionStateTransition>	  
+        <DecisionStateTransition>
+          <DecisionCondition>
+            <Name>TEST SP</Name>
+            <Tests>
+              <string>var:Patient.SP condition:less constant:85</string>
+            </Tests>
+          </DecisionCondition>
+          <DecisionAction>
+            <Name>Action1</Name>
+            <Actions>
+              <string>status:"WARN:PLAYER:OXYGEN:LOW"</string>
+            </Actions>
+          </DecisionAction>
+          <SuccessState>Recovering</SuccessState>
+        </DecisionStateTransition>
+      </Transitions>
+    </DecisionState>
+    <DecisionState>
+      <Name>Recovering</Name>
+      <Transitions>
+        <DecisionStateTransition>
+          <DecisionCondition>
+            <Name>TEST SP</Name>
+            <Tests>
+              <string>var:Patient.SP condition:greater constant:93</string>
+            </Tests>
+          </DecisionCondition>
+          <DecisionAction>
+            <Name>Action1</Name>
+            <Actions />
+          </DecisionAction>
+          <SuccessState>Watching</SuccessState>
+        </DecisionStateTransition>
+      </Transitions>
+    </DecisionState>
+  </DecisionStates>
+  <Finished>false</Finished>
+  <CheckTime>0</CheckTime>
+</DecisionMap>

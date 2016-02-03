@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ObjectInteractionInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>PlayerBreathing</Name>
+  <DialogTitle>BREATHING</DialogTitle>
+  <DialogItems>
+    <!--<string>MED:ADMINISTER</string>-->
+    <string>PLAYER:BREATHE:SYM</string>
+    <string>PLAYER:BREATHE:DIM:LEFT</string>
+    <string>PLAYER:BREATHE:DIM:RIGHT</string>
+    <string>PLAYER:BREATHE:NONE:LEFT</string>
+    <string>PLAYER:BREATHE:NONE:RIGHT</string>
+    <string>PLAYER:TRACHEA:NORMAL</string>
+    <string>PLAYER:TRACHEA:LEFT</string>
+    <string>PLAYER:TRACHEA:RIGHT</string>
+  </DialogItems>
+</ObjectInteractionInfo>

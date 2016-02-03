@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssessmentList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Name>OBJECTIVE:TREATMENT</Name>
+        <Objective>Proper Treatment</Objective>
+        <NoteSucess>Object Complete.</NoteSucess>
+        <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+        <SuccessPercentage>1.0</SuccessPercentage>
+        <AlwaysScore>true</AlwaysScore>
+        <Active>true</Active>
+        <Items>
+        <AssessmentItem>
+            <InteractionName>PERFORM:THORACOSTOMY:NEEDLE:LEFT</InteractionName>
+			<Note>Perform Needle Decompression on Left</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>ORDER:MORPHINE</InteractionName>
+			<Note>Administer Pain Management</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <Substitutes>ORDER:FENTANYL</Substitutes>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+        <AssessmentItem>
+            <InteractionName>ORDER:LOCAL:ANAESTHETIC</InteractionName>
+			<Note>Administer Local Anesthetic</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+        <AssessmentItem>
+            <InteractionName>PERFORM:CHESTTUBE:LEFT</InteractionName>
+			<Note>Perform Chest Tube Insertion on the Left Side</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+        <AssessmentItem>
+            <InteractionName>PLAYER:PATIENT:ADMIT</InteractionName>
+			<Note>Admit the Patient for Observation</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+        </AssessmentItem>
+        </Items>
+</AssessmentList>			
+

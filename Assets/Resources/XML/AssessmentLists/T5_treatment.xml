@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssessmentList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Name>OBJECTIVE:TREATMENT</Name>
+        <Objective>Proper Treatment</Objective>
+        <NoteSucess>Object Complete.</NoteSucess>
+        <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+        <SuccessPercentage>1.0</SuccessPercentage>
+        <AlwaysScore>true</AlwaysScore>
+        <Active>true</Active>
+        <Items>
+           <!--- CAN OF WORMS - PATIENT VOMIT -->
+           <AssessmentItem>
+          	<InteractionName>COW:VOMIT:CONCUSSION</InteractionName>
+          	<Note>Patient Airway Compromised</Note>
+          	<Score>0</Score>
+          	<ScoreMax>0</ScoreMax>
+          	<InOrder>false</InOrder>
+          	<DeltaTime>10</DeltaTime>
+          	<ActivateOnSuccess>
+          		<string>COW_VOMIT</string>
+          	</ActivateOnSuccess>
+          	<Ignore>true</Ignore>
+          	<Trigger>true</Trigger>
+          </AssessmentItem>
+          
+           <AssessmentItem>
+            <InteractionName>INTUBATE:PATIENT</InteractionName>
+			<Note>Intubate the Patient</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <InOrder>false</InOrder>
+            <DeltaTime>10</DeltaTime>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          
+          <AssessmentItem>
+            <InteractionName>MED:PROPOFOL</InteractionName>
+			<Note>Sedate the Patient</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          
+          <AssessmentItem>
+            <InteractionName>CONNECT:VENT</InteractionName>
+			<Note>Connect the Ventilator</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          
+          <AssessmentItem>
+            <InteractionName>PELVIC:WRAP</InteractionName>
+			<Note>Place a Pelvic Binder</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          
+          <AssessmentItem>
+            <InteractionName>PLAYER:IR:BLEED</InteractionName>
+			<Note>Consult IR for Pelvic Bleed</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>SCHEDULE:OR:LAPAROTOMY</InteractionName>
+			<Note>Schedule Laparotomy in the Operating Room</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+          </AssessmentItem>
+        </Items>
+         <Lists>
+			<AssessmentList>
+			    <Name>COW_VOMIT</Name>
+			    <Objective>Make sure the airway is clear</Objective>
+			    <NoteSucess>Object Complete.</NoteSucess>
+			    <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+			    <SuccessPercentage>1.0</SuccessPercentage>
+			    <Active>false</Active>
+			    <Items>
+			      <AssessmentItem>
+			      	<InteractionName>SUCTION:PATIENT</InteractionName>
+			      	<Note>Suction the Patient's Airway</Note>
+			      	<Score>10</Score>
+			      	<ScoreMax>10</ScoreMax>
+			      	<DeltaTime>10</DeltaTime>
+			      	<CriticalAction>true</CriticalAction>
+			      </AssessmentItem>
+			    </Items>
+			</AssessmentList>			
+        </Lists>
+</AssessmentList>			
+

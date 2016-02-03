@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VoiceList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Name>AirwayMD</Name>
+	<VoiceMaps>
+	    <VoiceMap>
+	      <Tag>VOICE:BUSY</Tag>
+	      <Audio>Audio/AM_Busy</Audio>
+	      <Text>I am busy at the momemt</Text>
+	    </VoiceMap>
+	    <VoiceMap>
+	      <Tag>VOICE:WRONG:PERSON</Tag>
+	      <!--<Audio>Audio/AM_WrongPerson</Audio>-->
+	      <Text>I don't know how to do that</Text>
+	    </VoiceMap>
+	    <VoiceMap>
+	      <Tag>VOICE:EXCEEDED:MAX:INTERACTION</Tag>
+	      <Text>I have already done that!</Text>
+	    </VoiceMap>
+	    <VoiceMap>
+	      <Tag>VOICE:MISSING:PREREQ</Tag>
+	      <Text>Can't do that right now, did you forget something?</Text>
+	    </VoiceMap>
+		<VoiceMap>
+			<Tag>VOICE:INTUBATE:01</Tag>
+			<Audio>Audio/01_intubate_main</Audio>
+	  		<Text>OK, you have the c-spine?</Text>
+			<LookAt>ignore</LookAt>
+	    </VoiceMap>
+		<VoiceMap>
+			<Tag>VOICE:INTUBATE:03</Tag>
+			<Audio>Audio/03_intubate_main</Audio>
+			<Text>Go ahead and walk your hands up. I'm going to take the collar off.</Text>
+			<LookAt>ignore</LookAt>
+	    </VoiceMap>
+		<VoiceMap>
+			<Tag>VOICE:INTUBATE:04</Tag>
+			<Audio>Audio/04_intubate_main</Audio>
+			<Text>Don't let me pull the neck away from you.</Text>
+			<LookAt>ignore</LookAt>
+	    </VoiceMap>
+		<VoiceMap>
+			<Tag>VOICE:INTUBATE:05</Tag>
+			<Audio>Audio/05_intubate_main</Audio>
+			<Text>Is suction ready?</Text>
+			<LookAt>ignore</LookAt>
+	    </VoiceMap>
+		<VoiceMap>
+			<Tag>VOICE:INTUBATE:07</Tag>
+			<Audio>Audio/07_intubate_main</Audio>
+			<Text>Do you have the tube ready?</Text>
+			<LookAt>ignore</LookAt>
+	    </VoiceMap>
+		<VoiceMap>
+			<Tag>VOICE:INTUBATE:09</Tag>
+			<Audio>Audio/09_intubate_main</Audio>
+			<Text>End tidal CO2 is ready?</Text>
+			<LookAt>ignore</LookAt>
+	    </VoiceMap>
+		<VoiceMap>
+			<Tag>VOICE:INTUBATE:11A</Tag>
+			<Audio>Audio/11a_intubate_main</Audio>
+			<Text>I'll take the laryngiscope</Text>
+			<LookAt>ignore</LookAt>
+	  	</VoiceMap>
+		<VoiceMap>
+			<Tag>VOICE:INTUBATE:11B</Tag>
+			<Audio>Audio/11b_intubate_main</Audio>
+			<Text>ET tube, please.</Text>
+			<LookAt>ignore</LookAt>
+	    </VoiceMap>
+		<VoiceMap>
+			<Tag>VOICE:INTUBATE:12</Tag>
+			<Audio>Audio/12_intubate_main</Audio>
+			<Text>OK, I'm in.</Text>
+			<LookAt>ignore</LookAt>
+	    </VoiceMap>
+		<VoiceMap>
+			<Tag>VOICE:INTUBATE:12B</Tag>
+			<Audio>Audio/AM_removeStylet</Audio>
+			<Text>Remove the stylet.</Text>
+			<LookAt>ignore</LookAt>
+	    </VoiceMap>
+		<VoiceMap>
+			<Tag>VOICE:INTUBATE:13</Tag>
+			<Audio>Audio/13_intubate_main</Audio>
+			<Text>Go ahead and inflate the cuff.</Text>
+			<LookAt>ignore</LookAt>
+	  	</VoiceMap>
+		<VoiceMap>
+			<Tag>VOICE:INTUBATE:15</Tag>
+			<Audio>Audio/15_intubate_main</Audio>
+			<Text>OK, nice job everyone.</Text>
+			<LookAt>ignore</LookAt>
+	  	</VoiceMap>
+		<VoiceMap>
+			<Tag>VOICE:INTUBATE:02F</Tag>
+			<Audio>Audio/02_failIntubate_AM</Audio>
+			<Text>No, I'm fine, just give me a second; I've almost got it.</Text>
+			<LookAt>ignore</LookAt>
+	  	</VoiceMap>
+		<VoiceMap>
+			<Tag>VOICE:INTUBATE:04F</Tag>
+			<Audio>Audio/04_failIntubate_AM</Audio>
+			<Text>Yes, I'm sure.</Text>
+			<LookAt>ignore</LookAt>
+	  	</VoiceMap>
+		<VoiceMap>
+			<Tag>VOICE:INTUBATE:05F</Tag>
+			<Audio>Audio/05_failIntubate_AM</Audio>
+			<Text>Is she sedated? I can't get a good line of sight.</Text>
+			<LookAt>ignore</LookAt>
+	  	</VoiceMap>
+		<VoiceMap>
+			<Tag>VOICE:INTUBATE:07F</Tag>
+			<Audio>Audio/07_failIntubate_AM</Audio>
+			<Text>She's moving a lot. You ordered etimodate right?</Text>
+			<LookAt>ignore</LookAt>
+	  	</VoiceMap>
+		<VoiceMap>
+			<Tag>VOICE:INTUBATE:08F</Tag>
+			<Audio>Audio/08_failIntubate_AM</Audio>
+			<Text>I need suction now! Keep the neck stable.</Text>
+			<LookAt>ignore</LookAt>
+	  	</VoiceMap>
+		<VoiceMap>
+			<Tag>VOICE:INTUBATE:10F</Tag>
+			<Audio>Audio/10_failIntubate_AM</Audio>
+			<Text>Take the ET tube, I've got suction.</Text>
+			<LookAt>ignore</LookAt>
+	  	</VoiceMap>
+		<VoiceMap>
+			<Tag>VOICE:INTUBATE:11F</Tag>
+			<Audio>Audio/11_failIntubate_AM</Audio>
+			<Text>This isn't going to happen. Collar's going back on.</Text>
+			<LookAt>ignore</LookAt>
+	  	</VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:INTUBATE:VOMIT</Tag>
+      <Audio>Audio/AM_intubateVomit</Audio>
+      <Text>I can't see anything. The patient has vomited. The airway is blocked.</Text>
+	  <LookAt>ignore</LookAt>
+    </VoiceMap>
+<VoiceMap>
+      <Tag>VOICE:PATIENT:VOMITED</Tag>
+      <Audio>Audio/AM_patientVomited</Audio>
+      <Text>The patient has vomited. The airway is blocked.</Text>
+    </VoiceMap>
+    <!-- Dynamic Vent Connect-->
+    <VoiceMap>
+      <Tag>VOICE:VENT:REPORT40</Tag>
+	  <Dynamic>true</Dynamic>
+      <Audio>audio=SAY:VENT:SET number=40 audio=SAY:VITALS:PERCENT audio=SAY:VENT:RATE </Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>SAY:VENT:SET</Tag>
+      <Audio>Audio/AM_ventConnectSet</Audio>
+      <Text>The ventilator is now connected, Doctor. The vent is set at FIO2 </Text>
+      <LookAt>lookRT</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>SAY:VENT:RATE</Tag>
+      <Audio>Audio/AM_ventConnectRate</Audio>
+      <Text>Rate 14, TV 550, Peep plus 5.</Text>
+      <LookAt>lookRT</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:VENT:REPORT</Tag>
+	  <Dynamic>true</Dynamic>
+      <Audio>audio=SAY:VENT:SET number=100 audio=SAY:VITALS:PERCENT audio=SAY:VENT:RATE</Audio>
+    </VoiceMap>
+    <!-- Dynamic Vent Connect END-->
+    <VoiceMap>
+      <Tag>VOICE:VENT:CONFIRM</Tag>
+      <Audio>Audio/AM_thatsCorrect</Audio>
+      <Text>That's correct.</Text>
+      <LookAt>lookRT</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PREP:INTUBATION</Tag>
+      <Audio>Audio/AM_iAgree</Audio>
+      <Text>I agree, she needs to be intubated. Do you want to give any medications?</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:BREATHE:RESULTS</Tag>
+      <Audio>Audio/AM_breatheResults</Audio>
+      <Text>Breath sounds are good bilaterly. Chest wall motion is equal bilaterally.</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PERCUSSION:REPORT</Tag>
+      <Audio>Audio/AM_percussionNormal</Audio>
+      <Text>Percussion is normal, Doctor.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:CHECK:ETCO2</Tag>
+      <Audio>Audio/AM_iHaveGoodColor</Audio>
+      <Text>I have good color change and fogging in the tube. We are 22 at the lip.</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PALPATETRACHEA:REPORT</Tag>
+      <Audio>Audio/AM_tracheaMidline</Audio>
+      <Text>The trachea is midline. No obvious abnormalities.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:BREATHE:REPORT</Tag>
+      <Audio>Audio/AM_checkBreathe</Audio>
+      <Text>Breath sounds are good bilaterly.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:AUSCULTATEHEART:REPORT</Tag>
+      <Audio>Audio/AM_heartSoundsNormal</Audio>
+      <Text>Heart sounds are normal.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+        <Tag>VOICE:LOGROLL:COUNT</Tag>
+        <Audio>Audio/AM_logRollCount</Audio>
+        <Text>OK Everyone. On my count. One. Two. Three.</Text>
+        <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+        <Tag>VOICE:LOGROLL:FINISH</Tag>
+        <Audio>Audio/AM_logRollFinish</Audio>
+        <Text>Down on three. One. Two. Three.</Text>
+        <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+    <!-- Numbers -->
+    <VoiceMap>
+      <Tag>VOICE:NUM100:1</Tag>
+      <Audio>Audio/AM_num100</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:1</Tag>
+      <Audio>Audio/AM_num10</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:2</Tag>
+      <Audio>Audio/AM_num20</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:3</Tag>
+      <Audio>Audio/AM_num30</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:4</Tag>
+      <Audio>Audio/AM_num40</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:5</Tag>
+      <Audio>Audio/AM_num50</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:6</Tag>
+      <Audio>Audio/AM_num60</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:7</Tag>
+      <Audio>Audio/AM_num70</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:8</Tag>
+      <Audio>Audio/AM_num80</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:9</Tag>
+      <Audio>Audio/AM_num90</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:1</Tag>
+      <Audio>Audio/AM_num11</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:2</Tag>
+      <Audio>Audio/AM_num12</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:3</Tag>
+      <Audio>Audio/AM_num13</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:4</Tag>
+      <Audio>Audio/AM_num14</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:5</Tag>
+      <Audio>Audio/AM_num15</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:6</Tag>
+      <Audio>Audio/AM_num16</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:7</Tag>
+      <Audio>Audio/AM_num17</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:8</Tag>
+      <Audio>Audio/AM_num18</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:9</Tag>
+      <Audio>Audio/AM_num19</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:0</Tag>
+      <Audio>Audio/AM_num00</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:1</Tag>
+      <Audio>Audio/AM_num01</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:2</Tag>
+      <Audio>Audio/AM_num02</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:3</Tag>
+      <Audio>Audio/AM_num03</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:4</Tag>
+      <Audio>Audio/AM_num04</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:5</Tag>
+      <Audio>Audio/AM_num05</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:6</Tag>
+      <Audio>Audio/AM_num06</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:7</Tag>
+      <Audio>Audio/AM_num07</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:8</Tag>
+      <Audio>Audio/AM_num08</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:9</Tag>
+      <Audio>Audio/AM_num09</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:0</Tag>
+      <Audio>Audio/AM_numPoint0</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:1</Tag>
+      <Audio>Audio/AM_numPoint1</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:2</Tag>
+      <Audio>Audio/AM_numPoint2</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:3</Tag>
+      <Audio>Audio/AM_numPoint3</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:4</Tag>
+      <Audio>Audio/AM_numPoint4</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:5</Tag>
+      <Audio>Audio/AM_numPoint5</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:6</Tag>
+      <Audio>Audio/AM_numPoint6</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:7</Tag>
+      <Audio>Audio/AM_numPoint7</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:8</Tag>
+      <Audio>Audio/AM_numPoint8</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:9</Tag>
+      <Audio>Audio/AM_numPoint9</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>SAY:VITALS:OVER</Tag>
+      <Audio>Audio/AM_numOver</Audio>
+      <Text>/</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>SAY:VITALS:PERCENT</Tag>
+      <Audio>Audio/AM_numPercent</Audio>
+      <Text> percent, </Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	<!-- Generic Response System -->
+	 <VoiceMap>
+      <Tag>VOICE:ACKNOWLEDGE:1</Tag>
+      <Audio>Audio/AM_acknowledge01</Audio>
+      <Text>Yes, doctor, right away.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:ACKNOWLEDGE:2</Tag>
+      <Audio>Audio/AM_acknowledge02</Audio>
+      <Text>I'm on it.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:ACKNOWLEDGE:3</Tag>
+      <Audio>Audio/AM_acknowledge03</Audio>
+      <Text>Sure thing, Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:ACKNOWLEDGE:4</Tag>
+      <Audio>Audio/AM_acknowledge04</Audio>
+      <Text>Of course.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:ACKNOWLEDGE:5</Tag>
+      <Audio>Audio/AM_acknowledge05</Audio>
+      <Text>Okay.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:QUEUED:1</Tag>
+      <Audio>Audio/AM_queued01</Audio>
+      <Text>Yes, just a minute, doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:QUEUED:2</Tag>
+      <Audio>Audio/AM_queued02</Audio>
+      <Text>Okay, one moment, please.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:QUEUED:3</Tag>
+      <Audio>Audio/AM_queued03</Audio>
+      <Text>As soon as I'm finished, I'll do that.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:QUEUED:4</Tag>
+      <Audio>Audio/AM_queued04</Audio>
+      <Text>I'll do that next.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:QUEUED:5</Tag>
+      <Audio>Audio/AM_queued05</Audio>
+      <Text>Right after this, doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:DELAYED:1</Tag>
+      <Audio>Audio/AM_delayed01</Audio>
+      <Text>It'll take me a few minutes, but I'll get to it.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:DELAYED:2</Tag>
+      <Audio>Audio/AM_delayed02</Audio>
+      <Text>Let me finish these few tasks and I'll do it.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:DELAYED:3</Tag>
+      <Audio>Audio/AM_delayed03</Audio>
+      <Text>Give me a few minutes to finish up here.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:HANDOFF:1</Tag>
+      <Audio>Audio/AM_handOff01</Audio>
+      <Text>Can you do that? I'm too busy at the moment.</Text>
+	  <LookAt>ignore</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:HANDOFF:2</Tag>
+      <Audio>Audio/AM_handOff02</Audio>
+      <Text>Do you mind helping the doctor with that?</Text>
+	  <LookAt>ignore</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:HANDOFF:4</Tag>
+      <Audio>Audio/AM_handOff04</Audio>
+      <Text>Can you help me out?</Text>
+	  <LookAt>ignore</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:HANDOFF:5</Tag>
+      <Audio>Audio/AM_handOff05</Audio>
+      <Text>Help out the doctor while I finish this.</Text>
+	  <LookAt>ignore</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BAD:COMMAND:1</Tag>
+      <Audio>Audio/AM_badCommand01</Audio>
+      <Text>I'm sorry doctor, but I don't understand what you want me to do.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BAD:COMMAND:2</Tag>
+      <Audio>Audio/AM_badCommand02</Audio>
+      <Text>Can you say that again for me?</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BAD:COMMAND:3</Tag>
+      <Audio>Audio/AM_badCommand03</Audio>
+      <Text>What was that?</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BAD:COMMAND:4</Tag>
+      <Audio>Audio/AM_badCommand04</Audio>
+      <Text>I don't understand.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BAD:COMMAND:5</Tag>
+      <Audio>Audio/AM_badCommand05</Audio>
+      <Text>I don't understand what you're asking me.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:MISMATCH:1</Tag>
+      <Audio>Audio/AM_mismatch05</Audio>
+      <Text>I'm sorry doctor, but that's not in my scope of practice.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	</VoiceMaps>
+</VoiceList>

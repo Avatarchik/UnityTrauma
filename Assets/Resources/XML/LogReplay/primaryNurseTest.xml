@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LogRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <DateTime>11/30/2012 12:07:28 PM</DateTime>
+  <Items>
+    <string>	&lt;ParamLogItem text="QuickInfoMsg" value="NLU Initialized : 0.02068663 seconds" time="0001"/&gt;</string>
+    <string>	&lt;InteractLogItem text="PrimaryNurse" value="PLACE:PULSEOX" time="0015"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PLACE:PULSEOX" time="0015"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:PULSEOX:GET:COMPLETE" time="0018"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:PULSEOX:USE:COMPLETE" time="0029"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:GRUNT" time="0031"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="WARN:PLAYER" time="0031"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PLACE:PULSEOX:COMPLETE" time="0038"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PLACE:PULSEOX:COMPLETE" time="0038"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="WARN:PLAYER:COMPLETE" time="0044"/&gt;</string>
+    <string>	&lt;InteractLogItem text="PrimaryNurse" value="PATIENT:GCS" time="0044"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:GCS" time="0044"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:GCS:CHECK:COMPLETE" time="0046"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:GCS:CHECK:COMPLETE" time="0051"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:GCS:ASKNAME:COMPLETE" time="0060"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:GCS:COMPLETE" time="0066"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="PATIENT:GCS:COMPLETE" time="0066"/&gt;</string>
+    <string>	&lt;InteractLogItem text="PrimaryNurse" value="ORDER:BLOOD:1IV" time="0066"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="ORDER:BLOOD:1IV" time="0066"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="ORDER:BLOOD:1IV:COMPLETE" time="0066"/&gt;</string>
+    <string>	&lt;InteractLogItem text="PrimaryNurse" value="ORDER:BLOOD:SCRIPT" time="0066"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="ORDER:BLOOD:SCRIPT" time="0066"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:BLOOD:DISPENSE:COMPLETE" time="0075"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:BLOOD:CONNECT:COMPLETE" time="0088"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="TASK:BLOOD:REPORT:COMPLETE" time="0093"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="IV:BLOOD:COMPLETE" time="0095"/&gt;</string>
+    <string>	&lt;InteractStatusItem text="ORDER:BLOOD:SCRIPT:COMPLETE" time="0095"/&gt;</string>
+  </Items>
+</LogRecord>

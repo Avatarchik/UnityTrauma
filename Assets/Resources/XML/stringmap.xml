@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfStringMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <StringMap>
+    <key>PRESS:ESCAPE</key>
+    <value>Type text entry keywords here.</value>
+  </StringMap>
+  <StringMap>
+    <key>GOTO:HAMPER</key>
+    <value>Walk to Hamper Bin</value>
+  </StringMap>
+  <StringMap>
+    <key>AUSCULTATE:HEART</key>
+    <value>Auscultate Normal Heart Sounds</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:EXAM:ABDOMEN</key>
+    <value>Give abdominal exam</value>
+  </StringMap>
+  <StringMap>
+    <key>PALPATE:BLADDER</key>
+    <value>Palpate the Bladder</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:EXAM:CHEST</key>
+    <value>Perform Chest Exam (palpate)</value>
+  </StringMap>
+  <StringMap>
+    <key>EXAMINE:CHESTRISE</key>
+    <value>Examine Chest Rise</value>
+  </StringMap>
+  <StringMap>
+    <key>PATIENT:INFO</key>
+    <value>Patient Info</value>
+  </StringMap>
+  <StringMap>
+    <key>PATIENT:MANUALBP</key>
+    <value>Manual Blood Pressure</value>
+  </StringMap>
+  <StringMap>
+    <key>PATIENT:MANUALBP:TITLE</key>
+    <value>PRIMARY NURSE SAYS:</value>
+  </StringMap>
+  <StringMap>
+    <key>PATIENT:MANUALBP:MSG</key>
+    <value>Taking a manual blood pressure, Doctor.</value>
+  </StringMap>
+  <!-- Perform on Patient Actions -->
+  <StringMap>
+    <key>PLAYER:ASKNAME</key>
+    <value>Ask The Patient Their Name</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:GCS</key>
+    <value>Get Patient's Glasgow Coma Scale</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:ASKNAME:TITLE</key>
+    <value>PATIENT SAYS:</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:ASKNAME:MSG</key>
+    <value>[Incoherent Moaning]</value>
+  </StringMap>
+  <!-- PLAYER VERBALIZATION, TO BE REPLACED BY NLP-->
+  <StringMap>
+    <key>VITALS:CALLBACK</key>
+    <value>Repeat Patient Vitals to Team</value>
+  </StringMap>
+  <StringMap>
+    <key>XML:playerAirway</key>
+    <value>Airway</value>
+  </StringMap>
+  <StringMap>
+    <key>XML:playerBreathing</key>
+    <value>Breathing</value>
+  </StringMap>
+  <StringMap>
+    <key>XML:playerCirculation</key>
+    <value>Circulation</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:ETCO2:FALSE</key>
+    <value>"No CO2 from the CO2 Detector."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:ETCO2:TRUE</key>
+    <value>"CO2 is positive."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:CLEARAIR</key>
+    <value>"We have a clear airway."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:BADAIR</key>
+    <value>"We have a bad airway here!"</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:BADAIR:TITLE</key>
+    <value>PLAYER SAYS:</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:BADAIR:MSG</key>
+    <value>"We have a bad airway here!"</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:PLAYER:BADAIR</key>
+    <value>"We have a bad airway here!"</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:RISE:FALSE</key>
+    <value>"No chest movement."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:RISE:TRUE</key>
+    <value>"We have rise and fall on the chest."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:FOG:FALSE</key>
+    <value>"I'm not seeing any condensation on the intubation tube."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:FOG:TRUE</key>
+    <value>"Condensation is present on the intubation tube."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:BREATHE:DIM:LEFT</key>
+    <value>"Diminished breath sounds on the left."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:BREATHE:DIM:RIGHT</key>
+    <value>"Diminished breath sounds on the right."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:BREATHE:NONE:LEFT</key>
+    <value>"No breath sounds on the left."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:BREATHE:NONE:RIGHT</key>
+    <value>"No breath sounds on the right."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:BREATHE:SYM</key>
+    <value>"Normal breath sounds on both sides."</value>
+  </StringMap>
+  <StringMap>
+    <key>BROADCAST:SHOCK</key>
+    <value>"Our patient is in shock."</value>
+  </StringMap>
+  <StringMap>
+    <key>BROADCAST:HYPOTENSION</key>
+    <value>"Our patient has hypotension."</value>
+  </StringMap>
+  <StringMap>
+    <key>PALPATE:TRACHEA</key>
+    <value>Palpate The Trachea</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:TRACHEA:NORMAL</key>
+    <value>"Trachea position is normal."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:TRACHEA:LEFT</key>
+    <value>"Trachea position is deviated to the left."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:TRACHEA:RIGHT</key>
+    <value>"Trachea position is deviated to the right."</value>
+  </StringMap>
+  <StringMap>
+    <key>CHECK:BREATHE</key>
+    <value>Auscultate Breath Sounds</value>
+  </StringMap>
+  <StringMap>
+    <key>CHECK:BREATHE:TITLE</key>
+    <value>AIRWAY MD SAYS:</value>
+  </StringMap>
+  <StringMap>
+    <key>CHECK:BREATHE:MSG</key>
+    <value>Breath sounds are good bilaterally. Chest wall motion is equal bilaterally.</value>
+  </StringMap>
+  <StringMap>
+    <key>CHECK:ETCO2</key>
+    <value>Check Color Change Block</value>
+  </StringMap>
+  <StringMap>
+    <key>CHECK:ETCO2:TITLE</key>
+    <value>AIRWAY MD SAYS:</value>
+  </StringMap>
+  <StringMap>
+    <key>CHECK:ETCO2:MSG</key>
+    <value>I have good color change and fogging in the tube. We are 22 at the lip.</value>
+  </StringMap>
+  <StringMap>
+    <key>PATIENT:EXPOSE</key>
+    <value>Undress And Expose The Patient</value>
+  </StringMap>
+  <StringMap>
+    <key>EXAM:PELVIC</key>
+    <value>Perform Pelvic Exam</value>
+  </StringMap>
+  <StringMap>
+    <key>EXAM:BLEEDING</key>
+    <value>Check For External Bleeding</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:BLEEDING:TRUE</key>
+    <value>"The patient is bleeding externally."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:BLEEDING:FALSE</key>
+    <value>"No external blood found."</value>
+  </StringMap>
+  <StringMap>
+    <key>EXAM:ABDOMEN</key>
+    <value>Examine The Patient's Abdomen</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:FAST:PERIHEPATIC:FALSE:TITLE</key>
+    <value>SCRIBE NURSE SAYS:</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:FAST:PERIHEPATIC:FALSE:MSG</key>
+    <value>"...no blood in the Right Upper Quadrant..."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:FAST:PERIHEPATIC:FALSE</key>
+    <value>"...no blood in the Right Upper Quadrant..."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:FAST:PERIHEPATIC:TRUE:TITLE</key>
+    <value>SCRIBE NURSE SAYS:</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:FAST:PERIHEPATIC:TRUE:MSG</key>
+    <value>"We've got blood in the perihepatic region."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:FAST:PERIHEPATIC:TRUE</key>
+    <value>"We've got blood in the perihepatic region."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:FAST:PERISPLENIC:FALSE</key>
+    <value>"No blood found in the perisplenic region."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:FAST:PERISPLENIC:FALSE:TITLE</key>
+    <value>SCRIBE NURSE SAYS:</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:FAST:PERISPLENIC:FALSE:MSG</key>
+    <value>"No blood found in the perisplenic region."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:FAST:PERISPLENIC:TRUE</key>
+    <value>"...blood in the Left Upper Quadrant..."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:FAST:PERISPLENIC:TRUE:TITLE</key>
+    <value>SCRIBE NURSE SAYS:</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:FAST:PERISPLENIC:TRUE:MSG</key>
+    <value>"...blood in the Left Upper Quadrant..."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:FAST:PELVIS:FALSE</key>
+    <value>"No blood found in the pelvic region."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:FAST:PELVIS:FALSE:TITLE</key>
+    <value>SCRIBE NURSE SAYS:</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:FAST:PELVIS:FALSE:MSG</key>
+    <value>"No blood found in the pelvic region."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:FAST:PELVIS:TRUE</key>
+    <value>"...blood in the bladder."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:FAST:PELVIS:TRUE:TITLE</key>
+    <value>SCRIBE NURSE SAYS:</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:FAST:PELVIS:TRUE:MSG</key>
+    <value>"...blood in the bladder."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:FAST:PERICARDIUM:FALSE</key>
+    <value>"Pericardium is normal in the FAST"</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:FAST:PERICARDIUM:FALSE:TITLE</key>
+    <value>SCRIBE NURSE SAYS:</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:FAST:PERICARDIUM:FALSE:MSG</key>
+    <value>"Pericardium is normal in the FAST"</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:FAST:PERICARDIUM:TRUE</key>
+    <value>"We've got blood in the pericardium."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:FAST:PERICARDIUM:TRUE:TITLE</key>
+    <value>SCRIBE NURSE SAYS:</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:FAST:PERICARDIUM:TRUE:MSG</key>
+    <value>"We've got blood in the pericardium."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:DPL:TRUE</key>
+    <value>"I'm getting blood from this DPL."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:DPL:FALSE</key>
+    <value>"No blood from this DPL."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:XRAY:PELVIC:TRUE</key>
+    <value>"The Xray shows blood in the pelvic region."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:XRAY:PELVIC:FALSE</key>
+    <value>"There are no signs of blood in the pelvic region on this Xray."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:XRAY:CHEST:TRUE</key>
+    <value>"The Xray shows blood in this patient's chest."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:XRAY:CHEST:FALSE</key>
+    <value>"Chest Xray is normal. ETT is in good position."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:XRAY:CHEST:FALSE:TITLE</key>
+    <value>SCRIBE NURSE SAYS:</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:XRAY:CHEST:FALSE:MSG</key>
+    <value>"Chest Xray is normal. ETT is in good position."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:EXAM:PELVIC:TRUE</key>
+    <value>"This patient has a pelvic fracture."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:EXAM:PELVIC:FALSE</key>
+    <value>"There doesn't appear to be any problems with this patient's pelvis."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:EXAM:ABDOMEN:TRUE</key>
+    <value>"This patient has blood in their abdomen."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:EXAM:ABDOMEN:FALSE</key>
+    <value>"This patient's abdomen is not bleeding internally."</value>
+  </StringMap>
+  <StringMap>
+    <key>PLAYER:OR:RETROPERITENEAL</key>
+    <value>Call the OR and prep for Retroperiteneal Backing</value>
+  </StringMap>
+   <StringMap>
+    <key>PLAYER:OR:RETROPERITENEAL:TITLE</key>
+    <value>SCRIBE NURSE SAYS:</value>
+  </StringMap>
+     <StringMap>
+    <key>PLAYER:OR:RETROPERITENEAL:MSG</key>
+    <value>The OR will be ready in 5 minutes.</value>
+  </StringMap>
+  <!-- Primary Nurse Movement-->
+  <StringMap>
+    <key>TASK:TOETOUCH</key>
+    <value>Touch Your Toes</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:STAND</key>
+    <value>Just Stand There</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:PATHTEST</key>
+    <value>Walk to Patient Right</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:PATHTEST2</key>
+    <value>Walk to Patient Left</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:PATHTEST3</key>
+    <value>Walk to Patient Right</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:PATHTEST4</key>
+    <value>Walk to Patient Left</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:PATHTEST5</key>
+    <value>Walk to Patient Right Head of Bed</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:FLUIDWARMER</key>
+    <value>Walk to Fluid Warmer</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:FAST</key>
+    <value>Walk to FAST Machine</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:CRASHCART</key>
+    <value>Walk to Crash Cart</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:AIRWAYCART</key>
+    <value>Walk to Airway Cart</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:BLOODCART</key>
+    <value>Walk to Blood Cart</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:SHARPSBIN</key>
+    <value>Walk to Sharps Bin</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:VITALSPANEL</key>
+    <value>Walk to Vitals Panel</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:LINENCART</key>
+    <value>Walk to Linen Cart</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:EKGCART</key>
+    <value>Walk to EKG Cart</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:RIGHTFOOT</key>
+    <value>Walk to Patient's Right Foot</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:RIGHTKNEE</key>
+    <value>Walk to Patient's Right Knee</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:RIGHTCHEST</key>
+    <value>Walk to Patient's Right Chest</value>
+  </StringMap>
+  <StringMap>
+    <key>IVPORT:LEFT</key>
+    <value>Place IV Port in Left Arm</value>
+  </StringMap>
+  <StringMap>
+    <key>IVPORT:RIGHT</key>
+    <value>Place IV Port in Right Arm</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:10TRAYCAB</key>
+    <value>Walk to 10 Tray Cabinet</value>
+  </StringMap>
+  <StringMap>
+    <key>ORDER:RSIMEDS</key>
+    <value>Administer RSI Meds</value>
+  </StringMap>
+  <StringMap>
+    <key>ORDER:RSIMEDS:TITLE</key>
+    <value>PRIMARY NURSE SAYS:</value>
+  </StringMap>
+  <StringMap>
+    <key>ORDER:RSIMEDS:MSG</key>
+    <value>Give Etomidate 20mg IV push and Succinylcholine 100mg IV push.</value>
+  </StringMap>
+  <StringMap>
+    <key>IV:MORPHINE</key>
+    <value>Morphine</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:INTUBATE</key>
+    <value>Walk to Intubation Position</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:INTUBATE:PATIENT</key>
+    <value>Begin Intubation</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:CSPINE</key>
+    <value>Walk to CSpine Position</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:XRAY:RETURN</key>
+    <value>Bring back the Team</value>
+  </StringMap>
+  <StringMap>
+    <key>XRAY:CHEST</key>
+    <value>Perform Chest Xray</value>
+  </StringMap>
+  <StringMap>
+    <key>XRAY:CHEST:TITLE</key>
+    <value>XRAY TECH SAYS:</value>
+  </StringMap>
+  <StringMap>
+    <key>XRAY:CHEST:MSG</key>
+    <value>"I am here. Do you want it now?"</value>
+  </StringMap>
+  <StringMap>
+    <key>XRAY:PELVIC</key>
+    <value>Perform Pelvic Xray</value>
+  </StringMap>
+  <StringMap>
+    <key>XML:PrimaryNurse/TestNurseVitals</key>
+    <value>Vitals</value>
+  </StringMap>
+  <StringMap>
+    <key>XML:PrimaryNurse/TestNurseMovement</key>
+    <value>Movement</value>
+  </StringMap>
+  <StringMap>
+    <key>XML:PrimaryNurse/TestNurseActions</key>
+    <value>Actions</value>
+  </StringMap>
+  <StringMap>
+    <key>XML:ScribeNurse/ScribeNurseVitals</key>
+    <value>Vitals</value>
+  </StringMap>
+  <StringMap>
+    <key>XML:ScribeNurse/ScribeNurseMovement</key>
+    <value>Movement</value>
+  </StringMap>
+  <StringMap>
+    <key>XML:ScribeNurse/ScribeNurseActions</key>
+    <value>Actions</value>
+  </StringMap>
+  <!-- Primary Nurse Meds-->
+  <StringMap>
+    <key>XML:PrimaryNurse/Meds</key>
+    <value>Meds</value>
+  </StringMap>
+  <StringMap>
+    <key>MED:RSI</key>
+    <value>RSI Meds</value>
+  </StringMap>
+  <StringMap>
+    <key>MED:SUCC</key>
+    <value>SUCC</value>
+  </StringMap>
+  <StringMap>
+    <key>MED:ETOMID</key>
+    <value>Etomidate</value>
+  </StringMap>
+  <StringMap>
+    <key>MED:VERSED</key>
+    <value>Versed</value>
+  </StringMap>
+  <!-- SCRIBE NURSE PATHING-->
+  <StringMap>
+    <key>XML:ScribeNurse/IVManagement</key>
+    <value>IV Management</value>
+  </StringMap>
+  <StringMap>
+    <key>XML:ScribeNurse/PlaceCall</key>
+    <value>Place Call</value>
+  </StringMap>
+  <StringMap>
+    <key>XML:ScribeNurse/Equipment</key>
+    <value>Equipment</value>
+  </StringMap>
+  <StringMap>
+    <key>XML:ScribeNurse/Meds</key>
+    <value>Meds</value>
+  </StringMap>
+  <!-- Primary Nurse IV MGMT-->
+  <StringMap>
+    <key>XML:PrimaryNurse/IVManagement</key>
+    <value>IV Management</value>
+  </StringMap>
+  <StringMap>
+    <key>LAB:DRAW</key>
+    <value>Draw Labs</value>
+  </StringMap>
+  <StringMap>
+    <key>IV:INSERT</key>
+    <value>Place an IV</value>
+  </StringMap>
+  <StringMap>
+    <key>IV:CHECK</key>
+    <value>Confirm 2 Large Bore IVs</value>
+  </StringMap>
+  <StringMap>
+    <key>IV:CHECK:TITLE</key>
+    <value>PRIMARY NURSE SAYS:</value>
+  </StringMap>
+  <StringMap>
+    <key>IV:CHECK:MSG</key>
+    <value>She has a 16 gage in the left antecubital.</value>
+  </StringMap>
+  <StringMap>
+    <key>IV:CRYSTAL</key>
+    <value>Order 1 unit of Crystalloid</value>
+  </StringMap>
+  <StringMap>
+    <key>IV:BLOOD</key>
+    <value>Order 1 unit of Blood</value>
+  </StringMap>
+  <StringMap>
+    <key>IVFLOW:GET:TITLE</key>
+    <value>PRIMARY NURSE:</value>
+  </StringMap>
+  <StringMap>
+    <key>IVFLOW:GET:MSG</key>
+    <value>Adjusting the IV.</value>
+  </StringMap>
+  <!-- Primary Nurse Calls-->
+  <StringMap>
+    <key>XML:PrimaryNurse/PlaceCall</key>
+    <value>Place Call</value>
+  </StringMap>
+  <StringMap>
+    <key>CALL:OR</key>
+    <value>Call the OR</value>
+  </StringMap>
+  <StringMap>
+    <key>CALL:OR:TITLE</key>
+    <value>OR CLERK SAYS:</value>
+  </StringMap>
+  <StringMap>
+    <key>CALL:OR:MSG</key>
+    <value>"The OR will be ready in 5 minutes."</value>
+  </StringMap>
+  <StringMap>
+    <key>CALL:ORTHO</key>
+    <value>Call Orthopedic Consult</value>
+  </StringMap>
+  <StringMap>
+    <key>CALL:ANESTH</key>
+    <value>Call Anesthesia Consult</value>
+  </StringMap>
+  <StringMap>
+    <key>CALL:TRANSFER</key>
+    <value>Call for Patient Transport</value>
+  </StringMap>
+  <!-- Primary Nurse Equipment-->
+  <StringMap>
+    <key>XML:PrimaryNurse/Equipment</key>
+    <value>Equipment</value>
+  </StringMap>
+  <StringMap>
+    <key>FOLEY:INSERT</key>
+    <value>Insert Foley Catheter</value>
+  </StringMap>
+  <StringMap>
+    <key>PLACE:PULSEOX</key>
+    <value>Place Pulse Oximeter</value>
+  </StringMap>
+  <StringMap>
+    <key>PLACE:PULSEOX:TITLE</key>
+    <value>PRIMARY NURSE SAYS:</value>
+  </StringMap>
+  <StringMap>
+    <key>PLACE:PULSEOX:MSG</key>
+    <value>Pulse ox is on. Saturated oxygen is at 96 percent.</value>
+  </StringMap>
+  <StringMap>
+    <key>PLACE:EKG</key>
+    <value>Place Patient on Vitals Monitor</value>
+  </StringMap>
+  <StringMap>
+    <key>PLACE:EKG:TITLE</key>
+    <value>PRIMARY NURSE SAYS:</value>
+  </StringMap>
+  <StringMap>
+    <key>PLACE:EKG:MSG</key>
+    <value>The patient is now on the vitals monitor.</value>
+  </StringMap>
+  <StringMap>
+    <key>PATIENT:SKINTEMP</key>
+    <value>Check the Patient's Skin Temperature</value>
+  </StringMap>
+  <StringMap>
+    <key>PATIENT:SKINTEMP:TITLE</key>
+    <value>PRIMARY NURSE SAYS:</value>
+  </StringMap>
+  <StringMap>
+    <key>PATIENT:SKINTEMP:MSG</key>
+    <value>The patient's skin is cool, clammy, and pale.</value>
+  </StringMap>
+  <StringMap>
+    <key>PATIENT:BRACELET</key>
+    <value>Give the Patient an ID Bracelet</value>
+  </StringMap>
+  <StringMap>
+    <key>PLACE:COLLAR</key>
+    <value>Place C-Collar</value>
+  </StringMap>
+  <StringMap>
+    <key>PATIENT:PLACEIV</key>
+    <value>Insert a Second IV Line</value>
+  </StringMap>
+  <StringMap>
+    <key>PATIENT:INSERTIV:TITLE</key>
+    <value>PRIMARY NURSE SAYS:</value>
+  </StringMap>
+  <StringMap>
+    <key>PATIENT:INSERTIV:MSG</key>
+    <value>Inserting second IV.</value>
+  </StringMap>
+  <StringMap>
+    <key>PATIENT:PLACEIV:TITLE</key>
+    <value>PRIMARY NURSE SAYS:</value>
+  </StringMap>
+  <StringMap>
+    <key>PATIENT:PLACEIV:MSG</key>
+    <value>Second large bore IV has been placed.</value>
+  </StringMap>
+  <!-- Primary Nurse Vitals-->
+  <StringMap>
+    <key>VITALS:ALL</key>
+    <value>All Patient Vitals</value>
+  </StringMap>
+  <StringMap>
+    <key>VITALS:ALL:TITLE</key>
+    <value>PRIMARY NURSE SAYS:</value>
+  </StringMap>
+  <StringMap>
+    <key>VITALS:ALL:MSG</key>
+    <value>The patient's BP is 82/40. Heart rate of 135. Respiratory rate is 20. SaO2 is at 96 percent.</value>
+  </StringMap>
+  <StringMap>
+    <key>VITALS:BP</key>
+    <value>Blood Pressure</value>
+  </StringMap>
+  <StringMap>
+    <key>VITALS:BP:TITLE</key>
+    <value>PRIMARY NURSE SAYS:</value>
+  </StringMap>
+  <StringMap>
+    <key>VITALS:BP:MSG</key>
+    <value>The patient's BP is 82/40.</value>
+  </StringMap>
+  <StringMap>
+    <key>VITALS:HR</key>
+    <value>Heart Rate</value>
+  </StringMap>
+  <StringMap>
+    <key>VITALS:HR:TITLE</key>
+    <value>PRIMARY NURSE SAYS:</value>
+  </StringMap>
+  <StringMap>
+    <key>VITALS:HR:MSG</key>
+    <value>Heart rate of 135.</value>
+  </StringMap>
+  <StringMap>
+    <key>VITALS:SAO2</key>
+    <value>Saturated Oxygen</value>
+  </StringMap>
+  <StringMap>
+    <key>VITALS:SAO2:TITLE</key>
+    <value>PRIMARY NURSE SAYS:</value>
+  </StringMap>
+  <StringMap>
+    <key>VITALS:SAO2:MSG</key>
+    <value>SaO2 is at 96 percent.</value>
+  </StringMap>
+  <StringMap>
+    <key>VITALS:RESP</key>
+    <value>Respiratory Rate</value>
+  </StringMap>
+  <StringMap>
+    <key>VITALS:RESP:TITLE</key>
+    <value>PRIMARY NURSE SAYS:</value>
+  </StringMap>
+  <StringMap>
+    <key>VITALS:RESP:MSG</key>
+    <value>Respiratory rate is 20.</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:CHECK:VITALS:TITLE</key>
+    <value>PRIMARY NURSE SAYS:</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:CHECK:VITALS:MSG</key>
+    <value>The patient's BP is 82/40. Heart rate of 135. Respiratory rate is 20. SAO2 is at 97 percent.</value>
+  </StringMap>
+  <!-- PROCEDURE RESIDENT ACTIONS -->
+  <StringMap>
+    <key>XML:ProcedureResident/ProcedureResidentActions</key>
+    <value>Actions</value>
+  </StringMap>
+  <StringMap>
+    <key>FAST:EXAM</key>
+    <value>Perform FAST Exam</value>
+  </StringMap>
+  <StringMap>
+    <key>FAST:EXAM:MSG</key>
+    <value>Getting the ultrasound, Doc.</value>
+  </StringMap>
+  <StringMap>
+    <key>FAST:EXAM:TITLE</key>
+    <value>PROCEDURE RESIDENT SAYS:</value>
+  </StringMap>
+  <StringMap>
+    <key>PERFORM:DPL</key>
+    <value>Perform DPL</value>
+  </StringMap>
+  <StringMap>
+    <key>PELVIC:BINDER</key>
+    <value>Place Pelvic Binder</value>
+  </StringMap>
+  <StringMap>
+    <key>PELVIC:WRAP</key>
+    <value>Place Pelvic Wrap</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:CHECK:VITALS</key>
+    <value>Check Vitals</value>
+  </StringMap>
+  <!-- PROCEDURE RESIDENT MOVEMENT -->
+  <StringMap>
+    <key>XML:ProcedureResident/ProcedureResidentMovement</key>
+    <value>Movement</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:FAST</key>
+    <value>Go To The FAST Machine</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:SHARPSBIN</key>
+    <value>Go To The Sharps Bin</value>
+  </StringMap>
+  <!-- AIRWAY MD MOVEMENT-->
+  <StringMap>
+    <key>XML:AirwayMD/AirwayMDMovement</key>
+    <value>Movement</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:AIRWAYCART</key>
+    <value>Go to the Airway Cart</value>
+  </StringMap>
+  <StringMap>
+    <key>TASK:VENTILATOR</key>
+    <value>Go to the Ventilator</value>
+  </StringMap>
+  <!-- AIRWAY MD ACTIONS -->
+  <StringMap>
+    <key>XML:AirwayMD/AirwayMDActions</key>
+    <value>Actions</value>
+  </StringMap>
+  <StringMap>
+    <key>PREP:INTUBATION</key>
+    <value>Prepare for Intubation</value>
+  </StringMap>
+  <StringMap>
+    <key>PREP:INTUBATION:TITLE</key>
+    <value>AIRWAY MD SAYS:</value>
+  </StringMap>
+  <StringMap>
+    <key>PREP:INTUBATION:MSG</key>
+    <value>I agree she needs to be intubated. Do you want to give any medications?</value>
+  </StringMap>
+  <StringMap>
+    <key>INTUBATE:PATIENT</key>
+    <value>Intubate the Patient</value>
+  </StringMap>
+  <StringMap>
+    <key>INTUBATE:PATIENT:TITLE</key>
+    <value>PRIMARY NURSE SAYS:</value>
+  </StringMap>
+  <StringMap>
+    <key>INTUBATE:PATIENT:MSG</key>
+    <value>Are you ready for me to start pushing drugs?</value>
+  </StringMap>
+  <StringMap>
+    <key>EXAM:PUPIL</key>
+    <value>Examine Pupils</value>
+  </StringMap>
+  <StringMap>
+    <key>PATIENT:LISTENRESP</key>
+    <value>Listen for Respirations</value>
+  </StringMap>
+  <StringMap>
+    <key>CHECK:DRAINAGE</key>
+    <value>Check for Drainage</value>
+  </StringMap>
+  <StringMap>
+    <key>CHECK:MOTOR:ARMS</key>
+    <value>Examine Arm Movement</value>
+  </StringMap>
+  <StringMap>
+    <key>CHECK:MOTOR:LEGS</key>
+    <value>Examine Leg Movement</value>
+  </StringMap>
+  <StringMap>
+    <key>CHECK:PULSE</key>
+    <value>Check Pulse</value>
+  </StringMap>
+  <StringMap>
+    <key>EXAM:CHEEKS</key>
+    <value>Palpate Cheekbones</value>
+  </StringMap>
+  <!-- RESPIRATORY TECH -->
+  <StringMap>
+    <key>CONNECT:VENT</key>
+    <value>Connect the Ventilator</value>
+  </StringMap>
+  <StringMap>
+    <key>CALLBACK:VENT:TITLE</key>
+    <value>RESPIRATORY TECH:</value>
+  </StringMap>
+  <StringMap>
+    <key>REPORT:VENT:TITLE</key>
+    <value>AIRWAY MD:</value>
+  </StringMap>
+  <StringMap>
+    <key>REPORT:VENT:MSG</key>
+    <value>The ventilator is now connected, Doctor. The vent is set at FIO2 100 percent, Rate 14, TV 550, Peep +5.</value>
+  </StringMap>
+  <StringMap>
+    <key>CONFIRM:VENT:TITLE</key>
+    <value>AIRWAY MD:</value>
+  </StringMap>
+  <StringMap>
+    <key>CONFIRM:VENT:MSG</key>
+    <value>That's correct.</value>
+  </StringMap>
+  <StringMap>
+    <key>CALLBACK:VENT:MSG</key>
+    <value>The vent is set at FIO2 100 percent, Rate 14, TV 550, Peep +5.</value>
+  </StringMap>
+</ArrayOfStringMap>

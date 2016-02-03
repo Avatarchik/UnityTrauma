@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DecisionMap xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>MonitorHeartRate</Name>
+  <StartState>Normal</StartState>
+  <Interval>1</Interval>
+  <DecisionStates>
+    <DecisionState>
+      <Name>Normal</Name>
+      <Transitions>
+        <DecisionStateTransition>
+          <DecisionCondition>
+            <Name>CheckForIncrease</Name>
+            <Tests>
+              <string>var:Patient.HR condition:greater constant:135</string>
+            </Tests>
+          </DecisionCondition>
+          <DecisionAction>
+            <Name>Action1</Name>
+            <Actions>
+              <string>status:"WARN:PLAYER:HEARTRATE:HIGH"</string>
+			  <string>var:Patient.HeartbeatType equals:stach</string>
+            </Actions>
+          </DecisionAction>
+          <SuccessState>Tachycardic</SuccessState>
+        </DecisionStateTransition>
+        <DecisionStateTransition>
+          <DecisionCondition>
+            <Name>CheckForDecrease</Name>
+            <Tests>
+              <string>var:Patient.HR condition:less constant:70</string>
+            </Tests>
+          </DecisionCondition>
+          <DecisionAction>
+            <Name>Action1</Name>
+            <Actions>
+              <string>status:"WARN:PLAYER:HEARTRATE:LOW"</string>
+			  <string>var:Patient.HeartbeatType equals:sbrad</string>
+            </Actions>
+          </DecisionAction>
+          <SuccessState>Bradycardic</SuccessState>
+        </DecisionStateTransition>
+      </Transitions>
+    </DecisionState>
+    <DecisionState>
+      <Name>Tachycardic</Name>
+      <Transitions>
+        <DecisionStateTransition>
+          <DecisionCondition>
+            <Name>CheckForIncrease</Name>
+            <Tests>
+              <string>var:Patient.HR condition:greater constant:140</string>
+            </Tests>
+          </DecisionCondition>
+          <DecisionAction>
+            <Name>Action1</Name>
+            <Actions>
+              <string>status:"WARN:PLAYER:HEARTRATE:HIGH"</string>
+			  <string>var:Patient.HeartbeatType equals:vfib1</string>
+            </Actions>
+          </DecisionAction>
+          <SuccessState>Fibrillating</SuccessState>
+        </DecisionStateTransition>
+        <DecisionStateTransition>
+          <DecisionCondition>
+            <Name>CheckForDecrease</Name>
+            <Tests>
+              <string>var:Patient.HR condition:less constant:130</string>
+            </Tests>
+          </DecisionCondition>
+          <DecisionAction>
+            <Name>Action1</Name>
+            <Actions>
+			  <string>status:"WARN:PLAYER:HEARTRATE:STABLE"</string>
+              <string>var:Patient.HeartbeatType equals:normal</string>
+            </Actions>
+          </DecisionAction>
+          <SuccessState>Normal</SuccessState>
+        </DecisionStateTransition>
+      </Transitions>
+    </DecisionState>
+    <DecisionState>
+      <Name>Bradycardic</Name>
+      <Transitions>
+        <DecisionStateTransition>
+          <DecisionCondition>
+            <Name>CheckForIncrease</Name>
+            <Tests>
+              <string>var:Patient.HR condition:greater constant:75</string>
+            </Tests>
+          </DecisionCondition>
+          <DecisionAction>
+            <Name>Action1</Name>
+            <Actions>
+              <string>status:"WARN:PLAYER:HEARTRATE:STABLE"</string>
+			  <string>var:Patient.HeartbeatType equals:normal</string>
+            </Actions>
+          </DecisionAction>
+          <SuccessState>Normal</SuccessState>
+        </DecisionStateTransition>
+        <DecisionStateTransition>
+          <DecisionCondition>
+            <Name>CheckForDecrease</Name>
+            <Tests>
+              <string>var:Patient.HR condition:less constant:30</string>
+            </Tests>
+          </DecisionCondition>
+          <DecisionAction>
+            <Name>Action1</Name>
+            <Actions>
+              <string>status:"WARN:PLAYER:DEAD"</string>
+              <string>status:"EFFECT:PATIENT:DEAD"</string>
+			        <string>var:Patient.HR equals:0</string>
+			        <string>var:Patient.HeartbeatType equals:flatline</string>
+            </Actions>
+          </DecisionAction>
+          <SuccessState>Dead</SuccessState>
+        </DecisionStateTransition>
+      </Transitions>
+    </DecisionState>
+    <DecisionState>
+      <Name>Fibrillating</Name>
+      <Transitions>
+        <DecisionStateTransition>
+          <DecisionCondition>
+            <Name>CheckForIncrease</Name>
+            <Tests>
+              <string>var:Patient.HR condition:greater constant:150</string>
+            </Tests>
+          </DecisionCondition>
+          <DecisionAction>
+            <Name>Action1</Name>
+            <Actions>
+              <string>status:"WARN:PLAYER:DEAD"</string>
+                <string>status:"EFFECT:PATIENT:DEAD"</string>
+			  <string>var:Patient.HR equals:0</string>
+			  <string>var:Patient.HeartbeatType equals:flatline</string>
+            </Actions>
+          </DecisionAction>
+          <SuccessState>Dead</SuccessState>
+        </DecisionStateTransition>
+        <DecisionStateTransition>
+          <DecisionCondition>
+            <Name>CheckForDecrease</Name>
+            <Tests>
+              <string>var:Patient.HR condition:less constant:140</string>
+            </Tests>
+          </DecisionCondition>
+          <DecisionAction>
+            <Name>Action1</Name>
+            <Actions>
+              <string>status:"WARN:PLAYER:HEARTRATE:STABLE"</string>
+			  <string>var:Patient.HR equals:90</string>
+			  <string>var:Patient.HeartbeatType equals:normal</string>
+            </Actions>
+          </DecisionAction>
+          <SuccessState>Normal</SuccessState>
+        </DecisionStateTransition>
+      </Transitions>
+    </DecisionState>
+    <DecisionState>
+      <Name>Dead</Name>
+    </DecisionState>
+  </DecisionStates>
+  <Finished>false</Finished>
+  <CheckTime>0</CheckTime>
+</DecisionMap>

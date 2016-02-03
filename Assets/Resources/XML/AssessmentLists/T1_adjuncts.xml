@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssessmentList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Name>OBJECTIVE:ADJUNCTS</Name>
+        <Objective>Request the Proper Adjunct Procedures</Objective>
+        <NoteSucess>Object Complete.</NoteSucess>
+        <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+        <SuccessPercentage>1.0</SuccessPercentage>
+        <AlwaysScore>true</AlwaysScore>
+        <ActivateOnComplete>
+          <!--<string>OBJECTIVE:TREATMENT</string>-->
+        </ActivateOnComplete>
+        <Active>true</Active>
+        <Items>
+         <AssessmentItem>
+            <InteractionName>PLACE:MONITORS</InteractionName>
+			<Note>Place the Patient on the Vitals Monitor</Note>			
+            <Score>15</Score>
+            <ScoreMax>15</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+         
+           <AssessmentItem>
+            <InteractionName>PATIENT:COVER</InteractionName>
+			<Note>Cover the Patient</Note>			
+            <Score>13</Score>
+            <ScoreMax>13</ScoreMax>
+          </AssessmentItem>
+         
+           <AssessmentItem>
+            <InteractionName>XRAY:SHOWDIALOG:CHEST</InteractionName>
+			<Note>Review Chest X-ray</Note>			
+            <Score>15</Score>
+            <ScoreMax>15</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          
+          <AssessmentItem>
+            <InteractionName>XRAY:SHOWDIALOG:LEG:RIGHT</InteractionName>
+			<Note>Review X-ray of Patient's Right Leg</Note>			
+            <Score>15</Score>
+            <ScoreMax>15</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+           
+           <AssessmentItem>
+            <InteractionName>CHECK:ABI</InteractionName>
+			<Note>Check Ankle Brachial Index</Note>			
+            <Score>15</Score>
+            <ScoreMax>15</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+
+           <AssessmentItem>
+            <InteractionName>SCHEDULE:CT:ANGIOGRAM</InteractionName>
+			<Note>Schedule Angiogram of Right Leg</Note>			
+            <Score>5</Score>
+            <ScoreMax>5</ScoreMax>
+            <CriticalAction>false</CriticalAction>
+          </AssessmentItem>
+        </Items>
+</AssessmentList>			
+

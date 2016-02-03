@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PlanOfCareForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <disposition>
+    <PlanOfCareInfo>
+      <item>Home</item>
+      <interaction>DISPOSITION:HOME</interaction>
+    </PlanOfCareInfo>
+    <PlanOfCareInfo>
+      <item>23 Hours Observation</item>
+      <interaction>DISPOSITION:OBSERVATION</interaction>
+    </PlanOfCareInfo>
+    <PlanOfCareInfo>
+      <item>Surgical Intensive Care Unit</item>
+      <interaction>DISPOSITION:INTENSIVE:CARE</interaction>
+    </PlanOfCareInfo>
+    <PlanOfCareInfo>
+      <item>Cardiac Monitoring Bed</item>
+      <interaction>DISPOSITION:CARDIAC:MONITORING</interaction>
+    </PlanOfCareInfo>
+    <PlanOfCareInfo>
+      <item>Regular Surgical Unit</item>
+      <interaction>DISPOSITION:SURGICAL:UNIT</interaction>
+    </PlanOfCareInfo>
+    <PlanOfCareInfo>
+      <item>Morgue Notify Medical Examiner</item>
+      <interaction>DISPOSITION:MORGUE</interaction>
+    </PlanOfCareInfo>
+  </disposition>
+  <consultation>
+    <PlanOfCareInfo>
+      <item>Neurosurgery</item>
+      <interaction>CONSULTATION:NEUROSURGERY</interaction>
+    </PlanOfCareInfo>
+    <PlanOfCareInfo>
+      <item>Othopedics</item>
+      <interaction>CONSULTATION:ORTHOPEDICS</interaction>
+    </PlanOfCareInfo>
+    <PlanOfCareInfo>
+      <item>ENT</item>
+      <interaction>CONSULTATION:ENT</interaction>
+    </PlanOfCareInfo>
+    <PlanOfCareInfo>
+      <item>OMFS</item>
+      <interaction>CONSULTATION:OMFS</interaction>
+    </PlanOfCareInfo>
+    <PlanOfCareInfo>
+      <item>Opthalmology</item>
+      <interaction>CONSULTATION:OPTHALMOLOGY</interaction>
+    </PlanOfCareInfo>
+    <PlanOfCareInfo>
+      <item>Urology</item>
+      <interaction>CONSULTATION:UROLOGY</interaction>
+    </PlanOfCareInfo>
+    <PlanOfCareInfo>
+      <item>Burn</item>
+      <interaction>CONSULTATION:BURN</interaction>
+    </PlanOfCareInfo>
+  </consultation>
+</PlanOfCareForm>

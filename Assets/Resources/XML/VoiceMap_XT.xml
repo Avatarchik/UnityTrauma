@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VoiceList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Name>XrayTech</Name>
+	<VoiceMaps>
+	 <VoiceMap>
+       <Tag>VOICE:XRAY:HERE</Tag>
+       <Audio>Audio/XT_iAmHere</Audio>
+       <Text>I'm here now, doctor. Are you ready for your XRay ?</Text>
+       <LookAt>lookCamera</LookAt>
+     </VoiceMap>	
+	 <VoiceMap>
+      <Tag>VOICE:XRAY:CLEAR</Tag>
+      <Audio>Audio/XT_clearRoom</Audio>
+      <Text>Everyone clear the room while I take this image, please.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>	
+
+	
+	
+	
+	<!-- Generic Response System -->
+	 <VoiceMap>
+      <Tag>VOICE:ACKNOWLEDGE:1</Tag>
+      <Audio>Audio/XT_acknowledge01</Audio>
+      <Text>Yes, doctor, right away.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:ACKNOWLEDGE:2</Tag>
+      <Audio>Audio/XT_acknowledge02</Audio>
+      <Text>I'm on it.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:ACKNOWLEDGE:3</Tag>
+      <Audio>Audio/XT_acknowledge03</Audio>
+      <Text>Sure thing, Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:ACKNOWLEDGE:4</Tag>
+      <Audio>Audio/XT_acknowledge04</Audio>
+      <Text>Of course.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:ACKNOWLEDGE:5</Tag>
+      <Audio>Audio/XT_acknowledge05</Audio>
+      <Text>Okay.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:QUEUED:1</Tag>
+      <Audio>Audio/XT_queued01</Audio>
+      <Text>Yes, just a minute, doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:QUEUED:2</Tag>
+      <Audio>Audio/XT_queued02</Audio>
+      <Text>Okay, one moment, please.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:QUEUED:3</Tag>
+      <Audio>Audio/XT_queued03</Audio>
+      <Text>As soon as I'm finished, I'll do that.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:QUEUED:4</Tag>
+      <Audio>Audio/XT_queued04</Audio>
+      <Text>I'll do that next.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:QUEUED:5</Tag>
+      <Audio>Audio/XT_queued05</Audio>
+      <Text>Right after this, doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:DELAYED:1</Tag>
+      <Audio>Audio/XT_delayed01</Audio>
+      <Text>It'll take me a few minutes, but I'll get to it.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:DELAYED:2</Tag>
+      <Audio>Audio/XT_delayed02</Audio>
+      <Text>Let me finish these few tasks and I'll do it.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:DELAYED:3</Tag>
+      <Audio>Audio/XT_delayed03</Audio>
+      <Text>Give me a few minutes to finish up here.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:HANDOFF:1</Tag>
+      <Audio>Audio/XT_handOff01</Audio>
+      <Text>Can you do that? I'm too busy at the moment.</Text>
+	  <LookAt>ignore</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:HANDOFF:2</Tag>
+      <Audio>Audio/XT_handOff02</Audio>
+      <Text>Do you mind helping the doctor with that?</Text>
+	  <LookAt>ignore</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:HANDOFF:4</Tag>
+      <Audio>Audio/XT_handOff04</Audio>
+      <Text>Can you help me out?</Text>
+	  <LookAt>ignore</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:HANDOFF:5</Tag>
+      <Audio>Audio/XT_handOff05</Audio>
+      <Text>Help out the doctor while I finish this.</Text>
+	  <LookAt>ignore</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BAD:COMMAND:1</Tag>
+      <Audio>Audio/XT_badCommand01</Audio>
+      <Text>I'm sorry doctor, but I don't understand what you want me to do.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BAD:COMMAND:2</Tag>
+      <Audio>Audio/XT_badCommand02</Audio>
+      <Text>Can you say that again for me?</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BAD:COMMAND:3</Tag>
+      <Audio>Audio/XT_badCommand03</Audio>
+      <Text>What was that?</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BAD:COMMAND:4</Tag>
+      <Audio>Audio/XT_badCommand04</Audio>
+      <Text>I don't understand.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BAD:COMMAND:5</Tag>
+      <Audio>Audio/XT_badCommand05</Audio>
+      <Text>I don't understand what you're asking me.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:MISMATCH:1</Tag>
+      <Audio>Audio/XT_mismatch04</Audio>
+      <Text>I'm sorry doctor, but that's not in my scope of practice.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+  </VoiceMaps>
+</VoiceList>

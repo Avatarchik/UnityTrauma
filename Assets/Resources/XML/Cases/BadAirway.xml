@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CaseOptionData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name />
+  <age />
+  <caseDescription>Enter case description...</caseDescription>
+  <description>BadAirway,PelvicFracture</description>
+  <filename>BadAirway</filename>
+  <options>
+    <CaseOption>
+      <selected>false</selected>
+      <name>BadAirway</name>
+      <shortDescription>Patient has a bad Airway at start</shortDescription>
+      <longDescription />
+      <param />
+    </CaseOption>
+    <CaseOption>
+      <selected>true</selected>
+      <name>PatientVomitsInitially</name>
+      <shortDescription>Patient vomits quickly if not medicated.</shortDescription>
+      <longDescription />
+      <param>
+        <string>DelayBeforeVomiting=90</string>
+      </param>
+    </CaseOption>
+    <CaseOption>
+      <selected>true</selected>
+      <name>Bradycardia</name>
+      <shortDescription>Patient becomes Bradycardic unless SAO2 is verified after ventilation</shortDescription>
+      <longDescription />
+      <param>
+        <string>DelayBeforeCrash=120</string>
+      </param>
+    </CaseOption>
+    <CaseOption>
+      <selected>false</selected>
+      <name>CuffError</name>
+      <shortDescription>AutoBP reads Cuff Error if not manually verified</shortDescription>
+      <longDescription />
+      <param>
+        <string>DelayBeforeError=60</string>
+      </param>
+    </CaseOption>
+    <CaseOption>
+      <selected>true</selected>
+      <name>CombativePatient</name>
+      <shortDescription>Patient becomes combative if not sedated</shortDescription>
+      <longDescription />
+      <param />
+    </CaseOption>
+    <CaseOption>
+      <selected>false</selected>
+      <name>VentilatorError</name>
+      <shortDescription>Ventilator is incorrectly set at 40% when connected</shortDescription>
+      <longDescription />
+      <param />
+    </CaseOption>
+    <CaseOption>
+      <selected>true</selected>
+      <name>PelvicBleeding</name>
+      <shortDescription>Patient has Pelvic Fracture and internal bleeding</shortDescription>
+      <longDescription />
+      <param />
+    </CaseOption>
+    <CaseOption>
+      <selected>false</selected>
+      <name>CardiacArrest</name>
+      <shortDescription>Patient enters Cardiac Arrest and can be Defibrillated</shortDescription>
+      <longDescription />
+      <param>
+        <string>Equipment=Zoll</string>
+      </param>
+    </CaseOption>
+    <CaseOption>
+      <selected>false</selected>
+      <name>ExternalBleeding</name>
+      <shortDescription>Patient is bleeding externally</shortDescription>
+      <longDescription />
+      <param />
+    </CaseOption>
+    <CaseOption>
+      <selected>true</selected>
+      <name>ConnectMonitor</name>
+      <shortDescription>Primary Nurse connects Vitals Monitor</shortDescription>
+      <longDescription />
+      <param />
+    </CaseOption>
+    <CaseOption>
+      <selected>true</selected>
+      <name>VerbalWarnings</name>
+      <shortDescription>Have Nurse warn the player when Vitals are critical</shortDescription>
+      <longDescription />
+      <param />
+    </CaseOption>
+  </options>
+  <team>
+    <CaseOption>
+      <selected>true</selected>
+      <name />
+      <shortDescription>AirwayMD Sara</shortDescription>
+      <longDescription />
+      <param />
+    </CaseOption>
+    <CaseOption>
+      <selected>true</selected>
+      <name />
+      <shortDescription>ProcedureResident Marcus</shortDescription>
+      <longDescription />
+      <param />
+    </CaseOption>
+    <CaseOption>
+      <selected>true</selected>
+      <name />
+      <shortDescription>PrimaryNurse David</shortDescription>
+      <longDescription />
+      <param />
+    </CaseOption>
+    <CaseOption>
+      <selected>true</selected>
+      <name />
+      <shortDescription>ScribeNurse Jamie</shortDescription>
+      <longDescription />
+      <param />
+    </CaseOption>
+    <CaseOption>
+      <selected>true</selected>
+      <name />
+      <shortDescription>RespiratoryTech Heather</shortDescription>
+      <longDescription />
+      <param />
+    </CaseOption>
+    <CaseOption>
+      <selected>true</selected>
+      <name />
+      <shortDescription>XrayTech Kristen</shortDescription>
+      <longDescription />
+      <param />
+    </CaseOption>
+    <CaseOption>
+      <selected>false</selected>
+      <name />
+      <shortDescription>Other</shortDescription>
+      <longDescription />
+      <param />
+    </CaseOption>
+    <CaseOption>
+      <selected>false</selected>
+      <name />
+      <shortDescription>Other</shortDescription>
+      <longDescription />
+      <param />
+    </CaseOption>
+  </team>
+  <start>
+    <HR>-1</HR>
+    <BPSYS>-1</BPSYS>
+    <BPDIA>-1</BPDIA>
+    <SP>-1</SP>
+  </start>
+  <end>
+    <HR>-1</HR>
+    <BPSYS>-1</BPSYS>
+    <BPDIA>-1</BPDIA>
+    <SP>-1</SP>
+  </end>
+</CaseOptionData>

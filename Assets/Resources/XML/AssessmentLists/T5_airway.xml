@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssessmentList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Name>OBJECTIVE:AIRWAY</Name>
+        <Objective>Make sure the airway is clear</Objective>
+        <NoteSucess>Object Complete.</NoteSucess>
+        <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+        <SuccessPercentage>1.0</SuccessPercentage>
+        <AlwaysScore>true</AlwaysScore>
+        <Active>true</Active>
+        <Items>
+          <AssessmentItem>
+            <InteractionName>PLAYER:ASKNAME</InteractionName>
+			<Note>Assess Patient's Cognitive Ability</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <InOrder>false</InOrder>
+            <DeltaTime>10</DeltaTime>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PATIENT:GCS</InteractionName>
+			<Note>Get Patient's Glascow Coma Scale</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <InOrder>false</InOrder>
+            <DeltaTime>10</DeltaTime>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>INTUBATE:PATIENT</InteractionName>
+			<Note>Intubate the Patient</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <InOrder>false</InOrder>
+            <DeltaTime>10</DeltaTime>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>CHECK:ETCO2</InteractionName>
+			<Note>Check ETCO2</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <InOrder>false</InOrder>
+            <DeltaTime>10</DeltaTime>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          <AssessmentItem>
+          	<InteractionName>COW:VOMIT:CONCUSSION</InteractionName>
+          	<Note>Patient Airway Compromised</Note>
+          	<Score>0</Score>
+          	<ScoreMax>0</ScoreMax>
+          	<InOrder>false</InOrder>
+          	<DeltaTime>10</DeltaTime>
+          	<ActivateOnSuccess>
+          		<string>COW_VOMIT</string>
+          	</ActivateOnSuccess>
+          	<Ignore>true</Ignore>
+          	<Trigger>true</Trigger>
+          </AssessmentItem>
+        </Items>
+        <Lists>
+			<AssessmentList>
+			    <Name>COW_VOMIT</Name>
+			    <Objective>Make sure the airway is clear</Objective>
+			    <NoteSucess>Object Complete.</NoteSucess>
+			    <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+			    <SuccessPercentage>1.0</SuccessPercentage>
+			    <Active>false</Active>
+			    <Items>
+			      <AssessmentItem>
+			      	<InteractionName>SUCTION:PATIENT</InteractionName>
+			      	<Note>Suction the Patient's Airway</Note>
+			      	<Score>10</Score>
+			      	<ScoreMax>10</ScoreMax>
+			      	<DeltaTime>10</DeltaTime>
+			      	<CriticalAction>true</CriticalAction>
+			      </AssessmentItem>
+			    </Items>
+			</AssessmentList>			
+        </Lists>
+</AssessmentList>			
+

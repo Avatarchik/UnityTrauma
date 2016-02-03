@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssessmentList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+        <Name>OBJECTIVE:TREATMENT</Name>
+        <Objective>Proper Treatment</Objective>
+        <NoteSucess>Object Complete.</NoteSucess>
+        <NoteFailure>Objective Failed.  Please review assessment report.</NoteFailure>
+        <SuccessPercentage>1.0</SuccessPercentage>
+        <AlwaysScore>true</AlwaysScore>
+        <Active>true</Active>
+        <Items>
+          <AssessmentItem>
+            <InteractionName>ORDER:MORPHINE</InteractionName>
+			<Note>Administer Pain Management</Note>			
+            <Score>15</Score>
+            <ScoreMax>15</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+            <Substitutes>ORDER:FENTANYL</Substitutes>
+          </AssessmentItem>
+         <AssessmentItem>
+            <InteractionName>APPLY:PRESSURE:START</InteractionName>
+			<Note>Apply Direct Pressure to Wound</Note>			
+            <Score>20</Score>
+            <ScoreMax>20</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+         <AssessmentItem>
+            <InteractionName>PERFORM:LACERATION:REPAIR</InteractionName>
+			<Note>Suture the Patient's Laceration</Note>			
+            <Score>20</Score>
+            <ScoreMax>20</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLACE:DRESSING</InteractionName>
+			<Note>Place a Bandage Over the Patient's Wound</Note>			
+            <Score>20</Score>
+            <ScoreMax>20</ScoreMax>
+            <Substitutes>PLACE:ACEWRAP</Substitutes>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PULSE:CAROTID</InteractionName>
+			<Note>Check the Patient's Carotid Pulse</Note>			
+            <Score>5</Score>
+            <ScoreMax>5</ScoreMax>
+            <CriticalAction>false</CriticalAction>
+            <EvaluateOnCount>2</EvaluateOnCount>
+          </AssessmentItem>
+           <AssessmentItem>
+            <InteractionName>PULSE:RADIAL</InteractionName>
+			<Note>Check the Patient's Radial Pulse</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+            <EvaluateOnCount>2</EvaluateOnCount>
+          </AssessmentItem> 
+           <AssessmentItem>
+            <InteractionName>PULSE:FEMORAL</InteractionName>
+			<Note>Check the Patient's Carotid Pulse</Note>			
+            <Score>5</Score>
+            <ScoreMax>5</ScoreMax>
+            <CriticalAction>false</CriticalAction>
+            <EvaluateOnCount>2</EvaluateOnCount>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PULSE:PEDAL</InteractionName>
+			<Note>Check the Patient's Pedal Pulse</Note>			
+            <Score>20</Score>
+            <ScoreMax>20</ScoreMax>
+            <CriticalAction>true</CriticalAction>
+            <EvaluateOnCount>2</EvaluateOnCount>
+          </AssessmentItem>        
+          <!--- Unsure if Rob can take negatives, might need to change how this works. Points for discharge, negative points for admit -->
+        <AssessmentItem>
+            <InteractionName>PLAYER:PATIENT:ADMIT</InteractionName>
+			<Note>Admit the Patient for Observation</Note>			
+            <Score>-5</Score>
+            <ScoreMax>-5</ScoreMax>
+            <Substitutes>PLAYER:PATIENT:DISCHARGE</Substitutes>
+            <CriticalAction>false</CriticalAction>
+          </AssessmentItem>
+          <AssessmentItem>
+            <InteractionName>PLAYER:PATIENT:DISCHARGE</InteractionName>
+			<Note>Discharge the Patient</Note>			
+            <Score>10</Score>
+            <ScoreMax>10</ScoreMax>
+            <Substitutes>PLAYER:PATIENT:ADMIT</Substitutes>
+            <CriticalAction>true</CriticalAction>
+          </AssessmentItem>
+        </Items>
+</AssessmentList>			
+

@@ -1,0 +1,954 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VoiceList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Name>PrimaryNurse</Name>
+  <!-- Text is only used if there is no audio file. Still need to use the stringmap to make text show up. -->
+	<VoiceMaps>
+	    <VoiceMap>
+	      <Tag>VOICE:BUSY</Tag>
+	      <Audio>Audio/PN_Busy</Audio>
+	      <Text>I'm sorry, but I'm a little busy right now.</Text>
+	    </VoiceMap>
+	    <VoiceMap>
+	      <Tag>VOICE:WRONG:PERSON</Tag>
+	      <Audio>Audio/PN_WrongPerson</Audio>
+	      <Text>I'm sorry, but I don't know how to do that.</Text>
+	    </VoiceMap>
+	    <VoiceMap>
+	      <Tag>VOICE:EXCEEDED:MAX:INTERACTION</Tag>
+	      <Text>I have already done that!</Text>
+	    </VoiceMap>
+	    <VoiceMap>
+	      <Tag>VOICE:MISSING:PREREQ</Tag>
+	      <Text>Can't do that right now, did you forget something?</Text>
+	    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:GCS:CHECK</Tag>
+      <Audio>Audio/PN_gcsCheck</Audio>
+      <Text>Ms. can you tell me your name? Do you know what day it is?</Text>
+      <LookAt>lookPatient</LookAt>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>VOICE:GCS:REPORT</Tag>
+      <Audio>Audio/PN_gcsReport</Audio>
+      <Text>Shes not fully responding Doctor. What do you want to do?</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>VOICE:VITALSMONITOR:REPORT</Tag>
+      <Audio>Audio/PN_vitalsMonitor</Audio>
+      <Text>The patient is now on the Vitals Monitor.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>SAY:VITALS:OVER</Tag>
+      <Audio>Audio/PN_vitalsOver</Audio>
+      <Text>/</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>SAY:VITALS:PERCENT</Tag>
+      <Audio>Audio/PN_vitalsPercent</Audio>
+      <Text> percent</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:VITALS:ALL</Tag>
+      <Audio>audio=SAY:VITALS:BP variable=patient.BP_SYS audio=SAY:VITALS:OVER variable=patient.BP_DIA gap=0.2 audio=SAY:VITALS:HR variable=patient.HR gap=0.2 audio=SAY:VITALS:RESP variable=patient.RR gap=0.2 audio=SAY:VITALS:SAO2 variable=patient.SP audio=SAY:VITALS:PERCENT gap=0.0</Audio>
+      <LookAt>lookCamera</LookAt>
+	  <Dynamic>true</Dynamic>		
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:VITALS:SAO2</Tag>
+      <Audio>audio=SAY:VITALS:SAO2 variable=patient.SP audio=SAY:VITALS:PERCENT</Audio>
+      <Text>Saturated Oxygen is at %patient.SP percent.</Text>
+      <LookAt>lookCamera</LookAt>
+      <Dynamic>true</Dynamic>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>SAY:VITALS:SAO2</Tag>
+      <Audio>Audio/PN_vitalsSAO2</Audio>
+      <Text>Saturated Oxygen is at </Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:VITALS:BP</Tag>
+      <Audio>audio=SAY:VITALS:BP variable=patient.BP_SYS audio=SAY:VITALS:OVER variable=patient.BP_DIA</Audio>
+      <Text>Blood pressure is %patient.BP_SYS over %patient.BP_DIA</Text>
+      <LookAt>lookCamera</LookAt>
+      <Dynamic>true</Dynamic>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>SAY:VITALS:BP</Tag>
+      <Audio>Audio/PN_vitalsBP</Audio>
+      <Text>Blood pressure is </Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:VITALS:HR</Tag>
+      <Audio>audio=SAY:VITALS:HR variable=patient.HR</Audio>
+      <Text>Heart rate is %patient.HR</Text>
+      <LookAt>lookCamera</LookAt>
+      <Dynamic>true</Dynamic>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>SAY:VITALS:HR</Tag>
+      <Audio>Audio/PN_vitalsHR</Audio>
+      <Text>Heart rate is </Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:VITALS:RESP</Tag>
+      <Audio>audio=SAY:VITALS:RESP variable=patient.RESP</Audio>
+      <Text>Respiratory rate is %patient.RESP</Text>
+      <LookAt>lookCamera</LookAt>
+      <Dynamic>true</Dynamic>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>SAY:VITALS:RESP</Tag>
+      <Audio>Audio/PN_vitalsRR</Audio>
+      <Text>Respiratory rate is </Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:SKINTONE:REPORT</Tag>
+      <Audio>Audio/PN_skinToneNormal</Audio>
+      <Text>The patient's skin appears normal.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:SKINTEMP:REPORT</Tag>
+      <Audio>Audio/PN_skinTempWarmDry</Audio>
+      <Text>The patient's skin is warm and dry.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:BLOODGAS:REPORT</Tag>
+      <Audio>Audio/missingAudio</Audio>
+      <Text>We need to create a dynamic bloodgas report?</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>VOICE:PREPAREMEDS</Tag>
+      <Audio>Audio/PN_illPrepareMeds</Audio>
+      <Text>I'll prepare those meds, Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>VOICE:ADMIN:ETOMIDATE</Tag>
+      <Audio>Audio/PN_adminEtomidate</Audio>
+      <Text>Administering etomidate 20mg IV push..</Text>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>VOICE:INTUBATEMEDS</Tag>
+      <Audio>Audio/PN_etomidate20mg</Audio>
+      <Text>Give etomidate 20mg IV push and succinylcholine 100mg IV push</Text>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>VOICE:INTUBATE:PUSHINGDRUGS</Tag>
+      <Audio>Audio/PN_intubatePushingDrugs</Audio>
+      <Text>Are you ready for me to start pushing drugs?</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PLACEIV:LEFT</Tag>
+      <Audio>Audio/PN_insertingIV</Audio>
+      <Text>Inserting first large bore IV.</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PLACEIV:USE</Tag>
+      <Audio>Audio/PN_inserting2ndIV</Audio>
+      <Text>Inserting second IV.</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PLACEIV:RESULTS</Tag>
+      <Audio>Audio/PN_iv2ndPlaced</Audio>
+      <Text>Second large bore IV has been placed.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:CONFIRMIV:ONELEFT</Tag>
+      <Audio>Audio/PN_IVConfirm</Audio>
+      <Text>She has a 16 gauge in the left antecubital.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:CONFIRMIV:TWO</Tag>
+      <Audio>Audio/PN_IVConfirmTwo</Audio>
+      <Text>The patient has two 16 gauge latge bore IV's inserted in her left and right antecubital.</Text>
+     <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:START:IV</Tag>
+      <Audio>Audio/PN_wantSecondLine</Audio>
+      <Text>Do you want a second line?</Text>
+     <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>VOICE:IVFLOW:GET</Tag>
+      <Audio>Audio/PN_AdjustIV</Audio>
+      <Text>Adjusting the IV.</Text>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>VOICE:IVFLOW:RESULT</Tag>
+      <Audio>Audio/PN_ivWideOpen</Audio>
+      <Text>Her IV is running wide open.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:RADIALPULSE:REPORT</Tag>
+      <Audio>Audio/PN_noRadialPulse</Audio>
+      <Text>No pulse radially.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:CAROTIDPULSE:REPORT</Tag>
+      <Audio>Audio/PN_carotidPulseWeak</Audio>
+      <Text>Carotid pulse feels fast and weak.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>SAY:ONE:UNIT</Tag>
+      <Audio>Audio/PN_oneUnit</Audio>
+	  <Text>Getting one unit of </Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>SAY:TWO:UNITS</Tag>
+      <Audio>Audio/PN_twoUnits</Audio>
+	  <Text>Getting two units of </Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>SAY:ONE:LITER</Tag>
+      <Audio>Audio/PN_oneLiter</Audio>
+	  <Text>Getting one liter of </Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>SAY:TWO:LITERS</Tag>
+      <Audio>Audio/PN_twoLiters</Audio>
+	  <Text>Getting two liters of </Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>SAY:TYPEO:BLOOD</Tag>
+      <Audio>Audio/PN_typeONegative</Audio>
+	  <Text>Type O Negative blood</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>SAY:NORMAL:SALINE</Tag>
+      <Audio>Audio/PN_normalSaline</Audio>
+	  <Text>point nine normal saline</Text>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>SAY:CRYSTAL</Tag>
+      <Audio>Audio/PN_crystalloid</Audio>
+	  <Text>Crystalloid</Text>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>SAY:RINGERS</Tag>
+      <Audio>Audio/PN_ringers</Audio>
+	  <Text>Ringer's lactate solution </Text>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>SAY:HYPERTONIC</Tag>
+      <Audio>Audio/PN_hypertonic</Audio>
+	  <Text>Hypertonic Saline</Text>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>SAY:DOCTOR</Tag>
+      <Audio>Audio/PN_doctor</Audio>
+	  <Text> Doctor.</Text>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>SAY:PRESSURE:BAG</Tag>
+      <Audio>Audio/PN_pressureBag</Audio>
+	  <Text> via pressure bag, Doctor.</Text>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>SAY:FOR:INFUSION</Tag>
+      <Audio>Audio/PN_forInfusion</Audio>
+	  <Text> for infusion, Doctor.</Text>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BLOOD:GET</Tag>
+      <Audio>Audio/PN_oneUnitBlood</Audio>
+      <LookAt>lookCamera</LookAt>
+	  <Text>Getting one unit of Type O Negative blood, Doctor.</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:BLOOD2:GET</Tag>
+      <Audio>Audio/PN_twoUnitsBlood</Audio>
+	  <Text>Getting two units of Type O Negative blood, Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>VOICE:BLOOD3:GET</Tag>
+      <Audio>Audio/PN_threeUnitsBlood</Audio>
+	  <Text>Getting three units of Type O Negative blood, Doctor.</Text>
+    <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>VOICE:BLOOD4:GET</Tag>
+      <Audio>Audio/PN_fourUnitsBlood</Audio>
+	  <Text>Getting four units of Type O Negative blood, Doctor.</Text>
+    <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:BLOOD:PR</Tag>
+      <Audio>Audio/PN_oneUnitBloodPressure</Audio>
+      <Text>Getting one unit of Type O Negative blood via pressure bag, Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:BLOOD2:PR</Tag>
+      <Audio>Audio/PN_twoUnitsBloodPressure</Audio>
+      <Text>Getting two units of Type O Negative blood via pressure bag, Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:BLOOD:RI</Tag>
+      <Audio>Audio/PN_oneUnitBloodInfused</Audio>
+      <Text>Preparing one unit of Type O Negative blood for infusion, Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:BLOOD2:RI</Tag>
+      <Audio>Audio/PN_twoUnitsBloodInfused</Audio>
+      <Text>Perparing two units of Type O Negative blood for infusion, Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:BLOOD:REPORT</Tag>
+      <Audio>Audio/PN_ivWideOpen</Audio>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>VOICE:CRYSTAL:GET</Tag>
+      <Audio>Audio/PN_oneUnitCrystal</Audio>
+	   <Text>Getting one unit of Crystalloid, Doctor.</Text>
+    <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	<VoiceMap>
+	<Tag>VOICE:CRYSTAL2:GET</Tag>
+      <Audio>Audio/PN_twoUnitsCrystal</Audio>
+	   <Text>Getting two units of Crystalloid, Doctor.</Text>
+    <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	<VoiceMap>
+	<Tag>VOICE:CRYSTAL3:GET</Tag>
+      <Audio>Audio/PN_threeUnitsCrystal</Audio>
+	   <Text>Getting three units of Crystalloid, Doctor.</Text>
+    <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	<VoiceMap>
+	<Tag>VOICE:CRYSTAL4:GET</Tag>
+      <Audio>Audio/PN_fourUnitsCrystal</Audio>
+	   <Text>Getting four units of Crystalloid, Doctor.</Text>
+    <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:CRYSTAL:PR</Tag>
+	  <Audio>audio=SAY:ONE:LITER audio=SAY:CRYSTAL audio=SAY:PRESSURE:BAG</Audio>
+      <Text>Getting one liter of Ringer's lactate solution, via pressure bag Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+      <Dynamic>true</Dynamic>
+    </VoiceMap>	
+    <VoiceMap>
+      <Tag>VOICE:CRYSTAL2:PR</Tag>
+	  <Audio>audio=SAY:TWO:LITERS audio=SAY:CRYSTAL audio=SAY:PRESSURE:BAG</Audio>
+      <Text>Getting two liters of Ringer's lactate solution, via pressure bag Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+      <Dynamic>true</Dynamic>
+    </VoiceMap>	
+    <VoiceMap>
+      <Tag>VOICE:CRYSTAL:RI</Tag>
+	  <Audio>audio=SAY:ONE:LITER audio=SAY:CRYSTAL audio=SAY:PRESSURE:BAG</Audio>
+      <Text>Getting one liter of Ringer's lactate solution, for infusion Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+      <Dynamic>true</Dynamic>
+    </VoiceMap>	
+    <VoiceMap>
+      <Tag>VOICE:CRYSTAL2:RI</Tag>
+	  <Audio>audio=SAY:TWO:LITERS audio=SAY:CRYSTAL audio=SAY:PRESSURE:BAG</Audio>
+      <Text>Getting two liters of Ringer's lactate solution, for infusion  Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+      <Dynamic>true</Dynamic>
+    </VoiceMap>		
+    <VoiceMap>
+      <Tag>VOICE:RINGERS:GET</Tag>
+	  <Audio>audio=SAY:ONE:LITER audio=SAY:RINGERS audio=SAY:DOCTOR</Audio>
+      <Text>Getting one liter of Ringer's lactate solution, Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+      <Dynamic>true</Dynamic>
+    </VoiceMap>	
+    <VoiceMap>
+      <Tag>VOICE:RINGERS2:GET</Tag>
+	  <Audio>audio=SAY:TWO:LITERS audio=SAY:RINGERS audio=SAY:DOCTOR</Audio>
+      <Text>Getting two liters of Ringer's lactate solution, Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+      <Dynamic>true</Dynamic>
+    </VoiceMap>	
+    <VoiceMap>
+      <Tag>VOICE:RINGERS:PR</Tag>
+	  <Audio>audio=SAY:ONE:LITER audio=SAY:RINGERS audio=SAY:PRESSURE:BAG</Audio>
+      <Text>Getting one liter of Ringer's lactate solution, via pressure bag Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+      <Dynamic>true</Dynamic>
+    </VoiceMap>	
+    <VoiceMap>
+      <Tag>VOICE:RINGERS2:PR</Tag>
+	  <Audio>audio=SAY:TWO:LITERS audio=SAY:RINGERS audio=SAY:PRESSURE:BAG</Audio>
+      <Text>Getting two liters of Ringer's lactate solution, via pressure bag Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+      <Dynamic>true</Dynamic>
+    </VoiceMap>	
+    <VoiceMap>
+      <Tag>VOICE:RINGERS:RI</Tag>
+	  <Audio>audio=SAY:ONE:LITER audio=SAY:RINGERS audio=SAY:PRESSURE:BAG</Audio>
+      <Text>Getting one liter of Ringer's lactate solution, for infusion Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+      <Dynamic>true</Dynamic>
+    </VoiceMap>	
+    <VoiceMap>
+      <Tag>VOICE:RINGERS2:RI</Tag>
+	  <Audio>audio=SAY:TWO:LITERS audio=SAY:RINGERS audio=SAY:PRESSURE:BAG</Audio>
+      <Text>Getting two liters of Ringer's lactate solution, for infusion  Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+      <Dynamic>true</Dynamic>
+    </VoiceMap>	
+    <VoiceMap>
+      <Tag>VOICE:SALINE:GET</Tag>
+      <Audio>audio=SAY:ONE:LITER audio=SAY:NORMAL:SALINE audio=SAY:DOCTOR</Audio>
+	  <Text>Getting two liters of point nine normal saline, Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+	  <Dynamic>true</Dynamic>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:SALINE2:GET</Tag>
+	  <Audio>audio=SAY:TWO:LITERS audio=SAY:NORMAL:SALINE audio=SAY:DOCTOR</Audio>
+      <Text>Getting two liters of point nine normal saline solution, Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+      <Dynamic>true</Dynamic>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:SALINE:PR</Tag>
+      <Audio>Audio/PN_oneUnitSalinePressure</Audio>
+      <Text>Getting one liter of point nine normal saline via pressure bag, Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:SALINE2:PR</Tag>
+      <Audio>Audio/PN_twoUnitsSalinePressure</Audio>
+      <Text>Getting two liters of point nine normal saline via pressure bag, Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:SALINE:RI</Tag>
+      <Audio>Audio/PN_oneUnitSalineInfused</Audio>
+      <Text>Preparing one liter of point nine normal saline for infusion, Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:SALINE2:RI</Tag>
+      <Audio>Audio/PN_twoUnitsSalineInfused</Audio>
+      <Text>Preparing two liters of point nine normal saline for infusion, Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:HYPERTONIC:GET</Tag>
+	  <Audio>audio=SAY:ONE:LITER audio=SAY:HYPERTONIC audio=SAY:DOCTOR</Audio>
+      <Text>Getting one liter of hypertonic saline, Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+      <Dynamic>true</Dynamic>
+    </VoiceMap>	
+    <VoiceMap>
+      <Tag>VOICE:HYPERTONIC2:GET</Tag>
+	  <Audio>audio=SAY:TWO:LITERS audio=SAY:HYPERTONIC audio=SAY:DOCTOR</Audio>
+      <Text>Getting two liters of hypertonic saline, Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+      <Dynamic>true</Dynamic>
+    </VoiceMap>	
+    <VoiceMap>
+      <Tag>VOICE:HYPERTONIC:PR</Tag>
+	  <Audio>audio=SAY:ONE:LITER audio=SAY:HYPERTONIC audio=SAY:PRESSURE:BAG</Audio>
+      <Text>Getting one liter of hypertonic saline, via pressure bag Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+      <Dynamic>true</Dynamic>
+    </VoiceMap>	
+    <VoiceMap>
+      <Tag>VOICE:HYPERTONIC2:PR</Tag>
+	  <Audio>audio=SAY:TWO:LITERS audio=SAY:RINGHYPERTONICERS audio=SAY:PRESSURE:BAG</Audio>
+      <Text>Getting two liters of hypertonic saline, via pressure bag Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+      <Dynamic>true</Dynamic>
+    </VoiceMap>	
+    <VoiceMap>
+      <Tag>VOICE:HYPERTONIC:RI</Tag>
+	  <Audio>audio=SAY:ONE:LITER audio=SAY:HYPERTONIC audio=SAY:PRESSURE:BAG</Audio>
+      <Text>Getting one liter of hypertonic saline, for infusion Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+      <Dynamic>true</Dynamic>
+    </VoiceMap>	
+    <VoiceMap>
+      <Tag>VOICE:HYPERTONIC2:RI</Tag>
+	  <Audio>audio=SAY:TWO:LITERS audio=SAY:HYPERTONIC audio=SAY:PRESSURE:BAG</Audio>
+      <Text>Getting two liters of hypertonic saline, for infusion  Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+      <Dynamic>true</Dynamic>
+    </VoiceMap>	
+    <VoiceMap>
+      <Tag>VOICE:CRYSTAL:REPORT</Tag>
+      <Audio>Audio/PN_salineWideOpen</Audio>
+	<Text>Saline is running wide open.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+	    <Tag>VOICE:CALL:XRAY</Tag>
+	    <Audio>>Audio/PN_xrayTechOnWay</Audio>
+		<Text>The Xray Tech is on their way.</Text>
+	    <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	<VoiceMap>
+	    <Tag>VOICE:CHEST:NORMAL</Tag>
+	    <Audio>Audio/PN_chestXrayNormal</Audio>
+		<Text>Chest x-ray is normal.</Text>
+	    <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	<VoiceMap>
+	    <Tag>VOICE:ETT:GOOD</Tag>
+	    <Audio>Audio/PN_ettGoodPosition</Audio>
+		<Text>ETT is in good position.</Text>
+	    <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	<VoiceMap>
+	    <Tag>VOICE:MANUALBP</Tag>
+	    <Audio>Audio/PN_manualBP</Audio>
+		<Text>Taking a manual blood pressure, Doctor.</Text>
+	    <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	<VoiceMap>
+	    <Tag>VOICE:MANUALBP:REPORT</Tag>
+	    <Audio>Audio/TTS_PN_BP</Audio>
+		<Text>Blood pressure is 82 over 40.</Text>
+	    <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+      <VoiceMap>
+        <Tag>VOICE:CALL:ANESTH:REPORT</Tag>
+		<Audio>Audio/PN_noTimeConsult</Audio>
+        <Text>We need to do something now! There isn't enough time for a consult.</Text>
+      </VoiceMap>
+      <VoiceMap>
+        <Tag>VOICE:CALL:OR:REPORT</Tag>
+		    <Audio>Audio/PN_orReady</Audio>
+        <Text>The OR will be ready in five minutes.</Text>
+      </VoiceMap>
+      <VoiceMap>
+        <Tag>VOICE:CALL:ORTHO:REPORT</Tag>
+		<Audio>Audio/PN_noTimeConsult</Audio>
+        <Text>We need to do something now! There isn't enough time for a consult.</Text>
+      </VoiceMap>
+      <VoiceMap>
+        <Tag>VOICE:CALL:TRANSFER:REPORT</Tag>
+		<Audio>Audio/PN_transfer</Audio>
+        <Text>This hospital is equipped to handle this patient, Doctor.</Text>
+      </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:WARN:PLAYER</Tag>
+      <Audio>Audio/PN_warnPlayer</Audio>
+	<Text>The patient is decompensating Doctor. What would you like us to do?</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:WARN:PLAYER:HEARTRATE:HIGH</Tag>
+      <Audio>audio=SAY:VITALS:HR variable=patient.HR</Audio>
+      <LookAt>lookCamera</LookAt>
+	  <Dynamic>true</Dynamic>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:WARN:PLAYER:HEARTRATE:LOW</Tag>
+      <Audio>audio=SAY:VITALS:HR variable=patient.HR</Audio>
+      <LookAt>lookCamera</LookAt>
+	  <Dynamic>true</Dynamic>
+	</VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:WARN:PLAYER:BLOODPRESSURE:LOW</Tag>
+      <Audio>audio=SAY:VITALS:BP variable=patient.BP_SYS audio=SAY:VITALS:OVER variable=patient.BP_DIA</Audio>
+      <Text>Blood pressure is %patient.BP_SYS over %patient.BP_DIA</Text>
+      <LookAt>lookCamera</LookAt>
+      <Dynamic>true</Dynamic>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:WARN:PLAYER:OXYGEN:LOW</Tag>
+      <Audio>audio=SAY:VITALS:SAO2 variable=patient.SP audio=SAY:VITALS:PERCENT</Audio>
+      <Text>Saturated Oxygen is at %patient.SP percent.</Text>
+      <LookAt>lookCamera</LookAt>
+      <Dynamic>true</Dynamic>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:WARN:PATIENT:DEAD</Tag>
+      <Audio>Audio/PN_patientDead2</Audio>
+      <Text>I'm sorry Doctor, but there's nothing more you can do. She's gone.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>VOICE:PULSEOX:ON</Tag>
+      <Audio>Audio/PN_pulseOxOn</Audio>
+      <Text>Pulse Ox is on.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:COVERBLANKETS:REPORT</Tag>
+      <Audio>Audio/PN_coveringPatient</Audio>
+      <Text>Covering the patient.</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:SCRIBE:RECORD</Tag>
+      <Audio>Audio/PN_pleaseRecord</Audio>
+      <Text>Scribe nurse, please record this.</Text>
+    </VoiceMap>	
+    <!-- Pulses -->
+    <VoiceMap>
+      <Tag>VOICE:PULSERADIAL:NONE</Tag>
+      <Audio>Audio/PN_pulseRadialNone</Audio>
+      <Text>I don't feel a radial pulse, Doctor.</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PULSERADIAL:PALPABLE</Tag>
+      <Audio>Audio/PN_pulseRadialPalpable</Audio>
+      <Text>The radial pulse is palpable.</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PULSERADIAL:PRESENT</Tag>
+      <Audio>Audio/PN_pulseRadialPresent</Audio>
+      <Text>The radial pulse is present and thready.</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PULSECAROTID:NONE</Tag>
+      <Audio>Audio/PN_pulseCarotidNone</Audio>
+      <Text>I don't feel a carotid pulse, Doctor.</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PULSECAROTID:PALPABLE</Tag>
+      <Audio>Audio/PN_pulseCarotidPalpable</Audio>
+      <Text>The carotid pulse is palpable.</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PULSECAROTID:PRESENT</Tag>
+      <Audio>Audio/PN_pulseCarotidPresent</Audio>
+      <Text>The carotid pulse is present and thready.</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PULSEFEMORAL:NONE</Tag>
+      <Audio>Audio/PN_pulseFemoralNone</Audio>
+      <Text>I don't feel a femoral pulse, Doctor.</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PULSEFEMORAL:PALPABLE</Tag>
+      <Audio>Audio/PN_pulseFemoralPalpable</Audio>
+      <Text>The femoral pulse is palpable.</Text>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:PULSEFEMORAL:PRESENT</Tag>
+      <Audio>Audio/PN_pulseFemoralPresent</Audio>
+      <Text>The femoral pulse is present and thready.</Text>
+    </VoiceMap>
+		<VoiceMap>
+			<Tag>VOICE:INTUBATE:06F</Tag>
+			<Audio>Audio/06_failIntubate_PN</Audio>
+			<Text>She should be.</Text>
+	  	</VoiceMap>
+    <!-- Numbers -->
+    <VoiceMap>
+      <Tag>VOICE:NUM100:1</Tag>
+      <Audio>Audio/PN_num100</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:1</Tag>
+      <Audio>Audio/PN_num10</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:2</Tag>
+      <Audio>Audio/PN_num20</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:3</Tag>
+      <Audio>Audio/PN_num30</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:4</Tag>
+      <Audio>Audio/PN_num40</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:5</Tag>
+      <Audio>Audio/PN_num50</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:6</Tag>
+      <Audio>Audio/PN_num60</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:7</Tag>
+      <Audio>Audio/PN_num70</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:8</Tag>
+      <Audio>Audio/PN_num80</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:9</Tag>
+      <Audio>Audio/PN_num90</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:1</Tag>
+      <Audio>Audio/PN_num11</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:2</Tag>
+      <Audio>Audio/PN_num12</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:3</Tag>
+      <Audio>Audio/PN_num13</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:4</Tag>
+      <Audio>Audio/PN_num14</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:5</Tag>
+      <Audio>Audio/PN_num15</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:6</Tag>
+      <Audio>Audio/PN_num16</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:7</Tag>
+      <Audio>Audio/PN_num17</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:8</Tag>
+      <Audio>Audio/PN_num18</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:9</Tag>
+      <Audio>Audio/PN_num19</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:0</Tag>
+      <Audio>Audio/PN_num00</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:1</Tag>
+      <Audio>Audio/PN_num01</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:2</Tag>
+      <Audio>Audio/PN_num02</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:3</Tag>
+      <Audio>Audio/PN_num03</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:4</Tag>
+      <Audio>Audio/PN_num04</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:5</Tag>
+      <Audio>Audio/PN_num05</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:6</Tag>
+      <Audio>Audio/PN_num06</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:7</Tag>
+      <Audio>Audio/PN_num07</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:8</Tag>
+      <Audio>Audio/PN_num08</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:9</Tag>
+      <Audio>Audio/PN_num09</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:0</Tag>
+      <Audio>Audio/PN_numPoint0</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:1</Tag>
+      <Audio>Audio/PN_numPoint1</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:2</Tag>
+      <Audio>Audio/PN_numPoint2</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:3</Tag>
+      <Audio>Audio/PN_numPoint3</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:4</Tag>
+      <Audio>Audio/PN_numPoint4</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:5</Tag>
+      <Audio>Audio/PN_numPoint5</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:6</Tag>
+      <Audio>Audio/PN_numPoint6</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:7</Tag>
+      <Audio>Audio/PN_numPoint7</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:8</Tag>
+      <Audio>Audio/PN_numPoint8</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:9</Tag>
+      <Audio>Audio/PN_numPoint9</Audio>
+    </VoiceMap>
+	<!-- Generic Response System -->
+	 <VoiceMap>
+      <Tag>VOICE:ACKNOWLEDGE:1</Tag>
+      <Audio>Audio/PN_acknowledge01</Audio>
+      <Text>Yes, doctor, right away.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:ACKNOWLEDGE:2</Tag>
+      <Audio>Audio/PN_acknowledge02</Audio>
+      <Text>I'm on it.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:ACKNOWLEDGE:3</Tag>
+      <Audio>Audio/PN_acknowledge03</Audio>
+      <Text>Sure thing, Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:ACKNOWLEDGE:4</Tag>
+      <Audio>Audio/PN_acknowledge04</Audio>
+      <Text>Of course.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:ACKNOWLEDGE:5</Tag>
+      <Audio>Audio/PN_acknowledge05</Audio>
+      <Text>Okay.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:QUEUED:1</Tag>
+      <Audio>Audio/PN_queued01</Audio>
+      <Text>Yes, just a minute, doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:QUEUED:2</Tag>
+      <Audio>Audio/PN_queued02</Audio>
+      <Text>Okay, one moment, please.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:QUEUED:3</Tag>
+      <Audio>Audio/PN_queued03</Audio>
+      <Text>As soon as I'm finished, I'll do that.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:QUEUED:4</Tag>
+      <Audio>Audio/PN_queued04</Audio>
+      <Text>I'll do that next.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:QUEUED:5</Tag>
+      <Audio>Audio/PN_queued05</Audio>
+      <Text>Right after this, doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:DELAYED:1</Tag>
+      <Audio>Audio/PN_delayed01</Audio>
+      <Text>It'll take me a few minutes, but I'll get to it.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:DELAYED:2</Tag>
+      <Audio>Audio/PN_delayed02</Audio>
+      <Text>Let me finish these few tasks and I'll do it.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:DELAYED:3</Tag>
+      <Audio>Audio/PN_delayed03</Audio>
+      <Text>Give me a few minutes to finish up here.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:HANDOFF:1</Tag>
+      <Audio>Audio/PN_handOff01</Audio>
+      <Text>Can you do that? I'm too busy at the moment.</Text>
+	  <LookAt>ignore</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:HANDOFF:2</Tag>
+      <Audio>Audio/PN_handOff02</Audio>
+      <Text>Do you mind helping the doctor with that?</Text>
+	  <LookAt>ignore</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:HANDOFF:4</Tag>
+      <Audio>Audio/PN_handOff04</Audio>
+      <Text>Can you help me out?</Text>
+	  <LookAt>ignore</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:HANDOFF:5</Tag>
+      <Audio>Audio/PN_handOff05</Audio>
+      <Text>Help out the doctor while I finish this.</Text>
+	  <LookAt>ignore</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BAD:COMMAND:1</Tag>
+      <Audio>Audio/PN_badCommand01</Audio>
+      <Text>I'm sorry doctor, but I don't understand what you want me to do.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BAD:COMMAND:2</Tag>
+      <Audio>Audio/PN_badCommand02</Audio>
+      <Text>Can you say that again for me?</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BAD:COMMAND:3</Tag>
+      <Audio>Audio/PN_badCommand03</Audio>
+      <Text>What was that?</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BAD:COMMAND:4</Tag>
+      <Audio>Audio/PN_badCommand04</Audio>
+      <Text>I don't understand.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BAD:COMMAND:5</Tag>
+      <Audio>Audio/PN_badCommand05</Audio>
+      <Text>I don't understand what you're asking me.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:MISMATCH:1</Tag>
+      <Audio>Audio/PN_mismatch04</Audio>
+      <Text>I'm sorry doctor, but that's not in my scope of practice.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+  </VoiceMaps>
+</VoiceList>

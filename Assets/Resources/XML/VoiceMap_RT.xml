@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VoiceList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<Name>RespiratoryTech</Name>
+	<VoiceMaps>
+	    <VoiceMap>
+	      <Tag>VOICE:BUSY</Tag>
+	      <Audio>Audio/RT_busy</Audio>
+	      <Text>I am busy at the momemt</Text>
+	    </VoiceMap>
+	    <VoiceMap>
+	      <Tag>VOICE:WRONG:PERSON</Tag>
+	      <!--<Audio>Audio/AM_WrongPerson</Audio>-->
+	      <Text>I don't know how to do that</Text>
+	    </VoiceMap>
+	    <VoiceMap>
+	      <Tag>VOICE:EXCEEDED:MAX:INTERACTION</Tag>
+	      <Text>I have already done that!</Text>
+	    </VoiceMap>
+	    <VoiceMap>
+	      <Tag>VOICE:MISSING:PREREQ</Tag>
+	      <Text>Can't do that right now, did you forget something?</Text>
+	    </VoiceMap>    
+		<VoiceMap>
+			<Tag>VOICE:INTUBATE:06</Tag>
+			<Audio>Audio/06_intubate_assist</Audio>
+	  	<Text>Suction is ready.</Text>
+      <LookAt>ignore</LookAt>
+	  </VoiceMap>
+		<VoiceMap>
+			<Tag>VOICE:INTUBATE:08</Tag>
+			<Audio>Audio/08_intubate_assist</Audio>
+	  	<Text>Tube ready.</Text>
+      <LookAt>ignore</LookAt>
+	  </VoiceMap>
+		<VoiceMap>
+			<Tag>VOICE:INTUBATE:10</Tag>
+			<Audio>Audio/10_intubate_assist</Audio>
+	  	<Text>End tidal CO2 is ready.</Text>
+      <LookAt>ignore</LookAt>
+	  </VoiceMap>
+		<VoiceMap>
+			<Tag>VOICE:INTUBATE:14</Tag>
+			<Audio>Audio/14_intubate_assist</Audio>
+	  	<Text>Cuff inflated.</Text>
+      <LookAt>ignore</LookAt>
+	  </VoiceMap>
+		<VoiceMap>
+			<Tag>VOICE:INTUBATE:01F</Tag>
+			<Audio>Audio/01_failIntubate_RT</Audio>
+			<Text>Do you need chricoid pressure?</Text>
+	  	</VoiceMap>
+		<VoiceMap>
+			<Tag>VOICE:INTUBATE:03F</Tag>
+			<Audio>Audio/03_failIntubate_RT</Audio>
+			<Text>Are you sure?</Text>
+	  	</VoiceMap>
+		<VoiceMap>
+			<Tag>VOICE:INTUBATE:09F</Tag>
+			<Audio>Audio/09_failIntubate_RT</Audio>
+			<Text>Suction ready.</Text>
+	  	</VoiceMap>
+	  <!--
+    <VoiceMap>
+      <Tag>VOICE:VENT:CALLBACK</Tag>
+      <Audio>Audio/RT_ventConnect</Audio>
+      <Text>The vent is set at FIO2 100 percent, Rate 14, TV 550, Peep +5.</Text>
+      <LookAt>lookAM</LookAt>
+    </VoiceMap>
+	-->
+    <!--- Dynamic callback-->
+    <VoiceMap>
+      <Tag>VOICE:VENT:CALLBACK40</Tag>
+	  <Dynamic>true</Dynamic>
+      <Audio>audio=SAY:VENT:SET number=40 audio=SAY:VITALS:PERCENT audio=SAY:VENT:RATE </Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>SAY:VENT:SET</Tag>
+      <Audio>Audio/RT_ventConnectSet</Audio>
+      <Text>The vent is set at FIO2 </Text>
+      <LookAt>lookAM</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>SAY:VENT:RATE</Tag>
+      <Audio>Audio/RT_ventConnectRate</Audio>
+      <Text>Rate 14, TV 550, Peep plus 5.</Text>
+      <LookAt>lookAM</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:VENT:CALLBACK</Tag>
+	  <Dynamic>true</Dynamic>
+      <Audio>audio=SAY:VENT:SET number=100 audio=SAY:VITALS:PERCENT audio=SAY:VENT:RATE</Audio>
+    </VoiceMap>
+    <!-- Dynamic END-->
+    <VoiceMap>
+      <Tag>VOICE:OR:READY5</Tag>
+      <Audio>Audio/RT_orReadyFiveMinutes</Audio>
+      <Text>The OR will be ready in five minutes.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	<VoiceMap>
+      <Tag>VOICE:VENT:EMPTY</Tag>
+      <Audio>Audio/RT_preOxygen</Audio> <!-- testing, replace when we have audio for this -->
+      <Text>I didn't realize it, but this tank is empty.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <!-- Numbers -->
+    <VoiceMap>
+      <Tag>VOICE:NUM100:1</Tag>
+      <Audio>Audio/RT_num100</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:1</Tag>
+      <Audio>Audio/RT_num10</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:2</Tag>
+      <Audio>Audio/RT_num20</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:3</Tag>
+      <Audio>Audio/RT_num30</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:4</Tag>
+      <Audio>Audio/RT_num40</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:5</Tag>
+      <Audio>Audio/RT_num50</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:6</Tag>
+      <Audio>Audio/RT_num60</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:7</Tag>
+      <Audio>Audio/RT_num70</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:8</Tag>
+      <Audio>Audio/RT_num80</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUM10:9</Tag>
+      <Audio>Audio/RT_num90</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:1</Tag>
+      <Audio>Audio/RT_num11</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:2</Tag>
+      <Audio>Audio/RT_num12</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:3</Tag>
+      <Audio>Audio/RT_num13</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:4</Tag>
+      <Audio>Audio/RT_num14</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:5</Tag>
+      <Audio>Audio/RT_num15</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:6</Tag>
+      <Audio>Audio/RT_num16</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:7</Tag>
+      <Audio>Audio/RT_num17</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:8</Tag>
+      <Audio>Audio/RT_num18</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMTEEN:9</Tag>
+      <Audio>Audio/RT_num19</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:0</Tag>
+      <Audio>Audio/RT_num00</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:1</Tag>
+      <Audio>Audio/RT_num01</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:2</Tag>
+      <Audio>Audio/RT_num02</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:3</Tag>
+      <Audio>Audio/RT_num03</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:4</Tag>
+      <Audio>Audio/RT_num04</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:5</Tag>
+      <Audio>Audio/RT_num05</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:6</Tag>
+      <Audio>Audio/RT_num06</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:7</Tag>
+      <Audio>Audio/RT_num07</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:8</Tag>
+      <Audio>Audio/RT_num08</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMDIGIT:9</Tag>
+      <Audio>Audio/RT_num09</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:0</Tag>
+      <Audio>Audio/RT_numPoint0</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:1</Tag>
+      <Audio>Audio/RT_numPoint1</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:2</Tag>
+      <Audio>Audio/RT_numPoint2</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:3</Tag>
+      <Audio>Audio/RT_numPoint3</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:4</Tag>
+      <Audio>Audio/RT_numPoint4</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:5</Tag>
+      <Audio>Audio/RT_numPoint5</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:6</Tag>
+      <Audio>Audio/RT_numPoint6</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:7</Tag>
+      <Audio>Audio/RT_numPoint7</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:8</Tag>
+      <Audio>Audio/RT_numPoint8</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>VOICE:NUMFRAC:9</Tag>
+      <Audio>Audio/RT_numPoint9</Audio>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>SAY:VITALS:OVER</Tag>
+      <Audio>Audio/RT_numOver</Audio>
+      <Text>/</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+    <VoiceMap>
+      <Tag>SAY:VITALS:PERCENT</Tag>
+      <Audio>Audio/RT_numPercent</Audio>
+      <Text> percent, </Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	<!-- Generic Response System -->
+	 <VoiceMap>
+      <Tag>VOICE:ACKNOWLEDGE:1</Tag>
+      <Audio>Audio/RT_acknowledge01</Audio>
+      <Text>Yes, doctor, right away.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:ACKNOWLEDGE:2</Tag>
+      <Audio>Audio/RT_acknowledge02</Audio>
+      <Text>I'm on it.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:ACKNOWLEDGE:3</Tag>
+      <Audio>Audio/RT_acknowledge03</Audio>
+      <Text>Sure thing, Doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:ACKNOWLEDGE:4</Tag>
+      <Audio>Audio/RT_acknowledge04</Audio>
+      <Text>Of course.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:ACKNOWLEDGE:5</Tag>
+      <Audio>Audio/RT_acknowledge05</Audio>
+      <Text>Okay.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:QUEUED:1</Tag>
+      <Audio>Audio/RT_queued01</Audio>
+      <Text>Yes, just a minute, doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:QUEUED:2</Tag>
+      <Audio>Audio/RT_queued02</Audio>
+      <Text>Okay, one moment, please.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:QUEUED:3</Tag>
+      <Audio>Audio/RT_queued03</Audio>
+      <Text>As soon as I'm finished, I'll do that.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:QUEUED:4</Tag>
+      <Audio>Audio/RT_queued04</Audio>
+      <Text>I'll do that next.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:QUEUED:5</Tag>
+      <Audio>Audio/RT_queued05</Audio>
+      <Text>Right after this, doctor.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:DELAYED:1</Tag>
+      <Audio>Audio/RT_delayed01</Audio>
+      <Text>It'll take me a few minutes, but I'll get to it.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:DELAYED:2</Tag>
+      <Audio>Audio/RT_delayed02</Audio>
+      <Text>Let me finish these few tasks and I'll do it.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:DELAYED:3</Tag>
+      <Audio>Audio/RT_delayed03</Audio>
+      <Text>Give me a few minutes to finish up here.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:HANDOFF:1</Tag>
+      <Audio>Audio/RT_handOff01</Audio>
+      <Text>Can you do that? I'm too busy at the moment.</Text>
+	  <LookAt>ignore</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:HANDOFF:2</Tag>
+      <Audio>Audio/RT_handOff02</Audio>
+      <Text>Do you mind helping the doctor with that?</Text>
+	  <LookAt>ignore</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:HANDOFF:4</Tag>
+      <Audio>Audio/RT_handOff04</Audio>
+      <Text>Can you help me out?</Text>
+	  <LookAt>ignore</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BUSY:HANDOFF:5</Tag>
+      <Audio>Audio/RT_handOff05</Audio>
+      <Text>Help out the doctor while I finish this.</Text>
+	  <LookAt>ignore</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BAD:COMMAND:1</Tag>
+      <Audio>Audio/RT_badCommand01</Audio>
+      <Text>I'm sorry doctor, but I don't understand what you want me to do.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BAD:COMMAND:2</Tag>
+      <Audio>Audio/RT_badCommand02</Audio>
+      <Text>Can you say that again for me?</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BAD:COMMAND:3</Tag>
+      <Audio>Audio/RT_badCommand03</Audio>
+      <Text>What was that?</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BAD:COMMAND:4</Tag>
+      <Audio>Audio/RT_badCommand04</Audio>
+      <Text>I don't understand.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:BAD:COMMAND:5</Tag>
+      <Audio>Audio/RT_badCommand05</Audio>
+      <Text>I don't understand what you're asking me.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+	 <VoiceMap>
+      <Tag>VOICE:MISMATCH:1</Tag>
+      <Audio>Audio/RT_mismatch04</Audio>
+      <Text>I'm sorry doctor, but that's not in my scope of practice.</Text>
+      <LookAt>lookCamera</LookAt>
+    </VoiceMap>
+  </VoiceMaps>
+</VoiceList>

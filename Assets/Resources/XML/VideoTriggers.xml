@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfVideoTriggerInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <VideoTriggerInfo>
+	<Name>MISSING SPLINT</Name>
+	<Case>T2</Case>
+	<Text>This event was triggered because you didn't put a splint on your patient after 10 minutes</Text>
+	<Interactions>
+		<string>PERFORM:SPLINT after=10</string>
+	</Interactions>
+	<Key>Splints</Key>
+	<Movie>Debriefing/Splints.ogv</Movie>
+	<Thumbnail>VideoStills/vidStill_splints_thumb</Thumbnail>
+  </VideoTriggerInfo>
+  
+  <VideoTriggerInfo>
+  	<Name>DELIVERING RSI MEDS</Name>
+	<Case>T4,T5</Case>
+    <Text>This event was triggered because you didn't use rapid sequence medications when intubating your patient.</Text>
+    <Interactions>
+      <string>INTUBATE:PATIENT:COMPLETE</string>
+      <string>!ADMINSTER:RSIMEDS</string>
+    </Interactions>
+	<Key>RSI</Key>
+    <Movie>Debriefing/RapidSequenceIntubation.ogv</Movie>
+    <Thumbnail>VideoStills/vidStill_rapidSeqIntub_thumb</Thumbnail>
+  </VideoTriggerInfo>
+  
+  <VideoTriggerInfo>
+  	<Name>BREATHING BEFORE AIRWAY</Name>
+    <Text>This event was triggered because you listened to breath sounds before clearing airway OR two minutes has passed and you haven't cleared airway.</Text>
+    <PrereqOperator>or</PrereqOperator>
+    <Prereqs>
+  	  <string>PATIENT:GCS</string>
+      <string>PLAYER:ASKNAME</string>
+      <string>PLAYER:ASKCAUSE</string>
+      <string>PLAYER:ASKPAIN </string>
+    </Prereqs>
+    <Interactions>
+      <string>CHECK:BREATHE after=120</string>
+    </Interactions>
+	<Key>Prioritization</Key>
+    <Movie>Debriefing/Prioritization.ogv</Movie>
+    <Thumbnail>VideoStills/vidStill_prioritization_thumb</Thumbnail>
+  </VideoTriggerInfo>
+
+    <VideoTriggerInfo>
+ 	<Name>CIRCULATION BEFORE BREATHING</Name>
+    <Text>This event was triggered because you checked Circulation before getting a saturated oxygen reading.</Text>
+	<PrereqOperator>or</PrereqOperator>
+ 	<Prereqs>
+ 	  <string>VITALS:SAO2</string>
+ 	  <string>VITALS:ALL</string>
+	</Prereqs>
+ 	<InteractionOperator>or</InteractionOperator>
+    <Interactions>
+      <string>PATIENT:SKINTEMP</string>
+      <string>PATIENT:CAPREFILL</string>
+      <string>PULSE:FEMORAL</string>
+      <string>PULSE:CAROTID</string>
+      <string>PULSE:RADIAL</string>
+      <string>EXAM:BLEEDING</string>
+    </Interactions>
+	<Key>Prioritization</Key>
+ 	<Movie>Debriefing/Prioritization.ogv</Movie>
+    <Thumbnail>VideoStills/vidStill_prioritization_thumb</Thumbnail>
+  </VideoTriggerInfo>
+  
+  <VideoTriggerInfo>
+  	<Name>DELAYED INTUBATION</Name>
+	<Case>T3,T4,T5</Case>
+    <Text>This video was triggered because over a minute has passed without requesting intubation in a patient with a GCS of 9 or below.</Text>
+	<TimedCondition>true</TimedCondition>
+	<Conditions>
+      <string>%GCS_TOTAL_FLOAT less 9</string>
+    </Conditions>
+    <Interactions>
+      <string>INTUBATE:PATIENT after=60</string>
+    </Interactions>
+	<Key>Delayed Intubation</Key>
+    <Movie>Debriefing/DelayedIntubation.ogv</Movie>
+    <Thumbnail>VideoStills/vidStill_delayedIntubation_thumb</Thumbnail>
+  </VideoTriggerInfo>
+  
+  <VideoTriggerInfo>
+  	<Name>NO SECONDARY IV</Name>
+    <Text>This event was triggered because you did not provide two IVs for fluid resuscitation.</Text>
+ 	<Prereqs>
+ 	  <string>!IVPORT:RIGHT</string>
+	</Prereqs>
+	<InteractionOperator>or</InteractionOperator>
+		<Interactions>
+			  <string>PLAYER:PATIENT:ADMIT</string>
+		 	  <string>PLAYER:PATIENT:ADMIT:ICU</string>
+		 	  <string>PLAYER:PATIENT:DISCHARGE</string>
+		 	  <string>CALL:OR</string>
+		 	  <string>CALL:IR</string>
+		</Interactions>
+	<Key>Resuscitation</Key>
+    <Movie>Debriefing/HowMuchFluid.ogv</Movie>
+    <Thumbnail>VideoStills/vidStill_delayedResus_thumb</Thumbnail>
+  </VideoTriggerInfo>
+
+  <VideoTriggerInfo>
+  	<Name>DELAYED RESUSCITATION AFTER 2 MINUTES</Name>
+    <Text>This event was triggered because you did not provide fluid resuscitation to your patient after 2 minutes of a systolic blood pressure lower than 110.</Text>
+ 	<Prereqs>
+ 	  <string>%BP_SYS less 110</string>
+	</Prereqs>
+    <InteractionOperator>or</InteractionOperator>
+		<Interactions>
+			<string>ORDER:CRYSTAL:1IV after=120</string>
+			<string>ORDER:CRYSTAL:2IV after=120</string>
+			<string>ORDER:CRYSTAL:1PR after=120</string>
+			<string>ORDER:CRYSTAL:2PR after=120</string>
+			<string>ORDER:CRYSTAL:1RI after=120</string>
+			<string>ORDER:CRYSTAL:2RI after=120</string>
+			<string>ORDER:PRBC:1IV after=120</string>
+			<string>ORDER:PRBC:2IV after=120</string>
+			<string>ORDER:PRBC:1PR after=120</string>
+			<string>ORDER:PRBC:2PR after=120</string>
+			<string>ORDER:PRBC:1RI after=120</string>
+			<string>ORDER:PRBC:2RI after=120</string>
+		</Interactions>
+	<Key>Resuscitation</Key>
+    <Movie>Debriefing/HowMuchFluid.ogv</Movie>
+    <Thumbnail>VideoStills/vidStill_delayedResus_thumb</Thumbnail>
+  </VideoTriggerInfo>
+  
+<!--    <VideoTriggerInfo>
+  	<Name>DELAYED RESUSCITATION AFTER 3 MINUTES</Name>
+    <Text>This event was triggered because you did not provide enough fluid resuscitation to your patient after 3 minutes of a systolic blood pressure lower than 90.</Text>
+ 	<PrereqOperator>and</PrereqOperator>
+ 	<Prereqs>
+ 	  <string>%BP_SYS less 90</string>
+ 	</Prereqs>
+ 	<Conditions>
+ 	  <string>%UnitsCrystal greater 0</string>
+	</Conditions>
+    <InteractionOperator>or</InteractionOperator>
+		<Interactions>
+			<string>!ORDER:PRBC:1IV after=180</string>
+			<string>!ORDER:PRBC:2IV after=180</string>
+			<string>!ORDER:PRBC:1PR after=180</string>
+			<string>!ORDER:PRBC:2PR after=180</string>
+			<string>!ORDER:PRBC:1RI after=180</string>
+			<string>!ORDER:PRBC:2RI after=180</string>
+		</Interactions>
+	<Key>Resuscitation</Key>
+    <Movie>Debriefing/HowMuchFluid.ogv</Movie>
+    <Thumbnail>VideoStills/vidStill_delayedResus_thumb</Thumbnail>
+  </VideoTriggerInfo>-->
+
+<VideoTriggerInfo>
+  	<Name>USE OF PLASMA / MTP</Name>
+    <Text>This event was triggered because 4 or more units of PRBC was ordered without Fresh Frozen Plasma, Platelets or a Mass Transfusion Protocol (MTP).</Text>
+ 	<Conditions>
+ 	  <string>%UnitsPRBC greater 3</string>
+	</Conditions>
+    <InteractionOperator>or</InteractionOperator>
+		<Interactions>
+			<string>!ORDER:FFP:1IV</string>
+			<string>!ORDER:FFP:2IV</string>
+			<string>!ORDER:FFP:1PR</string>
+			<string>!ORDER:FFP:2PR</string>
+			<string>!ORDER:FFP:1RI</string>
+			<string>!ORDER:FFP:2RI</string>
+			<string>!ORDER:PLATELETS:1IV</string>
+			<string>!ORDER:PLATELETS:2IV</string>
+			<string>!ORDER:PLATELETS:1PR</string>
+			<string>!ORDER:PLATELETS:2PR</string>
+			<string>!ORDER:PLATELETS:1RI</string>
+			<string>!ORDER:PLATELETS:2RI</string>
+			<string>!ORDER:MTP</string>
+		</Interactions>
+	<Key>Resuscitation</Key>
+    <Movie>Debriefing/HowMuchFluid.ogv</Movie>
+    <Thumbnail>VideoStills/vidStill_delayedResus_thumb</Thumbnail>
+  </VideoTriggerInfo>
+  
+  <VideoTriggerInfo>
+  	<Name>PAIN MANAGEMENT</Name>
+    <Text>This event was triggered because you didn't address your patient's level of pain.</Text>
+	<Case>T1,T2,T3</Case>
+	<PrereqOperator>or</PrereqOperator>
+	<Prereqs>
+ 	  <string>!MED:PROPOFOL</string>
+ 	  <string>!MED:FENTANYL</string>
+ 	  <string>!MED:MORPHINE</string>
+	</Prereqs>
+	<InteractionOperator>or</InteractionOperator>
+		<Interactions>
+			  <string>PLAYER:PATIENT:ADMIT</string>
+		 	  <string>PLAYER:PATIENT:ADMIT:ICU</string>
+		 	  <string>PLAYER:PATIENT:DISCHARGE</string>
+		 	  <string>CALL:OR</string>
+		 	  <string>CALL:IR</string>
+		</Interactions>
+	<Key>Pain Management</Key>
+    <Movie>Debriefing/Pain.ogv</Movie>
+    <Thumbnail>VideoStills/vidStill_painManagement_thumb</Thumbnail>
+  </VideoTriggerInfo>
+  
+  <VideoTriggerInfo>
+  	<Name>EXPOSE PATIENT</Name>
+    <Text>This event was triggered because you didn't expose the patient after 10 minutes.</Text>
+    <InteractionOperator>or</InteractionOperator>
+    <Interactions>
+      <string>PATIENT:EXPOSE after=600</string>
+      <string>PATIENT:EXPOSE:ALL after=600</string>
+      <string>PATIENT:EXPOSE:LOWER after=600</string>
+      <string>PATIENT:EXPOSE:UPPER after=600</string>
+    </Interactions>
+	<Key>Exposure</Key>
+    <Movie>Debriefing/Exposure.ogv</Movie>
+    <Thumbnail>VideoStills/vidStill_exposePatient_thumb</Thumbnail>
+  </VideoTriggerInfo>
+  
+  <VideoTriggerInfo>
+  	<Name>EXPOSE PATIENT (BP)</Name>
+    <Text>This event was triggered because you didn't expose the patient after 3 minutes and the patient's BP is less than 90.</Text>
+ 	<TimedCondition>true</TimedCondition>
+	<Conditions>
+      <string>%BP_SYS less 90</string>
+    </Conditions>
+   <Interactions>
+      <string>PATIENT:EXPOSE after=180</string>
+    </Interactions>
+	<Key>Exposure</Key>
+    <Movie>Debriefing/Exposure.ogv</Movie>
+    <Thumbnail>VideoStills/vidStill_exposePatient_thumb</Thumbnail>
+  </VideoTriggerInfo>
+  
+ <VideoTriggerInfo>
+  	<Name>VITALS MONITORING</Name>
+    <Text>This event was triggered because you didn't put your patient on the monitors after 7 minutes.</Text>
+    <InteractionOperator>and</InteractionOperator>
+    <Interactions>
+      <string>PLACE:MONITORS after=420</string>
+      <string>PLACE:EKG after=420</string>
+    </Interactions>
+ 	<Key>Adjuncts</Key>
+   <Movie>Debriefing/Adjuncts.ogv</Movie>
+     <Thumbnail>VideoStills/vidStill_adjuncts_thumb</Thumbnail>
+  </VideoTriggerInfo>
+  
+  <VideoTriggerInfo>
+   	<Name>DELAYED OXYGENATION</Name>
+    <Text>This event was triggered because you didn't give supplemental oxygen after 30 seconds when the patient's O2 Sat is less than 95.</Text>
+	<TimedCondition>true</TimedCondition>
+    <Conditions>
+      <string>%SP less 95</string>
+    </Conditions>
+    <Interactions>
+      <string>PLACE:OXYGEN:CANNULA after=30</string>
+    </Interactions>
+	<Key>Adjuncts</Key>
+    <Movie>Debriefing/Adjuncts.ogv</Movie>
+    <Thumbnail>VideoStills/vidStill_adjuncts_thumb</Thumbnail>
+  </VideoTriggerInfo>
+  
+  <VideoTriggerInfo>
+  	<Name>AMPLE HISTORY</Name>
+	<Case>T1,T2,T3</Case>
+    <Text>This event was triggered because you didn't ask all of the AMPLE questions within 10 minutes of your patient who wasn't in shock.</Text>
+    <InteractionOperator>or</InteractionOperator>
+   	<Interactions>
+      <string>PLAYER:AMPLE:A after=600</string>
+      <string>PLAYER:AMPLE:M after=600</string>
+      <string>PLAYER:AMPLE:P after=600</string>
+      <string>PLAYER:AMPLE:L after=600</string>
+      <string>PLAYER:AMPLE:E after=600</string>
+    </Interactions>
+	<Key>AMPLE</Key>
+    <Movie>Debriefing/AmpleHistory.ogv</Movie>
+    <Thumbnail>VideoStills/vidStill_ampleHistory_thumb</Thumbnail>
+  </VideoTriggerInfo>
+</ArrayOfVideoTriggerInfo>

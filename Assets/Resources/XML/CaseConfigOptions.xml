@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCaseConfigOption xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CaseConfigOption>
+		<Name>BadAirway</Name>
+		<Prefab>BadAirway</Prefab>
+		<shortDescription>Patient has bad airway at start</shortDescription>
+  </CaseConfigOption>
+  <CaseConfigOption>
+		<Name>PatientVomitsInitially</Name>
+		<Prefab>PatientVomitsInitially</Prefab>
+		<shortDescription>Patient vomits quickly if not intubated</shortDescription>
+		<param>
+			<string>DelayBeforeVomiting=90</string>
+		</param>
+  </CaseConfigOption>
+  <CaseConfigOption>
+		<Name>Bradycardia</Name>
+		<Prefab>Bradycardia</Prefab>
+		<shortDescription>Patient becomes Bradycardic unless SAO2 is verified after ventilation</shortDescription>
+		<param>
+			<string>DelayBeforeCrash=120</string>
+		</param>
+  </CaseConfigOption>
+  <CaseConfigOption>
+		<Name>CuffError</Name>
+		<Prefab>CuffError</Prefab>
+		<shortDescription>AutoBP reads Cuff Error if not manually verified</shortDescription>
+		<param>
+			<string>DelayBeforeError=60</string>
+		</param>
+  </CaseConfigOption>
+  <CaseConfigOption>
+		<Name>CombativePatient</Name>
+		<Prefab>CombativePatient</Prefab>
+		<shortDescription>Patient becomes combative if not sedated</shortDescription>
+  </CaseConfigOption>
+    <CaseConfigOption>
+		<Name>FASTDelayed</Name>
+		<Prefab>FASTDelayed</Prefab>
+		<PrefabWhenDisabled>FASTAvailable</PrefabWhenDisabled>
+		<shortDescription>The FAST Ultrasound is in use and delayed for 10 minutes.</shortDescription>
+		<param>
+			<string>FASTDelay.delay=600</string>
+		</param>
+  </CaseConfigOption>
+  <CaseConfigOption>
+		<Name>VentilatorError</Name>
+		<Prefab>VentilatorError</Prefab>
+		<shortDescription>Ventilator is incorrectly set at 40% when connected</shortDescription>
+  </CaseConfigOption>
+  <CaseConfigOption>
+		<Name>PelvicBleeding</Name>
+		<Prefab>PelvicBleeding</Prefab>
+		<shortDescription>Patient has Pelvic Fracture and internal bleeding</shortDescription>
+  </CaseConfigOption>
+  <CaseConfigOption>
+		<Name>CardiacArrest</Name>
+		<Prefab>CardiacArrest</Prefab>
+		<shortDescription>Patient enters Cardiac Arrest and can be Defibrillated</shortDescription>
+		<param>
+			<string>Equipment=Zoll</string>
+		</param>
+  </CaseConfigOption>
+  <CaseConfigOption>
+		<Name>ExternalBleeding</Name>
+		<Prefab>ExternalBleeding</Prefab>
+		<shortDescription>Patient is bleeding externally</shortDescription>
+  </CaseConfigOption>
+  <CaseConfigOption>
+		<Name>ConnectMonitor</Name>
+		<Prefab>ConnectMonitor</Prefab>
+		<shortDescription>Primary Nurse connects Vitals Monitor</shortDescription>
+  </CaseConfigOption>
+  <CaseConfigOption>
+		<Name>VerbalWarnings</Name>
+		<Prefab>VerbalWarnings</Prefab>
+		<shortDescription>Have Nurse warn the player when Vitals are critical</shortDescription>
+  </CaseConfigOption>
+   <CaseConfigOption>
+		<Name>MissingXrayTech</Name>
+		<Prefab>MissingXrayTech</Prefab>
+		<shortDescription>Delay availability of Xrays by 10 minutes</shortDescription>
+		<param>
+			<string>XrayTech.delay=600</string>
+		</param>
+  </CaseConfigOption>
+</ArrayOfCaseConfigOption>
