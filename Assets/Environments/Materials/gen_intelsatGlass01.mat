@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: gen_intelsatGlass01
+  m_Shader: {fileID: 20, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: []
+  m_CustomRenderQueue: -1
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Cube
+        second:
+          m_Texture: {fileID: 8900000, guid: 3eedeef6dc49ca64ba8b0e55fe8d03c4, type: 2}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats: {}
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: .245433271, g: .248941839, b: .291044772, a: 1}
+      data:
+        first:
+          name: _Alpha
+        second: {r: .895522356, g: .895522356, b: .895522356, a: 1}
+      data:
+        first:
+          name: _Strength
+        second: {r: .514925361, g: .514925361, b: .514925361, a: 0}
+      data:
+        first:
+          name: _ReflectColor
+        second: {r: .328358233, g: .328358233, b: .328358233, a: .501960814}
