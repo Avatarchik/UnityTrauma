@@ -1,0 +1,5675 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: PLAYER:AMPLE:E
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400002}
+  - 114: {fileID: 11400002}
+  m_Layer: 0
+  m_Name: PLAYER:AMPLE:L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400004}
+  - 114: {fileID: 11400004}
+  m_Layer: 0
+  m_Name: PLAYER:AMPLE:P
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400006}
+  - 114: {fileID: 11400006}
+  m_Layer: 0
+  m_Name: PLAYER:AMPLE:M
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100008
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400008}
+  - 114: {fileID: 11400008}
+  m_Layer: 0
+  m_Name: PLAYER:AMPLE:A
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400010}
+  - 114: {fileID: 11400010}
+  m_Layer: 0
+  m_Name: AMPLEScripts
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100012
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400012}
+  - 114: {fileID: 11400012}
+  m_Layer: 0
+  m_Name: PATIENT:AMPLE:E
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100014
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400014}
+  - 114: {fileID: 11400014}
+  m_Layer: 0
+  m_Name: PATIENT:AMPLE:L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100016
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400016}
+  - 114: {fileID: 11400016}
+  m_Layer: 0
+  m_Name: PATIENT:AMPLE:P
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100018
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400018}
+  - 114: {fileID: 11400018}
+  m_Layer: 0
+  m_Name: PATIENT:AMPLE:M
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100020
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400020}
+  - 114: {fileID: 11400020}
+  m_Layer: 0
+  m_Name: PATIENT:AMPLE:A
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100022
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400022}
+  - 114: {fileID: 11400022}
+  m_Layer: 0
+  m_Name: PatientAnswersVOICE:AMPLE:P:RESPONSE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100024
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400024}
+  - 114: {fileID: 11400024}
+  m_Layer: 0
+  m_Name: PatientAnswersVOICE:AMPLE:M:RESPONSE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100026
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400026}
+  - 114: {fileID: 11400026}
+  m_Layer: 0
+  m_Name: PatientAnswersVOICE:AMPLE:L:RESPONSE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100028
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400028}
+  - 114: {fileID: 11400028}
+  m_Layer: 0
+  m_Name: PatientAnswersVOICE:AMPLE:E:RESPONSE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100030
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400030}
+  - 114: {fileID: 11400030}
+  m_Layer: 0
+  m_Name: PatientAnswersVOICE:AMPLE:A:RESPONSE
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100032
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400032}
+  - 114: {fileID: 11400036}
+  - 114: {fileID: 11400034}
+  - 114: {fileID: 11400032}
+  m_Layer: 0
+  m_Name: SendDispatcher:PLAYER:AMPLE:P
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100034
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400034}
+  - 114: {fileID: 11400042}
+  - 114: {fileID: 11400040}
+  - 114: {fileID: 11400038}
+  m_Layer: 0
+  m_Name: SendDispatcher:PLAYER:AMPLE:M
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100036
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400036}
+  - 114: {fileID: 11400048}
+  - 114: {fileID: 11400046}
+  - 114: {fileID: 11400044}
+  m_Layer: 0
+  m_Name: SendDispatcher:PLAYER:AMPLE:L
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100038
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400038}
+  - 114: {fileID: 11400054}
+  - 114: {fileID: 11400052}
+  - 114: {fileID: 11400050}
+  m_Layer: 0
+  m_Name: SendDispatcher:PLAYER:AMPLE:E
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100040
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400040}
+  - 114: {fileID: 11400060}
+  - 114: {fileID: 11400058}
+  - 114: {fileID: 11400056}
+  m_Layer: 0
+  m_Name: SendDispatcher:PLAYER:AMPLE:A
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &170224
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 470224}
+  - 114: {fileID: 11470224}
+  m_Layer: 0
+  m_Name: ?ENDnewScriptLine-noop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &170226
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 470226}
+  - 114: {fileID: 11470226}
+  m_Layer: 0
+  m_Name: ?IFPatientIsIntubated
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &170228
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 470228}
+  - 114: {fileID: 11470228}
+  m_Layer: 0
+  m_Name: playIntubated
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &170230
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 470230}
+  - 114: {fileID: 11470230}
+  m_Layer: 0
+  m_Name: ?ELSEnewScriptLine-noop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &170232
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 470232}
+  - 114: {fileID: 11470232}
+  m_Layer: 0
+  m_Name: ?ENDnewScriptLine-noop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &170234
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 470234}
+  - 114: {fileID: 11470234}
+  m_Layer: 0
+  m_Name: ?IFPatientIsIntubated
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &170236
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 470236}
+  - 114: {fileID: 11470236}
+  m_Layer: 0
+  m_Name: playIntubated
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &170238
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 470238}
+  - 114: {fileID: 11470238}
+  m_Layer: 0
+  m_Name: ?ELSEnewScriptLine-noop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &170240
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 470240}
+  - 114: {fileID: 11470240}
+  m_Layer: 0
+  m_Name: ?ENDnewScriptLine-noop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &170242
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 470242}
+  - 114: {fileID: 11470242}
+  m_Layer: 0
+  m_Name: ?IFPatientIsIntubated
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &170244
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 470244}
+  - 114: {fileID: 11470244}
+  m_Layer: 0
+  m_Name: playIntubated
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &170246
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 470246}
+  - 114: {fileID: 11470246}
+  m_Layer: 0
+  m_Name: ?ELSEnewScriptLine-noop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &170248
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 470248}
+  - 114: {fileID: 11470248}
+  m_Layer: 0
+  m_Name: ?ENDnewScriptLine-noop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &170250
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 470250}
+  - 114: {fileID: 11470250}
+  m_Layer: 0
+  m_Name: ?IFPatientIsIntubated
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &170252
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 470252}
+  - 114: {fileID: 11470252}
+  m_Layer: 0
+  m_Name: playIntubated
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &170254
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 470254}
+  - 114: {fileID: 11470254}
+  m_Layer: 0
+  m_Name: ?ELSEnewScriptLine-noop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &170256
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 470256}
+  - 114: {fileID: 11470256}
+  m_Layer: 0
+  m_Name: ?ENDnewScriptLine-noop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &170258
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 470258}
+  - 114: {fileID: 11470258}
+  m_Layer: 0
+  m_Name: ?IFPatientIsIntubated
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &170260
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 470260}
+  - 114: {fileID: 11470260}
+  m_Layer: 0
+  m_Name: playIntubated
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &170262
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 470262}
+  - 114: {fileID: 11470262}
+  m_Layer: 0
+  m_Name: ?ELSEnewScriptLine-noop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &193868
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 493868}
+  - 114: {fileID: 11493868}
+  m_Layer: 0
+  m_Name: ?IFpatientCanAnswer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &193870
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 493870}
+  - 114: {fileID: 11493870}
+  m_Layer: 0
+  m_Name: ?ENDnewScriptLine-noop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &193872
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 493872}
+  - 114: {fileID: 11493872}
+  m_Layer: 0
+  m_Name: playUnresponsive
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &193874
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 493874}
+  - 114: {fileID: 11493874}
+  m_Layer: 0
+  m_Name: ?ELSEnewScriptLine-noop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &193876
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 493876}
+  - 114: {fileID: 11493876}
+  m_Layer: 0
+  m_Name: ?IFpatientCanAnswer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &193878
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 493878}
+  - 114: {fileID: 11493878}
+  m_Layer: 0
+  m_Name: ?ENDnewScriptLine-noop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &193880
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 493880}
+  - 114: {fileID: 11493880}
+  m_Layer: 0
+  m_Name: playUnresponsive
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &193882
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 493882}
+  - 114: {fileID: 11493882}
+  m_Layer: 0
+  m_Name: ?ELSEnewScriptLine-noop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &193884
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 493884}
+  - 114: {fileID: 11493884}
+  m_Layer: 0
+  m_Name: ?IFpatientCanAnswer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &193886
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 493886}
+  - 114: {fileID: 11493886}
+  m_Layer: 0
+  m_Name: ?ENDnewScriptLine-noop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &193888
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 493888}
+  - 114: {fileID: 11493888}
+  m_Layer: 0
+  m_Name: playUnresponsive
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &193890
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 493890}
+  - 114: {fileID: 11493890}
+  m_Layer: 0
+  m_Name: ?ELSEnewScriptLine-noop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &193892
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 493892}
+  - 114: {fileID: 11493892}
+  m_Layer: 0
+  m_Name: ?IFpatientCanAnswer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &193894
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 493894}
+  - 114: {fileID: 11493894}
+  m_Layer: 0
+  m_Name: ?ENDnewScriptLine-noop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &193896
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 493896}
+  - 114: {fileID: 11493896}
+  m_Layer: 0
+  m_Name: playUnresponsive
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &193898
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 493898}
+  - 114: {fileID: 11493898}
+  m_Layer: 0
+  m_Name: ?ELSEnewScriptLine-noop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &193900
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 493900}
+  - 114: {fileID: 11493900}
+  m_Layer: 0
+  m_Name: ?IFpatientCanAnswer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &193902
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 493902}
+  - 114: {fileID: 11493902}
+  m_Layer: 0
+  m_Name: ?ENDnewScriptLine-noop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &193904
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 493904}
+  - 114: {fileID: 11493904}
+  m_Layer: 0
+  m_Name: playUnresponsive
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &193906
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 493906}
+  - 114: {fileID: 11493906}
+  m_Layer: 0
+  m_Name: ?ELSEnewScriptLine-noop
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.60145092, y: -1, z: 6.44350863}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 400028}
+  - {fileID: 493876}
+  - {fileID: 493878}
+  - {fileID: 493880}
+  - {fileID: 493882}
+  - {fileID: 470254}
+  - {fileID: 470252}
+  - {fileID: 470250}
+  - {fileID: 470248}
+  m_Father: {fileID: 400010}
+  m_RootOrder: 9
+--- !u!4 &400002
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.60145092, y: -1, z: 6.44350863}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 400026}
+  - {fileID: 493884}
+  - {fileID: 493886}
+  - {fileID: 493888}
+  - {fileID: 493890}
+  - {fileID: 470246}
+  - {fileID: 470244}
+  - {fileID: 470242}
+  - {fileID: 470240}
+  m_Father: {fileID: 400010}
+  m_RootOrder: 8
+--- !u!4 &400004
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.60145092, y: -1, z: 6.44350863}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 400022}
+  - {fileID: 493900}
+  - {fileID: 493902}
+  - {fileID: 493904}
+  - {fileID: 493906}
+  - {fileID: 470230}
+  - {fileID: 470228}
+  - {fileID: 470226}
+  - {fileID: 470224}
+  m_Father: {fileID: 400010}
+  m_RootOrder: 7
+--- !u!4 &400006
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.60145092, y: -1, z: 6.44350863}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 400024}
+  - {fileID: 493892}
+  - {fileID: 493894}
+  - {fileID: 493896}
+  - {fileID: 493898}
+  - {fileID: 470238}
+  - {fileID: 470236}
+  - {fileID: 470234}
+  - {fileID: 470232}
+  m_Father: {fileID: 400010}
+  m_RootOrder: 6
+--- !u!4 &400008
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.60145092, y: -1, z: 6.44350863}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 400030}
+  - {fileID: 493868}
+  - {fileID: 493870}
+  - {fileID: 493872}
+  - {fileID: 493874}
+  - {fileID: 470262}
+  - {fileID: 470260}
+  - {fileID: 470258}
+  - {fileID: 470256}
+  m_Father: {fileID: 400010}
+  m_RootOrder: 5
+--- !u!4 &400010
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100010}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 400020}
+  - {fileID: 400018}
+  - {fileID: 400016}
+  - {fileID: 400014}
+  - {fileID: 400012}
+  - {fileID: 400008}
+  - {fileID: 400006}
+  - {fileID: 400004}
+  - {fileID: 400002}
+  - {fileID: 400000}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &400012
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100012}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.60145092, y: -1, z: 6.44350863}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 400038}
+  m_Father: {fileID: 400010}
+  m_RootOrder: 4
+--- !u!4 &400014
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100014}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.60145092, y: -1, z: 6.44350863}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 400036}
+  m_Father: {fileID: 400010}
+  m_RootOrder: 3
+--- !u!4 &400016
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100016}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.60145092, y: -1, z: 6.44350863}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 400032}
+  m_Father: {fileID: 400010}
+  m_RootOrder: 2
+--- !u!4 &400018
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100018}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.60145092, y: -1, z: 6.44350863}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 400034}
+  m_Father: {fileID: 400010}
+  m_RootOrder: 1
+--- !u!4 &400020
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100020}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.60145092, y: -1, z: 6.44350863}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 400040}
+  m_Father: {fileID: 400010}
+  m_RootOrder: 0
+--- !u!4 &400022
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100022}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400004}
+  m_RootOrder: 0
+--- !u!4 &400024
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100024}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400006}
+  m_RootOrder: 0
+--- !u!4 &400026
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100026}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400002}
+  m_RootOrder: 0
+--- !u!4 &400028
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100028}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400000}
+  m_RootOrder: 0
+--- !u!4 &400030
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100030}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400008}
+  m_RootOrder: 0
+--- !u!4 &400032
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100032}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400016}
+  m_RootOrder: 0
+--- !u!4 &400034
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100034}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400018}
+  m_RootOrder: 0
+--- !u!4 &400036
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100036}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400014}
+  m_RootOrder: 0
+--- !u!4 &400038
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100038}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400012}
+  m_RootOrder: 0
+--- !u!4 &400040
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100040}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400020}
+  m_RootOrder: 0
+--- !u!4 &470224
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170224}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400004}
+  m_RootOrder: 8
+--- !u!4 &470226
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170226}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400004}
+  m_RootOrder: 7
+--- !u!4 &470228
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170228}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400004}
+  m_RootOrder: 6
+--- !u!4 &470230
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170230}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400004}
+  m_RootOrder: 5
+--- !u!4 &470232
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170232}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400006}
+  m_RootOrder: 8
+--- !u!4 &470234
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170234}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400006}
+  m_RootOrder: 7
+--- !u!4 &470236
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170236}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400006}
+  m_RootOrder: 6
+--- !u!4 &470238
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170238}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400006}
+  m_RootOrder: 5
+--- !u!4 &470240
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170240}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400002}
+  m_RootOrder: 8
+--- !u!4 &470242
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170242}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400002}
+  m_RootOrder: 7
+--- !u!4 &470244
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170244}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400002}
+  m_RootOrder: 6
+--- !u!4 &470246
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170246}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400002}
+  m_RootOrder: 5
+--- !u!4 &470248
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170248}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400000}
+  m_RootOrder: 8
+--- !u!4 &470250
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170250}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400000}
+  m_RootOrder: 7
+--- !u!4 &470252
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170252}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400000}
+  m_RootOrder: 6
+--- !u!4 &470254
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170254}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400000}
+  m_RootOrder: 5
+--- !u!4 &470256
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170256}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400008}
+  m_RootOrder: 8
+--- !u!4 &470258
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170258}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400008}
+  m_RootOrder: 7
+--- !u!4 &470260
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170260}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400008}
+  m_RootOrder: 6
+--- !u!4 &470262
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170262}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400008}
+  m_RootOrder: 5
+--- !u!4 &493868
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193868}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400008}
+  m_RootOrder: 1
+--- !u!4 &493870
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193870}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400008}
+  m_RootOrder: 2
+--- !u!4 &493872
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193872}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400008}
+  m_RootOrder: 3
+--- !u!4 &493874
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193874}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400008}
+  m_RootOrder: 4
+--- !u!4 &493876
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193876}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400000}
+  m_RootOrder: 1
+--- !u!4 &493878
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193878}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400000}
+  m_RootOrder: 2
+--- !u!4 &493880
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193880}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400000}
+  m_RootOrder: 3
+--- !u!4 &493882
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193882}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400000}
+  m_RootOrder: 4
+--- !u!4 &493884
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193884}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400002}
+  m_RootOrder: 1
+--- !u!4 &493886
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193886}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400002}
+  m_RootOrder: 2
+--- !u!4 &493888
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193888}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400002}
+  m_RootOrder: 3
+--- !u!4 &493890
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193890}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400002}
+  m_RootOrder: 4
+--- !u!4 &493892
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193892}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400006}
+  m_RootOrder: 1
+--- !u!4 &493894
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193894}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400006}
+  m_RootOrder: 2
+--- !u!4 &493896
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193896}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400006}
+  m_RootOrder: 3
+--- !u!4 &493898
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193898}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400006}
+  m_RootOrder: 4
+--- !u!4 &493900
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193900}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400004}
+  m_RootOrder: 1
+--- !u!4 &493902
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193902}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400004}
+  m_RootOrder: 2
+--- !u!4 &493904
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193904}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400004}
+  m_RootOrder: 3
+--- !u!4 &493906
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193906}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400004}
+  m_RootOrder: 4
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee9a3fa18f688fc45967e679d9579e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerStrings:
+  - PLAYER:AMPLE:E
+  triggerOnStatus: 0
+  startingArgs: 
+  scriptLines:
+  - {fileID: 11493876}
+  - {fileID: 11400028}
+  - {fileID: 11493882}
+  - {fileID: 11470250}
+  - {fileID: 11470252}
+  - {fileID: 11470254}
+  - {fileID: 11493880}
+  - {fileID: 11470248}
+  - {fileID: 11493878}
+  abortBranch: []
+  errorBranch: []
+  owningRole: 
+  roles: []
+  actorObjects: []
+  roleKeyString:
+  - Patient.responsive=True
+  autoExecuteInterval: -1
+  autoExecuteTimer: 0
+  autoExecuteProbability: 0
+  interactionSet:
+    Name: 
+    Maps: []
+    ScriptsEnter: []
+    ScriptsExit: []
+    ScriptsAbort: []
+    ValidInteractors: []
+  commandVariation:
+    Cmd: PLAYER:AMPLE:E
+    CmdString: Do you remember what happened?
+    Variations:
+    - what happened
+    - events
+    - remember
+    - ample
+  hasExecuted: 0
+  callbackConfirmVoice: 0
+  currentLine: 0
+  nextLineLabel: 
+  waitingForDebugger: 0
+  singleStepping: 0
+  caller: {fileID: 0}
+  myOI: {fileID: 0}
+  myObject: {fileID: 0}
+  AddToMenu: 0
+  menuOrder: 0
+  queueCount: 0
+  item: PLAYER:AMPLE:E
+  prettyname: Events
+  response: Script for PLAYER:AMPLE:E is running
+  response_title: PLAYER:AMPLE:E
+  note: 
+  tooltip: Click Me
+  sound: AUDIO:SOUND
+  task: OBJECT:MENUCLICK
+  log: 1
+  readyState: 0
+  startPriority: 4
+  cancellable: 0
+  skillVector: []
+  extraCost: 0
+  prereq: []
+  category:
+  - Diagnostics/AMPLE
+  param: []
+  debug: 0
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee9a3fa18f688fc45967e679d9579e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerStrings:
+  - PLAYER:AMPLE:L
+  triggerOnStatus: 0
+  startingArgs: 
+  scriptLines:
+  - {fileID: 11493884}
+  - {fileID: 11400026}
+  - {fileID: 11493890}
+  - {fileID: 11470242}
+  - {fileID: 11470244}
+  - {fileID: 11470246}
+  - {fileID: 11493888}
+  - {fileID: 11470240}
+  - {fileID: 11493886}
+  abortBranch: []
+  errorBranch: []
+  owningRole: 
+  roles: []
+  actorObjects: []
+  roleKeyString:
+  - Patient.responsive=True
+  autoExecuteInterval: -1
+  autoExecuteTimer: 0
+  autoExecuteProbability: 0
+  interactionSet:
+    Name: 
+    Maps: []
+    ScriptsEnter: []
+    ScriptsExit: []
+    ScriptsAbort: []
+    ValidInteractors: []
+  commandVariation:
+    Cmd: PLAYER:AMPLE:L
+    CmdString: When was the last time you had food?
+    Variations:
+    - meal
+    - food
+    - eat
+  hasExecuted: 0
+  callbackConfirmVoice: 0
+  currentLine: 0
+  nextLineLabel: 
+  waitingForDebugger: 0
+  singleStepping: 0
+  caller: {fileID: 0}
+  myOI: {fileID: 0}
+  myObject: {fileID: 0}
+  AddToMenu: 0
+  menuOrder: 0
+  queueCount: 0
+  item: PLAYER:AMPLE:L
+  prettyname: Last Meal
+  response: Script for PLAYER:AMPLE:L is running
+  response_title: PLAYER:AMPLE:L
+  note: 
+  tooltip: Click Me
+  sound: AUDIO:SOUND
+  task: OBJECT:MENUCLICK
+  log: 1
+  readyState: 0
+  startPriority: 4
+  cancellable: 0
+  skillVector: []
+  extraCost: 0
+  prereq: []
+  category:
+  - Diagnostics/AMPLE
+  param: []
+  debug: 0
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee9a3fa18f688fc45967e679d9579e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerStrings:
+  - PLAYER:AMPLE:P
+  triggerOnStatus: 0
+  startingArgs: 
+  scriptLines:
+  - {fileID: 11493900}
+  - {fileID: 11400022}
+  - {fileID: 11493906}
+  - {fileID: 11470226}
+  - {fileID: 11470228}
+  - {fileID: 11470230}
+  - {fileID: 11493904}
+  - {fileID: 11470224}
+  - {fileID: 11493902}
+  abortBranch: []
+  errorBranch: []
+  owningRole: 
+  roles: []
+  actorObjects: []
+  roleKeyString:
+  - Patient.responsive=True
+  autoExecuteInterval: -1
+  autoExecuteTimer: 0
+  autoExecuteProbability: 0
+  interactionSet:
+    Name: 
+    Maps: []
+    ScriptsEnter: []
+    ScriptsExit: []
+    ScriptsAbort: []
+    ValidInteractors: []
+  commandVariation:
+    Cmd: PLAYER:AMPLE:P
+    CmdString: Have you ever had any surgeries or been admitted to the hospital?
+    Variations:
+    - surgeries
+    - surgery
+    - admitted
+    - hospital
+  hasExecuted: 0
+  callbackConfirmVoice: 0
+  currentLine: 0
+  nextLineLabel: 
+  waitingForDebugger: 0
+  singleStepping: 0
+  caller: {fileID: 0}
+  myOI: {fileID: 0}
+  myObject: {fileID: 0}
+  AddToMenu: 0
+  menuOrder: 0
+  queueCount: 0
+  item: PLAYER:AMPLE:P
+  prettyname: Past Medical History
+  response: Script for PLAYER:AMPLE:P is running
+  response_title: PLAYER:AMPLE:P
+  note: 
+  tooltip: Click Me
+  sound: AUDIO:SOUND
+  task: OBJECT:MENUCLICK
+  log: 1
+  readyState: 0
+  startPriority: 4
+  cancellable: 0
+  skillVector: []
+  extraCost: 0
+  prereq: []
+  category:
+  - Diagnostics/AMPLE
+  param: []
+  debug: 0
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee9a3fa18f688fc45967e679d9579e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerStrings:
+  - PLAYER:AMPLE:M
+  triggerOnStatus: 0
+  startingArgs: 
+  scriptLines:
+  - {fileID: 11493892}
+  - {fileID: 11400024}
+  - {fileID: 11493898}
+  - {fileID: 11470234}
+  - {fileID: 11470236}
+  - {fileID: 11470238}
+  - {fileID: 11493896}
+  - {fileID: 11470232}
+  - {fileID: 11493894}
+  abortBranch: []
+  errorBranch: []
+  owningRole: 
+  roles: []
+  actorObjects: []
+  roleKeyString:
+  - Patient.responsive=True
+  autoExecuteInterval: -1
+  autoExecuteTimer: 0
+  autoExecuteProbability: 0
+  interactionSet:
+    Name: 
+    Maps: []
+    ScriptsEnter: []
+    ScriptsExit: []
+    ScriptsAbort: []
+    ValidInteractors: []
+  commandVariation:
+    Cmd: PLAYER:AMPLE:M
+    CmdString: Are you currently on any medications?
+    Variations:
+    - medications
+    - meds
+    - perscription
+    - prescription
+    - ample
+  hasExecuted: 0
+  callbackConfirmVoice: 0
+  currentLine: 0
+  nextLineLabel: 
+  waitingForDebugger: 0
+  singleStepping: 0
+  caller: {fileID: 0}
+  myOI: {fileID: 0}
+  myObject: {fileID: 0}
+  AddToMenu: 0
+  menuOrder: 0
+  queueCount: 0
+  item: PLAYER:AMPLE:M
+  prettyname: Medications
+  response: Script for PLAYER:AMPLE:M is running
+  response_title: PLAYER:AMPLE:M
+  note: 
+  tooltip: Click Me
+  sound: AUDIO:SOUND
+  task: OBJECT:MENUCLICK
+  log: 1
+  readyState: 0
+  startPriority: 4
+  cancellable: 0
+  skillVector: []
+  extraCost: 0
+  prereq: []
+  category:
+  - Diagnostics/AMPLE
+  param: []
+  debug: 0
+--- !u!114 &11400008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee9a3fa18f688fc45967e679d9579e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerStrings:
+  - PLAYER:AMPLE:A
+  triggerOnStatus: 0
+  startingArgs: 
+  scriptLines:
+  - {fileID: 11493868}
+  - {fileID: 11400030}
+  - {fileID: 11493874}
+  - {fileID: 11470258}
+  - {fileID: 11470260}
+  - {fileID: 11470262}
+  - {fileID: 11493872}
+  - {fileID: 11470256}
+  - {fileID: 11493870}
+  abortBranch: []
+  errorBranch: []
+  owningRole: 
+  roles: []
+  actorObjects: []
+  roleKeyString:
+  - Patient.responsive=True
+  autoExecuteInterval: -1
+  autoExecuteTimer: 0
+  autoExecuteProbability: 0
+  interactionSet:
+    Name: 
+    Maps: []
+    ScriptsEnter: []
+    ScriptsExit: []
+    ScriptsAbort: []
+    ValidInteractors: []
+  commandVariation:
+    Cmd: PLAYER:AMPLE:A
+    CmdString: Do you have any allergies that you're aware of?
+    Variations:
+    - allergies
+    - allergic
+    - ample
+  hasExecuted: 0
+  callbackConfirmVoice: 0
+  currentLine: 0
+  nextLineLabel: 
+  waitingForDebugger: 0
+  singleStepping: 0
+  caller: {fileID: 0}
+  myOI: {fileID: 0}
+  myObject: {fileID: 0}
+  AddToMenu: 0
+  menuOrder: 0
+  queueCount: 0
+  item: PLAYER:AMPLE:A
+  prettyname: Allergies
+  response: Script for PLAYER:AMPLE:A is running
+  response_title: PLAYER:AMPLE:A
+  note: 
+  tooltip: Click Me
+  sound: AUDIO:SOUND
+  task: OBJECT:MENUCLICK
+  log: 1
+  readyState: 0
+  startPriority: 4
+  cancellable: 0
+  skillVector: []
+  extraCost: 0
+  prereq: []
+  category:
+  - Diagnostics/AMPLE
+  param: []
+  debug: 0
+--- !u!114 &11400010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2780bf6f09f28e74a8a942d59a585f39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveToParentOnDrop: 1
+  dropTargetName: Player
+  scripts:
+  - {fileID: 11400008}
+  - {fileID: 11400006}
+  - {fileID: 11400004}
+  - {fileID: 11400002}
+  - {fileID: 11400000}
+  - {fileID: 11400020}
+  - {fileID: 11400018}
+  - {fileID: 11400016}
+  - {fileID: 11400014}
+  - {fileID: 11400012}
+  startupScript: {fileID: 0}
+  register: 0
+  prettyname: 
+  XMLName: ScriptedObjects/AMPLEScripts.xml
+  XMLDirectory: Assets/Resources/XML/
+  assetBundleInfo:
+    bundleName: 
+    stage: 0
+    assetName: 
+  voiceList:
+    Name: Patient
+    VoiceMaps:
+    - Tag: VOICE:AMPLE:A:RESPONSE
+      Audio: Audio/PT_noDontThinkSo
+      Text: No, I don't think so.
+      LookAt: lookCamera
+      Clip: {fileID: 8300000, guid: 7dcddd9fcfeb4b2498a8eff4ab378cce, type: 3}
+      Dynamic: 0
+    - Tag: VOICE:AMPLE:M:RESPONSE
+      Audio: Audio/PT_noImNot
+      Text: No, I'm not.
+      LookAt: lookCamera
+      Clip: {fileID: 8300000, guid: 3bd218addd0f5934da8750c9d85e6eef, type: 3}
+      Dynamic: 0
+    - Tag: VOICE:AMPLE:P:RESPONSE
+      Audio: Audio/PT_firstTimeAnything
+      Text: This is the first time I've ever had anything major happen
+      LookAt: lookCamera
+      Clip: {fileID: 8300000, guid: 88092176628eaa04f9d8e3f4ffbbd238, type: 3}
+      Dynamic: 0
+    - Tag: VOICE:AMPLE:L:RESPONSE
+      Audio: Audio/PT_hadCheeseburger
+      Text: I had a cheeseburger and fries a few hours ago.
+      LookAt: lookCamera
+      Clip: {fileID: 8300000, guid: e138b42df84d71048b9ebb3269445466, type: 3}
+      Dynamic: 0
+    - Tag: VOICE:AMPLE:E:RESPONSE
+      Audio: Audio/PT_dontKnowWhatHappened
+      Text: dontKnowWhatHappened
+      LookAt: lookCamera
+      Clip: {fileID: 8300000, guid: dd1aee06a68e5e742aa7c821b5343073, type: 3}
+      Dynamic: 0
+  voiceLists: []
+  vitalsBehaviors: []
+  scanRecords: []
+  executePriorityLock: -1
+  lastScriptExecuted: {fileID: 0}
+  lastScriptExecutedTime: 0
+--- !u!114 &11400012
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee9a3fa18f688fc45967e679d9579e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerStrings:
+  - PATIENT:AMPLE:E
+  triggerOnStatus: 0
+  startingArgs: 
+  scriptLines:
+  - {fileID: 11400054}
+  abortBranch: []
+  errorBranch: []
+  owningRole: Patient
+  roles: []
+  actorObjects: []
+  roleKeyString:
+  - Patient.responsive=True
+  autoExecuteInterval: -1
+  autoExecuteTimer: 0
+  autoExecuteProbability: 0
+  interactionSet:
+    Name: 
+    Maps: []
+    ScriptsEnter: []
+    ScriptsExit: []
+    ScriptsAbort: []
+    ValidInteractors: []
+  commandVariation:
+    Cmd: PATIENT:AMPLE:E
+    CmdString: What can you tell me about what happened?
+    Variations:
+    - happened
+    - injury
+    - event of injury
+    - event
+  hasExecuted: 0
+  callbackConfirmVoice: 0
+  currentLine: 0
+  nextLineLabel: 
+  waitingForDebugger: 0
+  singleStepping: 0
+  caller: {fileID: 0}
+  myOI: {fileID: 0}
+  myObject: {fileID: 0}
+  AddToMenu: 1
+  menuOrder: 4
+  queueCount: 0
+  item: PATIENT:AMPLE:E
+  prettyname: Events
+  response: Script for PATIENT:AMPLE:E is running
+  response_title: PATIENT:AMPLE:E
+  note: 
+  tooltip: Click Me
+  sound: AUDIO:SOUND
+  task: OBJECT:MENUCLICK
+  log: 1
+  readyState: 0
+  startPriority: 4
+  cancellable: 0
+  skillVector: []
+  extraCost: 0
+  prereq: []
+  category:
+  - Diagnostics/AMPLE
+  param: []
+  debug: 0
+--- !u!114 &11400014
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee9a3fa18f688fc45967e679d9579e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerStrings:
+  - PATIENT:AMPLE:L
+  triggerOnStatus: 0
+  startingArgs: 
+  scriptLines:
+  - {fileID: 11400048}
+  abortBranch: []
+  errorBranch: []
+  owningRole: Patient
+  roles: []
+  actorObjects: []
+  roleKeyString:
+  - Patient.responsive=True
+  autoExecuteInterval: -1
+  autoExecuteTimer: 0
+  autoExecuteProbability: 0
+  interactionSet:
+    Name: 
+    Maps: []
+    ScriptsEnter: []
+    ScriptsExit: []
+    ScriptsAbort: []
+    ValidInteractors: []
+  commandVariation:
+    Cmd: PATIENT:AMPLE:L
+    CmdString: When was the last time you had food?
+    Variations:
+    - meal
+    - food
+    - eat
+  hasExecuted: 0
+  callbackConfirmVoice: 0
+  currentLine: 0
+  nextLineLabel: 
+  waitingForDebugger: 0
+  singleStepping: 0
+  caller: {fileID: 0}
+  myOI: {fileID: 0}
+  myObject: {fileID: 0}
+  AddToMenu: 1
+  menuOrder: 3
+  queueCount: 0
+  item: PATIENT:AMPLE:L
+  prettyname: Last Meal
+  response: Script for PATIENT:AMPLE:L is running
+  response_title: PATIENT:AMPLE:L
+  note: 
+  tooltip: Click Me
+  sound: AUDIO:SOUND
+  task: OBJECT:MENUCLICK
+  log: 1
+  readyState: 0
+  startPriority: 4
+  cancellable: 0
+  skillVector: []
+  extraCost: 0
+  prereq: []
+  category:
+  - Diagnostics/AMPLE
+  param: []
+  debug: 0
+--- !u!114 &11400016
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee9a3fa18f688fc45967e679d9579e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerStrings:
+  - PATIENT:AMPLE:P
+  triggerOnStatus: 0
+  startingArgs: 
+  scriptLines:
+  - {fileID: 11400036}
+  abortBranch: []
+  errorBranch: []
+  owningRole: Patient
+  roles: []
+  actorObjects: []
+  roleKeyString:
+  - Patient.responsive=True
+  autoExecuteInterval: -1
+  autoExecuteTimer: 0
+  autoExecuteProbability: 0
+  interactionSet:
+    Name: 
+    Maps: []
+    ScriptsEnter: []
+    ScriptsExit: []
+    ScriptsAbort: []
+    ValidInteractors: []
+  commandVariation:
+    Cmd: PATIENT:AMPLE:P
+    CmdString: Have you ever been admitted to the hospital?
+    Variations:
+    - hospital
+    - previous history
+    - history
+    - admitted
+  hasExecuted: 0
+  callbackConfirmVoice: 0
+  currentLine: 0
+  nextLineLabel: 
+  waitingForDebugger: 0
+  singleStepping: 0
+  caller: {fileID: 0}
+  myOI: {fileID: 0}
+  myObject: {fileID: 0}
+  AddToMenu: 1
+  menuOrder: 2
+  queueCount: 0
+  item: PATIENT:AMPLE:P
+  prettyname: Past Medical History
+  response: Script for PATIENT:AMPLE:P is running
+  response_title: PATIENT:AMPLE:P
+  note: 
+  tooltip: Click Me
+  sound: AUDIO:SOUND
+  task: OBJECT:MENUCLICK
+  log: 1
+  readyState: 0
+  startPriority: 4
+  cancellable: 0
+  skillVector: []
+  extraCost: 0
+  prereq: []
+  category:
+  - Diagnostics/AMPLE
+  param: []
+  debug: 0
+--- !u!114 &11400018
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee9a3fa18f688fc45967e679d9579e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerStrings:
+  - PATIENT:AMPLE:M
+  triggerOnStatus: 0
+  startingArgs: 
+  scriptLines:
+  - {fileID: 11400042}
+  abortBranch: []
+  errorBranch: []
+  owningRole: Patient
+  roles: []
+  actorObjects: []
+  roleKeyString:
+  - Patient.responsive=True
+  autoExecuteInterval: -1
+  autoExecuteTimer: 0
+  autoExecuteProbability: 0
+  interactionSet:
+    Name: 
+    Maps: []
+    ScriptsEnter: []
+    ScriptsExit: []
+    ScriptsAbort: []
+    ValidInteractors: []
+  commandVariation:
+    Cmd: PATIENT:AMPLE:M
+    CmdString: Are you currently on any medications?
+    Variations:
+    - medicine
+    - medication
+    - prescription
+    - rx
+  hasExecuted: 0
+  callbackConfirmVoice: 0
+  currentLine: 0
+  nextLineLabel: 
+  waitingForDebugger: 0
+  singleStepping: 0
+  caller: {fileID: 0}
+  myOI: {fileID: 0}
+  myObject: {fileID: 0}
+  AddToMenu: 1
+  menuOrder: 1
+  queueCount: 0
+  item: PATIENT:AMPLE:M
+  prettyname: Medications
+  response: Script for PATIENT:AMPLE:M is running
+  response_title: PATIENT:AMPLE:M
+  note: 
+  tooltip: Click Me
+  sound: AUDIO:SOUND
+  task: OBJECT:MENUCLICK
+  log: 1
+  readyState: 0
+  startPriority: 4
+  cancellable: 0
+  skillVector: []
+  extraCost: 0
+  prereq: []
+  category:
+  - Diagnostics/AMPLE
+  param: []
+  debug: 0
+--- !u!114 &11400020
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee9a3fa18f688fc45967e679d9579e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerStrings:
+  - PATIENT:AMPLE:A
+  triggerOnStatus: 0
+  startingArgs: 
+  scriptLines:
+  - {fileID: 11400060}
+  abortBranch: []
+  errorBranch: []
+  owningRole: Patient
+  roles: []
+  actorObjects: []
+  roleKeyString:
+  - Patient.responsive=True
+  autoExecuteInterval: -1
+  autoExecuteTimer: 0
+  autoExecuteProbability: 0
+  interactionSet:
+    Name: 
+    Maps: []
+    ScriptsEnter: []
+    ScriptsExit: []
+    ScriptsAbort: []
+    ValidInteractors: []
+  commandVariation:
+    Cmd: PATIENT:AMPLE:A
+    CmdString: Do you have any allergies that you're aware of?
+    Variations:
+    - allergies
+    - allergy
+  hasExecuted: 0
+  callbackConfirmVoice: 0
+  currentLine: 0
+  nextLineLabel: 
+  waitingForDebugger: 0
+  singleStepping: 0
+  caller: {fileID: 0}
+  myOI: {fileID: 0}
+  myObject: {fileID: 0}
+  AddToMenu: 1
+  menuOrder: 0
+  queueCount: 0
+  item: PATIENT:AMPLE:A
+  prettyname: Allergies
+  response: Script for PATIENT:AMPLE:A is running
+  response_title: PATIENT:AMPLE:A
+  note: 
+  tooltip: Click Me
+  sound: AUDIO:SOUND
+  task: OBJECT:MENUCLICK
+  log: 1
+  readyState: 0
+  startPriority: 4
+  cancellable: 0
+  skillVector: []
+  extraCost: 0
+  prereq: []
+  category:
+  - Diagnostics/AMPLE
+  param: []
+  debug: 0
+--- !u!114 &11400022
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: Patient
+  type: 1
+  role: 
+  stringParam: VOICE:AMPLE:P:RESPONSE
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: Patient.hasansweredample=True
+  postAttributes: 
+  stringParam2: lookCamera
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11400024
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: Patient
+  type: 1
+  role: 
+  stringParam: VOICE:AMPLE:M:RESPONSE
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: Patient.hasansweredample=True
+  postAttributes: 
+  stringParam2: lookCamera
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11400026
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: Patient
+  type: 1
+  role: 
+  stringParam: VOICE:AMPLE:L:RESPONSE
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: Patient.hasansweredample=True
+  postAttributes: 
+  stringParam2: lookCamera
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11400028
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: this sends the 'events' question back to PLAYER:ASKCAUSE
+  objectToAffect: {fileID: 0}
+  objectName: Patient
+  type: 1
+  role: 
+  stringParam: VOICE:AMPLE:E:RESPONSE
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: Patient.hasansweredample=False
+  postAttributes: 
+  stringParam2: lookCamera
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11400030
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: Patient
+  type: 1
+  role: 
+  stringParam: VOICE:AMPLE:A:RESPONSE
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: Patient.hasansweredample=True
+  postAttributes: 
+  stringParam2: lookCamera
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11400032
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75debf72aab61d441b72488f5260f115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: PLAYER:AMPLE:P
+  response: 
+  response_title: 
+  tooltip: 
+  note: 
+  sound: 
+  task: 
+  list: 
+  time: 0
+  log: 0
+  max: 0
+  confirm: 0
+  confirm_audio: 
+  Enabled: 1
+  scriptName: 
+  objectName: 
+  prereq: []
+  category: []
+  param: []
+--- !u!114 &11400034
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 875a3604fce3b5f408e0d7ccc194d6f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  msgType: 0
+  map: {fileID: 11400032}
+  gameObjectName: Dispatcher
+  log: 0
+  interactName: 
+  state: 0
+  name: 
+  args: []
+  command: 0
+  x: 0
+  y: 0
+  w: 0
+  h: 0
+  text: 
+  title: 
+  time: 0
+  modal: 0
+  xmlName: 
+  className: 
+  dialogName: 
+  anchor: centered
+  arguments: []
+  numArguments: 0
+  waitForDialogClosed: 0
+  waitForDialogName: 
+  timeout: 0
+  editbox: 0
+  editboxlabel: 
+  editboxprompt: 
+  sendMap: 1
+  baseobj: {fileID: 0}
+  baseXML: 
+  provider: {fileID: 0}
+  patient: {fileID: 0}
+  hasCancel: 0
+  commandString: 
+  Params: []
+  ScreenName: 
+--- !u!114 &11400036
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: Dispatcher
+  type: 3
+  role: 
+  stringParam: 
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 0
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: CHECK:REFLEXES:COMPLETE
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 11400034}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11400038
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75debf72aab61d441b72488f5260f115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: PLAYER:AMPLE:M
+  response: 
+  response_title: 
+  tooltip: 
+  note: 
+  sound: 
+  task: 
+  list: 
+  time: 0
+  log: 0
+  max: 0
+  confirm: 0
+  confirm_audio: 
+  Enabled: 1
+  scriptName: 
+  objectName: 
+  prereq: []
+  category: []
+  param: []
+--- !u!114 &11400040
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 875a3604fce3b5f408e0d7ccc194d6f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  msgType: 0
+  map: {fileID: 11400038}
+  gameObjectName: Dispatcher
+  log: 0
+  interactName: 
+  state: 0
+  name: 
+  args: []
+  command: 0
+  x: 0
+  y: 0
+  w: 0
+  h: 0
+  text: 
+  title: 
+  time: 0
+  modal: 0
+  xmlName: 
+  className: 
+  dialogName: 
+  anchor: centered
+  arguments: []
+  numArguments: 0
+  waitForDialogClosed: 0
+  waitForDialogName: 
+  timeout: 0
+  editbox: 0
+  editboxlabel: 
+  editboxprompt: 
+  sendMap: 1
+  baseobj: {fileID: 0}
+  baseXML: 
+  provider: {fileID: 0}
+  patient: {fileID: 0}
+  hasCancel: 0
+  commandString: 
+  Params: []
+  ScreenName: 
+--- !u!114 &11400042
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: Dispatcher
+  type: 3
+  role: 
+  stringParam: 
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 0
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: CHECK:REFLEXES:COMPLETE
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 11400040}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11400044
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75debf72aab61d441b72488f5260f115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: PLAYER:AMPLE:L
+  response: 
+  response_title: 
+  tooltip: 
+  note: 
+  sound: 
+  task: 
+  list: 
+  time: 0
+  log: 0
+  max: 0
+  confirm: 0
+  confirm_audio: 
+  Enabled: 1
+  scriptName: 
+  objectName: 
+  prereq: []
+  category: []
+  param: []
+--- !u!114 &11400046
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 875a3604fce3b5f408e0d7ccc194d6f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  msgType: 0
+  map: {fileID: 11400044}
+  gameObjectName: Dispatcher
+  log: 0
+  interactName: 
+  state: 0
+  name: 
+  args: []
+  command: 0
+  x: 0
+  y: 0
+  w: 0
+  h: 0
+  text: 
+  title: 
+  time: 0
+  modal: 0
+  xmlName: 
+  className: 
+  dialogName: 
+  anchor: centered
+  arguments: []
+  numArguments: 0
+  waitForDialogClosed: 0
+  waitForDialogName: 
+  timeout: 0
+  editbox: 0
+  editboxlabel: 
+  editboxprompt: 
+  sendMap: 1
+  baseobj: {fileID: 0}
+  baseXML: 
+  provider: {fileID: 0}
+  patient: {fileID: 0}
+  hasCancel: 0
+  commandString: 
+  Params: []
+  ScreenName: 
+--- !u!114 &11400048
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: Dispatcher
+  type: 3
+  role: 
+  stringParam: 
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 0
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: CHECK:REFLEXES:COMPLETE
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 11400046}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11400050
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75debf72aab61d441b72488f5260f115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: PLAYER:AMPLE:E
+  response: 
+  response_title: 
+  tooltip: 
+  note: 
+  sound: 
+  task: 
+  list: 
+  time: 0
+  log: 0
+  max: 0
+  confirm: 0
+  confirm_audio: 
+  Enabled: 1
+  scriptName: 
+  objectName: 
+  prereq: []
+  category: []
+  param: []
+--- !u!114 &11400052
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 875a3604fce3b5f408e0d7ccc194d6f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  msgType: 0
+  map: {fileID: 11400050}
+  gameObjectName: Dispatcher
+  log: 0
+  interactName: 
+  state: 0
+  name: 
+  args: []
+  command: 0
+  x: 0
+  y: 0
+  w: 0
+  h: 0
+  text: 
+  title: 
+  time: 0
+  modal: 0
+  xmlName: 
+  className: 
+  dialogName: 
+  anchor: centered
+  arguments: []
+  numArguments: 0
+  waitForDialogClosed: 0
+  waitForDialogName: 
+  timeout: 0
+  editbox: 0
+  editboxlabel: 
+  editboxprompt: 
+  sendMap: 1
+  baseobj: {fileID: 0}
+  baseXML: 
+  provider: {fileID: 0}
+  patient: {fileID: 0}
+  hasCancel: 0
+  commandString: 
+  Params: []
+  ScreenName: 
+--- !u!114 &11400054
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: Dispatcher
+  type: 3
+  role: 
+  stringParam: 
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 0
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: CHECK:REFLEXES:COMPLETE
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 11400052}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11400056
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75debf72aab61d441b72488f5260f115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: PLAYER:AMPLE:A
+  response: 
+  response_title: 
+  tooltip: 
+  note: 
+  sound: 
+  task: 
+  list: 
+  time: 0
+  log: 0
+  max: 0
+  confirm: 0
+  confirm_audio: 
+  Enabled: 1
+  scriptName: 
+  objectName: 
+  prereq: []
+  category: []
+  param: []
+--- !u!114 &11400058
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 875a3604fce3b5f408e0d7ccc194d6f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  msgType: 0
+  map: {fileID: 11400056}
+  gameObjectName: Dispatcher
+  log: 0
+  interactName: 
+  state: 0
+  name: 
+  args: []
+  command: 0
+  x: 0
+  y: 0
+  w: 0
+  h: 0
+  text: 
+  title: 
+  time: 0
+  modal: 0
+  xmlName: 
+  className: 
+  dialogName: 
+  anchor: centered
+  arguments: []
+  numArguments: 0
+  waitForDialogClosed: 0
+  waitForDialogName: 
+  timeout: 0
+  editbox: 0
+  editboxlabel: 
+  editboxprompt: 
+  sendMap: 1
+  baseobj: {fileID: 0}
+  baseXML: 
+  provider: {fileID: 0}
+  patient: {fileID: 0}
+  hasCancel: 0
+  commandString: 
+  Params: []
+  ScreenName: 
+--- !u!114 &11400060
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: Dispatcher
+  type: 3
+  role: 
+  stringParam: 
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 0
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: CHECK:REFLEXES:COMPLETE
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 11400058}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11470224
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 8
+  role: 
+  stringParam: 
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 2
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11470226
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 6
+  role: 
+  stringParam: Patient.%Intubated=True
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11470228
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: ProcedureResident
+  type: 1
+  role: 
+  stringParam: VOICE:PATIENT:INTUBATED
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11470230
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 8
+  role: 
+  stringParam: 
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 1
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11470232
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 8
+  role: 
+  stringParam: 
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 2
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11470234
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 6
+  role: 
+  stringParam: Patient.%Intubated=True
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11470236
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: ProcedureResident
+  type: 1
+  role: 
+  stringParam: VOICE:PATIENT:INTUBATED
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11470238
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 8
+  role: 
+  stringParam: 
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 1
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11470240
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 8
+  role: 
+  stringParam: 
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 2
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11470242
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 6
+  role: 
+  stringParam: Patient.%Intubated=True
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11470244
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: ProcedureResident
+  type: 1
+  role: 
+  stringParam: VOICE:PATIENT:INTUBATED
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11470246
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 8
+  role: 
+  stringParam: 
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 1
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11470248
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 8
+  role: 
+  stringParam: 
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 2
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11470250
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170250}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 6
+  role: 
+  stringParam: Patient.%Intubated=True
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11470252
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: ProcedureResident
+  type: 1
+  role: 
+  stringParam: VOICE:PATIENT:INTUBATED
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11470254
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 8
+  role: 
+  stringParam: 
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 1
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11470256
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 8
+  role: 
+  stringParam: 
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 2
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11470258
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 6
+  role: 
+  stringParam: Patient.%Intubated=True
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11470260
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: ProcedureResident
+  type: 1
+  role: 
+  stringParam: VOICE:PATIENT:INTUBATED
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11470262
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 170262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 8
+  role: 
+  stringParam: 
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 1
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11493868
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 6
+  role: 
+  stringParam: Patient.responsive=True & !Patient.%Intubated=True
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11493870
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193870}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 8
+  role: 
+  stringParam: 
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 2
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11493872
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: ProcedureResident
+  type: 1
+  role: 
+  stringParam: VOICE:PATIENT:UNRESPONSIVE
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11493874
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 8
+  role: 
+  stringParam: 
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 1
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11493876
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 6
+  role: 
+  stringParam: Patient.responsive=True & !Patient.%Intubated=True
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11493878
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 8
+  role: 
+  stringParam: 
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 2
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11493880
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: this could be a different response because intubated or sedated
+  objectToAffect: {fileID: 0}
+  objectName: ProcedureResident
+  type: 1
+  role: 
+  stringParam: VOICE:PATIENT:UNRESPONSIVE
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11493882
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 8
+  role: 
+  stringParam: 
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 1
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11493884
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 6
+  role: 
+  stringParam: Patient.responsive=True & !Patient.%Intubated=True
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11493886
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 8
+  role: 
+  stringParam: 
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 2
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11493888
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: this could be a different response because intubated or sedated
+  objectToAffect: {fileID: 0}
+  objectName: ProcedureResident
+  type: 1
+  role: 
+  stringParam: VOICE:PATIENT:UNRESPONSIVE
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11493890
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 8
+  role: 
+  stringParam: 
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 1
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11493892
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193892}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 6
+  role: 
+  stringParam: Patient.responsive=True & !Patient.%Intubated=True
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11493894
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 8
+  role: 
+  stringParam: 
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 2
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11493896
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: this could be a different response because intubated or sedated
+  objectToAffect: {fileID: 0}
+  objectName: ProcedureResident
+  type: 1
+  role: 
+  stringParam: VOICE:PATIENT:UNRESPONSIVE
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11493898
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 8
+  role: 
+  stringParam: 
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 1
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11493900
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 6
+  role: 
+  stringParam: Patient.responsive=True & !Patient.%Intubated=True
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11493902
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 8
+  role: 
+  stringParam: 
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 2
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11493904
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: this could be a different response because intubated or sedated
+  objectToAffect: {fileID: 0}
+  objectName: ProcedureResident
+  type: 1
+  role: 
+  stringParam: VOICE:PATIENT:UNRESPONSIVE
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11493906
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 193906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 8
+  role: 
+  stringParam: 
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 1
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100010}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

@@ -1,0 +1,345 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: lay_to_side
+  serializedVersion: 4
+  m_AnimationType: 1
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: .707106769, y: 1.88313919e-07, z: -1.88313919e-07, w: .707106769}
+        inSlope: {x: -.000146627412, y: .111443385, z: -.111443385, w: -.000146627412}
+        outSlope: {x: -.000146627412, y: .111443385, z: -.111443385, w: -.000146627412}
+        tangentMode: -559038737
+      - time: .833333194
+        value: {x: .701016903, y: .092602998, z: -.092602998, w: .701016903}
+        inSlope: {x: -.0145948073, y: .11048387, z: -.11048387, w: -.0145948073}
+        outSlope: {x: -.0145948073, y: .11048387, z: -.11048387, w: -.0145948073}
+        tangentMode: -559038737
+      - time: 1.66666579
+        value: {x: .682852209, y: .183610722, z: -.183610722, w: .682852209}
+        inSlope: {x: -.0289356988, y: .107620612, z: -.107620612, w: -.0289356988}
+        outSlope: {x: -.0289356988, y: .107620612, z: -.107620612, w: -.0289356988}
+        tangentMode: -559038737
+      - time: 2.49999833
+        value: {x: .652925491, y: .271455765, z: -.271455765, w: .652925491}
+        inSlope: {x: -.0427830629, y: .10290394, z: -.10290394, w: -.0427830629}
+        outSlope: {x: -.0427830629, y: .10290394, z: -.10290394, w: -.0427830629}
+        tangentMode: -559038737
+      - time: 3.33333087
+        value: {x: .61175245, y: .354625046, z: -.354625046, w: .61175245}
+        inSlope: {x: -.0558901355, y: .0964156687, z: -.0964156687, w: -.0558901355}
+        outSlope: {x: -.0558901355, y: .0964156687, z: -.0964156687, w: -.0558901355}
+        tangentMode: -559038737
+      - time: 4.14999866
+        value: {x: .561173916, y: .43021366, z: -.43021366, w: .561173916}
+        inSlope: {x: -.0678035468, y: .088443771, z: -.088443771, w: -.0678035468}
+        outSlope: {x: -.0678035468, y: .088443771, z: -.088443771, w: -.0678035468}
+        tangentMode: -559038737
+      - time: 4.96667624
+        value: {x: .501310885, y: .498685688, z: -.498685688, w: .501310885}
+        inSlope: {x: -.0785961151, y: .0790083408, z: -.0790083408, w: -.0785961151}
+        outSlope: {x: -.0785961151, y: .0790083408, z: -.0790083408, w: -.0785961151}
+        tangentMode: -559038737
+      - time: 4.98333311
+        value: {x: .49999997, y: .49999997, z: -.49999997, w: .49999997}
+        inSlope: {x: -.0787011161, y: .0789032951, z: -.0789032951, w: -.0787011161}
+        outSlope: {x: -.0787011161, y: .0789032951, z: -.0789032951, w: -.0787011161}
+        tangentMode: -559038737
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: sitelHuman_/sitelHuman_Pelvis
+  m_CompressedRotationCurves: []
+  m_PositionCurves: []
+  m_ScaleCurves: []
+  m_FloatCurves: []
+  m_PPtrCurves: []
+  m_SampleRate: 60
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings: []
+    pptrCurveMapping: []
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_StartTime: 0
+    m_StopTime: 1
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_LoopTime: 0
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .707106769
+        inSlope: -.000146627412
+        outSlope: -.000146627412
+        tangentMode: 0
+      - time: .833333194
+        value: .701016903
+        inSlope: -.0145948073
+        outSlope: -.0145948073
+        tangentMode: 0
+      - time: 1.66666579
+        value: .682852209
+        inSlope: -.0289356988
+        outSlope: -.0289356988
+        tangentMode: 0
+      - time: 2.49999833
+        value: .652925491
+        inSlope: -.0427830629
+        outSlope: -.0427830629
+        tangentMode: 0
+      - time: 3.33333087
+        value: .61175245
+        inSlope: -.0558901355
+        outSlope: -.0558901355
+        tangentMode: 0
+      - time: 4.14999866
+        value: .561173916
+        inSlope: -.0678035468
+        outSlope: -.0678035468
+        tangentMode: 0
+      - time: 4.96667624
+        value: .501310885
+        inSlope: -.0785961151
+        outSlope: -.0785961151
+        tangentMode: 0
+      - time: 4.98333311
+        value: .49999997
+        inSlope: -.0787011161
+        outSlope: -.0787011161
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.x
+    path: sitelHuman_/sitelHuman_Pelvis
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1.88313919e-07
+        inSlope: .111443385
+        outSlope: .111443385
+        tangentMode: 0
+      - time: .833333194
+        value: .092602998
+        inSlope: .11048387
+        outSlope: .11048387
+        tangentMode: 0
+      - time: 1.66666579
+        value: .183610722
+        inSlope: .107620612
+        outSlope: .107620612
+        tangentMode: 0
+      - time: 2.49999833
+        value: .271455765
+        inSlope: .10290394
+        outSlope: .10290394
+        tangentMode: 0
+      - time: 3.33333087
+        value: .354625046
+        inSlope: .0964156687
+        outSlope: .0964156687
+        tangentMode: 0
+      - time: 4.14999866
+        value: .43021366
+        inSlope: .088443771
+        outSlope: .088443771
+        tangentMode: 0
+      - time: 4.96667624
+        value: .498685688
+        inSlope: .0790083408
+        outSlope: .0790083408
+        tangentMode: 0
+      - time: 4.98333311
+        value: .49999997
+        inSlope: .0789032951
+        outSlope: .0789032951
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.y
+    path: sitelHuman_/sitelHuman_Pelvis
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -1.88313919e-07
+        inSlope: -.111443385
+        outSlope: -.111443385
+        tangentMode: 0
+      - time: .833333194
+        value: -.092602998
+        inSlope: -.11048387
+        outSlope: -.11048387
+        tangentMode: 0
+      - time: 1.66666579
+        value: -.183610722
+        inSlope: -.107620612
+        outSlope: -.107620612
+        tangentMode: 0
+      - time: 2.49999833
+        value: -.271455765
+        inSlope: -.10290394
+        outSlope: -.10290394
+        tangentMode: 0
+      - time: 3.33333087
+        value: -.354625046
+        inSlope: -.0964156687
+        outSlope: -.0964156687
+        tangentMode: 0
+      - time: 4.14999866
+        value: -.43021366
+        inSlope: -.088443771
+        outSlope: -.088443771
+        tangentMode: 0
+      - time: 4.96667624
+        value: -.498685688
+        inSlope: -.0790083408
+        outSlope: -.0790083408
+        tangentMode: 0
+      - time: 4.98333311
+        value: -.49999997
+        inSlope: -.0789032951
+        outSlope: -.0789032951
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.z
+    path: sitelHuman_/sitelHuman_Pelvis
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .707106769
+        inSlope: -.000146627412
+        outSlope: -.000146627412
+        tangentMode: 0
+      - time: .833333194
+        value: .701016903
+        inSlope: -.0145948073
+        outSlope: -.0145948073
+        tangentMode: 0
+      - time: 1.66666579
+        value: .682852209
+        inSlope: -.0289356988
+        outSlope: -.0289356988
+        tangentMode: 0
+      - time: 2.49999833
+        value: .652925491
+        inSlope: -.0427830629
+        outSlope: -.0427830629
+        tangentMode: 0
+      - time: 3.33333087
+        value: .61175245
+        inSlope: -.0558901355
+        outSlope: -.0558901355
+        tangentMode: 0
+      - time: 4.14999866
+        value: .561173916
+        inSlope: -.0678035468
+        outSlope: -.0678035468
+        tangentMode: 0
+      - time: 4.96667624
+        value: .501310885
+        inSlope: -.0785961151
+        outSlope: -.0785961151
+        tangentMode: 0
+      - time: 4.98333311
+        value: .49999997
+        inSlope: -.0787011161
+        outSlope: -.0787011161
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.w
+    path: sitelHuman_/sitelHuman_Pelvis
+    classID: 4
+    script: {fileID: 0}
+  m_EulerEditorCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 90
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 4.98333311
+        value: 90
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAnglesBaked.x
+    path: sitelHuman_/sitelHuman_Pelvis
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 3.05175781e-05
+        inSlope: 18.0601959
+        outSlope: 18.0601959
+        tangentMode: 10
+      - time: 4.98333311
+        value: 90
+        inSlope: 18.0601959
+        outSlope: 18.0601959
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAnglesBaked.y
+    path: sitelHuman_/sitelHuman_Pelvis
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 4.98333311
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAnglesBaked.z
+    path: sitelHuman_/sitelHuman_Pelvis
+    classID: 4
+    script: {fileID: 0}
+  m_Events: []

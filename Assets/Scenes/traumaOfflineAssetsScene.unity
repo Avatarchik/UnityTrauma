@@ -1,0 +1,820 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+SceneSettings:
+  m_ObjectHideFlags: 0
+  m_PVSData: 
+  m_PVSObjectsArray: []
+  m_PVSPortalsArray: []
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: .25
+    backfaceThreshold: 100
+--- !u!104 &2
+RenderSettings:
+  m_Fog: 0
+  m_FogColor: {r: .5, g: .5, b: .5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: .00999999978
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientLight: {r: .200000003, g: .200000003, b: .200000003, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: .5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 0}
+  m_ObjectHideFlags: 0
+--- !u!127 &3
+LevelGameManager:
+  m_ObjectHideFlags: 0
+--- !u!157 &4
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  m_LightProbes: {fileID: 0}
+  m_Lightmaps: []
+  m_LightmapsMode: 1
+  m_BakedColorSpace: 0
+  m_UseDualLightmapsInForward: 0
+  m_LightmapEditorSettings:
+    m_Resolution: 50
+    m_LastUsedResolution: 0
+    m_TextureWidth: 1024
+    m_TextureHeight: 1024
+    m_BounceBoost: 1
+    m_BounceIntensity: 1
+    m_SkyLightColor: {r: .860000014, g: .930000007, b: 1, a: 1}
+    m_SkyLightIntensity: 0
+    m_Quality: 0
+    m_Bounces: 1
+    m_FinalGatherRays: 1000
+    m_FinalGatherContrastThreshold: .0500000007
+    m_FinalGatherGradientThreshold: 0
+    m_FinalGatherInterpolationPoints: 15
+    m_AOAmount: 0
+    m_AOMaxDistance: .100000001
+    m_AOContrast: 1
+    m_LODSurfaceMappingDistance: 1
+    m_Padding: 0
+    m_TextureCompression: 0
+    m_LockAtlas: 0
+--- !u!196 &5
+NavMeshSettings:
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    agentRadius: .5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: .400000006
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    accuratePlacement: 0
+    minRegionArea: 2
+    widthInaccuracy: 16.666666
+    heightInaccuracy: 10
+    tileSizeHint: 0
+  m_NavMesh: {fileID: 0}
+--- !u!1001 &302558695
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 400000, guid: 7dc805948651d3d47be59350bd290ad4, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -4.28438044
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7dc805948651d3d47be59350bd290ad4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.94476724
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7dc805948651d3d47be59350bd290ad4, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -7.45516348
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7dc805948651d3d47be59350bd290ad4, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7dc805948651d3d47be59350bd290ad4, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7dc805948651d3d47be59350bd290ad4, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7dc805948651d3d47be59350bd290ad4, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 7dc805948651d3d47be59350bd290ad4, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 7dc805948651d3d47be59350bd290ad4, type: 2}
+      propertyPath: m_Name
+      value: TraumaOfflineAssetGameObject
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 7dc805948651d3d47be59350bd290ad4, type: 2}
+  m_RootGameObject: {fileID: 444965208}
+  m_IsPrefabParent: 0
+  m_IsExploded: 1
+--- !u!1 &444965208
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 100000, guid: 7dc805948651d3d47be59350bd290ad4, type: 2}
+  m_PrefabInternal: {fileID: 302558695}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 444965210}
+  - 114: {fileID: 444965209}
+  - 114: {fileID: 444965212}
+  m_Layer: 0
+  m_Name: TraumaOfflineAssetGameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &444965209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400000, guid: 7dc805948651d3d47be59350bd290ad4,
+    type: 2}
+  m_PrefabInternal: {fileID: 302558695}
+  m_GameObject: {fileID: 444965208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09d3cc875dec0674894c670cddeab625, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bUseOfflineAssets: 1
+  OfflineDBResults:
+  - command: loadUserAssignedCases
+    param1: guest
+    param2: 
+    data: '#guest&Drunk Pedestrian&Friday, 11:14pm&A drunken pedestrian is hit by
+      a car.  Patient is awake and talking, but under the influence of alcohol, bruised
+      and in subdued pain.&0&thumbnail01&2015-04-09 11:29:59#guest&MVA Rollover&Saturday,
+      3:14am&A 32 Year old Female driver was involved in a multi-vehicle car accident
+      traveling at 65 mph that resulted in a vehicle roll over. EMTs have the patient
+      boarded and collared and are a few minutes out.&0&thumbnail01&2015-04-09 11:30:20#guest&Rock
+      Climbing Fall&Friday, 5:12pm&A 26 year old female had a fall while rock climbing.  She
+      was unconscious on the scene and during transport. She is otherwise healthy,
+      takes no meds and has no allergies according to her climbing partner.&0&thumbnail01&2015-04-09
+      11:30:07#guest&Thrown From Horse&Friday, 3:56p&A 33 year old male was thrown
+      from a horse. He is alert and responding to questioning. His injuries are unknown.&0&thumbnail02&2015-04-09
+      11:29:50#rob&Tutorial&Trauma Training Tutorial&tutorial scene&0&thumbnail02&2015-04-09
+      11:29:54'
+  - command: loadCase
+    param1: Drunk Pedestrian
+    param2: 
+    data: "<?xml version=\"1.0\" encoding=\"us-ascii\"?>\r\n<CaseOptionData xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+      xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <owner>guest</owner>\r\n
+      \ <name />\r\n  <gender>male</gender>\r\n  <bloodtype>n/a</bloodtype>\r\n  <caseDescription>A
+      drunken pedestrian is hit by a car.  Patient is awake and talking, but under
+      the influence of alcohol, bruised and in subdued pain.</caseDescription>\r\n
+      \ <description>Friday, 11:14pm</description>\r\n  <casename>Drunk Pedestrian</casename>\r\n
+      \ <loadedCase>Drunk Pedestrian</loadedCase>\r\n  <baseConfig>\r\n    <Name>Trauma_BasePrefab</Name>\r\n
+      \   <Prefab>Trauma_BasePrefab</Prefab>\r\n    <Enabled>true</Enabled>\r\n    <PrefabWhenDisabled
+      />\r\n    <shortDescription />\r\n    <longDescription />\r\n  </baseConfig>\r\n
+      \ <options>\r\n    <CaseConfigOption>\r\n      <Name>BadAirway</Name>\r\n      <Prefab>BadAirway</Prefab>\r\n
+      \     <Enabled>false</Enabled>\r\n      <PrefabWhenDisabled />\r\n      <shortDescription>Patient
+      has bad airway at start</shortDescription>\r\n      <longDescription />\r\n
+      \   </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>PatientVomitsInitially</Name>\r\n
+      \     <Prefab>PatientVomitsInitially</Prefab>\r\n      <Enabled>false</Enabled>\r\n
+      \     <PrefabWhenDisabled />\r\n      <shortDescription>Patient vomits quickly
+      if not intubated</shortDescription>\r\n      <longDescription />\r\n      <param>\r\n
+      \       <string>DelayBeforeVomiting=90</string>\r\n      </param>\r\n    </CaseConfigOption>\r\n
+      \   <CaseConfigOption>\r\n      <Name>Bradycardia</Name>\r\n      <Prefab>Bradycardia</Prefab>\r\n
+      \     <Enabled>true</Enabled>\r\n      <PrefabWhenDisabled />\r\n      <shortDescription>Patient
+      becomes Bradycardic unless SAO2 is verified after ventilation</shortDescription>\r\n
+      \     <longDescription />\r\n      <param>\r\n        <string>DelayBeforeCrash=120</string>\r\n
+      \     </param>\r\n    </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>CuffError</Name>\r\n
+      \     <Prefab>CuffError</Prefab>\r\n      <Enabled>false</Enabled>\r\n      <PrefabWhenDisabled
+      />\r\n      <shortDescription>AutoBP reads Cuff Error if not manually verified</shortDescription>\r\n
+      \     <longDescription />\r\n      <param>\r\n        <string>DelayBeforeError=60</string>\r\n
+      \     </param>\r\n    </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>CombativePatient</Name>\r\n
+      \     <Prefab>CombativePatient</Prefab>\r\n      <Enabled>false</Enabled>\r\n
+      \     <PrefabWhenDisabled />\r\n      <shortDescription>Patient becomes combative
+      if not sedated</shortDescription>\r\n      <longDescription />\r\n    </CaseConfigOption>\r\n
+      \   <CaseConfigOption>\r\n      <Name>FASTDelayed</Name>\r\n      <Prefab>FASTDelayed</Prefab>\r\n
+      \     <Enabled>false</Enabled>\r\n      <PrefabWhenDisabled>FASTAvailable</PrefabWhenDisabled>\r\n
+      \     <shortDescription>The FAST Ultrasound is in use and delayed for 10 minutes.</shortDescription>\r\n
+      \     <longDescription />\r\n      <param>\r\n        <string>FASTDelay.delay=600</string>\r\n
+      \     </param>\r\n    </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>VentilatorError</Name>\r\n
+      \     <Prefab>VentilatorError</Prefab>\r\n      <Enabled>false</Enabled>\r\n
+      \     <PrefabWhenDisabled />\r\n      <shortDescription>Ventilator is incorrectly
+      set at 40% when connected</shortDescription>\r\n      <longDescription />\r\n
+      \   </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>PelvicBleeding</Name>\r\n
+      \     <Prefab>PelvicBleeding</Prefab>\r\n      <Enabled>false</Enabled>\r\n
+      \     <PrefabWhenDisabled />\r\n      <shortDescription>Patient has Pelvic Fracture
+      and internal bleeding</shortDescription>\r\n      <longDescription />\r\n    </CaseConfigOption>\r\n
+      \   <CaseConfigOption>\r\n      <Name>CardiacArrest</Name>\r\n      <Prefab>CardiacArrest</Prefab>\r\n
+      \     <Enabled>false</Enabled>\r\n      <PrefabWhenDisabled />\r\n      <shortDescription>Patient
+      enters Cardiac Arrest and can be Defibrillated</shortDescription>\r\n      <longDescription
+      />\r\n      <param>\r\n        <string>Equipment=Zoll</string>\r\n      </param>\r\n
+      \   </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>ExternalBleeding</Name>\r\n
+      \     <Prefab>ExternalBleeding</Prefab>\r\n      <Enabled>false</Enabled>\r\n
+      \     <PrefabWhenDisabled />\r\n      <shortDescription>Patient is bleeding
+      externally</shortDescription>\r\n      <longDescription />\r\n    </CaseConfigOption>\r\n
+      \   <CaseConfigOption>\r\n      <Name>ConnectMonitor</Name>\r\n      <Prefab>ConnectMonitor</Prefab>\r\n
+      \     <Enabled>false</Enabled>\r\n      <PrefabWhenDisabled />\r\n      <shortDescription>Primary
+      Nurse connects Vitals Monitor</shortDescription>\r\n      <longDescription />\r\n
+      \   </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>VerbalWarnings</Name>\r\n
+      \     <Prefab>VerbalWarnings</Prefab>\r\n      <Enabled>true</Enabled>\r\n      <PrefabWhenDisabled
+      />\r\n      <shortDescription>Have Nurse warn the player when Vitals are critical</shortDescription>\r\n
+      \     <longDescription />\r\n    </CaseConfigOption>\r\n    <CaseConfigOption>\r\n
+      \     <Name>MissingXrayTech</Name>\r\n      <Prefab>MissingXrayTech</Prefab>\r\n
+      \     <Enabled>false</Enabled>\r\n      <PrefabWhenDisabled />\r\n      <shortDescription>Delay
+      availability of Xrays by 10 minutes</shortDescription>\r\n      <longDescription
+      />\r\n      <param>\r\n        <string>XrayTech.delay=600</string>\r\n      </param>\r\n
+      \   </CaseConfigOption>\r\n  </options>\r\n  <start>\r\n    <HR>-1</HR>\r\n
+      \   <BPSYS>-1</BPSYS>\r\n    <BPDIA>-1</BPDIA>\r\n    <SP>-1</SP>\r\n    <TEMP>-1</TEMP>\r\n
+      \   <RESP>-1</RESP>\r\n  </start>\r\n  <end>\r\n    <HR>-1</HR>\r\n    <BPSYS>-1</BPSYS>\r\n
+      \   <BPDIA>-1</BPDIA>\r\n    <SP>-1</SP>\r\n    <TEMP>-1</TEMP>\r\n    <RESP>-1</RESP>\r\n
+      \ </end>\r\n  <injury>\r\n    <Name>Tension Pneumo</Name>\r\n    <Prefab>TensionPneumoPrimaryPrefab</Prefab>\r\n
+      \   <SecondaryOptions>\r\n      <CaseConfigOption>\r\n        <Name>Pelvic Fracture</Name>\r\n
+      \       <Prefab>PelvicFracturePrefab</Prefab>\r\n        <Enabled>true</Enabled>\r\n
+      \       <PrefabWhenDisabled />\r\n        <shortDescription />\r\n        <longDescription
+      />\r\n      </CaseConfigOption>\r\n    </SecondaryOptions>\r\n  </injury>\r\n
+      \ <timeOfDeath>10</timeOfDeath>\r\n  <caseThumbnail>thumbnail01</caseThumbnail>\r\n
+      \ <changed>false</changed>\r\n  <template>false</template>\r\n  <users>\r\n
+      \   <string>tariq</string>\r\n    <string>rob</string>\r\n    <string>phil</string>\r\n
+      \   <string>hilda</string>\r\n    <string>guest</string>\r\n    <string>craig</string>\r\n
+      \ </users>\r\n</CaseOptionData>"
+  - command: loadCase
+    param1: MVA Rollover
+    param2: 
+    data: "<?xml version=\"1.0\" encoding=\"us-ascii\"?>\r\n<CaseOptionData xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+      xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <owner>guest</owner>\r\n
+      \ <name />\r\n  <age />\r\n  <gender>male</gender>\r\n  <bloodtype>n/a</bloodtype>\r\n
+      \ <caseDescription>A 32 Year old Female driver was involved in a multi-vehicle
+      car accident traveling at 65 mph that resulted in a vehicle roll over. EMTs
+      have the patient boarded and collared and are a few minutes out.</caseDescription>\r\n
+      \ <description>Saturday, 3:14am</description>\r\n  <casename>MVA Rollover</casename>\r\n
+      \ <loadedCase>MVA Rollover</loadedCase>\r\n  <baseConfig>\r\n    <Name>Trauma_BasePrefab</Name>\r\n
+      \   <Prefab>Trauma_BasePrefab</Prefab>\r\n    <Enabled>true</Enabled>\r\n    <PrefabWhenDisabled
+      />\r\n    <shortDescription />\r\n    <longDescription />\r\n    <param />\r\n
+      \ </baseConfig>\r\n  <options>\r\n    <CaseConfigOption>\r\n      <Name>BadAirway</Name>\r\n
+      \     <Prefab>BadAirway</Prefab>\r\n      <Enabled>false</Enabled>\r\n      <PrefabWhenDisabled
+      />\r\n      <shortDescription>Patient has bad airway at start</shortDescription>\r\n
+      \     <longDescription />\r\n    </CaseConfigOption>\r\n    <CaseConfigOption>\r\n
+      \     <Name>PatientVomitsInitially</Name>\r\n      <Prefab>PatientVomitsInitially</Prefab>\r\n
+      \     <Enabled>true</Enabled>\r\n      <PrefabWhenDisabled />\r\n      <shortDescription>Patient
+      vomits quickly if not intubated</shortDescription>\r\n      <longDescription
+      />\r\n      <param>\r\n        <string>DelayBeforeVomiting=90</string>\r\n      </param>\r\n
+      \   </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>Bradycardia</Name>\r\n
+      \     <Prefab>Bradycardia</Prefab>\r\n      <Enabled>true</Enabled>\r\n      <PrefabWhenDisabled
+      />\r\n      <shortDescription>Patient becomes Bradycardic unless SAO2 is verified
+      after ventilation</shortDescription>\r\n      <longDescription />\r\n      <param>\r\n
+      \       <string>DelayBeforeCrash=120</string>\r\n      </param>\r\n    </CaseConfigOption>\r\n
+      \   <CaseConfigOption>\r\n      <Name>CuffError</Name>\r\n      <Prefab>CuffError</Prefab>\r\n
+      \     <Enabled>false</Enabled>\r\n      <PrefabWhenDisabled />\r\n      <shortDescription>AutoBP
+      reads Cuff Error if not manually verified</shortDescription>\r\n      <longDescription
+      />\r\n      <param>\r\n        <string>DelayBeforeError=60</string>\r\n      </param>\r\n
+      \   </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>CombativePatient</Name>\r\n
+      \     <Prefab>CombativePatient</Prefab>\r\n      <Enabled>true</Enabled>\r\n
+      \     <PrefabWhenDisabled />\r\n      <shortDescription>Patient becomes combative
+      if not sedated</shortDescription>\r\n      <longDescription />\r\n    </CaseConfigOption>\r\n
+      \   <CaseConfigOption>\r\n      <Name>FASTDelayed</Name>\r\n      <Prefab>FASTDelayed</Prefab>\r\n
+      \     <Enabled>false</Enabled>\r\n      <PrefabWhenDisabled>FASTAvailable</PrefabWhenDisabled>\r\n
+      \     <shortDescription>The FAST Ultrasound is in use and delayed for 10 minutes.</shortDescription>\r\n
+      \     <longDescription />\r\n      <param>\r\n        <string>FASTDelay.delay=600</string>\r\n
+      \     </param>\r\n    </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>VentilatorError</Name>\r\n
+      \     <Prefab>VentilatorError</Prefab>\r\n      <Enabled>true</Enabled>\r\n
+      \     <PrefabWhenDisabled />\r\n      <shortDescription>Ventilator is incorrectly
+      set at 40% when connected</shortDescription>\r\n      <longDescription />\r\n
+      \   </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>PelvicBleeding</Name>\r\n
+      \     <Prefab>PelvicBleeding</Prefab>\r\n      <Enabled>true</Enabled>\r\n      <PrefabWhenDisabled
+      />\r\n      <shortDescription>Patient has Pelvic Fracture and internal bleeding</shortDescription>\r\n
+      \     <longDescription />\r\n    </CaseConfigOption>\r\n    <CaseConfigOption>\r\n
+      \     <Name>CardiacArrest</Name>\r\n      <Prefab>CardiacArrest</Prefab>\r\n
+      \     <Enabled>false</Enabled>\r\n      <PrefabWhenDisabled />\r\n      <shortDescription>Patient
+      enters Cardiac Arrest and can be Defibrillated</shortDescription>\r\n      <longDescription
+      />\r\n      <param>\r\n        <string>Equipment=Zoll</string>\r\n      </param>\r\n
+      \   </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>ExternalBleeding</Name>\r\n
+      \     <Prefab>ExternalBleeding</Prefab>\r\n      <Enabled>false</Enabled>\r\n
+      \     <PrefabWhenDisabled />\r\n      <shortDescription>Patient is bleeding
+      externally</shortDescription>\r\n      <longDescription />\r\n    </CaseConfigOption>\r\n
+      \   <CaseConfigOption>\r\n      <Name>ConnectMonitor</Name>\r\n      <Prefab>ConnectMonitor</Prefab>\r\n
+      \     <Enabled>false</Enabled>\r\n      <PrefabWhenDisabled />\r\n      <shortDescription>Primary
+      Nurse connects Vitals Monitor</shortDescription>\r\n      <longDescription />\r\n
+      \   </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>VerbalWarnings</Name>\r\n
+      \     <Prefab>VerbalWarnings</Prefab>\r\n      <Enabled>true</Enabled>\r\n      <PrefabWhenDisabled
+      />\r\n      <shortDescription>Have Nurse warn the player when Vitals are critical</shortDescription>\r\n
+      \     <longDescription />\r\n    </CaseConfigOption>\r\n    <CaseConfigOption>\r\n
+      \     <Name>MissingXrayTech</Name>\r\n      <Prefab>MissingXrayTech</Prefab>\r\n
+      \     <Enabled>false</Enabled>\r\n      <PrefabWhenDisabled />\r\n      <shortDescription>Delay
+      availability of Xrays by 10 minutes</shortDescription>\r\n      <longDescription
+      />\r\n      <param>\r\n        <string>XrayTech.delay=600</string>\r\n      </param>\r\n
+      \   </CaseConfigOption>\r\n  </options>\r\n  <team />\r\n  <start>\r\n    <HR>-1</HR>\r\n
+      \   <BPSYS>-1</BPSYS>\r\n    <BPDIA>-1</BPDIA>\r\n    <SP>-1</SP>\r\n    <TEMP>-1</TEMP>\r\n
+      \   <RESP>-1</RESP>\r\n  </start>\r\n  <end>\r\n    <HR>-1</HR>\r\n    <BPSYS>-1</BPSYS>\r\n
+      \   <BPDIA>-1</BPDIA>\r\n    <SP>-1</SP>\r\n    <TEMP>-1</TEMP>\r\n    <RESP>-1</RESP>\r\n
+      \ </end>\r\n  <injury>\r\n    <Name>Splenic Injury</Name>\r\n    <Prefab>SplenicInjuryPrimaryPrefab</Prefab>\r\n
+      \   <SecondaryOptions>\r\n      <CaseConfigOption>\r\n        <Name>Pelvic Fracture</Name>\r\n
+      \       <Prefab>PelvicFracturePrefab</Prefab>\r\n        <Enabled>true</Enabled>\r\n
+      \       <PrefabWhenDisabled />\r\n        <shortDescription />\r\n        <longDescription
+      />\r\n      </CaseConfigOption>\r\n      <CaseConfigOption>\r\n        <Name>Head
+      Contusion</Name>\r\n        <Prefab>HeadContusionPrefab</Prefab>\r\n        <Enabled>true</Enabled>\r\n
+      \       <PrefabWhenDisabled />\r\n        <shortDescription />\r\n        <longDescription
+      />\r\n      </CaseConfigOption>\r\n    </SecondaryOptions>\r\n  </injury>\r\n
+      \ <timeOfDeath>10</timeOfDeath>\r\n  <caseThumbnail>thumbnail01</caseThumbnail>\r\n
+      \ <changed>true</changed>\r\n  <template>false</template>\r\n  <users>\r\n    <string>tariq</string>\r\n
+      \   <string>rob</string>\r\n    <string>phil</string>\r\n    <string>johanny@medstar.net</string>\r\n
+      \   <string>hilda</string>\r\n    <string>hildaKafilda</string>\r\n    <string>T-Bird</string>\r\n
+      \   <string>guest</string>\r\n    <string>craig</string>\r\n  </users>\r\n</CaseOptionData>"
+  - command: loadCase
+    param1: Rock Climbing Fall
+    param2: 
+    data: "<?xml version=\"1.0\" encoding=\"us-ascii\"?>\r\n<CaseOptionData xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+      xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <owner>guest</owner>\r\n
+      \ <name />\r\n  <gender>male</gender>\r\n  <bloodtype>n/a</bloodtype>\r\n  <caseDescription>A
+      26 year old female had a fall while rock climbing.  She was unconscious on the
+      scene and during transport. She is otherwise healthy, takes no meds and has
+      no allergies according to her climbing partner.</caseDescription>\r\n  <description>Friday,
+      5:12pm</description>\r\n  <casename>Rock Climbing Fall</casename>\r\n  <loadedCase>Cliff
+      Climbing Fall</loadedCase>\r\n  <baseConfig>\r\n    <Name>Trauma_BasePrefab</Name>\r\n
+      \   <Prefab>Trauma_BasePrefab</Prefab>\r\n    <Enabled>true</Enabled>\r\n    <PrefabWhenDisabled
+      />\r\n    <shortDescription />\r\n    <longDescription />\r\n  </baseConfig>\r\n
+      \ <options>\r\n    <CaseConfigOption>\r\n      <Name>BadAirway</Name>\r\n      <Prefab>BadAirway</Prefab>\r\n
+      \     <Enabled>false</Enabled>\r\n      <PrefabWhenDisabled />\r\n      <shortDescription>Patient
+      has bad airway at start</shortDescription>\r\n      <longDescription />\r\n
+      \   </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>PatientVomitsInitially</Name>\r\n
+      \     <Prefab>PatientVomitsInitially</Prefab>\r\n      <Enabled>false</Enabled>\r\n
+      \     <PrefabWhenDisabled />\r\n      <shortDescription>Patient vomits quickly
+      if not intubated</shortDescription>\r\n      <longDescription />\r\n      <param>\r\n
+      \       <string>DelayBeforeVomiting=90</string>\r\n      </param>\r\n    </CaseConfigOption>\r\n
+      \   <CaseConfigOption>\r\n      <Name>Bradycardia</Name>\r\n      <Prefab>Bradycardia</Prefab>\r\n
+      \     <Enabled>false</Enabled>\r\n      <PrefabWhenDisabled />\r\n      <shortDescription>Patient
+      becomes Bradycardic unless SAO2 is verified after ventilation</shortDescription>\r\n
+      \     <longDescription />\r\n      <param>\r\n        <string>DelayBeforeCrash=120</string>\r\n
+      \     </param>\r\n    </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>CuffError</Name>\r\n
+      \     <Prefab>CuffError</Prefab>\r\n      <Enabled>false</Enabled>\r\n      <PrefabWhenDisabled
+      />\r\n      <shortDescription>AutoBP reads Cuff Error if not manually verified</shortDescription>\r\n
+      \     <longDescription />\r\n      <param>\r\n        <string>DelayBeforeError=60</string>\r\n
+      \     </param>\r\n    </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>CombativePatient</Name>\r\n
+      \     <Prefab>CombativePatient</Prefab>\r\n      <Enabled>false</Enabled>\r\n
+      \     <PrefabWhenDisabled />\r\n      <shortDescription>Patient becomes combative
+      if not sedated</shortDescription>\r\n      <longDescription />\r\n    </CaseConfigOption>\r\n
+      \   <CaseConfigOption>\r\n      <Name>FASTDelayed</Name>\r\n      <Prefab>FASTDelayed</Prefab>\r\n
+      \     <Enabled>false</Enabled>\r\n      <PrefabWhenDisabled>FASTAvailable</PrefabWhenDisabled>\r\n
+      \     <shortDescription>The FAST Ultrasound is in use and delayed for 10 minutes.</shortDescription>\r\n
+      \     <longDescription />\r\n      <param>\r\n        <string>FASTDelay.delay=600</string>\r\n
+      \     </param>\r\n    </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>VentilatorError</Name>\r\n
+      \     <Prefab>VentilatorError</Prefab>\r\n      <Enabled>false</Enabled>\r\n
+      \     <PrefabWhenDisabled />\r\n      <shortDescription>Ventilator is incorrectly
+      set at 40% when connected</shortDescription>\r\n      <longDescription />\r\n
+      \   </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>PelvicBleeding</Name>\r\n
+      \     <Prefab>PelvicBleeding</Prefab>\r\n      <Enabled>false</Enabled>\r\n
+      \     <PrefabWhenDisabled />\r\n      <shortDescription>Patient has Pelvic Fracture
+      and internal bleeding</shortDescription>\r\n      <longDescription />\r\n    </CaseConfigOption>\r\n
+      \   <CaseConfigOption>\r\n      <Name>CardiacArrest</Name>\r\n      <Prefab>CardiacArrest</Prefab>\r\n
+      \     <Enabled>false</Enabled>\r\n      <PrefabWhenDisabled />\r\n      <shortDescription>Patient
+      enters Cardiac Arrest and can be Defibrillated</shortDescription>\r\n      <longDescription
+      />\r\n      <param>\r\n        <string>Equipment=Zoll</string>\r\n      </param>\r\n
+      \   </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>ExternalBleeding</Name>\r\n
+      \     <Prefab>ExternalBleeding</Prefab>\r\n      <Enabled>false</Enabled>\r\n
+      \     <PrefabWhenDisabled />\r\n      <shortDescription>Patient is bleeding
+      externally</shortDescription>\r\n      <longDescription />\r\n    </CaseConfigOption>\r\n
+      \   <CaseConfigOption>\r\n      <Name>ConnectMonitor</Name>\r\n      <Prefab>ConnectMonitor</Prefab>\r\n
+      \     <Enabled>false</Enabled>\r\n      <PrefabWhenDisabled />\r\n      <shortDescription>Primary
+      Nurse connects Vitals Monitor</shortDescription>\r\n      <longDescription />\r\n
+      \   </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>VerbalWarnings</Name>\r\n
+      \     <Prefab>VerbalWarnings</Prefab>\r\n      <Enabled>true</Enabled>\r\n      <PrefabWhenDisabled
+      />\r\n      <shortDescription>Have Nurse warn the player when Vitals are critical</shortDescription>\r\n
+      \     <longDescription />\r\n    </CaseConfigOption>\r\n    <CaseConfigOption>\r\n
+      \     <Name>MissingXrayTech</Name>\r\n      <Prefab>MissingXrayTech</Prefab>\r\n
+      \     <Enabled>false</Enabled>\r\n      <PrefabWhenDisabled />\r\n      <shortDescription>Delay
+      availability of Xrays by 10 minutes</shortDescription>\r\n      <longDescription
+      />\r\n      <param>\r\n        <string>XrayTech.delay=600</string>\r\n      </param>\r\n
+      \   </CaseConfigOption>\r\n  </options>\r\n  <start>\r\n    <HR>125</HR>\r\n
+      \   <BPSYS>130</BPSYS>\r\n    <BPDIA>88</BPDIA>\r\n    <SP>93</SP>\r\n    <TEMP>-1</TEMP>\r\n
+      \   <RESP>-1</RESP>\r\n  </start>\r\n  <end>\r\n    <HR>150</HR>\r\n    <BPSYS>60</BPSYS>\r\n
+      \   <BPDIA>40</BPDIA>\r\n    <SP>80</SP>\r\n    <TEMP>-1</TEMP>\r\n    <RESP>-1</RESP>\r\n
+      \ </end>\r\n  <injury>\r\n    <Name>Trauma Case 4</Name>\r\n    <Prefab>Trauma04PrimaryPrefab</Prefab>\r\n
+      \   <SecondaryOptions />\r\n  </injury>\r\n  <timeOfDeath>10</timeOfDeath>\r\n
+      \ <caseThumbnail>thumbnail01</caseThumbnail>\r\n  <changed>true</changed>\r\n
+      \ <template>false</template>\r\n  <users />\r\n</CaseOptionData>"
+  - command: loadCase
+    param1: Thrown From Horse
+    param2: 
+    data: "<?xml version=\"1.0\" encoding=\"us-ascii\"?>\r\n<CaseOptionData xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+      xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <owner>guest</owner>\r\n
+      \ <name />\r\n  <gender>male</gender>\r\n  <bloodtype>n/a</bloodtype>\r\n  <caseDescription>A
+      33 year old male was thrown from a horse. He is alert and responding to questioning.
+      His injuries are unknown.</caseDescription>\r\n  <description>Friday, 3:56p</description>\r\n
+      \ <casename>Thrown From Horse</casename>\r\n  <loadedCase>Thrown From Horse</loadedCase>\r\n
+      \ <baseConfig>\r\n    <Name>Trauma_BasePrefab</Name>\r\n    <Prefab>Trauma_BasePrefab</Prefab>\r\n
+      \   <Enabled>true</Enabled>\r\n    <PrefabWhenDisabled />\r\n    <shortDescription
+      />\r\n    <longDescription />\r\n  </baseConfig>\r\n  <options>\r\n    <CaseConfigOption>\r\n
+      \     <Name>BadAirway</Name>\r\n      <Prefab>BadAirway</Prefab>\r\n      <Enabled>false</Enabled>\r\n
+      \     <PrefabWhenDisabled />\r\n      <shortDescription>Patient has bad airway
+      at start</shortDescription>\r\n      <longDescription />\r\n    </CaseConfigOption>\r\n
+      \   <CaseConfigOption>\r\n      <Name>PatientVomitsInitially</Name>\r\n      <Prefab>PatientVomitsInitially</Prefab>\r\n
+      \     <Enabled>false</Enabled>\r\n      <PrefabWhenDisabled />\r\n      <shortDescription>Patient
+      vomits quickly if not intubated</shortDescription>\r\n      <longDescription
+      />\r\n      <param>\r\n        <string>DelayBeforeVomiting=90</string>\r\n      </param>\r\n
+      \   </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>Bradycardia</Name>\r\n
+      \     <Prefab>Bradycardia</Prefab>\r\n      <Enabled>false</Enabled>\r\n      <PrefabWhenDisabled
+      />\r\n      <shortDescription>Patient becomes Bradycardic unless SAO2 is verified
+      after ventilation</shortDescription>\r\n      <longDescription />\r\n      <param>\r\n
+      \       <string>DelayBeforeCrash=120</string>\r\n      </param>\r\n    </CaseConfigOption>\r\n
+      \   <CaseConfigOption>\r\n      <Name>CuffError</Name>\r\n      <Prefab>CuffError</Prefab>\r\n
+      \     <Enabled>false</Enabled>\r\n      <PrefabWhenDisabled />\r\n      <shortDescription>AutoBP
+      reads Cuff Error if not manually verified</shortDescription>\r\n      <longDescription
+      />\r\n      <param>\r\n        <string>DelayBeforeError=60</string>\r\n      </param>\r\n
+      \   </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>CombativePatient</Name>\r\n
+      \     <Prefab>CombativePatient</Prefab>\r\n      <Enabled>false</Enabled>\r\n
+      \     <PrefabWhenDisabled />\r\n      <shortDescription>Patient becomes combative
+      if not sedated</shortDescription>\r\n      <longDescription />\r\n    </CaseConfigOption>\r\n
+      \   <CaseConfigOption>\r\n      <Name>FASTDelayed</Name>\r\n      <Prefab>FASTDelayed</Prefab>\r\n
+      \     <Enabled>false</Enabled>\r\n      <PrefabWhenDisabled>FASTAvailable</PrefabWhenDisabled>\r\n
+      \     <shortDescription>The FAST Ultrasound is in use and delayed for 10 minutes.</shortDescription>\r\n
+      \     <longDescription />\r\n      <param>\r\n        <string>FASTDelay.delay=600</string>\r\n
+      \     </param>\r\n    </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>VentilatorError</Name>\r\n
+      \     <Prefab>VentilatorError</Prefab>\r\n      <Enabled>false</Enabled>\r\n
+      \     <PrefabWhenDisabled />\r\n      <shortDescription>Ventilator is incorrectly
+      set at 40% when connected</shortDescription>\r\n      <longDescription />\r\n
+      \   </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>PelvicBleeding</Name>\r\n
+      \     <Prefab>PelvicBleeding</Prefab>\r\n      <Enabled>false</Enabled>\r\n
+      \     <PrefabWhenDisabled />\r\n      <shortDescription>Patient has Pelvic Fracture
+      and internal bleeding</shortDescription>\r\n      <longDescription />\r\n    </CaseConfigOption>\r\n
+      \   <CaseConfigOption>\r\n      <Name>CardiacArrest</Name>\r\n      <Prefab>CardiacArrest</Prefab>\r\n
+      \     <Enabled>false</Enabled>\r\n      <PrefabWhenDisabled />\r\n      <shortDescription>Patient
+      enters Cardiac Arrest and can be Defibrillated</shortDescription>\r\n      <longDescription
+      />\r\n      <param>\r\n        <string>Equipment=Zoll</string>\r\n      </param>\r\n
+      \   </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>ExternalBleeding</Name>\r\n
+      \     <Prefab>ExternalBleeding</Prefab>\r\n      <Enabled>false</Enabled>\r\n
+      \     <PrefabWhenDisabled />\r\n      <shortDescription>Patient is bleeding
+      externally</shortDescription>\r\n      <longDescription />\r\n    </CaseConfigOption>\r\n
+      \   <CaseConfigOption>\r\n      <Name>ConnectMonitor</Name>\r\n      <Prefab>ConnectMonitor</Prefab>\r\n
+      \     <Enabled>false</Enabled>\r\n      <PrefabWhenDisabled />\r\n      <shortDescription>Primary
+      Nurse connects Vitals Monitor</shortDescription>\r\n      <longDescription />\r\n
+      \   </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>VerbalWarnings</Name>\r\n
+      \     <Prefab>VerbalWarnings</Prefab>\r\n      <Enabled>true</Enabled>\r\n      <PrefabWhenDisabled
+      />\r\n      <shortDescription>Have Nurse warn the player when Vitals are critical</shortDescription>\r\n
+      \     <longDescription />\r\n    </CaseConfigOption>\r\n    <CaseConfigOption>\r\n
+      \     <Name>MissingXrayTech</Name>\r\n      <Prefab>MissingXrayTech</Prefab>\r\n
+      \     <Enabled>false</Enabled>\r\n      <PrefabWhenDisabled />\r\n      <shortDescription>Delay
+      availability of Xrays by 10 minutes</shortDescription>\r\n      <longDescription
+      />\r\n      <param>\r\n        <string>XrayTech.delay=600</string>\r\n      </param>\r\n
+      \   </CaseConfigOption>\r\n  </options>\r\n  <start>\r\n    <HR>128</HR>\r\n
+      \   <BPSYS>135</BPSYS>\r\n    <BPDIA>95</BPDIA>\r\n    <SP>95</SP>\r\n    <TEMP>-1</TEMP>\r\n
+      \   <RESP>-1</RESP>\r\n  </start>\r\n  <end>\r\n    <HR>128</HR>\r\n    <BPSYS>135</BPSYS>\r\n
+      \   <BPDIA>95</BPDIA>\r\n    <SP>95</SP>\r\n    <TEMP>-1</TEMP>\r\n    <RESP>-1</RESP>\r\n
+      \ </end>\r\n  <injury>\r\n    <Name>Trauma Case 2</Name>\r\n    <Prefab>Trauma02PrimaryPrefab</Prefab>\r\n
+      \   <SecondaryOptions />\r\n  </injury>\r\n  <timeOfDeath>10</timeOfDeath>\r\n
+      \ <caseThumbnail>thumbnail02</caseThumbnail>\r\n  <changed>true</changed>\r\n
+      \ <template>false</template>\r\n  <users>\r\n    <string>tariq</string>\r\n
+      \   <string>rob</string>\r\n    <string>phil</string>\r\n    <string>hilda</string>\r\n
+      \   <string>guest</string>\r\n    <string>craig</string>\r\n  </users>\r\n</CaseOptionData>"
+  - command: loadCase
+    param1: Tutorial
+    param2: 
+    data: "<?xml version=\"1.0\" encoding=\"Windows-1252\"?>\r\n<CaseOptionData xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+      xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <owner>rob</owner>\r\n
+      \ <name />\r\n  <gender>male</gender>\r\n  <bloodtype>n/a</bloodtype>\r\n  <caseDescription>tutorial
+      scene</caseDescription>\r\n  <description>Trauma Training Tutorial</description>\r\n
+      \ <casename>Tutorial</casename>\r\n  <loadedCase>Tutorial</loadedCase>\r\n  <baseConfig>\r\n
+      \   <Name>Trauma_BasePrefab</Name>\r\n    <Prefab>Trauma_BasePrefab</Prefab>\r\n
+      \   <Enabled>true</Enabled>\r\n    <PrefabWhenDisabled />\r\n    <shortDescription
+      />\r\n    <longDescription />\r\n  </baseConfig>\r\n  <options>\r\n    <CaseConfigOption>\r\n
+      \     <Name>BadAirway</Name>\r\n      <Prefab>BadAirway</Prefab>\r\n      <Enabled>false</Enabled>\r\n
+      \     <PrefabWhenDisabled />\r\n      <shortDescription>Patient has bad airway
+      at start</shortDescription>\r\n      <longDescription />\r\n    </CaseConfigOption>\r\n
+      \   <CaseConfigOption>\r\n      <Name>PatientVomitsInitially</Name>\r\n      <Prefab>PatientVomitsInitially</Prefab>\r\n
+      \     <Enabled>false</Enabled>\r\n      <PrefabWhenDisabled />\r\n      <shortDescription>Patient
+      vomits quickly if not intubated</shortDescription>\r\n      <longDescription
+      />\r\n      <param>\r\n        <string>DelayBeforeVomiting=90</string>\r\n      </param>\r\n
+      \   </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>Bradycardia</Name>\r\n
+      \     <Prefab>Bradycardia</Prefab>\r\n      <Enabled>false</Enabled>\r\n      <PrefabWhenDisabled
+      />\r\n      <shortDescription>Patient becomes Bradycardic unless SAO2 is verified
+      after ventilation</shortDescription>\r\n      <longDescription />\r\n      <param>\r\n
+      \       <string>DelayBeforeCrash=120</string>\r\n      </param>\r\n    </CaseConfigOption>\r\n
+      \   <CaseConfigOption>\r\n      <Name>CuffError</Name>\r\n      <Prefab>CuffError</Prefab>\r\n
+      \     <Enabled>false</Enabled>\r\n      <PrefabWhenDisabled />\r\n      <shortDescription>AutoBP
+      reads Cuff Error if not manually verified</shortDescription>\r\n      <longDescription
+      />\r\n      <param>\r\n        <string>DelayBeforeError=60</string>\r\n      </param>\r\n
+      \   </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>CombativePatient</Name>\r\n
+      \     <Prefab>CombativePatient</Prefab>\r\n      <Enabled>false</Enabled>\r\n
+      \     <PrefabWhenDisabled />\r\n      <shortDescription>Patient becomes combative
+      if not sedated</shortDescription>\r\n      <longDescription />\r\n    </CaseConfigOption>\r\n
+      \   <CaseConfigOption>\r\n      <Name>FASTDelayed</Name>\r\n      <Prefab>FASTDelayed</Prefab>\r\n
+      \     <Enabled>false</Enabled>\r\n      <PrefabWhenDisabled>FASTAvailable</PrefabWhenDisabled>\r\n
+      \     <shortDescription>The FAST Ultrasound is in use and delayed for 10 minutes.</shortDescription>\r\n
+      \     <longDescription />\r\n      <param>\r\n        <string>FASTDelay.delay=600</string>\r\n
+      \     </param>\r\n    </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>VentilatorError</Name>\r\n
+      \     <Prefab>VentilatorError</Prefab>\r\n      <Enabled>false</Enabled>\r\n
+      \     <PrefabWhenDisabled />\r\n      <shortDescription>Ventilator is incorrectly
+      set at 40% when connected</shortDescription>\r\n      <longDescription />\r\n
+      \   </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>PelvicBleeding</Name>\r\n
+      \     <Prefab>PelvicBleeding</Prefab>\r\n      <Enabled>false</Enabled>\r\n
+      \     <PrefabWhenDisabled />\r\n      <shortDescription>Patient has Pelvic Fracture
+      and internal bleeding</shortDescription>\r\n      <longDescription />\r\n    </CaseConfigOption>\r\n
+      \   <CaseConfigOption>\r\n      <Name>CardiacArrest</Name>\r\n      <Prefab>CardiacArrest</Prefab>\r\n
+      \     <Enabled>false</Enabled>\r\n      <PrefabWhenDisabled />\r\n      <shortDescription>Patient
+      enters Cardiac Arrest and can be Defibrillated</shortDescription>\r\n      <longDescription
+      />\r\n      <param>\r\n        <string>Equipment=Zoll</string>\r\n      </param>\r\n
+      \   </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>ExternalBleeding</Name>\r\n
+      \     <Prefab>ExternalBleeding</Prefab>\r\n      <Enabled>false</Enabled>\r\n
+      \     <PrefabWhenDisabled />\r\n      <shortDescription>Patient is bleeding
+      externally</shortDescription>\r\n      <longDescription />\r\n    </CaseConfigOption>\r\n
+      \   <CaseConfigOption>\r\n      <Name>ConnectMonitor</Name>\r\n      <Prefab>ConnectMonitor</Prefab>\r\n
+      \     <Enabled>false</Enabled>\r\n      <PrefabWhenDisabled />\r\n      <shortDescription>Primary
+      Nurse connects Vitals Monitor</shortDescription>\r\n      <longDescription />\r\n
+      \   </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>VerbalWarnings</Name>\r\n
+      \     <Prefab>VerbalWarnings</Prefab>\r\n      <Enabled>false</Enabled>\r\n
+      \     <PrefabWhenDisabled />\r\n      <shortDescription>Have Nurse warn the
+      player when Vitals are critical</shortDescription>\r\n      <longDescription
+      />\r\n    </CaseConfigOption>\r\n    <CaseConfigOption>\r\n      <Name>MissingXrayTech</Name>\r\n
+      \     <Prefab>MissingXrayTech</Prefab>\r\n      <Enabled>false</Enabled>\r\n
+      \     <PrefabWhenDisabled />\r\n      <shortDescription>Delay availability of
+      Xrays by 10 minutes</shortDescription>\r\n      <longDescription />\r\n      <param>\r\n
+      \       <string>XrayTech.delay=600</string>\r\n      </param>\r\n    </CaseConfigOption>\r\n
+      \ </options>\r\n  <start>\r\n    <HR>-1</HR>\r\n    <BPSYS>-1</BPSYS>\r\n    <BPDIA>-1</BPDIA>\r\n
+      \   <SP>-1</SP>\r\n    <TEMP>-1</TEMP>\r\n    <RESP>-1</RESP>\r\n  </start>\r\n
+      \ <end>\r\n    <HR>-1</HR>\r\n    <BPSYS>-1</BPSYS>\r\n    <BPDIA>-1</BPDIA>\r\n
+      \   <SP>-1</SP>\r\n    <TEMP>-1</TEMP>\r\n    <RESP>-1</RESP>\r\n  </end>\r\n
+      \ <injury>\r\n    <Name>Tutorial</Name>\r\n    <Prefab>TutorialPrimaryPrefab</Prefab>\r\n
+      \   <SecondaryOptions />\r\n  </injury>\r\n  <timeOfDeath>10</timeOfDeath>\r\n
+      \ <caseThumbnail>thumbnail02</caseThumbnail>\r\n  <changed>false</changed>\r\n
+      \ <template>false</template>\r\n  <users>\r\n    <string>tariq</string>\r\n
+      \   <string>rob</string>\r\n    <string>phil</string>\r\n    <string>johanny@medstar.net</string>\r\n
+      \   <string>hilda</string>\r\n    <string>hildaKafilda</string>\r\n    <string>T-Bird</string>\r\n
+      \   <string>guest</string>\r\n    <string>craig</string>\r\n    <string>imsh</string>\r\n
+      \   <string>admin</string>\r\n    <string>craig.stevenson@email.sitel.org</string>\r\n
+      \ </users>\r\n</CaseOptionData>"
+  CachedMovieTextures:
+  - url: http://unity.sitelms.org/video/trauma05.opening.ogv
+    movie: {fileID: 15200000, guid: 26afcbe85130e8143b79dfef8a188ab0, type: 3}
+  - url: http://unity.sitelms.org/video/fast.chest.normal.ogv
+    movie: {fileID: 15200000, guid: e543d834e9fd54016be5e5f1d7e99d70, type: 3}
+  - url: http://unity.sitelms.org/video/tamponadeTrue.ogv
+    movie: {fileID: 15200000, guid: e142d56f49122534380d69bdc226d2dd, type: 3}
+  - url: http://unity.sitelms.org/video/fast.pelvis.normal.ogv
+    movie: {fileID: 15200000, guid: cc47dbcebeeb54a448f80f1ba8b51e88, type: 3}
+  - url: http://unity.sitelms.org/video/fast.pelvic.male.positive.ogv
+    movie: {fileID: 15200000, guid: 1e2d05abc8e324dc6bc9294a723bc3d1, type: 3}
+  - url: http://unity.sitelms.org/video/fast.chest.normal.ogv
+    movie: {fileID: 15200000, guid: e543d834e9fd54016be5e5f1d7e99d70, type: 3}
+  - url: http://unity.sitelms.org/video/pericardiumTrue.ogv
+    movie: {fileID: 15200000, guid: aed8734a998cfba41add546d1d150835, type: 3}
+  - url: http://unity.sitelms.org/video/fast.perihepatic.ruq.normal.ogv
+    movie: {fileID: 15200000, guid: 93d2393bbc5fb46e18c151e3d55e46c0, type: 3}
+  - url: http://unity.sitelms.org/video/perihepaticTrue.ogv
+    movie: {fileID: 15200000, guid: 8f10a416e471eaf42ba061abb774fc84, type: 3}
+  - url: http://unity.sitelms.org/video/fast.perisplenic.luq.normal.ogv
+    movie: {fileID: 15200000, guid: 77fd0f70c90fe4d88b2b7ac89123fbac, type: 3}
+  - url: http://unity.sitelms.org/video/perisplenicTrue.ogv
+    movie: {fileID: 15200000, guid: 0022079b0678c814a96bde2d2b94f3aa, type: 3}
+  - url: http://unity.sitelms.org/video/trauma_intro_yellow.ogv
+    movie: {fileID: 15200000, guid: 35fe683096ed54df0b236669a82e1522, type: 3}
+  - url: http://unity.sitelms.org/video/t2_horseFall.ogv
+    movie: {fileID: 15200000, guid: 1d3debf7f52a34b2d9353aa02cd87014, type: 3}
+  - url: http://unity.sitelms.org/video/t3_drunkPed.ogv
+    movie: {fileID: 15200000, guid: 40b34d7468d814229aad832247b5669a, type: 3}
+  - url: http://unity.sitelms.org/video/t4_rockFall.ogv
+    movie: {fileID: 15200000, guid: 67e29ed58746440ae9458a97a7c4cb56, type: 3}
+  - url: http://unity.sitelms.org/video/t5_mvc.ogv
+    movie: {fileID: 15200000, guid: b44c0a4a0614040d392a516b067580b4, type: 3}
+--- !u!4 &444965210
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 400000, guid: 7dc805948651d3d47be59350bd290ad4, type: 2}
+  m_PrefabInternal: {fileID: 302558695}
+  m_GameObject: {fileID: 444965208}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.28438044, y: 1.94476724, z: -7.45516348}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &444965212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400002, guid: 7dc805948651d3d47be59350bd290ad4,
+    type: 2}
+  m_PrefabInternal: {fileID: 302558695}
+  m_GameObject: {fileID: 444965208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9379f03c3596f2478b59c9fd7b6f510, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useRecording: 1
+  playbackFailures: 1
+  logFailures: 1
+  micOpenSound: {fileID: 8300000, guid: 587b533bcc73ca74682cbf161395fe07, type: 3}
+  isActivated: 0
+  listening: 0
+  expectingResult: 0
+  micError: 0
+  unrecognizedClips: []
+  showdebug: 0
+  hasShownWarning: 0
+  debugString: 
+  inputMode: 1
+  GrammarFileName: /Resources/XML/TraumaGrammar.grxml
+  LanguageCode: 1033
+  RequiredConfidence: 0
+  phraseConfidence: 0
+  debugText: {fileID: 0}
+  useVoiceCommands: 0
+  iconStyle:
+    m_Name: 
+    m_Normal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Hover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Active:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Focused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnNormal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnHover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnActive:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnFocused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Border:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Margin:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Padding:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Overflow:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Font: {fileID: 0}
+    m_FontSize: 0
+    m_FontStyle: 0
+    m_Alignment: 0
+    m_WordWrap: 0
+    m_RichText: 1
+    m_TextClipping: 0
+    m_ImagePosition: 0
+    m_ContentOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
+    m_StretchWidth: 1
+    m_StretchHeight: 0
+  mutedTexture: {fileID: 2800000, guid: 74a501141d428894db726fa049cda596, type: 3}
+  listeningTexture: {fileID: 2800000, guid: 1b371f49fe9790e4f81303ad6dc9d904, type: 3}
+  talkingTexture: {fileID: 2800000, guid: cff99c097e3a86f409c555d78c04d0a0, type: 3}
+  busyTexture: {fileID: 2800000, guid: f873a9949b491f746942d08ad424c7f6, type: 3}
+  textSpoken: 
+  semanticPhrase: 
+--- !u!1 &2136396701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2136396705}
+  - 20: {fileID: 2136396704}
+  - 81: {fileID: 2136396703}
+  - 82: {fileID: 2136396702}
+  m_Layer: 0
+  m_Name: MainCamera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &2136396702
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2136396701}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+--- !u!81 &2136396703
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2136396701}
+  m_Enabled: 1
+--- !u!20 &2136396704
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2136396701}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: .192156866, g: .301960796, b: .474509805, a: .0196078438}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: .300000012
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_HDR: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: .0219999999
+--- !u!4 &2136396705
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2136396701}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.28438044, y: 1.94476724, z: -7.45516348}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1

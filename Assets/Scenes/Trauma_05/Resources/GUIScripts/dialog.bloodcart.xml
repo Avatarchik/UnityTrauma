@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScreenInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- The This is a template file describing a fast exam pop-up. It contains a titleBar, video area and close button. It should resize to appropriate dimensions
+	via internal c# code.-->
+  <Screens>
+    <GUIScreen>
+      
+      <type>BloodCartDialog</type>
+      <name>BloodCartDialog</name>
+      <skin>EquipmentDialogs</skin>
+      <style>bloodcart.drawer.background</style>
+      <anchor>centered</anchor>
+      <Elements>
+
+        <!-- Blood Drip Area -->
+        <Area>
+          <name>BloodDripArea</name>
+          <skin>EquipmentDialogs</skin>
+          <style>bloodcart.blooddrip.normal</style>
+          <anchor>relative</anchor>
+          <Elements>
+            <Horizontal>
+              <name>bloodDripCounter</name>
+              <skin>EquipmentDialogs</skin>
+              <style>Label</style>
+              <anchor>relative</anchor>
+              <Elements>
+                <Button>
+                  <name>bloodDripMinus</name>
+                  <skin>EquipmentDialogs</skin>
+                  <style>bloodcart.counter.minus</style>
+                  <text>-</text>
+                </Button>
+                <Label>
+                  <name>bloodDripCount</name>
+                  <skin>EquipmentDialogs</skin>
+                  <style>bloodcart.counter.count</style>
+                  <text>0</text>
+                </Label>
+                <Button>
+                  <name>bloodDripPlus</name>
+                  <skin>EquipmentDialogs</skin>
+                  <style>bloodcart.counter.plus</style>
+                  <text>+</text>
+                </Button>             
+              </Elements>
+            </Horizontal>
+          </Elements>
+        </Area>
+        <!-- Blood Drip Area -->
+        
+        
+        <!-- Blood Pressure Area -->
+        <Area>
+          <name>BloodPressureArea</name>
+          <skin>EquipmentDialogs</skin>
+          <style>bloodcart.bloodpressure.normal</style>
+          <anchor>relative</anchor>
+          <Elements>
+            <Horizontal>
+              <name>bloodPressureCounter</name>
+              <skin>EquipmentDialogs</skin>
+              <style>Label</style>
+              <anchor>relative</anchor>
+              <Elements>
+                <Button>
+                  <name>bloodPressureMinus</name>
+                  <skin>EquipmentDialogs</skin>
+                  <style>bloodcart.counter.minus</style>
+                  <text>-</text>
+                </Button>
+                <Label>
+                  <name>bloodPressureCount</name>
+                  <skin>EquipmentDialogs</skin>
+                  <style>bloodcart.counter.count</style>
+                  <text>0</text>
+                </Label>
+                <Button>
+                  <name>bloodPressurePlus</name>
+                  <skin>EquipmentDialogs</skin>
+                  <style>bloodcart.counter.plus</style>
+                  <text>+</text>
+                </Button>
+              </Elements>
+            </Horizontal>
+          </Elements>
+        </Area>
+        <!-- Blood Pressure Area -->
+
+        
+        <!-- Blood Rapid Infusion -->
+        <Area>
+          <name>BloodRapidArea</name>
+          <skin>EquipmentDialogs</skin>
+          <style>bloodcart.bloodrapid.normal</style>
+          <anchor>relative</anchor>
+          <Elements>
+            <Horizontal>
+              <name>bloodRapidCounter</name>
+              <skin>EquipmentDialogs</skin>
+              <style>Label</style>
+              <anchor>relative</anchor>
+              <Elements>
+                <Button>
+                  <name>bloodRapidMinus</name>
+                  <skin>EquipmentDialogs</skin>
+                  <style>bloodcart.counter.minus</style>
+                  <text>-</text>
+                </Button>
+                <Label>
+                  <name>bloodRapidCount</name>
+                  <skin>EquipmentDialogs</skin>
+                  <style>bloodcart.counter.count</style>
+                  <text>0</text>
+                </Label>
+                <Button>
+                  <name>bloodRapidPlus</name>
+                  <skin>EquipmentDialogs</skin>
+                  <style>bloodcart.counter.plus</style>
+                  <text>+</text>
+                </Button>
+              </Elements>
+            </Horizontal>
+          </Elements>
+        </Area>
+        <!-- Blood Rapid Infusion -->
+
+
+        <!-- Saline Rapid Drip -->
+        <Area>
+          <name>SalineDripArea</name>
+          <skin>EquipmentDialogs</skin>
+          <style>bloodcart.salinedrip.normal</style>
+          <anchor>relative</anchor>
+          <Elements>
+            <Horizontal>
+              <name>salineDripCounter</name>
+              <skin>EquipmentDialogs</skin>
+              <style>Label</style>
+              <anchor>relative</anchor>
+              <Elements>
+                <Button>
+                  <name>salineDripMinus</name>
+                  <skin>EquipmentDialogs</skin>
+                  <style>bloodcart.counter.minus</style>
+                  <text>-</text>
+                </Button>
+                <Label>
+                  <name>salineDripCount</name>
+                  <skin>EquipmentDialogs</skin>
+                  <style>bloodcart.counter.count</style>
+                  <text>0</text>
+                </Label>
+                <Button>
+                  <name>salineDripPlus</name>
+                  <skin>EquipmentDialogs</skin>
+                  <style>bloodcart.counter.plus</style>
+                  <text>+</text>
+                </Button>
+              </Elements>
+            </Horizontal>
+          </Elements>
+        </Area>
+        <!-- Saline Rapid Drip -->
+
+
+        <!-- Saline Pressure -->
+        <Area>
+          <name>SalinePressureArea</name>
+          <skin>EquipmentDialogs</skin>
+          <style>bloodcart.salinepressure.normal</style>
+          <anchor>relative</anchor>
+          <Elements>
+            <Horizontal>
+              <name>salinePressure</name>
+              <skin>EquipmentDialogs</skin>
+              <style>Label</style>
+              <anchor>relative</anchor>
+              <Elements>
+                <Button>
+                  <name>salinePressureMinus</name>
+                  <skin>EquipmentDialogs</skin>
+                  <style>bloodcart.counter.minus</style>
+                  <text>-</text>
+                </Button>
+                <Label>
+                  <name>salinePressureCount</name>
+                  <skin>EquipmentDialogs</skin>
+                  <style>bloodcart.counter.count</style>
+                  <text>0</text>
+                </Label>
+                <Button>
+                  <name>salinePressurePlus</name>
+                  <skin>EquipmentDialogs</skin>
+                  <style>bloodcart.counter.plus</style>
+                  <text>+</text>
+                </Button>
+              </Elements>
+            </Horizontal>
+          </Elements>
+        </Area>
+        <!-- Saline Pressure -->
+
+
+        <!-- Saline Rapid -->
+        <Area>
+          <name>SalineRapidArea</name>
+          <skin>EquipmentDialogs</skin>
+          <style>bloodcart.salinerapid.normal</style>
+          <anchor>relative</anchor>
+          <Elements>
+            <Horizontal>
+              <name>salineRapidCounter</name>
+              <skin>EquipmentDialogs</skin>
+              <style>Label</style>
+              <anchor>relative</anchor>
+              <Elements>
+                <Button>
+                  <name>salineRapidMinus</name>
+                  <skin>EquipmentDialogs</skin>
+                  <style>bloodcart.counter.minus</style>
+                  <text>-</text>
+                </Button>
+                <Label>
+                  <name>salineRapidCount</name>
+                  <skin>EquipmentDialogs</skin>
+                  <style>bloodcart.counter.count</style>
+                  <text>0</text>
+                </Label>
+                <Button>
+                  <name>salineRapidPlus</name>
+                  <skin>EquipmentDialogs</skin>
+                  <style>bloodcart.counter.plus</style>
+                  <text>+</text>
+                </Button>
+              </Elements>
+            </Horizontal>
+          </Elements>
+        </Area>
+        <!-- Saline Rapid -->
+        
+        
+        
+        
+
+        <!-- Cancel Button -->
+        <Area>
+          <name>button.area</name>
+          <skin>EquipmentDialogs</skin>
+          <style>Label</style>
+          <anchor>relative</anchor>
+          <Elements>
+            <Button>
+              <name>button.cancel</name>
+              <skin>EquipmentDialogs</skin>
+              <style>button.cancel</style>
+              <text>CANCEL</text>
+              <closeWindow>true</closeWindow>
+              <interactStatusMsg>CLOSE:DRAWER</interactStatusMsg>
+            </Button>
+          </Elements>
+        </Area>
+        <!-- Cancel Button -->
+
+        <!-- Order Button -->
+        <Area>
+          <name>button.area</name>
+          <skin>EquipmentDialogs</skin>
+          <style>Label</style>
+          <anchor>relative</anchor>
+          <Elements>
+            <Toggle>
+              <name>button.order</name>
+              <skin>EquipmentDialogs</skin>
+              <style>button.order.inactive</style>
+              <text>ORDER</text>
+              <interactStatusMsg>CLOSE:DRAWER</interactStatusMsg>
+            </Toggle>
+          </Elements>
+        </Area>
+        <!-- Order Button -->
+
+
+      </Elements>
+    </GUIScreen>
+  </Screens>
+</ScreenInfo>

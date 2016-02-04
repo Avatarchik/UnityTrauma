@@ -1,0 +1,788 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: IKExamHeadVision
+  serializedVersion: 4
+  m_AnimationType: 1
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: .324315131, z: 0, w: .945949078}
+        inSlope: {x: 0, y: .000300407381, z: 0, w: -.000103712075}
+        outSlope: {x: 0, y: .000300407381, z: 0, w: -.000103712075}
+        tangentMode: -559038737
+      - time: .833333194
+        value: {x: 0, y: .326441765, z: 0, w: .945217311}
+        inSlope: {x: 0, y: -.00765771419, z: 0, w: .00264466042}
+        outSlope: {x: 0, y: -.00765771419, z: 0, w: .00264466042}
+        tangentMode: -559038737
+      - time: 1.66666579
+        value: {x: 0, y: .307908863, z: 0, w: .951415837}
+        inSlope: {x: 0, y: -.0302428305, z: 0, w: .00978649594}
+        outSlope: {x: 0, y: -.0302428305, z: 0, w: .00978649594}
+        tangentMode: -559038737
+      - time: 2.49999833
+        value: {x: 0, y: .278239518, z: 0, w: .960511744}
+        inSlope: {x: 0, y: -.0400150195, z: 0, w: .0115907304}
+        outSlope: {x: 0, y: -.0400150195, z: 0, w: .0115907304}
+        tangentMode: -559038737
+      - time: 3.33333087
+        value: {x: 0, y: .242828563, z: 0, w: .97006923}
+        inSlope: {x: 0, y: -.0439820103, z: 0, w: .0110095842}
+        outSlope: {x: 0, y: -.0439820103, z: 0, w: .0110095842}
+        tangentMode: -559038737
+      - time: 4.14999866
+        value: {x: 0, y: .207314864, z: 0, w: .978274286}
+        inSlope: {x: 0, y: -.0420046225, z: 0, w: .00890123844}
+        outSlope: {x: 0, y: -.0420046225, z: 0, w: .00890123844}
+        tangentMode: -559038737
+      - time: 4.96667624
+        value: {x: 0, y: .174100369, z: 0, w: .984727919}
+        inSlope: {x: 0, y: -.0408231243, z: 0, w: .00721862214}
+        outSlope: {x: 0, y: -.0408231243, z: 0, w: .00721862214}
+        tangentMode: -559038737
+      - time: 5
+        value: {x: 0, y: .172742113, z: 0, w: .984967113}
+        inSlope: {x: 0, y: -.0407255515, z: 0, w: .00715676183}
+        outSlope: {x: 0, y: -.0407255515, z: 0, w: .00715676183}
+        tangentMode: -559038737
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: IKTargetRight
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: IKTargetRight/sitelHuman_RArmPalm/sitelHuman_RArmDigit11/sitelHuman_RArmDigit12/sitelHuman_RArmDigit13
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: IKTargetRight/sitelHuman_RArmPalm/sitelHuman_RArmDigit51/sitelHuman_RArmDigit52/sitelHuman_RArmDigit53
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: IKTargetRight/sitelHuman_RArmPalm/sitelHuman_RArmDigit51
+  m_CompressedRotationCurves: []
+  m_PositionCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: .0281832982, y: .282288611, z: -.0864423439}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: -559038737
+      - time: 1
+        value: {x: .0281832982, y: .282288611, z: -.0864423439}
+        inSlope: {x: -.0208148099, y: 0, z: -.0011466624}
+        outSlope: {x: -.0208148099, y: 0, z: -.0011466624}
+        tangentMode: -559038737
+      - time: 4.5
+        value: {x: -.11752037, y: .282288611, z: -.094468981}
+        inSlope: {x: -.0429407917, y: 0, z: -.00236555515}
+        outSlope: {x: -.0429407917, y: 0, z: -.00236555515}
+        tangentMode: -559038737
+      - time: 5
+        value: {x: -.139646351, y: .282288611, z: -.0956878737}
+        inSlope: {x: -.0442519635, y: 0, z: -.00243778527}
+        outSlope: {x: -.0442519635, y: 0, z: -.00243778527}
+        tangentMode: -559038737
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: IKTargetRight
+  m_ScaleCurves: []
+  m_FloatCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 4.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 5
+        value: -.100000001
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: oneFingerPoint
+    path: IKTargetRight
+    classID: 114
+    script: {fileID: 11500000, guid: 79e5e042ad15f0d428aaae30544e7cbd, type: 3}
+  m_PPtrCurves: []
+  m_SampleRate: 60
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings: []
+    pptrCurveMapping: []
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_StartTime: 0
+    m_StopTime: 1
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_LoopTime: 0
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .0281832982
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1
+        value: .0281832982
+        inSlope: -.0208148099
+        outSlope: -.0208148099
+        tangentMode: 10
+      - time: 4.5
+        value: -.11752037
+        inSlope: -.0429407917
+        outSlope: -.0429407917
+        tangentMode: 10
+      - time: 5
+        value: -.139646351
+        inSlope: -.0442519635
+        outSlope: -.0442519635
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: IKTargetRight
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .282288611
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1
+        value: .282288611
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 4.5
+        value: .282288611
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 5
+        value: .282288611
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: IKTargetRight
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -.0864423439
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1
+        value: -.0864423439
+        inSlope: -.0011466624
+        outSlope: -.0011466624
+        tangentMode: 10
+      - time: 4.5
+        value: -.094468981
+        inSlope: -.00236555515
+        outSlope: -.00236555515
+        tangentMode: 10
+      - time: 5
+        value: -.0956878737
+        inSlope: -.00243778527
+        outSlope: -.00243778527
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: IKTargetRight
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 4.5
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 5
+        value: -.100000001
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: oneFingerPoint
+    path: IKTargetRight
+    classID: 114
+    script: {fileID: 11500000, guid: 79e5e042ad15f0d428aaae30544e7cbd, type: 3}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .833333194
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1.66666579
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 2.49999833
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 3.33333087
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 4.14999866
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 4.96667624
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 5
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.x
+    path: IKTargetRight
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .324315131
+        inSlope: .000300407381
+        outSlope: .000300407381
+        tangentMode: 0
+      - time: .833333194
+        value: .326441765
+        inSlope: -.00765771419
+        outSlope: -.00765771419
+        tangentMode: 0
+      - time: 1.66666579
+        value: .307908863
+        inSlope: -.0302428305
+        outSlope: -.0302428305
+        tangentMode: 0
+      - time: 2.49999833
+        value: .278239518
+        inSlope: -.0400150195
+        outSlope: -.0400150195
+        tangentMode: 0
+      - time: 3.33333087
+        value: .242828563
+        inSlope: -.0439820103
+        outSlope: -.0439820103
+        tangentMode: 0
+      - time: 4.14999866
+        value: .207314864
+        inSlope: -.0420046225
+        outSlope: -.0420046225
+        tangentMode: 0
+      - time: 4.96667624
+        value: .174100369
+        inSlope: -.0408231243
+        outSlope: -.0408231243
+        tangentMode: 0
+      - time: 5
+        value: .172742113
+        inSlope: -.0407255515
+        outSlope: -.0407255515
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.y
+    path: IKTargetRight
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: .833333194
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 1.66666579
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 2.49999833
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 3.33333087
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 4.14999866
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 4.96667624
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 5
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.z
+    path: IKTargetRight
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .945949078
+        inSlope: -.000103712075
+        outSlope: -.000103712075
+        tangentMode: 0
+      - time: .833333194
+        value: .945217311
+        inSlope: .00264466042
+        outSlope: .00264466042
+        tangentMode: 0
+      - time: 1.66666579
+        value: .951415837
+        inSlope: .00978649594
+        outSlope: .00978649594
+        tangentMode: 0
+      - time: 2.49999833
+        value: .960511744
+        inSlope: .0115907304
+        outSlope: .0115907304
+        tangentMode: 0
+      - time: 3.33333087
+        value: .97006923
+        inSlope: .0110095842
+        outSlope: .0110095842
+        tangentMode: 0
+      - time: 4.14999866
+        value: .978274286
+        inSlope: .00890123844
+        outSlope: .00890123844
+        tangentMode: 0
+      - time: 4.96667624
+        value: .984727919
+        inSlope: .00721862214
+        outSlope: .00721862214
+        tangentMode: 0
+      - time: 5
+        value: .984967113
+        inSlope: .00715676183
+        outSlope: .00715676183
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.w
+    path: IKTargetRight
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.x
+    path: IKTargetRight/sitelHuman_RArmPalm/sitelHuman_RArmDigit11/sitelHuman_RArmDigit12/sitelHuman_RArmDigit13
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.y
+    path: IKTargetRight/sitelHuman_RArmPalm/sitelHuman_RArmDigit11/sitelHuman_RArmDigit12/sitelHuman_RArmDigit13
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.z
+    path: IKTargetRight/sitelHuman_RArmPalm/sitelHuman_RArmDigit11/sitelHuman_RArmDigit12/sitelHuman_RArmDigit13
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.w
+    path: IKTargetRight/sitelHuman_RArmPalm/sitelHuman_RArmDigit11/sitelHuman_RArmDigit12/sitelHuman_RArmDigit13
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.x
+    path: IKTargetRight/sitelHuman_RArmPalm/sitelHuman_RArmDigit51/sitelHuman_RArmDigit52/sitelHuman_RArmDigit53
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.y
+    path: IKTargetRight/sitelHuman_RArmPalm/sitelHuman_RArmDigit51/sitelHuman_RArmDigit52/sitelHuman_RArmDigit53
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.z
+    path: IKTargetRight/sitelHuman_RArmPalm/sitelHuman_RArmDigit51/sitelHuman_RArmDigit52/sitelHuman_RArmDigit53
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.w
+    path: IKTargetRight/sitelHuman_RArmPalm/sitelHuman_RArmDigit51/sitelHuman_RArmDigit52/sitelHuman_RArmDigit53
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.x
+    path: IKTargetRight/sitelHuman_RArmPalm/sitelHuman_RArmDigit51
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.y
+    path: IKTargetRight/sitelHuman_RArmPalm/sitelHuman_RArmDigit51
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.z
+    path: IKTargetRight/sitelHuman_RArmPalm/sitelHuman_RArmDigit51
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalRotation.w
+    path: IKTargetRight/sitelHuman_RArmPalm/sitelHuman_RArmDigit51
+    classID: 4
+    script: {fileID: 0}
+  m_EulerEditorCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 4.5
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 5
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAnglesBaked.x
+    path: IKTargetRight
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 37.848175
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1
+        value: 37.848175
+        inSlope: -2.22666669
+        outSlope: -2.22666669
+        tangentMode: 10
+      - time: 4.5
+        value: 22.2615089
+        inSlope: -4.59359646
+        outSlope: -4.59359646
+        tangentMode: 10
+      - time: 5
+        value: 19.8945789
+        inSlope: -4.73386002
+        outSlope: -4.73386002
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAnglesBaked.y
+    path: IKTargetRight
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 4.5
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 5
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAnglesBaked.z
+    path: IKTargetRight
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 4.5
+        value: 51.7757759
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAnglesBaked.x
+    path: IKTargetRight/sitelHuman_RArmPalm/sitelHuman_RArmDigit11/sitelHuman_RArmDigit12/sitelHuman_RArmDigit13
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 4.5
+        value: -2.2538166
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAnglesBaked.y
+    path: IKTargetRight/sitelHuman_RArmPalm/sitelHuman_RArmDigit11/sitelHuman_RArmDigit12/sitelHuman_RArmDigit13
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 4.5
+        value: -2.10478711
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAnglesBaked.z
+    path: IKTargetRight/sitelHuman_RArmPalm/sitelHuman_RArmDigit11/sitelHuman_RArmDigit12/sitelHuman_RArmDigit13
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 4.5
+        value: 65
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAnglesBaked.x
+    path: IKTargetRight/sitelHuman_RArmPalm/sitelHuman_RArmDigit51/sitelHuman_RArmDigit52/sitelHuman_RArmDigit53
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 4.5
+        value: .00122685707
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAnglesBaked.y
+    path: IKTargetRight/sitelHuman_RArmPalm/sitelHuman_RArmDigit51/sitelHuman_RArmDigit52/sitelHuman_RArmDigit53
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 4.5
+        value: .000108708853
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAnglesBaked.z
+    path: IKTargetRight/sitelHuman_RArmPalm/sitelHuman_RArmDigit51/sitelHuman_RArmDigit52/sitelHuman_RArmDigit53
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 4.5
+        value: 67.8025055
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAnglesBaked.x
+    path: IKTargetRight/sitelHuman_RArmPalm/sitelHuman_RArmDigit51
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 4.5
+        value: -24.8368034
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAnglesBaked.y
+    path: IKTargetRight/sitelHuman_RArmPalm/sitelHuman_RArmDigit51
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 4.5
+        value: -25.1373997
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: localEulerAnglesBaked.z
+    path: IKTargetRight/sitelHuman_RArmPalm/sitelHuman_RArmDigit51
+    classID: 4
+    script: {fileID: 0}
+  m_Events: []

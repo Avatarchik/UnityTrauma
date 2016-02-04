@@ -1,0 +1,417 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: ClearIconTexture
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100002
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400004}
+  - 114: {fileID: 11400010}
+  - 114: {fileID: 11400008}
+  - 114: {fileID: 11400006}
+  m_Layer: 0
+  m_Name: ShowQuickInfoDialog
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400002}
+  - 114: {fileID: 11400002}
+  m_Layer: 0
+  m_Name: BLOODCART:INTERACT
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100006
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400006}
+  - 114: {fileID: 11400004}
+  m_Layer: 0
+  m_Name: TutBloodcartScript
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: -3.57801099e-07, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400002}
+  m_RootOrder: 1
+--- !u!4 &400002
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 400004}
+  - {fileID: 400000}
+  m_Father: {fileID: 400006}
+  m_RootOrder: 0
+--- !u!4 &400004
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400002}
+  m_RootOrder: 0
+--- !u!4 &400006
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 400002}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 0
+  role: 
+  stringParam: 
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 2, y: 0, z: 1}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee9a3fa18f688fc45967e679d9579e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerStrings:
+  - BLOODCART:INTERACT
+  triggerOnStatus: 1
+  startingArgs: 
+  scriptLines:
+  - {fileID: 11400010}
+  - {fileID: 11400000}
+  abortBranch: []
+  errorBranch: []
+  owningRole: 
+  roles: []
+  actorObjects: []
+  roleKeyString: []
+  autoExecuteInterval: -1
+  autoExecuteTimer: 0
+  autoExecuteProbability: 0
+  interactionSet:
+    Name: 
+    Maps: []
+    ScriptsEnter: []
+    ScriptsExit: []
+    ScriptsAbort: []
+    ValidInteractors: []
+  commandVariation:
+    Cmd: 
+    CmdString: 
+    Variations: []
+  hasExecuted: 0
+  callbackConfirmVoice: 0
+  currentLine: 0
+  nextLineLabel: 
+  waitingForDebugger: 0
+  singleStepping: 0
+  caller: {fileID: 0}
+  myOI: {fileID: 0}
+  myObject: {fileID: 0}
+  AddToMenu: 1
+  menuOrder: 0
+  queueCount: 0
+  item: BLOODCART:INTERACT
+  prettyname: Turn On
+  response: The BloodCart  is now on.
+  response_title: BLOODCART ON
+  note: 
+  tooltip: Click Me
+  sound: AUDIO:MENUCLICK
+  task: 
+  log: 0
+  readyState: 0
+  startPriority: 4
+  cancellable: 0
+  skillVector: []
+  extraCost: 0
+  prereq: []
+  category: []
+  param: []
+  debug: 0
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2780bf6f09f28e74a8a942d59a585f39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveToParentOnDrop: 1
+  dropTargetName: 
+  scripts:
+  - {fileID: 11400002}
+  startupScript: {fileID: 0}
+  register: 0
+  prettyname: BloodCart
+  XMLName: 
+  XMLDirectory: Assets/Resources/XML/
+  assetBundleInfo:
+    bundleName: 
+    stage: 0
+    assetName: 
+  voiceList:
+    Name: 
+    VoiceMaps: []
+  voiceLists: []
+  vitalsBehaviors: []
+  scanRecords: []
+  executePriorityLock: -1
+  lastScriptExecuted: {fileID: 0}
+  lastScriptExecutedTime: 0
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75debf72aab61d441b72488f5260f115, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: 
+  response: 
+  response_title: 
+  tooltip: 
+  note: 
+  sound: 
+  task: 
+  list: 
+  time: 0
+  log: 0
+  max: 0
+  confirm: 0
+  confirm_audio: 
+  Enabled: 0
+  scriptName: 
+  objectName: 
+  prereq: []
+  category: []
+  param: []
+--- !u!114 &11400008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 875a3604fce3b5f408e0d7ccc194d6f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  msgType: 7
+  map: {fileID: 11400006}
+  gameObjectName: 
+  log: 0
+  interactName: 
+  state: 0
+  name: 
+  args: []
+  command: 1
+  x: 10
+  y: 10
+  w: 200
+  h: 100
+  text: You have interacted with the Blood Cart
+  title: SUCCESS!
+  time: 5
+  modal: 0
+  xmlName: 
+  className: 
+  dialogName: 
+  anchor: centered
+  arguments: []
+  numArguments: 0
+  waitForDialogClosed: 0
+  waitForDialogName: 
+  timeout: 5
+  editbox: 0
+  editboxlabel: 
+  editboxprompt: 
+  sendMap: 1
+  baseobj: {fileID: 0}
+  baseXML: 
+  provider: {fileID: 0}
+  patient: {fileID: 0}
+  hasCancel: 0
+  commandString: 
+  Params: []
+  ScreenName: 
+--- !u!114 &11400010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 3
+  role: 
+  stringParam: intubation_main
+  audioClip: {fileID: 0}
+  fadeLength: 3
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: 
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 11400008}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100006}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

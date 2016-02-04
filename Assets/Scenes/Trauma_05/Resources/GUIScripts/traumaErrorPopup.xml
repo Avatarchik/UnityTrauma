@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScreenInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Screens>
+    <GUIScreen>
+      <type>TraumaError</type>
+      <name>traumaLoginScreen</name>
+      <x>0</x>
+      <y>0</y>
+      <width>564</width>
+      <height>185.2</height>
+      <skin>TraumaErrorPopup</skin>
+      <style>loginError.background</style>
+      <fillarea>false</fillarea>
+      <anchor>centered</anchor>
+      <windowed>false</windowed>
+      <draggable>false</draggable>
+      <Elements>
+        <Area>
+          <name>contentArea</name>
+          <skin>TraumaErrorPopup</skin>
+          <style>loginError.contentArea</style>
+          <text />
+          <visible>true</visible>
+          <Elements>
+            <Label>
+              <name>titleText</name>
+              <skin>TraumaErrorPopup</skin>
+              <style>titleText</style>
+              <text>ERROR</text>
+              <visible>true</visible>
+            </Label>
+            <Button>
+              <name>buttonOK</name>
+              <skin>TraumaErrorPopup</skin>
+              <style>okButton</style>
+              <text>OK</text>
+              <visible>true</visible>
+              <closeWindow>true</closeWindow>
+            </Button>
+            <Area>
+              <name>errorMessageArea</name>
+              <skin>TraumaErrorPopup</skin>
+              <style>errorMessageArea</style>
+              <text />
+              <visible>true</visible>
+              <Elements>
+                <Label>
+                  <name>loginErrorText</name>
+                  <skin>TraumaErrorPopup</skin>
+                  <style>loginErrorText</style>
+                  <text>Invalid Username or Password</text>
+                  <visible>true</visible>
+                </Label>
+              </Elements>
+              <fillarea>false</fillarea>
+              <anchor>relative</anchor>
+            </Area>
+          </Elements>
+          <fillarea>false</fillarea>
+          <anchor>relative</anchor>
+        </Area>
+      </Elements>
+      <Windowed>false</Windowed>
+    </GUIScreen>
+  </Screens>
+  <isModal>false</isModal>
+  <Windowed>false</Windowed>
+</ScreenInfo>

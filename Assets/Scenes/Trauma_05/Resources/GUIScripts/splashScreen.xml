@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScreenInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- The This is a template file describing a fast exam pop-up. It contains a titleBar, video area and close button. It should resize to appropriate dimensions
+	via internal c# code.-->
+  <Screens>
+    <GUIScreen>
+      <type>GUIScreens</type>
+      <name>SplashScreen</name>
+      <skin>SplashScreen</skin>
+      <style>splashScreen.area</style>
+      <anchor>upper_left</anchor>
+      <Elements>
+
+        <!-- Content Area-->
+        <Area>
+          <name>splashScreenTopTitle</name>
+          <skin>SplashScreen</skin>
+          <style>splashScreen.topArea</style>
+          <anchor>upper_left</anchor>
+          <Elements>
+
+            <Label>
+              <name>xrayViewerButton</name>
+              <skin>SplashScreen</skin>
+              <style>splashScreen.titleImage</style>
+            </Label>
+
+          </Elements>
+        </Area>
+        <!-- Content Area -->
+
+        <!-- 
+        <Area>
+          <name>contentPattern</name>
+          <skin>SplashScreen</skin>
+          <style>Label</style>
+          <anchor>relative</anchor>
+          <Elements>
+
+            <Label>
+              <name>contentPattern</name>
+              <skin>SplashScreen</skin>
+              <style>splashScreen.background.pattern</style>
+            </Label>
+
+          </Elements>
+        </Area>
+        -->
+
+        <Area>
+          <name>MenuItems</name>
+          <skin>SplashScreen</skin>
+          <style>splashScreen.menuArea</style>
+          <anchor>left_middle</anchor>
+          <Elements>
+
+                <Button>
+                  <name>MenuStart</name>
+                  <skin>SplashScreen</skin>
+                  <style>splashScreen.menu.start</style>
+                  <text>START</text>
+                  <sceneTarget>Trauma_05</sceneTarget>
+                </Button>
+
+                <Button>
+                  <name>MenuSettings</name>
+                  <skin>SplashScreen</skin>
+                  <style>splashScreen.menu.settings</style>
+                  <text>SETTINGS</text>
+                </Button>
+
+                <Button>
+                  <name>MenuInfo</name>
+                  <skin>SplashScreen</skin>
+                  <style>splashScreen.menu.info</style>
+                  <text>INFO</text>
+                </Button>
+
+                <Button>
+                  <name>MenuCredits</name>
+                  <skin>SplashScreen</skin>
+                  <style>splashScreen.menu.credits</style>
+                  <text>CREDITS</text>
+                </Button>
+
+                <Button>
+                  <name>MenuExit</name>
+                  <skin>SplashScreen</skin>
+                  <style>splashScreen.menu.exit</style>
+                  <text>EXIT</text>
+                </Button>
+            
+          </Elements>
+        </Area>
+
+        
+      </Elements>
+    </GUIScreen>
+  </Screens>
+</ScreenInfo>

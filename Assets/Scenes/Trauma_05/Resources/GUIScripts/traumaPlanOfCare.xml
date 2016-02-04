@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScreenInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Screens>
+    <GUIScreen>
+      <type>PlanOfCare</type>
+      <name>traumaPlanOfCare</name>
+      <x>0</x>
+      <y>0</y>
+      <width>960</width>
+      <height>600</height>
+      <skin>TraumaPlanOfCare</skin>
+      <style>screen.background</style>
+      <fillarea>false</fillarea>
+      <anchor>centered</anchor>
+      <windowed>false</windowed>
+      <draggable>false</draggable>
+      <Elements>
+        <Area>
+          <name>TraumaNotes</name>
+          <skin>TraumaPlanOfCare</skin>
+          <style>assessmentInjuries.Area</style>
+          <text />
+          <visible>true</visible>
+          <Elements>
+            <Label>
+              <name>injuriesNotes.label</name>
+              <skin>TraumaPlanOfCare</skin>
+              <style>injuriesNotes.text</style>
+              <text>Assessment injuries notes go hear. Enter text here that describes the injuries. Assessment injuries notes go hear. Enter text here that describes the injuries.Assessment injuries notes go hear. Enter text here that describes the injuries.Assessment injuries notes go hear. Enter text here that describes the injuries. Assessment injuries notes go hear. Enter text here that describes the injuries.</text>
+              <visible>true</visible>
+            </Label>
+            <Label>
+              <name>planNotes.label</name>
+              <skin>TraumaPlanOfCare</skin>
+              <style>planNotes.text</style>
+              <text>I wanted to send out a quick note to say thank you to everyone for making my first two days so informative and pleasant. This brief time interacting with all of you has confirmed what I experienced during my previous visits - SiTEL is full of wonderfully talented and friendly people who want to contribute to the great work being done here. As I continue getting settled I plan to walk the hallways a bit and stop in to informally chat with each of you.</text>
+              <visible>true</visible>
+            </Label>
+          </Elements>
+          <fillarea>false</fillarea>
+          <anchor>relative</anchor>
+        </Area>
+        <Area>
+          <name>dispositionArea</name>
+          <skin>TraumaPlanOfCare</skin>
+          <style>dispositionArea</style>
+          <text />
+          <visible>true</visible>
+          <Elements>
+            <Scrollview>
+              <name>dispositionScroll</name>
+              <skin>TraumaPlanOfCare</skin>
+              <style>none</style>
+              <text />
+              <visible>true</visible>
+              <Elements>
+                <Horizontal>
+                  <name>containerItem</name>
+                  <skin>TraumaPlanOfCare</skin>
+                  <style>dispositionItem01</style>
+                  <text />
+                  <visible>true</visible>
+                  <Elements>
+                    <Label>
+                      <name>bullet</name>
+                      <skin>TraumaPlanOfCare</skin>
+                      <style>bullet</style>
+                      <text />
+                      <visible>true</visible>
+                    </Label>
+                    <Label>
+                      <name>label</name>
+                      <skin>TraumaPlanOfCare</skin>
+                      <style>dispositionItemText</style>
+                      <text>Intensive Care Unit</text>
+                      <visible>true</visible>
+                    </Label>
+                    <Button>
+                      <name>button</name>
+                      <skin>TraumaPlanOfCare</skin>
+                      <style>buttonMoveRight</style>
+                      <text />
+                      <visible>true</visible>
+                      <closeWindow>false</closeWindow>
+                    </Button>
+                  </Elements>
+                </Horizontal>
+              </Elements>
+              <displayHorizontal>false</displayHorizontal>
+              <displayVertical>false</displayVertical>
+              <hStyle>none</hStyle>
+              <vStyle>none</vStyle>
+              <scroll>
+                <x>0</x>
+                <y>0</y>
+              </scroll>
+            </Scrollview>
+          </Elements>
+          <fillarea>false</fillarea>
+          <anchor>relative</anchor>
+        </Area>
+        <Area>
+          <name>consultationArea</name>
+          <skin>TraumaPlanOfCare</skin>
+          <style>consultationArea</style>
+          <text />
+          <visible>true</visible>
+          <Elements>
+            <Scrollview>
+              <name>consultationScroll</name>
+              <skin>TraumaPlanOfCare</skin>
+              <style>none</style>
+              <text />
+              <visible>true</visible>
+              <Elements>
+                <Horizontal>
+                  <name>containerItem</name>
+                  <skin>TraumaPlanOfCare</skin>
+                  <style>dispositionItem01</style>
+                  <text />
+                  <visible>true</visible>
+                  <Elements>
+                    <Label>
+                      <name>bullet</name>
+                      <skin>TraumaPlanOfCare</skin>
+                      <style>bullet</style>
+                      <text />
+                      <visible>true</visible>
+                    </Label>
+                    <Label>
+                      <name>label</name>
+                      <skin>TraumaPlanOfCare</skin>
+                      <style>dispositionItemText</style>
+                      <text>Intensive Care Unit</text>
+                      <visible>true</visible>
+                    </Label>
+                    <Button>
+                      <name>button</name>
+                      <skin>TraumaPlanOfCare</skin>
+                      <style>buttonMoveRight</style>
+                      <text />
+                      <visible>true</visible>
+                      <closeWindow>false</closeWindow>
+                    </Button>
+                  </Elements>
+                </Horizontal>
+              </Elements>
+              <displayHorizontal>false</displayHorizontal>
+              <displayVertical>false</displayVertical>
+              <hStyle>none</hStyle>
+              <vStyle>none</vStyle>
+              <scroll>
+                <x>0</x>
+                <y>0</y>
+              </scroll>
+            </Scrollview>
+          </Elements>
+          <fillarea>false</fillarea>
+          <anchor>relative</anchor>
+        </Area>
+        <Area>
+          <name>ordersArea</name>
+          <skin>TraumaPlanOfCare</skin>
+          <style>OrdersArea</style>
+          <text />
+          <visible>true</visible>
+          <Elements>
+            <Scrollview>
+              <name>ordersScroll</name>
+              <skin>TraumaPlanOfCare</skin>
+              <style>none</style>
+              <text />
+              <visible>true</visible>
+              <Elements>
+                <Horizontal>
+                  <name>orderItem</name>
+                  <skin>TraumaPlanOfCare</skin>
+                  <style>dispositionItem01</style>
+                  <text />
+                  <visible>true</visible>
+                  <Elements>
+                    <Label>
+                      <name>bullet</name>
+                      <skin>TraumaPlanOfCare</skin>
+                      <style>bullet</style>
+                      <text />
+                      <visible>true</visible>
+                    </Label>
+                    <Label>
+                      <name>label</name>
+                      <skin>TraumaPlanOfCare</skin>
+                      <style>dispositionItemText</style>
+                      <text>Intensive Care Unit</text>
+                      <visible>true</visible>
+                    </Label>
+                    <Button>
+                      <name>button</name>
+                      <skin>TraumaPlanOfCare</skin>
+                      <style>buttonRemove</style>
+                      <text />
+                      <visible>true</visible>
+                      <closeWindow>false</closeWindow>
+                    </Button>
+                  </Elements>
+                </Horizontal>
+              </Elements>
+              <displayHorizontal>false</displayHorizontal>
+              <displayVertical>false</displayVertical>
+              <hStyle>none</hStyle>
+              <vStyle>none</vStyle>
+              <scroll>
+                <x>0</x>
+                <y>0</y>
+              </scroll>
+            </Scrollview>
+          </Elements>
+          <fillarea>false</fillarea>
+          <anchor>relative</anchor>
+        </Area>
+        <Area>
+          <name>buttonArea</name>
+          <skin>TraumaPlanOfCare</skin>
+          <style>buttonArea</style>
+          <text />
+          <visible>true</visible>
+          <Elements>
+            <Button>
+              <name>buttonSubmit</name>
+              <skin>TraumaPlanOfCare</skin>
+              <style>buttonSubmit</style>
+              <text>SUBMIT</text>
+              <visible>true</visible>
+              <closeWindow>false</closeWindow>
+            </Button>
+          </Elements>
+          <fillarea>false</fillarea>
+          <anchor>relative</anchor>
+        </Area>
+      </Elements>
+      <Windowed>false</Windowed>
+    </GUIScreen>
+  </Screens>
+  <isModal>false</isModal>
+  <Windowed>false</Windowed>
+</ScreenInfo>

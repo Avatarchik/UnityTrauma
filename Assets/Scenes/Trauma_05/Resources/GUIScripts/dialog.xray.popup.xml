@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScreenInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- The This is a template file describing the most basic dialog box. It contains a titleBar, text area and close button. It should resize to appropriate dimensions
+	via internal c# code.-->
+  <Screens>
+    <GUIScreen>
+      <type>XrayPopupGUI</type>
+      <name>dialogXray</name>
+      <skin>ApplicationSkin</skin>
+      <style>dialog.xray.area</style>
+      <anchor>centered</anchor>
+      <Elements>
+
+        <!-- Begin Title Bar Area-->
+        <Area>
+          <name>TitleBarArea</name>
+          <skin>ApplicationSkin</skin>
+          <style>Label</style>
+          <anchor>relative</anchor>
+          <Elements>
+
+            <!-- Begin Titlebar Stretch Area -->
+            <Area>
+              <skin>ApplicationSkin</skin>
+              <style>Label</style>
+              <anchor>relative</anchor>
+              <Elements>
+                <Label>
+                  <name>titleBarBackground</name>
+                  <skin>ApplicationSkin</skin>
+                  <style>dialog.fast.titlebar.background</style>
+                </Label>
+              </Elements>
+            </Area>
+            <!-- End Titlebar Stretch Area -->
+
+            <!-- Begin Titlebar Edge Left -->
+            <Area>
+              <skin>ApplicationSkin</skin>
+              <style>Label</style>
+              <anchor>relative</anchor>
+              <Elements>
+                <Label>
+                  <name>TitlebarEdgeLeft</name>
+                  <skin>ApplicationSkin</skin>
+                  <style>dialog.fast.titlebar.edge.left</style>
+                  <text></text>
+                </Label>
+              </Elements>
+            </Area>
+            <!-- End Titlebar Edge Right -->
+
+            <!-- Begin Titlebar Edge Right-->
+            <Area>
+              <skin>ApplicationSkin</skin>
+              <style>Label</style>
+              <anchor>relative</anchor>
+              <Elements>
+                <Label>
+                  <name>TitlebarEdgeRight</name>
+                  <skin>ApplicationSkin</skin>
+                  <style>dialog.fast.titlebar.edge.right</style>
+                  <text></text>
+                </Label>
+              </Elements>
+            </Area>
+            <!-- End Titlebar Edge Right-->
+
+            <!-- Begin Titlebar Text-->
+            <Area>
+              <name>titleBar</name>
+              <skin>ApplicationSkin</skin>
+              <style>Label</style>
+              <anchor>relative</anchor>
+              <Elements>
+                <Label>
+                  <name>titleBarText</name>
+                  <skin>ApplicationSkin</skin>
+                  <style>dialog.fast.titlebar.text</style>
+                  <text>XRAY VIEWER</text>
+                </Label>
+              </Elements>
+            </Area>
+            <!-- End Titlebar Text-->
+
+          </Elements>
+        </Area>
+        <!-- End Title Bar Area-->
+
+        
+        <!-- Xray Scan Background Area-->
+        <Area>
+          <name>XrayArea</name>
+          <skin>ApplicationSkin</skin>
+          <style>dialog.xray.scan.background</style>
+          <anchor>relative</anchor>
+          <Elements>
+            <Label>
+              <name>xrayImage01</name>
+              <skin>ApplicationSkin</skin>
+              <style>dialog.xray.chest.01</style>
+            </Label>
+          </Elements>
+        </Area>
+        <!-- Xray Scan Background Area-->
+
+        
+        <!-- Xray Content Lower Area-->
+        <Area>
+          <name>XrayLowerArea</name>
+          <skin>ApplicationSkin</skin>
+          <style>dialog.xray.lower.area</style>
+          <anchor>relative</anchor>
+          <Elements>
+            
+            <!-- Xray Button Normal-->
+            <Area>
+              <name>XrayButtonArea</name>
+              <skin>ApplicationSkin</skin>
+              <style>dialog.xray.normal.area</style>
+              <anchor>relative</anchor>
+              <Elements>
+<!--
+                <Label>
+                  <name>xrayButtonLine</name>
+                  <skin>ApplicationSkin</skin>
+                  <style>dialog.fast.line01</style>
+                </Label>
+-->
+                <Button>
+                  <name>xray.button.fracture</name>
+                  <skin>ApplicationSkin</skin>
+                  <style>button.xray.normal</style>
+                  <text>FRACTURE PRESENT</text>
+				  <interactMsg>PLAYER:XRAY:CHEST:FRACTURE</interactMsg>
+				  <trigger>PLAYER:FRACTURE:POSITIVE</trigger>		
+				  <closeWindow>false</closeWindow>			
+                </Button>
+                <Button>
+                  <name>xray.button.blood</name>
+                  <skin>ApplicationSkin</skin>
+                  <style>button.xray.normal</style>
+                  <text>BLOOD PRESENT</text>
+				  <interactMsg>PLAYER:XRAY:CHEST:BLOOD</interactMsg>	
+				  <trigger>PLAYER:BLOOD:POSITIVE</trigger>	
+				  <closeWindow>false</closeWindow>			
+                </Button>
+                <Button>
+                  <name>xray.button.placement</name>
+                  <skin>ApplicationSkin</skin>
+                  <style>button.xray.normal</style>
+                  <text>INCORRECT PLACEMENT</text>
+				  <interactMsg>PLAYER:XRAY:CHEST:PLACEMENT</interactMsg>
+				  <trigger>PLAYER:PLACEMENT:INCORRECT</trigger>		
+				  <closeWindow>false</closeWindow>			
+                </Button>
+                <Button>
+                  <name>xray.button.normal</name>
+                  <skin>ApplicationSkin</skin>
+                  <style>button.xray.normal</style>
+                  <text>NORMAL</text>
+				  <interactMsg>PLAYER:XRAY:CHEST:NORMAL</interactMsg>	
+				  <trigger>PLAYER:NORMAL</trigger>	
+				  <closeWindow>true</closeWindow>			
+                </Button>
+                <Button>
+                  <name>xray.button.done</name>
+                  <skin>ApplicationSkin</skin>
+                  <style>button.xray.normal</style>
+                  <text>DONE</text>
+				  <trigger>PLAYER:CLOSEDIALOG</trigger>
+				  <closeWindow>true</closeWindow>			
+                </Button>
+<!--
+                <Label>
+                  <name>xray.button.normal.text</name>
+                  <skin>ApplicationSkin</skin>
+                  <style>dialog.xray.text</style>
+                  <text>There is blood</text>
+                </Label>
+-->
+              </Elements>
+            </Area>
+            <!-- Xray Button Normal-->
+
+            <!-- 
+            <Area>
+              <name>XrayButtonAbNormal</name>
+              <skin>ApplicationSkin</skin>
+              <style>dialog.xray.abnormal.area</style>
+              <anchor>relative</anchor>
+              <Elements>
+                <Label>
+                  <name>xrayButtonLine</name>
+                  <skin>ApplicationSkin</skin>
+                  <style>dialog.fast.line02</style>
+                </Label>
+                <Button>
+                  <name>xray.button.abnormal</name>
+                  <skin>ApplicationSkin</skin>
+                  <style>button.xray.abnormal</style>
+                  <text>NO BLOOD</text>
+				  <interactMsg>PLAYER:XRAY:CHEST:FALSE</interactMsg>					
+ 				  <closeWindow>true</closeWindow>			
+               </Button>
+                <Label>
+                  <name>xray.button.normal.text</name>
+                  <skin>ApplicationSkin</skin>
+                  <style>dialog.xray.text</style>
+                  <text>There is no blood</text>
+                </Label>
+              </Elements>
+            </Area>
+			Xray Button abnormal-->
+            <!-- Xray Button abnormal-->
+            
+          </Elements>
+        </Area>
+        <!-- Xray Content Lower Area-->
+        
+        
+      </Elements>
+    </GUIScreen>
+  </Screens>
+</ScreenInfo>

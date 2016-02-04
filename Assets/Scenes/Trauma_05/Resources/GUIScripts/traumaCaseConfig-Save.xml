@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScreenInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Screens>
+    <GUIScreen>
+      <type>CaseConfigSave</type>
+      <name>caseConfig-Save</name>
+      <x>0</x>
+      <y>0</y>
+      <width>505</width>
+      <height>146</height>
+      <skin>TraumaCaseConfigSave</skin>
+      <style>loginError.background</style>
+      <fillarea>false</fillarea>
+      <anchor>centered</anchor>
+      <windowed>false</windowed>
+      <draggable>false</draggable>
+      <Elements>
+        <Area>
+          <name>contentArea</name>
+          <skin>TraumaCaseConfigSave</skin>
+          <style>loginError.contentArea</style>
+          <text />
+          <visible>true</visible>
+          <Elements>
+            <Label>
+              <name>titleText</name>
+              <skin>TraumaCaseConfigSave</skin>
+              <style>titleText</style>
+              <text>SAVE CASE</text>
+              <visible>true</visible>
+            </Label>
+            <Area>
+              <name>errorMessageArea</name>
+              <skin>TraumaCaseConfigSave</skin>
+              <style>errorMessageArea</style>
+              <text />
+              <visible>true</visible>
+              <Elements>
+                <Label>
+                  <name>caseNameTag</name>
+                  <skin>TraumaCaseConfigSave</skin>
+                  <style>caseNameTag</style>
+                  <text>Case Name</text>
+                  <visible>true</visible>
+                </Label>
+                <Editbox>
+                  <name>caseNameEditbox</name>
+                  <skin>TraumaCaseConfigSave</skin>
+                  <style>caseNameEditbox</style>
+                  <text>enter case name</text>
+                  <visible>true</visible>
+                  <_password>false</_password>
+                </Editbox>
+              </Elements>
+              <fillarea>false</fillarea>
+              <anchor>relative</anchor>
+            </Area>
+            <Horizontal>
+              <name>buttonHorizontal</name>
+              <skin>TraumaCaseConfigSave</skin>
+              <style>none</style>
+              <text />
+              <visible>true</visible>
+              <Elements>
+                <Button>
+                  <name>buttonCancel</name>
+                  <skin>TraumaCaseConfigSave</skin>
+                  <style>buttonCancel</style>
+                  <text>CANCEL</text>
+                  <visible>true</visible>
+                  <closeWindow>false</closeWindow>
+                </Button>
+                <Button>
+                  <name>buttonSave</name>
+                  <skin>TraumaCaseConfigSave</skin>
+                  <style>buttonSave</style>
+                  <text>SAVE</text>
+                  <visible>true</visible>
+                  <closeWindow>false</closeWindow>
+                </Button>
+              </Elements>
+            </Horizontal>
+          </Elements>
+          <fillarea>false</fillarea>
+          <anchor>relative</anchor>
+        </Area>
+      </Elements>
+      <Windowed>false</Windowed>
+    </GUIScreen>
+  </Screens>
+  <isModal>false</isModal>
+  <Windowed>false</Windowed>
+</ScreenInfo>

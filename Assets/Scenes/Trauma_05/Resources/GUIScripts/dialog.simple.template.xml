@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScreenInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Screens>
+    <GUIScreen>
+      <type>GUIDialog</type>
+      <name>dialogSimple</name>
+      <x>0</x>
+      <y>0</y>
+      <width>600</width>
+      <height>160</height>
+      <skin>ApplicationSkin</skin>
+      <style>dialog.confirm.screen</style>
+      <fillarea>false</fillarea>
+      <anchor>centered</anchor>
+      <windowed>false</windowed>
+      <draggable>false</draggable>
+      <Elements>
+        <Area>
+          <name>contentArea</name>
+          <skin>ApplicationSkin</skin>
+          <style>dialog.confirm.contentArea</style>
+          <text />
+          <visible>true</visible>
+          <Elements>
+            <Area>
+              <name>contentBackground</name>
+              <skin>ApplicationSkin</skin>
+              <style>dialog.content.background</style>
+              <text />
+              <visible>true</visible>
+              <Elements>
+                <Scrollview>
+                  <name>scrollBox</name>
+                  <skin>ApplicationSkin</skin>
+                  <style>none</style>
+                  <text />
+                  <visible>true</visible>
+                  <Elements>
+                    <Label>
+                      <name>contentText</name>
+                      <skin>ApplicationSkin</skin>
+                      <style>dialog.generic.bodytext1</style>
+                      <text>Content area text looks like this!</text>
+                      <visible>true</visible>
+                    </Label>
+                  </Elements>
+                  <displayHorizontal>false</displayHorizontal>
+                  <displayVertical>false</displayVertical>
+                  <hStyle>none</hStyle>
+                  <vStyle>none</vStyle>
+                  <scroll>
+                    <x>0</x>
+                    <y>0</y>
+                  </scroll>
+                </Scrollview>
+              </Elements>
+              <fillarea>false</fillarea>
+              <anchor>relative</anchor>
+            </Area>
+          </Elements>
+          <fillarea>false</fillarea>
+          <anchor>relative</anchor>
+        </Area>
+        <Area>
+          <name>titlebarArea</name>
+          <skin>ApplicationSkin</skin>
+          <style>dialog.confirm.titlebarArea</style>
+          <text />
+          <visible>true</visible>
+          <Elements>
+            <Horizontal>
+              <name>TitleBarHorizontal</name>
+              <skin>ApplicationSkin</skin>
+              <style>titleBarHorizontal</style>
+              <text />
+              <visible>true</visible>
+              <Elements>
+                <Label>
+                  <name>TitlebarEdgeLeft</name>
+                  <skin>ApplicationSkin</skin>
+                  <style>dialog.titlebar.edge.left</style>
+                  <text />
+                  <visible>true</visible>
+                </Label>
+                <Label>
+                  <name>titleBarBackground</name>
+                  <skin>ApplicationSkin</skin>
+                  <style>dialog.titlebar.background</style>
+                  <text />
+                  <visible>true</visible>
+                </Label>
+                <Label>
+                  <name>TitlebarEdgeRight</name>
+                  <skin>ApplicationSkin</skin>
+                  <style>dialog.titlebar.edge.right</style>
+                  <text />
+                  <visible>true</visible>
+                </Label>
+              </Elements>
+            </Horizontal>
+            <Area>
+              <name>textArea</name>
+              <skin>ApplicationSkin</skin>
+              <style>dialog.generic.content.text</style>
+              <text />
+              <visible>true</visible>
+              <Elements>
+                <Label>
+                  <name>titleBarText</name>
+                  <skin>ApplicationSkin</skin>
+                  <style>dialog.titlebar.text</style>
+                  <text>TITLE</text>
+                  <visible>true</visible>
+                </Label>
+              </Elements>
+              <fillarea>false</fillarea>
+              <anchor>relative</anchor>
+            </Area>
+            <Area>
+              <name>closeButton</name>
+              <skin>ApplicationSkin</skin>
+              <style>dialog.confirm.titlebarArea</style>
+              <text />
+              <visible>true</visible>
+              <Elements>
+                <Button>
+                  <name>buttonExit</name>
+                  <skin>ApplicationSkin</skin>
+                  <style>dialog.titlebar.exit</style>
+                  <text />
+                  <visible>true</visible>
+                  <closeWindow>true</closeWindow>
+                </Button>
+              </Elements>
+              <fillarea>false</fillarea>
+              <anchor>relative</anchor>
+            </Area>
+          </Elements>
+          <fillarea>false</fillarea>
+          <anchor>relative</anchor>
+        </Area>
+      </Elements>
+      <Windowed>false</Windowed>
+    </GUIScreen>
+  </Screens>
+  <isModal>false</isModal>
+  <Windowed>false</Windowed>
+</ScreenInfo>

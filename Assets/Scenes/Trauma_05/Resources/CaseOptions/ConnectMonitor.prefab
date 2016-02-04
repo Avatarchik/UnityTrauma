@@ -1,0 +1,456 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400002}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: ConnectMonitor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100002
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400002}
+  - 114: {fileID: 11400004}
+  m_Layer: 0
+  m_Name: VITALS:CONNECT:ALL
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100004
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400004}
+  - 114: {fileID: 11400006}
+  m_Layer: 0
+  m_Name: placeBP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100006
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400006}
+  - 114: {fileID: 11400008}
+  m_Layer: 0
+  m_Name: placePulseOx
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &100008
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400008}
+  - 114: {fileID: 11400010}
+  m_Layer: 0
+  m_Name: placeEKG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.86495495, y: -.427388996, z: -7.8255372}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 400002}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!4 &400002
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.86495495, y: .427388996, z: 7.8255372}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 400004}
+  - {fileID: 400006}
+  - {fileID: 400008}
+  m_Father: {fileID: 400000}
+  m_RootOrder: 0
+--- !u!4 &400004
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400002}
+  m_RootOrder: 0
+--- !u!4 &400006
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400002}
+  m_RootOrder: 1
+--- !u!4 &400008
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400002}
+  m_RootOrder: 2
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e6bf3782a4e19540b5fa3e9a16cfa15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: ConnectMonitor
+  Enabled: 1
+  elapsedTime: 0
+  startingAttributes: []
+  selectedColor: {r: .699999988, g: .699999988, b: 1, a: 1}
+  deselectedColor: {r: .75, g: .75, b: .75, a: 1}
+  ActivateDistance: 0
+  topToolbarPos: {x: 0, y: 0}
+  onTeamMenu: 0
+  interactOverrideTrigger: 
+  skillVector: {x: 0, y: 0, z: 0}
+  prettyname: Interact
+  originXML: 
+  VoiceListXML: 
+  iconTexture: {fileID: 0}
+  DebugEnabled: 0
+  Roles: []
+  actingInScript: {fileID: 0}
+  reservedForScript: {fileID: 0}
+  DetectClickThrough: 1
+  CurrentState: 0
+  texBusy: {fileID: 0}
+  texTalking: {fileID: 0}
+  texListening: {fileID: 0}
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2780bf6f09f28e74a8a942d59a585f39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveToParentOnDrop: 1
+  dropTargetName: PrimaryNurse
+  scripts:
+  - {fileID: 11400004}
+  startupScript: {fileID: 0}
+  register: 0
+  prettyname: 
+  XMLName: ScriptedObjects/ConnectMonitor.xml
+  XMLDirectory: Assets/Resources/XML/
+  assetBundleInfo:
+    bundleName: 
+    stage: 0
+    assetName: 
+  voiceList:
+    Name: 
+    VoiceMaps: []
+  voiceLists: []
+  vitalsBehaviors: []
+  scanRecords: []
+  executePriorityLock: -1
+  lastScriptExecuted: {fileID: 0}
+  lastScriptExecutedTime: 0
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee9a3fa18f688fc45967e679d9579e5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerStrings:
+  - VITALS:CONNECT
+  triggerOnStatus: 0
+  startingArgs: auto=True
+  scriptLines:
+  - {fileID: 11400008}
+  - {fileID: 11400006}
+  - {fileID: 11400010}
+  abortBranch: []
+  errorBranch: []
+  owningRole: 
+  roles: []
+  actorObjects: []
+  roleKeyString:
+  - '%IdleTime>30 & !Patient.pulseoxplaced & !Patient.onvitalsmonitor & !Patient.autobpplaced'
+  autoExecuteInterval: -1
+  autoExecuteTimer: 0
+  autoExecuteProbability: 1
+  interactionSet:
+    Name: 
+    Maps: []
+    ScriptsEnter: []
+    ScriptsExit: []
+    ScriptsAbort: []
+    ValidInteractors: []
+  commandVariation:
+    Cmd: 
+    CmdString: 
+    Variations: []
+  hasExecuted: 0
+  callbackConfirmVoice: 0
+  currentLine: 0
+  nextLineLabel: 
+  waitingForDebugger: 0
+  singleStepping: 0
+  caller: {fileID: 0}
+  myOI: {fileID: 0}
+  myObject: {fileID: 0}
+  AddToMenu: 0
+  menuOrder: 0
+  queueCount: 0
+  item: VITALS:CONNECT
+  prettyname: Connect all Vitals
+  response: You clicked me
+  response_title: RESPONSE TITLE
+  note: 
+  tooltip: Click Me
+  sound: AUDIO:SOUND
+  task: OBJECT:MENUCLICK
+  log: 1
+  readyState: 0
+  startPriority: 3
+  cancellable: 0
+  skillVector: []
+  extraCost: 0
+  prereq: []
+  category: []
+  param: []
+  debug: 0
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 16
+  role: 
+  stringParam: 
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: PLACE:AUTOBP
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11400008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 16
+  role: 
+  stringParam: 
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: PLACE:PULSEOX
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!114 &11400010
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4eda22a462085843933094706899c06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  comment: 
+  objectToAffect: {fileID: 0}
+  objectName: 
+  type: 16
+  role: 
+  stringParam: 
+  audioClip: {fileID: 0}
+  fadeLength: 0
+  desiredAlpha: 0
+  desiredColor: {r: .5, g: .5, b: .5, a: 1}
+  texture2D: {fileID: 0}
+  moveTo: {fileID: 0}
+  moveToName: 
+  offset: {x: 0, y: 0, z: 0}
+  orientation: {x: 0, y: 0, z: 0}
+  scriptToExecute: {fileID: 0}
+  ease: 1
+  negate: 0
+  loop: 0
+  waitForCompletion: 1
+  sequenceEnd: 0
+  executeOnlyOnce: 0
+  block: 0
+  dialogIfThen: 0
+  breakpoint: 0
+  preAttributes: 
+  postAttributes: 
+  stringParam2: PLACE:EKG
+  stringParam3: 
+  stringParam4: 
+  attachmentOverride: 
+  eventScript: 
+  voiceTag: 
+  heading: 0
+  speed: 1
+  taskReady: 0
+  hasExecuted: 0
+  error: 
+  executedBy: {fileID: 0}
+  gameMsgForm: {fileID: 0}
+  syncToTasks: []
+  syncToTasksIndex: 
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScreenInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Screens>
+    <GUIScreen>
+      <type>GameHUD</type>
+      <name>patientStatusBar</name>
+      <x>0</x>
+      <y>7.85</y>
+      <width>730</width>
+      <height>19</height>
+      <skin>HUD</skin>
+      <style>patientStatusBar</style>
+      <fillarea>true</fillarea>
+      <blank />
+      <anchor>upper_middle</anchor>
+      <windowed>false</windowed>
+      <draggable>false</draggable>
+      <Elements>
+        <Area>
+          <name>patientStatusIconArea</name>
+          <skin>HUD</skin>
+          <style>patientStatusIconArea</style>
+          <text />
+          <visible>true</visible>
+          <Elements>
+            <Label>
+              <name>patientStatusIcon</name>
+              <skin>HUD</skin>
+              <style>patientStatusIcon</style>
+              <text />
+              <visible>true</visible>
+            </Label>
+          </Elements>
+          <fillarea>false</fillarea>
+          <anchor>normal</anchor>
+        </Area>
+      </Elements>
+      <Windowed>false</Windowed>
+    </GUIScreen>
+  </Screens>
+  <isModal>false</isModal>
+  <Windowed>false</Windowed>
+</ScreenInfo>

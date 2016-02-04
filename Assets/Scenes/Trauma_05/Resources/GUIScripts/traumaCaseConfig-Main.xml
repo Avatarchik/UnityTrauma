@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScreenInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Screens>
+    <GUIScreen>
+      <type>CaseConfigMain</type>
+      <name>traumaCaseConfig-Main</name>
+      <x>0</x>
+      <y>0</y>
+      <width>960</width>
+      <height>600</height>
+      <skin>CaseConfig-Main</skin>
+      <style>main.background</style>
+      <fillarea>false</fillarea>
+      <anchor>centered</anchor>
+      <windowed>false</windowed>
+      <draggable>false</draggable>
+      <Elements>
+        <Area>
+          <name>HeaderArea</name>
+          <skin>CaseConfig-Main</skin>
+          <style>mainHeaderArea</style>
+          <text />
+          <visible>true</visible>
+          <Elements>
+            <Label>
+              <name>headerText</name>
+              <skin>CaseConfig-Main</skin>
+              <style>mainHeaderText</style>
+              <text>CASE CONFIGURATION</text>
+              <visible>true</visible>
+            </Label>
+            <Label>
+              <name>headerDescription</name>
+              <skin>CaseConfig-Main</skin>
+              <style>mainHeaderDesc</style>
+              <text>Create a new case. Load a previously created case.</text>
+              <visible>true</visible>
+            </Label>
+          </Elements>
+          <fillarea>false</fillarea>
+          <anchor>relative</anchor>
+        </Area>
+        <Area>
+          <name>menuArea</name>
+          <skin>CaseConfig-Main</skin>
+          <style>menuArea</style>
+          <text />
+          <visible>true</visible>
+          <Elements>
+            <Button>
+              <name>buttonCreateCase</name>
+              <skin>CaseConfig-Main</skin>
+              <style>buttonCreateCase</style>
+              <text>CREATE NEW CASE</text>
+              <visible>true</visible>
+              <screenTarget>traumaCaseConfig-Create.xml</screenTarget>
+              <closeWindow>false</closeWindow>
+            </Button>
+            <Button>
+              <name>buttonLoadCase</name>
+              <skin>CaseConfig-Main</skin>
+              <style>buttonLoadCase</style>
+              <text>LOAD CASE</text>
+              <visible>true</visible>
+              <closeWindow>false</closeWindow>
+            </Button>
+            <Button>
+              <name>buttonCaseManager</name>
+              <skin>CaseConfig-Main</skin>
+              <style>buttonLoadCase</style>
+              <text>USER MANAGER</text>
+              <visible>true</visible>
+              <screenTarget>traumaCaseConfig-Create.xml</screenTarget>
+              <closeWindow>false</closeWindow>
+            </Button>
+            <Button>
+              <name>buttonExit</name>
+              <skin>CaseConfig-Main</skin>
+              <style>buttonExit</style>
+              <text>BACK</text>
+              <visible>true</visible>
+              <closeWindow>false</closeWindow>
+            </Button>
+          </Elements>
+          <fillarea>false</fillarea>
+          <anchor>relative</anchor>
+        </Area>
+      </Elements>
+      <Windowed>false</Windowed>
+    </GUIScreen>
+  </Screens>
+  <isModal>false</isModal>
+  <Windowed>false</Windowed>
+</ScreenInfo>

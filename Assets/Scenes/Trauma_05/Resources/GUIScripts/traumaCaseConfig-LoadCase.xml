@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScreenInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Screens>
+    <GUIScreen>
+      <type>ConfigLoadCase</type>
+      <name>traumaPlayerRecords</name>
+      <x>0</x>
+      <y>0</y>
+      <width>960</width>
+      <height>600</height>
+      <skin>TraumaCaseLoad</skin>
+      <style>screen.background</style>
+      <fillarea>false</fillarea>
+      <anchor>centered</anchor>
+      <windowed>false</windowed>
+      <draggable>false</draggable>
+      <Elements>
+        <Area>
+          <name>headerArea</name>
+          <skin>TraumaCaseLoad</skin>
+          <style>headerArea</style>
+          <text />
+          <visible>true</visible>
+          <Elements>
+            <Label>
+              <name>screenTitleText</name>
+              <skin>TraumaCaseLoad</skin>
+              <style>screenTitleText</style>
+              <text>LOAD CASE</text>
+              <visible>true</visible>
+            </Label>
+            <Label>
+              <name>screenTitleDescription</name>
+              <skin>TraumaCaseLoad</skin>
+              <style>screenTitleDesc</style>
+              <text>Load a previously started case</text>
+              <visible>true</visible>
+            </Label>
+          </Elements>
+          <fillarea>false</fillarea>
+          <anchor>relative</anchor>
+        </Area>
+        <Area>
+          <name>MainArea</name>
+          <skin>TraumaCaseLoad</skin>
+          <style>caseArea</style>
+          <text />
+          <visible>true</visible>
+          <Elements>
+            <Area>
+              <name>ContentArea</name>
+              <skin>TraumaCaseLoad</skin>
+              <style>contentArea</style>
+              <text />
+              <visible>true</visible>
+              <Elements>
+                <Area>
+                  <name>CaseListArea</name>
+                  <skin>TraumaCaseLoad</skin>
+                  <style>caseListArea</style>
+                  <text />
+                  <visible>true</visible>
+                  <Elements>
+                    <Scrollview>
+                      <name>caseListScrollview</name>
+                      <skin>TraumaCaseLoad</skin>
+                      <style>none</style>
+                      <text />
+                      <visible>true</visible>
+                      <Elements>
+                        <Horizontal>
+                          <name>caseItem01</name>
+                          <skin>TraumaCaseLoad</skin>
+                          <style>caseItemHorizontal</style>
+                          <text />
+                          <visible>true</visible>
+                          <Elements>
+                            <Button>
+                              <name>buttonCaseItem01</name>
+                              <skin>TraumaCaseLoad</skin>
+                              <style>buttonCaseItem01</style>
+                              <text>CASE 01 : BURNT TOAST TRAUMA</text>
+                              <visible>true</visible>
+                              <closeWindow>false</closeWindow>
+                            </Button>
+                            <Label>
+                              <name>caseItem01Time</name>
+                              <skin>TraumaCaseLoad</skin>
+                              <style>caseItem01Time</style>
+                              <text>MAY 27th, 9:27 PM</text>
+                              <visible>true</visible>
+                            </Label>
+                          </Elements>
+                        </Horizontal>
+                        <Horizontal>
+                          <name>caseItem01</name>
+                          <skin>TraumaCaseLoad</skin>
+                          <style>caseItemHorizontal</style>
+                          <text />
+                          <visible>true</visible>
+                          <Elements>
+                            <Button>
+                              <name>buttonCaseItem01</name>
+                              <skin>TraumaCaseLoad</skin>
+                              <style>buttonCaseItem01</style>
+                              <text>CASE 01 : BURNT TOAST TRAUMA</text>
+                              <visible>true</visible>
+                              <closeWindow>false</closeWindow>
+                            </Button>
+                            <Label>
+                              <name>caseItem01Time</name>
+                              <skin>TraumaCaseLoad</skin>
+                              <style>caseItem01Time</style>
+                              <text>MAY 27th, 9:27 PM</text>
+                              <visible>true</visible>
+                            </Label>
+                          </Elements>
+                        </Horizontal>
+                        <Horizontal>
+                          <name>caseItem01</name>
+                          <skin>TraumaCaseLoad</skin>
+                          <style>caseItemHorizontal</style>
+                          <text />
+                          <visible>true</visible>
+                          <Elements>
+                            <Button>
+                              <name>buttonCaseItem01</name>
+                              <skin>TraumaCaseLoad</skin>
+                              <style>buttonCaseItem01</style>
+                              <text>CASE 01 : BURNT TOAST TRAUMA</text>
+                              <visible>true</visible>
+                              <closeWindow>false</closeWindow>
+                            </Button>
+                            <Label>
+                              <name>caseItem01Time</name>
+                              <skin>TraumaCaseLoad</skin>
+                              <style>caseItem01Time</style>
+                              <text>MAY 27th, 9:27 PM</text>
+                              <visible>true</visible>
+                            </Label>
+                          </Elements>
+                        </Horizontal>
+                        <Horizontal>
+                          <name>caseItem01</name>
+                          <skin>TraumaCaseLoad</skin>
+                          <style>caseItemHorizontal</style>
+                          <text />
+                          <visible>true</visible>
+                          <Elements>
+                            <Button>
+                              <name>buttonCaseItem01</name>
+                              <skin>TraumaCaseLoad</skin>
+                              <style>buttonCaseItem01</style>
+                              <text>CASE 01 : BURNT TOAST TRAUMA</text>
+                              <visible>true</visible>
+                              <closeWindow>false</closeWindow>
+                            </Button>
+                            <Label>
+                              <name>caseItem01Time</name>
+                              <skin>TraumaCaseLoad</skin>
+                              <style>caseItem01Time</style>
+                              <text>MAY 27th, 9:27 PM</text>
+                              <visible>true</visible>
+                            </Label>
+                          </Elements>
+                        </Horizontal>
+                        <Horizontal>
+                          <name>caseItem01</name>
+                          <skin>TraumaCaseLoad</skin>
+                          <style>caseItemHorizontal</style>
+                          <text />
+                          <visible>true</visible>
+                          <Elements>
+                            <Button>
+                              <name>buttonCaseItem01</name>
+                              <skin>TraumaCaseLoad</skin>
+                              <style>buttonCaseItem01</style>
+                              <text>CASE 01 : BURNT TOAST TRAUMA</text>
+                              <visible>true</visible>
+                              <closeWindow>false</closeWindow>
+                            </Button>
+                            <Label>
+                              <name>caseItem01Time</name>
+                              <skin>TraumaCaseLoad</skin>
+                              <style>caseItem01Time</style>
+                              <text>MAY 27th, 9:27 PM</text>
+                              <visible>true</visible>
+                            </Label>
+                          </Elements>
+                        </Horizontal>
+                        <Horizontal>
+                          <name>caseItem01</name>
+                          <skin>TraumaCaseLoad</skin>
+                          <style>caseItemHorizontal</style>
+                          <text />
+                          <visible>true</visible>
+                          <Elements>
+                            <Button>
+                              <name>buttonCaseItem01</name>
+                              <skin>TraumaCaseLoad</skin>
+                              <style>buttonCaseItem01</style>
+                              <text>CASE 01 : BURNT TOAST TRAUMA</text>
+                              <visible>true</visible>
+                              <closeWindow>false</closeWindow>
+                            </Button>
+                            <Label>
+                              <name>caseItem01Time</name>
+                              <skin>TraumaCaseLoad</skin>
+                              <style>caseItem01Time</style>
+                              <text>MAY 27th, 9:27 PM</text>
+                              <visible>true</visible>
+                            </Label>
+                          </Elements>
+                        </Horizontal>
+                        <Horizontal>
+                          <name>caseItem01</name>
+                          <skin>TraumaCaseLoad</skin>
+                          <style>caseItemHorizontal</style>
+                          <text />
+                          <visible>true</visible>
+                          <Elements>
+                            <Button>
+                              <name>buttonCaseItem01</name>
+                              <skin>TraumaCaseLoad</skin>
+                              <style>buttonCaseItem01</style>
+                              <text>CASE 01 : BURNT TOAST TRAUMA</text>
+                              <visible>true</visible>
+                              <closeWindow>false</closeWindow>
+                            </Button>
+                            <Label>
+                              <name>caseItem01Time</name>
+                              <skin>TraumaCaseLoad</skin>
+                              <style>caseItem01Time</style>
+                              <text>MAY 27th, 9:27 PM</text>
+                              <visible>true</visible>
+                            </Label>
+                          </Elements>
+                        </Horizontal>
+                        <Horizontal>
+                          <name>caseItem01</name>
+                          <skin>TraumaCaseLoad</skin>
+                          <style>caseItemHorizontal</style>
+                          <text />
+                          <visible>true</visible>
+                          <Elements>
+                            <Button>
+                              <name>buttonCaseItem01</name>
+                              <skin>TraumaCaseLoad</skin>
+                              <style>buttonCaseItem01</style>
+                              <text>CASE 01 : BURNT TOAST TRAUMA</text>
+                              <visible>true</visible>
+                              <closeWindow>false</closeWindow>
+                            </Button>
+                            <Label>
+                              <name>caseItem01Time</name>
+                              <skin>TraumaCaseLoad</skin>
+                              <style>caseItem01Time</style>
+                              <text>MAY 27th, 9:27 PM</text>
+                              <visible>true</visible>
+                            </Label>
+                          </Elements>
+                        </Horizontal>
+                        <Horizontal>
+                          <name>caseItem01</name>
+                          <skin>TraumaCaseLoad</skin>
+                          <style>caseItemHorizontal</style>
+                          <text />
+                          <visible>true</visible>
+                          <Elements>
+                            <Button>
+                              <name>buttonCaseItem01</name>
+                              <skin>TraumaCaseLoad</skin>
+                              <style>buttonCaseItem01</style>
+                              <text>CASE 01 : BURNT TOAST TRAUMA</text>
+                              <visible>true</visible>
+                              <closeWindow>false</closeWindow>
+                            </Button>
+                            <Label>
+                              <name>caseItem01Time</name>
+                              <skin>TraumaCaseLoad</skin>
+                              <style>caseItem01Time</style>
+                              <text>MAY 27th, 9:27 PM</text>
+                              <visible>true</visible>
+                            </Label>
+                          </Elements>
+                        </Horizontal>
+                        <Horizontal>
+                          <name>caseItem01</name>
+                          <skin>TraumaCaseLoad</skin>
+                          <style>caseItemHorizontal</style>
+                          <text />
+                          <visible>true</visible>
+                          <Elements>
+                            <Button>
+                              <name>buttonCaseItem01</name>
+                              <skin>TraumaCaseLoad</skin>
+                              <style>buttonCaseItem01</style>
+                              <text>CASE 01 : BURNT TOAST TRAUMA</text>
+                              <visible>true</visible>
+                              <closeWindow>false</closeWindow>
+                            </Button>
+                            <Label>
+                              <name>caseItem01Time</name>
+                              <skin>TraumaCaseLoad</skin>
+                              <style>caseItem01Time</style>
+                              <text>MAY 27th, 9:27 PM</text>
+                              <visible>true</visible>
+                            </Label>
+                          </Elements>
+                        </Horizontal>
+                        <Horizontal>
+                          <name>caseItem01</name>
+                          <skin>TraumaCaseLoad</skin>
+                          <style>caseItemHorizontal</style>
+                          <text />
+                          <visible>true</visible>
+                          <Elements>
+                            <Button>
+                              <name>buttonCaseItem01</name>
+                              <skin>TraumaCaseLoad</skin>
+                              <style>buttonCaseItem01</style>
+                              <text>CASE 01 : BURNT TOAST TRAUMA</text>
+                              <visible>true</visible>
+                              <closeWindow>false</closeWindow>
+                            </Button>
+                            <Label>
+                              <name>caseItem01Time</name>
+                              <skin>TraumaCaseLoad</skin>
+                              <style>caseItem01Time</style>
+                              <text>MAY 27th, 9:27 PM</text>
+                              <visible>true</visible>
+                            </Label>
+                          </Elements>
+                        </Horizontal>
+                        <Horizontal>
+                          <name>caseItem01</name>
+                          <skin>TraumaCaseLoad</skin>
+                          <style>caseItemHorizontal</style>
+                          <text />
+                          <visible>true</visible>
+                          <Elements>
+                            <Button>
+                              <name>buttonCaseItem01</name>
+                              <skin>TraumaCaseLoad</skin>
+                              <style>buttonCaseItem01</style>
+                              <text>CASE 01 : BURNT TOAST TRAUMA</text>
+                              <visible>true</visible>
+                              <closeWindow>false</closeWindow>
+                            </Button>
+                            <Label>
+                              <name>caseItem01Time</name>
+                              <skin>TraumaCaseLoad</skin>
+                              <style>caseItem01Time</style>
+                              <text>MAY 27th, 9:27 PM</text>
+                              <visible>true</visible>
+                            </Label>
+                          </Elements>
+                        </Horizontal>
+                        <Horizontal>
+                          <name>caseItem01</name>
+                          <skin>TraumaCaseLoad</skin>
+                          <style>caseItemHorizontal</style>
+                          <text />
+                          <visible>true</visible>
+                          <Elements>
+                            <Button>
+                              <name>buttonCaseItem01</name>
+                              <skin>TraumaCaseLoad</skin>
+                              <style>buttonCaseItem01</style>
+                              <text>CASE 01 : BURNT TOAST TRAUMA</text>
+                              <visible>true</visible>
+                              <closeWindow>false</closeWindow>
+                            </Button>
+                            <Label>
+                              <name>caseItem01Time</name>
+                              <skin>TraumaCaseLoad</skin>
+                              <style>caseItem01Time</style>
+                              <text>MAY 27th, 9:27 PM</text>
+                              <visible>true</visible>
+                            </Label>
+                          </Elements>
+                        </Horizontal>
+                        <Horizontal>
+                          <name>caseItem01</name>
+                          <skin>TraumaCaseLoad</skin>
+                          <style>caseItemHorizontal</style>
+                          <text />
+                          <visible>true</visible>
+                          <Elements>
+                            <Button>
+                              <name>buttonCaseItem01</name>
+                              <skin>TraumaCaseLoad</skin>
+                              <style>buttonCaseItem01</style>
+                              <text>CASE 01 : BURNT TOAST TRAUMA</text>
+                              <visible>true</visible>
+                              <closeWindow>false</closeWindow>
+                            </Button>
+                            <Label>
+                              <name>caseItem01Time</name>
+                              <skin>TraumaCaseLoad</skin>
+                              <style>caseItem01Time</style>
+                              <text>MAY 27th, 9:27 PM</text>
+                              <visible>true</visible>
+                            </Label>
+                          </Elements>
+                        </Horizontal>
+                        <Horizontal>
+                          <name>caseItem01</name>
+                          <skin>TraumaCaseLoad</skin>
+                          <style>caseItemHorizontal</style>
+                          <text />
+                          <visible>true</visible>
+                          <Elements>
+                            <Button>
+                              <name>buttonCaseItem01</name>
+                              <skin>TraumaCaseLoad</skin>
+                              <style>buttonCaseItem01</style>
+                              <text>CASE 01 : BURNT TOAST TRAUMA</text>
+                              <visible>true</visible>
+                              <closeWindow>false</closeWindow>
+                            </Button>
+                            <Label>
+                              <name>caseItem01Time</name>
+                              <skin>TraumaCaseLoad</skin>
+                              <style>caseItem01Time</style>
+                              <text>MAY 27th, 9:27 PM</text>
+                              <visible>true</visible>
+                            </Label>
+                          </Elements>
+                        </Horizontal>
+                        <Horizontal>
+                          <name>caseItem01</name>
+                          <skin>TraumaCaseLoad</skin>
+                          <style>caseItemHorizontal</style>
+                          <text />
+                          <visible>true</visible>
+                          <Elements>
+                            <Button>
+                              <name>buttonCaseItem01</name>
+                              <skin>TraumaCaseLoad</skin>
+                              <style>buttonCaseItem01</style>
+                              <text>CASE 01 : BURNT TOAST TRAUMA</text>
+                              <visible>true</visible>
+                              <closeWindow>false</closeWindow>
+                            </Button>
+                            <Label>
+                              <name>caseItem01Time</name>
+                              <skin>TraumaCaseLoad</skin>
+                              <style>caseItem01Time</style>
+                              <text>MAY 27th, 9:27 PM</text>
+                              <visible>true</visible>
+                            </Label>
+                          </Elements>
+                        </Horizontal>
+                      </Elements>
+                      <displayHorizontal>false</displayHorizontal>
+                      <displayVertical>true</displayVertical>
+                      <hStyle>none</hStyle>
+                      <vStyle>none</vStyle>
+                      <scroll>
+                        <x>0</x>
+                        <y>0</y>
+                      </scroll>
+                    </Scrollview>
+                  </Elements>
+                  <fillarea>false</fillarea>
+                  <anchor>relative</anchor>
+                </Area>
+              </Elements>
+              <fillarea>false</fillarea>
+              <anchor>relative</anchor>
+            </Area>
+            <Label>
+              <name>Cases</name>
+              <skin>TraumaCaseLoad</skin>
+              <style>cases</style>
+              <text>Cases</text>
+              <visible>true</visible>
+            </Label>
+          </Elements>
+          <fillarea>false</fillarea>
+          <anchor>relative</anchor>
+        </Area>
+        <Area>
+          <name>buttonArea</name>
+          <skin>TraumaCaseLoad</skin>
+          <style>buttonsArea</style>
+          <text />
+          <visible>true</visible>
+          <Elements>
+            <Horizontal>
+              <name>buttonHorizontal</name>
+              <skin>TraumaCaseLoad</skin>
+              <style>none</style>
+              <text />
+              <visible>true</visible>
+              <Elements>
+                <Button>
+                  <name>buttonBack</name>
+                  <skin>TraumaCaseLoad</skin>
+                  <style>buttonBack</style>
+                  <text>BACK</text>
+                  <visible>true</visible>
+                  <closeWindow>false</closeWindow>
+                </Button>
+              </Elements>
+            </Horizontal>
+          </Elements>
+          <fillarea>false</fillarea>
+          <anchor>relative</anchor>
+        </Area>
+      </Elements>
+      <Windowed>false</Windowed>
+    </GUIScreen>
+  </Screens>
+  <isModal>false</isModal>
+  <Windowed>false</Windowed>
+</ScreenInfo>

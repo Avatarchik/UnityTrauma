@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScreenInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Screens>
+    <GUIScreen>
+      <type>TraumaWaiting</type>
+      <name>traumaWaiting</name>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+      <skin>TraumaWaiting</skin>
+      <style />
+      <fillarea>false</fillarea>
+      <fade>false</fade>
+      <fadespeed>-1</fadespeed>
+      <Elements>
+        <Area>
+          <name>WaitingArea</name>
+          <skin>TraumaWaiting</skin>
+          <style>WaitingArea</style>
+          <text />
+          <visible>true</visible>
+          <FlashRate>0.5</FlashRate>
+          <Flash>false</Flash>
+          <Elements>
+            <Label>
+              <name>WaitingLabel</name>
+              <skin>TraumaWaiting</skin>
+              <style>WaitingLabel</style>
+              <text />
+              <visible>true</visible>
+              <FlashRate>0.5</FlashRate>
+              <Flash>false</Flash>
+            </Label>
+          </Elements>
+          <fillarea>false</fillarea>
+          <rotation>0</rotation>
+          <rotationOffsetX>50</rotationOffsetX>
+          <rotationOffsetY>50</rotationOffsetY>
+          <rotateAroundCenter>true</rotateAroundCenter>
+          <ignoreMouseOverCheck>false</ignoreMouseOverCheck>
+          <hotspot>false</hotspot>
+          <anchor>centered</anchor>
+        </Area>
+      </Elements>
+      <styleInfo>
+        <GUIStyleInfo>
+          <name>WaitingLabel</name>
+          <texNormal>ecgLead-red</texNormal>
+        </GUIStyleInfo>
+      </styleInfo>
+      <anchor>none</anchor>
+      <windowed>false</windowed>
+      <draggable>false</draggable>
+      <Windowed>false</Windowed>
+    </GUIScreen>
+  </Screens>
+  <isModal>false</isModal>
+  <Windowed>false</Windowed>
+</ScreenInfo>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScreenInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Screens>
+    <GUIScreen>
+      <type>TraumaNewUser</type>
+      <name>traumaLoginScreen</name>
+      <x>0</x>
+      <y>0</y>
+      <width>374</width>
+      <height>359</height>
+      <skin>TraumaNewUser</skin>
+      <style>login.background</style>
+      <fillarea>false</fillarea>
+      <anchor>centered</anchor>
+      <windowed>false</windowed>
+      <draggable>false</draggable>
+      <Elements>
+        <Area>
+          <name>contentArea</name>
+          <skin>TraumaNewUser</skin>
+          <style>login.contentArea</style>
+          <text />
+          <visible>true</visible>
+          <Elements>
+            <Label>
+              <name>titleText</name>
+              <skin>TraumaNewUser</skin>
+              <style>titleText</style>
+              <text>Create New User</text>
+              <visible>true</visible>
+            </Label>
+            <Label>
+              <name>FirstName</name>
+              <skin>TraumaNewUser</skin>
+              <style>firstnameText</style>
+              <text>First Name</text>
+              <visible>true</visible>
+            </Label>
+            <Editbox>
+              <name>FirstNameBox</name>
+              <skin>TraumaNewUser</skin>
+              <style>firstnameEditbox</style>
+              <text />
+              <visible>true</visible>
+              <_password>false</_password>
+            </Editbox>
+            <Label>
+              <name>LastName</name>
+              <skin>TraumaNewUser</skin>
+              <style>lastnameText</style>
+              <text>Last Name</text>
+              <visible>true</visible>
+            </Label>
+            <Editbox>
+              <name>LastNameBox</name>
+              <skin>TraumaNewUser</skin>
+              <style>lastnameEditbox</style>
+              <text />
+              <visible>true</visible>
+              <_password>false</_password>
+            </Editbox>
+            <Label>
+              <name>Username</name>
+              <skin>TraumaNewUser</skin>
+              <style>usernameText</style>
+              <text>Username  ( medstar email )</text>
+              <visible>true</visible>
+            </Label>
+            <Editbox>
+              <name>usernameBox</name>
+              <skin>TraumaNewUser</skin>
+              <style>usernameEditbox</style>
+              <text />
+              <visible>true</visible>
+              <_password>false</_password>
+            </Editbox>
+            <Label>
+              <name>Password</name>
+              <skin>TraumaNewUser</skin>
+              <style>passwordText</style>
+              <text>Password ( case sensitive )</text>
+              <visible>true</visible>
+            </Label>
+            <Editbox>
+              <name>passwordBox</name>
+              <skin>TraumaNewUser</skin>
+              <style>passwordEditbox</style>
+              <text />
+              <visible>true</visible>
+              <_password>false</_password>
+            </Editbox>
+            <Horizontal>
+              <name>adminTickHorizontal</name>
+              <skin>TraumaNewUser</skin>
+              <style>none</style>
+              <text />
+              <visible>true</visible>
+              <Elements>
+                <Label>
+                  <name>makeAdmin</name>
+                  <skin>TraumaNewUser</skin>
+                  <style>makeAdminText</style>
+                  <text>Admin </text>
+                  <visible>true</visible>
+                </Label>
+                <Toggle>
+                  <name>makeAdminTick</name>
+                  <skin>TraumaNewUser</skin>
+                  <style>makeAdminTick</style>
+                  <text />
+                  <visible>true</visible>
+                  <closeWindow>false</closeWindow>
+                  <toggle>false</toggle>
+                </Toggle>
+              </Elements>
+            </Horizontal>
+            <Horizontal>
+              <name>buttonHorizontal</name>
+              <skin>TraumaNewUser</skin>
+              <style>none</style>
+              <text />
+              <visible>true</visible>
+              <Elements>
+                <Button>
+                  <name>buttonCancel</name>
+                  <skin>TraumaNewUser</skin>
+                  <style>cancelButton</style>
+                  <text>CANCEL</text>
+                  <visible>true</visible>
+                  <closeWindow>false</closeWindow>
+                </Button>
+                <Button>
+                  <name>buttonCreate</name>
+                  <skin>TraumaNewUser</skin>
+                  <style>createButton</style>
+                  <text>CREATE</text>
+                  <visible>true</visible>
+                  <closeWindow>false</closeWindow>
+                </Button>
+              </Elements>
+            </Horizontal>
+          </Elements>
+          <fillarea>false</fillarea>
+          <anchor>relative</anchor>
+        </Area>
+      </Elements>
+      <Windowed>false</Windowed>
+    </GUIScreen>
+  </Screens>
+  <isModal>false</isModal>
+  <Windowed>false</Windowed>
+</ScreenInfo>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScreenInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- The This is a template file describing the most basic dialog box. It contains a titleBar, text area and close button. It should resize to appropriate dimensions
+	via internal c# code.-->
+  <Screens>
+    <GUIScreen>
+      <type>InfoDialogGUI</type>
+      <name>InfoDialog</name>
+      <skin>ApplicationSkin</skin>
+      <style>chatwindow.container</style>
+      <anchor>lower_left</anchor>
+      <Elements>
+        <Label>
+          <name>contentText</name>
+          <skin>ApplicationSkin</skin>
+          <style>chatwindow.text.region</style>
+        </Label>        
+        <Area>
+          <name>dialogGenericBackground</name>
+          <skin>ApplicationSkin</skin>
+          <style>window</style>
+		  <anchor>relative</anchor>			
+          <Elements> 
+            <Toggle>
+              <name>expand</name>
+              <skin>ApplicationSkin</skin>
+              <style>button.expand</style>
+            </Toggle>
+          </Elements>
+        </Area>        
+      </Elements>
+    </GUIScreen>
+  </Screens>
+</ScreenInfo>

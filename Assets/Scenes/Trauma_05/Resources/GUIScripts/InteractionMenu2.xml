@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScreenInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <!-- The This is a template file describing a fast exam pop-up. It contains a titleBar, video area and close button. It should resize to appropriate dimensions
+	via internal c# code.-->
+  <Screens>
+    <GUIScreen>
+      <type>InteractMenu2</type>
+      <name>InteractionMenu02</name>
+      <skin>InteractionMenu</skin>
+      <style>interactionMenu.background</style>
+      <anchor>centered</anchor>
+	  <draggable>true</draggable>
+      <Elements>
+
+
+        <!-- Title Bar Area -->
+        <Area>
+          <name>titleBarArea</name>
+          <skin>InteractionMenu</skin>
+          <style>title.background</style>
+          <anchor>relative</anchor>
+          <Elements>
+
+            <!-- NPC TITLE TEXT-->
+            <Area>
+              <name>npcTitleTextArea</name>
+              <skin>InteractionMenu</skin>
+              <style>Label</style>
+              <anchor>relative</anchor>
+              <Elements>
+                <Label>
+                  <name>npcTitle</name>
+                  <skin>InteractionMenu</skin>
+                  <style>npc.title.text</style>
+                  <text>SCRIBE NURSE</text>
+                </Label>
+              </Elements>
+            </Area>
+            <!-- NPC TITLE TEXT-->
+
+            <!-- Close Buttons -->
+            <Area>
+              <name>closeButtonArea</name>
+              <skin>InteractionMenu</skin>
+              <style>Label</style>
+              <anchor>relative</anchor>
+              <Elements>
+                <Button>
+                  <name>closeButton</name>
+                  <skin>InteractionMenu</skin>
+                  <style>button.close</style>
+                  <text>CLOSE X</text>
+                  <closeWindow>true</closeWindow>
+                </Button>
+              </Elements>
+            </Area>
+            <!-- Close Buttons -->
+
+          </Elements>
+        </Area>
+        <!-- Title Bar Area -->
+
+
+        <!-- Menu Background - Primary Menu - Profile Image Area-->
+        <Area>
+          <name>content.background</name>
+          <skin>InteractionMenu</skin>
+          <style>content.background</style>
+          <anchor>relative</anchor>
+          <Elements>
+
+            <!-- Profile Image Area-->
+            <Area>
+              <name>ProfileImageArea</name>
+              <skin>InteractionMenu</skin>
+              <style>Label</style>
+              <anchor>relative</anchor>
+              <Elements>
+
+                <Label>
+                  <name>npcProfileImage</name>
+                  <skin>InteractionMenu</skin>
+                  <style>proile.image.background</style>
+                </Label>
+
+                <Label>
+                  <name>npcStatus</name>
+                  <skin>InteractionMenu</skin>
+                  <style>npc.status</style>
+                  <text>Available</text>
+                </Label>
+
+              </Elements>
+            </Area>
+            <!-- Profile Image Area-->
+
+            <!-- Primary Menu Area-->
+            <Area>
+              <name>primaryMenuButtonArea</name>
+              <skin>InteractionMenu</skin>
+              <style>primaryMenu.area</style>
+              <anchor>relative</anchor>
+              <Elements>
+
+                <!-- Parent Menu Button 01 -->
+                <Toggle>
+                  <name>primaryMenuItem01</name>
+                  <skin>InteractionMenu</skin>
+                  <style>button.primaryButton</style>
+                  <anchor>relative</anchor>
+                  <text>DIAGNOSTICS</text>
+                </Toggle>
+                <!-- Parent Menu Button 01 -->
+
+              </Elements>
+            </Area>
+            <!-- Primary Menu Area-->
+
+          </Elements>
+        </Area>
+        <!-- Menu Background - Primary Menu - Profile Image Area-->
+
+
+        <!-- Secondary Menu Area-->
+        <Area>
+          <name>secondaryMenuArea</name>
+          <skin>InteractionMenu</skin>
+          <style>secondaryMenu.background</style>
+          <anchor>relative</anchor>
+          <Elements>
+            <!-- Scroll View -->
+            <Scrollview>
+              <name>secondaryMenuScrollArea</name>
+              <skin>InteractionMenu</skin>
+              <style>secondaryMenu.area</style>
+              <vStyle>verticalscrollbar</vStyle>
+              <hStyle>horizontalscrollbar</hStyle>
+              <displayHorizontal>false</displayHorizontal>
+              <displayVertical>true</displayVertical>
+              <Elements>
+
+
+                <!-- Tirtiary Button-->
+                <Button>
+                  <name>button.task</name>
+                  <skin>InteractionMenu</skin>
+                  <style>button.task</style>
+                  <text>Saturated Oxygen</text>
+                </Button>
+                <!-- Tirtiary Button-->
+
+                <Toggle>
+                  <name>button.category</name>
+                  <skin>InteractionMenu</skin>
+                  <style>button.secondaryButton</style>
+                  <text>BREATHING</text>
+                </Toggle>
+
+
+              </Elements>
+            </Scrollview>
+            <!-- Scroll View -->
+          </Elements>
+        </Area>
+        <!-- Secondary Menu Area-->
+
+
+        <!-- Navigation Area-->
+        <Area>
+          <name>navigationArea</name>
+          <skin>InteractionMenu</skin>
+          <style>navigation.background</style>
+          <anchor>relative</anchor>
+          <Elements>
+
+            <!-- Breadcrumbs-->
+                <Horizontal>
+                  <name>breadcrumbsHorizontal</name>
+                  <skin>InteractionMenu</skin>
+                  <style>Label</style>
+                  <Elements>
+
+                    <Label>
+                      <name>bracketLeft</name>
+                      <skin>InteractionMenu</skin>
+                      <style>bracket.left</style>
+                    </Label>
+
+                    <Label>
+                      <name>breadcrumbs.item</name>
+                      <skin>InteractionMenu</skin>
+                      <style>breadcrumbs.text</style>
+                    </Label>
+
+                    <Label>
+                      <name>bracketRight</name>
+                      <skin>InteractionMenu</skin>
+                      <style>bracket.right</style>
+                    </Label>
+
+                  </Elements>
+                </Horizontal>
+            <!-- Breadcrumbs-->
+
+          </Elements>
+        </Area>
+        <!-- Navigation Area-->
+
+      </Elements>
+    </GUIScreen>
+  </Screens>
+</ScreenInfo>

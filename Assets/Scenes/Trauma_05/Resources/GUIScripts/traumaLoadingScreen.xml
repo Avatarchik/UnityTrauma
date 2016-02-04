@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScreenInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Screens>
+    <GUIScreen>
+      <type>TraumaLoadingScreen</type>
+      <name>traumaLoadingScreen</name>
+      <x>0</x>
+      <y>0</y>
+      <width>1920</width>
+      <height>1080</height>
+      <skin>TraumaLoginScreen</skin>
+      <style>loading.background</style>
+      <fillarea>false</fillarea>
+      <fade>false</fade>
+      <fadespeed>-1</fadespeed>
+      <Elements>
+        <Area>
+          <name>contentArea</name>
+          <skin>TraumaLoginScreen</skin>
+          <style>contentArea</style>
+          <visible>true</visible>
+          <FlashRate>0.5</FlashRate>
+          <text />
+          <Flash>false</Flash>
+          <Elements>
+            <Label>
+              <name>loadingText</name>
+              <skin>TraumaLoginScreen</skin>
+              <style>loadingText</style>
+              <visible>true</visible>
+              <FlashRate>0.5</FlashRate>
+              <text>LOADING CASE DETAILS...</text>
+              <Flash>false</Flash>
+            </Label>
+          </Elements>
+          <fillarea>false</fillarea>
+          <rotation>0</rotation>
+          <rotationOffsetX>0</rotationOffsetX>
+          <rotationOffsetY>0</rotationOffsetY>
+          <rotateAroundCenter>false</rotateAroundCenter>
+          <ignoreMouseOverCheck>false</ignoreMouseOverCheck>
+          <hotspot>false</hotspot>
+          <anchor>relative</anchor>
+        </Area>
+      </Elements>
+      <styleInfo>
+        <GUIStyleInfo>
+          <name>login.background</name>
+          <texNormal>traumaLogin.background1920x1080</texNormal>
+        </GUIStyleInfo>
+        <GUIStyleInfo>
+          <name>loginError.background</name>
+          <texNormal>traumaMainMenu.background1920x1080</texNormal>
+        </GUIStyleInfo>
+        <GUIStyleInfo>
+          <name>loading.background</name>
+          <texNormal>loadingScreen_bg_1920x1080</texNormal>
+        </GUIStyleInfo>
+        <GUIStyleInfo>
+          <name>screen.background</name>
+          <texNormal>generic.background.gray</texNormal>
+        </GUIStyleInfo>
+        <GUIStyleInfo>
+          <name>login.contentArea</name>
+          <texNormal>mainMenu.LoginBG_1920x1080</texNormal>
+        </GUIStyleInfo>
+        <GUIStyleInfo>
+          <name>loginError.contentArea</name>
+          <texNormal>caseSelect_contentBG</texNormal>
+        </GUIStyleInfo>
+        <GUIStyleInfo>
+          <name>titleText</name>
+          <font>Helvetica LT 35 Thin</font>
+        </GUIStyleInfo>
+        <GUIStyleInfo>
+          <name>usernameText</name>
+          <font>Helvetica LT 35 Thin</font>
+        </GUIStyleInfo>
+        <GUIStyleInfo>
+          <name>usernameEditbox</name>
+          <texNormal>editBox_1920x1080</texNormal>
+          <font>Helvetica LT 35 Thin</font>
+        </GUIStyleInfo>
+        <GUIStyleInfo>
+          <name>passwordText</name>
+          <font>Helvetica LT 35 Thin</font>
+        </GUIStyleInfo>
+        <GUIStyleInfo>
+          <name>passwordEditbox</name>
+          <texNormal>editBox_1920x1080</texNormal>
+          <font>Helvetica LT 35 Thin</font>
+        </GUIStyleInfo>
+        <GUIStyleInfo>
+          <name>loginButton</name>
+          <texNormal>bt_login.normal_1080</texNormal>
+          <texHover>bt_login_hover_1080</texHover>
+          <texActive>bt_login.normal_1080</texActive>
+          <font>Helvetica LT 35 Thin</font>
+        </GUIStyleInfo>
+        <GUIStyleInfo>
+          <name>okButton</name>
+          <texNormal>bt_caseListUNLCK_normal</texNormal>
+          <texHover>bt_caseListUNLCK_hover</texHover>
+          <texActive>bt_caseListUNLCK_normal</texActive>
+          <font>Helvetica LT 35 Thin</font>
+        </GUIStyleInfo>
+        <GUIStyleInfo>
+          <name>cancelButton</name>
+          <texNormal>button.hud.generic01.normal</texNormal>
+          <texHover>button.hud.generic01.hover</texHover>
+          <texActive>button.hud.generic01.down</texActive>
+          <font>MyriadPro-Regular</font>
+        </GUIStyleInfo>
+        <GUIStyleInfo>
+          <name>versionText</name>
+          <font>Helvetica LT 35 Thin</font>
+        </GUIStyleInfo>
+        <GUIStyleInfo>
+          <name>errorMessageArea</name>
+          <font>Helvetica LT 35 Thin</font>
+        </GUIStyleInfo>
+        <GUIStyleInfo>
+          <name>loginErrorText</name>
+          <font>Helvetica LT 35 Thin</font>
+        </GUIStyleInfo>
+        <GUIStyleInfo>
+          <name>TextArea</name>
+          <texNormal>mainMenu.Title_1920x1080</texNormal>
+        </GUIStyleInfo>
+        <GUIStyleInfo>
+          <name>titletext01</name>
+          <font>Helvetica LT 35 Thin</font>
+        </GUIStyleInfo>
+        <GUIStyleInfo>
+          <name>titleText02</name>
+          <font>Helvetica LT 35 Thin</font>
+        </GUIStyleInfo>
+        <GUIStyleInfo>
+          <name>subtitleText</name>
+          <font>Helvetica LT 35 Thin</font>
+        </GUIStyleInfo>
+        <GUIStyleInfo>
+          <name>FooterArea</name>
+          <texNormal>mainMenu.Footer_1920x1080</texNormal>
+        </GUIStyleInfo>
+        <GUIStyleInfo>
+          <name>loginErrorText2</name>
+          <font>Helvetica LT 35 Thin</font>
+        </GUIStyleInfo>
+        <GUIStyleInfo>
+          <name>titleText2</name>
+          <texNormal>generic.background.black-A75</texNormal>
+          <font>Helvetica LT 35 Thin</font>
+        </GUIStyleInfo>
+        <GUIStyleInfo>
+          <name>loadingText</name>
+          <texNormal>generic.background.blue01-A50</texNormal>
+          <font>Helvetica LT 35 Thin</font>
+        </GUIStyleInfo>
+      </styleInfo>
+      <anchor>centered</anchor>
+      <windowed>false</windowed>
+      <draggable>false</draggable>
+      <Windowed>false</Windowed>
+    </GUIScreen>
+  </Screens>
+  <isModal>false</isModal>
+  <Windowed>false</Windowed>
+</ScreenInfo>

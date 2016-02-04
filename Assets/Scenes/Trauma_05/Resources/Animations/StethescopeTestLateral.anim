@@ -1,0 +1,537 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: StethescopeTestLateral
+  serializedVersion: 4
+  m_AnimationType: 1
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves: []
+  m_CompressedRotationCurves: []
+  m_PositionCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -6.03987122, y: -6.73757168e-05, z: -5.20544577}
+        inSlope: {x: .43404007, y: .000174143905, z: 23.8265228}
+        outSlope: {x: .43404007, y: .000174143905, z: 23.8265228}
+        tangentMode: -559038737
+      - time: 1
+        value: {x: -5.60583115, y: .000106768195, z: 18.6210766}
+        inSlope: {x: .43404007, y: .000174143905, z: 23.8265228}
+        outSlope: {x: .43404007, y: .000174143905, z: 23.8265228}
+        tangentMode: -559038737
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: stethescopeBone_tube00/stethoscopeBone_tube01/stethoscopeBone_tube02/stethoscopeBone_tube03/stethoscopeBone_tube04/stethoscopeBone_tube05/stethoscopeBone_tube06/stethoscopeBone_tube07
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -8.01472569, y: 0, z: -.508956432}
+        inSlope: {x: 5.52387714, y: 0, z: 11.0362701}
+        outSlope: {x: 5.52387714, y: 0, z: 11.0362701}
+        tangentMode: -559038737
+      - time: 1
+        value: {x: -2.49084854, y: 0, z: 10.5273132}
+        inSlope: {x: 5.52387714, y: 0, z: 11.0362701}
+        outSlope: {x: 5.52387714, y: 0, z: 11.0362701}
+        tangentMode: -559038737
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: stethescopeBone_tube00/stethoscopeBone_tube01/stethoscopeBone_tube02/stethoscopeBone_tube03/stethoscopeBone_tube04/stethoscopeBone_tube05/stethoscopeBone_tube06
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -8.49201775, y: 0, z: 6.68346119}
+        inSlope: {x: -3.33967781, y: 0, z: 9.48092175}
+        outSlope: {x: -3.33967781, y: 0, z: 9.48092175}
+        tangentMode: -559038737
+      - time: 1
+        value: {x: -11.8316956, y: 0, z: 16.1643829}
+        inSlope: {x: -3.33967781, y: 0, z: 9.48092175}
+        outSlope: {x: -3.33967781, y: 0, z: 9.48092175}
+        tangentMode: -559038737
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: stethescopeBone_tube00/stethoscopeBone_tube01/stethoscopeBone_tube02
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -7.54166031, y: 0, z: -1.24415684}
+        inSlope: {x: -3.54266548, y: 0, z: -.314448357}
+        outSlope: {x: -3.54266548, y: 0, z: -.314448357}
+        tangentMode: -559038737
+      - time: 1
+        value: {x: -11.0843258, y: 0, z: -1.55860519}
+        inSlope: {x: -3.54266548, y: 0, z: -.314448357}
+        outSlope: {x: -3.54266548, y: 0, z: -.314448357}
+        tangentMode: -559038737
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: stethescopeBone_tube00/stethoscopeBone_tube01/stethoscopeBone_tube02/stethoscopeBone_tube03
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -8.19342327, y: 0, z: 3.43818736}
+        inSlope: {x: -2.56159115, y: 0, z: 10.8556414}
+        outSlope: {x: -2.56159115, y: 0, z: 10.8556414}
+        tangentMode: -559038737
+      - time: 1
+        value: {x: -10.7550144, y: 0, z: 14.293829}
+        inSlope: {x: -2.56159115, y: 0, z: 10.8556414}
+        outSlope: {x: -2.56159115, y: 0, z: 10.8556414}
+        tangentMode: -559038737
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: stethescopeBone_tube00/stethoscopeBone_tube01/stethoscopeBone_tube02/stethoscopeBone_tube03/stethoscopeBone_tube04
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -8.20299435, y: 0, z: -1.87788653}
+        inSlope: {x: 2.66371441, y: 0, z: 7.83363056}
+        outSlope: {x: 2.66371441, y: 0, z: 7.83363056}
+        tangentMode: -559038737
+      - time: 1
+        value: {x: -5.53927994, y: 0, z: 5.95574379}
+        inSlope: {x: 2.66371441, y: 0, z: 7.83363056}
+        outSlope: {x: 2.66371441, y: 0, z: 7.83363056}
+        tangentMode: -559038737
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: stethescopeBone_tube00/stethoscopeBone_tube01/stethoscopeBone_tube02/stethoscopeBone_tube03/stethoscopeBone_tube04/stethoscopeBone_tube05
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1
+        value: {x: -19.2924805, y: 0, z: -.126051158}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: -559038737
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: stethescopeBone_tube00/stethoscopeBone_tube01
+  m_ScaleCurves: []
+  m_FloatCurves: []
+  m_PPtrCurves: []
+  m_SampleRate: 60
+  m_WrapMode: 0
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings: []
+    pptrCurveMapping: []
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_StartTime: 0
+    m_StopTime: 1
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_LoopTime: 0
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 0
+    m_LoopBlendPositionY: 0
+    m_LoopBlendPositionXZ: 0
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -6.03987122
+        inSlope: .43404007
+        outSlope: .43404007
+        tangentMode: 10
+      - time: 1
+        value: -5.60583115
+        inSlope: .43404007
+        outSlope: .43404007
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: stethescopeBone_tube00/stethoscopeBone_tube01/stethoscopeBone_tube02/stethoscopeBone_tube03/stethoscopeBone_tube04/stethoscopeBone_tube05/stethoscopeBone_tube06/stethoscopeBone_tube07
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -6.73757168e-05
+        inSlope: .000174143905
+        outSlope: .000174143905
+        tangentMode: 10
+      - time: 1
+        value: .000106768195
+        inSlope: .000174143905
+        outSlope: .000174143905
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: stethescopeBone_tube00/stethoscopeBone_tube01/stethoscopeBone_tube02/stethoscopeBone_tube03/stethoscopeBone_tube04/stethoscopeBone_tube05/stethoscopeBone_tube06/stethoscopeBone_tube07
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -5.20544577
+        inSlope: 23.8265228
+        outSlope: 23.8265228
+        tangentMode: 10
+      - time: 1
+        value: 18.6210766
+        inSlope: 23.8265228
+        outSlope: 23.8265228
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: stethescopeBone_tube00/stethoscopeBone_tube01/stethoscopeBone_tube02/stethoscopeBone_tube03/stethoscopeBone_tube04/stethoscopeBone_tube05/stethoscopeBone_tube06/stethoscopeBone_tube07
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -8.01472569
+        inSlope: 5.52387714
+        outSlope: 5.52387714
+        tangentMode: 10
+      - time: 1
+        value: -2.49084854
+        inSlope: 5.52387714
+        outSlope: 5.52387714
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: stethescopeBone_tube00/stethoscopeBone_tube01/stethoscopeBone_tube02/stethoscopeBone_tube03/stethoscopeBone_tube04/stethoscopeBone_tube05/stethoscopeBone_tube06
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: stethescopeBone_tube00/stethoscopeBone_tube01/stethoscopeBone_tube02/stethoscopeBone_tube03/stethoscopeBone_tube04/stethoscopeBone_tube05/stethoscopeBone_tube06
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -.508956432
+        inSlope: 11.0362701
+        outSlope: 11.0362701
+        tangentMode: 10
+      - time: 1
+        value: 10.5273132
+        inSlope: 11.0362701
+        outSlope: 11.0362701
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: stethescopeBone_tube00/stethoscopeBone_tube01/stethoscopeBone_tube02/stethoscopeBone_tube03/stethoscopeBone_tube04/stethoscopeBone_tube05/stethoscopeBone_tube06
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -8.49201775
+        inSlope: -3.33967781
+        outSlope: -3.33967781
+        tangentMode: 10
+      - time: 1
+        value: -11.8316956
+        inSlope: -3.33967781
+        outSlope: -3.33967781
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: stethescopeBone_tube00/stethoscopeBone_tube01/stethoscopeBone_tube02
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: stethescopeBone_tube00/stethoscopeBone_tube01/stethoscopeBone_tube02
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 6.68346119
+        inSlope: 9.48092175
+        outSlope: 9.48092175
+        tangentMode: 10
+      - time: 1
+        value: 16.1643829
+        inSlope: 9.48092175
+        outSlope: 9.48092175
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: stethescopeBone_tube00/stethoscopeBone_tube01/stethoscopeBone_tube02
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -7.54166031
+        inSlope: -3.54266548
+        outSlope: -3.54266548
+        tangentMode: 10
+      - time: 1
+        value: -11.0843258
+        inSlope: -3.54266548
+        outSlope: -3.54266548
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: stethescopeBone_tube00/stethoscopeBone_tube01/stethoscopeBone_tube02/stethoscopeBone_tube03
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: stethescopeBone_tube00/stethoscopeBone_tube01/stethoscopeBone_tube02/stethoscopeBone_tube03
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -1.24415684
+        inSlope: -.314448357
+        outSlope: -.314448357
+        tangentMode: 10
+      - time: 1
+        value: -1.55860519
+        inSlope: -.314448357
+        outSlope: -.314448357
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: stethescopeBone_tube00/stethoscopeBone_tube01/stethoscopeBone_tube02/stethoscopeBone_tube03
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -8.19342327
+        inSlope: -2.56159115
+        outSlope: -2.56159115
+        tangentMode: 10
+      - time: 1
+        value: -10.7550144
+        inSlope: -2.56159115
+        outSlope: -2.56159115
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: stethescopeBone_tube00/stethoscopeBone_tube01/stethoscopeBone_tube02/stethoscopeBone_tube03/stethoscopeBone_tube04
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: stethescopeBone_tube00/stethoscopeBone_tube01/stethoscopeBone_tube02/stethoscopeBone_tube03/stethoscopeBone_tube04
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 3.43818736
+        inSlope: 10.8556414
+        outSlope: 10.8556414
+        tangentMode: 10
+      - time: 1
+        value: 14.293829
+        inSlope: 10.8556414
+        outSlope: 10.8556414
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: stethescopeBone_tube00/stethoscopeBone_tube01/stethoscopeBone_tube02/stethoscopeBone_tube03/stethoscopeBone_tube04
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -8.20299435
+        inSlope: 2.66371441
+        outSlope: 2.66371441
+        tangentMode: 10
+      - time: 1
+        value: -5.53927994
+        inSlope: 2.66371441
+        outSlope: 2.66371441
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: stethescopeBone_tube00/stethoscopeBone_tube01/stethoscopeBone_tube02/stethoscopeBone_tube03/stethoscopeBone_tube04/stethoscopeBone_tube05
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      - time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: stethescopeBone_tube00/stethoscopeBone_tube01/stethoscopeBone_tube02/stethoscopeBone_tube03/stethoscopeBone_tube04/stethoscopeBone_tube05
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -1.87788653
+        inSlope: 7.83363056
+        outSlope: 7.83363056
+        tangentMode: 10
+      - time: 1
+        value: 5.95574379
+        inSlope: 7.83363056
+        outSlope: 7.83363056
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: stethescopeBone_tube00/stethoscopeBone_tube01/stethoscopeBone_tube02/stethoscopeBone_tube03/stethoscopeBone_tube04/stethoscopeBone_tube05
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1
+        value: -.126051158
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: stethescopeBone_tube00/stethoscopeBone_tube01
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: stethescopeBone_tube00/stethoscopeBone_tube01
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 1
+        value: -19.2924805
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: stethescopeBone_tube00/stethoscopeBone_tube01
+    classID: 4
+    script: {fileID: 0}
+  m_EulerEditorCurves: []
+  m_Events: []

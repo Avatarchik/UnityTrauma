@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScreenInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Screens>
+    <GUIScreen>
+      <type>TraumaDeleteCaseConfirm</type>
+      <name>traumaLoginScreen</name>
+      <x>0</x>
+      <y>0</y>
+      <width>564</width>
+      <height>185.2</height>
+      <skin>TraumaDialogOkCancel</skin>
+      <style>loginError.background</style>
+      <fillarea>false</fillarea>
+      <anchor>centered</anchor>
+      <windowed>false</windowed>
+      <draggable>false</draggable>
+      <Elements>
+        <Area>
+          <name>contentArea</name>
+          <skin>TraumaDialogOkCancel</skin>
+          <style>loginError.contentArea</style>
+          <text />
+          <visible>true</visible>
+          <Elements>
+            <Label>
+              <name>titleText</name>
+              <skin>TraumaDialogOkCancel</skin>
+              <style>titleText</style>
+              <text>CONFIRM DELETE</text>
+              <visible>true</visible>
+            </Label>
+            <Area>
+              <name>errorMessageArea</name>
+              <skin>TraumaDialogOkCancel</skin>
+              <style>errorMessageArea</style>
+              <text />
+              <visible>true</visible>
+              <Elements>
+                <Label>
+                  <name>confirmText</name>
+                  <skin>TraumaDialogOkCancel</skin>
+                  <style>loginErrorText</style>
+                  <text>Are you sure?</text>
+                  <visible>true</visible>
+                </Label>
+              </Elements>
+              <fillarea>false</fillarea>
+              <anchor>relative</anchor>
+            </Area>
+            <Horizontal>
+              <name>buttonsHorizontal</name>
+              <skin>TraumaDialogOkCancel</skin>
+              <style>none</style>
+              <text />
+              <visible>true</visible>
+              <Elements>
+                <Button>
+                  <name>buttonCancel</name>
+                  <skin>TraumaDialogOkCancel</skin>
+                  <style>cancelButton</style>
+                  <text>CANCEL</text>
+                  <visible>true</visible>
+                  <closeWindow>true</closeWindow>
+                </Button>
+                <Button>
+                  <name>buttonOK</name>
+                  <skin>TraumaDialogOkCancel</skin>
+                  <style>okButton</style>
+                  <text>OK</text>
+                  <visible>true</visible>
+                  <closeWindow>true</closeWindow>
+                </Button>
+              </Elements>
+            </Horizontal>
+          </Elements>
+          <fillarea>false</fillarea>
+          <anchor>relative</anchor>
+        </Area>
+      </Elements>
+      <Windowed>false</Windowed>
+    </GUIScreen>
+  </Screens>
+  <isModal>false</isModal>
+  <Windowed>false</Windowed>
+</ScreenInfo>

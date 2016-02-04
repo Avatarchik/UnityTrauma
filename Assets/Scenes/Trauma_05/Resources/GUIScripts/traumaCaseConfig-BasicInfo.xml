@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScreenInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Screens>
+    <GUIScreen>
+      <type>CaseConfigBasic</type>
+      <name>traumaCaseConfig-Create</name>
+      <x>0</x>
+      <y>0</y>
+      <width>960</width>
+      <height>600</height>
+      <skin>CaseConfig-BasicInfo</skin>
+      <style>basicInfo.background</style>
+      <fillarea>false</fillarea>
+      <anchor>centered</anchor>
+      <windowed>false</windowed>
+      <draggable>false</draggable>
+      <Elements>
+        <Area>
+          <name>HeaderArea</name>
+          <skin>CaseConfig-BasicInfo</skin>
+          <style>mainHeaderArea</style>
+          <text />
+          <visible>true</visible>
+          <Elements>
+            <Label>
+              <name>headerText</name>
+              <skin>CaseConfig-BasicInfo</skin>
+              <style>createHeaderText</style>
+              <text>CASE CONFIGURATION - BASIC INFO</text>
+              <visible>true</visible>
+            </Label>
+          </Elements>
+          <fillarea>false</fillarea>
+          <anchor>relative</anchor>
+        </Area>
+        <Area>
+          <name>ButtonsArea</name>
+          <skin>CaseConfig-BasicInfo</skin>
+          <style>buttonsArea</style>
+          <text />
+          <visible>true</visible>
+          <Elements>
+            <Horizontal>
+              <name>buttonHorizontal</name>
+              <skin>CaseConfig-BasicInfo</skin>
+              <style>none</style>
+              <text />
+              <visible>true</visible>
+              <Elements>
+                <Button>
+                  <name>buttonMenu</name>
+                  <skin>CaseConfig-BasicInfo</skin>
+                  <style>buttonConfigMenu</style>
+                  <text>CONFIG MENU</text>
+                  <visible>true</visible>
+                  <closeWindow>false</closeWindow>
+                </Button>
+                <Button>
+                  <name>buttonBack</name>
+                  <skin>CaseConfig-BasicInfo</skin>
+                  <style>buttonBack</style>
+                  <text>BACK</text>
+                  <visible>true</visible>
+                  <closeWindow>false</closeWindow>
+                </Button>
+                <Button>
+                  <name>buttonNext</name>
+                  <skin>CaseConfig-BasicInfo</skin>
+                  <style>buttonNext</style>
+                  <text>NEXT</text>
+                  <visible>true</visible>
+                  <closeWindow>false</closeWindow>
+                </Button>
+                <Button>
+                  <name>buttonSave</name>
+                  <skin>CaseConfig-BasicInfo</skin>
+                  <style>buttonSave</style>
+                  <text>SAVE</text>
+                  <visible>true</visible>
+                  <closeWindow>false</closeWindow>
+                </Button>
+              </Elements>
+            </Horizontal>
+          </Elements>
+          <fillarea>false</fillarea>
+          <anchor>relative</anchor>
+        </Area>
+        <Area>
+          <name>ContentArea</name>
+          <skin>CaseConfig-BasicInfo</skin>
+          <style>ContentArea</style>
+          <text />
+          <visible>true</visible>
+          <Elements>
+            <Area>
+              <name>TabsArea</name>
+              <skin>CaseConfig-BasicInfo</skin>
+              <style>TabsArea</style>
+              <text />
+              <visible>true</visible>
+              <Elements>
+                <Horizontal>
+                  <name>tabsHorizontal</name>
+                  <skin>CaseConfig-BasicInfo</skin>
+                  <style>tabsHorizontal</style>
+                  <text />
+                  <visible>true</visible>
+                  <Elements>
+                    <Button>
+                      <name>buttonBasicInfo</name>
+                      <skin>CaseConfig-BasicInfo</skin>
+                      <style>buttonBasicInfo</style>
+                      <text>Basic Info</text>
+                      <visible>true</visible>
+                      <closeWindow>false</closeWindow>
+                    </Button>
+                    <Label>
+                      <name>line1</name>
+                      <skin>CaseConfig-BasicInfo</skin>
+                      <style>line1</style>
+                      <text />
+                      <visible>true</visible>
+                    </Label>
+                    <Button>
+                      <name>buttonInjuries</name>
+                      <skin>CaseConfig-BasicInfo</skin>
+                      <style>buttonInjuries</style>
+                      <text>Injuries</text>
+                      <visible>true</visible>
+                      <closeWindow>false</closeWindow>
+                    </Button>
+                    <Label>
+                      <name>line2</name>
+                      <skin>CaseConfig-BasicInfo</skin>
+                      <style>line1</style>
+                      <text />
+                      <visible>true</visible>
+                    </Label>
+                    <Button>
+                      <name>buttonEvents</name>
+                      <skin>CaseConfig-BasicInfo</skin>
+                      <style>buttonEvents</style>
+                      <text>Events</text>
+                      <visible>true</visible>
+                      <closeWindow>false</closeWindow>
+                    </Button>
+                    <Label>
+                      <name>line3</name>
+                      <skin>CaseConfig-BasicInfo</skin>
+                      <style>line1</style>
+                      <text />
+                      <visible>true</visible>
+                    </Label>
+                    <Button>
+                      <name>buttonTeam</name>
+                      <skin>CaseConfig-BasicInfo</skin>
+                      <style>buttonTeam</style>
+                      <text>Team</text>
+                      <visible>true</visible>
+                      <closeWindow>false</closeWindow>
+                    </Button>
+                  </Elements>
+                </Horizontal>
+              </Elements>
+              <fillarea>false</fillarea>
+              <anchor>relative</anchor>
+            </Area>
+            <Area>
+              <name>PreviewArea</name>
+              <skin>CaseConfig-BasicInfo</skin>
+              <style>PreviewArea</style>
+              <text />
+              <visible>true</visible>
+              <Elements>
+                <Label>
+                  <name>previewText</name>
+                  <skin>CaseConfig-BasicInfo</skin>
+                  <style>previewText</style>
+                  <text>PREVIEW : Case description preview</text>
+                  <visible>true</visible>
+                </Label>
+                <Horizontal>
+                  <name>caseItem01</name>
+                  <skin>CaseConfig-BasicInfo</skin>
+                  <style>caseContentArea</style>
+                  <text />
+                  <visible>true</visible>
+                  <Elements>
+                    <Label>
+                      <name>caseImage</name>
+                      <skin>CaseConfig-BasicInfo</skin>
+                      <style>caseImage01</style>
+                      <text />
+                      <visible>true</visible>
+                    </Label>
+                    <Vertical>
+                      <name>caseDetailVertical</name>
+                      <skin>CaseConfig-BasicInfo</skin>
+                      <style>caseDetailArea</style>
+                      <text />
+                      <visible>true</visible>
+                      <Elements>
+                        <Label>
+                          <name>caseTitle</name>
+                          <skin>CaseConfig-BasicInfo</skin>
+                          <style>caseTitleText</style>
+                          <text>CASE NAME</text>
+                          <visible>true</visible>
+                        </Label>
+                        <Label>
+                          <name>caseDateText</name>
+                          <skin>CaseConfig-BasicInfo</skin>
+                          <style>caseDateText</style>
+                          <text>Saturday May 29th, 2012</text>
+                          <visible>true</visible>
+                        </Label>
+                        <Label>
+                          <name>caseDetailText</name>
+                          <skin>CaseConfig-BasicInfo</skin>
+                          <style>caseDetailText</style>
+                          <text>Enter information here that was given from the EMS dispatcher or any other source. Information here should be brief, and not reveal any major injury or condition that the patient has. A quick synopsis of how what happened to the patient would work here.</text>
+                          <visible>true</visible>
+                        </Label>
+                      </Elements>
+                    </Vertical>
+                  </Elements>
+                </Horizontal>
+                <Button>
+                  <name>buttonCaseStart</name>
+                  <skin>CaseConfig-BasicInfo</skin>
+                  <style>buttonCaseStart</style>
+                  <text>START CASE</text>
+                  <visible>true</visible>
+                  <closeWindow>false</closeWindow>
+                </Button>
+              </Elements>
+              <fillarea>false</fillarea>
+              <anchor>relative</anchor>
+            </Area>
+            <Area>
+              <name>MainContentArea</name>
+              <skin>CaseConfig-BasicInfo</skin>
+              <style>mainContentArea</style>
+              <text />
+              <visible>true</visible>
+              <Elements>
+                <Area>
+                  <name>BasicInfoArea</name>
+                  <skin>CaseConfig-BasicInfo</skin>
+                  <style>basicInfoArea</style>
+                  <text />
+                  <visible>true</visible>
+                  <Elements>
+                    <Horizontal>
+                      <name>CaseTitleArea</name>
+                      <skin>CaseConfig-BasicInfo</skin>
+                      <style>caseTitleArea</style>
+                      <text />
+                      <visible>true</visible>
+                      <Elements>
+                        <Label>
+                          <name>CaseTitleTag</name>
+                          <skin>CaseConfig-BasicInfo</skin>
+                          <style>caseTitleTag</style>
+                          <text>Title</text>
+                          <visible>true</visible>
+                        </Label>
+                        <Editbox>
+                          <name>CaseTitleEditbox</name>
+                          <skin>CaseConfig-BasicInfo</skin>
+                          <style>caseTitleEditbox</style>
+                          <text>enter a case name</text>
+                          <visible>true</visible>
+                          <_password>false</_password>
+                        </Editbox>
+                      </Elements>
+                    </Horizontal>
+                    <Horizontal>
+                      <name>CaseSubTitleArea</name>
+                      <skin>CaseConfig-BasicInfo</skin>
+                      <style>caseSubTitleArea</style>
+                      <text />
+                      <visible>true</visible>
+                      <Elements>
+                        <Label>
+                          <name>CaseTitleTag</name>
+                          <skin>CaseConfig-BasicInfo</skin>
+                          <style>caseSubTitleTag</style>
+                          <text>Sub-Title</text>
+                          <visible>true</visible>
+                        </Label>
+                        <Editbox>
+                          <name>CaseSubTitleEditbox</name>
+                          <skin>CaseConfig-BasicInfo</skin>
+                          <style>caseSubTitleEditbox</style>
+                          <text>enter a sub-title</text>
+                          <visible>true</visible>
+                          <_password>false</_password>
+                        </Editbox>
+                      </Elements>
+                    </Horizontal>
+                    <Horizontal>
+                      <name>CaseDescArea</name>
+                      <skin>CaseConfig-BasicInfo</skin>
+                      <style>caseDescArea</style>
+                      <text />
+                      <visible>true</visible>
+                      <Elements>
+                        <Label>
+                          <name>CaseDescTag</name>
+                          <skin>CaseConfig-BasicInfo</skin>
+                          <style>caseDescTag</style>
+                          <text>Description</text>
+                          <visible>true</visible>
+                        </Label>
+                        <Editbox>
+                          <name>CaseDescEditbox</name>
+                          <skin>CaseConfig-BasicInfo</skin>
+                          <style>CaseDescEditbox</style>
+                          <text>enter a case description</text>
+                          <visible>true</visible>
+                          <_password>false</_password>
+                        </Editbox>
+                      </Elements>
+                    </Horizontal>
+                  </Elements>
+                  <fillarea>false</fillarea>
+                  <anchor>relative</anchor>
+                </Area>
+                <Area>
+                  <name>ThumbnailArea</name>
+                  <skin>CaseConfig-BasicInfo</skin>
+                  <style>thumbnailArea</style>
+                  <text />
+                  <visible>true</visible>
+                  <Elements>
+                    <Label>
+                      <name>thumbnailTag</name>
+                      <skin>CaseConfig-BasicInfo</skin>
+                      <style>thumbnailTag</style>
+                      <text>Thumbnail - Select an image</text>
+                      <visible>true</visible>
+                    </Label>
+                    <Area>
+                      <name>ImageListArea</name>
+                      <skin>CaseConfig-BasicInfo</skin>
+                      <style>imageLIstArea</style>
+                      <text />
+                      <visible>true</visible>
+                      <Elements>
+                        <Scrollview>
+                          <name>imageScrollView</name>
+                          <skin>CaseConfig-BasicInfo</skin>
+                          <style>none</style>
+                          <text />
+                          <visible>true</visible>
+                          <Elements>
+                            <Horizontal>
+                              <name>thumbnailHorizontal</name>
+                              <skin>CaseConfig-BasicInfo</skin>
+                              <style>thumbnailHorizontal</style>
+                              <text />
+                              <visible>true</visible>
+                              <Elements>
+                                <Button>
+                                  <name>thumbnail01</name>
+                                  <skin>CaseConfig-BasicInfo</skin>
+                                  <style>thumbnail01</style>
+                                  <text />
+                                  <visible>true</visible>
+                                  <closeWindow>false</closeWindow>
+                                </Button>
+                                <Button>
+                                  <name>thumbnail02</name>
+                                  <skin>CaseConfig-BasicInfo</skin>
+                                  <style>thumbnail02</style>
+                                  <text />
+                                  <visible>true</visible>
+                                  <closeWindow>false</closeWindow>
+                                </Button>
+                                <Button>
+                                  <name>thumbnail03</name>
+                                  <skin>CaseConfig-BasicInfo</skin>
+                                  <style>thumbnail03</style>
+                                  <text />
+                                  <visible>true</visible>
+                                  <closeWindow>false</closeWindow>
+                                </Button>
+                                <Button>
+                                  <name>thumbnail01</name>
+                                  <skin>CaseConfig-BasicInfo</skin>
+                                  <style>thumbnail01</style>
+                                  <text />
+                                  <visible>true</visible>
+                                  <closeWindow>false</closeWindow>
+                                </Button>
+                                <Button>
+                                  <name>thumbnail02</name>
+                                  <skin>CaseConfig-BasicInfo</skin>
+                                  <style>thumbnail02</style>
+                                  <text />
+                                  <visible>true</visible>
+                                  <closeWindow>false</closeWindow>
+                                </Button>
+                                <Button>
+                                  <name>thumbnail03</name>
+                                  <skin>CaseConfig-BasicInfo</skin>
+                                  <style>thumbnail03</style>
+                                  <text />
+                                  <visible>true</visible>
+                                  <closeWindow>false</closeWindow>
+                                </Button>
+                                <Button>
+                                  <name>thumbnail02</name>
+                                  <skin>CaseConfig-BasicInfo</skin>
+                                  <style>thumbnail02</style>
+                                  <text />
+                                  <visible>true</visible>
+                                  <closeWindow>false</closeWindow>
+                                </Button>
+                                <Button>
+                                  <name>thumbnail03</name>
+                                  <skin>CaseConfig-BasicInfo</skin>
+                                  <style>thumbnail03</style>
+                                  <text />
+                                  <visible>true</visible>
+                                  <closeWindow>false</closeWindow>
+                                </Button>
+                              </Elements>
+                            </Horizontal>
+                          </Elements>
+                          <displayHorizontal>false</displayHorizontal>
+                          <displayVertical>false</displayVertical>
+                          <hStyle>none</hStyle>
+                          <vStyle>none</vStyle>
+                          <scroll>
+                            <x>0</x>
+                            <y>0</y>
+                          </scroll>
+                        </Scrollview>
+                      </Elements>
+                      <fillarea>false</fillarea>
+                      <anchor>relative</anchor>
+                    </Area>
+                    <Area>
+                      <name>thumbnailButtonArea</name>
+                      <skin>CaseConfig-BasicInfo</skin>
+                      <style>thumbnailButtonArea</style>
+                      <text />
+                      <visible>true</visible>
+                      <Elements>
+                        <Horizontal>
+                          <name>thumbButton</name>
+                          <skin>CaseConfig-BasicInfo</skin>
+                          <style>none</style>
+                          <text />
+                          <visible>true</visible>
+                          <Elements>
+                            <Button>
+                              <name>buttonThumbPrev</name>
+                              <skin>CaseConfig-BasicInfo</skin>
+                              <style>button.ThumbPrev</style>
+                              <text />
+                              <visible>true</visible>
+                              <closeWindow>false</closeWindow>
+                            </Button>
+                            <Button>
+                              <name>buttonThumbNext</name>
+                              <skin>CaseConfig-BasicInfo</skin>
+                              <style>button.ThumbNext</style>
+                              <text />
+                              <visible>true</visible>
+                              <closeWindow>false</closeWindow>
+                            </Button>
+                          </Elements>
+                        </Horizontal>
+                      </Elements>
+                      <fillarea>false</fillarea>
+                      <anchor>relative</anchor>
+                    </Area>
+                  </Elements>
+                  <fillarea>false</fillarea>
+                  <anchor>relative</anchor>
+                </Area>
+              </Elements>
+              <fillarea>false</fillarea>
+              <anchor>relative</anchor>
+            </Area>
+          </Elements>
+          <fillarea>false</fillarea>
+          <anchor>relative</anchor>
+        </Area>
+      </Elements>
+      <Windowed>false</Windowed>
+    </GUIScreen>
+  </Screens>
+  <isModal>false</isModal>
+  <Windowed>false</Windowed>
+</ScreenInfo>
