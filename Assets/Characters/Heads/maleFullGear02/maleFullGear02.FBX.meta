@@ -1,0 +1,771 @@
+fileFormatVersion: 2
+guid: 813aef0134d480f47b63810db7d4e685
+ModelImporter:
+  fileIDToRecycleName:
+    4300000: maleFullGear01
+    4300002: faceShield
+    7400000: Take 001 //// maleFullGear02
+  serializedVersion: 10
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 0
+  animations:
+    generateAnimations: 3
+    bakeSimulation: 0
+    splitAnimations: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations: []
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMesh: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 0
+    normalImportMode: 0
+    tangentImportMode: 1
+  textMetaNamesToFileIDs:
+    //RootNode:
+      data:
+        first: 1
+        second: a0860100
+      data:
+        first: 4
+        second: 801a0600
+      data:
+        first: 111
+        second: 605fa900
+    faceShield:
+      data:
+        first: 1
+        second: a2860100
+      data:
+        first: 4
+        second: 821a0600
+      data:
+        first: 137
+        second: a00bd100
+    maleFullGear01:
+      data:
+        first: 1
+        second: aa860100
+      data:
+        first: 4
+        second: 8a1a0600
+      data:
+        first: 137
+        second: a20bd100
+    sitelHumanLArmShoulderTwistGizmo:
+      data:
+        first: 1
+        second: 16870100
+      data:
+        first: 4
+        second: f61a0600
+    sitelHumanRArmShoulderTwistGizmo:
+      data:
+        first: 1
+        second: f8860100
+      data:
+        first: 4
+        second: d81a0600
+    sitelHuman_:
+      data:
+        first: 1
+        second: a8860100
+      data:
+        first: 4
+        second: 881a0600
+    sitelHuman_Head:
+      data:
+        first: 1
+        second: a6860100
+      data:
+        first: 4
+        second: 861a0600
+    sitelHuman_HipAdjustLeft:
+      data:
+        first: 1
+        second: e0860100
+      data:
+        first: 4
+        second: c01a0600
+    sitelHuman_HipAdjustRight:
+      data:
+        first: 1
+        second: e2860100
+      data:
+        first: 4
+        second: c21a0600
+    sitelHuman_LArmCollarbone:
+      data:
+        first: 1
+        second: 00870100
+      data:
+        first: 4
+        second: e01a0600
+    sitelHuman_LArmDigit11:
+      data:
+        first: 1
+        second: 2a870100
+      data:
+        first: 4
+        second: 0a1b0600
+    sitelHuman_LArmDigit12:
+      data:
+        first: 1
+        second: 28870100
+      data:
+        first: 4
+        second: 081b0600
+    sitelHuman_LArmDigit13:
+      data:
+        first: 1
+        second: 26870100
+      data:
+        first: 4
+        second: 061b0600
+    sitelHuman_LArmDigit21:
+      data:
+        first: 1
+        second: 24870100
+      data:
+        first: 4
+        second: 041b0600
+    sitelHuman_LArmDigit22:
+      data:
+        first: 1
+        second: 22870100
+      data:
+        first: 4
+        second: 021b0600
+    sitelHuman_LArmDigit23:
+      data:
+        first: 1
+        second: 20870100
+      data:
+        first: 4
+        second: 001b0600
+    sitelHuman_LArmDigit31:
+      data:
+        first: 1
+        second: 1e870100
+      data:
+        first: 4
+        second: fe1a0600
+    sitelHuman_LArmDigit32:
+      data:
+        first: 1
+        second: 1c870100
+      data:
+        first: 4
+        second: fc1a0600
+    sitelHuman_LArmDigit33:
+      data:
+        first: 1
+        second: 1a870100
+      data:
+        first: 4
+        second: fa1a0600
+    sitelHuman_LArmDigit41:
+      data:
+        first: 1
+        second: 6c870100
+      data:
+        first: 4
+        second: 4c1b0600
+    sitelHuman_LArmDigit42:
+      data:
+        first: 1
+        second: 6a870100
+      data:
+        first: 4
+        second: 4a1b0600
+    sitelHuman_LArmDigit43:
+      data:
+        first: 1
+        second: 68870100
+      data:
+        first: 4
+        second: 481b0600
+    sitelHuman_LArmDigit51:
+      data:
+        first: 1
+        second: 66870100
+      data:
+        first: 4
+        second: 461b0600
+    sitelHuman_LArmDigit52:
+      data:
+        first: 1
+        second: 64870100
+      data:
+        first: 4
+        second: 441b0600
+    sitelHuman_LArmDigit53:
+      data:
+        first: 1
+        second: 62870100
+      data:
+        first: 4
+        second: 421b0600
+    sitelHuman_LArmForearm1:
+      data:
+        first: 1
+        second: 32870100
+      data:
+        first: 4
+        second: 121b0600
+    sitelHuman_LArmForearm2:
+      data:
+        first: 1
+        second: 30870100
+      data:
+        first: 4
+        second: 101b0600
+    sitelHuman_LArmForearm3:
+      data:
+        first: 1
+        second: 2e870100
+      data:
+        first: 4
+        second: 0e1b0600
+    sitelHuman_LArmIKTarget:
+      data:
+        first: 1
+        second: 18870100
+      data:
+        first: 4
+        second: f81a0600
+    sitelHuman_LArmPalm:
+      data:
+        first: 1
+        second: 2c870100
+      data:
+        first: 4
+        second: 0c1b0600
+    sitelHuman_LArmPit:
+      data:
+        first: 1
+        second: ee860100
+      data:
+        first: 4
+        second: ce1a0600
+    sitelHuman_LArmShoulderTwist:
+      data:
+        first: 1
+        second: ec860100
+      data:
+        first: 4
+        second: cc1a0600
+    sitelHuman_LArmUpVectorNode:
+      data:
+        first: 1
+        second: ea860100
+      data:
+        first: 4
+        second: ca1a0600
+    sitelHuman_LArmUpperarm1:
+      data:
+        first: 1
+        second: fe860100
+      data:
+        first: 4
+        second: de1a0600
+    sitelHuman_LArmUpperarm2:
+      data:
+        first: 1
+        second: fc860100
+      data:
+        first: 4
+        second: dc1a0600
+    sitelHuman_LArmUpperarm3:
+      data:
+        first: 1
+        second: 34870100
+      data:
+        first: 4
+        second: 141b0600
+    sitelHuman_LLeg1:
+      data:
+        first: 1
+        second: de860100
+      data:
+        first: 4
+        second: be1a0600
+    sitelHuman_LLeg2:
+      data:
+        first: 1
+        second: dc860100
+      data:
+        first: 4
+        second: bc1a0600
+    sitelHuman_LLegAnkle:
+      data:
+        first: 1
+        second: da860100
+      data:
+        first: 4
+        second: ba1a0600
+    sitelHuman_LLegDigit11:
+      data:
+        first: 1
+        second: d8860100
+      data:
+        first: 4
+        second: b81a0600
+    sitelHuman_LLegPlatform:
+      data:
+        first: 1
+        second: 14870100
+      data:
+        first: 4
+        second: f41a0600
+    sitelHuman_Neck1:
+      data:
+        first: 1
+        second: 40870100
+      data:
+        first: 4
+        second: 201b0600
+    sitelHuman_Neck2:
+      data:
+        first: 1
+        second: 3e870100
+      data:
+        first: 4
+        second: 1e1b0600
+    sitelHuman_Pelvis:
+      data:
+        first: 1
+        second: 10870100
+      data:
+        first: 4
+        second: f01a0600
+    sitelHuman_RArmCollarbone:
+      data:
+        first: 1
+        second: 46870100
+      data:
+        first: 4
+        second: 261b0600
+    sitelHuman_RArmDigit11:
+      data:
+        first: 1
+        second: c6860100
+      data:
+        first: 4
+        second: a61a0600
+    sitelHuman_RArmDigit12:
+      data:
+        first: 1
+        second: c4860100
+      data:
+        first: 4
+        second: a41a0600
+    sitelHuman_RArmDigit13:
+      data:
+        first: 1
+        second: c2860100
+      data:
+        first: 4
+        second: a21a0600
+    sitelHuman_RArmDigit21:
+      data:
+        first: 1
+        second: c0860100
+      data:
+        first: 4
+        second: a01a0600
+    sitelHuman_RArmDigit22:
+      data:
+        first: 1
+        second: be860100
+      data:
+        first: 4
+        second: 9e1a0600
+    sitelHuman_RArmDigit23:
+      data:
+        first: 1
+        second: bc860100
+      data:
+        first: 4
+        second: 9c1a0600
+    sitelHuman_RArmDigit31:
+      data:
+        first: 1
+        second: ba860100
+      data:
+        first: 4
+        second: 9a1a0600
+    sitelHuman_RArmDigit32:
+      data:
+        first: 1
+        second: 60870100
+      data:
+        first: 4
+        second: 401b0600
+    sitelHuman_RArmDigit33:
+      data:
+        first: 1
+        second: 5e870100
+      data:
+        first: 4
+        second: 3e1b0600
+    sitelHuman_RArmDigit41:
+      data:
+        first: 1
+        second: 5c870100
+      data:
+        first: 4
+        second: 3c1b0600
+    sitelHuman_RArmDigit42:
+      data:
+        first: 1
+        second: 5a870100
+      data:
+        first: 4
+        second: 3a1b0600
+    sitelHuman_RArmDigit43:
+      data:
+        first: 1
+        second: 58870100
+      data:
+        first: 4
+        second: 381b0600
+    sitelHuman_RArmDigit51:
+      data:
+        first: 1
+        second: 56870100
+      data:
+        first: 4
+        second: 361b0600
+    sitelHuman_RArmDigit52:
+      data:
+        first: 1
+        second: 54870100
+      data:
+        first: 4
+        second: 341b0600
+    sitelHuman_RArmDigit53:
+      data:
+        first: 1
+        second: 08870100
+      data:
+        first: 4
+        second: e81a0600
+    sitelHuman_RArmForearm1:
+      data:
+        first: 1
+        second: b2860100
+      data:
+        first: 4
+        second: 921a0600
+    sitelHuman_RArmForearm2:
+      data:
+        first: 1
+        second: b0860100
+      data:
+        first: 4
+        second: 901a0600
+    sitelHuman_RArmForearm3:
+      data:
+        first: 1
+        second: ae860100
+      data:
+        first: 4
+        second: 8e1a0600
+    sitelHuman_RArmIKTarget:
+      data:
+        first: 1
+        second: fa860100
+      data:
+        first: 4
+        second: da1a0600
+    sitelHuman_RArmPalm:
+      data:
+        first: 1
+        second: ac860100
+      data:
+        first: 4
+        second: 8c1a0600
+    sitelHuman_RArmPit:
+      data:
+        first: 1
+        second: 06870100
+      data:
+        first: 4
+        second: e61a0600
+    sitelHuman_RArmShoulderTwist:
+      data:
+        first: 1
+        second: 04870100
+      data:
+        first: 4
+        second: e41a0600
+    sitelHuman_RArmUpVectorNode:
+      data:
+        first: 1
+        second: 02870100
+      data:
+        first: 4
+        second: e21a0600
+    sitelHuman_RArmUpperarm1:
+      data:
+        first: 1
+        second: b8860100
+      data:
+        first: 4
+        second: 981a0600
+    sitelHuman_RArmUpperarm2:
+      data:
+        first: 1
+        second: b6860100
+      data:
+        first: 4
+        second: 961a0600
+    sitelHuman_RArmUpperarm3:
+      data:
+        first: 1
+        second: b4860100
+      data:
+        first: 4
+        second: 941a0600
+    sitelHuman_RLeg1:
+      data:
+        first: 1
+        second: f6860100
+      data:
+        first: 4
+        second: d61a0600
+    sitelHuman_RLeg2:
+      data:
+        first: 1
+        second: f4860100
+      data:
+        first: 4
+        second: d41a0600
+    sitelHuman_RLegAnkle:
+      data:
+        first: 1
+        second: f2860100
+      data:
+        first: 4
+        second: d21a0600
+    sitelHuman_RLegDigit11:
+      data:
+        first: 1
+        second: f0860100
+      data:
+        first: 4
+        second: d01a0600
+    sitelHuman_RLegPlatform:
+      data:
+        first: 1
+        second: 12870100
+      data:
+        first: 4
+        second: f21a0600
+    sitelHuman_Ribcage:
+      data:
+        first: 1
+        second: 42870100
+      data:
+        first: 4
+        second: 221b0600
+    sitelHuman_RibcageBoneL:
+      data:
+        first: 1
+        second: e6860100
+      data:
+        first: 4
+        second: c61a0600
+    sitelHuman_RibcageBoneR:
+      data:
+        first: 1
+        second: e8860100
+      data:
+        first: 4
+        second: c81a0600
+    sitelHuman_Spine1:
+      data:
+        first: 1
+        second: 0e870100
+      data:
+        first: 4
+        second: ee1a0600
+    sitelHuman_Spine2:
+      data:
+        first: 1
+        second: 0c870100
+      data:
+        first: 4
+        second: ec1a0600
+    sitelHuman_Spine2Belly:
+      data:
+        first: 1
+        second: e4860100
+      data:
+        first: 4
+        second: c41a0600
+    sitelHuman_Spine3:
+      data:
+        first: 1
+        second: 0a870100
+      data:
+        first: 4
+        second: ea1a0600
+    sitelHuman_Spine4:
+      data:
+        first: 1
+        second: 44870100
+      data:
+        first: 4
+        second: 241b0600
+    sitelHuman_browCenter:
+      data:
+        first: 1
+        second: d2860100
+      data:
+        first: 4
+        second: b21a0600
+    sitelHuman_browLeft:
+      data:
+        first: 1
+        second: cc860100
+      data:
+        first: 4
+        second: ac1a0600
+    sitelHuman_browRight:
+      data:
+        first: 1
+        second: d4860100
+      data:
+        first: 4
+        second: b41a0600
+    sitelHuman_browRoot:
+      data:
+        first: 1
+        second: 3a870100
+      data:
+        first: 4
+        second: 1a1b0600
+    sitelHuman_cheek1Left:
+      data:
+        first: 1
+        second: 50870100
+      data:
+        first: 4
+        second: 301b0600
+    sitelHuman_cheek1Right:
+      data:
+        first: 1
+        second: d0860100
+      data:
+        first: 4
+        second: b01a0600
+    sitelHuman_cheek3Left:
+      data:
+        first: 1
+        second: 4e870100
+      data:
+        first: 4
+        second: 2e1b0600
+    sitelHuman_cheek3Right:
+      data:
+        first: 1
+        second: ce860100
+      data:
+        first: 4
+        second: ae1a0600
+    sitelHuman_eyeLeft:
+      data:
+        first: 1
+        second: c8860100
+      data:
+        first: 4
+        second: a81a0600
+    sitelHuman_eyeRight:
+      data:
+        first: 1
+        second: 36870100
+      data:
+        first: 4
+        second: 161b0600
+    sitelHuman_eyelidLowerLeft:
+      data:
+        first: 1
+        second: 52870100
+      data:
+        first: 4
+        second: 321b0600
+    sitelHuman_eyelidLowerRight:
+      data:
+        first: 1
+        second: d6860100
+      data:
+        first: 4
+        second: b61a0600
+    sitelHuman_eyelidUpperLeft:
+      data:
+        first: 1
+        second: ca860100
+      data:
+        first: 4
+        second: aa1a0600
+    sitelHuman_eyelidUpperRight:
+      data:
+        first: 1
+        second: 38870100
+      data:
+        first: 4
+        second: 181b0600
+    sitelHuman_faceRoot:
+      data:
+        first: 1
+        second: 3c870100
+      data:
+        first: 4
+        second: 1c1b0600
+    sitelHuman_jaw:
+      data:
+        first: 1
+        second: a4860100
+      data:
+        first: 4
+        second: 841a0600
+    sitelHuman_mouthRoot:
+      data:
+        first: 1
+        second: 4c870100
+      data:
+        first: 4
+        second: 2c1b0600
+    sitelHuman_nostrilLeft:
+      data:
+        first: 1
+        second: 48870100
+      data:
+        first: 4
+        second: 281b0600
+    sitelHuman_nostrilRight:
+      data:
+        first: 1
+        second: 4a870100
+      data:
+        first: 4
+        second: 2a1b0600

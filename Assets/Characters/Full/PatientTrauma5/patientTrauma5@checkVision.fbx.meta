@@ -1,0 +1,1142 @@
+fileFormatVersion: 2
+guid: a4a1b6eea332f9d49ad64a14f7d730ec
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: blanket_bottom
+    100002: blanket_top
+    100004: collarBone_left1
+    100006: collarBone_left2
+    100008: collarBone_left3
+    100010: collarBone_left4
+    100012: collarBone_left5
+    100014: collarBone_left6
+    100016: collarBone_right1
+    100018: collarBone_right10
+    100020: collarBone_right11
+    100022: collarBone_right2
+    100024: collarBone_right3
+    100026: collarBone_right4
+    100028: collarBone_right5
+    100030: collarBone_right6
+    100032: collarBone_right7
+    100034: collarBone_right8
+    100036: collarBone_right9
+    100038: collarBone_root
+    100040: collarBonePointLeft1
+    100042: collarBonePointLeft2
+    100044: collarBonePointLeft3
+    100046: collarBonePointLeft4
+    100048: collarBonePointRight1
+    100050: collarBonePointRight2
+    100052: collarBonePointRight3
+    100054: collarBonePointRight4
+    100056: collarBonePointRight5
+    100058: collarBonePointRight6
+    100060: collarBonePointRight7
+    100062: collarBoneSpline_left
+    100064: collarBoneSpline_right
+    100066: collarIK_left
+    100068: collarIK_right
+    100070: //RootNode
+    100072: patientTrauma5_clothed
+    100074: patientTrauma5_nude
+    100076: pelvicWrap
+    100078: prop_collarCervical01
+    100080: prop_stretcherBackboard01
+    100082: sitelHuman_
+    100084: sitelHuman_attach1
+    100086: sitelHuman_attach2
+    100088: sitelHuman_attach3
+    100090: sitelHuman_browCenter
+    100092: sitelHuman_browLeft
+    100094: sitelHuman_browRight
+    100096: sitelHuman_browRoot
+    100098: sitelHuman_cheek1Left
+    100100: sitelHuman_cheek1Right
+    100102: sitelHuman_cheek3Left
+    100104: sitelHuman_cheek3Right
+    100106: sitelHuman_cheekSmileLeft
+    100108: sitelHuman_cheekSmileRight
+    100110: sitelHuman_chipLeft
+    100112: sitelHuman_chipRight
+    100114: sitelHuman_eyeLeft
+    100116: sitelHuman_eyelidLowerLeft
+    100118: sitelHuman_eyelidLowerRight
+    100120: sitelHuman_eyelidUpperLeft
+    100122: sitelHuman_eyelidUpperRight
+    100124: sitelHuman_eyeRight
+    100126: sitelHuman_faceRoot
+    100128: sitelHuman_Head
+    100130: sitelHuman_jaw
+    100132: sitelHuman_LArmCollarbone
+    100134: sitelHuman_LArmDigit11
+    100136: sitelHuman_LArmDigit12
+    100138: sitelHuman_LArmDigit13
+    100140: sitelHuman_LArmDigit21
+    100142: sitelHuman_LArmDigit22
+    100144: sitelHuman_LArmDigit23
+    100146: sitelHuman_LArmDigit31
+    100148: sitelHuman_LArmDigit32
+    100150: sitelHuman_LArmDigit33
+    100152: sitelHuman_LArmDigit41
+    100154: sitelHuman_LArmDigit42
+    100156: sitelHuman_LArmDigit43
+    100158: sitelHuman_LArmDigit51
+    100160: sitelHuman_LArmDigit52
+    100162: sitelHuman_LArmDigit53
+    100164: sitelHuman_LArmForearm1
+    100166: sitelHuman_LArmForearm2
+    100168: sitelHuman_LArmForearm3
+    100170: sitelHuman_LArmIKTarget
+    100172: sitelHuman_LArmPalm
+    100174: sitelHuman_LArmPit
+    100176: sitelHuman_LArmUpperarm1
+    100178: sitelHuman_LArmUpperarm2
+    100180: sitelHuman_LArmUpperarm3
+    100182: sitelHuman_LArmUpVectorNode
+    100184: sitelHuman_LChest
+    100186: sitelHuman_LHipAdjust
+    100188: sitelHuman_lipCornerLeft
+    100190: sitelHuman_lipCornerRight
+    100192: sitelHuman_lipLower
+    100194: sitelHuman_lipLowerLeft
+    100196: sitelHuman_lipLowerRight
+    100198: sitelHuman_lipUpper
+    100200: sitelHuman_lipUpperLeft
+    100202: sitelHuman_lipUpperRight
+    100204: sitelHuman_LLeg1
+    100206: sitelHuman_LLeg2
+    100208: sitelHuman_LLegAnkle
+    100210: sitelHuman_LLegDigit11
+    100212: sitelHuman_LLegPlatform
+    100214: sitelHuman_LLegUpVectorNode
+    100216: sitelHuman_mouthRoot
+    100218: sitelHuman_Neck1
+    100220: sitelHuman_Neck2
+    100222: sitelHuman_nostrilLeft
+    100224: sitelHuman_nostrilRight
+    100226: sitelHuman_Pelvis
+    100228: sitelHuman_RArmCollarbone
+    100230: sitelHuman_RArmDigit11
+    100232: sitelHuman_RArmDigit12
+    100234: sitelHuman_RArmDigit13
+    100236: sitelHuman_RArmDigit21
+    100238: sitelHuman_RArmDigit22
+    100240: sitelHuman_RArmDigit23
+    100242: sitelHuman_RArmDigit31
+    100244: sitelHuman_RArmDigit32
+    100246: sitelHuman_RArmDigit33
+    100248: sitelHuman_RArmDigit41
+    100250: sitelHuman_RArmDigit42
+    100252: sitelHuman_RArmDigit43
+    100254: sitelHuman_RArmDigit51
+    100256: sitelHuman_RArmDigit52
+    100258: sitelHuman_RArmDigit53
+    100260: sitelHuman_RArmForearm1
+    100262: sitelHuman_RArmForearm2
+    100264: sitelHuman_RArmForearm3
+    100266: sitelHuman_RArmIKTarget
+    100268: sitelHuman_RArmPalm
+    100270: sitelHuman_RArmPit
+    100272: sitelHuman_RArmUpperarm1
+    100274: sitelHuman_RArmUpperarm2
+    100276: sitelHuman_RArmUpperarm3
+    100278: sitelHuman_RArmUpVectorNode
+    100280: sitelHuman_RChest
+    100282: sitelHuman_RHipAdjust
+    100284: sitelHuman_Ribcage
+    100286: sitelHuman_RLeg1
+    100288: sitelHuman_RLeg2
+    100290: sitelHuman_RLegAnkle
+    100292: sitelHuman_RLegDigit11
+    100294: sitelHuman_RLegPlatform
+    100296: sitelHuman_RLegUpVectorNode
+    100298: sitelHuman_Spine1
+    100300: sitelHuman_Spine2
+    100302: sitelHuman_Spine2Belly
+    100304: sitelHuman_Spine3
+    100306: sitelHuman_Spine4
+    100308: strap
+    100310: strapBone_belly
+    100312: strapBone_centerAnkle
+    100314: strapBone_centerCalf
+    100316: strapBone_centerCalfMid
+    100318: strapBone_centerPelvis
+    100320: strapBone_centerThigh
+    100322: strapBone_leftAnkle1
+    100324: strapBone_leftAnkle2
+    100326: strapBone_leftAnkleBase
+    100328: strapBone_leftArm
+    100330: strapBone_leftCalf1
+    100332: strapBone_leftCalf2
+    100334: strapBone_leftCalfBase
+    100336: strapBone_leftHand
+    100338: strapBone_leftPalm
+    100340: strapBone_leftPelvis1
+    100342: strapBone_leftPelvis2
+    100344: strapBone_leftPelvisBase
+    100346: strapBone_leftRibs1
+    100348: strapBone_leftRibs2
+    100350: strapBone_leftRibsBase
+    100352: strapBone_leftShoulderBase
+    100354: strapBone_leftShoulderClavicle
+    100356: strapBone_leftShoulderMid
+    100358: strapBone_leftThigh1
+    100360: strapBone_leftThigh2
+    100362: strapBone_leftThighBase
+    100364: strapBone_ribs
+    100366: strapBone_rightAnkle1
+    100368: strapBone_rightAnkle2
+    100370: strapBone_rightAnkleBase
+    100372: strapBone_rightArm
+    100374: strapBone_rightCalf1
+    100376: strapBone_rightCalf2
+    100378: strapBone_rightCalfBase
+    100380: strapBone_rightHand
+    100382: strapBone_rightPalm
+    100384: strapBone_rightPelvis1
+    100386: strapBone_rightPelvis2
+    100388: strapBone_rightPelvisBase
+    100390: strapBone_rightRibs1
+    100392: strapBone_rightRibs2
+    100394: strapBone_rightRibsBase
+    100396: strapBone_rightShoulderBase
+    100398: strapBone_rightShoulderClavicle
+    100400: strapBone_rightShoulderMid
+    100402: strapBone_rightThigh1
+    100404: strapBone_rightThigh2
+    100406: strapBone_rightThighBase
+    100408: strapBone_root
+    100410: strapBone_sternum
+    100412: bpCuff_left
+    100414: bpCuff_left_device
+    100416: bpCuff_right
+    100418: bpCuff_right_device
+    100420: chestTube_bandage_left
+    100422: chestTube_bandage_right
+    100424: chestTube_endPoint_left
+    100426: chestTube_endPoint_right
+    100428: chestTube_left
+    100430: chestTube_right
+    100432: cuffLeft_bone_base
+    100434: cuffLeft_bone_squeeze1
+    100436: cuffLeft_bone_squeeze2
+    100438: cuffLeft_bone_squeeze3
+    100440: cuffLeft_bone_squeeze4
+    100442: cuffLeft_bone_squeezeBase
+    100444: cuffLeft_bone_squeezeTip
+    100446: cuffLeft_bone_tube01
+    100448: cuffLeft_bone_tube02
+    100450: cuffLeft_bone_tube03
+    100452: cuffLeft_bone_tube04
+    100454: cuffLeft_bone_tube05
+    100456: cuffLeft_bone_tube06
+    100458: cuffLeft_bone_tube07
+    100460: cuffLeft_bone_tube08
+    100462: cuffLeft_bone_tube09
+    100464: cuffLeft_bone_tube10
+    100466: cuffLeft_ik
+    100468: cuffLeft_point1
+    100470: cuffLeft_point2
+    100472: cuffLeft_point3
+    100474: cuffLeft_point4
+    100476: cuffLeft_spline
+    100478: cuffRight_bone_base
+    100480: cuffRight_bone_squeeze1
+    100482: cuffRight_bone_squeeze2
+    100484: cuffRight_bone_squeeze3
+    100486: cuffRight_bone_squeeze4
+    100488: cuffRight_bone_squeezeBase
+    100490: cuffRight_bone_squeezeTip
+    100492: cuffRight_bone_tube01
+    100494: cuffRight_bone_tube02
+    100496: cuffRight_bone_tube03
+    100498: cuffRight_bone_tube04
+    100500: cuffRight_bone_tube05
+    100502: cuffRight_bone_tube06
+    100504: cuffRight_bone_tube07
+    100506: cuffRight_bone_tube08
+    100508: cuffRight_bone_tube09
+    100510: cuffRight_bone_tube10
+    100512: cuffRight_ik
+    100514: cuffRight_point1
+    100516: cuffRight_point2
+    100518: cuffRight_point3
+    100520: cuffRight_point4
+    100522: cuffRight_spline
+    100524: foleyCatheter_endPoint
+    100526: foleyCatheter_tape
+    100528: foleyCathether
+    100530: gauze_left
+    100532: gauze_right
+    100534: prop_catheterAngio14Gauge_left
+    100536: prop_catheterAngio14Gauge_left_endPoint
+    100538: prop_catheterAngio14Gauge_right
+    100540: prop_catheterAngio14Gauge_right_endPoint
+    100542: prop_electrodeECG002
+    100544: prop_electrodeECG003
+    100546: prop_electrodeECG01
+    100548: prop_oximeterPodClip_left
+    100550: prop_oximeterPodClip_right
+    100552: prop_oxygencannula01
+    100554: tracheostomyNeedle
+    100556: tracheostomyNeedle_endPoint
+    100558: tracheostomyTube
+    100560: tracheostomyTube_endPoint
+    100562: tracheostomyTube_strap
+    100564: ventricularDrain
+    100566: ventricularDrain_endPoint
+    100568: ventricularDrain_gauze
+    400000: blanket_bottom
+    400002: blanket_top
+    400004: collarBone_left1
+    400006: collarBone_left2
+    400008: collarBone_left3
+    400010: collarBone_left4
+    400012: collarBone_left5
+    400014: collarBone_left6
+    400016: collarBone_right1
+    400018: collarBone_right10
+    400020: collarBone_right11
+    400022: collarBone_right2
+    400024: collarBone_right3
+    400026: collarBone_right4
+    400028: collarBone_right5
+    400030: collarBone_right6
+    400032: collarBone_right7
+    400034: collarBone_right8
+    400036: collarBone_right9
+    400038: collarBone_root
+    400040: collarBonePointLeft1
+    400042: collarBonePointLeft2
+    400044: collarBonePointLeft3
+    400046: collarBonePointLeft4
+    400048: collarBonePointRight1
+    400050: collarBonePointRight2
+    400052: collarBonePointRight3
+    400054: collarBonePointRight4
+    400056: collarBonePointRight5
+    400058: collarBonePointRight6
+    400060: collarBonePointRight7
+    400062: collarBoneSpline_left
+    400064: collarBoneSpline_right
+    400066: collarIK_left
+    400068: collarIK_right
+    400070: //RootNode
+    400072: patientTrauma5_clothed
+    400074: patientTrauma5_nude
+    400076: pelvicWrap
+    400078: prop_collarCervical01
+    400080: prop_stretcherBackboard01
+    400082: sitelHuman_
+    400084: sitelHuman_attach1
+    400086: sitelHuman_attach2
+    400088: sitelHuman_attach3
+    400090: sitelHuman_browCenter
+    400092: sitelHuman_browLeft
+    400094: sitelHuman_browRight
+    400096: sitelHuman_browRoot
+    400098: sitelHuman_cheek1Left
+    400100: sitelHuman_cheek1Right
+    400102: sitelHuman_cheek3Left
+    400104: sitelHuman_cheek3Right
+    400106: sitelHuman_cheekSmileLeft
+    400108: sitelHuman_cheekSmileRight
+    400110: sitelHuman_chipLeft
+    400112: sitelHuman_chipRight
+    400114: sitelHuman_eyeLeft
+    400116: sitelHuman_eyelidLowerLeft
+    400118: sitelHuman_eyelidLowerRight
+    400120: sitelHuman_eyelidUpperLeft
+    400122: sitelHuman_eyelidUpperRight
+    400124: sitelHuman_eyeRight
+    400126: sitelHuman_faceRoot
+    400128: sitelHuman_Head
+    400130: sitelHuman_jaw
+    400132: sitelHuman_LArmCollarbone
+    400134: sitelHuman_LArmDigit11
+    400136: sitelHuman_LArmDigit12
+    400138: sitelHuman_LArmDigit13
+    400140: sitelHuman_LArmDigit21
+    400142: sitelHuman_LArmDigit22
+    400144: sitelHuman_LArmDigit23
+    400146: sitelHuman_LArmDigit31
+    400148: sitelHuman_LArmDigit32
+    400150: sitelHuman_LArmDigit33
+    400152: sitelHuman_LArmDigit41
+    400154: sitelHuman_LArmDigit42
+    400156: sitelHuman_LArmDigit43
+    400158: sitelHuman_LArmDigit51
+    400160: sitelHuman_LArmDigit52
+    400162: sitelHuman_LArmDigit53
+    400164: sitelHuman_LArmForearm1
+    400166: sitelHuman_LArmForearm2
+    400168: sitelHuman_LArmForearm3
+    400170: sitelHuman_LArmIKTarget
+    400172: sitelHuman_LArmPalm
+    400174: sitelHuman_LArmPit
+    400176: sitelHuman_LArmUpperarm1
+    400178: sitelHuman_LArmUpperarm2
+    400180: sitelHuman_LArmUpperarm3
+    400182: sitelHuman_LArmUpVectorNode
+    400184: sitelHuman_LChest
+    400186: sitelHuman_LHipAdjust
+    400188: sitelHuman_lipCornerLeft
+    400190: sitelHuman_lipCornerRight
+    400192: sitelHuman_lipLower
+    400194: sitelHuman_lipLowerLeft
+    400196: sitelHuman_lipLowerRight
+    400198: sitelHuman_lipUpper
+    400200: sitelHuman_lipUpperLeft
+    400202: sitelHuman_lipUpperRight
+    400204: sitelHuman_LLeg1
+    400206: sitelHuman_LLeg2
+    400208: sitelHuman_LLegAnkle
+    400210: sitelHuman_LLegDigit11
+    400212: sitelHuman_LLegPlatform
+    400214: sitelHuman_LLegUpVectorNode
+    400216: sitelHuman_mouthRoot
+    400218: sitelHuman_Neck1
+    400220: sitelHuman_Neck2
+    400222: sitelHuman_nostrilLeft
+    400224: sitelHuman_nostrilRight
+    400226: sitelHuman_Pelvis
+    400228: sitelHuman_RArmCollarbone
+    400230: sitelHuman_RArmDigit11
+    400232: sitelHuman_RArmDigit12
+    400234: sitelHuman_RArmDigit13
+    400236: sitelHuman_RArmDigit21
+    400238: sitelHuman_RArmDigit22
+    400240: sitelHuman_RArmDigit23
+    400242: sitelHuman_RArmDigit31
+    400244: sitelHuman_RArmDigit32
+    400246: sitelHuman_RArmDigit33
+    400248: sitelHuman_RArmDigit41
+    400250: sitelHuman_RArmDigit42
+    400252: sitelHuman_RArmDigit43
+    400254: sitelHuman_RArmDigit51
+    400256: sitelHuman_RArmDigit52
+    400258: sitelHuman_RArmDigit53
+    400260: sitelHuman_RArmForearm1
+    400262: sitelHuman_RArmForearm2
+    400264: sitelHuman_RArmForearm3
+    400266: sitelHuman_RArmIKTarget
+    400268: sitelHuman_RArmPalm
+    400270: sitelHuman_RArmPit
+    400272: sitelHuman_RArmUpperarm1
+    400274: sitelHuman_RArmUpperarm2
+    400276: sitelHuman_RArmUpperarm3
+    400278: sitelHuman_RArmUpVectorNode
+    400280: sitelHuman_RChest
+    400282: sitelHuman_RHipAdjust
+    400284: sitelHuman_Ribcage
+    400286: sitelHuman_RLeg1
+    400288: sitelHuman_RLeg2
+    400290: sitelHuman_RLegAnkle
+    400292: sitelHuman_RLegDigit11
+    400294: sitelHuman_RLegPlatform
+    400296: sitelHuman_RLegUpVectorNode
+    400298: sitelHuman_Spine1
+    400300: sitelHuman_Spine2
+    400302: sitelHuman_Spine2Belly
+    400304: sitelHuman_Spine3
+    400306: sitelHuman_Spine4
+    400308: strap
+    400310: strapBone_belly
+    400312: strapBone_centerAnkle
+    400314: strapBone_centerCalf
+    400316: strapBone_centerCalfMid
+    400318: strapBone_centerPelvis
+    400320: strapBone_centerThigh
+    400322: strapBone_leftAnkle1
+    400324: strapBone_leftAnkle2
+    400326: strapBone_leftAnkleBase
+    400328: strapBone_leftArm
+    400330: strapBone_leftCalf1
+    400332: strapBone_leftCalf2
+    400334: strapBone_leftCalfBase
+    400336: strapBone_leftHand
+    400338: strapBone_leftPalm
+    400340: strapBone_leftPelvis1
+    400342: strapBone_leftPelvis2
+    400344: strapBone_leftPelvisBase
+    400346: strapBone_leftRibs1
+    400348: strapBone_leftRibs2
+    400350: strapBone_leftRibsBase
+    400352: strapBone_leftShoulderBase
+    400354: strapBone_leftShoulderClavicle
+    400356: strapBone_leftShoulderMid
+    400358: strapBone_leftThigh1
+    400360: strapBone_leftThigh2
+    400362: strapBone_leftThighBase
+    400364: strapBone_ribs
+    400366: strapBone_rightAnkle1
+    400368: strapBone_rightAnkle2
+    400370: strapBone_rightAnkleBase
+    400372: strapBone_rightArm
+    400374: strapBone_rightCalf1
+    400376: strapBone_rightCalf2
+    400378: strapBone_rightCalfBase
+    400380: strapBone_rightHand
+    400382: strapBone_rightPalm
+    400384: strapBone_rightPelvis1
+    400386: strapBone_rightPelvis2
+    400388: strapBone_rightPelvisBase
+    400390: strapBone_rightRibs1
+    400392: strapBone_rightRibs2
+    400394: strapBone_rightRibsBase
+    400396: strapBone_rightShoulderBase
+    400398: strapBone_rightShoulderClavicle
+    400400: strapBone_rightShoulderMid
+    400402: strapBone_rightThigh1
+    400404: strapBone_rightThigh2
+    400406: strapBone_rightThighBase
+    400408: strapBone_root
+    400410: strapBone_sternum
+    400412: bpCuff_left
+    400414: bpCuff_left_device
+    400416: bpCuff_right
+    400418: bpCuff_right_device
+    400420: chestTube_bandage_left
+    400422: chestTube_bandage_right
+    400424: chestTube_endPoint_left
+    400426: chestTube_endPoint_right
+    400428: chestTube_left
+    400430: chestTube_right
+    400432: cuffLeft_bone_base
+    400434: cuffLeft_bone_squeeze1
+    400436: cuffLeft_bone_squeeze2
+    400438: cuffLeft_bone_squeeze3
+    400440: cuffLeft_bone_squeeze4
+    400442: cuffLeft_bone_squeezeBase
+    400444: cuffLeft_bone_squeezeTip
+    400446: cuffLeft_bone_tube01
+    400448: cuffLeft_bone_tube02
+    400450: cuffLeft_bone_tube03
+    400452: cuffLeft_bone_tube04
+    400454: cuffLeft_bone_tube05
+    400456: cuffLeft_bone_tube06
+    400458: cuffLeft_bone_tube07
+    400460: cuffLeft_bone_tube08
+    400462: cuffLeft_bone_tube09
+    400464: cuffLeft_bone_tube10
+    400466: cuffLeft_ik
+    400468: cuffLeft_point1
+    400470: cuffLeft_point2
+    400472: cuffLeft_point3
+    400474: cuffLeft_point4
+    400476: cuffLeft_spline
+    400478: cuffRight_bone_base
+    400480: cuffRight_bone_squeeze1
+    400482: cuffRight_bone_squeeze2
+    400484: cuffRight_bone_squeeze3
+    400486: cuffRight_bone_squeeze4
+    400488: cuffRight_bone_squeezeBase
+    400490: cuffRight_bone_squeezeTip
+    400492: cuffRight_bone_tube01
+    400494: cuffRight_bone_tube02
+    400496: cuffRight_bone_tube03
+    400498: cuffRight_bone_tube04
+    400500: cuffRight_bone_tube05
+    400502: cuffRight_bone_tube06
+    400504: cuffRight_bone_tube07
+    400506: cuffRight_bone_tube08
+    400508: cuffRight_bone_tube09
+    400510: cuffRight_bone_tube10
+    400512: cuffRight_ik
+    400514: cuffRight_point1
+    400516: cuffRight_point2
+    400518: cuffRight_point3
+    400520: cuffRight_point4
+    400522: cuffRight_spline
+    400524: foleyCatheter_endPoint
+    400526: foleyCatheter_tape
+    400528: foleyCathether
+    400530: gauze_left
+    400532: gauze_right
+    400534: prop_catheterAngio14Gauge_left
+    400536: prop_catheterAngio14Gauge_left_endPoint
+    400538: prop_catheterAngio14Gauge_right
+    400540: prop_catheterAngio14Gauge_right_endPoint
+    400542: prop_electrodeECG002
+    400544: prop_electrodeECG003
+    400546: prop_electrodeECG01
+    400548: prop_oximeterPodClip_left
+    400550: prop_oximeterPodClip_right
+    400552: prop_oxygencannula01
+    400554: tracheostomyNeedle
+    400556: tracheostomyNeedle_endPoint
+    400558: tracheostomyTube
+    400560: tracheostomyTube_endPoint
+    400562: tracheostomyTube_strap
+    400564: ventricularDrain
+    400566: ventricularDrain_endPoint
+    400568: ventricularDrain_gauze
+    2300000: prop_stretcherBackboard01
+    2300002: bpCuff_left
+    2300004: bpCuff_right
+    2300006: prop_catheterAngio14Gauge_left
+    2300008: prop_catheterAngio14Gauge_right
+    2300010: prop_oximeterPodClip_left
+    2300012: prop_oximeterPodClip_right
+    3300000: prop_stretcherBackboard01
+    3300002: bpCuff_left
+    3300004: bpCuff_right
+    3300006: prop_catheterAngio14Gauge_left
+    3300008: prop_catheterAngio14Gauge_right
+    3300010: prop_oximeterPodClip_left
+    3300012: prop_oximeterPodClip_right
+    4300000: blanket_top
+    4300002: blanket_bottom
+    4300004: prop_stretcherBackboard01
+    4300006: prop_collarCervical01
+    4300008: pelvicWrap
+    4300010: patientTrauma5_clothed
+    4300012: patientTrauma5_nude
+    4300014: strap
+    4300016: prop_oximeterPodClip_right
+    4300018: prop_catheterAngio14Gauge_right
+    4300020: bpCuff_right
+    4300022: prop_oximeterPodClip_left
+    4300024: prop_catheterAngio14Gauge_left
+    4300026: bpCuff_left
+    4300028: prop_electrodeECG01
+    4300030: prop_electrodeECG002
+    4300032: prop_electrodeECG003
+    4300034: gauze_left
+    4300036: gauze_right
+    4300038: bpCuff_left_device
+    4300040: bpCuff_right_device
+    4300042: prop_oxygencannula01
+    4300044: tracheostomyTube
+    4300046: tracheostomyTube_strap
+    4300048: chestTube_bandage_left
+    4300050: chestTube_bandage_right
+    4300052: chestTube_left
+    4300054: chestTube_right
+    4300056: foleyCathether
+    4300058: foleyCatheter_tape
+    4300060: tracheostomyNeedle
+    4300062: ventricularDrain_gauze
+    4300064: ventricularDrain
+    7400000: checkVision
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: blanket_bottom
+    13700002: blanket_top
+    13700004: patientTrauma5_clothed
+    13700006: patientTrauma5_nude
+    13700008: pelvicWrap
+    13700010: prop_collarCervical01
+    13700012: strap
+    13700014: bpCuff_left_device
+    13700016: bpCuff_right_device
+    13700018: chestTube_bandage_left
+    13700020: chestTube_bandage_right
+    13700022: chestTube_left
+    13700024: chestTube_right
+    13700026: foleyCatheter_tape
+    13700028: foleyCathether
+    13700030: gauze_left
+    13700032: gauze_right
+    13700034: prop_electrodeECG002
+    13700036: prop_electrodeECG003
+    13700038: prop_electrodeECG01
+    13700040: prop_oxygencannula01
+    13700042: tracheostomyNeedle
+    13700044: tracheostomyTube
+    13700046: tracheostomyTube_strap
+    13700048: ventricularDrain
+    13700050: ventricularDrain_gauze
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 3
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 4
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: checkVision
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 170
+      wrapMode: 8
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: blanket_bottom
+        weight: 1
+      - path: blanket_top
+        weight: 1
+      - path: collarBone_root
+        weight: 1
+      - path: collarBone_root/collarBone_left1
+        weight: 1
+      - path: collarBone_root/collarBone_left1/collarBone_left2
+        weight: 1
+      - path: collarBone_root/collarBone_left1/collarBone_left2/collarBone_left3
+        weight: 1
+      - path: collarBone_root/collarBone_left1/collarBone_left2/collarBone_left3/collarBone_left4
+        weight: 1
+      - path: collarBone_root/collarBone_left1/collarBone_left2/collarBone_left3/collarBone_left4/collarBone_left5
+        weight: 1
+      - path: collarBone_root/collarBone_left1/collarBone_left2/collarBone_left3/collarBone_left4/collarBone_left5/collarBone_left6
+        weight: 1
+      - path: collarBone_root/collarBone_right1
+        weight: 1
+      - path: collarBone_root/collarBone_right1/collarBone_right2
+        weight: 1
+      - path: collarBone_root/collarBone_right1/collarBone_right2/collarBone_right3
+        weight: 1
+      - path: collarBone_root/collarBone_right1/collarBone_right2/collarBone_right3/collarBone_right4
+        weight: 1
+      - path: collarBone_root/collarBone_right1/collarBone_right2/collarBone_right3/collarBone_right4/collarBone_right5
+        weight: 1
+      - path: collarBone_root/collarBone_right1/collarBone_right2/collarBone_right3/collarBone_right4/collarBone_right5/collarBone_right6
+        weight: 1
+      - path: collarBone_root/collarBone_right1/collarBone_right2/collarBone_right3/collarBone_right4/collarBone_right5/collarBone_right6/collarBone_right7
+        weight: 1
+      - path: collarBone_root/collarBone_right1/collarBone_right2/collarBone_right3/collarBone_right4/collarBone_right5/collarBone_right6/collarBone_right7/collarBone_right8
+        weight: 1
+      - path: collarBone_root/collarBone_right1/collarBone_right2/collarBone_right3/collarBone_right4/collarBone_right5/collarBone_right6/collarBone_right7/collarBone_right8/collarBone_right9
+        weight: 1
+      - path: collarBone_root/collarBone_right1/collarBone_right2/collarBone_right3/collarBone_right4/collarBone_right5/collarBone_right6/collarBone_right7/collarBone_right8/collarBone_right9/collarBone_right10
+        weight: 1
+      - path: collarBone_root/collarBone_right1/collarBone_right2/collarBone_right3/collarBone_right4/collarBone_right5/collarBone_right6/collarBone_right7/collarBone_right8/collarBone_right9/collarBone_right10/collarBone_right11
+        weight: 1
+      - path: collarBone_root/collarBonePointLeft1
+        weight: 1
+      - path: collarBone_root/collarBonePointLeft1/collarBonePointLeft2
+        weight: 1
+      - path: collarBone_root/collarBonePointLeft1/collarBonePointLeft2/collarBonePointLeft3
+        weight: 1
+      - path: collarBone_root/collarBonePointLeft1/collarBonePointLeft2/collarBonePointLeft3/collarBonePointLeft4
+        weight: 1
+      - path: collarBone_root/collarBonePointRight1
+        weight: 1
+      - path: collarBone_root/collarBonePointRight1/collarBonePointRight2
+        weight: 1
+      - path: collarBone_root/collarBonePointRight1/collarBonePointRight2/collarBonePointRight3
+        weight: 1
+      - path: collarBone_root/collarBonePointRight1/collarBonePointRight2/collarBonePointRight3/collarBonePointRight4
+        weight: 1
+      - path: collarBone_root/collarBonePointRight1/collarBonePointRight2/collarBonePointRight3/collarBonePointRight4/collarBonePointRight5
+        weight: 1
+      - path: collarBone_root/collarBonePointRight1/collarBonePointRight2/collarBonePointRight3/collarBonePointRight4/collarBonePointRight5/collarBonePointRight6
+        weight: 1
+      - path: collarBone_root/collarBonePointRight1/collarBonePointRight2/collarBonePointRight3/collarBonePointRight4/collarBonePointRight5/collarBonePointRight6/collarBonePointRight7
+        weight: 1
+      - path: collarBoneSpline_left
+        weight: 1
+      - path: collarBoneSpline_right
+        weight: 1
+      - path: collarIK_left
+        weight: 1
+      - path: collarIK_right
+        weight: 1
+      - path: patientTrauma5_clothed
+        weight: 1
+      - path: patientTrauma5_nude
+        weight: 1
+      - path: pelvicWrap
+        weight: 1
+      - path: prop_collarCervical01
+        weight: 1
+      - path: prop_stretcherBackboard01
+        weight: 1
+      - path: sitelHuman_
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_LHipAdjust
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_LLeg1
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_LLeg1/sitelHuman_LLeg2
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_LLeg1/sitelHuman_LLeg2/sitelHuman_LLegAnkle
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_LLeg1/sitelHuman_LLeg2/sitelHuman_LLegAnkle/sitelHuman_LLegDigit11
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_LLegUpVectorNode
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_RHipAdjust
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_RLeg1
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_RLeg1/sitelHuman_RLeg2
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_RLeg1/sitelHuman_RLeg2/sitelHuman_RLegAnkle
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_RLeg1/sitelHuman_RLeg2/sitelHuman_RLegAnkle/sitelHuman_RLegDigit11
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_RLegUpVectorNode
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine2Belly
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_LArmCollarbone
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_LArmCollarbone/sitelHuman_LArmPit
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_LArmCollarbone/sitelHuman_LArmUpperarm1
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_LArmCollarbone/sitelHuman_LArmUpperarm1/sitelHuman_LArmUpperarm2
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_LArmCollarbone/sitelHuman_LArmUpperarm1/sitelHuman_LArmUpperarm2/sitelHuman_LArmUpperarm3
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_LArmCollarbone/sitelHuman_LArmUpperarm1/sitelHuman_LArmUpperarm2/sitelHuman_LArmUpperarm3/sitelHuman_LArmForearm1
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_LArmCollarbone/sitelHuman_LArmUpperarm1/sitelHuman_LArmUpperarm2/sitelHuman_LArmUpperarm3/sitelHuman_LArmForearm1/sitelHuman_LArmForearm2
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_LArmCollarbone/sitelHuman_LArmUpperarm1/sitelHuman_LArmUpperarm2/sitelHuman_LArmUpperarm3/sitelHuman_LArmForearm1/sitelHuman_LArmForearm2/sitelHuman_LArmForearm3
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_LArmCollarbone/sitelHuman_LArmUpperarm1/sitelHuman_LArmUpperarm2/sitelHuman_LArmUpperarm3/sitelHuman_LArmForearm1/sitelHuman_LArmForearm2/sitelHuman_LArmForearm3/sitelHuman_LArmPalm
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_LArmCollarbone/sitelHuman_LArmUpperarm1/sitelHuman_LArmUpperarm2/sitelHuman_LArmUpperarm3/sitelHuman_LArmForearm1/sitelHuman_LArmForearm2/sitelHuman_LArmForearm3/sitelHuman_LArmPalm/sitelHuman_LArmDigit11
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_LArmCollarbone/sitelHuman_LArmUpperarm1/sitelHuman_LArmUpperarm2/sitelHuman_LArmUpperarm3/sitelHuman_LArmForearm1/sitelHuman_LArmForearm2/sitelHuman_LArmForearm3/sitelHuman_LArmPalm/sitelHuman_LArmDigit11/sitelHuman_LArmDigit12
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_LArmCollarbone/sitelHuman_LArmUpperarm1/sitelHuman_LArmUpperarm2/sitelHuman_LArmUpperarm3/sitelHuman_LArmForearm1/sitelHuman_LArmForearm2/sitelHuman_LArmForearm3/sitelHuman_LArmPalm/sitelHuman_LArmDigit11/sitelHuman_LArmDigit12/sitelHuman_LArmDigit13
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_LArmCollarbone/sitelHuman_LArmUpperarm1/sitelHuman_LArmUpperarm2/sitelHuman_LArmUpperarm3/sitelHuman_LArmForearm1/sitelHuman_LArmForearm2/sitelHuman_LArmForearm3/sitelHuman_LArmPalm/sitelHuman_LArmDigit21
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_LArmCollarbone/sitelHuman_LArmUpperarm1/sitelHuman_LArmUpperarm2/sitelHuman_LArmUpperarm3/sitelHuman_LArmForearm1/sitelHuman_LArmForearm2/sitelHuman_LArmForearm3/sitelHuman_LArmPalm/sitelHuman_LArmDigit21/sitelHuman_LArmDigit22
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_LArmCollarbone/sitelHuman_LArmUpperarm1/sitelHuman_LArmUpperarm2/sitelHuman_LArmUpperarm3/sitelHuman_LArmForearm1/sitelHuman_LArmForearm2/sitelHuman_LArmForearm3/sitelHuman_LArmPalm/sitelHuman_LArmDigit21/sitelHuman_LArmDigit22/sitelHuman_LArmDigit23
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_LArmCollarbone/sitelHuman_LArmUpperarm1/sitelHuman_LArmUpperarm2/sitelHuman_LArmUpperarm3/sitelHuman_LArmForearm1/sitelHuman_LArmForearm2/sitelHuman_LArmForearm3/sitelHuman_LArmPalm/sitelHuman_LArmDigit31
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_LArmCollarbone/sitelHuman_LArmUpperarm1/sitelHuman_LArmUpperarm2/sitelHuman_LArmUpperarm3/sitelHuman_LArmForearm1/sitelHuman_LArmForearm2/sitelHuman_LArmForearm3/sitelHuman_LArmPalm/sitelHuman_LArmDigit31/sitelHuman_LArmDigit32
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_LArmCollarbone/sitelHuman_LArmUpperarm1/sitelHuman_LArmUpperarm2/sitelHuman_LArmUpperarm3/sitelHuman_LArmForearm1/sitelHuman_LArmForearm2/sitelHuman_LArmForearm3/sitelHuman_LArmPalm/sitelHuman_LArmDigit31/sitelHuman_LArmDigit32/sitelHuman_LArmDigit33
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_LArmCollarbone/sitelHuman_LArmUpperarm1/sitelHuman_LArmUpperarm2/sitelHuman_LArmUpperarm3/sitelHuman_LArmForearm1/sitelHuman_LArmForearm2/sitelHuman_LArmForearm3/sitelHuman_LArmPalm/sitelHuman_LArmDigit41
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_LArmCollarbone/sitelHuman_LArmUpperarm1/sitelHuman_LArmUpperarm2/sitelHuman_LArmUpperarm3/sitelHuman_LArmForearm1/sitelHuman_LArmForearm2/sitelHuman_LArmForearm3/sitelHuman_LArmPalm/sitelHuman_LArmDigit41/sitelHuman_LArmDigit42
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_LArmCollarbone/sitelHuman_LArmUpperarm1/sitelHuman_LArmUpperarm2/sitelHuman_LArmUpperarm3/sitelHuman_LArmForearm1/sitelHuman_LArmForearm2/sitelHuman_LArmForearm3/sitelHuman_LArmPalm/sitelHuman_LArmDigit41/sitelHuman_LArmDigit42/sitelHuman_LArmDigit43
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_LArmCollarbone/sitelHuman_LArmUpperarm1/sitelHuman_LArmUpperarm2/sitelHuman_LArmUpperarm3/sitelHuman_LArmForearm1/sitelHuman_LArmForearm2/sitelHuman_LArmForearm3/sitelHuman_LArmPalm/sitelHuman_LArmDigit51
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_LArmCollarbone/sitelHuman_LArmUpperarm1/sitelHuman_LArmUpperarm2/sitelHuman_LArmUpperarm3/sitelHuman_LArmForearm1/sitelHuman_LArmForearm2/sitelHuman_LArmForearm3/sitelHuman_LArmPalm/sitelHuman_LArmDigit51/sitelHuman_LArmDigit52
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_LArmCollarbone/sitelHuman_LArmUpperarm1/sitelHuman_LArmUpperarm2/sitelHuman_LArmUpperarm3/sitelHuman_LArmForearm1/sitelHuman_LArmForearm2/sitelHuman_LArmForearm3/sitelHuman_LArmPalm/sitelHuman_LArmDigit51/sitelHuman_LArmDigit52/sitelHuman_LArmDigit53
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_LArmUpVectorNode
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_LChest
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2/sitelHuman_Head
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2/sitelHuman_Head/sitelHuman_faceRoot
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2/sitelHuman_Head/sitelHuman_faceRoot/sitelHuman_browRoot
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2/sitelHuman_Head/sitelHuman_faceRoot/sitelHuman_browRoot/sitelHuman_browCenter
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2/sitelHuman_Head/sitelHuman_faceRoot/sitelHuman_browRoot/sitelHuman_browLeft
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2/sitelHuman_Head/sitelHuman_faceRoot/sitelHuman_browRoot/sitelHuman_browRight
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2/sitelHuman_Head/sitelHuman_faceRoot/sitelHuman_browRoot/sitelHuman_cheek1Left
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2/sitelHuman_Head/sitelHuman_faceRoot/sitelHuman_browRoot/sitelHuman_cheek1Right
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2/sitelHuman_Head/sitelHuman_faceRoot/sitelHuman_browRoot/sitelHuman_cheek3Left
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2/sitelHuman_Head/sitelHuman_faceRoot/sitelHuman_browRoot/sitelHuman_cheek3Right
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2/sitelHuman_Head/sitelHuman_faceRoot/sitelHuman_browRoot/sitelHuman_eyeLeft
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2/sitelHuman_Head/sitelHuman_faceRoot/sitelHuman_browRoot/sitelHuman_eyelidLowerLeft
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2/sitelHuman_Head/sitelHuman_faceRoot/sitelHuman_browRoot/sitelHuman_eyelidLowerRight
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2/sitelHuman_Head/sitelHuman_faceRoot/sitelHuman_browRoot/sitelHuman_eyelidUpperLeft
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2/sitelHuman_Head/sitelHuman_faceRoot/sitelHuman_browRoot/sitelHuman_eyelidUpperRight
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2/sitelHuman_Head/sitelHuman_faceRoot/sitelHuman_browRoot/sitelHuman_eyeRight
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2/sitelHuman_Head/sitelHuman_faceRoot/sitelHuman_mouthRoot
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2/sitelHuman_Head/sitelHuman_faceRoot/sitelHuman_mouthRoot/sitelHuman_cheekSmileLeft
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2/sitelHuman_Head/sitelHuman_faceRoot/sitelHuman_mouthRoot/sitelHuman_cheekSmileRight
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2/sitelHuman_Head/sitelHuman_faceRoot/sitelHuman_mouthRoot/sitelHuman_chipLeft
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2/sitelHuman_Head/sitelHuman_faceRoot/sitelHuman_mouthRoot/sitelHuman_chipRight
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2/sitelHuman_Head/sitelHuman_faceRoot/sitelHuman_mouthRoot/sitelHuman_jaw
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2/sitelHuman_Head/sitelHuman_faceRoot/sitelHuman_mouthRoot/sitelHuman_lipCornerLeft
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2/sitelHuman_Head/sitelHuman_faceRoot/sitelHuman_mouthRoot/sitelHuman_lipCornerRight
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2/sitelHuman_Head/sitelHuman_faceRoot/sitelHuman_mouthRoot/sitelHuman_lipLower
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2/sitelHuman_Head/sitelHuman_faceRoot/sitelHuman_mouthRoot/sitelHuman_lipLowerLeft
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2/sitelHuman_Head/sitelHuman_faceRoot/sitelHuman_mouthRoot/sitelHuman_lipLowerRight
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2/sitelHuman_Head/sitelHuman_faceRoot/sitelHuman_mouthRoot/sitelHuman_lipUpper
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2/sitelHuman_Head/sitelHuman_faceRoot/sitelHuman_mouthRoot/sitelHuman_lipUpperLeft
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2/sitelHuman_Head/sitelHuman_faceRoot/sitelHuman_mouthRoot/sitelHuman_lipUpperRight
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2/sitelHuman_Head/sitelHuman_faceRoot/sitelHuman_mouthRoot/sitelHuman_nostrilLeft
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_Neck1/sitelHuman_Neck2/sitelHuman_Head/sitelHuman_faceRoot/sitelHuman_mouthRoot/sitelHuman_nostrilRight
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_RArmCollarbone
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_RArmCollarbone/sitelHuman_RArmPit
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_RArmCollarbone/sitelHuman_RArmUpperarm1
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_RArmCollarbone/sitelHuman_RArmUpperarm1/sitelHuman_RArmUpperarm2
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_RArmCollarbone/sitelHuman_RArmUpperarm1/sitelHuman_RArmUpperarm2/sitelHuman_RArmUpperarm3
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_RArmCollarbone/sitelHuman_RArmUpperarm1/sitelHuman_RArmUpperarm2/sitelHuman_RArmUpperarm3/sitelHuman_RArmForearm1
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_RArmCollarbone/sitelHuman_RArmUpperarm1/sitelHuman_RArmUpperarm2/sitelHuman_RArmUpperarm3/sitelHuman_RArmForearm1/sitelHuman_RArmForearm2
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_RArmCollarbone/sitelHuman_RArmUpperarm1/sitelHuman_RArmUpperarm2/sitelHuman_RArmUpperarm3/sitelHuman_RArmForearm1/sitelHuman_RArmForearm2/sitelHuman_RArmForearm3
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_RArmCollarbone/sitelHuman_RArmUpperarm1/sitelHuman_RArmUpperarm2/sitelHuman_RArmUpperarm3/sitelHuman_RArmForearm1/sitelHuman_RArmForearm2/sitelHuman_RArmForearm3/sitelHuman_RArmPalm
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_RArmCollarbone/sitelHuman_RArmUpperarm1/sitelHuman_RArmUpperarm2/sitelHuman_RArmUpperarm3/sitelHuman_RArmForearm1/sitelHuman_RArmForearm2/sitelHuman_RArmForearm3/sitelHuman_RArmPalm/sitelHuman_RArmDigit11
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_RArmCollarbone/sitelHuman_RArmUpperarm1/sitelHuman_RArmUpperarm2/sitelHuman_RArmUpperarm3/sitelHuman_RArmForearm1/sitelHuman_RArmForearm2/sitelHuman_RArmForearm3/sitelHuman_RArmPalm/sitelHuman_RArmDigit11/sitelHuman_RArmDigit12
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_RArmCollarbone/sitelHuman_RArmUpperarm1/sitelHuman_RArmUpperarm2/sitelHuman_RArmUpperarm3/sitelHuman_RArmForearm1/sitelHuman_RArmForearm2/sitelHuman_RArmForearm3/sitelHuman_RArmPalm/sitelHuman_RArmDigit11/sitelHuman_RArmDigit12/sitelHuman_RArmDigit13
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_RArmCollarbone/sitelHuman_RArmUpperarm1/sitelHuman_RArmUpperarm2/sitelHuman_RArmUpperarm3/sitelHuman_RArmForearm1/sitelHuman_RArmForearm2/sitelHuman_RArmForearm3/sitelHuman_RArmPalm/sitelHuman_RArmDigit21
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_RArmCollarbone/sitelHuman_RArmUpperarm1/sitelHuman_RArmUpperarm2/sitelHuman_RArmUpperarm3/sitelHuman_RArmForearm1/sitelHuman_RArmForearm2/sitelHuman_RArmForearm3/sitelHuman_RArmPalm/sitelHuman_RArmDigit21/sitelHuman_RArmDigit22
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_RArmCollarbone/sitelHuman_RArmUpperarm1/sitelHuman_RArmUpperarm2/sitelHuman_RArmUpperarm3/sitelHuman_RArmForearm1/sitelHuman_RArmForearm2/sitelHuman_RArmForearm3/sitelHuman_RArmPalm/sitelHuman_RArmDigit21/sitelHuman_RArmDigit22/sitelHuman_RArmDigit23
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_RArmCollarbone/sitelHuman_RArmUpperarm1/sitelHuman_RArmUpperarm2/sitelHuman_RArmUpperarm3/sitelHuman_RArmForearm1/sitelHuman_RArmForearm2/sitelHuman_RArmForearm3/sitelHuman_RArmPalm/sitelHuman_RArmDigit31
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_RArmCollarbone/sitelHuman_RArmUpperarm1/sitelHuman_RArmUpperarm2/sitelHuman_RArmUpperarm3/sitelHuman_RArmForearm1/sitelHuman_RArmForearm2/sitelHuman_RArmForearm3/sitelHuman_RArmPalm/sitelHuman_RArmDigit31/sitelHuman_RArmDigit32
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_RArmCollarbone/sitelHuman_RArmUpperarm1/sitelHuman_RArmUpperarm2/sitelHuman_RArmUpperarm3/sitelHuman_RArmForearm1/sitelHuman_RArmForearm2/sitelHuman_RArmForearm3/sitelHuman_RArmPalm/sitelHuman_RArmDigit31/sitelHuman_RArmDigit32/sitelHuman_RArmDigit33
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_RArmCollarbone/sitelHuman_RArmUpperarm1/sitelHuman_RArmUpperarm2/sitelHuman_RArmUpperarm3/sitelHuman_RArmForearm1/sitelHuman_RArmForearm2/sitelHuman_RArmForearm3/sitelHuman_RArmPalm/sitelHuman_RArmDigit41
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_RArmCollarbone/sitelHuman_RArmUpperarm1/sitelHuman_RArmUpperarm2/sitelHuman_RArmUpperarm3/sitelHuman_RArmForearm1/sitelHuman_RArmForearm2/sitelHuman_RArmForearm3/sitelHuman_RArmPalm/sitelHuman_RArmDigit41/sitelHuman_RArmDigit42
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_RArmCollarbone/sitelHuman_RArmUpperarm1/sitelHuman_RArmUpperarm2/sitelHuman_RArmUpperarm3/sitelHuman_RArmForearm1/sitelHuman_RArmForearm2/sitelHuman_RArmForearm3/sitelHuman_RArmPalm/sitelHuman_RArmDigit41/sitelHuman_RArmDigit42/sitelHuman_RArmDigit43
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_RArmCollarbone/sitelHuman_RArmUpperarm1/sitelHuman_RArmUpperarm2/sitelHuman_RArmUpperarm3/sitelHuman_RArmForearm1/sitelHuman_RArmForearm2/sitelHuman_RArmForearm3/sitelHuman_RArmPalm/sitelHuman_RArmDigit51
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_RArmCollarbone/sitelHuman_RArmUpperarm1/sitelHuman_RArmUpperarm2/sitelHuman_RArmUpperarm3/sitelHuman_RArmForearm1/sitelHuman_RArmForearm2/sitelHuman_RArmForearm3/sitelHuman_RArmPalm/sitelHuman_RArmDigit51/sitelHuman_RArmDigit52
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_RArmCollarbone/sitelHuman_RArmUpperarm1/sitelHuman_RArmUpperarm2/sitelHuman_RArmUpperarm3/sitelHuman_RArmForearm1/sitelHuman_RArmForearm2/sitelHuman_RArmForearm3/sitelHuman_RArmPalm/sitelHuman_RArmDigit51/sitelHuman_RArmDigit52/sitelHuman_RArmDigit53
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_RArmUpVectorNode
+        weight: 1
+      - path: sitelHuman_/sitelHuman_Pelvis/sitelHuman_Spine1/sitelHuman_Spine2/sitelHuman_Spine3/sitelHuman_Spine4/sitelHuman_Ribcage/sitelHuman_RChest
+        weight: 1
+      - path: sitelHuman_attach1
+        weight: 1
+      - path: sitelHuman_attach2
+        weight: 1
+      - path: sitelHuman_attach3
+        weight: 1
+      - path: sitelHuman_LArmIKTarget
+        weight: 1
+      - path: sitelHuman_LLegPlatform
+        weight: 1
+      - path: sitelHuman_RArmIKTarget
+        weight: 1
+      - path: sitelHuman_RLegPlatform
+        weight: 1
+      - path: strap
+        weight: 1
+      - path: strapBone_root
+        weight: 1
+      - path: strapBone_root/strapBone_belly
+        weight: 1
+      - path: strapBone_root/strapBone_centerAnkle
+        weight: 1
+      - path: strapBone_root/strapBone_centerCalf
+        weight: 1
+      - path: strapBone_root/strapBone_centerCalfMid
+        weight: 1
+      - path: strapBone_root/strapBone_centerPelvis
+        weight: 1
+      - path: strapBone_root/strapBone_centerThigh
+        weight: 1
+      - path: strapBone_root/strapBone_leftAnkle1
+        weight: 1
+      - path: strapBone_root/strapBone_leftAnkle2
+        weight: 1
+      - path: strapBone_root/strapBone_leftAnkleBase
+        weight: 1
+      - path: strapBone_root/strapBone_leftArm
+        weight: 1
+      - path: strapBone_root/strapBone_leftCalf1
+        weight: 1
+      - path: strapBone_root/strapBone_leftCalf2
+        weight: 1
+      - path: strapBone_root/strapBone_leftCalfBase
+        weight: 1
+      - path: strapBone_root/strapBone_leftHand
+        weight: 1
+      - path: strapBone_root/strapBone_leftPalm
+        weight: 1
+      - path: strapBone_root/strapBone_leftPelvis1
+        weight: 1
+      - path: strapBone_root/strapBone_leftPelvis2
+        weight: 1
+      - path: strapBone_root/strapBone_leftPelvisBase
+        weight: 1
+      - path: strapBone_root/strapBone_leftRibs1
+        weight: 1
+      - path: strapBone_root/strapBone_leftRibs2
+        weight: 1
+      - path: strapBone_root/strapBone_leftRibsBase
+        weight: 1
+      - path: strapBone_root/strapBone_leftShoulderBase
+        weight: 1
+      - path: strapBone_root/strapBone_leftShoulderClavicle
+        weight: 1
+      - path: strapBone_root/strapBone_leftShoulderMid
+        weight: 1
+      - path: strapBone_root/strapBone_leftThigh1
+        weight: 1
+      - path: strapBone_root/strapBone_leftThigh2
+        weight: 1
+      - path: strapBone_root/strapBone_leftThighBase
+        weight: 1
+      - path: strapBone_root/strapBone_ribs
+        weight: 1
+      - path: strapBone_root/strapBone_rightAnkle1
+        weight: 1
+      - path: strapBone_root/strapBone_rightAnkle2
+        weight: 1
+      - path: strapBone_root/strapBone_rightAnkleBase
+        weight: 1
+      - path: strapBone_root/strapBone_rightArm
+        weight: 1
+      - path: strapBone_root/strapBone_rightCalf1
+        weight: 1
+      - path: strapBone_root/strapBone_rightCalf2
+        weight: 1
+      - path: strapBone_root/strapBone_rightCalfBase
+        weight: 1
+      - path: strapBone_root/strapBone_rightHand
+        weight: 1
+      - path: strapBone_root/strapBone_rightPalm
+        weight: 1
+      - path: strapBone_root/strapBone_rightPelvis1
+        weight: 1
+      - path: strapBone_root/strapBone_rightPelvis2
+        weight: 1
+      - path: strapBone_root/strapBone_rightPelvisBase
+        weight: 1
+      - path: strapBone_root/strapBone_rightRibs1
+        weight: 1
+      - path: strapBone_root/strapBone_rightRibs2
+        weight: 1
+      - path: strapBone_root/strapBone_rightRibsBase
+        weight: 1
+      - path: strapBone_root/strapBone_rightShoulderBase
+        weight: 1
+      - path: strapBone_root/strapBone_rightShoulderClavicle
+        weight: 1
+      - path: strapBone_root/strapBone_rightShoulderMid
+        weight: 1
+      - path: strapBone_root/strapBone_rightThigh1
+        weight: 1
+      - path: strapBone_root/strapBone_rightThigh2
+        weight: 1
+      - path: strapBone_root/strapBone_rightThighBase
+        weight: 1
+      - path: strapBone_root/strapBone_sternum
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 

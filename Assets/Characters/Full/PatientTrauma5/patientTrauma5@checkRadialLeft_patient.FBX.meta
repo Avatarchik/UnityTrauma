@@ -1,0 +1,878 @@
+fileFormatVersion: 2
+guid: e4f8ed0ab039bae48912f0488dda0f68
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: blanket_bottom
+    100002: blanket_bottom 1
+    100004: blanket_top
+    100006: blanket_top 1
+    100008: bpCuff_left
+    100010: bpCuff_left_device
+    100012: bpCuff_right
+    100014: bpCuff_right_device
+    100016: bpCuff_rightLeg
+    100018: bpCuff_rightLeg_device
+    100020: chestTube_bandage_left
+    100022: chestTube_bandage_right
+    100024: chestTube_endPoint_left
+    100026: chestTube_endPoint_right
+    100028: chestTube_left
+    100030: chestTube_right
+    100032: collarBone_left1
+    100034: collarBone_left2
+    100036: collarBone_left3
+    100038: collarBone_left4
+    100040: collarBone_left5
+    100042: collarBone_left6
+    100044: collarBone_right1
+    100046: collarBone_right10
+    100048: collarBone_right11
+    100050: collarBone_right2
+    100052: collarBone_right3
+    100054: collarBone_right4
+    100056: collarBone_right5
+    100058: collarBone_right6
+    100060: collarBone_right7
+    100062: collarBone_right8
+    100064: collarBone_right9
+    100066: collarBone_root
+    100068: collarBonePointLeft1
+    100070: collarBonePointLeft2
+    100072: collarBonePointLeft3
+    100074: collarBonePointLeft4
+    100076: collarBonePointRight1
+    100078: collarBonePointRight2
+    100080: collarBonePointRight3
+    100082: collarBonePointRight4
+    100084: collarBonePointRight5
+    100086: collarBonePointRight6
+    100088: collarBonePointRight7
+    100090: collarBoneSpline_left
+    100092: collarBoneSpline_right
+    100094: collarIK_left
+    100096: collarIK_right
+    100098: cuffLeft_bone_base
+    100100: cuffLeft_bone_squeeze1
+    100102: cuffLeft_bone_squeeze2
+    100104: cuffLeft_bone_squeeze3
+    100106: cuffLeft_bone_squeeze4
+    100108: cuffLeft_bone_squeezeBase
+    100110: cuffLeft_bone_squeezeTip
+    100112: cuffLeft_bone_tube01
+    100114: cuffLeft_bone_tube02
+    100116: cuffLeft_bone_tube03
+    100118: cuffLeft_bone_tube04
+    100120: cuffLeft_bone_tube05
+    100122: cuffLeft_bone_tube06
+    100124: cuffLeft_bone_tube07
+    100126: cuffLeft_bone_tube08
+    100128: cuffLeft_bone_tube09
+    100130: cuffLeft_bone_tube10
+    100132: cuffLeft_ik
+    100134: cuffLeft_point1
+    100136: cuffLeft_point2
+    100138: cuffLeft_point3
+    100140: cuffLeft_point4
+    100142: cuffLeft_spline
+    100144: cuffRight_bone_base
+    100146: cuffRight_bone_squeeze1
+    100148: cuffRight_bone_squeeze2
+    100150: cuffRight_bone_squeeze3
+    100152: cuffRight_bone_squeeze4
+    100154: cuffRight_bone_squeezeBase
+    100156: cuffRight_bone_squeezeTip
+    100158: cuffRight_bone_tube01
+    100160: cuffRight_bone_tube02
+    100162: cuffRight_bone_tube03
+    100164: cuffRight_bone_tube04
+    100166: cuffRight_bone_tube05
+    100168: cuffRight_bone_tube06
+    100170: cuffRight_bone_tube07
+    100172: cuffRight_bone_tube08
+    100174: cuffRight_bone_tube09
+    100176: cuffRight_bone_tube10
+    100178: cuffRight_ik
+    100180: cuffRight_point1
+    100182: cuffRight_point2
+    100184: cuffRight_point3
+    100186: cuffRight_point4
+    100188: cuffRight_spline
+    100190: cuffRightLeg_bone_base
+    100192: cuffRightLeg_bone_squeeze001
+    100194: cuffRightLeg_bone_squeeze002
+    100196: cuffRightLeg_bone_squeeze003
+    100198: cuffRightLeg_bone_squeeze004
+    100200: cuffRightLeg_bone_squeezeBase
+    100202: cuffRightLeg_bone_squeezeTip
+    100204: cuffRightLeg_bone_tube001
+    100206: cuffRightLeg_bone_tube002
+    100208: cuffRightLeg_bone_tube003
+    100210: cuffRightLeg_bone_tube004
+    100212: cuffRightLeg_bone_tube005
+    100214: cuffRightLeg_bone_tube006
+    100216: cuffRightLeg_bone_tube007
+    100218: cuffRightLeg_bone_tube008
+    100220: cuffRightLeg_bone_tube009
+    100222: cuffRightLeg_bone_tube010
+    100224: cuffRightLeg_ik
+    100226: cuffRightLeg_point001
+    100228: cuffRightLeg_point002
+    100230: cuffRightLeg_point003
+    100232: cuffRightLeg_point004
+    100234: cuffRightLeg_spline
+    100236: foleyCatheter_endPoint
+    100238: foleyCatheter_tape
+    100240: foleyCathether
+    100242: gauze_left
+    100244: gauze_right
+    100246: //RootNode
+    100248: patientTrauma5_clothed
+    100250: patientTrauma5_nude
+    100252: pelvicWrap
+    100254: prop_catheterAngio14Gauge_left
+    100256: prop_catheterAngio14Gauge_left_endPoint
+    100258: prop_catheterAngio14Gauge_right
+    100260: prop_catheterAngio14Gauge_right_endPoint
+    100262: prop_collarCervical01
+    100264: prop_electrodeECG002
+    100266: prop_electrodeECG003
+    100268: prop_electrodeECG01
+    100270: prop_oximeterPodClip_left
+    100272: prop_oximeterPodClip_right
+    100274: prop_oxygencannula01
+    100276: prop_stretcherBackboard01
+    100278: sitelHuman_
+    100280: sitelHuman_attach1
+    100282: sitelHuman_attach2
+    100284: sitelHuman_attach3
+    100286: sitelHuman_browCenter
+    100288: sitelHuman_browLeft
+    100290: sitelHuman_browRight
+    100292: sitelHuman_browRoot
+    100294: sitelHuman_cheek1Left
+    100296: sitelHuman_cheek1Right
+    100298: sitelHuman_cheek3Left
+    100300: sitelHuman_cheek3Right
+    100302: sitelHuman_cheekSmileLeft
+    100304: sitelHuman_cheekSmileRight
+    100306: sitelHuman_chipLeft
+    100308: sitelHuman_chipRight
+    100310: sitelHuman_eyeLeft
+    100312: sitelHuman_eyelidLowerLeft
+    100314: sitelHuman_eyelidLowerRight
+    100316: sitelHuman_eyelidUpperLeft
+    100318: sitelHuman_eyelidUpperRight
+    100320: sitelHuman_eyeRight
+    100322: sitelHuman_faceRoot
+    100324: sitelHuman_Head
+    100326: sitelHuman_jaw
+    100328: sitelHuman_LArmCollarbone
+    100330: sitelHuman_LArmDigit11
+    100332: sitelHuman_LArmDigit12
+    100334: sitelHuman_LArmDigit13
+    100336: sitelHuman_LArmDigit21
+    100338: sitelHuman_LArmDigit22
+    100340: sitelHuman_LArmDigit23
+    100342: sitelHuman_LArmDigit31
+    100344: sitelHuman_LArmDigit32
+    100346: sitelHuman_LArmDigit33
+    100348: sitelHuman_LArmDigit41
+    100350: sitelHuman_LArmDigit42
+    100352: sitelHuman_LArmDigit43
+    100354: sitelHuman_LArmDigit51
+    100356: sitelHuman_LArmDigit52
+    100358: sitelHuman_LArmDigit53
+    100360: sitelHuman_LArmForearm1
+    100362: sitelHuman_LArmForearm2
+    100364: sitelHuman_LArmForearm3
+    100366: sitelHuman_LArmIKTarget
+    100368: sitelHuman_LArmPalm
+    100370: sitelHuman_LArmPit
+    100372: sitelHuman_LArmUpperarm1
+    100374: sitelHuman_LArmUpperarm2
+    100376: sitelHuman_LArmUpperarm3
+    100378: sitelHuman_LArmUpVectorNode
+    100380: sitelHuman_LChest
+    100382: sitelHuman_LHipAdjust
+    100384: sitelHuman_lipCornerLeft
+    100386: sitelHuman_lipCornerRight
+    100388: sitelHuman_lipLower
+    100390: sitelHuman_lipLowerLeft
+    100392: sitelHuman_lipLowerRight
+    100394: sitelHuman_lipUpper
+    100396: sitelHuman_lipUpperLeft
+    100398: sitelHuman_lipUpperRight
+    100400: sitelHuman_LLeg1
+    100402: sitelHuman_LLeg2
+    100404: sitelHuman_LLegAnkle
+    100406: sitelHuman_LLegDigit11
+    100408: sitelHuman_LLegPlatform
+    100410: sitelHuman_LLegUpVectorNode
+    100412: sitelHuman_mouthRoot
+    100414: sitelHuman_Neck1
+    100416: sitelHuman_Neck2
+    100418: sitelHuman_nostrilLeft
+    100420: sitelHuman_nostrilRight
+    100422: sitelHuman_Pelvis
+    100424: sitelHuman_RArmCollarbone
+    100426: sitelHuman_RArmDigit11
+    100428: sitelHuman_RArmDigit12
+    100430: sitelHuman_RArmDigit13
+    100432: sitelHuman_RArmDigit21
+    100434: sitelHuman_RArmDigit22
+    100436: sitelHuman_RArmDigit23
+    100438: sitelHuman_RArmDigit31
+    100440: sitelHuman_RArmDigit32
+    100442: sitelHuman_RArmDigit33
+    100444: sitelHuman_RArmDigit41
+    100446: sitelHuman_RArmDigit42
+    100448: sitelHuman_RArmDigit43
+    100450: sitelHuman_RArmDigit51
+    100452: sitelHuman_RArmDigit52
+    100454: sitelHuman_RArmDigit53
+    100456: sitelHuman_RArmForearm1
+    100458: sitelHuman_RArmForearm2
+    100460: sitelHuman_RArmForearm3
+    100462: sitelHuman_RArmIKTarget
+    100464: sitelHuman_RArmPalm
+    100466: sitelHuman_RArmPit
+    100468: sitelHuman_RArmUpperarm1
+    100470: sitelHuman_RArmUpperarm2
+    100472: sitelHuman_RArmUpperarm3
+    100474: sitelHuman_RArmUpVectorNode
+    100476: sitelHuman_RChest
+    100478: sitelHuman_RHipAdjust
+    100480: sitelHuman_Ribcage
+    100482: sitelHuman_RLeg1
+    100484: sitelHuman_RLeg2
+    100486: sitelHuman_RLegAnkle
+    100488: sitelHuman_RLegDigit11
+    100490: sitelHuman_RLegPlatform
+    100492: sitelHuman_RLegUpVectorNode
+    100494: sitelHuman_Spine1
+    100496: sitelHuman_Spine2
+    100498: sitelHuman_Spine2Belly
+    100500: sitelHuman_Spine3
+    100502: sitelHuman_Spine4
+    100504: strap
+    100506: strapBone_belly
+    100508: strapBone_belly 1
+    100510: strapBone_centerAnkle
+    100512: strapBone_centerAnkle 1
+    100514: strapBone_centerCalf
+    100516: strapBone_centerCalf 1
+    100518: strapBone_centerCalfMid
+    100520: strapBone_centerCalfMid 1
+    100522: strapBone_centerPelvis
+    100524: strapBone_centerPelvis 1
+    100526: strapBone_centerThigh
+    100528: strapBone_centerThigh 1
+    100530: strapBone_leftAnkle1
+    100532: strapBone_leftAnkle1 1
+    100534: strapBone_leftAnkle2
+    100536: strapBone_leftAnkle2 1
+    100538: strapBone_leftAnkleBase
+    100540: strapBone_leftAnkleBase 1
+    100542: strapBone_leftArm
+    100544: strapBone_leftArm 1
+    100546: strapBone_leftCalf1
+    100548: strapBone_leftCalf1 1
+    100550: strapBone_leftCalf2
+    100552: strapBone_leftCalf2 1
+    100554: strapBone_leftCalfBase
+    100556: strapBone_leftCalfBase 1
+    100558: strapBone_leftHand
+    100560: strapBone_leftHand 1
+    100562: strapBone_leftPalm
+    100564: strapBone_leftPalm 1
+    100566: strapBone_leftPelvis1
+    100568: strapBone_leftPelvis1 1
+    100570: strapBone_leftPelvis2
+    100572: strapBone_leftPelvis2 1
+    100574: strapBone_leftPelvisBase
+    100576: strapBone_leftPelvisBase 1
+    100578: strapBone_leftRibs1
+    100580: strapBone_leftRibs1 1
+    100582: strapBone_leftRibs2
+    100584: strapBone_leftRibs2 1
+    100586: strapBone_leftRibsBase
+    100588: strapBone_leftRibsBase 1
+    100590: strapBone_leftShoulderBase
+    100592: strapBone_leftShoulderBase 1
+    100594: strapBone_leftShoulderClavicle
+    100596: strapBone_leftShoulderClavicle 1
+    100598: strapBone_leftShoulderMid
+    100600: strapBone_leftShoulderMid 1
+    100602: strapBone_leftThigh1
+    100604: strapBone_leftThigh1 1
+    100606: strapBone_leftThigh2
+    100608: strapBone_leftThigh2 1
+    100610: strapBone_leftThighBase
+    100612: strapBone_leftThighBase 1
+    100614: strapBone_ribs
+    100616: strapBone_ribs 1
+    100618: strapBone_rightAnkle1
+    100620: strapBone_rightAnkle1 1
+    100622: strapBone_rightAnkle2
+    100624: strapBone_rightAnkle2 1
+    100626: strapBone_rightAnkleBase
+    100628: strapBone_rightAnkleBase 1
+    100630: strapBone_rightArm
+    100632: strapBone_rightArm 1
+    100634: strapBone_rightCalf1
+    100636: strapBone_rightCalf1 1
+    100638: strapBone_rightCalf2
+    100640: strapBone_rightCalf2 1
+    100642: strapBone_rightCalfBase
+    100644: strapBone_rightCalfBase 1
+    100646: strapBone_rightHand
+    100648: strapBone_rightHand 1
+    100650: strapBone_rightPalm
+    100652: strapBone_rightPalm 1
+    100654: strapBone_rightPelvis1
+    100656: strapBone_rightPelvis1 1
+    100658: strapBone_rightPelvis2
+    100660: strapBone_rightPelvis2 1
+    100662: strapBone_rightPelvisBase
+    100664: strapBone_rightPelvisBase 1
+    100666: strapBone_rightRibs1
+    100668: strapBone_rightRibs1 1
+    100670: strapBone_rightRibs2
+    100672: strapBone_rightRibs2 1
+    100674: strapBone_rightRibsBase
+    100676: strapBone_rightRibsBase 1
+    100678: strapBone_rightShoulderBase
+    100680: strapBone_rightShoulderBase 1
+    100682: strapBone_rightShoulderClavicle
+    100684: strapBone_rightShoulderClavicle 1
+    100686: strapBone_rightShoulderMid
+    100688: strapBone_rightShoulderMid 1
+    100690: strapBone_rightThigh1
+    100692: strapBone_rightThigh1 1
+    100694: strapBone_rightThigh2
+    100696: strapBone_rightThigh2 1
+    100698: strapBone_rightThighBase
+    100700: strapBone_rightThighBase 1
+    100702: strapBone_root
+    100704: strapBone_root 1
+    100706: strapBone_sternum
+    100708: strapBone_sternum 1
+    100710: thoracostomyNeedle_left
+    100712: thoracostomyNeedle_right
+    100714: tracheostomyNeedle
+    100716: tracheostomyNeedle_endPoint
+    100718: tracheostomyTube
+    100720: tracheostomyTube_endPoint
+    100722: tracheostomyTube_strap
+    100724: ventricularDrain
+    100726: ventricularDrain_endPoint
+    100728: ventricularDrain_gauze
+    400000: blanket_bottom
+    400002: blanket_bottom 1
+    400004: blanket_top
+    400006: blanket_top 1
+    400008: bpCuff_left
+    400010: bpCuff_left_device
+    400012: bpCuff_right
+    400014: bpCuff_right_device
+    400016: bpCuff_rightLeg
+    400018: bpCuff_rightLeg_device
+    400020: chestTube_bandage_left
+    400022: chestTube_bandage_right
+    400024: chestTube_endPoint_left
+    400026: chestTube_endPoint_right
+    400028: chestTube_left
+    400030: chestTube_right
+    400032: collarBone_left1
+    400034: collarBone_left2
+    400036: collarBone_left3
+    400038: collarBone_left4
+    400040: collarBone_left5
+    400042: collarBone_left6
+    400044: collarBone_right1
+    400046: collarBone_right10
+    400048: collarBone_right11
+    400050: collarBone_right2
+    400052: collarBone_right3
+    400054: collarBone_right4
+    400056: collarBone_right5
+    400058: collarBone_right6
+    400060: collarBone_right7
+    400062: collarBone_right8
+    400064: collarBone_right9
+    400066: collarBone_root
+    400068: collarBonePointLeft1
+    400070: collarBonePointLeft2
+    400072: collarBonePointLeft3
+    400074: collarBonePointLeft4
+    400076: collarBonePointRight1
+    400078: collarBonePointRight2
+    400080: collarBonePointRight3
+    400082: collarBonePointRight4
+    400084: collarBonePointRight5
+    400086: collarBonePointRight6
+    400088: collarBonePointRight7
+    400090: collarBoneSpline_left
+    400092: collarBoneSpline_right
+    400094: collarIK_left
+    400096: collarIK_right
+    400098: cuffLeft_bone_base
+    400100: cuffLeft_bone_squeeze1
+    400102: cuffLeft_bone_squeeze2
+    400104: cuffLeft_bone_squeeze3
+    400106: cuffLeft_bone_squeeze4
+    400108: cuffLeft_bone_squeezeBase
+    400110: cuffLeft_bone_squeezeTip
+    400112: cuffLeft_bone_tube01
+    400114: cuffLeft_bone_tube02
+    400116: cuffLeft_bone_tube03
+    400118: cuffLeft_bone_tube04
+    400120: cuffLeft_bone_tube05
+    400122: cuffLeft_bone_tube06
+    400124: cuffLeft_bone_tube07
+    400126: cuffLeft_bone_tube08
+    400128: cuffLeft_bone_tube09
+    400130: cuffLeft_bone_tube10
+    400132: cuffLeft_ik
+    400134: cuffLeft_point1
+    400136: cuffLeft_point2
+    400138: cuffLeft_point3
+    400140: cuffLeft_point4
+    400142: cuffLeft_spline
+    400144: cuffRight_bone_base
+    400146: cuffRight_bone_squeeze1
+    400148: cuffRight_bone_squeeze2
+    400150: cuffRight_bone_squeeze3
+    400152: cuffRight_bone_squeeze4
+    400154: cuffRight_bone_squeezeBase
+    400156: cuffRight_bone_squeezeTip
+    400158: cuffRight_bone_tube01
+    400160: cuffRight_bone_tube02
+    400162: cuffRight_bone_tube03
+    400164: cuffRight_bone_tube04
+    400166: cuffRight_bone_tube05
+    400168: cuffRight_bone_tube06
+    400170: cuffRight_bone_tube07
+    400172: cuffRight_bone_tube08
+    400174: cuffRight_bone_tube09
+    400176: cuffRight_bone_tube10
+    400178: cuffRight_ik
+    400180: cuffRight_point1
+    400182: cuffRight_point2
+    400184: cuffRight_point3
+    400186: cuffRight_point4
+    400188: cuffRight_spline
+    400190: cuffRightLeg_bone_base
+    400192: cuffRightLeg_bone_squeeze001
+    400194: cuffRightLeg_bone_squeeze002
+    400196: cuffRightLeg_bone_squeeze003
+    400198: cuffRightLeg_bone_squeeze004
+    400200: cuffRightLeg_bone_squeezeBase
+    400202: cuffRightLeg_bone_squeezeTip
+    400204: cuffRightLeg_bone_tube001
+    400206: cuffRightLeg_bone_tube002
+    400208: cuffRightLeg_bone_tube003
+    400210: cuffRightLeg_bone_tube004
+    400212: cuffRightLeg_bone_tube005
+    400214: cuffRightLeg_bone_tube006
+    400216: cuffRightLeg_bone_tube007
+    400218: cuffRightLeg_bone_tube008
+    400220: cuffRightLeg_bone_tube009
+    400222: cuffRightLeg_bone_tube010
+    400224: cuffRightLeg_ik
+    400226: cuffRightLeg_point001
+    400228: cuffRightLeg_point002
+    400230: cuffRightLeg_point003
+    400232: cuffRightLeg_point004
+    400234: cuffRightLeg_spline
+    400236: foleyCatheter_endPoint
+    400238: foleyCatheter_tape
+    400240: foleyCathether
+    400242: gauze_left
+    400244: gauze_right
+    400246: //RootNode
+    400248: patientTrauma5_clothed
+    400250: patientTrauma5_nude
+    400252: pelvicWrap
+    400254: prop_catheterAngio14Gauge_left
+    400256: prop_catheterAngio14Gauge_left_endPoint
+    400258: prop_catheterAngio14Gauge_right
+    400260: prop_catheterAngio14Gauge_right_endPoint
+    400262: prop_collarCervical01
+    400264: prop_electrodeECG002
+    400266: prop_electrodeECG003
+    400268: prop_electrodeECG01
+    400270: prop_oximeterPodClip_left
+    400272: prop_oximeterPodClip_right
+    400274: prop_oxygencannula01
+    400276: prop_stretcherBackboard01
+    400278: sitelHuman_
+    400280: sitelHuman_attach1
+    400282: sitelHuman_attach2
+    400284: sitelHuman_attach3
+    400286: sitelHuman_browCenter
+    400288: sitelHuman_browLeft
+    400290: sitelHuman_browRight
+    400292: sitelHuman_browRoot
+    400294: sitelHuman_cheek1Left
+    400296: sitelHuman_cheek1Right
+    400298: sitelHuman_cheek3Left
+    400300: sitelHuman_cheek3Right
+    400302: sitelHuman_cheekSmileLeft
+    400304: sitelHuman_cheekSmileRight
+    400306: sitelHuman_chipLeft
+    400308: sitelHuman_chipRight
+    400310: sitelHuman_eyeLeft
+    400312: sitelHuman_eyelidLowerLeft
+    400314: sitelHuman_eyelidLowerRight
+    400316: sitelHuman_eyelidUpperLeft
+    400318: sitelHuman_eyelidUpperRight
+    400320: sitelHuman_eyeRight
+    400322: sitelHuman_faceRoot
+    400324: sitelHuman_Head
+    400326: sitelHuman_jaw
+    400328: sitelHuman_LArmCollarbone
+    400330: sitelHuman_LArmDigit11
+    400332: sitelHuman_LArmDigit12
+    400334: sitelHuman_LArmDigit13
+    400336: sitelHuman_LArmDigit21
+    400338: sitelHuman_LArmDigit22
+    400340: sitelHuman_LArmDigit23
+    400342: sitelHuman_LArmDigit31
+    400344: sitelHuman_LArmDigit32
+    400346: sitelHuman_LArmDigit33
+    400348: sitelHuman_LArmDigit41
+    400350: sitelHuman_LArmDigit42
+    400352: sitelHuman_LArmDigit43
+    400354: sitelHuman_LArmDigit51
+    400356: sitelHuman_LArmDigit52
+    400358: sitelHuman_LArmDigit53
+    400360: sitelHuman_LArmForearm1
+    400362: sitelHuman_LArmForearm2
+    400364: sitelHuman_LArmForearm3
+    400366: sitelHuman_LArmIKTarget
+    400368: sitelHuman_LArmPalm
+    400370: sitelHuman_LArmPit
+    400372: sitelHuman_LArmUpperarm1
+    400374: sitelHuman_LArmUpperarm2
+    400376: sitelHuman_LArmUpperarm3
+    400378: sitelHuman_LArmUpVectorNode
+    400380: sitelHuman_LChest
+    400382: sitelHuman_LHipAdjust
+    400384: sitelHuman_lipCornerLeft
+    400386: sitelHuman_lipCornerRight
+    400388: sitelHuman_lipLower
+    400390: sitelHuman_lipLowerLeft
+    400392: sitelHuman_lipLowerRight
+    400394: sitelHuman_lipUpper
+    400396: sitelHuman_lipUpperLeft
+    400398: sitelHuman_lipUpperRight
+    400400: sitelHuman_LLeg1
+    400402: sitelHuman_LLeg2
+    400404: sitelHuman_LLegAnkle
+    400406: sitelHuman_LLegDigit11
+    400408: sitelHuman_LLegPlatform
+    400410: sitelHuman_LLegUpVectorNode
+    400412: sitelHuman_mouthRoot
+    400414: sitelHuman_Neck1
+    400416: sitelHuman_Neck2
+    400418: sitelHuman_nostrilLeft
+    400420: sitelHuman_nostrilRight
+    400422: sitelHuman_Pelvis
+    400424: sitelHuman_RArmCollarbone
+    400426: sitelHuman_RArmDigit11
+    400428: sitelHuman_RArmDigit12
+    400430: sitelHuman_RArmDigit13
+    400432: sitelHuman_RArmDigit21
+    400434: sitelHuman_RArmDigit22
+    400436: sitelHuman_RArmDigit23
+    400438: sitelHuman_RArmDigit31
+    400440: sitelHuman_RArmDigit32
+    400442: sitelHuman_RArmDigit33
+    400444: sitelHuman_RArmDigit41
+    400446: sitelHuman_RArmDigit42
+    400448: sitelHuman_RArmDigit43
+    400450: sitelHuman_RArmDigit51
+    400452: sitelHuman_RArmDigit52
+    400454: sitelHuman_RArmDigit53
+    400456: sitelHuman_RArmForearm1
+    400458: sitelHuman_RArmForearm2
+    400460: sitelHuman_RArmForearm3
+    400462: sitelHuman_RArmIKTarget
+    400464: sitelHuman_RArmPalm
+    400466: sitelHuman_RArmPit
+    400468: sitelHuman_RArmUpperarm1
+    400470: sitelHuman_RArmUpperarm2
+    400472: sitelHuman_RArmUpperarm3
+    400474: sitelHuman_RArmUpVectorNode
+    400476: sitelHuman_RChest
+    400478: sitelHuman_RHipAdjust
+    400480: sitelHuman_Ribcage
+    400482: sitelHuman_RLeg1
+    400484: sitelHuman_RLeg2
+    400486: sitelHuman_RLegAnkle
+    400488: sitelHuman_RLegDigit11
+    400490: sitelHuman_RLegPlatform
+    400492: sitelHuman_RLegUpVectorNode
+    400494: sitelHuman_Spine1
+    400496: sitelHuman_Spine2
+    400498: sitelHuman_Spine2Belly
+    400500: sitelHuman_Spine3
+    400502: sitelHuman_Spine4
+    400504: strap
+    400506: strapBone_belly
+    400508: strapBone_belly 1
+    400510: strapBone_centerAnkle
+    400512: strapBone_centerAnkle 1
+    400514: strapBone_centerCalf
+    400516: strapBone_centerCalf 1
+    400518: strapBone_centerCalfMid
+    400520: strapBone_centerCalfMid 1
+    400522: strapBone_centerPelvis
+    400524: strapBone_centerPelvis 1
+    400526: strapBone_centerThigh
+    400528: strapBone_centerThigh 1
+    400530: strapBone_leftAnkle1
+    400532: strapBone_leftAnkle1 1
+    400534: strapBone_leftAnkle2
+    400536: strapBone_leftAnkle2 1
+    400538: strapBone_leftAnkleBase
+    400540: strapBone_leftAnkleBase 1
+    400542: strapBone_leftArm
+    400544: strapBone_leftArm 1
+    400546: strapBone_leftCalf1
+    400548: strapBone_leftCalf1 1
+    400550: strapBone_leftCalf2
+    400552: strapBone_leftCalf2 1
+    400554: strapBone_leftCalfBase
+    400556: strapBone_leftCalfBase 1
+    400558: strapBone_leftHand
+    400560: strapBone_leftHand 1
+    400562: strapBone_leftPalm
+    400564: strapBone_leftPalm 1
+    400566: strapBone_leftPelvis1
+    400568: strapBone_leftPelvis1 1
+    400570: strapBone_leftPelvis2
+    400572: strapBone_leftPelvis2 1
+    400574: strapBone_leftPelvisBase
+    400576: strapBone_leftPelvisBase 1
+    400578: strapBone_leftRibs1
+    400580: strapBone_leftRibs1 1
+    400582: strapBone_leftRibs2
+    400584: strapBone_leftRibs2 1
+    400586: strapBone_leftRibsBase
+    400588: strapBone_leftRibsBase 1
+    400590: strapBone_leftShoulderBase
+    400592: strapBone_leftShoulderBase 1
+    400594: strapBone_leftShoulderClavicle
+    400596: strapBone_leftShoulderClavicle 1
+    400598: strapBone_leftShoulderMid
+    400600: strapBone_leftShoulderMid 1
+    400602: strapBone_leftThigh1
+    400604: strapBone_leftThigh1 1
+    400606: strapBone_leftThigh2
+    400608: strapBone_leftThigh2 1
+    400610: strapBone_leftThighBase
+    400612: strapBone_leftThighBase 1
+    400614: strapBone_ribs
+    400616: strapBone_ribs 1
+    400618: strapBone_rightAnkle1
+    400620: strapBone_rightAnkle1 1
+    400622: strapBone_rightAnkle2
+    400624: strapBone_rightAnkle2 1
+    400626: strapBone_rightAnkleBase
+    400628: strapBone_rightAnkleBase 1
+    400630: strapBone_rightArm
+    400632: strapBone_rightArm 1
+    400634: strapBone_rightCalf1
+    400636: strapBone_rightCalf1 1
+    400638: strapBone_rightCalf2
+    400640: strapBone_rightCalf2 1
+    400642: strapBone_rightCalfBase
+    400644: strapBone_rightCalfBase 1
+    400646: strapBone_rightHand
+    400648: strapBone_rightHand 1
+    400650: strapBone_rightPalm
+    400652: strapBone_rightPalm 1
+    400654: strapBone_rightPelvis1
+    400656: strapBone_rightPelvis1 1
+    400658: strapBone_rightPelvis2
+    400660: strapBone_rightPelvis2 1
+    400662: strapBone_rightPelvisBase
+    400664: strapBone_rightPelvisBase 1
+    400666: strapBone_rightRibs1
+    400668: strapBone_rightRibs1 1
+    400670: strapBone_rightRibs2
+    400672: strapBone_rightRibs2 1
+    400674: strapBone_rightRibsBase
+    400676: strapBone_rightRibsBase 1
+    400678: strapBone_rightShoulderBase
+    400680: strapBone_rightShoulderBase 1
+    400682: strapBone_rightShoulderClavicle
+    400684: strapBone_rightShoulderClavicle 1
+    400686: strapBone_rightShoulderMid
+    400688: strapBone_rightShoulderMid 1
+    400690: strapBone_rightThigh1
+    400692: strapBone_rightThigh1 1
+    400694: strapBone_rightThigh2
+    400696: strapBone_rightThigh2 1
+    400698: strapBone_rightThighBase
+    400700: strapBone_rightThighBase 1
+    400702: strapBone_root
+    400704: strapBone_root 1
+    400706: strapBone_sternum
+    400708: strapBone_sternum 1
+    400710: thoracostomyNeedle_left
+    400712: thoracostomyNeedle_right
+    400714: tracheostomyNeedle
+    400716: tracheostomyNeedle_endPoint
+    400718: tracheostomyTube
+    400720: tracheostomyTube_endPoint
+    400722: tracheostomyTube_strap
+    400724: ventricularDrain
+    400726: ventricularDrain_endPoint
+    400728: ventricularDrain_gauze
+    2300000: bpCuff_left
+    2300002: bpCuff_right
+    2300004: bpCuff_rightLeg
+    2300006: prop_catheterAngio14Gauge_left
+    2300008: prop_catheterAngio14Gauge_right
+    2300010: prop_oximeterPodClip_left
+    2300012: prop_oximeterPodClip_right
+    2300014: prop_stretcherBackboard01
+    3300000: bpCuff_left
+    3300002: bpCuff_right
+    3300004: bpCuff_rightLeg
+    3300006: prop_catheterAngio14Gauge_left
+    3300008: prop_catheterAngio14Gauge_right
+    3300010: prop_oximeterPodClip_left
+    3300012: prop_oximeterPodClip_right
+    3300014: prop_stretcherBackboard01
+    4300000: blanket_top
+    4300002: blanket_bottom
+    4300004: prop_oximeterPodClip_right
+    4300006: prop_catheterAngio14Gauge_right
+    4300008: bpCuff_right
+    4300010: prop_oximeterPodClip_left
+    4300012: prop_catheterAngio14Gauge_left
+    4300014: bpCuff_left
+    4300016: bpCuff_rightLeg
+    4300018: patientTrauma5_nude
+    4300020: strap
+    4300022: prop_stretcherBackboard01
+    4300024: prop_collarCervical01
+    4300026: patientTrauma5_clothed
+    4300028: blanket_top
+    4300030: blanket_bottom
+    4300032: pelvicWrap
+    4300034: prop_electrodeECG01
+    4300036: prop_electrodeECG002
+    4300038: prop_electrodeECG003
+    4300040: gauze_left
+    4300042: gauze_right
+    4300044: bpCuff_left_device
+    4300046: bpCuff_right_device
+    4300048: prop_oxygencannula01
+    4300050: tracheostomyTube
+    4300052: tracheostomyTube_strap
+    4300054: chestTube_bandage_left
+    4300056: chestTube_bandage_right
+    4300058: chestTube_left
+    4300060: chestTube_right
+    4300062: foleyCathether
+    4300064: foleyCatheter_tape
+    4300066: tracheostomyNeedle
+    4300068: ventricularDrain_gauze
+    4300070: ventricularDrain
+    4300072: thoracostomyNeedle_right
+    4300074: thoracostomyNeedle_left
+    4300076: bpCuff_rightLeg_device
+    7400000: Take 001
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: blanket_bottom
+    13700002: blanket_bottom 1
+    13700004: blanket_top
+    13700006: blanket_top 1
+    13700008: bpCuff_left_device
+    13700010: bpCuff_right_device
+    13700012: bpCuff_rightLeg_device
+    13700014: chestTube_bandage_left
+    13700016: chestTube_bandage_right
+    13700018: chestTube_left
+    13700020: chestTube_right
+    13700022: foleyCatheter_tape
+    13700024: foleyCathether
+    13700026: gauze_left
+    13700028: gauze_right
+    13700030: patientTrauma5_clothed
+    13700032: patientTrauma5_nude
+    13700034: pelvicWrap
+    13700036: prop_collarCervical01
+    13700038: prop_electrodeECG002
+    13700040: prop_electrodeECG003
+    13700042: prop_electrodeECG01
+    13700044: prop_oxygencannula01
+    13700046: strap
+    13700048: thoracostomyNeedle_left
+    13700050: thoracostomyNeedle_right
+    13700052: tracheostomyNeedle
+    13700054: tracheostomyTube
+    13700056: tracheostomyTube_strap
+    13700058: ventricularDrain
+    13700060: ventricularDrain_gauze
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
