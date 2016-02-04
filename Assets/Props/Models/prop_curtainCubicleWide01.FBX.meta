@@ -1,0 +1,54 @@
+fileFormatVersion: 1
+guid: 3ba1bc8191b5a8442839494211be57ae
+ModelImporter:
+  importerVersion: 7
+  meshes:
+    scaleFactor: 0.01
+    useFileUnits: 1
+    meshCompression: 0
+    generateColliders: 0
+    swapUVs: 0
+    generateSecondaryUV: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalImportMode: 0
+    tangentImportMode: 1
+    smoothingAngle: 60
+    splitTangents: 1
+  materials:
+    generation: 1
+  animations:
+    generation: 3
+    bakeAnimations: 0
+    animationCompression: 1
+    animationWrapMode: 0
+    splitAnimations: 1
+  nodeInfo:
+    prop_curtainCubicle01 1:
+    - 100000
+    - 400000
+    - 3300000
+    - 2300000
+    prop_curtainCubicle01:
+    - 100002
+    - 400002
+    - 3300002
+    - 2300002
+    prop_curtainCubicleWide01_track:
+    - 100004
+    - 400004
+    - 3300004
+    - 2300004
+    //RootNode:
+    - 100006
+    - 400006
+    - 11100000
+AssetImporter:
+  importerVersion: 1
+  fileIDToRecycleName:
+    4300000: prop_curtainCubicle01
+    4300002: prop_curtainCubicleWide01_track
+    4300004: prop_curtainCubicle01

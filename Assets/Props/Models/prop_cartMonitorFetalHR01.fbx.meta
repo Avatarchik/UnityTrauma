@@ -1,0 +1,66 @@
+fileFormatVersion: 1
+guid: 65c3ad0122787e84b925d1da55151114
+ModelImporter:
+  importerVersion: 7
+  meshes:
+    scaleFactor: 0.01
+    useFileUnits: 1
+    meshCompression: 0
+    generateColliders: 0
+    swapUVs: 0
+    generateSecondaryUV: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalImportMode: 0
+    tangentImportMode: 1
+    smoothingAngle: 60
+    splitTangents: 1
+  materials:
+    generation: 1
+  animations:
+    generation: 3
+    bakeAnimations: 0
+    animationCompression: 1
+    animationWrapMode: 0
+    splitAnimations: 1
+  nodeInfo:
+    prop_cartMonitorFetalHR01_screen:
+    - 100000
+    - 400000
+    - 3300000
+    - 2300000
+    prop_cartMonitorFetalHR01_machine:
+    - 100002
+    - 400002
+    - 3300002
+    - 2300002
+    prop_cartMonitorFetalHR01_access:
+    - 100004
+    - 400004
+    - 3300004
+    - 2300004
+    prop_cartMonitorFetalHR01_monitor:
+    - 100006
+    - 400006
+    - 3300006
+    - 2300006
+    //RootNode:
+    - 100008
+    - 400008
+    - 11100000
+    prop_cartMonitorFetalHR01_cart:
+    - 100010
+    - 400010
+    - 3300008
+    - 2300008
+AssetImporter:
+  importerVersion: 1
+  fileIDToRecycleName:
+    4300000: prop_cartMonitorFetalHR01_monitor
+    4300002: prop_cartMonitorFetalHR01_screen
+    4300004: prop_cartMonitorFetalHR01_machine
+    4300006: prop_cartMonitorFetalHR01_access
+    4300008: prop_cartMonitorFetalHR01_cart

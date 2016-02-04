@@ -1,0 +1,810 @@
+fileFormatVersion: 2
+guid: 29c0baad7f8bb88418f3a2202380b032
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: bone_handleLeft
+    100002: bone_handleRight
+    100004: bone_mattressFoot01
+    100006: bone_mattressFoot02
+    100008: bone_mattressFoot03
+    100010: bone_mattressHead01
+    100012: bone_mattressHead02
+    100014: bone_pedalLeft001
+    100016: bone_pedalLeft002
+    100018: bone_pedalLeft003
+    100020: bone_pedalRight001
+    100022: bone_pedalRight002
+    100024: bone_pedalRight003
+    100026: bone_pistonFootBottom
+    100028: bone_pistonFootTop
+    100030: bone_pistonHeadBottom
+    100032: bone_pistonHeadTop
+    100034: bone_platformBase
+    100036: bone_platformFoot01
+    100038: bone_platformFoot02
+    100040: bone_platformFoot03
+    100042: bone_platformFoot04
+    100044: bone_platformHead01
+    100046: bone_platformHead02
+    100048: bone_railLeft001
+    100050: bone_railLeft002
+    100052: bone_railLeft003
+    100054: bone_railLeft004
+    100056: bone_railLeft005
+    100058: bone_railLeftTop
+    100060: bone_railRight001
+    100062: bone_railRight002
+    100064: bone_railRight003
+    100066: bone_railRight004
+    100068: bone_railRight005
+    100070: bone_railRightTop
+    100072: bone_root
+    100074: helper_pistonFootAnchor
+    100076: helper_pistonHeadAnchor
+    100078: //RootNode
+    100080: prop_bedGurneyTrauma02_body
+    100082: prop_bedGurneyTrauma02_caster1
+    100084: prop_bedGurneyTrauma02_caster2
+    100086: prop_bedGurneyTrauma02_caster3
+    100088: prop_bedGurneyTrauma02_caster4
+    100090: prop_bedGurneyTrauma02_wheel1
+    100092: prop_bedGurneyTrauma02_wheel2
+    100094: prop_bedGurneyTrauma02_wheel3
+    100096: prop_bedGurneyTrauma02_wheel4
+    400000: bone_handleLeft
+    400002: bone_handleRight
+    400004: bone_mattressFoot01
+    400006: bone_mattressFoot02
+    400008: bone_mattressFoot03
+    400010: bone_mattressHead01
+    400012: bone_mattressHead02
+    400014: bone_pedalLeft001
+    400016: bone_pedalLeft002
+    400018: bone_pedalLeft003
+    400020: bone_pedalRight001
+    400022: bone_pedalRight002
+    400024: bone_pedalRight003
+    400026: bone_pistonFootBottom
+    400028: bone_pistonFootTop
+    400030: bone_pistonHeadBottom
+    400032: bone_pistonHeadTop
+    400034: bone_platformBase
+    400036: bone_platformFoot01
+    400038: bone_platformFoot02
+    400040: bone_platformFoot03
+    400042: bone_platformFoot04
+    400044: bone_platformHead01
+    400046: bone_platformHead02
+    400048: bone_railLeft001
+    400050: bone_railLeft002
+    400052: bone_railLeft003
+    400054: bone_railLeft004
+    400056: bone_railLeft005
+    400058: bone_railLeftTop
+    400060: bone_railRight001
+    400062: bone_railRight002
+    400064: bone_railRight003
+    400066: bone_railRight004
+    400068: bone_railRight005
+    400070: bone_railRightTop
+    400072: bone_root
+    400074: helper_pistonFootAnchor
+    400076: helper_pistonHeadAnchor
+    400078: //RootNode
+    400080: prop_bedGurneyTrauma02_body
+    400082: prop_bedGurneyTrauma02_caster1
+    400084: prop_bedGurneyTrauma02_caster2
+    400086: prop_bedGurneyTrauma02_caster3
+    400088: prop_bedGurneyTrauma02_caster4
+    400090: prop_bedGurneyTrauma02_wheel1
+    400092: prop_bedGurneyTrauma02_wheel2
+    400094: prop_bedGurneyTrauma02_wheel3
+    400096: prop_bedGurneyTrauma02_wheel4
+    2300000: prop_bedGurneyTrauma02_caster1
+    2300002: prop_bedGurneyTrauma02_caster2
+    2300004: prop_bedGurneyTrauma02_caster3
+    2300006: prop_bedGurneyTrauma02_caster4
+    2300008: prop_bedGurneyTrauma02_wheel1
+    2300010: prop_bedGurneyTrauma02_wheel2
+    2300012: prop_bedGurneyTrauma02_wheel3
+    2300014: prop_bedGurneyTrauma02_wheel4
+    3300000: prop_bedGurneyTrauma02_caster1
+    3300002: prop_bedGurneyTrauma02_caster2
+    3300004: prop_bedGurneyTrauma02_caster3
+    3300006: prop_bedGurneyTrauma02_caster4
+    3300008: prop_bedGurneyTrauma02_wheel1
+    3300010: prop_bedGurneyTrauma02_wheel2
+    3300012: prop_bedGurneyTrauma02_wheel3
+    3300014: prop_bedGurneyTrauma02_wheel4
+    4300000: prop_bedGurneyTrauma02_body
+    4300002: prop_bedGurneyTrauma02_caster1
+    4300004: prop_bedGurneyTrauma02_wheel1
+    4300006: prop_bedGurneyTrauma02_caster2
+    4300008: prop_bedGurneyTrauma02_wheel2
+    4300010: prop_bedGurneyTrauma02_caster4
+    4300012: prop_bedGurneyTrauma02_wheel4
+    4300014: prop_bedGurneyTrauma02_caster3
+    4300016: prop_bedGurneyTrauma02_wheel3
+    7400000: railsUp
+    7400002: railsLower
+    7400004: railsDown
+    7400006: ventricularDrain
+    7400008: ventricularDrain_down
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: prop_bedGurneyTrauma02_body
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 4
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: railsUp
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 8
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: bone_root
+        weight: 1
+      - path: bone_root/bone_pedalLeft001
+        weight: 1
+      - path: bone_root/bone_pedalLeft002
+        weight: 1
+      - path: bone_root/bone_pedalLeft003
+        weight: 1
+      - path: bone_root/bone_pedalRight001
+        weight: 1
+      - path: bone_root/bone_pedalRight002
+        weight: 1
+      - path: bone_root/bone_pedalRight003
+        weight: 1
+      - path: bone_root/bone_pistonFootBottom
+        weight: 1
+      - path: bone_root/bone_pistonFootBottom/bone_pistonFootTop
+        weight: 1
+      - path: bone_root/bone_pistonHeadBottom
+        weight: 1
+      - path: bone_root/bone_pistonHeadBottom/bone_pistonHeadTop
+        weight: 1
+      - path: bone_root/bone_platformBase
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_handleLeft
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_handleRight
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_mattressFoot01
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_mattressFoot01/bone_mattressFoot02
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_mattressFoot01/bone_mattressFoot02/bone_mattressFoot03
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_mattressHead01
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_mattressHead01/bone_mattressHead02
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_platformFoot01
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_platformFoot01/bone_platformFoot02
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_platformFoot01/bone_platformFoot02/bone_platformFoot03
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_platformFoot01/bone_platformFoot02/bone_platformFoot03/bone_platformFoot04
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_platformHead01
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_platformHead01/bone_platformHead02
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railLeft001
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railLeft001/bone_railLeftTop
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railLeft002
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railLeft003
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railLeft004
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railLeft005
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railRight001
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railRight001/bone_railRightTop
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railRight002
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railRight003
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railRight004
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railRight005
+        weight: 1
+      - path: bone_root/bone_platformBase/helper_pistonFootAnchor
+        weight: 1
+      - path: bone_root/bone_platformBase/helper_pistonHeadAnchor
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster1
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster1/prop_bedGurneyTrauma02_wheel1
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster2
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster2/prop_bedGurneyTrauma02_wheel2
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster3
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster3/prop_bedGurneyTrauma02_wheel3
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster4
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster4/prop_bedGurneyTrauma02_wheel4
+        weight: 1
+      - path: prop_bedGurneyTrauma02_body
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: railsLower
+      takeName: Take 001
+      firstFrame: 10
+      lastFrame: 20
+      wrapMode: 8
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: bone_root
+        weight: 1
+      - path: bone_root/bone_pedalLeft001
+        weight: 1
+      - path: bone_root/bone_pedalLeft002
+        weight: 1
+      - path: bone_root/bone_pedalLeft003
+        weight: 1
+      - path: bone_root/bone_pedalRight001
+        weight: 1
+      - path: bone_root/bone_pedalRight002
+        weight: 1
+      - path: bone_root/bone_pedalRight003
+        weight: 1
+      - path: bone_root/bone_pistonFootBottom
+        weight: 1
+      - path: bone_root/bone_pistonFootBottom/bone_pistonFootTop
+        weight: 1
+      - path: bone_root/bone_pistonHeadBottom
+        weight: 1
+      - path: bone_root/bone_pistonHeadBottom/bone_pistonHeadTop
+        weight: 1
+      - path: bone_root/bone_platformBase
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_handleLeft
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_handleRight
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_mattressFoot01
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_mattressFoot01/bone_mattressFoot02
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_mattressFoot01/bone_mattressFoot02/bone_mattressFoot03
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_mattressHead01
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_mattressHead01/bone_mattressHead02
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_platformFoot01
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_platformFoot01/bone_platformFoot02
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_platformFoot01/bone_platformFoot02/bone_platformFoot03
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_platformFoot01/bone_platformFoot02/bone_platformFoot03/bone_platformFoot04
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_platformHead01
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_platformHead01/bone_platformHead02
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railLeft001
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railLeft001/bone_railLeftTop
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railLeft002
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railLeft003
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railLeft004
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railLeft005
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railRight001
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railRight001/bone_railRightTop
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railRight002
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railRight003
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railRight004
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railRight005
+        weight: 1
+      - path: bone_root/bone_platformBase/helper_pistonFootAnchor
+        weight: 1
+      - path: bone_root/bone_platformBase/helper_pistonHeadAnchor
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster1
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster1/prop_bedGurneyTrauma02_wheel1
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster2
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster2/prop_bedGurneyTrauma02_wheel2
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster3
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster3/prop_bedGurneyTrauma02_wheel3
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster4
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster4/prop_bedGurneyTrauma02_wheel4
+        weight: 1
+      - path: prop_bedGurneyTrauma02_body
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: railsDown
+      takeName: Take 001
+      firstFrame: 20
+      lastFrame: 21
+      wrapMode: 8
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: bone_root
+        weight: 1
+      - path: bone_root/bone_pedalLeft001
+        weight: 1
+      - path: bone_root/bone_pedalLeft002
+        weight: 1
+      - path: bone_root/bone_pedalLeft003
+        weight: 1
+      - path: bone_root/bone_pedalRight001
+        weight: 1
+      - path: bone_root/bone_pedalRight002
+        weight: 1
+      - path: bone_root/bone_pedalRight003
+        weight: 1
+      - path: bone_root/bone_pistonFootBottom
+        weight: 1
+      - path: bone_root/bone_pistonFootBottom/bone_pistonFootTop
+        weight: 1
+      - path: bone_root/bone_pistonHeadBottom
+        weight: 1
+      - path: bone_root/bone_pistonHeadBottom/bone_pistonHeadTop
+        weight: 1
+      - path: bone_root/bone_platformBase
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_handleLeft
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_handleRight
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_mattressFoot01
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_mattressFoot01/bone_mattressFoot02
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_mattressFoot01/bone_mattressFoot02/bone_mattressFoot03
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_mattressHead01
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_mattressHead01/bone_mattressHead02
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_platformFoot01
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_platformFoot01/bone_platformFoot02
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_platformFoot01/bone_platformFoot02/bone_platformFoot03
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_platformFoot01/bone_platformFoot02/bone_platformFoot03/bone_platformFoot04
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_platformHead01
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_platformHead01/bone_platformHead02
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railLeft001
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railLeft001/bone_railLeftTop
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railLeft002
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railLeft003
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railLeft004
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railLeft005
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railRight001
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railRight001/bone_railRightTop
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railRight002
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railRight003
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railRight004
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railRight005
+        weight: 1
+      - path: bone_root/bone_platformBase/helper_pistonFootAnchor
+        weight: 1
+      - path: bone_root/bone_platformBase/helper_pistonHeadAnchor
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster1
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster1/prop_bedGurneyTrauma02_wheel1
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster2
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster2/prop_bedGurneyTrauma02_wheel2
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster3
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster3/prop_bedGurneyTrauma02_wheel3
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster4
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster4/prop_bedGurneyTrauma02_wheel4
+        weight: 1
+      - path: prop_bedGurneyTrauma02_body
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ventricularDrain
+      takeName: Take 001
+      firstFrame: 30
+      lastFrame: 90
+      wrapMode: 8
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: bone_root
+        weight: 1
+      - path: bone_root/bone_pedalLeft001
+        weight: 1
+      - path: bone_root/bone_pedalLeft002
+        weight: 1
+      - path: bone_root/bone_pedalLeft003
+        weight: 1
+      - path: bone_root/bone_pedalRight001
+        weight: 1
+      - path: bone_root/bone_pedalRight002
+        weight: 1
+      - path: bone_root/bone_pedalRight003
+        weight: 1
+      - path: bone_root/bone_pistonFootBottom
+        weight: 1
+      - path: bone_root/bone_pistonFootBottom/bone_pistonFootTop
+        weight: 1
+      - path: bone_root/bone_pistonHeadBottom
+        weight: 1
+      - path: bone_root/bone_pistonHeadBottom/bone_pistonHeadTop
+        weight: 1
+      - path: bone_root/bone_platformBase
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_handleLeft
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_handleRight
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_mattressFoot01
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_mattressFoot01/bone_mattressFoot02
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_mattressFoot01/bone_mattressFoot02/bone_mattressFoot03
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_mattressHead01
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_mattressHead01/bone_mattressHead02
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_platformFoot01
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_platformFoot01/bone_platformFoot02
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_platformFoot01/bone_platformFoot02/bone_platformFoot03
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_platformFoot01/bone_platformFoot02/bone_platformFoot03/bone_platformFoot04
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_platformHead01
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_platformHead01/bone_platformHead02
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railLeft001
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railLeft001/bone_railLeftTop
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railLeft002
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railLeft003
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railLeft004
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railLeft005
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railRight001
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railRight001/bone_railRightTop
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railRight002
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railRight003
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railRight004
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railRight005
+        weight: 1
+      - path: bone_root/bone_platformBase/helper_pistonFootAnchor
+        weight: 1
+      - path: bone_root/bone_platformBase/helper_pistonHeadAnchor
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster1
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster1/prop_bedGurneyTrauma02_wheel1
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster2
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster2/prop_bedGurneyTrauma02_wheel2
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster3
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster3/prop_bedGurneyTrauma02_wheel3
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster4
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster4/prop_bedGurneyTrauma02_wheel4
+        weight: 1
+      - path: prop_bedGurneyTrauma02_body
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: ventricularDrain_down
+      takeName: Take 001
+      firstFrame: 90
+      lastFrame: 150
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: bone_root
+        weight: 1
+      - path: bone_root/bone_pedalLeft001
+        weight: 1
+      - path: bone_root/bone_pedalLeft002
+        weight: 1
+      - path: bone_root/bone_pedalLeft003
+        weight: 1
+      - path: bone_root/bone_pedalRight001
+        weight: 1
+      - path: bone_root/bone_pedalRight002
+        weight: 1
+      - path: bone_root/bone_pedalRight003
+        weight: 1
+      - path: bone_root/bone_pistonFootBottom
+        weight: 1
+      - path: bone_root/bone_pistonFootBottom/bone_pistonFootTop
+        weight: 1
+      - path: bone_root/bone_pistonHeadBottom
+        weight: 1
+      - path: bone_root/bone_pistonHeadBottom/bone_pistonHeadTop
+        weight: 1
+      - path: bone_root/bone_platformBase
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_handleLeft
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_handleRight
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_mattressFoot01
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_mattressFoot01/bone_mattressFoot02
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_mattressFoot01/bone_mattressFoot02/bone_mattressFoot03
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_mattressHead01
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_mattressHead01/bone_mattressHead02
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_platformFoot01
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_platformFoot01/bone_platformFoot02
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_platformFoot01/bone_platformFoot02/bone_platformFoot03
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_platformFoot01/bone_platformFoot02/bone_platformFoot03/bone_platformFoot04
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_platformHead01
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_platformHead01/bone_platformHead02
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railLeft001
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railLeft001/bone_railLeftTop
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railLeft002
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railLeft003
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railLeft004
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railLeft005
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railRight001
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railRight001/bone_railRightTop
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railRight002
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railRight003
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railRight004
+        weight: 1
+      - path: bone_root/bone_platformBase/bone_railRight005
+        weight: 1
+      - path: bone_root/bone_platformBase/helper_pistonFootAnchor
+        weight: 1
+      - path: bone_root/bone_platformBase/helper_pistonHeadAnchor
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster1
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster1/prop_bedGurneyTrauma02_wheel1
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster2
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster2/prop_bedGurneyTrauma02_wheel2
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster3
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster3/prop_bedGurneyTrauma02_wheel3
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster4
+        weight: 1
+      - path: bone_root/prop_bedGurneyTrauma02_caster4/prop_bedGurneyTrauma02_wheel4
+        weight: 1
+      - path: prop_bedGurneyTrauma02_body
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
